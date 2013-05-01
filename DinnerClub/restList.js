@@ -8,7 +8,7 @@ var restList = (function () {
 			light:"bright",
 			vol:"loud",
 			parking:"yes",
-            phone:"03-5523456"
+			tel: "03-5612888"
 		},
 		{
 			name:"Brasserie",
@@ -17,7 +17,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			tel: "03-6967111"
 		},
 		{
 			name:"Mizlala",
@@ -26,7 +27,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			tel: "03-5665505"
 		},
 		{
 			name:"Cantina",
@@ -35,7 +37,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			tel: "03-6205051"
 		},
 		{
 			name:"Catit",
@@ -44,7 +47,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			tel: "03-5107001"
 		},
 		{
 			name:"Yafo Tel Aviv	",
@@ -53,7 +57,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			tel: "03-6249249"
 		},
 		{
 			name:"Messa",
@@ -62,7 +67,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			tel: "03-6856859"
 		},
 		{
 			name:"Joya",
@@ -71,7 +77,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			tel: "03-6425854"
 		},
 		{
 			name:"Herbert Samuel",
@@ -80,7 +87,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			tel: "03-5166516"
 		},
 		{
 			name:"Rafael",
@@ -89,7 +97,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5226464"
 		},
 		{
 			name:"Onami",
@@ -98,7 +107,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5621172"
 		},
 		{
 			name:"Tapeo",
@@ -107,7 +117,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-6240484"
 		},
 		{
 			name:"Turkiz",
@@ -116,7 +127,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-6996306"
 		},
 		{
 			name:"Boya",
@@ -125,7 +137,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5446166"
 		},
 		{
 			name:"Dallal",
@@ -134,7 +147,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5109292"
 		},
 		{
 			name:"Suzanna",
@@ -143,7 +157,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5177580"
 		},
 		{
 			name:"Social Club",
@@ -152,7 +167,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5601114"
 		},
 		{
 			name:"Yavne Montifiore",
@@ -161,7 +177,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5666189"
 		},
 		{
 			name:"Makom Shel Basar",
@@ -170,7 +187,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5104020"
 		},
 		{
 			name:"Viki Christina",
@@ -179,7 +197,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-7367272"
 		},
 		{
 			name:"Abraxas North",
@@ -188,7 +207,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5166660"
 		},
 		{
 			name:"Zepra",
@@ -197,7 +217,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-6240044"
 		},
 		{
 			name:"Nanuchka",
@@ -206,7 +227,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:	"dim",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5162254"
 		},
 		{
 			name:"Port Said",
@@ -215,7 +237,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-6207436 - No reservation"
 		},
 		{
 			name:"Kalamata",
@@ -224,7 +247,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			Tel: "03-6819998"
 		},
 		{
 			name:"Hotel Monefiore",
@@ -233,7 +257,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5646100"
 		},
 		{
 			name:"Alba",
@@ -242,7 +267,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5467905"
 		},
 		{
 			name:"Café Europa",
@@ -251,7 +277,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5259987"
 		},
 		{
 			name:"Pini Bachatzer",
@@ -260,7 +287,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-6822111"
 		},
 		{
 			name:"Shila",
@@ -269,7 +297,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel:"03-5221224"
 		},
 		{
 			name:"Tapas 1 ha'am",
@@ -278,7 +307,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5666966"
 		},
 		{
 			name:"Sola",
@@ -287,7 +317,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5499626"
 		},
 		{
 			name:"Taizu",
@@ -296,7 +327,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5225005"
 		},
 		{
 			name:"Juz & Luz",
@@ -305,7 +337,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5606385"
 		},
 		{
 			name:"Toto",
@@ -314,7 +347,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"loud",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-6935151"
 		},
 		{
 			name:"Mel & Michelle",
@@ -323,7 +357,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-5293232"
 		},
 		{
 			name:"Mitbach Laila",
@@ -332,7 +367,8 @@ var restList = (function () {
 			sitting:["bar"],
 			light:"dim",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5660481"
 		},
 		{
 			name:"Yassu",
@@ -341,7 +377,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-6031719"
 		},
 		{
 			name:"Flee Market",
@@ -350,7 +387,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-6202262"
 		},
 		{
 			name:"Kitchen Market",
@@ -359,7 +397,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"loud",
-			parking:"paid"
+			parking:"paid",
+			Tel: "03-5446669"
 		},
 		{
 			name:"Alma",
@@ -368,7 +407,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			Tel: "03-6308777"
 		},
 		{
 			name:"HaShulchan",
@@ -377,7 +417,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5257171"
 		},
 		{
 			name:"Popina",
@@ -386,7 +427,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"dim",
 			vol:"quiet",
-			parking:"valet"
+			parking:"valet",
+			Tel: "03-5757477"
 		},
 		{
 			name:"Cocina Tamar",
@@ -395,7 +437,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"quiet",
-			parking:"yes"
+			parking:"yes",
+			Tel: "03-6390407"
 		},
 		{
 			name:"Delicatessen",
@@ -404,7 +447,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"loud",
-			parking:"paid"
+			parking:"paid",
+			Tel: "03-9681010"
 		},
 		{
 			name:"Coffee Bar",
@@ -413,7 +457,8 @@ var restList = (function () {
 			sitting:["bar", "table"],
 			light:"bright",
 			vol:"quiet",
-			parking:"no"
+			parking:"no",
+			Tel: "03-6889696"
 		},
 		{
 			name:"Radio Rosco",
@@ -422,7 +467,8 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"loud",
-			parking:"no"
+			parking:"no",
+			Tel: "03-5600334"
 		},
 		{
 			name:"Cheder Ochel",
@@ -431,7 +477,18 @@ var restList = (function () {
 			sitting:["table"],
 			light:"bright",
 			vol:"loud",
-			parking:"paid"
+			parking:"paid",
+			Tel: "03-6966188"
+		},
+		{
+			name:"Bread Story",
+			date:"no",
+			so:	["friends"],
+			sitting:["table"],
+			light:"bright",
+			vol:"loud",
+			parking:"no",
+			Tel: "03-5283888"
 		}
     ];
 

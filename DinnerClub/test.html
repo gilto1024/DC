@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        html, body {
+
+        }
+
+        #container {
+
+        }
+
+        #flip_it {
+            text-align: center;
+            width: 300px;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .end_result_text {
+            overflow: hidden;
+            width: 300px;
+            height: 100px;
+            white-space: nowrap;
+        }
+
+    </style>
+    <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#container").on("click", "#flip_it", function () {
+                if ($("#flip_it").hasClass("not_flip")) {
+                    $("#flip_it").removeClass("not_flip").addClass("fliped");
+                    $(".end_result_text").animate({width:"0px"}, function () {
+                        $(".end_result_text").text("bye bye");
+                        $(".end_result_text").animate({width:"300px"});
+                    });
+                }
+                else {
+                    $("#flip_it").removeClass("fliped").addClass("not_flip");
+                    $(".end_result_text").animate({width:"0px"}, function () {
+                        $(".end_result_text").text("hello");
+                        $(".end_result_text").animate({width:"300px"});
+                    });
+                }
+
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="container">
+    <div id="flip_it" class="not_flip">
+        <span id="result_text_span" class="end_result_text " style="background-color: white">Hello</span>
+    </div>
+</div>
+<
+</body>
+</html>
