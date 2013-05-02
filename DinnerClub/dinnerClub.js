@@ -13,6 +13,14 @@ var resizeFlag = true;
 var nextResultOption = 0;
 var $ruler = $("<span id='ruler'></span>");
 
+$.easing.easeOutBack = function(e, f, a, i, h, g) {
+    if (g == undefined) {
+        g = 1.70158
+    }
+    return i * ((f = f / h - 1) * f * ((g + 1) * f + g) + 1) + a;
+};
+
+
 $(document).ready(function () {
     init();
     setStyle();
@@ -138,18 +146,27 @@ function setupEvents() {
     });
 
     $container.on("click", ".next_option", function () {
+        //$end_result_text.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
+        $("#flip_it").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
         $(".next_option").fadeOut(500);
         $end_result_text.fadeOut(500, function () {
             var restName = $end_result_text.attr("name");
             var restTel = $end_result_text.attr("tel");
             if (nextResultOption < resultArray.length) {
+
+                var nameLen = calculateContentSize(resultArray[nextResultOption].name);
+                $end_result_text.css("width", nameLen);
+                $("#flip_it").css({"width":(nameLen + 415) + "px"});
                 $end_result_text.text(resultArray[nextResultOption].name);
                 $end_result_text.attr("name", resultArray[nextResultOption].name);
                 $end_result_text.attr("tel", resultArray[nextResultOption].Tel);
             }
             else {
                 nextResultOption = 0;
+                var nameLen = calculateContentSize(resultArray[nextResultOption].name);
+                $end_result_text.css("width", nameLen);
+                $("#flip_it").css({"width":(nameLen + 415) + "px"});
                 $end_result_text.text(resultArray[nextResultOption].name);
                 $end_result_text.attr("name", resultArray[nextResultOption].name);
                 $end_result_text.attr("tel", resultArray[nextResultOption].Tel);
@@ -176,11 +193,11 @@ function setupEvents() {
     $container.on("click", "#about_btn", function () {
         if ($("#fixed_element_about_content").hasClass("off")) {
             $("#fixed_element_about_content").removeClass("off").addClass("on");
-            $("#fixed_element_about_content").animate({left:"0px"},500);
+            $("#fixed_element_about_content").animate({left:"0px"}, 500,"easeOutBack");
         }
         else {
             $("#fixed_element_about_content").removeClass("on").addClass("off");
-            $("#fixed_element_about_content").animate({left:"-500px"},500);
+            $("#fixed_element_about_content").animate({left:"-500px"}, 500,"easeOutBack");
         }
 
     });
@@ -222,7 +239,7 @@ function setupEvents() {
                 var targetOffset = $target.offset().top;
                 $(this).click(function (event) {
                     event.preventDefault();
-                    $(scrollElem).animate({scrollTop:targetOffset}, 400, function () {
+                    $(scrollElem).animate({scrollTop:targetOffset}, 400,"easeOutBack", function () {
                         location.hash = target;
                     });
                 });
@@ -411,6 +428,11 @@ function wrapItUp(resultArray) {
     var rand = Math.floor((Math.random() * resultArrayLen));
     $("#result").append(resultArray[rand].name);
     $(".fixed_element_rest_list, #fixed_element_counter").hide();
+    var nameLen = calculateContentSize(resultArray[rand].name);
+    $end_result_text.css("width", nameLen);
+    $("#flip_it").css({"width":(nameLen + 415) + "px"});
+    //$end_result_text.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
+    $("#flip_it").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
     $end_result_text.append(resultArray[rand].name/* + '<br>'*/);
     $end_result_text.attr("name", resultArray[rand].name);
     $end_result_text.attr("tel", resultArray[rand].Tel);
@@ -429,11 +451,12 @@ function writeOptions(options) {
     else {
         currentNumber = parseInt(currentNumber);
         //slotmachine('fixed_element_counter', newNumber)
-        if (currentNumber > newNumber) {
-            increment(newNumber);
-        }
-        else if (currentNumber > newNumber) {
+        if (newNumber > currentNumber  ) {
             decrement(newNumber);
+        }
+        else if (newNumber < currentNumber  ) {
+
+            increment(newNumber);
         }
         else {
             //do nothing numbers are equal
@@ -485,13 +508,13 @@ function init() {
     $('a').click(function () {
         var elementClicked = $(this).attr("href");
         var destination = $(elementClicked).offset().top;
-        $("html:not(:animated),body:not(:animated)").animate({ scrollTop:destination + 15}, 600, function () {
+        $("html:not(:animated),body:not(:animated)").animate({ scrollTop:destination + 15}, 1000,"easeOutBack", function () {
 
         });
 
     });
-    $('html').animate({scrollTop:0}, 'slow');//IE, FF
-    $('body').animate({scrollTop:0}, 'slow');
+    $('html').animate({scrollTop:0}, 1000,"easeOutBack");//IE, FF
+    $('body').animate({scrollTop:0}, 1000,"easeOutBack");
 }
 
 function checkForWindowSize() {
