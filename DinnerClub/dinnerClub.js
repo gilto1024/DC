@@ -13,7 +13,7 @@ var resizeFlag = true;
 var nextResultOption = 0;
 var $ruler = $("<span id='ruler'></span>");
 
-$.easing.easeOutBack = function(e, f, a, i, h, g) {
+$.easing.easeOutBack = function (e, f, a, i, h, g) {
     if (g == undefined) {
         g = 1.70158
     }
@@ -145,36 +145,41 @@ function setupEvents() {
         }
     });
 
-    $container.on("click", ".next_option", function () {
+    $container.on("click", "#end_result_next", function () {
         //$end_result_text.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         $("#flip_it").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
-        $(".next_option").fadeOut(500);
-        $end_result_text.fadeOut(500, function () {
+        /* $(".next_option").fadeOut(500);*/
+        $("#end_result_info").fadeOut(500, function () {
             var restName = $end_result_text.attr("name");
             var restTel = $end_result_text.attr("tel");
             if (nextResultOption < resultArray.length) {
 
-                var nameLen = calculateContentSize(resultArray[nextResultOption].name);
-                $end_result_text.css("width", nameLen);
-                $("#flip_it").css({"width":(nameLen + 415) + "px"});
-                $end_result_text.text(resultArray[nextResultOption].name);
-                $end_result_text.attr("name", resultArray[nextResultOption].name);
-                $end_result_text.attr("tel", resultArray[nextResultOption].Tel);
+                /* var nameLen = calculateContentSize(resultArray[nextResultOption].name);
+                 $end_result_text.css("width", nameLen);
+                 $("#flip_it").css({"width":(nameLen + 415) + "px"});
+                 $end_result_text.text(resultArray[nextResultOption].name);
+                 $end_result_text.attr("name", resultArray[nextResultOption].name);
+                 $end_result_text.attr("tel", resultArray[nextResultOption].Tel);*/
+                $("#end_result_tel").text(resultArray[nextResultOption].Tel);
+                $("#end_result_name").text(resultArray[nextResultOption].name);
             }
             else {
                 nextResultOption = 0;
-                var nameLen = calculateContentSize(resultArray[nextResultOption].name);
-                $end_result_text.css("width", nameLen);
-                $("#flip_it").css({"width":(nameLen + 415) + "px"});
-                $end_result_text.text(resultArray[nextResultOption].name);
-                $end_result_text.attr("name", resultArray[nextResultOption].name);
-                $end_result_text.attr("tel", resultArray[nextResultOption].Tel);
+                /* var nameLen = calculateContentSize(resultArray[nextResultOption].name);
+                 $end_result_text.css("width", nameLen);
+                 $("#flip_it").css({"width":(nameLen + 415) + "px"});
+                 $end_result_text.text(resultArray[nextResultOption].name);
+                 $end_result_text.attr("name", resultArray[nextResultOption].name);
+                 $end_result_text.attr("tel", resultArray[nextResultOption].Tel);*/
+                $("#end_result_tel").text(resultArray[nextResultOption].Tel);
+                $("#end_result_name").text(resultArray[nextResultOption].name);
             }
-
+            var nameLen = calculateContentSize(resultArray[nextResultOption].name);
+            $("#flip_it").css({width:nameLen + 80});
             nextResultOption++;
-            $end_result_text.fadeIn("fast", function () {
-                $(".next_option").fadeIn(200);
+            $("#end_result_info").fadeIn("fast", function () {
+                /*$(".next_option").fadeIn(200);*/
             });
         });
     });
@@ -193,35 +198,37 @@ function setupEvents() {
     $container.on("click", "#about_btn", function () {
         if ($("#fixed_element_about_content").hasClass("off")) {
             $("#fixed_element_about_content").removeClass("off").addClass("on");
-            $("#fixed_element_about_content").animate({left:"0px"}, 500,"easeOutBack");
+            $("#fixed_element_about_content").animate({left:"0px"}, 500, "easeOutBack");
         }
         else {
             $("#fixed_element_about_content").removeClass("on").addClass("off");
-            $("#fixed_element_about_content").animate({left:"-500px"}, 500,"easeOutBack");
+            $("#fixed_element_about_content").animate({left:"-500px"}, 500, "easeOutBack");
         }
 
     });
 
-    $container.on("click", ".end_result_text", function () {
+    $container.on("click", "#end_result_name , #end_result_tel", function () {
+        var tel = $("#end_result_tel").text();
+        var name = $("#end_result_name").text();
+        var telLen = calculateContentSize(tel);
+        var nameLen = calculateContentSize(name);
+        var currentPos = parseInt($("#end_result_info").css("left"));
+
         if ($("#flip_it").hasClass("not_flip")) {
-            var tel = $end_result_text.attr("tel");
-            var telLen = calculateContentSize(tel);
+
             $("#flip_it").removeClass("not_flip").addClass("fliped");
-            $("#flip_it").css({"width":(telLen + 415) + "px"});
-            $end_result_text.animate({width:"0px"}, 200, function () {
-                $end_result_text.text(tel);
-                $end_result_text.animate({width:(telLen + 60) + "px"});
-            });
+            $("#flip_it").css({width:telLen + 20});
+            $("#end_result_info").animate({left:-300 + telLen + 20});
+
         }
         else {
-            var name = $end_result_text.attr("name");
-            var nameLen = calculateContentSize(name);
             $("#flip_it").removeClass("fliped").addClass("not_flip");
-            $("#flip_it").css({"width":(nameLen + 415) + "px"});
-            $end_result_text.animate({width:"0px"}, 200, function () {
-                $end_result_text.text(name);
-                $end_result_text.animate({width:(nameLen + 60) + "px"});
+            var currWidth = $("#flip_it").css("width");
+            $("#end_result_info").animate({left:-300}, function () {
+                $("#flip_it").css("width", nameLen + 60);
             });
+
+
         }
     });
 
@@ -239,7 +246,7 @@ function setupEvents() {
                 var targetOffset = $target.offset().top;
                 $(this).click(function (event) {
                     event.preventDefault();
-                    $(scrollElem).animate({scrollTop:targetOffset}, 400,"easeOutBack", function () {
+                    $(scrollElem).animate({scrollTop:targetOffset}, 400, "easeOutBack", function () {
                         location.hash = target;
                     });
                 });
@@ -430,12 +437,14 @@ function wrapItUp(resultArray) {
     $(".fixed_element_rest_list, #fixed_element_counter").hide();
     var nameLen = calculateContentSize(resultArray[rand].name);
     $end_result_text.css("width", nameLen);
-    $("#flip_it").css({"width":(nameLen + 415) + "px"});
+    /*$("#flip_it").css({"width":(nameLen + 415) + "px"});*/
     //$end_result_text.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
     $("#flip_it").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
-    $end_result_text.append(resultArray[rand].name/* + '<br>'*/);
-    $end_result_text.attr("name", resultArray[rand].name);
-    $end_result_text.attr("tel", resultArray[rand].Tel);
+
+    $("#flip_it").css("width", nameLen + 100); //next length + 2* 20 margin
+    $("#end_result_name").text(resultArray[rand].name/* + '<br>'*/);
+    //$end_result_text.attr("name", resultArray[rand].name);
+    $("#end_result_tel").text(resultArray[rand].Tel);
     checkIfNoMoreOptions(resultArray);
     console.log(resultArray);
     writeOptions(resultArray);
@@ -451,10 +460,10 @@ function writeOptions(options) {
     else {
         currentNumber = parseInt(currentNumber);
         //slotmachine('fixed_element_counter', newNumber)
-        if (newNumber > currentNumber  ) {
+        if (newNumber > currentNumber) {
             decrement(newNumber);
         }
-        else if (newNumber < currentNumber  ) {
+        else if (newNumber < currentNumber) {
 
             increment(newNumber);
         }
@@ -508,13 +517,13 @@ function init() {
     $('a').click(function () {
         var elementClicked = $(this).attr("href");
         var destination = $(elementClicked).offset().top;
-        $("html:not(:animated),body:not(:animated)").animate({ scrollTop:destination + 15}, 1000,"easeOutBack", function () {
+        $("html:not(:animated),body:not(:animated)").animate({ scrollTop:destination + 15}, 1000, "easeOutBack", function () {
 
         });
 
     });
-    $('html').animate({scrollTop:0}, 1000,"easeOutBack");//IE, FF
-    $('body').animate({scrollTop:0}, 1000,"easeOutBack");
+    $('html').animate({scrollTop:0}, 1000, "easeOutBack");//IE, FF
+    $('body').animate({scrollTop:0}, 1000, "easeOutBack");
 }
 
 function checkForWindowSize() {

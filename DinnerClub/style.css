@@ -31,6 +31,8 @@ a:visited {
 
 .section {
     position: relative;
+    padding-left: 4%;
+    padding-top: 2%;
 
 }
 
@@ -43,9 +45,7 @@ a:visited {
 .end_result_text {
     font-size: 65px;
     cursor: pointer;
-    margin-left: 291px;
-    /* margin-top: -26px;*/
-    white-space: nowrap;
+    float: left;
 }
 
 .bg_pos {
@@ -252,11 +252,14 @@ a:visited {
 .end_result_footer {
     font-size: 20px;
     cursor: pointer;
+    float: left;
 }
 
 #flip_it {
-    text-align: center;
+    position: relative;
+    height: 60px;
     overflow: hidden;
+    margin-left: 218px;
 }
 
 #ruler {
@@ -304,7 +307,43 @@ a:visited {
 .para {
     font-size: 20px;
     font-family: Helvetica W01 Bold;
-    padding-top: 65px;
-    padding-left: 41px;
+    padding-top: 10%;
+    padding-left: 10%;
     color: white;
+}
+
+#end_result {
+    position: relative;
+    overflow: hidden;
+}
+
+#blank {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    width: 200px;
+    height: 100px;
+    z-index: 1;
+    display: none;
+}
+
+.end_result_tel {
+    font-size: 65px;
+    cursor: pointer;
+    float: left;
+}
+
+.float {
+    float: left;
+    margin-right: 20px;
+}
+
+#end_result_info {
+    position: absolute;
+    left: -300px;
+}
+#end_result_next{
+    font-size: 24px;
+    line-height: 78px;
 }
