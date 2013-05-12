@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0544b53c-2c59-4cd9-8668-dafd162d6fa9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/images/phpmailer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/images/phpmailer_mini.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/test/test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/images/phpmailer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/images/phpmailer_mini.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/test/test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/img/1date.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/img/1so.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/img/back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/img/info.PNG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/aboutus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/class.phpmailer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/class.pop3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/class.smtp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/docs/Callback_function_notes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/docs/DomainKeys_notes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/docs/Note_for_SMTP_debugging.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/docs/extending.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/docs/faq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/docs/pop3_article.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/docs/use_gmail.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/contents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_db_smtp_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_mail_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_mail_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_pop_before_smtp_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_pop_before_smtp_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_sendmail_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_sendmail_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_smtp_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_smtp_advanced_no_auth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_smtp_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_smtp_basic_no_auth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_smtp_gmail_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/examples/test_smtp_gmail_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-ar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-br.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-ca.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-ch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-cz.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-de.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-dk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-es.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-et.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-fi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-fo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-fr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-hu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-it.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-ja.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-nl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-no.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-pl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-ro.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-ru.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-se.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-tr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-zh.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/language/phpmailer.lang-zh_cn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/test/contents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/test/phpmailerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/test/test_callback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide/PHPMailer/test/testemail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/aboutus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/changelog.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/class.phpmailer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/class.pop3.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/class.smtp.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/docs/Callback_function_notes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/docs/DomainKeys_notes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/docs/Note_for_SMTP_debugging.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/docs/extending.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/docs/faq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/docs/pop3_article.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/docs/use_gmail.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/contents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_db_smtp_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_mail_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_mail_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_pop_before_smtp_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_pop_before_smtp_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_sendmail_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_sendmail_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_smtp_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_smtp_advanced_no_auth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_smtp_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_smtp_basic_no_auth.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_smtp_gmail_advanced.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/examples/test_smtp_gmail_basic.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-ar.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-br.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-ca.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-ch.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-cz.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-de.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-dk.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-es.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-et.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-fi.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-fo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-fr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-hu.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-it.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-ja.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-nl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-no.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-pl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-ro.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-ru.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-se.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-tr.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-zh.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/language/phpmailer.lang-zh_cn.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/test/contents.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/test/phpmailerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/test/test_callback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/PHPMailer/test/testemail.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/cookieeee.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/jquery.localScroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/jquery.scrollTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/jquery.text-effects.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/restList.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/story.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/style.css" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\LICENSE" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/LICENSE" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\README" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/README" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\aboutus.html" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/aboutus.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\changelog.txt" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/changelog.txt" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\class.phpmailer.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/class.phpmailer.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\class.pop3.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/class.pop3.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\class.smtp.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/class.smtp.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\docs\Callback_function_notes.txt" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/docs/Callback_function_notes.txt" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\docs\DomainKeys_notes.txt" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/docs/DomainKeys_notes.txt" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\docs\Note_for_SMTP_debugging.txt" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/docs/Note_for_SMTP_debugging.txt" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\docs\extending.html" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/docs/extending.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\docs\faq.html" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/docs/faq.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\docs\pop3_article.txt" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/docs/pop3_article.txt" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\docs\use_gmail.txt" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/docs/use_gmail.txt" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\contents.html" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/contents.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\images\phpmailer.gif" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/images/phpmailer.gif" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\images\phpmailer_mini.gif" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/images/phpmailer_mini.gif" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\index.html" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/index.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_db_smtp_basic.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_db_smtp_basic.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_mail_advanced.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_mail_advanced.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_mail_basic.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_mail_basic.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_pop_before_smtp_advanced.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_pop_before_smtp_advanced.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_pop_before_smtp_basic.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_pop_before_smtp_basic.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_sendmail_advanced.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_sendmail_advanced.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_sendmail_basic.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_sendmail_basic.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_smtp_advanced.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_smtp_advanced.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_smtp_advanced_no_auth.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_smtp_advanced_no_auth.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_smtp_basic.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_smtp_basic.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_smtp_basic_no_auth.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_smtp_basic_no_auth.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_smtp_gmail_advanced.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_smtp_gmail_advanced.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\examples\test_smtp_gmail_basic.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/examples/test_smtp_gmail_basic.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-ar.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-ar.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-br.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-br.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-ca.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-ca.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-ch.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-ch.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-cz.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-cz.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-de.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-de.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-dk.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-dk.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-es.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-es.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-et.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-et.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-fi.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-fi.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-fo.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-fo.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-fr.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-fr.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-hu.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-hu.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-it.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-it.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-ja.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-ja.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-nl.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-nl.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-no.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-no.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-pl.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-pl.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-ro.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-ro.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-ru.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-ru.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-se.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-se.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-tr.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-tr.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-zh.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-zh.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\language\phpmailer.lang-zh_cn.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/language/phpmailer.lang-zh_cn.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\test\contents.html" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/test/contents.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\test\phpmailerTest.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/test/phpmailerTest.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\test\test.png" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/test/test.png" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\test\test_callback.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/test/test_callback.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\PHPMailer\test\testemail.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/PHPMailer/test/testemail.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\cookieeee.js" afterPath="$PROJECT_DIR$/DinnerClub/slide/cookieeee.js" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\dinnerClub.js" afterPath="$PROJECT_DIR$/DinnerClub/slide/dinnerClub.js" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\img\1date.jpg" afterPath="$PROJECT_DIR$/DinnerClub/slide/img/1date.jpg" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\img\1so.jpg" afterPath="$PROJECT_DIR$/DinnerClub/slide/img/1so.jpg" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\img\back.png" afterPath="$PROJECT_DIR$/DinnerClub/slide/img/back.png" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\img\info.PNG" afterPath="$PROJECT_DIR$/DinnerClub/slide/img/info.PNG" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\index.html" afterPath="$PROJECT_DIR$/DinnerClub/slide/index.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\jquery.localScroll.js" afterPath="$PROJECT_DIR$/DinnerClub/slide/jquery.localScroll.js" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\jquery.scrollTo.js" afterPath="$PROJECT_DIR$/DinnerClub/slide/jquery.scrollTo.js" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\mailTest.html" afterPath="$PROJECT_DIR$/DinnerClub/contact/mailTest.html" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\restList.js" afterPath="$PROJECT_DIR$/DinnerClub/slide/restList.js" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\send_contact.php" afterPath="$PROJECT_DIR$/DinnerClub/contact/send_contact.php" />
+      <change type="MOVED" beforePath="C:\GitRepo\Gil\DinnerClub\style.css" afterPath="$PROJECT_DIR$/DinnerClub/slide/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DinnerClub/testSlide.html" afterPath="$PROJECT_DIR$/DinnerClub/testSlide.html" />
+    </list>
+    <ignored path="Gil.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="dinnerClub.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="240" column="7" selection-start="8311" selection-end="8311" vertical-scroll-proportion="-31.28">
+              <folding>
+                <element signature="e#381#502#0" expanded="false" />
+                <element signature="e#537#848#0" expanded="false" />
+                <element signature="e#1148#2232#0" expanded="false" />
+                <element signature="e#1288#1705#0" expanded="false" />
+                <element signature="e#1744#2226#0" expanded="false" />
+                <element signature="e#2291#2729#0" expanded="false" />
+                <element signature="e#2785#3077#0" expanded="false" />
+                <element signature="e#3138#3419#0" expanded="false" />
+                <element signature="e#3478#3783#0" expanded="false" />
+                <element signature="e#3843#4119#0" expanded="false" />
+                <element signature="e#4180#4461#0" expanded="false" />
+                <element signature="e#4555#5947#0" expanded="false" />
+                <element signature="e#6009#7550#0" expanded="false" />
+                <element signature="e#7605#7740#0" expanded="false" />
+                <element signature="e#7794#7802#0" expanded="false" />
+                <element signature="e#7858#8309#0" expanded="false" />
+                <element signature="e#8389#9373#0" expanded="false" />
+                <element signature="e#9526#10205#0" expanded="false" />
+                <element signature="n#!!block;n#slotmachine#0" expanded="false" />
+                <element signature="n#!!block;n#checkIfNoMoreOptions#0" expanded="false" />
+                <element signature="n#!!block;n#filterPath#0" expanded="false" />
+                <element signature="n#!!block;n#scrollableElement#0" expanded="false" />
+                <element signature="n#!!block;n#dateChosen#0" expanded="false" />
+                <element signature="n#!!block;n#sittingChosen#0" expanded="false" />
+                <element signature="n#!!block;n#soChosen#0" expanded="false" />
+                <element signature="n#!!block;n#lightChosen#0" expanded="false" />
+                <element signature="n#!!block;n#volumeChosen#0" expanded="false" />
+                <element signature="n#!!block;n#parkingChosen#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="restList.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/restList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="273" column="25" selection-start="5074" selection-end="5074" vertical-scroll-proportion="-8.84">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="267" column="18" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.677095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="174" column="55" selection-start="6442" selection-end="6442" vertical-scroll-proportion="-5.509804">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testSlide.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/testSlide.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="9" selection-start="466" selection-end="562" vertical-scroll-proportion="-13.153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="story.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/story.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="25" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/DinnerClub/restList.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/test.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/mailTest.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/mail.php" />
+        <option value="$PROJECT_DIR$/DinnerClub/send_contact.php" />
+        <option value="$PROJECT_DIR$/DinnerClub/index.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/style.css" />
+        <option value="$PROJECT_DIR$/DinnerClub/dinnerClub.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/type.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/story.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide/restList.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/testSlide.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/restList.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/index.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/style.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DinnerClub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gil" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DinnerClub" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slide_story" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="969f34d0-45f2-4b37-a393-6f0318744522">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitRepo\Gil\DinnerClub\slide_story" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\contact" />
+      <recent name="C:\GitRepo\Gil\DinnerClub" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitRepo\Gil\DinnerClub\contact" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\slide" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0544b53c-2c59-4cd9-8668-dafd162d6fa9" name="Default" comment="" />
+      <created>1367331976912</created>
+      <updated>1367331976912</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1676331" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/img/info.PNG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/PHPMailer/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="29" selection-start="6077" selection-end="6077" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="257" column="0" selection-start="3911" selection-end="3911" vertical-scroll-proportion="0.018994413">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/dinnerClub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="0" selection-start="7773" selection-end="7773" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3214#4373#0" expanded="false" />
+            <element signature="e#6669#6804#0" expanded="false" />
+            <element signature="e#6924#7375#0" expanded="false" />
+            <element signature="n#!!block;n#slotmachine#0" expanded="false" />
+            <element signature="n#!!block;n#checkIfNoMoreOptions#0" expanded="false" />
+            <element signature="n#!!block;n#filterPath#0" expanded="false" />
+            <element signature="n#!!block;n#scrollableElement#0" expanded="false" />
+            <element signature="n#!!block;n#setStyle#0" expanded="false" />
+            <element signature="n#!!block;n#dateChosen#0" expanded="false" />
+            <element signature="n#!!block;n#sittingChosen#0" expanded="false" />
+            <element signature="n#!!block;n#soChosen#0" expanded="false" />
+            <element signature="n#!!block;n#lightChosen#0" expanded="false" />
+            <element signature="n#!!block;n#volumeChosen#0" expanded="false" />
+            <element signature="n#!!block;n#parkingChosen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/contact/mailTest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="71" selection-start="1710" selection-end="1714" vertical-scroll-proportion="0.47180668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/contact/send_contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="17" selection-start="193" selection-end="193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/contact/PHPMailer/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/jquery.text-effects.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="9" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.3329609">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/story.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/restList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="554" column="0" selection-start="9979" selection-end="9979" vertical-scroll-proportion="0.96201116">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/testSlide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="9" selection-start="466" selection-end="562" vertical-scroll-proportion="-13.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="55" selection-start="6442" selection-end="6442" vertical-scroll-proportion="-5.509804">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/restList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="25" selection-start="5074" selection-end="5074" vertical-scroll-proportion="-8.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="240" column="7" selection-start="8311" selection-end="8311" vertical-scroll-proportion="-31.28">
+          <folding>
+            <element signature="e#381#502#0" expanded="false" />
+            <element signature="e#537#848#0" expanded="false" />
+            <element signature="e#1148#2232#0" expanded="false" />
+            <element signature="e#1288#1705#0" expanded="false" />
+            <element signature="e#1744#2226#0" expanded="false" />
+            <element signature="e#2291#2729#0" expanded="false" />
+            <element signature="e#2785#3077#0" expanded="false" />
+            <element signature="e#3138#3419#0" expanded="false" />
+            <element signature="e#3478#3783#0" expanded="false" />
+            <element signature="e#3843#4119#0" expanded="false" />
+            <element signature="e#4180#4461#0" expanded="false" />
+            <element signature="e#4555#5947#0" expanded="false" />
+            <element signature="e#6009#7550#0" expanded="false" />
+            <element signature="e#7605#7740#0" expanded="false" />
+            <element signature="e#7794#7802#0" expanded="false" />
+            <element signature="e#7858#8309#0" expanded="false" />
+            <element signature="e#8389#9373#0" expanded="false" />
+            <element signature="e#9526#10205#0" expanded="false" />
+            <element signature="n#!!block;n#slotmachine#0" expanded="false" />
+            <element signature="n#!!block;n#checkIfNoMoreOptions#0" expanded="false" />
+            <element signature="n#!!block;n#filterPath#0" expanded="false" />
+            <element signature="n#!!block;n#scrollableElement#0" expanded="false" />
+            <element signature="n#!!block;n#dateChosen#0" expanded="false" />
+            <element signature="n#!!block;n#sittingChosen#0" expanded="false" />
+            <element signature="n#!!block;n#soChosen#0" expanded="false" />
+            <element signature="n#!!block;n#lightChosen#0" expanded="false" />
+            <element signature="n#!!block;n#volumeChosen#0" expanded="false" />
+            <element signature="n#!!block;n#parkingChosen#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="18" selection-start="4049" selection-end="4049" vertical-scroll-proportion="0.677095">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
