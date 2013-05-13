@@ -181,7 +181,7 @@ a:visited {
     width: 38px;
     height: 66px;
     position: absolute;
-    top: 45%;
+    top: 49%;
     left: 500px;
     background: url(img/info.PNG) no-repeat;
     cursor: pointer;
@@ -221,9 +221,9 @@ a:visited {
 
 #end_result_info {
     position: absolute;
-   /* left: -467px;*/
+    /* left: -467px;*/
     top: 0px;
-    left:0px;
+    left: 0px;
 }
 
 #end_result_next {
@@ -276,4 +276,48 @@ a:visited {
 #second {
     float: left;
     cursor: pointer;
+}
+
+#fixed_element_contact {
+    display: none;
+    height: 100%;
+    width: 550px;
+    opacity: 0.9;
+    position: fixed;
+    top: 0px;
+    left: -550px;
+    background-color: #778899;
+}
+
+#fixed_element_contact_body {
+    margin-top: 22%;
+    height: 250px;
+    color: white;
+
+}
+
+#contact_header {
+    margin-bottom: 20px;
+}
+
+#mailUs {
+
+}
+
+#mailUsClose {
+    background: url(img/close.png) no-repeat;
+    width: 18px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+}
+
+#aboutUsClose {
+    background: url(img/close.png) no-repeat;
+    width: 18px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
 }

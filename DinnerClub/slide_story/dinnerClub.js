@@ -8,6 +8,13 @@ var resultArray = [];
 var dateFlag = false;
 var cameFrom = '';
 var $container;
+var $fixed_element_about_content = null;
+var $fixed_element_counter = null;
+var $end_result_text = null;
+var $flip_it = null;
+var $end_result_tel = null;
+var $end_result_name = null;
+var $end_result_address = null;
 var rest = [];
 var resizeFlag = true;
 var nextResultOption = 0;
@@ -191,29 +198,29 @@ function setupEvents() {
         }
     });
     $container.on("click", "#end_result_next", function () {
-        $("#flip_it").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
+        $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
         $("#end_result_info").fadeOut(500, function () {
             if (nextResultOption < resultArray.length) {
-                $("#end_result_tel").text(resultArray[nextResultOption].Tel);
-                $("#end_result_name").text(resultArray[nextResultOption].name);
-                $("#end_result_address").text(resultArray[nextResultOption].Address);
+               $end_result_tel.text(resultArray[nextResultOption].Tel);
+                $end_result_name.text(resultArray[nextResultOption].name);
+               $end_result_address.text(resultArray[nextResultOption].Address);
 
             }
             else {
                 nextResultOption = 0;
-                $("#end_result_tel").text(resultArray[nextResultOption].Tel);
-                $("#end_result_name").text(resultArray[nextResultOption].name);
-                $("#end_result_address").text(resultArray[nextResultOption].Address);
+               $end_result_tel.text(resultArray[nextResultOption].Tel);
+                $end_result_name.text(resultArray[nextResultOption].name);
+               $end_result_address.text(resultArray[nextResultOption].Address);
             }
-            var tel = $("#end_result_tel").text();
-            var name = $("#end_result_name").text();
-            var address = $("#end_result_address").text();
+            var tel =$end_result_tel.text();
+            var name = $end_result_name.text();
+            var address =$end_result_address.text();
             var telLen = calculateContentSize(tel);
             var nameLen = calculateContentSize(name);
             var addressLen = calculateContentSize(address);
-            $("#end_result_info").css("left", "-" +  Math.max(nameLen,addressLen) + "px");// assume address is longer then phone
-            $("#visiable").css("width", Math.max(nameLen,addressLen) + 70);//40 is for the next btn
+            $("#end_result_info").css("left", "-" + Math.max(nameLen, addressLen) + "px");// assume address is longer then phone
+            $("#visiable").css("width", Math.max(nameLen, addressLen) + 70);//40 is for the next btn
             nextResultOption++;
             $("#end_result_info").fadeIn("fast", function () {
             });
@@ -225,38 +232,61 @@ function setupEvents() {
             });
         });
     });
-    $container.on("click", "#blackBG", function () {
+    $container.on("click", "#contact_submit", function () {
+        var name = $("#name").val();
+        var customerMail = $("#customer_mail").val();
+        var message = $("#Message").val();
+        $.ajax({
+            url:"send_contact.php",
+            type:"POST",
+            data:{
+                name:name,
+                customerMail:customerMail,
+                message:message
+            },
+            success:function (data) {
+                console.log(data);
+            }});
+        debugger;
 
     });
-    $container.on("click", "#about_btn", function () {
-        if ($("#fixed_element_about_content").hasClass("off")) {
-            $("#fixed_element_about_content").removeClass("off").addClass("on");
-            $("#fixed_element_about_content").animate({left:"0px"}, 500, "easeOutBack");
+    $container.on("click", "#mailUs", function () {
+        $("#fixed_element_contact").show().animate({"left":"500"}, 500);
+    });
+    $container.on("click", "#mailUsClose", function () {
+        $("#fixed_element_contact").animate({"left":"-550"}, 500, function () {
+            $("#fixed_element_contact").hide();
+        });
+    });
+    $container.on("click", "#about_btn , #aboutUsClose", function () {
+        if ($fixed_element_about_content.hasClass("off")) {
+            $fixed_element_about_content.removeClass("off").addClass("on");
+            $fixed_element_about_content.animate({left:"0px"}, 500);
         }
         else {
-            $("#fixed_element_about_content").removeClass("on").addClass("off");
-            $("#fixed_element_about_content").animate({left:"-500px"}, 500, "easeOutBack");
+            $fixed_element_about_content.removeClass("on").addClass("off");
+            $fixed_element_about_content.animate({left:"-500px"}, 500);
         }
 
     });
     $container.on("click", "#end_result_name , #end_result_tel", function () {
-        var tel = $("#end_result_tel").text();
-        var name = $("#end_result_name").text();
-        var address = $("#end_result_address").text();
+        var tel =$end_result_tel.text();
+        var name = $end_result_name.text();
+        var address =$end_result_address.text();
         var telLen = calculateContentSize(tel);
         var nameLen = calculateContentSize(name);
         var addressLen = calculateContentSize(address);
         var currentPos = parseInt($("#end_result_info").css("left"));
 
-        if ($("#flip_it").hasClass("not_flip")) {
+        if ($flip_it.hasClass("not_flip")) {
 
-            $("#flip_it").removeClass("not_flip").addClass("fliped");
-            $("#visiable").css({width: Math.max(nameLen,addressLen) + 30});
-            $("#end_result_info").animate({left:currentPos +  Math.max(nameLen,addressLen) + 20});
+            $flip_it.removeClass("not_flip").addClass("fliped");
+            $("#visiable").css({width:Math.max(nameLen, addressLen) + 30});
+            $("#end_result_info").animate({left:currentPos + Math.max(nameLen, addressLen) + 20});
 
         }
         else {
-            $("#flip_it").removeClass("fliped").addClass("not_flip");
+            $flip_it.removeClass("fliped").addClass("not_flip");
             $("#visiable").css("width");
             $("#end_result_info").animate({left:"-" + addressLen}, function () {
                 $("#visiable").css("width", nameLen + 70);
@@ -474,20 +504,13 @@ function wrapItUp(resultArray) {
     var addressLen = calculateContentSize(resultArray[rand].Address);
 
 
-    $("#end_result_name").text(resultArray[rand].name/* + '<br>'*/);
-    $("#end_result_tel").text(resultArray[rand].Tel);
-    $("#end_result_address").text(resultArray[rand].Address);
-    $("#end_result_info").css("left", "-" + ( Math.max(nameLen,addressLen)) + "px");// assume address is longer then phone
-    $("#visiable").css("width",  Math.max(nameLen,addressLen) + 70);//40 is for the next btn
-    $("#flip_it").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
+    $end_result_name.text(resultArray[rand].name/* + '<br>'*/);
+   $end_result_tel.text(resultArray[rand].Tel);
+   $end_result_address.text(resultArray[rand].Address);
+    $("#end_result_info").css("left", "-" + ( Math.max(nameLen, addressLen)) + "px");// assume address is longer then phone
+    $("#visiable").css("width", Math.max(nameLen, addressLen) + 70);//40 is for the next btn
+    $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
 
-    // $end_result_text.css("width", nameLen);
-    /* $("#flip_it").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
-     $("#flip_it").css("width", nameLen + 110); //next length + 2* 20 margin
-     $("#end_result_name").text(resultArray[rand].name*/
-    /* + '<br>'*/
-    /*);
-     $("#end_result_tel").text(resultArray[rand].Tel);*/
     checkIfNoMoreOptions(resultArray);
     console.log(resultArray);
     writeOptions(resultArray);
@@ -498,7 +521,7 @@ function writeOptions(options) {
     var newNumber = options.length;
     var currentNumber = $("#fixed_element_counter").html();
     if (!currentNumber) {
-        $("#fixed_element_counter").empty().append(newNumber);
+        $fixed_element_counter.empty().append(newNumber);
     }
     else {
         currentNumber = parseInt(currentNumber);
@@ -520,27 +543,15 @@ function writeOptions(options) {
 }
 
 function increment(newNumber) {
-    /* $('#fixed_element_counter').fadeOut(20, "swing", function () {
-     $('#fixed_element_counter').text(parseFloat($('#fixed_element_counter').text()) - 1);
-     $('#fixed_element_counter').fadeIn(20);
-     });*/
-
-    $('#fixed_element_counter').text(parseFloat($('#fixed_element_counter').text()) - 1);
-
-    if (parseFloat($('#fixed_element_counter').text()) > newNumber) {
+    $fixed_element_counter.text(parseFloat($fixed_element_counter.text()) - 1);
+    if (parseFloat($fixed_element_counter.text()) > newNumber) {
         setTimeout(increment, 170, newNumber)
     }
 }
 
 function decrement(newNumber) {
-    /* $('#fixed_element_counter').fadeOut(20, "swing", function () {
-     $('#fixed_element_counter').text(parseFloat($('#fixed_element_counter').text()) - 1);
-     $('#fixed_element_counter').fadeIn(20);
-     });*/
-
-    $('#fixed_element_counter').text(parseFloat($('#fixed_element_counter').text()) + 1);
-
-    if (parseFloat($('#fixed_element_counter').text()) < newNumber) {
+    $fixed_element_counter.text(parseFloat($('#fixed_element_counter').text()) + 1);
+    if (parseFloat($fixed_element_counter.text()) < newNumber) {
         setTimeout(decrement, 170, newNumber)
     }
 }
@@ -557,7 +568,14 @@ function init() {
     rest = restList.getList();
     story = storyLine.getStory();
     $container = $('#container');
+    $fixed_element_about_content = $("#fixed_element_about_content");
+    $fixed_element_counter = $('#fixed_element_counter');
     $end_result_text = $('.end_result_text');
+    $flip_it = $("#flip_it");
+    $end_result_tel = $("#end_result_tel");
+    $end_result_name = $("#end_result_name");
+    $end_result_address = $("#end_result_address");
+
     $('a').click(function () {
         var elementClicked = $(this).attr("href");
         var destination = $(elementClicked).offset().top;
