@@ -20,15 +20,16 @@ var resizeFlag = true;
 var nextResultOption = 0;
 var $ruler = $("<span id='ruler'></span>");
 var story;
+var typeWriterIsOn = false;
 
-$.easing.easeOutBack = function (e, f, a, i, h, g) {
+/*$.easing.easeOutBack = function (e, f, a, i, h, g) {
     if (g == undefined) {
         g = 1.70158
     }
     return i * ((f = f / h - 1) * f * ((g + 1) * f + g) + 1) + a;
-};
+};*/
 
-$.fn.teletype = function (opts) {
+$.fn.teletype = function (opts, callback) {
     var $this = this,
         defaults = {
             animDelay:50
@@ -50,8 +51,6 @@ $(document).ready(function () {
 
     DNCookie.set_Cookie('DN_used_rest', 'yes', 365, '/', '', '');
     console.log(DNCookie.getCookie("DN_used_rest"));
-
-
 });
 
 function setupEvents() {
@@ -59,19 +58,13 @@ function setupEvents() {
     $(window).resize(function () {
         var currentUrl = location.href;
         var section = currentUrl.split("#");
-
         if ($(window).width() < 1250 && resizeFlag) {
             $("#resizeBG").show(500, function () {
                 $("#resize_msg").show(200, function () {
                     windowWasSmall = true;
-                    /* var h = $(window).height();
-                     $(".section").css('height', h + '1px');*/
-                    //init();
                 });
             });
-
             resizeFlag = false;
-            //location.href = currentUrl;
         }
         if ($(window).width() > 1250) {
             $("#resize_msg").hide(500, function () {
@@ -80,10 +73,6 @@ function setupEvents() {
                         init();
                         document.location.reload(true);
                     }
-
-                    /* var h = $(window).height();
-                     $(".section").css('height',h + '1px');*/
-                    //init();
                 });
             });
             resizeFlag = true;
@@ -102,7 +91,6 @@ function setupEvents() {
         }
         else {
             dateFlag = false;
-
             dateChosen("no");
         }
         cameFrom = "date";
@@ -156,7 +144,7 @@ function setupEvents() {
 
     });
     $container.on("click", ".fixed_element_back_button, #no_options_msg_back", function () {
-        $(".fixed_element_counter").show();
+        $fixed_element_counter.show();
         if ($(this).attr("id") == "no_options_msg_back") {
             $("#no_options_msg").fadeOut(function () {
                 $("#blackBG").fadeOut();
@@ -168,7 +156,7 @@ function setupEvents() {
                 $("#date_text").html("");
                 writeOptions([]);
                 $(".fixed_element_back_button").hide();
-                $("#fixed_element_counter").hide();
+                $fixed_element_counter.hide();
                 break;
             case "so":
                 $("#so_text").html("");
@@ -177,7 +165,13 @@ function setupEvents() {
                 break;
             case "sitting":
                 $("#sitting_text").html("");
-                writeOptions(soArray);
+                if(dateFlag){
+                    writeOptions(dateArray);
+                }
+                else{
+                    writeOptions(soArray);
+                }
+
                 cameFrom = "so";
                 break;
             case "light":
@@ -198,29 +192,37 @@ function setupEvents() {
         }
     });
     $container.on("click", "#end_result_next", function () {
+        //debugger;
+       /* if (resultArray == 1) {
+               $("#end_result_next").hide();
+           }*/
         $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
         $("#end_result_info").fadeOut(500, function () {
             if (nextResultOption < resultArray.length) {
-               $end_result_tel.text(resultArray[nextResultOption].Tel);
+                if (resultArray[nextResultOption].name == $end_result_name.text()) {
+                    nextResultOption++;
+                    debugger;
+                }
+                $end_result_tel.text(resultArray[nextResultOption].Tel);
                 $end_result_name.text(resultArray[nextResultOption].name);
-               $end_result_address.text(resultArray[nextResultOption].Address);
+                $end_result_address.text(resultArray[nextResultOption].Address);
 
             }
             else {
                 nextResultOption = 0;
-               $end_result_tel.text(resultArray[nextResultOption].Tel);
+                $end_result_tel.text(resultArray[nextResultOption].Tel);
                 $end_result_name.text(resultArray[nextResultOption].name);
-               $end_result_address.text(resultArray[nextResultOption].Address);
+                $end_result_address.text(resultArray[nextResultOption].Address);
             }
-            var tel =$end_result_tel.text();
+            var tel = $end_result_tel.text();
             var name = $end_result_name.text();
-            var address =$end_result_address.text();
+            var address = $end_result_address.text();
             var telLen = calculateContentSize(tel);
             var nameLen = calculateContentSize(name);
             var addressLen = calculateContentSize(address);
-            $("#end_result_info").css("left", "-" + Math.max(nameLen, addressLen) + "px");// assume address is longer then phone
-            $("#visiable").css("width", Math.max(nameLen, addressLen) + 70);//40 is for the next btn
+            $("#end_result_info").css("left", "-" + Math.max(addressLen, telLen) + "px");
+            $("#visiable").css("width", nameLen + 70);//70 is for the next btn
             nextResultOption++;
             $("#end_result_info").fadeIn("fast", function () {
             });
@@ -269,26 +271,24 @@ function setupEvents() {
         }
 
     });
-    $container.on("click", "#end_result_name , #end_result_tel", function () {
-        var tel =$end_result_tel.text();
+    $container.on("click", "#end_result_name , #end_result_tel ,#end_result_address", function () {
+        var tel = $end_result_tel.text();
         var name = $end_result_name.text();
-        var address =$end_result_address.text();
+        var address = $end_result_address.text();
         var telLen = calculateContentSize(tel);
         var nameLen = calculateContentSize(name);
         var addressLen = calculateContentSize(address);
         var currentPos = parseInt($("#end_result_info").css("left"));
 
         if ($flip_it.hasClass("not_flip")) {
-
             $flip_it.removeClass("not_flip").addClass("fliped");
-            $("#visiable").css({width:Math.max(nameLen, addressLen) + 30});
-            $("#end_result_info").animate({left:currentPos + Math.max(nameLen, addressLen) + 20});
-
+            $("#visiable").css({width:(addressLen) + 30});
+            $("#end_result_info").animate({left:currentPos + Math.max(addressLen, telLen)});
         }
         else {
             $flip_it.removeClass("fliped").addClass("not_flip");
             $("#visiable").css("width");
-            $("#end_result_info").animate({left:"-" + addressLen}, function () {
+            $("#end_result_info").animate({left:"-" + Math.max(addressLen, telLen)}, function () {
                 $("#visiable").css("width", nameLen + 70);
             });
 
@@ -310,7 +310,7 @@ function setupEvents() {
                 var targetOffset = $target.offset().top;
                 $(this).click(function (event) {
                     event.preventDefault();
-                    $(scrollElem).animate({scrollTop:targetOffset}, 400, "easeOutBack", function () {
+                    $(scrollElem).animate({scrollTop:targetOffset}, 400, function () {
                         location.hash = target;
                     });
                 });
@@ -347,12 +347,15 @@ function slotmachine(id, changeto) {
 }
 
 function checkIfNoMoreOptions(optionsArray) {
+   /* var flag = false;*/
     if (optionsArray.length == 0) {
+        flag = true;
         $("#blackBG").fadeIn(function () {
             $("#no_options_msg").fadeIn();
+
         });//animate({"background-color":"black",opacity:0.5},1000);
     }
-
+    /*return flag;*/
 }
 
 function filterPath(string) {
@@ -494,22 +497,24 @@ function wrapItUp(resultArray) {
     $end_result_text.empty();
     var resultArrayLen = resultArray.length;
     if (resultArrayLen == 1) {
-        $(".next_option").hide();
+        $("#end_result_next").hide();
     }
     var rand = Math.floor((Math.random() * resultArrayLen));
-    //$("#result").append(resultArray[rand].name);
     $(".fixed_element_rest_list, #fixed_element_counter").hide();
-    var nameLen = calculateContentSize(resultArray[rand].name);
-    var telLen = calculateContentSize(resultArray[rand].Tel);
-    var addressLen = calculateContentSize(resultArray[rand].Address);
+    if (resultArrayLen != 0) {
+        var nameLen = calculateContentSize(resultArray[rand].name) || "";
+        var telLen = calculateContentSize(resultArray[rand].Tel) || "";
+        var addressLen = calculateContentSize(resultArray[rand].Address) || "";
 
+        console.log(resultArray[rand].name + "-" + resultArray[rand].Tel + "-" + resultArray[rand].Address);
+        $end_result_name.text(resultArray[rand].name/* + '<br>'*/);
+        $end_result_tel.text(resultArray[rand].Tel);
+        $end_result_address.text(resultArray[rand].Address);
+        $("#end_result_info").css("left", "-" + Math.max(addressLen, telLen) + "px");// assume address is longer then phone
+        $("#visiable").css("width", nameLen + 70);//70 is for the next btn
+        $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
+    }
 
-    $end_result_name.text(resultArray[rand].name/* + '<br>'*/);
-   $end_result_tel.text(resultArray[rand].Tel);
-   $end_result_address.text(resultArray[rand].Address);
-    $("#end_result_info").css("left", "-" + ( Math.max(nameLen, addressLen)) + "px");// assume address is longer then phone
-    $("#visiable").css("width", Math.max(nameLen, addressLen) + 70);//40 is for the next btn
-    $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
 
     checkIfNoMoreOptions(resultArray);
     console.log(resultArray);
@@ -525,7 +530,6 @@ function writeOptions(options) {
     }
     else {
         currentNumber = parseInt(currentNumber);
-        //slotmachine('fixed_element_counter', newNumber)
         if (newNumber > currentNumber) {
             decrement(newNumber);
         }
@@ -545,14 +549,14 @@ function writeOptions(options) {
 function increment(newNumber) {
     $fixed_element_counter.text(parseFloat($fixed_element_counter.text()) - 1);
     if (parseFloat($fixed_element_counter.text()) > newNumber) {
-        setTimeout(increment, 170, newNumber)
+        setTimeout(increment, 90, newNumber)
     }
 }
 
 function decrement(newNumber) {
     $fixed_element_counter.text(parseFloat($('#fixed_element_counter').text()) + 1);
     if (parseFloat($fixed_element_counter.text()) < newNumber) {
-        setTimeout(decrement, 170, newNumber)
+        setTimeout(decrement, 90, newNumber)
     }
 }
 
@@ -562,7 +566,6 @@ function calculateContentSize(str) {
 }
 
 function init() {
-
     $("body").append($ruler);
     checkForWindowSize();
     rest = restList.getList();
@@ -579,13 +582,13 @@ function init() {
     $('a').click(function () {
         var elementClicked = $(this).attr("href");
         var destination = $(elementClicked).offset().top;
-        $("html:not(:animated),body:not(:animated)").animate({ scrollTop:destination + 15}, 1000, "easeOutBack", function () {
+        $("html:not(:animated),body:not(:animated)").animate({ scrollTop:destination + 15}, 1000, function () {
 
         });
 
     });
-    $('html').animate({scrollTop:0}, 1000, "easeOutBack");//IE, FF
-    $('body').animate({scrollTop:0}, 1000, "easeOutBack");
+    $('html').animate({scrollTop:0}, 1000);//IE, FF
+    $('body').animate({scrollTop:0}, 1000);
 }
 
 function checkForWindowSize() {
