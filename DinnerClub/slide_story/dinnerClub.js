@@ -21,13 +21,20 @@ var nextResultOption = 0;
 var $ruler = $("<span id='ruler'></span>");
 var story;
 var typeWriterIsOn = false;
+var date = true;
+var so = true;
+var sitting = true;
+var light = true;
+var vol = true;
+var parking = true;
+
 
 /*$.easing.easeOutBack = function (e, f, a, i, h, g) {
-    if (g == undefined) {
-        g = 1.70158
-    }
-    return i * ((f = f / h - 1) * f * ((g + 1) * f + g) + 1) + a;
-};*/
+ if (g == undefined) {
+ g = 1.70158
+ }
+ return i * ((f = f / h - 1) * f * ((g + 1) * f + g) + 1) + a;
+ };*/
 
 $.fn.teletype = function (opts, callback) {
     var $this = this,
@@ -84,10 +91,14 @@ function setupEvents() {
         if (selected == "yes") {
             dateFlag = true;
             dateChosen("yes");
-            $('#date_text').teletype({
-                animDelay:30, // the bigger the number the slower the typing
-                text:story.date.date
-            });
+            if (date) {
+                date = false; //setting back the flag for typing the story
+                $('#date_text').teletype({
+                    animDelay:30, // the bigger the number the slower the typing
+                    text:story.date.date
+                });
+            }
+
         }
         else {
             dateFlag = false;
@@ -97,10 +108,14 @@ function setupEvents() {
     });
     $container.on("click", ".so_select", function () {
         var selected = $(this).attr("value");
-        $('#so_text').teletype({
-            animDelay:30, // the bigger the number the slower the typing
-            text:story.date[selected]
-        });
+        if (so) {
+            so = false; //setting back the flag for typing the story
+            $('#so_text').teletype({
+                animDelay:30, // the bigger the number the slower the typing
+                text:story.date[selected]
+            });
+        }
+
         soChosen(selected);
         $("#sitting").show();
         cameFrom = "so";
@@ -108,38 +123,54 @@ function setupEvents() {
     $container.on("click", ".sitting_select", function () {
         var selected = $(this).attr("value");
         sittingChosen(selected);
-        $('#sitting_text').teletype({
-            animDelay:30, // the bigger the number the slower the typing
-            text:story.barTable[selected]
-        });
+        if (sitting) {
+            sitting = false; //setting back the flag for typing the story
+            $('#sitting_text').teletype({
+                animDelay:30, // the bigger the number the slower the typing
+                text:story.barTable[selected]
+            });
+        }
+
         cameFrom = "sitting";
     });
     $container.on("click", ".light_select", function () {
         var selected = $(this).attr("value");
         lightChosen(selected);
-        $('#light_text').teletype({
-            animDelay:30, // the bigger the number the slower the typing
-            text:story.dimBright[selected]
-        });
+        if (light) {
+            light = false; //setting back the flag for typing the story
+            $('#light_text').teletype({
+                animDelay:30, // the bigger the number the slower the typing
+                text:story.dimBright[selected]
+            });
+        }
+
         $("#volume").show();
         cameFrom = "light";
     });
     $container.on("click", ".volume_select", function () {
         var selected = $(this).attr("value");
         volumeChosen(selected);
-        $('#volume_text').teletype({
-            animDelay:30, // the bigger the number the slower the typing
-            text:story.quietLoud[selected]
-        });
+        if (vol) {
+            vol = false; //setting back the flag for typing the story
+            $('#volume_text').teletype({
+                animDelay:30, // the bigger the number the slower the typing
+                text:story.quietLoud[selected]
+            });
+        }
+
         cameFrom = "vol";
     });
     $container.on("click", ".parking_select", function () {
         var selected = $(this).attr("value");
         parkingChosen(selected);
-        $('#parking_text').teletype({
-            animDelay:30, // the bigger the number the slower the typing
-            text:story.parking[selected]
-        });
+        if (parking) {
+            parking = false; //setting back the flag for typing the story
+            $('#parking_text').teletype({
+                animDelay:30, // the bigger the number the slower the typing
+                text:story.parking[selected]
+            });
+        }
+
         cameFrom = "parking";
 
     });
@@ -153,38 +184,44 @@ function setupEvents() {
         $("#" + cameFrom + "Menu").click();
         switch (cameFrom) {
             case "date":
+                date = true; //setting back the flag for typing the story
                 $("#date_text").html("");
                 writeOptions([]);
                 $(".fixed_element_back_button").hide();
                 $fixed_element_counter.hide();
                 break;
             case "so":
+                so = true;
                 $("#so_text").html("");
                 writeOptions(dateArray);
                 cameFrom = "date";
                 break;
             case "sitting":
+                sitting = true;
                 $("#sitting_text").html("");
-                if(dateFlag){
+                if (dateFlag) {
                     writeOptions(dateArray);
                 }
-                else{
+                else {
                     writeOptions(soArray);
                 }
 
                 cameFrom = "so";
                 break;
             case "light":
+                light = true;
                 $("#light_text").html("");
                 writeOptions(sittingArray);
                 cameFrom = "sitting";
                 break;
             case "vol":
+                vol = true;
                 $("#volume_text").html("");
                 writeOptions(lightArray);
                 cameFrom = "light";
                 break;
             case "parking":
+                parking = true;
                 $("#parking_text").html("");
                 writeOptions(volumeArray);
                 cameFrom = "vol";
@@ -193,9 +230,9 @@ function setupEvents() {
     });
     $container.on("click", "#end_result_next", function () {
         //debugger;
-       /* if (resultArray == 1) {
-               $("#end_result_next").hide();
-           }*/
+        /* if (resultArray == 1) {
+         $("#end_result_next").hide();
+         }*/
         $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
         $("#end_result_info").fadeOut(500, function () {
@@ -235,39 +272,66 @@ function setupEvents() {
         });
     });
     $container.on("click", "#contact_submit", function () {
+        $("#contact_submit").html("").addClass("loader");
         var name = $("#name").val();
         var customerMail = $("#customer_mail").val();
         var message = $("#Message").val();
-        $.ajax({
-            url:"send_contact.php",
-            type:"POST",
-            data:{
-                name:name,
-                customerMail:customerMail,
-                message:message
-            },
-            success:function (data) {
-                console.log(data);
-            }});
-        debugger;
+        if (name || customerMail || message) {
+            $.ajax({
+                url:"send_contact_gm.php",
+                type:"POST",
+                data:{
+                    name:name,
+                    customerMail:customerMail,
+                    message:message
+                },
+                success:function (data) {
+                    closeContact();
+                    console.log(data);
+                },
+                error:function (data) {
+
+                    console.log("error - " + data);
+                }
+            });
+        }
+        else {
+            closeContact();
+        }
+
+
+        //debugger;
+
 
     });
     $container.on("click", "#mailUs", function () {
-        $("#fixed_element_contact").show().animate({"left":"500"}, 500);
+        $("#fixed_element_contact").show().animate({"left":"436"}, 500);
     });
     $container.on("click", "#mailUsClose", function () {
         $("#fixed_element_contact").animate({"left":"-550"}, 500, function () {
             $("#fixed_element_contact").hide();
+            $fixed_element_about_content.removeClass("on").addClass("off");
+            $fixed_element_about_content.animate({left:"-436px"}, 500, function () {
+                $("#about_btn").css({left:"436px"});
+                $("#about_btn").fadeIn();
+            });
         });
     });
     $container.on("click", "#about_btn , #aboutUsClose", function () {
         if ($fixed_element_about_content.hasClass("off")) {
+            $("#about_btn").hide();
+            //$("#about_btn").css({left:"460px"});
             $fixed_element_about_content.removeClass("off").addClass("on");
             $fixed_element_about_content.animate({left:"0px"}, 500);
         }
         else {
             $fixed_element_about_content.removeClass("on").addClass("off");
-            $fixed_element_about_content.animate({left:"-500px"}, 500);
+            $fixed_element_about_content.animate({left:"-436px"}, 500, function () {
+                $("#about_btn").css({left:"436px"});
+                $("#about_btn").fadeIn();
+            });
+
+            // $("#about_btn").css({left:"500px"});
         }
 
     });
@@ -319,6 +383,16 @@ function setupEvents() {
     });
 }
 
+function closeContact() {
+    $("#contact_submit").html("").removeClass("loader");
+    $("#fixed_element_contact").animate({"left":"-550"}, 500, function () {
+        $("#name").val("");
+        $("#customer_mail").val("");
+        $("#Message").val("");
+        $("#fixed_element_contact").hide();
+    });
+}
+
 
 function slotmachine(id, changeto) {
     var thisid = '#' + id;
@@ -347,7 +421,7 @@ function slotmachine(id, changeto) {
 }
 
 function checkIfNoMoreOptions(optionsArray) {
-   /* var flag = false;*/
+    /* var flag = false;*/
     if (optionsArray.length == 0) {
         flag = true;
         $("#blackBG").fadeIn(function () {

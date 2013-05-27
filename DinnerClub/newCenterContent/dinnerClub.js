@@ -27,6 +27,8 @@ var sitting = true;
 var light = true;
 var vol = true;
 var parking = true;
+var screenWidth;
+var jscrollPane = null;
 
 
 /*$.easing.easeOutBack = function (e, f, a, i, h, g) {
@@ -63,6 +65,7 @@ $(document).ready(function () {
 function setupEvents() {
     var windowWasSmall = false;
     $(window).resize(function () {
+        jscrollPane.reinitialise();
         var currentUrl = location.href;
         var section = currentUrl.split("#");
         if ($(window).width() < 1250 && resizeFlag) {
@@ -233,7 +236,7 @@ function setupEvents() {
         var randOption = Math.floor((Math.random() * resultArray.length));
         $("#result_rest").fadeOut(500, function () {
             $("#result_details").removeClass("fliped").addClass("not_flip");
-            $("#result_details").animate({right:"-100%"});
+            $("#result_details").animate({right:"-" + (screenWidth + 50)}, 750);
             if (nextResultOption < resultArray.length) {
                 if (resultArray[nextResultOption].name == $end_result_name.text()) {
                     nextResultOption++;
@@ -269,46 +272,55 @@ function setupEvents() {
         });
     });
     $container.on("click", "#contact_submit", function () {
-        $("#contact_submit").html("").addClass("loader");
-        var name = $("#name").val();
-        var customerMail = $("#customer_mail").val();
-        var message = $("#Message").val();
-        if (name || customerMail || message) {
-            $.ajax({
-                url:"send_contact_gm.php",
-                type:"POST",
-                data:{
-                    name:name,
-                    customerMail:customerMail,
-                    message:message
-                },
-                success:function (data) {
-                    closeContact();
-                    console.log(data);
-                },
-                error:function (data) {
-
-                    console.log("error - " + data);
-                }
-            });
+        if ($(this).hasClass("close")) {
+            closeContact();
+            $(this).removeClass("close").addClass("send");
         }
         else {
-            closeContact();
+            $("#contact_submit").removeClass("send").addClass("loader");
+            $(".loader_gif").show();
+            var name = $("#name").val();
+            var customerMail = $("#customer_mail").val();
+            var message = $("#Message").val();
+            if (name || customerMail || message) {
+                $.ajax({
+                    url:"send_contact_gm.php",
+                    type:"POST",
+                    data:{
+                        name:name,
+                        customerMail:customerMail,
+                        message:message
+                    },
+                    success:function (data) {
+                        //
+                        console.log(data);
+                        $(".loader_gif").hide();
+                        $("#contact_submit").removeClass("loader").addClass("close");
+
+
+                    },
+                    error:function (data) {
+                        $(".loader_gif").hide();
+                        $("#contact_submit").removeClass("loader").addClass("close");
+                        console.log("error - " + data);
+                    }
+
+                });
+            }
+            else {
+                // closeContact();
+            }
+
         }
-
-
-        //debugger;
-
-
     });
     $container.on("click", "#mailUs", function () {
-        $("#fixed_element_contact").show().animate({"left":"436"}, 500);
+        $("#fixed_element_contact").show().animate({"left":"434"}, 500);
     });
     $container.on("click", "#mailUsClose", function () {
         $("#fixed_element_contact").animate({"left":"-550"}, 500, function () {
             $("#fixed_element_contact").hide();
             $fixed_element_about_content.removeClass("on").addClass("off");
-            $fixed_element_about_content.animate({left:"-436px"}, 500, function () {
+            $fixed_element_about_content.animate({left:"-440px"}, 500, function () {
                 $("#about_btn").css({left:"436px"});
                 $("#about_btn").fadeIn();
             });
@@ -317,30 +329,26 @@ function setupEvents() {
     $container.on("click", "#about_btn , #aboutUsClose", function () {
         if ($fixed_element_about_content.hasClass("off")) {
             $("#about_btn").hide();
-            //$("#about_btn").css({left:"460px"});
             $fixed_element_about_content.removeClass("off").addClass("on");
-            $fixed_element_about_content.animate({left:"0px"}, 500);
+            $fixed_element_about_content.animate({left:"-2px"}, 500);
         }
         else {
             $fixed_element_about_content.removeClass("on").addClass("off");
-            $fixed_element_about_content.animate({left:"-436px"}, 500, function () {
+            $fixed_element_about_content.animate({left:"-440px"}, 500, function () {
                 $("#about_btn").css({left:"436px"});
                 $("#about_btn").fadeIn();
             });
-
-            // $("#about_btn").css({left:"500px"});
         }
-
     });
     $container.on("click", "#result_rest , #result_details", function () {
         if ($("#result_details").hasClass("not_flip")) {
             $("#result_details").removeClass("not_flip").addClass("fliped");
             //$("#visiable").css({width:(addressLen) + 30});
-            $("#result_details").animate({right:"0%"});
+            $("#result_details").animate({right:"0px"}, 750);
         }
         else {
             $("#result_details").removeClass("fliped").addClass("not_flip");
-            $("#result_details").animate({right:"-3000px"});
+            $("#result_details").animate({right:"-" + (screenWidth + 50)}, 750);
         }
     });
 
@@ -368,6 +376,7 @@ function setupEvents() {
 }
 
 function closeContact() {
+    $(".loader_gif").hide();
     $("#contact_submit").html("").removeClass("loader");
     $("#fixed_element_contact").animate({"left":"-550"}, 500, function () {
         $("#name").val("");
@@ -445,12 +454,17 @@ function scrollableElement(els) {
 function setStyle() {
     var h = $(window).height();
     var w = $(window).width();
+    screenWidth = w;
     $(".section").css({width:w, height:h});
+    var sectionNewWidth = w * 0.8;
+    $(".sectionNew").css({width:sectionNewWidth, height:h});
     $(".sectionRes").css({width:w, height:h});
-    var resWidth = w * 0.8;
-   /* $(".result_pos").css({width:resWidth});*/
-
-    // $(".section").first().css({height:h+100});
+    jscrollPane = $("#about_content").jScrollPane({
+        verticalDragMinHeight:70,
+        verticalDragMaxHeight:249,
+        verticalGutter:10,
+        showArrows:false
+    }).data('jsp');
 }
 
 function dateChosen(isDate) {

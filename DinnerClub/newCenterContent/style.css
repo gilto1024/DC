@@ -142,13 +142,16 @@ a:visited {
 }
 
 #no_options_msg {
-    display: none;
     position: fixed;
-    top: 40%;
-    left: 33%;
-    width: 500px;
-    height: 200px;
+    left: 50%;
+    top: 50%;
     z-index: 100;
+    height: 50px;
+    margin-top: -25px;
+    width: 287px;
+    margin-left: -193px;
+    display: none;
+
 }
 
 #resize_msg {
@@ -163,8 +166,6 @@ a:visited {
 }
 
 #no_options_msg_back {
-    position: absolute;
-    top: 25px;
     font-size: 25px;
     cursor: pointer;
 }
@@ -195,20 +196,22 @@ a:visited {
     top: 0px;
     left: -500px;
     z-index: 2;
+    text-align: left;
+    background-color: rgb(238, 33, 100);
+    /*background-color: black;*/
 }
 
 #about_content {
     height: 100%;
     width: 436px;
-    background-color: rgb(238, 33, 100);
-    margin-top: -20px;
+    overflow: auto;
 }
 
 #about_btn {
     width: 38px;
     height: 66px;
     position: absolute;
-    top: 49%;
+    top: 50%;
     left: 500px;
     background: url(img/info.PNG) no-repeat;
     cursor: pointer;
@@ -218,14 +221,16 @@ a:visited {
     -moz-border-radius-bottomright: 5px;
     -webkit-border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
-
+    margin-top: -33px;
 }
 
 .para {
     font-size: 18px;
     font-family: Helvetica W01 Light;
-    padding-top: 7%;
-    padding-left: 10%;
+    /* padding-top: 7%;
+     padding-left: 10%;*/
+    margin-top: 43px;
+    margin-left: 63px;
     color: rgb(255, 255, 255);
     line-height: 26px;
 }
@@ -358,13 +363,25 @@ a:visited {
     width: 84px;
     height: 38px;
     cursor: pointer;
-    background: url(img/send.png) no-repeat 0 0;
     margin-left: 252px;
     margin-top: 27px;
+    position: relative;
 }
 
-#contact_submit:hover {
+#contact_submit.send:hover {
     background: url(img/send.png) no-repeat 0px -38px;
+}
+
+#contact_submit.send {
+    background: url(img/send.png) no-repeat 0 0;
+}
+
+#contact_submit.close {
+    background: url(img/send.png) no-repeat 0 -114px;
+}
+
+#contact_submit.loader {
+    background: url(img/send.png) no-repeat 0 -76px;
 }
 
 #mailUs {
@@ -383,6 +400,7 @@ a:visited {
     height: 33px;
     position: absolute;
     top: 50%;
+    margin-top: -16px;
     left: 12px;
 }
 
@@ -392,14 +410,25 @@ a:visited {
     height: 33px;
     position: absolute;
     top: 50%;
+    margin-top: -16px;
     left: 12px;
     cursor: pointer;
+    z-index: 9;
 }
 
-.loader {
-    background: url(img/ajax-loader.gif);
-    width: 56px;
-    height: 21px;
+.loader_gif {
+    background: url(img/loader.gif);
+    width: 34px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    display: none;
+
+}
+
+#ofLoder {
+    position: relative;
 }
 
 #Message {
@@ -438,7 +467,8 @@ input {
     margin-top: 70px;
     cursor: pointer;
 }
-#result_details{
+
+#result_details {
     position: absolute;
     right: -3000px;
     width: 100%;
@@ -446,10 +476,48 @@ input {
     letter-spacing: -1px;
     font-size: 24px;
 }
-#result_tel{
+
+#result_tel {
     text-align: center;
 }
-#result_address{
+
+#result_address {
     text-align: center;
 
+}
+
+.content_wrapper {
+    /* width: 100%;*/
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /*  margin-top: 90px;*/
+    text-align: left;
+}
+
+.sectionNew {
+    width: 80%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 90px;
+
+}
+
+.ques {
+    float: left;
+    font-size: 48px;
+    letter-spacing: -2px;
+    line-height: 48px;
+    margin-top: 25px;
+    width: 450px;
+}
+
+.answer {
+    float: left;
+    margin-left: 68px;
+    font-weight: bold;
+    font-size: 64px;
+    margin-top: 21px;
+    line-height: 53px;
 }

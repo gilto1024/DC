@@ -2,11 +2,9 @@
 header('Content-Type: text/html');
 require_once ("PHPMailer/class.phpmailer.php");
 
-$subject =$_POST['subject'];
-$message=$_POST['detail'];
-$mail_from=$_POST['customer_mail'];
-$header="from: $name <$mail_from>";
 $name = $_POST['name'];
+$customerMail = $_POST['customerMail'];
+$message = $_POST['message'];
 //include("class.smtp.php"); // optional, gets called from within class.phpmailer.php if not already loaded
 
 $mailer = new PHPMailer(); // the true param means it will throw exceptions on errors, which we need to catch
@@ -18,11 +16,11 @@ $mailer->IsSMTP(); // telling the class to use SMTP
  			$mailer->SMTPSecure = "tls";
  			$mailer->Host = "smtp.gmail.com";
  			$mailer->Port = 587;
- 			$mailer->Username = "gilto1024@gmail.com";
- 			$mailer->Password = "naamalevi20";
- 			$mailer->SetFrom($mail_from,'Customer Email');
+ 			$mailer->Username = "dinnerclub13@gmail.com";
+ 			$mailer->Password = "dinnerclub";
+ 			$mailer->SetFrom($customerMail,'Customer Email');
  			$mailer->FromName = $name;
- 			$mailer->AddAddress('gilto1024@gmail.com');
+ 			$mailer->AddAddress('dinnerclub13@gmail.com');
  			$mailer->Subject = $subject;
  			$mailer->Body = $message;
  			$mailer->IsHTML (false);
@@ -32,7 +30,7 @@ $mailer->IsSMTP(); // telling the class to use SMTP
  			}
  			else
  			{
- 				echo "yes";
+ 				echo "msg sent";
  			}
 
 	?>

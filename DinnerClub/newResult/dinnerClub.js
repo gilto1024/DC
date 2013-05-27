@@ -228,40 +228,37 @@ function setupEvents() {
                 break;
         }
     });
-    $container.on("click", "#end_result_next", function () {
-        //debugger;
-        /* if (resultArray == 1) {
-         $("#end_result_next").hide();
-         }*/
+    $container.on("click", "#result_next", function () {
         $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
-        $("#end_result_info").fadeOut(500, function () {
+        $("#result_rest").fadeOut(500, function () {
+            $("#result_details").removeClass("fliped").addClass("not_flip");
+            $("#result_details").animate({right:"-100%"});
             if (nextResultOption < resultArray.length) {
                 if (resultArray[nextResultOption].name == $end_result_name.text()) {
                     nextResultOption++;
-                    debugger;
                 }
-                $end_result_tel.text(resultArray[nextResultOption].Tel);
-                $end_result_name.text(resultArray[nextResultOption].name);
-                $end_result_address.text(resultArray[nextResultOption].Address);
+                $("#result_tel").text(resultArray[nextResultOption].Tel);
+                $("#result_rest").text(resultArray[nextResultOption].name);
+                $("#result_address").text(resultArray[nextResultOption].Address);
 
             }
             else {
                 nextResultOption = 0;
-                $end_result_tel.text(resultArray[nextResultOption].Tel);
-                $end_result_name.text(resultArray[nextResultOption].name);
-                $end_result_address.text(resultArray[nextResultOption].Address);
+                $("#result_tel").text(resultArray[nextResultOption].Tel);
+                $("#result_rest").text(resultArray[nextResultOption].name);
+                $("#result_address").text(resultArray[nextResultOption].Address);
             }
-            var tel = $end_result_tel.text();
-            var name = $end_result_name.text();
-            var address = $end_result_address.text();
-            var telLen = calculateContentSize(tel);
-            var nameLen = calculateContentSize(name);
-            var addressLen = calculateContentSize(address);
-            $("#end_result_info").css("left", "-" + Math.max(addressLen, telLen) + "px");
-            $("#visiable").css("width", nameLen + 70);//70 is for the next btn
+            /*  var tel = $end_result_tel.text();
+             var name = $end_result_name.text();
+             var address = $end_result_address.text();*/
+            /*var telLen = calculateContentSize(tel);
+             var nameLen = calculateContentSize(name);
+             var addressLen = calculateContentSize(address);*/
+            /*   $("#end_result_info").css("left", "-" + Math.max(addressLen, telLen) + "px");
+             $("#visiable").css("width", nameLen + 70);//70 is for the next btn*/
             nextResultOption++;
-            $("#end_result_info").fadeIn("fast", function () {
+            $("#result_rest").fadeIn("fast", function () {
             });
         });
     });
@@ -335,28 +332,15 @@ function setupEvents() {
         }
 
     });
-    $container.on("click", "#end_result_name , #end_result_tel ,#end_result_address", function () {
-        var tel = $end_result_tel.text();
-        var name = $end_result_name.text();
-        var address = $end_result_address.text();
-        var telLen = calculateContentSize(tel);
-        var nameLen = calculateContentSize(name);
-        var addressLen = calculateContentSize(address);
-        var currentPos = parseInt($("#end_result_info").css("left"));
-
-        if ($flip_it.hasClass("not_flip")) {
-            $flip_it.removeClass("not_flip").addClass("fliped");
-            $("#visiable").css({width:(addressLen) + 30});
-            $("#end_result_info").animate({left:currentPos + Math.max(addressLen, telLen)});
+    $container.on("click", "#result_rest , #result_details", function () {
+        if ($("#result_details").hasClass("not_flip")) {
+            $("#result_details").removeClass("not_flip").addClass("fliped");
+            //$("#visiable").css({width:(addressLen) + 30});
+            $("#result_details").animate({right:"0%"});
         }
         else {
-            $flip_it.removeClass("fliped").addClass("not_flip");
-            $("#visiable").css("width");
-            $("#end_result_info").animate({left:"-" + Math.max(addressLen, telLen)}, function () {
-                $("#visiable").css("width", nameLen + 70);
-            });
-
-
+            $("#result_details").removeClass("fliped").addClass("not_flip");
+            $("#result_details").animate({right:"-3000px"});
         }
     });
 
@@ -462,6 +446,10 @@ function setStyle() {
     var h = $(window).height();
     var w = $(window).width();
     $(".section").css({width:w, height:h});
+    $(".sectionRes").css({width:w, height:h});
+    var resWidth = w * 0.8;
+   /* $(".result_pos").css({width:resWidth});*/
+
     // $(".section").first().css({height:h+100});
 }
 
@@ -576,17 +564,11 @@ function wrapItUp(resultArray) {
     var rand = Math.floor((Math.random() * resultArrayLen));
     $(".fixed_element_rest_list, #fixed_element_counter").hide();
     if (resultArrayLen != 0) {
-        var nameLen = calculateContentSize(resultArray[rand].name) || "";
-        var telLen = calculateContentSize(resultArray[rand].Tel) || "";
-        var addressLen = calculateContentSize(resultArray[rand].Address) || "";
-
         console.log(resultArray[rand].name + "-" + resultArray[rand].Tel + "-" + resultArray[rand].Address);
-        $end_result_name.text(resultArray[rand].name/* + '<br>'*/);
-        $end_result_tel.text(resultArray[rand].Tel);
-        $end_result_address.text(resultArray[rand].Address);
-        $("#end_result_info").css("left", "-" + Math.max(addressLen, telLen) + "px");// assume address is longer then phone
-        $("#visiable").css("width", nameLen + 70);//70 is for the next btn
-        $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
+        $("#result_rest").text(resultArray[rand].name/* + '<br>'*/);
+        $("#result_tel").text(resultArray[rand].Tel);
+        $("#result_address").text(resultArray[rand].Address);
+        $("#result_details").removeClass("fliped").removeClass("not_flip").addClass("not_flip");
     }
 
 

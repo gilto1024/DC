@@ -24,7 +24,7 @@ a:visited {
 }
 
 .section {
-    padding-left: 13%;
+    padding-left: 133px;
     padding-top: 90px;
 }
 
@@ -53,7 +53,7 @@ a:visited {
 
 .fixed_element_rest_list {
     position: fixed;
-    top: 20px;
+   /* top: 20px;*/
     right: 0px;;
     width: 200px;
     height: 200px;;
@@ -88,7 +88,7 @@ a:visited {
 .question {
     font-size: 48px;
     float: left;
-    width: 30%;
+    width: 350px;
     margin-top: 25px;
     letter-spacing: -2px;
     line-height: 48px;
@@ -175,17 +175,19 @@ a:visited {
 
 #fixed_element_about_content {
     height: 100%;
-    width: 550px;
+    width: 440px;
     opacity: 0.9;
     position: fixed;
-    top: -20px;
+    top: 0px;
     left: -500px;
+    z-index: 2;
 }
 
 #about_content {
     height: 100%;
-    width: 500px;
+    width: 436px;
     background-color: rgb(238, 33, 100);
+    margin-top: -20px;
 }
 
 #about_btn {
@@ -206,11 +208,12 @@ a:visited {
 }
 
 .para {
-    font-size: 20px;
-    font-family: Helvetica W01 Bold;
-    padding-top: 10%;
+    font-size: 18px;
+    font-family: Helvetica W01 Light;
+    padding-top: 7%;
     padding-left: 10%;
-    color: white;
+    color: rgb(255, 255, 255);
+    line-height: 26px;
 }
 
 #end_result {
@@ -269,10 +272,10 @@ a:visited {
 
 #story_text {
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 55px;
     top: 20%;
-    left: 10%;
+    padding-left: 133px;
     font-size: 24px;
     overflow: hidden;
     color: black;
@@ -312,43 +315,85 @@ a:visited {
 #fixed_element_contact {
     display: none;
     height: 100%;
-    width: 550px;
+    width: 436px;
     opacity: 0.9;
     position: fixed;
     top: 0px;
     left: -550px;
     background-color: #778899;
+    z-index: 0;
 }
 
 #fixed_element_contact_body {
-    margin-top: 22%;
     height: 250px;
-    color: white;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    padding-top: 7%;
+    padding-left: 10%;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: Helvetica W01 Light;
 
 }
 
 #contact_header {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
+}
+#contact_submit{
+    width: 84px;
+    height: 38px;
+    cursor: pointer;
+    background: url(img/send.png) no-repeat 0 0;
+    margin-left: 252px;
+    margin-top: 27px;
+}
+#contact_submit:hover{
+    background: url(img/send.png) no-repeat 0px -38px;
 }
 
 #mailUs {
-
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 64px;
+    font-family: Helvetica W01 Bold;
+    line-height: 17px;
+    margin-left: 103px;
+    letter-spacing: -3px;
 }
 
+
 #mailUsClose {
-    background: url(img/close.png) no-repeat;
-    width: 18px;
-    height: 36px;
+    background: url(img/about_close.png) no-repeat;
+    width: 17px;
+    height: 33px;
     position: absolute;
     top: 50%;
     left: 12px;
 }
 
 #aboutUsClose {
-    background: url(img/close.png) no-repeat;
-    width: 18px;
-    height: 36px;
+    background: url(img/about_close.png) no-repeat;
+    width: 17px;
+    height: 33px;
     position: absolute;
     top: 50%;
     left: 12px;
+    cursor: pointer;
+}
+.loader{
+    background: url(img/ajax-loader.gif);
+    width: 56px;
+    height: 21px;
+}
+#Message{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+input{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
 }
