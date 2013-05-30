@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0544b53c-2c59-4cd9-8668-dafd162d6fa9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DinnerClub/slide_story/index.html" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DinnerClub/slide_story/style.css" afterPath="$PROJECT_DIR$/DinnerClub/slide_story/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DinnerClub/newCenterContent/dinnerClub.js" afterPath="$PROJECT_DIR$/DinnerClub/newCenterContent/dinnerClub.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DinnerClub/newCenterContent/index.html" afterPath="$PROJECT_DIR$/DinnerClub/newCenterContent/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DinnerClub/newCenterContent/style.css" afterPath="$PROJECT_DIR$/DinnerClub/newCenterContent/style.css" />
     </list>
     <ignored path="Gil.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,28 +25,40 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dinnerClub.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="273" column="83" selection-start="9384" selection-end="9384" vertical-scroll-proportion="-10.68">
+            <state line="29" column="18" selection-start="1547" selection-end="1556" vertical-scroll-proportion="-18.961538">
+              <folding>
+                <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+                <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#11;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dinnerClub.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/dinnerClub.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="415" column="36" selection-start="14554" selection-end="14554" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/style.css">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="287" column="23" selection-start="4433" selection-end="4433" vertical-scroll-proportion="0.958231">
+            <state line="48" column="13" selection-start="789" selection-end="789" vertical-scroll-proportion="0.5441341">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/index.html">
+      <file leaf-file-name="jquery.jscrollpane.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/scrollbar/jquery.jscrollpane.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="24" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-5.392157">
+            <state line="52" column="16" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -65,30 +77,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/DinnerClub/mail.php" />
-        <option value="$PROJECT_DIR$/DinnerClub/send_contact.php" />
-        <option value="$PROJECT_DIR$/DinnerClub/index.html" />
-        <option value="$PROJECT_DIR$/DinnerClub/style.css" />
-        <option value="$PROJECT_DIR$/DinnerClub/dinnerClub.js" />
-        <option value="$PROJECT_DIR$/DinnerClub/slide_story/type.js" />
-        <option value="$PROJECT_DIR$/DinnerClub/slide_story/story.js" />
-        <option value="$PROJECT_DIR$/DinnerClub/slide/restList.js" />
-        <option value="$PROJECT_DIR$/DinnerClub/testSlide.html" />
         <option value="$PROJECT_DIR$/DinnerClub/slide_story/restList.js" />
-        <option value="$PROJECT_DIR$/DinnerClub/slide_story/send_contact.php" />
         <option value="$PROJECT_DIR$/DinnerClub/contact/send_contact.php" />
         <option value="$PROJECT_DIR$/DinnerClub/slide_story/send_contactMy.php" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/send_contact.php" />
+        <option value="$PROJECT_DIR$/DinnerClub/slide_story/send_contact_gm.php" />
         <option value="$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js" />
         <option value="$PROJECT_DIR$/DinnerClub/slide_story/index.html" />
         <option value="$PROJECT_DIR$/DinnerClub/slide_story/style.css" />
+        <option value="$PROJECT_DIR$/DinnerClub/newResult/dinnerClub.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/newResult/index.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/index.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/newResult/style.css" />
+        <option value="$PROJECT_DIR$/DinnerClub/newCenterContent/scrollbar/jquery.jscrollpane.css" />
+        <option value="$PROJECT_DIR$/DinnerClub/newCenterContent/index.html" />
+        <option value="$PROJECT_DIR$/DinnerClub/newCenterContent/dinnerClub.js" />
+        <option value="$PROJECT_DIR$/DinnerClub/newCenterContent/style.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -138,42 +150,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DinnerClub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slide_story" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DinnerClub" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contact" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -184,8 +160,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings.github" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PublishConfig">
     <servers>
@@ -200,10 +176,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitRepo\Gil\DinnerClub\slide_story" />
-      <recent name="C:\GitRepo\Gil\DinnerClub\contact" />
-      <recent name="C:\GitRepo\Gil\DinnerClub" />
-      <recent name="C:\GitRepo\Gil\DinnerClub\img" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\newCenterContent" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\newCenterContent\img" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\newResult\img" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\newResult" />
+      <recent name="C:\GitRepo\Gil\DinnerClub\slide_story\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitRepo\Gil\DinnerClub\contact" />
@@ -230,13 +207,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1893397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14971007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -304,98 +281,97 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DinnerClub/contact/PHPMailer/aboutus.html">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="48" selection-start="5408" selection-end="5408" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/cookieeee.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/jquery.text-effects.js">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="9" selection-start="1607" selection-end="1607" vertical-scroll-proportion="0.3329609" />
+        <state line="275" column="22" selection-start="9843" selection-end="9843" vertical-scroll-proportion="0.47180668" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/story.js">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/dinnerClub.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+        <state line="292" column="15" selection-start="9334" selection-end="9834" vertical-scroll-proportion="-22.48">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/restList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="554" column="0" selection-start="9979" selection-end="9979" vertical-scroll-proportion="0.96201116">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3693901" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/testSlide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="9" selection-start="466" selection-end="562" vertical-scroll-proportion="0.48906788" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/contact/mailTest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="12" selection-start="746" selection-end="2470" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/contact/send_contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="182" selection-end="182" vertical-scroll-proportion="0.1329609" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/send_contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="48" selection-start="862" selection-end="862" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/restList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="25" selection-start="5074" selection-end="5074" vertical-scroll-proportion="0.018994413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/img/back.png">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/img/about_scroll.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/img/close.png">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/img/about_close.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide/style.css">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/img/close.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/img/send.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newResult/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="0" selection-start="2597" selection-end="2597" vertical-scroll-proportion="0.33253872">
+        <state line="356" column="0" selection-start="5523" selection-end="5963" vertical-scroll-proportion="0.20268758" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/img/loader.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/img/about_scroll.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/scrollbar/jquery.jscrollpane.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="16" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/dinnerClub.js">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="273" column="83" selection-start="9384" selection-end="9384" vertical-scroll-proportion="-10.68">
+        <state line="71" column="102" selection-start="2010" selection-end="2023" vertical-scroll-proportion="0.72612196">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/index.html">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="24" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-5.392157">
+        <state line="29" column="18" selection-start="1547" selection-end="1556" vertical-scroll-proportion="-18.961538">
+          <folding>
+            <element signature="tag#div#1;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#11;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/dinnerClub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="415" column="36" selection-start="14554" selection-end="14554" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DinnerClub/slide_story/style.css">
+    <entry file="file://$PROJECT_DIR$/DinnerClub/newCenterContent/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="23" selection-start="4433" selection-end="4433" vertical-scroll-proportion="0.958231">
+        <state line="48" column="13" selection-start="789" selection-end="789" vertical-scroll-proportion="0.5441341">
           <folding />
         </state>
       </provider>

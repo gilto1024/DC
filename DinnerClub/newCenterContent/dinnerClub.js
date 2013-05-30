@@ -68,25 +68,50 @@ function setupEvents() {
         jscrollPane.reinitialise();
         var currentUrl = location.href;
         var section = currentUrl.split("#");
-        if ($(window).width() < 1250 && resizeFlag) {
+        if (($(window).width() < 1250 || $(window).height() < 650) && resizeFlag) {
             $("#resizeBG").show(500, function () {
                 $("#resize_msg").show(200, function () {
                     windowWasSmall = true;
+                    /*setStyle();*/
+                    console.log("show resize msg");
                 });
             });
             resizeFlag = false;
         }
-        if ($(window).width() > 1250) {
+        if ($(window).width() > 1250 && $(window).height() > 650) {
             $("#resize_msg").hide(500, function () {
                 $("#resizeBG").hide(200, function () {
                     if (windowWasSmall) {
-                        init();
+                        windowWasSmall = false;
+                        console.log("hide resize msg");
+                        //init();
                         document.location.reload(true);
+                        //setStyle();
                     }
                 });
             });
             resizeFlag = true;
         }
+    });
+
+    $("#pass_welcome").on("keydown", '#passwordInput', function (event) {
+        if (event.keyCode == 13) {
+            handlePassword($(this).val());
+        }
+
+    });
+
+    $("#pass_welcome").on("click", '#enter_pass', function (event) {
+        handlePassword($("#passwordInput").val());
+    });
+
+    $("#pass_welcome").on("focus", '#passwordInput', function (event) {
+        if ($("#enter_pass").hasClass("red"))
+            $("#enter_pass").fadeOut(200, function () {
+                $("#enter_pass").text("Enter");
+                $("#enter_pass").removeClass("red");
+                $("#enter_pass").fadeIn();
+            });
     });
 
     $container.on("click", ".date_select", function () {
@@ -101,13 +126,13 @@ function setupEvents() {
                     text:story.date.date
                 });
             }
-
         }
         else {
             dateFlag = false;
             dateChosen("no");
         }
         cameFrom = "date";
+        trackEvent("date_choice", "click", selected);
     });
     $container.on("click", ".so_select", function () {
         var selected = $(this).attr("value");
@@ -122,6 +147,7 @@ function setupEvents() {
         soChosen(selected);
         $("#sitting").show();
         cameFrom = "so";
+        trackEvent("so_choice", "click", selected);
     });
     $container.on("click", ".sitting_select", function () {
         var selected = $(this).attr("value");
@@ -135,6 +161,7 @@ function setupEvents() {
         }
 
         cameFrom = "sitting";
+        trackEvent("sitting_choice", "click", selected)
     });
     $container.on("click", ".light_select", function () {
         var selected = $(this).attr("value");
@@ -149,6 +176,7 @@ function setupEvents() {
 
         $("#volume").show();
         cameFrom = "light";
+        trackEvent("light_choice", "click", selected);
     });
     $container.on("click", ".volume_select", function () {
         var selected = $(this).attr("value");
@@ -162,6 +190,7 @@ function setupEvents() {
         }
 
         cameFrom = "vol";
+        trackEvent("volume_choice", "click", selected);
     });
     $container.on("click", ".parking_select", function () {
         var selected = $(this).attr("value");
@@ -175,9 +204,11 @@ function setupEvents() {
         }
 
         cameFrom = "parking";
+        trackEvent("parking", "click", selected);
 
     });
     $container.on("click", ".fixed_element_back_button, #no_options_msg_back", function () {
+        trackEvent("back_btn", "click", cameFrom);
         $fixed_element_counter.show();
         if ($(this).attr("id") == "no_options_msg_back") {
             $("#no_options_msg").fadeOut(function () {
@@ -232,6 +263,7 @@ function setupEvents() {
         }
     });
     $container.on("click", "#result_next", function () {
+        trackEvent("result", "click", "next_result");
         $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
         $("#result_rest").fadeOut(500, function () {
@@ -252,14 +284,6 @@ function setupEvents() {
                 $("#result_rest").text(resultArray[nextResultOption].name);
                 $("#result_address").text(resultArray[nextResultOption].Address);
             }
-            /*  var tel = $end_result_tel.text();
-             var name = $end_result_name.text();
-             var address = $end_result_address.text();*/
-            /*var telLen = calculateContentSize(tel);
-             var nameLen = calculateContentSize(name);
-             var addressLen = calculateContentSize(address);*/
-            /*   $("#end_result_info").css("left", "-" + Math.max(addressLen, telLen) + "px");
-             $("#visiable").css("width", nameLen + 70);//70 is for the next btn*/
             nextResultOption++;
             $("#result_rest").fadeIn("fast", function () {
             });
@@ -315,6 +339,7 @@ function setupEvents() {
     });
     $container.on("click", "#mailUs", function () {
         $("#fixed_element_contact").show().animate({"left":"434"}, 500);
+        trackEvent("contact", "click", "show");
     });
     $container.on("click", "#mailUsClose", function () {
         $("#fixed_element_contact").animate({"left":"-550"}, 500, function () {
@@ -325,12 +350,15 @@ function setupEvents() {
                 $("#about_btn").fadeIn();
             });
         });
+        trackEvent("contact", "click", "hide");
     });
     $container.on("click", "#about_btn , #aboutUsClose", function () {
+
         if ($fixed_element_about_content.hasClass("off")) {
             $("#about_btn").hide();
             $fixed_element_about_content.removeClass("off").addClass("on");
             $fixed_element_about_content.animate({left:"-2px"}, 500);
+            trackEvent("about", "click", "show");
         }
         else {
             $fixed_element_about_content.removeClass("on").addClass("off");
@@ -338,6 +366,7 @@ function setupEvents() {
                 $("#about_btn").css({left:"436px"});
                 $("#about_btn").fadeIn();
             });
+            trackEvent("about", "click", "hide");
         }
     });
     $container.on("click", "#result_rest , #result_details", function () {
@@ -345,10 +374,12 @@ function setupEvents() {
             $("#result_details").removeClass("not_flip").addClass("fliped");
             //$("#visiable").css({width:(addressLen) + 30});
             $("#result_details").animate({right:"0px"}, 750);
+            trackEvent("result", "click", "flip");
         }
         else {
             $("#result_details").removeClass("fliped").addClass("not_flip");
             $("#result_details").animate({right:"-" + (screenWidth + 50)}, 750);
+            trackEvent("result", "click", "back_flip");
         }
     });
 
@@ -373,6 +404,29 @@ function setupEvents() {
             }
         }
     });
+}
+
+function handlePassword(passVal) {
+    if (passVal == "is!") {
+        $("#pass_welcome").fadeOut();
+        $("#container").fadeIn();
+    }
+    else {
+        $("#passwordInput").blur();
+        $("#passwordInput").val("");
+        $("#enter_pass").fadeOut(200, function () {
+            $("#enter_pass").text("Incorrect");
+            $("#enter_pass").addClass("red");
+            $("#enter_pass").fadeIn();
+        });
+    }
+    setTimeout(function () {
+        $("#enter_pass").fadeOut(200, function () {
+            $("#enter_pass").text("Enter");
+            $("#enter_pass").removeClass("red");
+            $("#enter_pass").fadeIn();
+        });
+    }, 1000);
 }
 
 function closeContact() {
@@ -452,6 +506,7 @@ function scrollableElement(els) {
 }
 
 function setStyle() {
+    console.log("setstyle");
     var h = $(window).height();
     var w = $(window).width();
     screenWidth = w;
@@ -589,6 +644,7 @@ function wrapItUp(resultArray) {
     checkIfNoMoreOptions(resultArray);
     console.log(resultArray);
     writeOptions(resultArray);
+    trackEvent("result", "first_result", resultArray[rand].name);
 }
 
 
@@ -664,7 +720,7 @@ function init() {
 function checkForWindowSize() {
     var h = $(window).height();
     var w = $(window).width();
-    if (w < 1250 || h < 500) {
+    if (w < 1250 || h < 650) {
         $("#resizeBG").show(500, function () {
             $("#resize_msg").show(200, function () {
                 /* var h = $(window).height();
@@ -674,3 +730,10 @@ function checkForWindowSize() {
         });
     }
 }
+
+function trackEvent(category, action, label, value) {
+    //value should be null or a number
+    value = (value === undefined) ? null : ((typeof value === 'string') ? parseInt(value, 10) : value);
+    _gaq.push(["_trackEvent", category, action, label, value]);
+}
+
