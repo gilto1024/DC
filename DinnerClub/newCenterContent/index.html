@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title></title>
 
@@ -23,8 +23,9 @@
 
 <div id="pass_welcome">
     <div id="pass_container">
-        <div id="pass_header">Dinner Club</div>
-        <span id="password">Password:</span><span><input name="name" type="text" id="passwordInput"></span><span id="enter_pass">Enter</span>
+        <div id="pass_header">DinnerClub</div>
+        <span id="password">Password:</span><span><input name="name" type="password" id="passwordInput"></span><span
+            id="enter_pass">Enter</span>
     </div>
 </div>
 <div id="container" align="center">
@@ -210,15 +211,22 @@
         </div>
     </div>
     <div id="blackBG"></div>
-    <div id="resizeBG"></div>
+    <div id="resizeBG">
+        <div id="resizeWrap">
+            <div id="resize_msg">
+                Resize your browser,<br/>
+                we don't support small devices for now.
+            </div>
+        </div>
+
+    </div>
     <div id="no_options_msg">
 
         Oops no options left... please go <span id="no_options_msg_back">Back</span>
 
     </div>
-    <div id="resize_msg">
-        Resize your browser...
-    </div>
+
+
     <div id="menu">
         <a id="dateMenu" href="#section1"></a>
         <a id="soMenu" href="#section2"></a>

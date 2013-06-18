@@ -29,14 +29,8 @@ var vol = true;
 var parking = true;
 var screenWidth;
 var jscrollPane = null;
-
-
-/*$.easing.easeOutBack = function (e, f, a, i, h, g) {
- if (g == undefined) {
- g = 1.70158
- }
- return i * ((f = f / h - 1) * f * ((g + 1) * f + g) + 1) + a;
- };*/
+var isAboutOpen = false;
+var passwordsArr = ["Alba", "Brasserie", "Tapas", "1", "haam", "Popina", "Radio", "Rosco", "Taizu", "Sola", "Mel", "&", "Michel", "Shila", "Toto", "Bread", "Story", "Kitchen", "Market", "Tapeo", "Onami", "Messa", "Catit", "Rafael", "Cocuina", "Tamar", "Port", "Said", "Tourkiz", "Boya", "Alma", "Zepra", "Yafo", "Tel", "Aviv", "Coffee", "Bar", "Juz", "&", "Luz", "Delicatessen", "Viki", "Christina", "Kalamata", "Nanuchka", "Abraxas", "North", "Mtbach", "Laila", "Yavne", "Montifiore", "Hotel", "Montefiore", "Hazer", "Goldman", "Mizlala", "Herbert", "Samuel", "Café", "Italia", "Flee", "Market", "Social", "Club", "Cantina", "HaShulchan", "Café", "Europa", "Joya", "Yassu", "Heder", "Ochel", "Dallal", "Makom", "Shel", "Basar", "Suzanna", "Vong", "Pronto", "Yakimono", "Mul", "Yam", "David", "veYosef", "Trumpeldor", "10", "Sardinia", "Berti", "Adora", "Ouzeria", "Hanoi"];
 
 $.fn.teletype = function (opts, callback) {
     var $this = this,
@@ -54,13 +48,45 @@ $.fn.teletype = function (opts, callback) {
 
 
 $(document).ready(function () {
-    init();
-    setStyle();
-    setupEvents();
+    if(mobilecheck()){
+        document.location = "mobile.html"
+    }
+    console.log(DNCookie.getCookie("DN_password"));
+    if (DNCookie.getCookie("DN_password") == "correct") {
+        $("#pass_welcome").fadeOut();
+        $("#container").fadeIn();
+        init();
+        setStyle();
+        setupEvents();
+    }
+    else {
+        setupPwEvents();
+    }
 
-    DNCookie.set_Cookie('DN_used_rest', 'yes', 365, '/', '', '');
-    console.log(DNCookie.getCookie("DN_used_rest"));
 });
+
+function setupPwEvents() {
+    $("#pass_welcome").on("keydown", '#passwordInput', function (event) {
+        if (event.keyCode == 13) {
+            $("#passwordInput").blur();
+            handlePassword($(this).val());
+        }
+    });
+
+    $("#pass_welcome").on("click", '#enter_pass', function (event) {
+        handlePassword($("#passwordInput").val());
+    });
+
+    $("#pass_welcome").on("focus", '#passwordInput', function (event) {
+        if ($("#enter_pass").hasClass("red"))
+            $("#enter_pass").fadeOut(200, function () {
+                $("#enter_pass").text("Enter");
+                $("#enter_pass").removeClass("red");
+                $("#enter_pass").fadeIn();
+            });
+    });
+}
+
 
 function setupEvents() {
     var windowWasSmall = false;
@@ -85,33 +111,13 @@ function setupEvents() {
                         windowWasSmall = false;
                         console.log("hide resize msg");
                         //init();
-                        document.location.reload(true);
-                        //setStyle();
+                        //document.location.reload(true);
+                        setStyle();
                     }
                 });
             });
             resizeFlag = true;
         }
-    });
-
-    $("#pass_welcome").on("keydown", '#passwordInput', function (event) {
-        if (event.keyCode == 13) {
-            handlePassword($(this).val());
-        }
-
-    });
-
-    $("#pass_welcome").on("click", '#enter_pass', function (event) {
-        handlePassword($("#passwordInput").val());
-    });
-
-    $("#pass_welcome").on("focus", '#passwordInput', function (event) {
-        if ($("#enter_pass").hasClass("red"))
-            $("#enter_pass").fadeOut(200, function () {
-                $("#enter_pass").text("Enter");
-                $("#enter_pass").removeClass("red");
-                $("#enter_pass").fadeIn();
-            });
     });
 
     $container.on("click", ".date_select", function () {
@@ -143,7 +149,6 @@ function setupEvents() {
                 text:story.date[selected]
             });
         }
-
         soChosen(selected);
         $("#sitting").show();
         cameFrom = "so";
@@ -239,7 +244,6 @@ function setupEvents() {
                 else {
                     writeOptions(soArray);
                 }
-
                 cameFrom = "so";
                 break;
             case "light":
@@ -267,26 +271,7 @@ function setupEvents() {
         $flip_it.removeClass("fliped").removeClass("not_flip").addClass("not_flip");
         var randOption = Math.floor((Math.random() * resultArray.length));
         $("#result_rest").fadeOut(500, function () {
-            $("#result_details").removeClass("fliped").addClass("not_flip");
-            $("#result_details").animate({right:"-" + (screenWidth + 50)}, 750);
-            if (nextResultOption < resultArray.length) {
-                if (resultArray[nextResultOption].name == $end_result_name.text()) {
-                    nextResultOption++;
-                }
-                $("#result_tel").text(resultArray[nextResultOption].Tel);
-                $("#result_rest").text(resultArray[nextResultOption].name);
-                $("#result_address").text(resultArray[nextResultOption].Address);
-
-            }
-            else {
-                nextResultOption = 0;
-                $("#result_tel").text(resultArray[nextResultOption].Tel);
-                $("#result_rest").text(resultArray[nextResultOption].name);
-                $("#result_address").text(resultArray[nextResultOption].Address);
-            }
-            nextResultOption++;
-            $("#result_rest").fadeIn("fast", function () {
-            });
+            showNextResult();
         });
     });
     $container.on("click", "#resizeBG", function () {
@@ -298,88 +283,51 @@ function setupEvents() {
     $container.on("click", "#contact_submit", function () {
         if ($(this).hasClass("close")) {
             closeContact();
+            closeAbout();
             $(this).removeClass("close").addClass("send");
         }
         else {
             $("#contact_submit").removeClass("send").addClass("loader");
             $(".loader_gif").show();
-            var name = $("#name").val();
-            var customerMail = $("#customer_mail").val();
-            var message = $("#Message").val();
-            if (name || customerMail || message) {
-                $.ajax({
-                    url:"send_contact_gm.php",
-                    type:"POST",
-                    data:{
-                        name:name,
-                        customerMail:customerMail,
-                        message:message
-                    },
-                    success:function (data) {
-                        //
-                        console.log(data);
-                        $(".loader_gif").hide();
-                        $("#contact_submit").removeClass("loader").addClass("close");
-
-
-                    },
-                    error:function (data) {
-                        $(".loader_gif").hide();
-                        $("#contact_submit").removeClass("loader").addClass("close");
-                        console.log("error - " + data);
-                    }
-
-                });
+            var details = getContactFormDetails();
+            if (details.message) {
+                sendContactMail(details);
             }
             else {
-                // closeContact();
+                finishContactFormProc();
+                //TODO: user message
             }
-
         }
     });
     $container.on("click", "#mailUs", function () {
-        $("#fixed_element_contact").show().animate({"left":"434"}, 500);
-        trackEvent("contact", "click", "show");
+        openContact();
     });
     $container.on("click", "#mailUsClose", function () {
-        $("#fixed_element_contact").animate({"left":"-550"}, 500, function () {
-            $("#fixed_element_contact").hide();
-            $fixed_element_about_content.removeClass("on").addClass("off");
-            $fixed_element_about_content.animate({left:"-440px"}, 500, function () {
-                $("#about_btn").css({left:"436px"});
-                $("#about_btn").fadeIn();
-            });
-        });
-        trackEvent("contact", "click", "hide");
+        isAboutOpen = false;
+        closeContact();
+        closeAbout();
+
     });
     $container.on("click", "#about_btn , #aboutUsClose", function () {
-
         if ($fixed_element_about_content.hasClass("off")) {
-            $("#about_btn").hide();
-            $fixed_element_about_content.removeClass("off").addClass("on");
-            $fixed_element_about_content.animate({left:"-2px"}, 500);
-            trackEvent("about", "click", "show");
+            openAbout();
         }
         else {
-            $fixed_element_about_content.removeClass("on").addClass("off");
-            $fixed_element_about_content.animate({left:"-440px"}, 500, function () {
-                $("#about_btn").css({left:"436px"});
-                $("#about_btn").fadeIn();
-            });
-            trackEvent("about", "click", "hide");
+            closeAbout();
         }
     });
     $container.on("click", "#result_rest , #result_details", function () {
         if ($("#result_details").hasClass("not_flip")) {
-            $("#result_details").removeClass("not_flip").addClass("fliped");
-            //$("#visiable").css({width:(addressLen) + 30});
-            $("#result_details").animate({right:"0px"}, 750);
-            trackEvent("result", "click", "flip");
+            showRestDetails();
         }
         else {
-            $("#result_details").removeClass("fliped").addClass("not_flip");
-            $("#result_details").animate({right:"-" + (screenWidth + 50)}, 750);
-            trackEvent("result", "click", "back_flip");
+            hideRestDetails();
+        }
+    });
+    $container.on("click", ".sectionNew", function () {
+        if (isAboutOpen) {
+            closeContact();
+            closeAbout();
         }
     });
 
@@ -406,10 +354,127 @@ function setupEvents() {
     });
 }
 
+
+function showNextResult() {
+    $("#result_details").removeClass("fliped").addClass("not_flip");
+    $("#result_details").animate({right:"-" + (screenWidth + 50)}, 750);
+    if (nextResultOption < resultArray.length) {
+        if (resultArray[nextResultOption].name == $end_result_name.text()) {
+            nextResultOption++;
+        }
+        populateResult(nextResultOption);
+    }
+    else {
+        nextResultOption = 0;
+        populateResult(nextResultOption);
+    }
+    nextResultOption++;
+    $("#result_rest").fadeIn("fast", function () {
+    });
+}
+
+
+function populateResult(idx) {
+    $("#result_tel").text(resultArray[idx].Tel);
+    $("#result_rest").text(resultArray[idx].name);
+    $("#result_address").text(resultArray[idx].Address);
+}
+
+
+function getContactFormDetails() {
+    var details = {};
+    details.name = $("#name").val();
+    details.customerMail = $("#customer_mail").val();
+    details.message = $("#Message").val();
+    return details;
+}
+
+
+function finishContactFormProc() {
+    $(".loader_gif").hide();
+    $("#contact_submit").removeClass("loader").addClass("close");
+    clearContactForm();
+}
+
+
+function clearContactForm() {
+    $("#name").val("");
+    $("#customer_mail").val("");
+    $("#Message").val("");
+}
+
+
+function sendContactMail(details) {
+    $.ajax({
+        url:"send_contact_gm.php",
+        type:"POST",
+        data:{
+            name:details.name,
+            customerMail:details.customerMail,
+            message:details.message
+        },
+        success:function (data) {
+            console.log(data);
+            finishContactFormProc();
+
+
+        },
+        error:function (data) {
+            finishContactFormProc();
+            console.log("error - " + data);
+        }
+
+    });
+
+}
+
+
+function openAbout() {
+    isAboutOpen = true;
+    $("#about_btn").hide();
+    $fixed_element_about_content.removeClass("off").addClass("on");
+    $fixed_element_about_content.animate({left:"-2px"}, 500);
+    trackEvent("about", "click", "show");
+}
+
+
+function closeAbout() {
+    isAboutOpen = false;
+    $fixed_element_about_content.removeClass("on").addClass("off");
+    $fixed_element_about_content.animate({left:"-440px"}, 500, function () {
+        $("#about_btn").css({left:"436px"});
+        $("#about_btn").fadeIn();
+    });
+    trackEvent("about", "click", "hide");
+}
+
+
+function showRestDetails() {
+    $("#result_details").removeClass("not_flip").addClass("fliped");
+    $("#result_details").animate({right:"0px"}, 750);
+    trackEvent("result", "click", "flip");
+}
+
+
+function hideRestDetails() {
+    $("#result_details").removeClass("fliped").addClass("not_flip");
+    $("#result_details").animate({right:"-" + (screenWidth + 50)}, 750);
+    trackEvent("result", "click", "back_flip");
+}
+
+
 function handlePassword(passVal) {
-    if (passVal == "is!") {
+    if (passwordsArr.indexOf(passVal) != -1) {
+        trackEvent("password", "enter", passVal);
+        console.log(passwordsArr.indexOf(passVal));
         $("#pass_welcome").fadeOut();
         $("#container").fadeIn();
+        init();
+        setStyle();
+        setupEvents();
+        DNCookie.set_Cookie('DN_password', 'correct', 1, '/', '', '');
+        console.log(DNCookie.getCookie("DN_password"));
+
     }
     else {
         $("#passwordInput").blur();
@@ -420,14 +485,15 @@ function handlePassword(passVal) {
             $("#enter_pass").fadeIn();
         });
     }
-    setTimeout(function () {
-        $("#enter_pass").fadeOut(200, function () {
-            $("#enter_pass").text("Enter");
-            $("#enter_pass").removeClass("red");
-            $("#enter_pass").fadeIn();
-        });
-    }, 1000);
+    /* setTimeout(function () {
+     $("#enter_pass").fadeOut(200, function () {
+     $("#enter_pass").text("Enter");
+     $("#enter_pass").removeClass("red");
+     $("#enter_pass").fadeIn();
+     });
+     }, 1000);*/
 }
+
 
 function closeContact() {
     $(".loader_gif").hide();
@@ -438,46 +504,24 @@ function closeContact() {
         $("#Message").val("");
         $("#fixed_element_contact").hide();
     });
+    trackEvent("contact", "click", "hide");
 }
 
 
-function slotmachine(id, changeto) {
-    var thisid = '#' + id;
-    var $obj = $(thisid);
-    $obj.css('opacity', '.3');
-    var original = $obj.text();
-
-    var spin = function () {
-        return Math.floor(Math.random() * 10);
-    };
-
-    var spinning = setInterval(function () {
-        $obj.text(function () {
-            var result = '';
-            for (var i = 0; i < original.length; i++) {
-                result += spin().toString();
-            }
-            return result;
-        });
-    }, 50);
-
-    var done = setTimeout(function () {
-        clearInterval(spinning);
-        $obj.text(changeto).css('opacity', '1');
-    }, 1000);
+function openContact() {
+    $("#fixed_element_contact").show().animate({"left":"434"}, 500);
+    trackEvent("contact", "click", "show");
 }
+
 
 function checkIfNoMoreOptions(optionsArray) {
-    /* var flag = false;*/
     if (optionsArray.length == 0) {
-        flag = true;
         $("#blackBG").fadeIn(function () {
             $("#no_options_msg").fadeIn();
-
-        });//animate({"background-color":"black",opacity:0.5},1000);
+        });
     }
-    /*return flag;*/
 }
+
 
 function filterPath(string) {
     return string
@@ -485,6 +529,7 @@ function filterPath(string) {
         .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
         .replace(/\/$/, '');
 }
+
 
 // use the first element that is "scrollable"
 function scrollableElement(els) {
@@ -505,12 +550,13 @@ function scrollableElement(els) {
     return [];
 }
 
+
 function setStyle() {
     console.log("setstyle");
     var h = $(window).height();
     var w = $(window).width();
     screenWidth = w;
-    $(".section").css({width:w, height:h});
+    //$(".section").css({width:w, height:h});
     var sectionNewWidth = w * 0.8;
     $(".sectionNew").css({width:sectionNewWidth, height:h});
     $(".sectionRes").css({width:w, height:h});
@@ -521,6 +567,7 @@ function setStyle() {
         showArrows:false
     }).data('jsp');
 }
+
 
 function dateChosen(isDate) {
     $(".fixed_element_back_button").show();
@@ -534,6 +581,7 @@ function dateChosen(isDate) {
     console.log(dateArray);
     writeOptions(dateArray);
 }
+
 
 function sittingChosen(sittingType) {
     var activeArray = [];
@@ -561,6 +609,7 @@ function sittingChosen(sittingType) {
     writeOptions(sittingArray);
 }
 
+
 function soChosen(so) {
     soArray = [];
     for (var i = 0; i < dateArray.length; i++) {
@@ -574,6 +623,7 @@ function soChosen(so) {
     console.log(soArray);
     writeOptions(soArray);
 }
+
 
 function lightChosen(light) {
     lightArray = [];
@@ -597,6 +647,7 @@ function lightChosen(light) {
     writeOptions(lightArray);
 }
 
+
 function volumeChosen(selected) {
     volumeArray = [];
     for (var i = 0; i < lightArray.length; i++) {
@@ -608,6 +659,7 @@ function volumeChosen(selected) {
     console.log(volumeArray);
     writeOptions(volumeArray);
 }
+
 
 function parkingChosen(selected) {
     resultArray = [];
@@ -623,6 +675,7 @@ function parkingChosen(selected) {
     }
     wrapItUp(resultArray);
 }
+
 
 function wrapItUp(resultArray) {
     $end_result_text.empty();
@@ -666,11 +719,9 @@ function writeOptions(options) {
         else {
             //do nothing numbers are equal
         }
-
     }
-
-
 }
+
 
 function increment(newNumber) {
     $fixed_element_counter.text(parseFloat($fixed_element_counter.text()) - 1);
@@ -679,6 +730,7 @@ function increment(newNumber) {
     }
 }
 
+
 function decrement(newNumber) {
     $fixed_element_counter.text(parseFloat($('#fixed_element_counter').text()) + 1);
     if (parseFloat($fixed_element_counter.text()) < newNumber) {
@@ -686,10 +738,12 @@ function decrement(newNumber) {
     }
 }
 
+
 function calculateContentSize(str) {
     $ruler.html(str);
     return $ruler.innerWidth();
 }
+
 
 function init() {
     $("body").append($ruler);
@@ -701,9 +755,9 @@ function init() {
     $fixed_element_counter = $('#fixed_element_counter');
     $end_result_text = $('.end_result_text');
     $flip_it = $("#flip_it");
-    $end_result_tel = $("#end_result_tel");
-    $end_result_name = $("#end_result_name");
-    $end_result_address = $("#end_result_address");
+    $end_result_tel = $("#result_tel");
+    $end_result_name = $("#result_rest");
+    $end_result_address = $("#result_address");
 
     $('a').click(function () {
         var elementClicked = $(this).attr("href");
@@ -717,19 +771,18 @@ function init() {
     $('body').animate({scrollTop:0}, 1000);
 }
 
+
 function checkForWindowSize() {
     var h = $(window).height();
     var w = $(window).width();
-    if (w < 1250 || h < 650) {
+    if (w < 1250 || h < 600) {
         $("#resizeBG").show(500, function () {
             $("#resize_msg").show(200, function () {
-                /* var h = $(window).height();
-                 $(".section").css('height', h + '1px');*/
-                //init();
             });
         });
     }
 }
+
 
 function trackEvent(category, action, label, value) {
     //value should be null or a number
@@ -737,3 +790,7 @@ function trackEvent(category, action, label, value) {
     _gaq.push(["_trackEvent", category, action, label, value]);
 }
 
+window.mobilecheck = function() {
+var check = false;
+(function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true})(navigator.userAgent||navigator.vendor||window.opera);
+return check; }

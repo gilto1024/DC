@@ -11,7 +11,7 @@ var DNCookie = (function () {
          delete * 24, for minutes, delete * 60 * 24
          */
         if (expires) {
-            expires = expires * 1000 * 60 * 60 * 24;
+            expires = expires * 1000 * 60 * 60;
         }
         var expires_date = new Date(today.getTime() + (expires));
 

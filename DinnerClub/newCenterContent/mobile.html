@@ -2,26 +2,48 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link href="style.css" type="text/css" rel="stylesheet"/>
     <style type="text/css">
         html, body {
 
         }
 
-        #container {
+        #outerContainer {
+            position: fixed;
+            width: 100%;
+            height: 100%;
         }
-    </style>
-    <script type="text/javascript" name="conduitApi" src="http://api.conduit.com/BrowserCompApi.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
 
-        });
-    </script>
+            /*** VERTICAL ALIGNMENT (IE8+) ***/
+        #innerContainer {
+            display: table;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        #msg {
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 1em;
+        }
+
+    </style>
+
+
 </head>
 <body>
-<div id="container">
+<div id="outerContainer">
+    <div id="innerContainer">
+        <div id="msg">
+            Don't try us on mobile yet
+        </div>
+    </div>
 </div>
+
 </body>
 </html>

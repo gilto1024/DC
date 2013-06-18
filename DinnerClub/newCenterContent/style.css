@@ -26,46 +26,55 @@ a:visited {
 }
 
 #pass_welcome {
-    display: block;
+    /*display: block;*/
 }
 
 #pass_container {
     position: fixed;
     left: 50%;
-    top: 50%;
+    top: 30%;
     z-index: 100;
     height: 124px;
     margin-top: -62px;
-    width: 532px;
-    margin-left: -266px;
+    width: 447px;
+    margin-left: -172px;
 }
 
 #passwordInput {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: 1px solid black;
-    height: 32px;
-    width:278px;
+    border-radius: 6px;
+    border: 1px solid #B4B4B4;
+    height: 30px;
+    width: 219px;
     outline: 0;
-    margin-left: 2px;
+    margin-left: 5px;
+    padding-left: 5px;
 }
-#pass_header{
-    font-size: 73px;
+
+#pass_header {
+    font-size: 72px;
+    letter-spacing: -4px;
+    margin-bottom: -6px;
+    margin-left: -3px;
 }
-#password{
-    font-size: 25px;
-    margin-left: 4px;
-    vertical-align: -2px;
+
+#password {
+    font-size: 24px;
+    vertical-align: -4px;
+    letter-spacing: -1px;
 }
-#enter_pass{
-    font-size: 25px;
-    vertical-align: -2px;
+
+#enter_pass {
+    font-size: 24px;
+    vertical-align: -4px;
+    letter-spacing: -1px;
     cursor: pointer;
     margin-left: 5px;
 }
-.red{
-    color:red;
+
+.red {
+    color: red;
 }
 
 .section {
@@ -103,7 +112,6 @@ a:visited {
 
 .fixed_element_rest_list {
     position: fixed;
-    /* top: 20px;*/
     right: 0px;;
     width: 200px;
     height: 200px;;
@@ -126,7 +134,7 @@ a:visited {
 .fixed_element_back_button {
     position: fixed;
     top: 90px;
-    z-index: 100;
+    /*z-index: 100;*/
     /*left: 48%;*/
     width: 100%;
     /* margin-left: auto;
@@ -177,12 +185,28 @@ a:visited {
     background-color: white;
     display: none;
     opacity: 0.95;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0px;
     width: 100%;
     height: 100%;
+    z-index: 1000;
+}
+#resizeWrap{
+    top:50%;
+    left: 50%;
+    position: absolute;
+}
+
+#resize_msg {
+    display: none;
+
+    margin-top: -125px;
+    margin-left: -250px;
+    width: 500px;
+    height: 225px;
     z-index: 100;
+    font-size: 46px;
 }
 
 #no_options_msg {
@@ -196,17 +220,6 @@ a:visited {
     margin-left: -193px;
     display: none;
 
-}
-
-#resize_msg {
-    display: none;
-    position: fixed;
-    top: 40%;
-    left: 33%;
-    width: 500px;
-    height: 225px;
-    z-index: 100;
-    font-size: 46px;
 }
 
 #no_options_msg_back {

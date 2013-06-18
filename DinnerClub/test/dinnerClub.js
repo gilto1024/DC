@@ -116,6 +116,7 @@ function setupEvents() {
             });
             resizeFlag = true;
         }
+        setStyle();
     });
 
 
@@ -738,6 +739,7 @@ function init() {
     $('a').click(function () {
         var elementClicked = $(this).attr("href");
         var destination = $(elementClicked).offset().top;
+        console.log(destination);
         $("html:not(:animated),body:not(:animated)").animate({ scrollTop:destination + 15}, 1000, function () {
 
         });
