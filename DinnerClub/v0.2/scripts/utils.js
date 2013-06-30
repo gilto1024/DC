@@ -1,0 +1,6 @@
+define(['jQuery'], function () {
+
+    return {
+
+    }
+});

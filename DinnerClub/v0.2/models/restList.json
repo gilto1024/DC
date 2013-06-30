@@ -1,0 +1,62 @@
+[
+    {
+        "info":{
+            "name":"Café 1",
+            "phone":"03-5612888",
+            "address":"Kremintzki 6",
+            "url":"http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx"
+        },
+        "verticals":{
+            "party":["date", "friends", "family"],
+            "sitting":["bar", "table"],
+            "light":"bright",
+            "vol":"quiet",
+            "parking":"yes"
+        }
+    },
+    {
+        "info":{
+            "name":"Café 2",
+            "phone":"03-5612888",
+            "address":"Kremintzki 6",
+            "url":"http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx"
+        },
+        "verticals":{
+            "party":["friends", "family"],
+            "sitting":["bar", "table"],
+            "light":"bright",
+            "vol":"loud",
+            "parking":"yes"
+        }
+    },
+    {
+        "info":{
+            "name":"Café 3",
+            "phone":"03-5612888",
+            "address":"Kremintzki 6",
+            "url":"http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx"
+        },
+        "verticals":{
+            "party":["date", "friends", "family"],
+            "sitting":["bar", "table"],
+            "light":"bright",
+            "vol":"loud",
+            "parking":"yes"
+        }
+    },
+    {
+        "info":{
+            "name":"Café 4",
+            "phone":"03-5612888",
+            "address":"Kremintzki 6",
+            "url":"http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx"
+        },
+        "verticals":{
+            "party":["date", "friends", "family"],
+            "sitting":["table"],
+            "light":"bright",
+            "vol":"loud",
+            "parking":"yes"
+        }
+    }
+]

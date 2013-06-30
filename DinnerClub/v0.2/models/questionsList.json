@@ -1,0 +1,58 @@
+[
+    {
+        "id":"Q001",
+        "vertical":"party",
+        "text":"Is it a date?",
+        "answers":[
+            {
+                "value":"date",
+                "text":"Yes"
+            },
+            {
+                "value":null,
+                "text":"No"
+            }
+        ]
+
+    },
+    {
+        "id":"Q002",
+        "vertical":"party",
+        "text":"...So?",
+        "answers":[
+            {
+                "value":"friends",
+                "text":"Friends"
+            },
+            {
+                "value":"family",
+                "text":"Family"
+            },
+            {
+                "value":"business",
+                "text":"Business"
+            },
+            {
+                "value":"Tourists",
+                "text":"tourists"
+            }
+        ]
+
+    },
+    {
+        "id":"Q003",
+        "vertical":"sitting",
+        "text":"Where would you like to sit?",
+        "answers":[
+            {
+                "value":"table",
+                "text":"Table"
+            },
+            {
+                "value":"bar",
+                "text":"Bar"
+            }
+        ]
+
+    }
+]
