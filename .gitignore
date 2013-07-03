@@ -8,5 +8,4 @@ node_modules
 *.tar\
 *.tar
 
-v1/.idea
-v2/.idea
+DinnerClub/.idea
