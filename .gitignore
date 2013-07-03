@@ -1,0 +1,12 @@
+.idea/
+.idea/workspace.xml
+.metadata
+.project
+node_modules
+.idea
+*.gz
+*.tar\
+*.tar
+
+v1/.idea
+v2/.idea
