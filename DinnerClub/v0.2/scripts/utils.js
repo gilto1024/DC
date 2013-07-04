@@ -1,6 +1,0 @@
-define(['jQuery'], function () {
-
-    return {
-
-    }
-});
