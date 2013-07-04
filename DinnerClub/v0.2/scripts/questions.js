@@ -1,4 +1,4 @@
-define(['text!../models/questionsList.json'], function (questionsList) {
+define(['text!models/questionsList.json'], function (questionsList) {
 
     questionsList = JSON.parse(questionsList);
 

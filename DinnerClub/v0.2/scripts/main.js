@@ -1,8 +1,9 @@
-/*require.config({
+require.config({
     paths:{
-        jQuery:'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min'
+        //jQuery:'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min'
+        "models":"../models"
     }
-});*/
+});
 
 require(
     [

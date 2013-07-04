@@ -14,12 +14,22 @@ define([], function () { // Loaded by main.js: jQuery, jQuery.tmpl, jQuery.hover
     }
 
 
-    function updateStory(chapter) {
+    function addStoryChapter(chapter) {
         if (!chapter) {
-            log("updateStory", '--deleting--');
+            log("addStoryChapter", '-- No story to append --');
+            return;
         }
 
-        log("updateStory", chapter);
+        log("addStoryChapter", chapter);
+    }
+
+
+    function removeStoryChapter(bAll) {
+        if (bAll) {
+            log("removeStoryChapter", "Removing ALL stories");
+        } else {
+            log("removeStoryChapter", "Removing last Story");
+        }
     }
 
 
@@ -39,9 +49,10 @@ define([], function () { // Loaded by main.js: jQuery, jQuery.tmpl, jQuery.hover
 
 
     return {
-        updateRestCount:updateRestCount,
-        updateStory:updateStory,
         displayQuestion:displayQuestion,
+        updateRestCount:updateRestCount,
+        addStoryChapter:addStoryChapter,
+        removeStoryChapter:removeStoryChapter,
         noRestsLeft:noRestsLeft,
         displayResults:displayResults
     };
