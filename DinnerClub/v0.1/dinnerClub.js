@@ -7,6 +7,7 @@ var volumeArray = [];
 var resultArray = [];
 var dateFlag = false;
 var cameFrom = '';
+var cameFrom = '';
 var $container;
 var $fixed_element_about_content = null;
 var $fixed_element_counter = null;
@@ -43,6 +44,8 @@ $.fn.teletype = function (opts, callback) {
     $.each(settings.text.split(''), function (i, letter) {
         setTimeout(function () {
             $this.html($this.html() + letter);
+			
+			if (callback && i == settings.text.length - 1) callback();
         }, settings.animDelay * i);
     });
 };

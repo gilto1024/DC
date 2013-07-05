@@ -2,6 +2,17 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
     //TODO - flight to SF
 
+    /* TODO list
+     *
+     * - html5shiv
+     * - media queries shiv\polyfill
+     * - cookie (results)
+     * - i18n\l10n
+     * - media queries (+determine resolutions)
+     * - results view
+     * - no rests left view
+     */
+
     function log() {
         var args = [].slice.apply(arguments);
         args.unshift("[DinnerClub]");
@@ -24,7 +35,7 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      */
     function onUserSelection(vertical, answer) {
         history.save(
-            questionsList[currentQuestionIndex].id,
+            currentQuestionIndex,
             restList,
             userSelection
         );
@@ -41,8 +52,6 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         restList = rests.filter(currentFilter, restList);
 
 
-        log("Rest List:", restList);
-
         if (!(restList.length)) {
             noRestsLeft();
             return;
@@ -57,16 +66,14 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      * Return to the previous question and re-apply previous state
      */
     function onBack() {
-        var state = history.restore();
-        if (!state) return; // no available
+        if (currentQuestionIndex == 0) return; // already on first question
 
+        var state = history.restore();
+        if (!state) return; // no available history
+
+        currentQuestionIndex = state.currentQuestionIndex;
         restList = state.restList;
         userSelection = state.userSelection;
-        var questionId = state.questionId;
-
-        while (questionId !== questionsList[currentQuestionIndex].id && currentQuestionIndex > 0) {
-            currentQuestionIndex--;
-        }
 
         view.removeStoryChapter();
         updateView();
@@ -87,10 +94,14 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      * @param {String=} story New story snippet to display.
      */
     function updateView(story) {
+        log("updateView", 'currentQuestionIndex:', currentQuestionIndex, "userSelection:", userSelection ,"restList:", restList);
+
+
+
         if (currentQuestionIndex == questionsList.length) {
             view.displayResults(restList);
         } else {
-            view.displayQuestion(questionsList[currentQuestionIndex]);
+            view.displayQuestion(questionsList[currentQuestionIndex].id);
         }
 
         view.updateRestCount(restList.length);
@@ -118,7 +129,6 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         currentQuestionIndex = 0;
         userSelection = {};
         restList = rests.fetch();
-        questionsList = questions.fetch();
 
         history.reset();
 
@@ -131,6 +141,9 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      * Do the init, yes?
      */
     function init() {
+        questionsList = questions.fetch();
+        view.init(this, questionsList);
+
         reset();
     }
 

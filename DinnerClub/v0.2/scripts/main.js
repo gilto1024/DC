@@ -1,22 +1,32 @@
 require.config({
     baseUrl:'scripts/',
     paths:{
-        //jQuery:'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min'
         "models":"../models",
+        "tmpl":"../tmpl",
+
         "text":"libs/text",
-        "view":"consoleView"
+        "mustache":"libs/mustache.min",
+
+        //"view":"view-console"
+        "view":"view"
     }
 });
 
 require(
     [
-        "dinnerclub", "text"
+        "dinnerclub"
     ],
-    function (dinnerclub, text) {
-        dinnerclub.init();
+    function (dinnerclub) {
 
-        window.dc = dinnerclub;
+        // using window.onload to make sure custom fonts are loaded
+        // before we display any text
+        $(window).on('load', function () {
+            dinnerclub.init();
 
-        console.log('DinnerClub ON');
+            //TODO - remove
+            window.dc = dinnerclub;
+
+            console.log('DinnerClub ON');
+        });
     }
 );

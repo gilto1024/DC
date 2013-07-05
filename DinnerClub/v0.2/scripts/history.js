@@ -3,13 +3,13 @@ define(function () {
     var log;
 
 
-    function save(questionId, restList, userSelection) {
+    function save(currentQuestionIndex, restList, userSelection) {
         if (!log) log = [];
 
         log.push({
-            questionId: questionId,
+            currentQuestionIndex: currentQuestionIndex,
             restList: restList,
-            userSelection: userSelection
+            userSelection:$.extend({}, userSelection) // clone to new object
         });
     }
 

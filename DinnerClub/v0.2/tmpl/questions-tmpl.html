@@ -1,0 +1,18 @@
+<article class="placeholder"></article>
+
+{{#questions}}
+
+<article id="question{{id}}" data-vertical="{{vertical}}">
+    <div class="questionBox question">{{text}}</div>
+    <div class="questionBox answers">
+        <ul>
+            {{#answers}}
+            <li data-value="{{value}}">{{text}}</li>
+            {{/answers}}
+        </ul>
+    </div>
+</article>
+
+{{/questions}}
+
+<article class="placeholder"></article>

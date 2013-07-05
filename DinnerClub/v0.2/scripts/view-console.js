@@ -1,4 +1,4 @@
-define([], function () { // Loaded by main.js: jQuery, jQuery.tmpl, jQuery.hoverIntent
+define([], function () {
 
 
     function log() {
