@@ -241,11 +241,13 @@ function setupEvents() {
                 $("#sitting_text").html("");
                 if (dateFlag) {
                     writeOptions(dateArray);
+					cameFrom = "date";
                 }
                 else {
                     writeOptions(soArray);
+					cameFrom = "so";
                 }
-                cameFrom = "so";
+                
                 break;
             case "light":
                 light = true;
