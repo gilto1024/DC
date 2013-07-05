@@ -6,7 +6,9 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
     // Elements
     var $questions,
         $restCount,
-        $story;
+        $story,
+        $btnBack,
+        $btnRestart;
 
 
     function log() {
@@ -25,7 +27,21 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         });
 
         $(document)
-            .on('click', '#questions li', onAnswerClicked);
+            .on('click', '#questions li', onAnswerClicked)
+            .on('questionShown', function(e, qId) {
+                log('on questionShown', arguments);
+                log('on questionShown', "1st q id:", $questions.find(".questionArticle").first().attr('id').replace('question', ''))
+
+                if (qId == $questions.find(".questionArticle").first().attr('id').replace('question', '')) {
+                    log('on questionShown', 'hiding');
+                    $btnBack.fadeOut();
+                    $btnRestart.fadeOut();
+                } else {
+                    log('on questionShown', 'showing');
+                    $btnBack.fadeIn();
+                    $btnRestart.fadeIn();
+                }
+            });
 
         $("#btnBack").on('click', dcController.onBack);
 
@@ -37,6 +53,9 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $questions = $("#questions");
         $restCount = $("#restCount");
         $story = $("#story");
+        $btnBack = $("#btnBack");
+        $btnRestart = $("#btnRestart");
+
     }
 
 
@@ -96,6 +115,10 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
             duration:1000,
             easing:"easeOutBack"
         });
+
+        if (questionId) { // trigger event if new question shown
+            $(document).trigger('questionShown', currentQuestionId);
+        }
     }
 
 

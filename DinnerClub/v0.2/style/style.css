@@ -71,6 +71,7 @@ html[dir=rtl] #story span {
     float: right;
     background: url("../img/btnRestart.png") 0 0 no-repeat;
     cursor: pointer;
+    display: none;
 }
 
 html[dir=rtl] #btnRestart {
@@ -114,6 +115,7 @@ html[dir=rtl] #restCount {
     left: -50%;
     background: url('../img/back.png') center 0 no-repeat;
     cursor: pointer;
+    display: none;
 }
 
 
