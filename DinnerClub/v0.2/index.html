@@ -2,6 +2,12 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
+    <script type="text/javascript">
+        if (location.href.indexOf('dir=rtl') != -1) {
+            document.getElementsByTagName("html")[0].dir = "rtl";
+        }
+    </script>
+
     <link type="text/css" rel="stylesheet" href="style/style.css"/>
 
     <title>DinnerClub.co.il</title>
@@ -9,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 
-    <script type="text/javascript" src="http://fast.fonts.com/jsapi/d881eb45-9306-4170-9f68-3a39abe8fcfd.js"></script>
+    <!--<script type="text/javascript" src="http://fast.fonts.com/jsapi/d881eb45-9306-4170-9f68-3a39abe8fcfd.js"></script>-->
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/libs/plugins.min.js"></script>
@@ -24,10 +30,12 @@
     </div>
 </header>
 <div id="subHeaderAnchor" class="hidden">
-    <div id="restCount">69</div>
     <div id="btnBackContainer">
         <div id="btnBack" title="back"></div>
     </div>
+</div>
+<div id="restCountWrapper" class="hidden">
+    <div id="restCount">69</div>
 </div>
 <section id="questions" class="hidden">
     <!-- <section class="placeholder"></section>

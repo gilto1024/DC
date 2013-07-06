@@ -20,7 +20,8 @@ require(
 
         // using window.onload to make sure custom fonts are loaded
         // before we display any text
-        $(window).on('load', function () {
+        //$(window).on('load', function () {
+        $(function(){
             dinnerclub.init();
 
             //TODO - remove

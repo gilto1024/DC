@@ -33,8 +33,8 @@
                 "text":"Business"
             },
             {
-                "value":"Tourists",
-                "text":"tourists"
+                "value":"tourists",
+                "text":"Tourists"
             }
         ]
 
