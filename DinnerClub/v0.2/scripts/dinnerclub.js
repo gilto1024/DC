@@ -28,7 +28,7 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
 
     /**
-     * Filter restaurant according to user selection and continue to next question
+     * Filter restaurants according to user selection and continue to next question
      *
      * @param {string} vertical current question's assigned vertical
      * @param {string} answer user's selection in the current vertical
@@ -41,12 +41,16 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         );
 
         // no answer yet for the current vertical, continue on to next question
+        // this happens when the vertical is split into multiple questions,
+        // like in the party vertical (Date\So)
         if (answer == "") {
             nextQuestion();
             updateView();
             return;
         }
 
+
+        // filter rest-list
         var currentFilter = {};
         currentFilter[vertical] = userSelection[vertical] = answer;
         restList = rests.filter(currentFilter, restList);
