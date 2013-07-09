@@ -54,5 +54,53 @@
             }
         ]
 
+    },
+    {
+        "id":"Q004",
+        "vertical":"light",
+        "text":"Let's set the mood:",
+        "answers":[
+            {
+                "value":"dim",
+                "text":"Dim"
+            },
+            {
+                "value":"bright",
+                "text":"Bright"
+            }
+        ]
+
+    },
+    {
+        "id":"Q005",
+        "vertical":"vol",
+        "text":"How about the volume?",
+        "answers":[
+            {
+                "value":"quiet",
+                "text":"Quiet"
+            },
+            {
+                "value":"loud",
+                "text":"Loud"
+            }
+        ]
+
+    },
+    {
+        "id":"Q006",
+        "vertical":"parking",
+        "text":"Looking for parking?",
+        "answers":[
+            {
+                "value":"yes",
+                "text":"Yes"
+            },
+            {
+                "value":"no",
+                "text":"No"
+            }
+        ]
+
     }
 ]

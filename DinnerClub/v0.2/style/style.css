@@ -63,15 +63,6 @@ html[dir=rtl] #story span {
     padding-left: 6px;
 }
 
-#btnRestart {
-    width: 25px;
-    height: 25px;
-    float: right;
-    background: url("../img/btnRestart.png") 0 0 no-repeat;
-    cursor: pointer;
-    display: none;
-}
-
 html[dir=rtl] #btnRestart {
     float: left;
 }
@@ -79,14 +70,15 @@ html[dir=rtl] #btnRestart {
 /*** SUB-HEADER ANCHOR ***/
 
 #subHeaderAnchor, #restCountWrapper {
-    width: 100%;
+    width: 960px;
     height: 0;
     position: relative;
+    margin: 0 auto;
 }
 
 #restCount {
     position: absolute;
-    right: 9%;
+    right: 0;
     top: 22px; /* this compensates for the big font's bottom alignment in its container */
     font-size: 140px;
     z-index: 10;
@@ -108,7 +100,7 @@ html[dir=rtl] #restCount {
     width: 36px;
     height: 18px;
     position: absolute;
-    left: -50%;
+    left: -18px;
     background: url('../img/back.png') center 0 no-repeat;
     cursor: pointer;
     display: none;
@@ -125,30 +117,32 @@ html[dir=rtl] #restCount {
 
 article {
     height: 100%;
-    width: 82%;
-    padding: 50px 9% 0;
+    width: 960px;
+    padding: 50px 0 0;
+    margin: 0 auto;
 
 }
 
+
 .placeholder {
-    padding: 0;
+    /*padding: 0;
     margin: 0;
     height: 40%;
-    width: 100%;
+    width: 100%;*/
 }
 
 /*** QUESTION STYLING ***/
 
 .questionBox {
     float: left;
-    width: 29%;
-    margin-right: 6%;
+    width: 280px;
+    margin-right: 60px;
 }
 
 html[dir=rtl] .questionBox {
     float: right;
     margin-right: 0;
-    margin-left: 5%;
+    margin-left: 60px;
 }
 
 .question {
@@ -156,15 +150,9 @@ html[dir=rtl] .questionBox {
     line-height: 48px;
 }
 
-html[dir=rtl] .question {
-}
-
 .answers {
     font-size: 64px;
     line-height: 64px;
-}
-
-html[dir=rtl] .answers {
 }
 
 .answers li {
@@ -173,6 +161,71 @@ html[dir=rtl] .answers {
 
 .answers li:hover {
     color: #757575;
+}
+
+/*** RESULTS ***/
+
+#results {
+    font-size: 24px;
+    text-align: center;
+}
+
+#results span {
+    display: inline-block;
+}
+
+#heading {
+    margin-bottom: 4px;
+}
+
+
+#restInfo {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+#restLink, #restLink:active, #restLink:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#restLink:hover {
+    color: #757575;
+}
+
+#restName {
+    font-size: 64px;
+}
+
+#restAddress {
+    margin-bottom: 30px;
+}
+
+#btnNextRest {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#btnNextRest:hover {
+    color: #757575;
+}
+
+#btnRestart {
+    width: 25px;
+    height: 25px;
+    background: url("../img/btnRestart.png") 0 0 no-repeat;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#restTip {
+    text-align: left;
+    width: 280px;
+    margin: 0 auto;
 }
 
 /*** "MOBILE" ***/
@@ -184,6 +237,10 @@ html[dir=rtl] .answers {
 }*/
 
 @media screen and (max-width: 480px) {
+    body {
+        height: 150%;
+    }
+
     header {
         display: none;
     }
@@ -232,5 +289,9 @@ html[dir=rtl] .answers {
 
     .answers li:active {
         color: #757575;
+    }
+
+    #restName {
+        font-size: 50px;
     }
 }

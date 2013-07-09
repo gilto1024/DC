@@ -9,8 +9,13 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      * - cookie (results)
      * - i18n\l10n
      * - media queries (+determine resolutions)
-     * - results view
      * - no rests left view
+     * - JSON format conversion script
+     * - Contact
+     * - language selector
+     * - mobile Contact Us
+     * - Stop story on mobile
+     * - override black background indicator on mobile (on click)
      */
 
     function log() {
@@ -58,10 +63,10 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
         if (!(restList.length)) {
             noRestsLeft();
-            return;
+        } else {
+            nextQuestion();
         }
 
-        nextQuestion();
         updateView(story[vertical][answer]);
     }
 
@@ -100,8 +105,6 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
     function updateView(story) {
         log("updateView", 'currentQuestionIndex:', currentQuestionIndex, "userSelection:", userSelection ,"restList:", restList);
 
-
-
         if (currentQuestionIndex == questionsList.length) {
             view.displayResults(restList);
         } else {
@@ -124,6 +127,10 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         }
     }
 
+
+    function displayResults(restList) {
+        view.displayResults(restList);
+    }
 
     /**
      * Reset all current indices,modules & user selections,
@@ -149,6 +156,8 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         view.init(this, questionsList);
 
         reset();
+
+        //displayResults(restList);
     }
 
 

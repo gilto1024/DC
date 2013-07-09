@@ -1,14 +1,23 @@
 define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQuestions) {
 
     var dcController,
-        currentQuestionId;
+        currentSectionId,
+        resultsRestList,
+        resultsCurrentRest;
+
 
     // Elements
     var $questions,
         $restCount,
         $story,
         $btnBack,
-        $btnRestart;
+        $btnRestart,
+        $restInfo,
+        $restLink,
+        $restName,
+        $restPhone,
+        $restAddress,
+        $btnNextRest;
 
 
     function log() {
@@ -22,30 +31,28 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
     function bindEvents() {
 
         // reset scroll position to current question
-        $(window).on('resize', function () {
-            displayQuestion();
+        $(window).on('resize', function (e) {
+            scrollToSection();
         });
 
         $(document)
             .on('click', '#questions li', onAnswerClicked)
-            .on('questionShown', function(e, qId) {
+            .on('questionShown', function (e, qId) {
                 log('on questionShown', arguments);
                 log('on questionShown', "1st q id:", $questions.find(".questionArticle").first().attr('id').replace('question', ''))
 
                 if (qId == $questions.find(".questionArticle").first().attr('id').replace('question', '')) {
                     log('on questionShown', 'hiding');
                     $btnBack.fadeOut();
-                    $btnRestart.fadeOut();
                 } else {
                     log('on questionShown', 'showing');
                     $btnBack.fadeIn();
-                    $btnRestart.fadeIn();
                 }
             });
 
-        $("#btnBack").on('click', dcController.onBack);
-
-        $("#btnRestart").on('click', dcController.onReset);
+        $btnBack.on('click', dcController.onBack);
+        $btnRestart.on('click', dcController.onReset);
+        $btnNextRest.on('click', onNextResult);
     }
 
 
@@ -55,6 +62,12 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $story = $("#story");
         $btnBack = $("#btnBack");
         $btnRestart = $("#btnRestart");
+        $restInfo = $("#restInfo");
+        $restLink = $("#restLink");
+        $restName = $("#restName");
+        $restPhone = $("#restPhone");
+        $restAddress = $("#restAddress");
+        $btnNextRest = $("#btnNextRest");
 
     }
 
@@ -88,9 +101,9 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
     function addStoryChapter(chapter) {
         if (!chapter) return;
 
-        $story.queue(function(next) {
+        $story.queue(function (next) {
             var $spanChapter = $("<span></span>").appendTo($story);
-            $spanChapter.teletype({ text: chapter }, next);
+            $spanChapter.teletype({ text:chapter }, next);
         });
     }
 
@@ -109,21 +122,75 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
      * @param {String=} questionId ID of question. if omitted, adjust scroll to current question
      */
     function displayQuestion(questionId) {
-        currentQuestionId = questionId || currentQuestionId;
+        $restCount.show(); // make sure the rest count is visible
 
-        $questions.stop().scrollTo("#question" + currentQuestionId, {
-            duration:1000,
-            easing:"easeOutBack"
-        });
+        scrollToSection("#question" + questionId);
 
         if (questionId) { // trigger event if new question shown
-            $(document).trigger('questionShown', currentQuestionId);
+            $(document).trigger('questionShown', "#question" + questionId);
         }
     }
 
 
+    function shuffle(array) {
+        var currentIndex = array.length
+            , temporaryValue
+            , randomIndex
+            ;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    }
+
+
     function displayResults(results) {
-        //TODO - displayResults
+        resultsRestList = shuffle(results);
+        resultsCurrentRest = 0;
+
+        $restCount.stop().fadeOut();
+        scrollToSection("#results");
+
+        displayRest();
+    }
+
+
+    function displayRest() {
+        $restInfo.stop().animate({'opacity':0}, {
+            duration:100,
+            complete:function () {
+                var rest = resultsRestList[resultsCurrentRest].info;
+
+                $restName.html(rest.name);
+                $restPhone.html(rest.phone);
+                $restAddress.html(rest.address);
+                $restLink.attr('href', rest.url);
+
+                $restInfo.stop().animate({'opacity':1}, 700);
+            }
+        });
+    }
+
+
+    function onNextResult() {
+        resultsCurrentRest++;
+
+        if (resultsCurrentRest == resultsRestList.length) {
+            resultsCurrentRest = 0;
+        }
+
+        displayRest();
     }
 
 
@@ -131,6 +198,15 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         //TODO - noRestsLeft
     }
 
+
+    function scrollToSection(sectionId) {
+        currentSectionId = sectionId || currentSectionId;
+
+        $questions.stop().scrollTo(currentSectionId, {
+            duration:1000,
+            easing:"easeOutBack"
+        });
+    }
 
     /**
      * render questions HTML, bind event listeners
@@ -142,12 +218,12 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         log('init');
         dcController = controller;
 
-        cacheElements();
-        bindEvents();
-
         // render questions HTML
         var htmlQuestions = mustache.to_html(tmplQuestions, {"questions":questionsList});
-        $questions.html(htmlQuestions);
+        $("#questions").html(htmlQuestions);
+
+        cacheElements();
+        bindEvents();
 
         $(".hidden").removeClass('hidden');
     }

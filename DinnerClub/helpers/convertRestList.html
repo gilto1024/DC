@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        html, body {
+
+        }
+
+        #container {
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                'url':'restList.txt',
+                'dataType':'text',
+                success:convert,
+                error:function () {
+                    console.log(arguments);
+                }
+            });
+        });
+
+        function convert(json) {
+            var oldList = JSON.parse(json);
+
+            console.log('\n== Original size:', oldList.length, '\n\n');
+
+            var newList = [];
+            for (var i = 0; i < oldList.length; i++) {
+                newList.push(buildRestObj(oldList[i], i+1));
+            }
+
+            console.log(JSON.stringify(newList));
+        }
+
+        function buildRestObj(oldObj, idx) {
+            var newObj = {
+                "id":"REST" + to3Digits(idx),
+                "info":{
+                    "name":oldObj.name,
+                    "phone":oldObj.Tel,
+                    "address":oldObj.Address,
+                    "url":oldObj.Site
+                },
+                "verticals":{
+                    "party":getPartyArr(oldObj),
+                    "sitting":oldObj.sitting,
+                    "light":oldObj.light,
+                    "vol":oldObj.vol,
+                    "parking":(oldObj.parking == "no" ? "no" : "yes")
+                }
+            }
+
+            return newObj;
+        }
+
+        function to3Digits(num) {
+            if (num < 10) return "00" + num;
+            if (num < 100) return ("0" + num);
+            return num;
+        }
+
+        function getPartyArr(oldObj) {
+            var party = oldObj.so;
+
+            if (typeof(oldObj.date) == "string" && oldObj.date == 'yes') {
+                party.push('date');
+            }
+            else if (oldObj.date.indexOf('yes') != -1) {
+                party.push('date');
+            }
+
+            return party;
+        }
+    </script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html>

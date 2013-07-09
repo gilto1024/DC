@@ -22,6 +22,9 @@ require(
         // before we display any text
         //$(window).on('load', function () {
         $(function(){
+
+            window.scrollTo(0, 1);
+
             dinnerclub.init();
 
             //TODO - remove
