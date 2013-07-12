@@ -108,7 +108,7 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      * @param {String=} story New story snippet to display.
      */
     function updateView(story) {
-        log("updateView", 'currentQuestionIndex:', currentQuestionIndex, "userSelection:", userSelection ,"restList:", restList);
+        log("updateView", 'currentQuestionIndex:', currentQuestionIndex, "userSelection:", userSelection, "restList:", restList);
 
         if (currentQuestionIndex == questionsList.length) {
             view.displayResults(restList);
@@ -162,19 +162,27 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
         reset();
 
-        console.log('requiring about');
-        require(['./about'], function(about) {
-            console.log('about received');
-            about.init();
-        });
+        var bDisplayAbout = true;
+        if (matchMedia) {
+            var mq = window.matchMedia("screen and (max-width: 480px)");
+            if (mq.matches) {
+                bDisplayAbout = false;
+            }
+        }
+
+        if (bDisplayAbout) {
+            require(['./about'], function (about) {
+                about.init();
+            });
+        }
     }
 
 
     return {
         init:init,
         onUserSelection:onUserSelection,
-        onBack: onBack,
-        onReset: reset
+        onBack:onBack,
+        onReset:reset
     };
 
 });

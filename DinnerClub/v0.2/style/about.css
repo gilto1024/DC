@@ -1,0 +1,190 @@
+/*** "About us" ***/
+
+#aboutUsWrapper {
+    height: 100%;
+    width: 440px;
+    position: fixed;
+    opacity: 0.97;
+    top: 0px;
+    z-index: 20;
+    background-color: #EE2164;
+    left: -500px;
+}
+
+html[dir=rtl] #aboutUsWrapper {
+    left: auto;
+    right: -500px;
+}
+
+#aboutUsBtn {
+    width: 38px;
+    height: 66px;
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    background: url(img/info.png) no-repeat;
+    cursor: pointer;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -33px;
+
+    display: none;
+}
+
+html[dir=rtl] #aboutUsBtn {
+    left: auto;
+    right: 500px;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#aboutUsContentWrapper {
+    width: 436px;
+    height: 100%;
+    overflow: auto;
+}
+
+#aboutUsContent {
+    margin: 43px 50px;
+    width: 336px;
+}
+
+.para {
+    font-size: 18px;
+    color: white;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+#contactUsWrapper {
+    display: none;
+    height: 100%;
+    width: 436px;
+    opacity: 0.97;
+    position: fixed;
+    top: 0px;
+    left: -550px;
+    background-color: #778899;
+    z-index: 19;
+}
+
+html[dir=rtl] #contactUsWrapper {
+    left: auto;
+    right: -550px;
+}
+
+#contactUsBody {
+    height: 316px;
+    color: white;
+    position: absolute;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 43px 50px;
+    width: 336px;
+
+}
+
+#contact_header {
+    margin-bottom: 23px;
+}
+
+#contact_submit {
+    width: 84px;
+    height: 38px;
+    cursor: pointer;
+    margin-left: 252px;
+    margin-top: 27px;
+    position: relative;
+}
+
+html[dir=rtl] #contact_submit {
+    margin-left: 0;
+    margin-right: 252px;
+}
+
+#contact_submit.send:hover {
+    background: url(../img/send.png) no-repeat 0px -38px;
+}
+
+#contact_submit.send {
+    background: url(../img/send.png) no-repeat 0 0;
+}
+
+#contact_submit.close {
+    background: url(../img/send.png) no-repeat 0 -114px;
+}
+
+#contact_submit.loader {
+    background: url(../img/send.png) no-repeat 0 -76px;
+}
+
+#mailUs {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -3px;
+    vertical-align: top;
+}
+
+#mailUsClose {
+    /*background: url(../img/about_close.png) no-repeat;*/
+    width: 17px;
+    height: 33px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 12px;
+    font-size:40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+html[dir=rtl] #mailUsClose {
+    left: auto;
+    right: 12px;
+}
+
+.loader_gif {
+    background: url(../img/loader.gif);
+    width: 34px;
+    height: 10px;
+    position: absolute;
+    top: 15px;
+    left: 26px;
+    display: none;
+}
+
+html[dir=rtl] .loader_gif {
+    left: auto;
+    right: 26px;
+}
+
+#ofLoder {
+    position: relative;
+}
+
+/** MOBILE - hide ***/
+
+@media screen and (max-width: 480px) {
+    #aboutUsWrapper {
+        display: none;
+    }
+}

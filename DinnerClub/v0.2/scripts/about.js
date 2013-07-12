@@ -1,4 +1,4 @@
-define([], function (html, css) {
+define(['text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function (html, css, jScrollPaneCss, $mouseWheel, $jScrollPane) {
 
     //TODO dynamically load HTML, CSS
 
@@ -185,6 +185,10 @@ define([], function (html, css) {
 
 
     function init() {
+        $('head').append('<style type="text/css">' + css + '</style>');
+        $('head').append('<style type="text/css">' + jScrollPaneCss + '</style>');
+        $('body').append(html);
+
         cacheElements();
         bindEvents();
 
@@ -192,6 +196,8 @@ define([], function (html, css) {
 
         //TODO only update when opening
         setScrollbar();
+
+        $aboutUsBtn.fadeIn();
     }
 
 

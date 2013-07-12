@@ -3,9 +3,12 @@ require.config({
     paths:{
         "models":"../models",
         "tmpl":"../tmpl",
+        "style":"../style",
 
         "text":"libs/text",
         "mustache":"libs/mustache.min",
+        "mousewheel":"libs/jquery.mousewheel.min",
+        "jscrollpane":"libs/jquery.jscrollpane.min",
 
         //"view":"view-console"
         "view":"view"
