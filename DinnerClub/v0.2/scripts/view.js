@@ -3,7 +3,9 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
     var dcController,
         currentSectionId,
         resultsRestList,
-        resultsCurrentRest;
+        resultsCurrentRest,
+        jscrollPane,
+        isAboutOpen = false;
 
 
     // Elements
@@ -17,6 +19,7 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $restName,
         $restPhone,
         $restAddress,
+        $aboutUsBtn,
         $btnNextRest;
 
 
@@ -27,12 +30,21 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         console.log.apply(console, args);
     }
 
+    function setScrollbar() {
+        jscrollPane = $("#aboutUsContentWrapper").jScrollPane({
+            verticalDragMinHeight:70,
+            verticalDragMaxHeight:249,
+            verticalGutter:10,
+            showArrows:false
+        }).data('jsp');
+    }
 
     function bindEvents() {
 
-        // reset scroll position to current question
+        // reset scroll position to current question and reinitialise jscroll
         $(window).on('resize', function (e) {
             scrollToSection();
+            jscrollPane.reinitialise();
         });
 
         $(document)
@@ -53,6 +65,43 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $btnBack.on('click', dcController.onBack);
         $btnRestart.on('click', dcController.onReset);
         $btnNextRest.on('click', onNextResult);
+        $aboutUsBtn.on('click', onAboutUsBtn);
+
+        $(document).on("click", "#questions , #headerContent", function () {
+            if (isAboutOpen) {
+                closeContact();
+                closeAbout();
+            }
+        });
+
+        $(document).on("click", "#contact_submit", function () {
+            if ($(this).hasClass("close")) {
+                closeContact();
+                closeAbout();
+                $(this).removeClass("close").addClass("send");
+            }
+            else {
+                $("#contact_submit").removeClass("send").addClass("loader");
+                $(".loader_gif").show();
+                var details = getContactFormDetails();
+                if (details.message) {
+                    sendContactMail(details);
+                }
+                else {
+                    finishContactFormProc();
+                    //TODO: user message
+                }
+            }
+        });
+        $(document).on("click", "#mailUs", function () {
+            openContact();
+        });
+        $(document).on("click", "#mailUsClose", function () {
+            isAboutOpen = false;
+            closeContact();
+            closeAbout();
+
+        });
     }
 
 
@@ -68,7 +117,95 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $restPhone = $("#restPhone");
         $restAddress = $("#restAddress");
         $btnNextRest = $("#btnNextRest");
+        $aboutUsBtn = $("#aboutUsBtn");
 
+
+    }
+
+    function onAboutUsBtn() {
+        if ($("#aboutUsWrapper").hasClass("off")) {
+            openAbout();
+        }
+        else {
+            closeAbout();
+        }
+    }
+
+    function openAbout() {
+        isAboutOpen = true;
+        $($aboutUsBtn).hide();
+        $("#aboutUsWrapper").removeClass("off").addClass("on");
+        $("#aboutUsWrapper").animate({left:"0px"}, 500);
+    }
+
+    function closeAbout() {
+        isAboutOpen = false;
+        $("#aboutUsWrapper").removeClass("on").addClass("off");
+        $("#aboutUsWrapper").animate({left:"-440px"}, 500, function () {
+            $aboutUsBtn.css({left:"436px"});
+            $aboutUsBtn.fadeIn();
+        });
+    }
+
+    function closeContact() {
+        $(".loader_gif").hide();
+        $("#contact_submit").html("").removeClass("loader");
+        $("#contactUsWrapper").animate({"left":"-550"}, 500, function () {
+            $("#name").val("");
+            $("#customer_mail").val("");
+            $("#Message").val("");
+            $("#fixed_element_contact").hide();
+        });
+
+    }
+
+    function openContact() {
+        $("#contactUsWrapper").show().animate({"left":"440"}, 500);
+
+    }
+
+    function sendContactMail(details) {
+        $.ajax({
+            url:"send_contact_gm.php",
+            type:"POST",
+            data:{
+                name:details.name,
+                customerMail:details.customerMail,
+                message:details.message
+            },
+            success:function (data) {
+                console.log(data);
+                finishContactFormProc();
+
+
+            },
+            error:function (data) {
+                finishContactFormProc();
+                console.log("error - " + data);
+            }
+
+        });
+
+    }
+
+    function finishContactFormProc() {
+        $(".loader_gif").hide();
+        $("#contact_submit").removeClass("loader").addClass("close");
+        clearContactForm();
+    }
+
+    function clearContactForm() {
+        $("#name").val("");
+        $("#customer_mail").val("");
+        $("#Message").val("");
+    }
+
+    function getContactFormDetails() {
+        var details = {};
+        details.name = $("#name").val();
+        details.customerMail = $("#customer_mail").val();
+        details.message = $("#Message").val();
+        return details;
     }
 
 
@@ -224,7 +361,7 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
 
         cacheElements();
         bindEvents();
-
+        setScrollbar();
         $(".hidden").removeClass('hidden');
     }
 
