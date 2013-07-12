@@ -7,11 +7,15 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      * - cookie (results)
      * - i18n\l10n
      * - JSON format conversion script - add tip
-     * - language selector
      * - mobile Contact Us
      * - override black background indicator on mobile (on click)
      * - Tips
      */
+
+    //TODO port results HTML into index.html
+    //TODO rename "Questions" container
+    //TODO localization module - json with static HTML texts ("you should go to", "no rests left")
+    //TODO language selector
 
     function log() {
         var args = [].slice.apply(arguments);
