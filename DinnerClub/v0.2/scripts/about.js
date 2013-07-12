@@ -1,8 +1,6 @@
 define(['text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function (html, css, jScrollPaneCss, $mouseWheel, $jScrollPane) {
 
-    //TODO dynamically load HTML, CSS
-
-    var jscrollPane,
+    var jScrollPane,
         isAboutOpen = false,
         $aboutUsBtn;
 
@@ -17,8 +15,9 @@ define(['text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jque
     function bindEvents() {
         // reset scroll position to current question and reinitialise jscroll
         $(window).on('resize', function (e) {
-            //TODO only update when viewing
-            jscrollPane.reinitialise();
+            if (isAboutOpen) {
+                jscrollPane.reinitialise();
+            }
         });
 
         $aboutUsBtn.on('click', onAboutUsBtn);
@@ -65,7 +64,7 @@ define(['text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jque
     }
 
 
-    function setScrollbar() {
+    function initScrollbar() {
         jscrollPane = $("#aboutUsContentWrapper").jScrollPane({
             verticalDragMinHeight:70,
             verticalDragMaxHeight:249,
@@ -86,6 +85,10 @@ define(['text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jque
 
 
     function openAbout() {
+        if (!jScrollPane) {
+            initScrollbar();
+        }
+
         isAboutOpen = true;
         $($aboutUsBtn).hide();
         $("#aboutUsWrapper").removeClass("off").addClass("on");
@@ -193,9 +196,6 @@ define(['text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jque
         bindEvents();
 
         $("#mailUsClose").html(i18nArrow);
-
-        //TODO only update when opening
-        setScrollbar();
 
         $aboutUsBtn.fadeIn();
     }

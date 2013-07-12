@@ -4,15 +4,12 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
     /* TODO list
      *
-     * - html5shiv
      * - media queries shiv\polyfill
-     * - json2.js
      * - cookie (results)
      * - i18n\l10n
-     * - media queries (+determine resolutions)
+     * - media queries - missing "480-960" query
      * - no rests left view
-     * - JSON format conversion script
-     * - Contact
+     * - JSON format conversion script - add tip
      * - language selector
      * - mobile Contact Us
      * - Stop story on mobile
