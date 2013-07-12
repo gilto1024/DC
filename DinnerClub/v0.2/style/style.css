@@ -222,6 +222,50 @@ html[dir=rtl] .questionBox {
     margin: 0 auto;
 }
 
+/*** NO RESTS LEFT ***/
+
+#noRestsLeft {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 15;
+    display: none;
+}
+
+#noRestsOverlay {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100%;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity = 90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+
+#noRestsLeftContent {
+    width: 100%;
+    height: 58px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#noRestsLeftBack {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#noRestsLeftBack:hover {
+    color: #757575;
+}
 
 /*** "MOBILE" ***/
 

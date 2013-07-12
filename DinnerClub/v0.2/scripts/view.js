@@ -1,6 +1,10 @@
 define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQuestions) {
 
     //TODO override TAB key
+    //TODO restart img + hover
+    //TODO Contact Us close-arrow - rtl+ltr images + hover
+    //TODO next\prev img + hover
+    //TODO media queries - missing "480-960" query
 
     var dcController,
         currentSectionId,
@@ -18,7 +22,9 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $restName,
         $restPhone,
         $restAddress,
-        $btnNextRest;
+        $btnNextRest,
+        $noRestsLeft,
+        $noRestsLeftBack;
 
 
     function log() {
@@ -27,13 +33,13 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
 
         try {
             console.log.apply(console, args);
-        } catch(err) {
+        } catch (err) {
         }
     }
 
     function bindEvents() {
 
-        // reset scroll position to current question and reinitialise jscroll
+        // reset scroll position to current question
         $(window).on('resize', function (e) {
             scrollToSection();
         });
@@ -56,6 +62,7 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $btnBack.on('click', dcController.onBack);
         $btnRestart.on('click', dcController.onReset);
         $btnNextRest.on('click', onNextResult);
+        $noRestsLeftBack.on('click', onNoRestsLeftBack);
     }
 
 
@@ -71,6 +78,8 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         $restPhone = $("#restPhone");
         $restAddress = $("#restAddress");
         $btnNextRest = $("#btnNextRest");
+        $noRestsLeft = $("#noRestsLeft");
+        $noRestsLeftBack = $("#noRestsLeftBack");
     }
 
 
@@ -134,7 +143,7 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
      */
     function displayQuestion(questionId) {
         $restCount.fadeIn({
-            queue: false
+            queue:false
         }); // make sure the rest count is visible
 
         scrollToSection("#question" + questionId);
@@ -172,6 +181,12 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
         resultsRestList = shuffle(results);
         resultsCurrentRest = 0;
 
+        if (resultsRestList.length == 1) {
+            $("#btnNextRest").hide();
+        } else {
+            $("#btnNextRest").show();
+        }
+
         $restCount.stop().fadeOut();
         scrollToSection("#results");
 
@@ -208,7 +223,13 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
 
 
     function noRestsLeft() {
-        //TODO - noRestsLeft
+        $noRestsLeft.fadeIn();
+    }
+
+
+    function onNoRestsLeftBack() {
+        $noRestsLeft.fadeOut();
+        dcController.onBack();
     }
 
 

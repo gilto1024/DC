@@ -6,8 +6,6 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      *
      * - cookie (results)
      * - i18n\l10n
-     * - media queries - missing "480-960" query
-     * - no rests left view
      * - JSON format conversion script - add tip
      * - language selector
      * - mobile Contact Us
