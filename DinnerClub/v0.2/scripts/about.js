@@ -1,5 +1,7 @@
 define([], function (html, css) {
 
+    //TODO dynamically load HTML, CSS
+
     var jscrollPane,
         isAboutOpen = false,
         $aboutUsBtn;

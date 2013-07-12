@@ -27,9 +27,6 @@ require(
 
             dinnerclub.init();
 
-            //TODO - remove
-            window.dc = dinnerclub;
-
             console.log('DinnerClub ON');
         });
     }
