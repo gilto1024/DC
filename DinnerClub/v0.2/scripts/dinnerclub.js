@@ -22,7 +22,10 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         var args = [].slice.apply(arguments);
         args.unshift("[DinnerClub]");
 
-        console.log.apply(console, args);
+        try {
+            console.log.apply(console, args);
+        } catch (err) {
+        }
     }
 
 
@@ -157,7 +160,11 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
         reset();
 
-        //displayResults(restList);
+        console.log('requiring about');
+        require(['./about'], function(about) {
+            console.log('about received');
+            about.init();
+        });
     }
 
 
