@@ -25,6 +25,11 @@
 	height: 100%;
 }
 
+html[dir=rtl] .jspVerticalBar {
+    right: auto;
+    left: 0;
+}
+
 .jspHorizontalBar
 {
 	position: absolute;
