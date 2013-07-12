@@ -6,6 +6,7 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      *
      * - html5shiv
      * - media queries shiv\polyfill
+     * - json2.js
      * - cookie (results)
      * - i18n\l10n
      * - media queries (+determine resolutions)
@@ -16,6 +17,7 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
      * - mobile Contact Us
      * - Stop story on mobile
      * - override black background indicator on mobile (on click)
+     * - Tips
      */
 
     function log() {

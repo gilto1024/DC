@@ -17,6 +17,7 @@ define([], function (html, css) {
     function bindEvents() {
         // reset scroll position to current question and reinitialise jscroll
         $(window).on('resize', function (e) {
+            //TODO only update when viewing
             jscrollPane.reinitialise();
         });
 
@@ -189,6 +190,7 @@ define([], function (html, css) {
 
         $("#mailUsClose").html(i18nArrow);
 
+        //TODO only update when opening
         setScrollbar();
     }
 
