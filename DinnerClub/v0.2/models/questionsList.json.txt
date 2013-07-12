@@ -97,7 +97,7 @@
                 "text":"Yes"
             },
             {
-                "value":"no",
+                "value":"",
                 "text":"No"
             }
         ]

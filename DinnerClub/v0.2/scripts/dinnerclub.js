@@ -4,7 +4,6 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
     /* TODO list
      *
-     * - media queries shiv\polyfill
      * - cookie (results)
      * - i18n\l10n
      * - media queries - missing "480-960" query
@@ -31,7 +30,8 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
     var userSelection,
         restList,
         questionsList,
-        currentQuestionIndex;
+        currentQuestionIndex,
+        bIsSmallScreen = false;
 
 
     /**
@@ -86,7 +86,7 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         restList = state.restList;
         userSelection = state.userSelection;
 
-        view.removeStoryChapter();
+        if (!bIsSmallScreen) view.removeStoryChapter();
         updateView();
     }
 
@@ -110,11 +110,11 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
         if (currentQuestionIndex == questionsList.length) {
             view.displayResults(restList);
         } else {
+            view.updateRestCount(restList.length);
             view.displayQuestion(questionsList[currentQuestionIndex].id);
         }
 
-        view.updateRestCount(restList.length);
-        if (story) {
+        if (story && !bIsSmallScreen) {
             view.addStoryChapter(story);
         }
     }
@@ -159,15 +159,14 @@ define(['rests', 'questions', 'story', 'view', 'history'], function (rests, ques
 
         reset();
 
-        var bDisplayAbout = true;
         if (matchMedia) {
             var mq = window.matchMedia("screen and (max-width: 480px)");
             if (mq.matches) {
-                bDisplayAbout = false;
+                bIsSmallScreen = true;
             }
         }
 
-        if (bDisplayAbout) {
+        if (!bIsSmallScreen) {
             require(['./about'], function (about) {
                 about.init();
             });

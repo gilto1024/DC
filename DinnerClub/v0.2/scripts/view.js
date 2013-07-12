@@ -1,5 +1,7 @@
 define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQuestions) {
 
+    //TODO override TAB key
+
     var dcController,
         currentSectionId,
         resultsRestList,
@@ -83,6 +85,10 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
 
 
     function updateRestCount(count) {
+
+        var currNum = parseInt($restCount.html()) || 0;
+        if (currNum == count) return;
+
         $restCount
             .stop()
             .animate({count:count}, {
@@ -101,6 +107,7 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
     function addStoryChapter(chapter) {
         if (!chapter) return;
 
+        //TODO write a better teletype plugin that queues the typing (thus avoiding synchronization issues)
         $story.queue(function (next) {
             var $spanChapter = $("<span></span>").appendTo($story);
             $spanChapter.teletype({ text:chapter }, next);
@@ -108,6 +115,10 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
     }
 
 
+    /**
+     * Remove the last chapter from the story
+     * @param {bool=} bAll flag to completely clear the story
+     */
     function removeStoryChapter(bAll) {
         $story.stop(false, true); // complete & clear animation queue
 
@@ -122,7 +133,9 @@ define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQu
      * @param {String=} questionId ID of question. if omitted, adjust scroll to current question
      */
     function displayQuestion(questionId) {
-        $restCount.show(); // make sure the rest count is visible
+        $restCount.fadeIn({
+            queue: false
+        }); // make sure the rest count is visible
 
         scrollToSection("#question" + questionId);
 
