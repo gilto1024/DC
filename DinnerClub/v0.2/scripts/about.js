@@ -20,7 +20,7 @@ define(['jquery', 'text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!
             }
         });
 
-        $aboutUsBtn.on('click', onAboutUsBtn);
+        $aboutUsBtn.off('click').on('click', onAboutUsBtn);
 
         $(document).on("click", function (e) {
             var aboutOrContactClicked = ($(e.target).parents('#aboutUsWrapper').length > 0) ||

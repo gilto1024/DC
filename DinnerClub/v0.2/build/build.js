@@ -14,14 +14,16 @@
         {
             "name":"main",
             "include":[
-                'text',
-                'libs/require'
+                'text'
             ],
             "excludeShallow":[
                 "text!models/questionsList.json",
                 "text!models/restList.json",
                 "text!models/story.json"
             ]
+        },
+        {
+            "name":"about"
         }
     ]
 })
