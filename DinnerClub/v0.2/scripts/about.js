@@ -1,4 +1,4 @@
-define(['text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function (html, css, jScrollPaneCss, $mouseWheel, $jScrollPane) {
+define(['jquery', 'text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function ($, html, css, jScrollPaneCss) {
 
     var jScrollPane,
         isAboutOpen = false,

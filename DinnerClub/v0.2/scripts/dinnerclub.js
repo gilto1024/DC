@@ -1,4 +1,4 @@
-define(['rests', 'questions', 'story', 'view', 'history'], function (rests, questions, story, view, history) {
+define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($, rests, questions, story, view, history) {
 
     //TODO - flight to SF
 

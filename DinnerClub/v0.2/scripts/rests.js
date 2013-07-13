@@ -1,4 +1,4 @@
-define(['text!models/restList.json.txt'], function (restList) {
+define(['jquery', 'text!models/restList.json.txt'], function ($, restList) {
 
     restList = JSON.parse(restList);
 

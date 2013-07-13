@@ -1,12 +1,15 @@
 require.config({
     baseUrl:'scripts/',
     paths:{
+        'jquery':'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
+
         "models":"../models",
         "tmpl":"../tmpl",
         "style":"../style",
 
         "text":"libs/text",
         "mustache":"libs/mustache.min",
+        'plugins':'libs/plugins.min',
         "mousewheel":"libs/jquery.mousewheel.min",
         "jscrollpane":"libs/jquery.jscrollpane.min",
 

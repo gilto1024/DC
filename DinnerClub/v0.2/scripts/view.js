@@ -1,4 +1,4 @@
-define(['mustache', 'text!tmpl/questions-tmpl.html'], function (mustache, tmplQuestions) {
+define(['jquery', 'plugins', 'mustache', 'text!tmpl/questions-tmpl.html'], function ($, plugins, mustache, tmplQuestions) {
 
     //TODO override TAB key
     //TODO restart img + hover
