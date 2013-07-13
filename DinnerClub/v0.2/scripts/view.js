@@ -267,6 +267,8 @@ define(
             // specific handling for titles
             $btnBack.attr('title', texts.btnBackTitle);
             $btnRestart.attr('title', texts.btnRestartTitle);
+
+            i18n.languageSelector.init();
         }
 
         /**

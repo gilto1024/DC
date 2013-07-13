@@ -23,7 +23,10 @@
             ]
         },
         {
-            "name":"about"
+            "name":"about",
+            "exclude":[
+                "mustache"
+            ]
         }
     ]
 })
