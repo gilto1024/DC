@@ -12,7 +12,6 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
      * - Tips
      */
 
-    //TODO port results HTML into index.html
     //TODO rename "Questions" container
     //TODO localization module - json with static HTML texts ("you should go to", "no rests left")
     //TODO language selector

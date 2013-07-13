@@ -1,10 +1,13 @@
-define(['jquery', 'plugins', 'mustache', 'text!tmpl/questions-tmpl.html'], function ($, plugins, mustache, tmplQuestions) {
+define(['jquery', 'plugins', 'i18n', 'mustache', 'text!tmpl/questions-tmpl.html'], function ($, plugins, i18n, mustache, tmplQuestions) {
 
     //TODO override TAB key
     //TODO restart img + hover
     //TODO Contact Us close-arrow - rtl+ltr images + hover
     //TODO next\prev img + hover
     //TODO media queries - missing "480-960" query
+    //TODO add cursor to story
+    //TODO add "dinners" label next to the rest count
+    //TODO hide restCount, back btn in the first question
 
     var dcController,
         currentSectionId,
@@ -242,6 +245,29 @@ define(['jquery', 'plugins', 'mustache', 'text!tmpl/questions-tmpl.html'], funct
         });
     }
 
+
+    function handleI18n() {
+        // Adjust view to language specific settings
+        $('html').attr('dir', i18n.getDirection());
+
+        var texts = i18n.getStaticTexts();
+        // Generic handling - by ID\Class
+        for (var key in texts) {
+            var elm = $("#" + key);
+            if (!(elm.length)) {
+                elm = $("." + key);
+            }
+
+            if (elm.length) {
+                elm.html(texts[key]);
+            }
+        }
+
+        // specific handling for titles
+        $btnBack.attr('title', texts.btnBackTitle);
+        $btnRestart.attr('title', texts.btnRestartTitle);
+    }
+
     /**
      * render questions HTML, bind event listeners
      *
@@ -254,10 +280,12 @@ define(['jquery', 'plugins', 'mustache', 'text!tmpl/questions-tmpl.html'], funct
 
         // render questions HTML
         var htmlQuestions = mustache.to_html(tmplQuestions, {"questions":questionsList});
-        $("#questions").html(htmlQuestions);
+        $("#questions .placeholder").first().after(htmlQuestions);
 
         cacheElements();
         bindEvents();
+
+        handleI18n();
 
         $(".hidden").removeClass('hidden');
     }

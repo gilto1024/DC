@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html dir="rtl">
 <head>
     <script type="text/javascript">
         if (location.href.indexOf('dir=rtl') != -1) {
@@ -43,18 +43,31 @@
 </header>
 <div id="subHeaderAnchor" class="hidden">
     <div id="btnBackContainer">
-        <div id="btnBack" title="back"></div>
+        <div id="btnBack"></div>
     </div>
 </div>
 <div id="restCountWrapper" class="hidden">
     <div id="restCount">69</div>
 </div>
 <section id="questions" class="hidden">
+    <article class="placeholder"></article>
+    <article id="results">
+        <span id="resultsHeading">You should go to</span><br/>
+        <span id="restInfo">
+            <a id="restLink" href="javascript:void(0)" target="_blank"><span id="restName"></span></a><br/>
+            <span id="restPhone"></span><br/>
+            <span id="restAddress"></span>
+        </span><br/>
+        <span id="btnNextRest">Next</span><br/>
+        <span id="btnRestart"></span><br/>
+        <span id="restTip"></span>
+    </article>
+    <article class="placeholder"></article>
 </section>
 <div id="noRestsLeft">
     <div id="noRestsOverlay"></div>
     <div id="noRestsLeftContent">
-        Oops no options left... please go<br/>
+        <span id="noRestsText">Oops no options left... please go</span><br/>
         <span id="noRestsLeftBack">Back</span>
     </div>
 </div>

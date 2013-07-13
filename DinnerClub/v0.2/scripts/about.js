@@ -1,11 +1,13 @@
-define(['jquery', 'text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function ($, html, css, jScrollPaneCss) {
+define(['jquery', 'i18n', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function ($, i18n, css, jScrollPaneCss) {
 
     var jScrollPane,
         isAboutOpen = false,
         $aboutUsBtn;
 
+
     var animationDir = ($("html").attr('dir') == 'rtl' ? 'right' : 'left'),
         i18nArrow = (animationDir == 'right' ? '&#x25B6;' : "&#x25C0;");
+
 
     function cacheElements() {
         $aboutUsBtn = $("#aboutUsBtn");
@@ -190,14 +192,17 @@ define(['jquery', 'text!tmpl/about-tmpl-en.html', 'text!style/about.css', 'text!
     function init() {
         $('head').append('<style type="text/css">' + css + '</style>');
         $('head').append('<style type="text/css">' + jScrollPaneCss + '</style>');
-        $('body').append(html);
 
-        cacheElements();
-        bindEvents();
+        require(['text!tmpl/about-tmpl-' + i18n.getLanguage() + '.html'], function (html) {
+            $('body').append(html);
 
-        $("#mailUsClose").html(i18nArrow);
+            cacheElements();
+            bindEvents();
 
-        $aboutUsBtn.fadeIn();
+            $("#mailUsClose").html(i18nArrow);
+
+            $aboutUsBtn.fadeIn();
+        });
     }
 
 
