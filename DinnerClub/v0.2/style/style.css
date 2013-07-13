@@ -54,13 +54,60 @@ html[dir=rtl] #story {
     float: right;
 }
 
-#story span {
+@-webkit-keyframes storyCursorBlink {
+    0%   { opacity: 0; }
+    30%  { opacity: 1; }
+    75%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes storyCursorBlink {
+   0%   { opacity: 0; }
+   30%  { opacity: 1; }
+   75%  { opacity: 1; }
+   100% { opacity: 0; }
+}
+@-o-keyframes storyCursorBlink {
+    0%   { opacity: 0; }
+    30%  { opacity: 1; }
+    75%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes storyCursorBlink {
+    0%   { opacity: 0; }
+    30%  { opacity: 1; }
+    75%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#storyCursor {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+
+    -webkit-animation:   storyCursorBlink 1s infinite; /* Safari 4+ */
+      -moz-animation:    storyCursorBlink 1s infinite; /* Fx 5+ */
+      -o-animation:      storyCursorBlink 1s infinite; /* Opera 12+ */
+      animation:         storyCursorBlink 1s infinite; /* IE 10+ */
+}
+
+#story .chapter {
+    padding-left: 6px;
+}
+
+#story .chapter:first-child {
+    padding-left: 0;
+}
+
+html[dir=rtl] #story .chapter {
+    padding-left: 0;
     padding-right: 6px;
 }
 
-html[dir=rtl] #story span {
+html[dir=rtl] #story .chapter:first-child {
+    padding-left: 0;
     padding-right: 0;
-    padding-left: 6px;
 }
 
 /*** SUB-HEADER ANCHOR ***/

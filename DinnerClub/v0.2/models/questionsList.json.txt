@@ -98,7 +98,7 @@
                     "text":"Yes"
                 },
                 {
-                    "value":"",
+                    "value":"no",
                     "text":"No"
                 }
             ]
@@ -113,11 +113,11 @@
              "answers":[
                  {
                      "value":"date",
-                     "text":"Yes"
+                     "text":"כן"
                  },
                  {
                      "value":"",
-                     "text":"No"
+                     "text":"לא"
                  }
              ]
 
@@ -125,23 +125,23 @@
          {
              "id":"Q002",
              "vertical":"party",
-             "text":"...So?",
+             "text":"...אז?",
              "answers":[
                  {
                      "value":"friends",
-                     "text":"Friends"
+                     "text":"חברים"
                  },
                  {
                      "value":"family",
-                     "text":"Family"
+                     "text":"משפחה"
                  },
                  {
                      "value":"business",
-                     "text":"Business"
+                     "text":"עסקים"
                  },
                  {
                      "value":"tourists",
-                     "text":"Tourists"
+                     "text":"תיירים"
                  }
              ]
 
@@ -149,15 +149,15 @@
          {
              "id":"Q003",
              "vertical":"sitting",
-             "text":"Where would you like to sit?",
+             "text":"איפה יושבים?",
              "answers":[
                  {
                      "value":"table",
-                     "text":"Table"
+                     "text":"שולחן"
                  },
                  {
                      "value":"bar",
-                     "text":"Bar"
+                     "text":"על הבר"
                  }
              ]
 
@@ -165,15 +165,15 @@
          {
              "id":"Q004",
              "vertical":"light",
-             "text":"Let's set the mood:",
+             "text":"איזו אווירה?",
              "answers":[
                  {
                      "value":"dim",
-                     "text":"Dim"
+                     "text":"חשוכה"
                  },
                  {
                      "value":"bright",
-                     "text":"Bright"
+                     "text":"מוארת"
                  }
              ]
 
@@ -181,15 +181,15 @@
          {
              "id":"Q005",
              "vertical":"vol",
-             "text":"How about the volume?",
+             "text":"מה לגבי הווליום?",
              "answers":[
                  {
                      "value":"quiet",
-                     "text":"Quiet"
+                     "text":"רגוע"
                  },
                  {
                      "value":"loud",
-                     "text":"Loud"
+                     "text":"רועש"
                  }
              ]
 
@@ -197,15 +197,15 @@
          {
              "id":"Q006",
              "vertical":"parking",
-             "text":"Looking for parking?",
+             "text":"מחפשים חניה?",
              "answers":[
                  {
                      "value":"yes",
-                     "text":"Yes"
+                     "text":"כן"
                  },
                  {
-                     "value":"",
-                     "text":"No"
+                     "value":"no",
+                     "text":"לא"
                  }
              ]
 

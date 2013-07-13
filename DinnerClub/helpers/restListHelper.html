@@ -16,7 +16,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $.ajax({
-                'url':'restList.txt',
+                'url':'restList2.txt',
                 'dataType':'text',
                 success:convert,
                 error:function () {
@@ -30,33 +30,17 @@
 
             console.log('\n== Original size:', oldList.length, '\n\n');
 
-            var newList = [];
+            //var newList = [];
             for (var i = 0; i < oldList.length; i++) {
-                newList.push(buildRestObj(oldList[i], i+1));
+                buildRestObj(oldList[i]);
             }
 
-            console.log(JSON.stringify(newList));
+            console.log(JSON.stringify(oldList));
         }
 
-        function buildRestObj(oldObj, idx) {
-            var newObj = {
-                "id":"REST" + to3Digits(idx),
-                "info":{
-                    "name":oldObj.name,
-                    "phone":oldObj.Tel,
-                    "address":oldObj.Address,
-                    "url":oldObj.Site
-                },
-                "verticals":{
-                    "party":getPartyArr(oldObj),
-                    "sitting":oldObj.sitting,
-                    "light":oldObj.light,
-                    "vol":oldObj.vol,
-                    "parking":(oldObj.parking == "no" ? ["no"] : ["yes", "no"])
-                }
-            }
-
-            return newObj;
+        function buildRestObj(oldObj) {
+            
+			oldObj.verticals.parking = (oldObj.verticals.parking == "no" ? ["no"] : ["yes", "no"]);
         }
 
         function to3Digits(num) {

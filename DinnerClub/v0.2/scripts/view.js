@@ -1,11 +1,12 @@
-define(['jquery', 'plugins', 'i18n', 'mustache', 'text!tmpl/questions-tmpl.html'], function ($, plugins, i18n, mustache, tmplQuestions) {
+define(
+    ['jquery', 'plugins', 'i18n', 'mustache', 'text!tmpl/questions-tmpl.html'],
+    function ($, plugins, i18n, mustache, tmplQuestions) {
 
     //TODO override TAB key
     //TODO restart img + hover
     //TODO Contact Us close-arrow - rtl+ltr images + hover
     //TODO next\prev img + hover
     //TODO media queries - missing "480-960" query
-    //TODO add cursor to story
     //TODO add "dinners" label next to the rest count
     //TODO hide restCount, back btn in the first question
 
@@ -39,6 +40,7 @@ define(['jquery', 'plugins', 'i18n', 'mustache', 'text!tmpl/questions-tmpl.html'
         } catch (err) {
         }
     }
+
 
     function bindEvents() {
 
@@ -121,7 +123,8 @@ define(['jquery', 'plugins', 'i18n', 'mustache', 'text!tmpl/questions-tmpl.html'
 
         //TODO write a better teletype plugin that queues the typing (thus avoiding synchronization issues)
         $story.queue(function (next) {
-            var $spanChapter = $("<span></span>").appendTo($story);
+            var $spanChapter = $("<span class='chapter'></span>");
+            $("#storyCursor").before($spanChapter);
             $spanChapter.teletype({ text:chapter }, next);
         });
     }
@@ -134,7 +137,7 @@ define(['jquery', 'plugins', 'i18n', 'mustache', 'text!tmpl/questions-tmpl.html'
     function removeStoryChapter(bAll) {
         $story.stop(false, true); // complete & clear animation queue
 
-        var $elm = bAll ? $story.children('span') : $story.children('span').last();
+        var $elm = bAll ? $story.children('span.chapter') : $story.children('span.chapter').last();
         $elm.remove();
     }
 

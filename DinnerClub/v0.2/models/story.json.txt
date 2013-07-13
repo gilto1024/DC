@@ -1,32 +1,7 @@
 {
     "en":{
-        "party":{
-            "date":"You're going on a date.",
-            "friends":"You're going out with friends.",
-            "business":"You're going out for business.",
-            "tourists":"You're inviting some tourist friends for dinner.",
-            "family":"You're going out for a meal with family."
-        },
-        "sitting":{
-            "bar":"Looking for a place to sit at the bar,",
-            "table":"Looking for a place to sit at a table,"
-        },
-        "light":{
-            "dim":"in a dim,",
-            "bright":"in a bright,"
-        },
-        "vol":{
-            "quiet":"quiet place.",
-            "loud":"loud place."
-        },
-        "parking":{
-            "no":"You don't need parking.",
-            "yes":"You're desperate for parking."
-        }
-    },
-    "he":{
          "party":{
-             "date":"יוצאים לדייט.",
+             "date":"You're going on a date.",
              "friends":"You're going out with friends.",
              "business":"You're going out for business.",
              "tourists":"You're inviting some tourist friends for dinner.",
@@ -48,5 +23,30 @@
              "no":"You don't need parking.",
              "yes":"You're desperate for parking."
          }
-     }
+    },
+    "he":{
+        "party":{
+            "date":"אתם יוצאים לדייט.",
+            "friends":"אתם יוצאים עם חברים.",
+            "business":"אתם יוצאים עם לקוחות.",
+            "tourists":"אתם מזמינים חברים מחו\"ל לארוחה.",
+            "family":"אתם יוצאים לאכול עם משפחה."
+        },
+        "sitting":{
+            "bar":"יושבים על הבר",
+            "table":"מחפשים שולחן"
+        },
+        "light":{
+            "dim":"במקום חשוך",
+            "bright":"במקום מואר"
+        },
+        "vol":{
+            "quiet":"ושקט.",
+            "loud":"והומה."
+        },
+        "parking":{
+            "no":"לא חייבים חניה.",
+            "yes":"חייבים חניה."
+        }
+    }
 }
