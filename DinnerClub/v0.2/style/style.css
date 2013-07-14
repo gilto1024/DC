@@ -1,3 +1,18 @@
+/*** VERTICAL ALIGNMENT (IE8+) ***/
+.vAlignOuterContainer {
+    display: table;
+    overflow: hidden;
+}
+
+.vAlignInnerContainer {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 /*** ***/
 
 html, body {
@@ -445,6 +460,12 @@ html[dir=rtl] .questionBox {
     .answers li:active {
         color: #757575;
     }
+
+    #restNameWrapper {
+        height: 110px;
+        line-height: 55px;
+    }
+
 
     #restName {
         font-size: 50px;
