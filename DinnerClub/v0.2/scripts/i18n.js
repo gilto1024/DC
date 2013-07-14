@@ -1,5 +1,8 @@
 define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function($, mustache, tmpl) {
 
+    //TODO export URL_PARAMS to utils
+    //TODO export languageSelection to module?
+
     var URL_PARAMS=function(){var a={};var b=window.location.search.substring(1);var c=b.split("&");for(var d=0;d<c.length;d++){var e=c[d].split("=");if(typeof a[e[0]]==="undefined"){a[e[0]]=e[1]}else if(typeof a[e[0]]==="string"){var f=[a[e[0]],e[1]];a[e[0]]=f}else{a[e[0]].push(e[1])}}return a}();
 
     var DEFAULT_LANG = 'he',
@@ -10,7 +13,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
                 "static":{
                     "btnBackTitle":"Back",
                     "btnRestartTitle":"Restart",
-                    "noRestsText":"Oops no options left... please go",
+                    "noRestsText":"Oops... no options left! Please go",
                     "noRestsLeftBack":"Back",
                     "resultsHeading":"You should go to",
                     "btnNextRest":"Next"
@@ -21,13 +24,13 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
                 "static": {
                     "btnBackTitle":"אחורה",
                     "btnRestartTitle":"מהתחלה",
-                    "noRestsText":"אופס... נשארנו בלי מסעדות. חזור",
+                    "noRestsText":"אופס... נשארנו בלי מסעדות! חזור",
                     "noRestsLeftBack":"אחורה",
                     "resultsHeading":"כדאי לכם ללכת ל...",
                     "btnNextRest":"הבא"
                 }
             }
-        }
+        };
 
 
     /**
@@ -35,6 +38,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
      * @return {String}
      */
     function getLanguage() {
+        //TODO get language cookie
         if (currLang) return currLang;
 
         // try to get lang form URL param
@@ -56,15 +60,13 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
     }
 
 
-
     function getStaticTexts() {
         return data[getLanguage()].static;
     }
 
 
     var languageSelector = (function() {
-
-        function generateLanugageMenu() {
+        function generateLanguageMenu() {
             var languages = [{
                 "lang": getLanguage(),
                 "selected":true
@@ -94,7 +96,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
 
 
         function setLanguage(lang) {
-            //TODO store cookie
+            //TODO store language cookie
 
             var langUrl = location.href.split('?')[0] + '?lang=' + lang;
             location.href = langUrl;
@@ -134,13 +136,15 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
 
 
         function init() {
-            generateLanugageMenu();
+            generateLanguageMenu();
             bindEvents();
         }
+
 
         return {
             init:init
         }
+
     })();
 
 
