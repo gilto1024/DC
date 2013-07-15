@@ -490,7 +490,7 @@ var restList = (function () {
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-6207436",
-            "Address":"Ha Sinai 2",
+            "Address":"Har Sinai 2",
             "Site":"https://www.facebook.com/pages/Port-Said/193302427463816",
 			"tip":"Friends and good street food, unique and simple Tel Aviv. No reservations."
         },
