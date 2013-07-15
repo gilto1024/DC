@@ -7,7 +7,6 @@ define(
         //TODO Contact Us close-arrow - rtl+ltr images + hover
         //TODO next\prev img + hover
         //TODO media queries - missing "480-960" query
-        //TODO add "dinners" label next to the rest count
         //TODO hide rest count in the second questions as well
 
         var dcController,
@@ -18,6 +17,7 @@ define(
         // Elements
         var $questions,
             $restCount,
+            $restCountLabel,
             $story,
             $btnBack,
             $btnRestart,
@@ -59,10 +59,12 @@ define(
                     if (qId == $questions.find(".questionArticle").first().attr('id').replace('question', '')) {
                         log('on questionShown', 'hiding');
                         $restCount.hide();
+                        $restCountLabel.hide();
                         $btnBack.fadeOut();
                     } else {
                         log('on questionShown', 'showing');
                         $restCount.show(); // make sure the rest count is visible
+                        $restCountLabel.show();
                         $btnBack.fadeIn();
                     }
                 });
@@ -77,6 +79,7 @@ define(
         function cacheElements() {
             $questions = $("#questions");
             $restCount = $("#restCount");
+            $restCountLabel = $("#restCountLabel");
             $story = $("#story");
             $btnBack = $("#btnBack");
             $btnRestart = $("#btnRestart");
@@ -194,6 +197,7 @@ define(
             }
 
             $restCount.stop().fadeOut();
+            $restCountLabel.stop().fadeOut();
             scrollToSection("#results");
 
             displayRest();

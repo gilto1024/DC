@@ -53,7 +53,7 @@ body {
 }
 
 #languageSelectionMenu {
-    margin:0;
+    margin: 0;
     padding: 0;
     width: 50px;
     height: 24px;
@@ -184,17 +184,40 @@ html[dir=rtl] #story .chapter:first-child {
     margin: 0 auto;
 }
 
-#restCount {
+#restCountContent {
     position: absolute;
     right: 0;
     top: 22px; /* this compensates for the big font's bottom alignment in its container */
-    font-size: 140px;
     z-index: 10;
+    width: 280px;
+}
+
+html[dir=rtl] #restCountContent {
+    right: auto;
+    left: 0;
+}
+
+#restCountLabel {
+    float: right;
+    line-height: 66px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+html[dir=rtl] #restCountLabel {
+    float: left;
+    padding-right: 0;
+    padding-left: 20px;
+    letter-spacing: 0;
+}
+
+#restCount {
+    float: right;
+    font-size: 140px;
 }
 
 html[dir=rtl] #restCount {
-    right: auto;
-    left: 9%;
+    float: left;
 }
 
 #btnBackContainer {
@@ -469,7 +492,6 @@ html[dir=rtl] #restTip {
         height: 110px;
         line-height: 55px;
     }
-
 
     #restName {
         font-size: 50px;

@@ -9,6 +9,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
     //TODO override black background indicator on mobile (on click)
     //TODO rename "Questions" container
     //TODO selected language cookie
+    //TODO Google Analytics
 
     function log() {
         var args = [].slice.apply(arguments);

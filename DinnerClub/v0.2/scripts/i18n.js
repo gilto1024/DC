@@ -16,7 +16,8 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
                     "noRestsText":"Oops... no options left! Please go",
                     "noRestsLeftBack":"Back",
                     "resultsHeading":"You should go to",
-                    "btnNextRest":"Next"
+                    "btnNextRest":"Next",
+                    "restCountLabel":"dinners"
                 }
             },
             "he":{
@@ -27,7 +28,8 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
                     "noRestsText":"אופס... נשארנו בלי מסעדות! חזור",
                     "noRestsLeftBack":"אחורה",
                     "resultsHeading":"כדאי לכם ללכת ל...",
-                    "btnNextRest":"הבא"
+                    "btnNextRest":"הבא",
+                    "restCountLabel":"ארוחות"
                 }
             }
         };
