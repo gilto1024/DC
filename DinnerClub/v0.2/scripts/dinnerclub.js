@@ -2,14 +2,11 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
 
     //TODO - flight to SF
 
-    //TODO REMOVE CONSOLE.LOGS!!
+    //TODO -------------------------------------------------------------------->       REMOVE CONSOLE.LOGS!!       <----------------------------------------------------------------
 
     //TODO cookie (results) - possibly not needed at all
-    //TODO JSON format conversion script - add tip
     //TODO mobile Contact Us
     //TODO override black background indicator on mobile (on click)
-    //TODO Tips (load from rest list)
-
     //TODO rename "Questions" container
     //TODO selected language cookie
 

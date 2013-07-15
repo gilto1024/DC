@@ -26,6 +26,7 @@ define(
             $restName,
             $restPhone,
             $restAddress,
+            $restTip,
             $btnNextRest,
             $noRestsLeft,
             $noRestsLeftBack;
@@ -87,6 +88,7 @@ define(
             $btnNextRest = $("#btnNextRest");
             $noRestsLeft = $("#noRestsLeft");
             $noRestsLeftBack = $("#noRestsLeftBack");
+            $restTip = $("#restTip");
         }
 
 
@@ -199,10 +201,11 @@ define(
 
 
         function displayRest() {
+            var rest = resultsRestList[resultsCurrentRest].info;
+
             $restInfo.stop().animate({'opacity':0}, {
                 duration:100,
                 complete:function () {
-                    var rest = resultsRestList[resultsCurrentRest].info;
 
                     $restName.html(rest.name);
                     $restPhone.html(rest.phone);
@@ -210,6 +213,13 @@ define(
                     $restLink.attr('href', rest.url);
 
                     $restInfo.stop().animate({'opacity':1}, 700);
+                }
+            });
+
+            $restTip.stop().animate({'opacity':0}, {
+                duration:100,
+                complete:function () {
+                    $(this).html(rest.tip).stop().animate({'opacity':1}, 700);
                 }
             });
         }
