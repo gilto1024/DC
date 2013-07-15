@@ -340,6 +340,10 @@ html[dir=rtl] .questionBox {
     margin: 0 auto;
 }
 
+html[dir=rtl] #restTip {
+    text-align: right;
+}
+
 /*** NO RESTS LEFT ***/
 
 #noRestsLeft {
