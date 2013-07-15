@@ -1,10 +1,6 @@
-define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function($, mustache, tmpl) {
+define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'utils.cookies', 'mustache'], function ($, tmpl, URL_PARAMS, cookies, mustache) {
 
-    //TODO export URL_PARAMS to utils
     //TODO export languageSelection to module?
-
-    var URL_PARAMS=function(){var a={};var b=window.location.search.substring(1);var c=b.split("&");for(var d=0;d<c.length;d++){var e=c[d].split("=");if(typeof a[e[0]]==="undefined"){a[e[0]]=e[1]}else if(typeof a[e[0]]==="string"){var f=[a[e[0]],e[1]];a[e[0]]=f}else{a[e[0]].push(e[1])}}return a}();
-
     var DEFAULT_LANG = 'he',
         currLang,
         data = {
@@ -22,7 +18,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
             },
             "he":{
                 "dir":"rtl",
-                "static": {
+                "static":{
                     "btnBackTitle":"אחורה",
                     "btnRestartTitle":"מהתחלה",
                     "noRestsText":"אופס... נשארנו בלי מסעדות! חזור",
@@ -34,21 +30,29 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
             }
         };
 
-
     /**
      * Return the language, eigher from the URL or default fallback
      * @return {String}
      */
     function getLanguage() {
-        //TODO get language cookie
         if (currLang) return currLang;
 
         // try to get lang form URL param
         currLang = URL_PARAMS['lang'];
-        if (!currLang || !(data[currLang])) { // language not provided or unsupported
-            currLang = DEFAULT_LANG
+        if (currLang && (data[currLang])) { // language not provided or unsupported
+            return currLang;
         }
 
+        // try to get lang from cookie
+        currLang = cookies.retrieve(cookies.LANG);
+        if (currLang && (data[currLang])) { // no cookie or unsupported language stored
+            // renew the valid cookie
+            cookies.store(cookies.LANG, currLang, 365);
+
+            return currLang;
+        }
+
+        currLang = DEFAULT_LANG;
         return currLang;
     }
 
@@ -67,12 +71,14 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
     }
 
 
-    var languageSelector = (function() {
+    var languageSelector = (function () {
         function generateLanguageMenu() {
-            var languages = [{
-                "lang": getLanguage(),
-                "selected":true
-            }];
+            var languages = [
+                {
+                    "lang":getLanguage(),
+                    "selected":true
+                }
+            ];
 
             for (var lang in data) {
                 if (lang != getLanguage()) {
@@ -98,7 +104,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
 
 
         function setLanguage(lang) {
-            //TODO store language cookie
+            cookies.store(cookies.LANG, lang, 365);
 
             var langUrl = location.href.split('?')[0] + '?lang=' + lang;
             location.href = langUrl;
@@ -110,7 +116,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
                 mouseOutDuration = 200; //ms
 
             $("#languageSelectionMenu").hover(
-                function() {
+                function () {
                     if (mouseOutTimeout) {
                         clearTimeout(mouseOutTimeout);
                         mouseOutTimeout = null;
@@ -118,7 +124,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
 
                     openMenu();
                 },
-                function() {
+                function () {
                     var $this = $(this);
 
                     if (mouseOutTimeout) {
@@ -129,7 +135,7 @@ define(['jquery', 'mustache', "text!tmpl/languageSelection-tmpl.html"], function
                 }
             );
 
-            $(".languageSelectionOption").on('click', function() {
+            $(".languageSelectionOption").on('click', function () {
                 if ($(this).hasClass('languageSelected')) return;
 
                 setLanguage($(this).data('lang'));

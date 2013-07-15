@@ -331,6 +331,10 @@ html[dir=rtl] .questionBox {
     color: #757575;
 }
 
+#restNameWrapper {
+    min-width: 280px;
+}
+
 #restName {
     font-size: 64px;
 }

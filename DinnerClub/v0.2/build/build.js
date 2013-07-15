@@ -12,20 +12,31 @@
 
     "modules":[
         {
+            "name":"utils",
+            "exclude":[
+                "text"
+            ]
+        },
+        {
             "name":"main",
             "include":[
                 'text'
             ],
+            "exclude":[
+                "utils",
+                "text"
+            ],
             "excludeShallow":[
-                "text!models/questionsList.json",
-                "text!models/restList.json",
-                "text!models/story.json"
+                "text!models/questionsList.json.txt",
+                "text!models/restList.json.txt",
+                "text!models/story.json.txt"
             ]
         },
         {
             "name":"about",
             "exclude":[
-                "mustache"
+                "utils",
+                "text"
             ]
         }
     ]

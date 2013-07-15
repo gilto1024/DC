@@ -1,6 +1,6 @@
 define(
-    ['jquery', 'plugins', 'i18n', 'mustache', 'text!tmpl/questions-tmpl.html'],
-    function ($, plugins, i18n, mustache, tmplQuestions) {
+    ['jquery', 'plugins', 'utils', 'text!tmpl/questions-tmpl.html'],
+    function ($, plugins, utils, tmplQuestions) {
 
         //TODO override TAB key
         //TODO restart img + hover
@@ -263,9 +263,9 @@ define(
 
         function handleI18n() {
             // Adjust view to language specific settings
-            $('html').attr('dir', i18n.getDirection());
+            $('html').attr('dir', utils.i18n.getDirection());
 
-            var texts = i18n.getStaticTexts();
+            var texts = utils.i18n.getStaticTexts();
             // Generic handling - by ID\Class
             for (var key in texts) {
                 var elm = $("#" + key);
@@ -282,7 +282,7 @@ define(
             $btnBack.attr('title', texts.btnBackTitle);
             $btnRestart.attr('title', texts.btnRestartTitle);
 
-            i18n.languageSelector.init();
+            utils.i18n.languageSelector.init();
         }
 
         /**
@@ -296,7 +296,7 @@ define(
             dcController = controller;
 
             // render questions HTML
-            var htmlQuestions = mustache.to_html(tmplQuestions, {"questions":questionsList});
+            var htmlQuestions = utils.mustache.to_html(tmplQuestions, {"questions":questionsList});
             $("#questions .placeholder").first().after(htmlQuestions);
 
             cacheElements();

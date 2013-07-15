@@ -1,6 +1,6 @@
-define(['text!models/story.json.txt', 'i18n'], function (story, i18n) {
+define(['text!models/story.json.txt', 'utils'], function (story, utils) {
 
-    story = JSON.parse(story)[i18n.getLanguage()];
+    story = JSON.parse(story)[utils.i18n.getLanguage()];
 
     return story;
 });
