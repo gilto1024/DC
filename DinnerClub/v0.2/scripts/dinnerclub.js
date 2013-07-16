@@ -2,7 +2,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
 
     //TODO - flight to SF
 
-    //TODO -------------------------------------------------------------------->       REMOVE CONSOLE.LOGS!!       <----------------------------------------------------------------
+    //TODO REMOVE CONSOLE.LOGS!! ------------------------------------------------->       REMOVE CONSOLE.LOGS!!       <----------------------------------------------------------------
 
     //TODO cookie (results) - possibly not needed at all
     //TODO mobile Contact Us

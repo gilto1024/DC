@@ -27,6 +27,7 @@ define(
             $restPhone,
             $restAddress,
             $restTip,
+            $btnPrevRest,
             $btnNextRest,
             $noRestsLeft,
             $noRestsLeftBack;
@@ -47,7 +48,7 @@ define(
 
 
             window.onorientationchange = function () {
-                window.scrollTo(0,1);
+                window.scrollTo(0, 1);
                 scrollToSection();
             };
 
@@ -76,6 +77,7 @@ define(
                 });
 
             $btnBack.on('click', dcController.onBack);
+            $btnPrevRest.on('click', onPrevResult);
             $btnRestart.on('click', dcController.onReset);
             $btnNextRest.on('click', onNextResult);
             $noRestsLeftBack.on('click', onNoRestsLeftBack);
@@ -94,6 +96,7 @@ define(
             $restName = $("#restName");
             $restPhone = $("#restPhone");
             $restAddress = $("#restAddress");
+            $btnPrevRest = $("#btnPrevRest");
             $btnNextRest = $("#btnNextRest");
             $noRestsLeft = $("#noRestsLeft");
             $noRestsLeftBack = $("#noRestsLeftBack");
@@ -235,6 +238,17 @@ define(
         }
 
 
+        function onPrevResult() {
+            resultsCurrentRest--;
+
+            if (resultsCurrentRest < 0) {
+                resultsCurrentRest = resultsRestList.length - 1;
+            }
+
+            displayRest();
+        }
+
+
         function onNextResult() {
             resultsCurrentRest++;
 
@@ -286,7 +300,9 @@ define(
 
             // specific handling for titles
             $btnBack.attr('title', texts.btnBackTitle);
+            $btnPrevRest.attr('title', texts.btnPrevRestTitle);
             $btnRestart.attr('title', texts.btnRestartTitle);
+            $btnNextRest.attr('title', texts.btnNextRestTitle);
 
             utils.i18n.languageSelector.init();
         }

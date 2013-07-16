@@ -335,6 +335,7 @@ html[dir=rtl] .answers {
 
 #restNameWrapper {
     min-width: 250px;
+    margin-bottom: 15px;
 }
 
 #restName {
@@ -342,15 +343,20 @@ html[dir=rtl] .answers {
 }
 
 #restAddress {
-    margin-bottom: 30px;
-}
-
-#btnNextRest {
     margin-bottom: 15px;
-    cursor: pointer;
 }
 
-#btnNextRest:hover {
+#restNavigationPane {
+    margin-bottom: 15px;
+}
+
+#btnPrevRest, #btnRestart, #btnNextRest {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#btnPrevRest:hover, #btnNextRest:hover {
     color: #757575;
 }
 
@@ -359,8 +365,6 @@ html[dir=rtl] .answers {
     height: 25px;
     background: url("../img/btnRestart.png") 0 0 no-repeat;
     cursor: pointer;
-    margin: 0 auto;
-    margin-bottom: 15px;
 }
 
 #restTip {
