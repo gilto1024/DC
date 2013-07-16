@@ -1,4 +1,5 @@
 /*** VERTICAL ALIGNMENT (IE8+) ***/
+
 .vAlignOuterContainer {
     display: table;
     overflow: hidden;
@@ -20,13 +21,13 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    letter-spacing: -1px;
 }
 
 body {
     overflow: hidden;
     font-family: "Helvetica", arial, sans-serif;
     font-weight: bold;
+    letter-spacing: -1px;
 }
 
 /*** COMMONS ***/
@@ -291,6 +292,10 @@ html[dir=rtl] .questionBox {
     line-height: 64px;
 }
 
+html[dir=rtl] .answers {
+    margin-top: -5px;
+}
+
 .answers li {
     cursor: pointer;
 }
@@ -449,6 +454,10 @@ html[dir=rtl] #restTip {
     #restCountWrapper {
         position: absolute;
         bottom: 0;
+    }
+
+    #restCountWrapper.iphone {
+        bottom: -70px;
     }
 
     #restCountContent {

@@ -29,8 +29,6 @@ require(
         //$(window).on('load', function () {
         $(function(){
 
-            window.scrollTo(0, 1);
-
             dinnerclub.init();
 
             console.log('DinnerClub ON');

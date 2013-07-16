@@ -45,6 +45,12 @@ define(
 
         function bindEvents() {
 
+
+            window.onorientationchange = function () {
+                window.scrollTo(0,1);
+                scrollToSection();
+            };
+
             // reset scroll position to current question
             $(window).on('resize', function (e) {
                 scrollToSection();
@@ -304,6 +310,11 @@ define(
 
             handleI18n();
 
+            if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+                $("#restCountWrapper").addClass('iphone');
+            }
+
+            window.scrollTo(0, 1);
             $(".hidden").removeClass('hidden');
         }
 
