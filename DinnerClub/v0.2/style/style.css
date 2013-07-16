@@ -201,14 +201,11 @@ html[dir=rtl] #restCountContent {
 #restCountLabel {
     float: right;
     line-height: 66px;
-    padding-right: 20px;
     font-size: 20px;
 }
 
 html[dir=rtl] #restCountLabel {
     float: left;
-    padding-right: 0;
-    padding-left: 20px;
     letter-spacing: 0;
 }
 
