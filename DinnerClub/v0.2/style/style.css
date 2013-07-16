@@ -332,7 +332,7 @@ html[dir=rtl] .questionBox {
 }
 
 #restNameWrapper {
-    min-width: 280px;
+    min-width: 250px;
 }
 
 #restName {
@@ -449,6 +449,11 @@ html[dir=rtl] #restTip {
     #restCountWrapper {
         position: absolute;
         bottom: 0;
+    }
+
+    #restCountContent {
+        top: auto;
+        bottom:0;
     }
 
     #restCount {
