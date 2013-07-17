@@ -137,12 +137,9 @@ define(
         function addStoryChapter(chapter) {
             if (!chapter) return;
 
-            //TODO write a better teletype plugin that queues the typing (thus avoiding synchronization issues)
-            $story.queue(function (next) {
-                var $spanChapter = $("<span class='chapter'></span>");
-                $("#storyCursor").before($spanChapter);
-                $spanChapter.teletype({ text:chapter }, next);
-            });
+            var $spanChapter = $("<span class='chapter'></span>");
+            $("#storyCursor").before($spanChapter);
+            $spanChapter.yotyper({ text:chapter }, $story);
         }
 
 
