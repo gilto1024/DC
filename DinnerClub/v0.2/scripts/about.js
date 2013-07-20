@@ -193,7 +193,9 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
         $('head').append('<style type="text/css">' + css + '</style>');
         $('head').append('<style type="text/css">' + jScrollPaneCss + '</style>');
 
+        console.log('*** About - requiring html...');
         require(['text!tmpl/about-tmpl-' + utils.i18n.getLanguage() + '.html'], function (html) {
+            console.log('*** About - html received');
             $('body').append(html);
 
             cacheElements();
@@ -201,7 +203,10 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
             $("#mailUsClose").html(i18nArrow);
 
-            $aboutUsBtn.fadeIn();
+            console.log('*** About - fading in...');
+            setTimeout(function() {
+                $aboutUsBtn.fadeIn();
+            }, 100);
         });
     }
 

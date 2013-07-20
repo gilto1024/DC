@@ -162,9 +162,13 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
         }
 
         if (!bIsSmallScreen) {
+            console.log('*** Fetching About...');
             require(['./about'], function (about) {
+                console.log('*** About Loaded, initing...');
                 about.init();
             });
+        } else {
+            console.log('*** No About');
         }
     }
 
