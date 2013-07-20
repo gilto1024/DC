@@ -3,6 +3,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
     //TODO widen containers to fit "..." before the click label
     //TODO detach background color (grey\pink) to separate divs (for opacity)
     //TODO form validation
+    //TODO add white overlay behind the panels
 
     var jScrollPane,
         isAboutOpen = false,
