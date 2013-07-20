@@ -1,6 +1,8 @@
 define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function ($, utils, css, jScrollPaneCss) {
 
     //TODO widen containers to fit "..." before the click label
+    //TODO detach background color (grey\pink) to separate divs (for opacity)
+    //TODO form validation
 
     var jScrollPane,
         isAboutOpen = false,

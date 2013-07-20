@@ -254,13 +254,13 @@ html[dir=rtl] #mailUsClose:hover {
     height: 10px;
     position: absolute;
     top: 15px;
-    left: 26px;
+    left: 278px;
     display: none;
 }
 
 html[dir=rtl] .loader_gif {
     left: auto;
-    right: 26px;
+    right: 278px;
 }
 
 #ofLoder {
