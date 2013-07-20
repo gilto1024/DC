@@ -12,11 +12,9 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "noRestsText":"Oops... no options left! Please go",
                     "noRestsLeftBack":"Back",
                     "resultsHeading":"You should go to",
-                    "btnPrevRest":"&#x25c0;",
                     "btnPrevRestTitle":"Previous",
-                    "btnNextRest":"&#x25b6;",
                     "btnNextRestTitle":"Next",
-                    "restCountLabel":"dinners"
+                    "restCountLabel":"Dinners"
                 }
             },
             "he":{
@@ -27,9 +25,7 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "noRestsText":"אופס... נשארנו בלי מסעדות! חזור",
                     "noRestsLeftBack":"אחורה",
                     "resultsHeading":"כדאי לכם ללכת ל...",
-                    "btnPrevRest":"&#x25b6;",
                     "btnPrevRestTitle":"הקודם",
-                    "btnNextRest":"&#x25c0;",
                     "btnNextRestTitle":"הבא",
                     "restCountLabel":"ארוחות"
                 }

@@ -3,13 +3,9 @@ define(
     function ($, plugins, utils, tmplQuestions) {
 
         //TODO override TAB key
-        //TODO restart img + hover
-        //TODO Contact Us close-arrow - rtl+ltr images + hover
-        //TODO next\prev img + hover
         //TODO media queries - missing "480-960" query
         //TODO hide rest count in the second questions as well
         //TODO do not header.slideDown() on mobile
-        //TODO something
 
         var dcController,
             currentSectionId,

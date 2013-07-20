@@ -1,6 +1,6 @@
 [
         {
-            "name":"Café Italia",
+            "name":"קפה איטליה",
             "date":[
                 "yes",
                 "no"
@@ -17,12 +17,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-5612888",
-            "Address":"Kremintzki 6",
+            "Address":"קרמניצקי 6",
             "Site":"http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx",
-			"tip":""
+			"tip":"ותיק וטוב, אווירה של איטליה בצהריים"
         },
         {
-            "name":"Brasserie",
+            "name":"ברסרי",
             "date":[
                 "no"
             ],
@@ -38,12 +38,12 @@
             "vol":"loud",
             "parking":"valet",
             "Tel":"03-6967111",
-            "Address":"Ibn Gabirol 70",
+            "Address":"אבן גבירול 70",
             "Site":"http://www.brasserie.co.il/",
-			"tip":"Busy, central, never fails. The frenchiest french fries in town."
+			"tip":"מרכזי, עמוס ולעולם לא מאכזב, הצ'יפס הכי צרפתי בעיר"
         },
         {
-            "name":"Mizlala",
+            "name":"מיזללה",
             "date":[
                 "yes",
                 "no"
@@ -60,12 +60,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-5665505",
-            "Address":"Nahalat Binyamin 57",
+            "Address":"נחלת בנימין 57",
             "Site":"http://www.mizlala.co.il",
-			"tip":"Great food with friends, intriguing bar for a date."
+			"tip":"אוכל מצויין עם חברים, בר מרתק לדייט"
         },
         {
-            "name":"Cantina",
+            "name":"קנטינה",
             "date":[
                 "no"
             ],
@@ -81,12 +81,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-6205051",
-            "Address":"Rothschild 71",
+            "Address":"רוטשילד 71",
             "Site":"http://www.mouse.co.il/CM.food_item_place,382,213,4178,.aspx",
-			"tip":"Quiet atmosphere, good italian food."
+			"tip":"אוירה שקטה, אוכל איטלקי משובח"
         },
         {
-            "name":"Catit",
+            "name":"כתית",
             "date":[
                 "yes"
             ],
@@ -100,12 +100,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5107001",
-            "Address":"Heichal HaTalmud 4",
+            "Address":"היכל התלמוד 4",
             "Site":"http://www.catit.co.il/",
-			"tip":"Chef Meir Adoni. Fine dining at it's best."
+			"tip":"ספינת הדגל של מאיר אדוני"
 		},
         {
-            "name":"Yafo Tel-Aviv",
+            "name":"יפו תל אביב",
             "date":[
                 "yes",
                 "no"
@@ -121,12 +121,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-6249249",
-            "Address":"Yigal Alon 98",
+            "Address":"יגאל אלון 98",
             "Site":"http://www.yaffotelaviv.com/",
-			"tip":"A serious place. Think \"special event.\""
+			"tip":"מושקע ורציני, תחשבו 'אירוע'"
         },
         {
-            "name":"Messa",
+            "name":"מסה",
             "date":[
                 "yes",
                 "no"
@@ -142,12 +142,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-6856859",
-            "Address":"HaArba'a 19",
+            "Address":"הארבעה 19",
             "Site":"http://www.messa.co.il",
-			"tip":"Heavy business, fine dining."
+			"tip":"ארוחת ערב עסקית לכבדים"
         },
         {
-            "name":"Joya",
+            "name":"ג'ויה",
             "date":[
                 "no"
             ],
@@ -164,12 +164,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-6425854",
-            "Address":"HaArba'a 5",
+            "Address":"הארבעה 5",
             "Site":"http://www.joya.co.il/he/home/default.aspx",
-			"tip":"Casual Italian, quiet and simple."
+			"tip":"אטלקיה רגועה, אפילו הבר חביב"
         },
         {
-            "name":"Herbert Samuel",
+            "name":"הרברט סמואל",
             "date":[
                 "yes",
                 "no"
@@ -186,12 +186,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5166516",
-            "Address":"Kaufmann 6",
+            "Address":"קאופמן 6",
             "Site":"http://herbertsamuel.co.il/default.asp?PageID=5",
-			"tip":"Great food, facing the sunset."
+			"tip":"רמה גבוהה, מול שקיעה"
         },
         {
-            "name":"Raphael",
+            "name":"רפאל",
             "date":[
                 "no"
             ],
@@ -209,12 +209,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5226464",
-            "Address":"Yarkon 87",
+            "Address":"ירקון 87",
             "Site":"http://raphaeltlv.co.il/",
-			"tip":"Fine dining with a great view."
+			"tip":"ותיקה, יקרה מול הים"
         },
         {
-            "name":"Onami",
+            "name":"אונמי",
             "date":[
                 "yes",
                 "no"
@@ -231,12 +231,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5621172",
-            "Address":"HaArba'a 18",
+            "Address":"הארבעה 18",
             "Site":"http://www.onami.co.il/he/home/default.aspx",
-			"tip":"As Japanese as it gets. Get a Choya on the bar."
+			"tip":"היפנית הותיקה, לא לפספס צ'ויה נחמדה"
         },
         {
-            "name":"Tapeo",
+            "name":"טפאו",
             "date":[
                 "yes",
                 "no"
@@ -253,12 +253,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-6240484",
-            "Address":"HaArba'a 16",
+            "Address":"הארבעה 16",
             "Site":"http://www.tapeo.co.il/he/TLV/home.aspx",
-			"tip":"Well established tapas place, for happy hour with good friends."
+			"tip":"הותיקה שבטפאס של תל אביב, מקום לערב שמח עם החבר'ה"
         },
         {
-            "name":"Turkiz",
+            "name":"טורקיז",
             "date":[
                 "yes",
                 "no"
@@ -276,12 +276,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-6996306",
-            "Address":"Rosenblum 6",
+            "Address":"רוזנבלום 6",
             "Site":"http://www.turkiz-rest.co.il/",
-			"tip":"Ocean view with a rich mood."
+			"tip":"נוף לים באוירה של סי אנד סאן..."
         },
         {
-            "name":"Boya",
+            "name":"בויה",
             "date":[
                 "no"
             ],
@@ -297,12 +297,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5446166",
-            "Address":"HaTa'arucha 3",
+            "Address":"התערוכה 3",
             "Site":"http://www.boya.co.il/",
-			"tip":"Tel Aviv port for Tourists."
+			"tip":"קחו את החברים התיירים לטייל בנמל"
         },
         {
-            "name":"Dallal",
+            "name":"דלאל",
             "date":[
                 "no"
             ],
@@ -318,12 +318,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5109292",
-            "Address":"Shabazi 10",
+            "Address":"שבזי 10",
             "Site":"http://www.dallal.info/restIndex3.asp?pageId=31",
 			"tip":""
         },
         {
-            "name":"Suzanna",
+            "name":"סוזאנה",
             "date":[
                 "no"
             ],
@@ -339,12 +339,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-5177580",
-            "Address":"Shabazi 9",
+            "Address":"שבזי 9",
             "Site":"http://www.mouse.co.il/CM.food_item_place,383,213,5644,.aspx",
-			"tip":"Local food with a busy vibe."
+			"tip":"אוכל מקומי באוירה מלאת חיים"
         },
         {
-            "name":"Social Club",
+            "name":"סושיאל קלאב",
             "date":[
                 "yes",
                 "no"
@@ -361,12 +361,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5601114",
-            "Address":"Rothschild 45",
+            "Address":"רוטשילד 45",
             "Site":"http://socialclub.rest.co.il/he/home/default.aspx",
-			"tip":"Sexy Rothschild at it's best."
+			"tip":"רוטשילד הסקסית"
         },
         {
-            "name":"Makom Shel Basar",
+            "name":"מקום של בשר",
             "date":[
                 "no"
             ],
@@ -381,12 +381,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-5104020",
-            "Address":"Shabazi 64",
+            "Address":"שבזי 64",
             "Site":"http://www.mouse.co.il/CM.Food_Item_Place,382,213,7938,.aspx",
-			"tip":"Great meat, no doubt. Even better vibe. "
+			"tip":"האוירה אפילו עולה על הבשר"
         },
         {
-            "name":"Vicki Cristina",
+            "name":"ויקי קריסטינה",
             "date":[
                 "yes",
                 "no"
@@ -404,12 +404,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-7367272",
-            "Address":"Kaufmann 2",
+            "Address":"קאופמן 2",
             "Site":"http://www.vicky-cristina.co.il/",
-			"tip":"Tourist venue, fun nonetheless."
+			"tip":"הצד התוסס של מתחם התחנה"
         },
         {
-            "name":"Abraxas North",
+            "name":"צפון אברקסס",
             "date":[
                 "yes",
                 "no"
@@ -426,12 +426,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5166660",
-            "Address":"Lilienblum 40",
+            "Address":"לילנבלום 40",
             "Site":"http://www.abraxas.co.il/",
-			"tip":"One of the best, yet surprisingly loud. Take a taxi."
+			"tip":"אוירה מתפיעה, עזבו אותכם מלחפש חניה"
         },
         {
-            "name":"Zepra",
+            "name":"צפרה",
             "date":[
                 "yes",
                 "no"
@@ -448,12 +448,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-6240044",
-            "Address":"Yigal Alon 96",
+            "Address":"יגאל אלון 96",
             "Site":"http://zepra.co.il/",
-			"tip":"Daring Asian food, also fun on the bar. Try the tasting menu."
+			"tip":"אסייתי נועז ומושקע, גם כיף על הבר נסו ארוחת טעימות יקרה  אבל מעולה ושונה"
         },
         {
-            "name":"Nanuchka",
+            "name":"ננוצ'קה",
             "date":[
                 "yes",
                 "no"
@@ -470,12 +470,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5162254",
-            "Address":"Lilienblum 30",
+            "Address":"לילנבלום 30",
             "Site":"https://www.facebook.com/nanuchkatlv",
-			"tip":"Authentic Georgian food, great bar."
+			"tip":"אוכל גרוזיני אמיתי, בר מפתיע"
         },
         {
-            "name":"Port Said",
+            "name":"פורט סעיד",
             "date":[
                 "no"
             ],
@@ -489,12 +489,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-6207436",
-            "Address":"Ha Sinai 2",
+            "Address":"הר סיני 2",
             "Site":"https://www.facebook.com/pages/Port-Said/193302427463816",
-			"tip":"Friends and good street food, unique and simple Tel Aviv. No reservations."
+			"tip":"עם חברים טובים ברחוב התל אביבי, מוקפד ומהודר זה לא, תבואו פשוטים"
         },
         {
-            "name":"Kalamata",
+            "name":"קלמטה",
             "date":[
                 "yes",
                 "no"
@@ -511,12 +511,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-6819998",
-            "Address":"Kikar Kdumim 10, Yafo",
+            "Address":"כיכר קדומים 10 יפו",
             "Site":"http://www.kalamata.co.il/",
-			"tip":"Greek Jaffa, ask for a table with a view."
+			"tip":"יפו היוונית, חפשו שולחן ליד חלון"
         },
         {
-            "name":"Hotel Montefiore",
+            "name":"הוטל מונטפיורי",
             "date":[
                 "yes",
                 "no"
@@ -531,12 +531,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-5646100",
-            "Address":"Montefiore 36",
+            "Address":"מונטפיורי 36",
             "Site":"http://www.hotelmontefiore.co.il/restaurant",
-			"tip":"Iconic part of Tel Aviv. Do not miss out on the tart tatin!"
+			"tip":"אווירה יוצאת דופן, לא לוותר על הטארט טאטין"
         },
         {
-            "name":"Elba",
+            "name":"אלבה",
             "date":[
                 "yes"
             ],
@@ -551,12 +551,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5467905",
-            "Address":"Ibn Gabirol 36",
+            "Address":"אבן גבירול 36",
             "Site":"https://www.facebook.com/ELBA.RESTAURANT",
-			"tip":"Romantic, open, glass wall, facing busy Tel Aviv."
+			"tip":"קיר זכוכית רומנטי לאבן גבירול, קחו בורקס ותופתעו לחלוטין"
         },
         {
-            "name":"Café Europa",
+            "name":"קפה אירופה",
             "date":[
                 "yes",
                 "no"
@@ -573,12 +573,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-5259987",
-            "Address":"Rothschild 9",
+            "Address":"רוטשילד 9",
             "Site":"http://www.mouse.co.il/CM.food_item_place,382,213,11158,.aspx",
-			"tip":"Open front to Roshchild blvd. Young and vibrant."
+			"tip":"אוירה תעירה ותוססת, חלל פתוח לשדרות רוטשילד"
         },
         {
-            "name":"Hatzer Goldman",
+            "name":"חצר גולדמן",
             "date":[
                 "no"
             ],
@@ -594,12 +594,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-6822111",
-            "Address":"Goldman 6",
+            "Address":"גולדמן 6",
             "Site":"http://www.goldmanc.co.il/home.php",
-			"tip":""
+			"tip":"לשעבר פיני בחצר"
         },
         {
-            "name":"Shila",
+            "name":"שילה",
             "date":[
                 "yes",
                 "no"
@@ -616,12 +616,12 @@
             "vol":"loud",
             "parking":"valet",
             "Tel":"03-5221224",
-            "Address":"Ben Yehuda 182",
+            "Address":"בן יהודה 182",
             "Site":"http://www.shila-rest.co.il/",
-			"tip":"Dim & loud at it's very best in Tel Aviv."
+			"tip":"אוכל טוב, רעש תל אביבי במיטבו על בן יהודה"
         },
         {
-            "name":"Tapas 1 ha'am",
+            "name":"טאפאס אחד העם",
             "date":[
                 "yes",
                 "no"
@@ -638,12 +638,12 @@
             "vol":"loud",
             "parking":"valet",
             "Tel":"03-5666966",
-            "Address":"Ehad Ha'am 27",
+            "Address":"אחד העם 27",
             "Site":"http://herbertsamuel.co.il/default.asp?PageID=6",
-			"tip":"Warm & Spanish, don't miss out on the valet parking."
+			"tip":"ספרדי וחם, לא לפספס את חניית הואלט"
         },
         {
-            "name":"Sola",
+            "name":"סולה",
             "date":[
                 "yes"
             ],
@@ -658,12 +658,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-5499626",
-            "Address":"Beit Eshel 31",
+            "Address":"בית אשל 31",
             "Site":"https://www.facebook.com/pages/Sola-Food-Wine-Bar/247225912061993",
-			"tip":"Quaint, romantic. High class Jaffa."
+			"tip":"רומנטיקה יפואית במיטבה "
         },
         {
-            "name":"Taizu",
+            "name":"טאיזו",
             "date":[
                 "yes",
                 "no"
@@ -680,12 +680,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5225005",
-            "Address":"Begin 23",
+            "Address":"בגין 23",
             "Site":"https://www.facebook.com/TaizuRestaurant",
-			"tip":"Uniquely Asian, in true Tel Aviv style."
+			"tip":"אסייתית מיוחדת ונועזת, המיטב בסגנון התל אביבי"
         },
         {
-            "name":"Juz & Luz",
+            "name":"ג'וז ולוז",
             "date":[
                 "yes"
             ],
@@ -700,12 +700,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-5606385",
-            "Address":"Yehuda Halevi 51",
+            "Address":"יהודה הלוי 51",
             "Site":"http://www.mouse.co.il/CM.Food_Item_Place,384,213,3988,.aspx",
-			"tip":"Quality Asian with a reputation for hipster lesbo-chic."
+			"tip":"אסייתית איכותית ב'סלון פולני היפסטרי, בעל לסבו-שיק מובהק' - חיליק גורפינקל"
         },
         {
-            "name":"Toto",
+            "name":"טוטו",
             "date":[
                 "yes",
                 "no"
@@ -722,12 +722,12 @@
             "vol":"loud",
             "parking":"yes",
             "Tel":"03-6935151",
-            "Address":"Berkovich 4",
+            "Address":"ברקוביץ' 4",
             "Site":"http://www.toto-rest.co.il/",
-			"tip":"Winner food combinations, less obvious location."
+			"tip":"אוירה מנצחת באזור קצת שונה מהרגיל, מתאים לצפוניים בנינו"
         },
         {
-            "name":"Mel & Michelle",
+            "name":"מל ומישל",
             "date":[
                 "yes"
             ],
@@ -742,12 +742,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-5293232",
-            "Address":"Ben Yehuda 155",
+            "Address":"בן יהודה 155",
             "Site":"http://www.mel-michelle.co.il/",
-			"tip":"Romantic date with great food. Try the Roman Gniocchi."
+			"tip":"דייט רומנטי במיוחד עם אוכל איטלקי ים תיכוני, ניוקי רומאי אותנטי"
         },
         {
-            "name":"Mitbach Laila",
+            "name":"מטבח לילה",
             "date":[
                 "yes",
                 "no"
@@ -762,12 +762,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5660481",
-            "Address":"Lilienblum 43",
+            "Address":"לילנבלום 43",
             "Site":"http://www.nightkitchen.co.il/",
-			"tip":"Bar feel, great food."
+			"tip":"אוכל מושקע באוירת בר תל  אביבי"
         },
         {
-            "name":"Yassou",
+            "name":"יאסו",
             "date":[
                 "no"
             ],
@@ -782,12 +782,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-6031719",
-            "Address":"Yarkon 105",
+            "Address":"ירקון 105",
             "Site":"http://www.yassoutelaviv.co.il/",
-			"tip":"Great view of the Tel Aviv promenade."
+			"tip":"נוף קיצי לטיילת תל אביב, שתו בחוץ, תאכלו בפנים"
         },
         {
-            "name":"Flee Market",
+            "name":"פלי מרקט",
             "date":[
                 "yes",
                 "no"
@@ -805,12 +805,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-6202262",
-            "Address":"Rabbi Yohanan 8",
+            "Address":"רבי יוחנן 8",
             "Site":"https://www.facebook.com/pages/Fleamarket-Restaurant-%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%A4%D7%9C%D7%99%D7%9E%D7%A8%D7%A7%D7%98/105537962947115",
-			"tip":"Hipster end of Jaffa flee market. Fun bar."
+			"tip":"הצד ההיפסטרי של שוק הפשפשים"
         },
         {
-            "name":"Kitchen Market",
+            "name":"קיצ'ן מרקט",
             "date":[
                 "no"
             ],
@@ -826,12 +826,12 @@
             "vol":"loud",
             "parking":"paid",
             "Tel":"03-5446669",
-            "Address":"Hangar 12, Nemal Tel Aviv",
+            "Address":"הנגר 12, נמל תל אביב",
             "Site":"http://www.kitchen-market.co.il/",
-			"tip":"Good sea food, overlooking the redesigned port of Tel Aviv."
+			"tip":"נוף נפלא באוירה החמה של שוק נמל תל אביב המחודש, עדיף שולחנות מערביים"
         },
         {
-            "name":"Alma",
+            "name":"עלמה",
             "date":[
                 "yes"
             ],
@@ -846,12 +846,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-6308777",
-            "Address":"Yavne 23",
+            "Address":"יבנה 23",
             "Site":"http://www.almahotel.co.il/alma-lounge-dining",
-			"tip":"The classiest lounge on Rothschild."
+			"tip":"הלאונג' הכי קלאסי ברוטשילד"
         },
         {
-            "name":"HaShulchan",
+            "name":"השולחן",
             "date":[
                 "no"
             ],
@@ -867,12 +867,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5257171",
-            "Address":"Rothschild 73",
+            "Address":"רוטשילד 73",
             "Site":"http://www.mouse.co.il/CM.food_item_place,382,213,10774,.aspx",
-			"tip":"Sit in the balcony."
+			"tip":"עמר מילר על רוטשילד, שבו במרפסת אם נעים בערב"
         },
         {
-            "name":"Popina",
+            "name":"פופינה",
             "date":[
                 "yes",
                 "no"
@@ -889,12 +889,12 @@
             "vol":"quiet",
             "parking":"valet",
             "Tel":"03-5757477",
-            "Address":"Ehad Ha'am 3",
+            "Address":"אחד העם 3",
             "Site":"https://www.facebook.com/PopinaTelAviv",
-			"tip":"The sophisticated, thin line between Tel Aviv and Neve Tzedek."
+			"tip":"הקו העדין והמתוחכם בין תל אביב לנווה צדק"
         },
         {
-            "name":"Cocina Tamar",
+            "name":"קוצ'ינה תמר",
             "date":[
                 "yes",
                 "no"
@@ -910,12 +910,12 @@
             "vol":"quiet",
             "parking":"yes",
             "Tel":"03-6390407",
-            "Address":"HaTsfira 10",
+            "Address":"הצפירה 10",
             "Site":"http://www.mouse.co.il/CM.Food_Item_Place,382,213,4033,.aspx",
-			"tip":"Quaint food, simple & honest mood."
+			"tip":"אוירה פשוטה, שולחנות עץ כהה ואוכל איטלקי לא מתנשא"
         },
         {
-            "name":"Coffee Bar",
+            "name":"קופי בר",
             "date":[
                 "yes",
                 "no"
@@ -933,12 +933,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-6889696",
-            "Address":"Yad Haruzim 13",
+            "Address":"יד חרוצים 13",
             "Site":"http://www.coffeebar.co.il/",
-			"tip":"Well established, causal and classy."
+			"tip":"מוסד ותיק ואיכותי, חניה בתשלום, עזבו לחפש..."
         },
         {
-            "name":"Radio Rosco",
+            "name":"רדיו רוסקו",
             "date":[
                 "yes",
                 "no"
@@ -955,12 +955,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5600334",
-            "Address":"Allenby 97",
+            "Address":"אלנבי 97",
             "Site":"https://www.facebook.com/pages/%D7%A8%D7%93%D7%99%D7%95-%D7%A8%D7%95%D7%A1%D7%A7%D7%95-%D7%A7%D7%A4%D7%99%D7%98%D7%A8%D7%99%D7%94-%D7%90%D7%99%D7%98%D7%9C%D7%A7%D7%99%D7%AA/159061699052",
-			"tip":"Thin pizza, casual dinner."
+			"tip":"פיצה דקה, ארוחת ערב נעימה"
         },
         {
-            "name":"Cheder Ochel",
+            "name":"חדר אוכל",
             "date":[
                 "no"
             ],
@@ -974,12 +974,12 @@
             "vol":"loud",
             "parking":"paid",
             "Tel":"03-6966188",
-            "Address":"Shaul Hamelech 23",
+            "Address":"שאול המלך 23",
             "Site":"https://www.facebook.com/dininghall",
-			"tip":"Kibutz food with a twist. Dining hall seating. Best with friends."
+			"tip":"אוכל קיבוץ עם טוויסט, אוירת חדר אוכל, הכי כיף עם חברים"
         },
         {
-            "name":"Vong",
+            "name":"וונג",
             "date":[
                 "no"
             ],
@@ -995,12 +995,12 @@
             "vol":"loud",
             "parking":"paid",
             "Tel":"03-6337171",
-            "Address":"Rothschild 15",
+            "Address":"רוטשילד 15",
             "Site":"http://www.vong.co.il",
-			"tip":"Intimate asian place. The best phu soup in town."
+			"tip":"אסייתית שונה, אווירה אינטימית. מרק פו מהטובים בעיר"
         },
         {
-            "name":"Pronto",
+            "name":"פרונטו",
             "date":[
                 "yes",
                 "no"
@@ -1016,12 +1016,12 @@
             "vol":"loud",
             "parking":"paid",
             "Tel":"03-5660915",
-            "Address":"Herzel 4",
+            "Address":"הרצל 4",
             "Site":"http://www.pronto.co.il/",
-			"tip":"One of the best Italians around. Excellent lamb pappardelle."
+			"tip":"איטליה במיטבה פפרדלה טלה מעולה!"
         },
         {
-            "name":"Yakimono",
+            "name":"יקימונו",
             "date":[
                 "yes",
                 "no"
@@ -1038,12 +1038,12 @@
             "vol":"quiet",
             "parking":"paid",
             "Tel":"03-5175171",
-            "Address":"Rothschild 19",
+            "Address":"רוטשילד 19",
             "Site":"http://www.yakimono.co.il",
 			"tip":""
         },
         {
-            "name":"Mul-Yam",
+            "name":"מול ים",
             "date":[
                 "yes",
                 "no"
@@ -1060,12 +1060,12 @@
             "vol":"quiet",
             "parking":"paid",
             "Tel":"03-5469920",
-            "Address":"Hangar 24, Namal Tel Aviv",
+            "Address":"הנגר 24 נמל תל אביב",
             "Site":"http://www.mulyam.com/",
-			"tip":"The eldest of the sea food restaurants, open view to the wooden deck of the Tel Aviv harbour."
+			"tip":"הבחירה שבמסעדות הים, חלון פתוח לדק העץ של נמל תל אביב"
         },
         {
-            "name":"Sardinia",
+            "name":"סרדיניה",
             "date":[
                 "yes",
                 "no"
@@ -1083,12 +1083,12 @@
             "vol":"loud",
             "parking":"paid",
             "Tel":"03-6832211",
-            "Address":"Kikar Kdumim, Yafo",
+            "Address":"כיכר קדומים, יפו",
             "Site":"https://www.facebook.com/SardiniaItalianTrattoria",
-			"tip":"At the top of old Jaffa, not only for tourists."
+			"tip":"בגבעת יפו העתיקה, לא רק לתיירים"
         },
         {
-            "name":"Adora",
+            "name":"אדורה",
             "date":[
                 "yes",
                 "no"
@@ -1105,12 +1105,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-6050896",
-            "Address":"Ben Yehuda 226",
+            "Address":"בן יהודה 226",
             "Site":"http://www.mouse.co.il/CM.Food_Item_Place,382,213,3926,.aspx",
-			"tip":"An Israeli chef kitchen with little pretence."
+			"tip":"מטבח שף ישראלי אמיתי נטול יומרנות מיותרת"
         },
         {
-            "name":"David veYosef",
+            "name":"שדוד ויוסף",
             "date":[
                 "yes",
                 "no"
@@ -1126,12 +1126,12 @@
             "vol":"loud",
             "parking":"valet",
             "Tel":"03-6040036",
-            "Address":"Montefiore 21",
+            "Address":"מונטיפיורי 21",
             "Site":"http://davidveyossef.co.il/",
-			"tip":"Don't miss the bar with the view to the glass kitchen."
+			"tip":"אל תפספסו את הבר עם הנוף למטבח"
         },
 		{
-            "name":"Bertie",
+            "name":"ברטי",
             "date":[
                 "no",
 				"yes"
@@ -1147,12 +1147,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"072-2512950",
-            "Address":"King George 88",
+            "Address":"קינג ג'ורג' 88",
             "Site":"http://www.bertie.co.il/",
 			"tip":""
         },
 		{
-            "name":"Hanoi",
+            "name":"האנוי",
             "date":[
                 "no"
                 ],
@@ -1166,12 +1166,12 @@
             "vol":"loud",
             "parking":"no",
             "Tel":"03-5337962",
-            "Address":"Lilenblum 18",
+            "Address":"לילנבלום 18",
             "Site":"https://www.facebook.com/Hanoirest",
-			"tip":"Asian food with an Asian setting. Truly good ramen soup."
+			"tip":"אוכל אסייתי עם עיצוב רחוב, מרק ראמן מדהים!"
         },
 		{
-            "name":"Belini",
+            "name":"בליני",
             "date":[
                 "no"
                 ],
@@ -1187,12 +1187,12 @@
             "vol":"loud",
             "parking":"paid",
             "Tel":"03-5178486",
-            "Address":"Yehiel 6",
+            "Address":"יחיאל 6",
             "Site":"http://www.bellini.co.il/",
-			"tip":"Solid Italian, with a cultured setting."
+			"tip":"איטלקיה נחמדה באוירה של מרכז סוזן דלל"
         },
 		{
-            "name":"Aria",
+            "name":"ארייה",
             "date":[
                 "yes",
                 "no"
@@ -1209,12 +1209,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":" 03-5296054",
-            "Address":"Nehalat Binyamin 66",
+            "Address":"נחלת בנימין 66",
             "Site":"http://ariatlv.co.il/",
-			"tip":"Young chef restaurant, romantic setting."
+			"tip":"מסעדת שף צעירה ורומנטית"
         },
 		{
-            "name":"Bistro Eden",
+            "name":"ביסטרו עדן",
             "date":[
                 "yes",
                 ""
@@ -1229,12 +1229,12 @@
             "vol":"quiet",
             "parking":"no",
             "Tel":"03-5455900",
-            "Address":"Yeshuchon 11",
+            "Address":"ישוכון 11",
             "Site":"http://edenboutiquehotel.co.il/bistro/",
-			"tip":"The feel of a boutique hotel."
+			"tip":"באוירת מלון בוטיק מיוחד"
         },
 		{
-            "name":"Alora",
+            "name":"אלורה",
             "date":[
                 "yes",
                 "no"
@@ -1251,12 +1251,12 @@
             "vol":"quiet",
             "parking":"paid",
             "Tel":"03-5665655",
-            "Address":"Rothschild 60",
+            "Address":"רוטשילד 60",
             "Site":"http://www.allora.co.il/",
-			"tip":"Open balcony Italian on Rothschild blvd."
+			"tip":"איטלקיה פתוחה ברוטשילד"
         },
 		{
-            "name":"Baniolet",
+            "name":"בניולה",
             "date":[
                 "yes",
                 "no"
@@ -1272,12 +1272,12 @@
             "vol":"quiet",
             "parking":"paid",
             "Tel":"03-6022813",
-            "Address":"Hasharon 14",
+            "Address":"השרון 14",
             "Site":"https://www.facebook.com/pages/Bagnolet-KitchenBar-%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%91%D7%A0%D7%99%D7%95%D7%9C%D7%94/161490363950724?fref=ts",
 			"tip":""
         },
 		{
-            "name":"NG",
+            "name":"אנג'י",
             "date":[
                 "no"
             ],
@@ -1293,8 +1293,8 @@
             "vol":"quiet",
             "parking":"paid",
             "Tel":"03-5167888",
-            "Address":"Ehad Ha'am 6",
+            "Address":"אחד העם 6",
             "Site":"http://www.ngrestaurant.co.il/",
-			"tip":"A great place for meat and friends."
+			"tip":"מקום טוב לבשר וחברים"
         }
 	]

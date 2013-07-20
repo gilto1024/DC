@@ -9,11 +9,41 @@
     z-index: 20;
     background-color: #EE2164;
     left: -500px;
+    letter-spacing: 0;
 }
 
 html[dir=rtl] #aboutUsWrapper {
     left: auto;
     right: -500px;
+}
+
+#aboutUsClose {
+    /*background: url(../img/about_close.png) no-repeat;*/
+    width: 18px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 12px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    background: url('img/l_white.png') 0 0 no-repeat;
+    z-index: 1;
+}
+
+html[dir=rtl] #aboutUsClose {
+    left: auto;
+    right: 12px;
+    background: url('img/r_white.png') 0 0 no-repeat;
+}
+
+#aboutUsClose:hover {
+    background: url('img/l_white_hover.png') 0 0 no-repeat;
+}
+
+html[dir=rtl] #aboutUsClose:hover {
+    background: url('img/r_white_hover.png') 0 0 no-repeat;
 }
 
 #aboutUsBtn {
@@ -30,13 +60,12 @@ html[dir=rtl] #aboutUsWrapper {
     line-height: 51px;
     padding-left: 8px;
 
-
     /*-moz-border-radius-topright: 5px;
-    -webkit-border-top-right-radius: 5px;
-    border-top-right-radius: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;*/
+   -webkit-border-top-right-radius: 5px;
+   border-top-right-radius: 5px;
+   -moz-border-radius-bottomright: 5px;
+   -webkit-border-bottom-right-radius: 5px;
+   border-bottom-right-radius: 5px;*/
     margin-top: -33px;
 
     display: none;
@@ -69,7 +98,7 @@ html[dir=rtl] #aboutUsBtn {
 }
 
 #aboutUsContent {
-    margin: 43px 50px;
+    margin: 20px 50px;
     width: 336px;
 }
 
@@ -78,7 +107,16 @@ html[dir=rtl] #aboutUsBtn {
     color: white;
     line-height: 26px;
     font-weight: normal;
-    text-align: justify;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.para:first-child {
+    margin-top:0;
+}
+
+.para:last-child {
+    margin-bottom:0;
 }
 
 #contactUsWrapper {
@@ -91,6 +129,7 @@ html[dir=rtl] #aboutUsBtn {
     left: -550px;
     background-color: #778899;
     z-index: 19;
+    letter-spacing: 0;
 }
 
 html[dir=rtl] #contactUsWrapper {
@@ -104,13 +143,32 @@ html[dir=rtl] #contactUsWrapper {
     position: absolute;
     font-size: 18px;
     line-height: 26px;
-    margin: 43px 50px;
+    margin: 20px 50px;
     width: 336px;
-
 }
 
-#contact_header {
-    margin-bottom: 23px;
+#contactUsBody input[type=text] {
+    height: 38px;
+    line-height: 38px;
+    margin: 0 0 8px;
+}
+
+#contactUsBody textarea {
+    padding-top: 4px !important;
+    resize: none;
+}
+
+
+#contactUsBody input[type=text], #contactUsBody textarea {
+    border: 1px solid #a8a8a8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    padding: 0 5px;
+    width: 325px;
+
 }
 
 #contact_submit {
@@ -120,6 +178,8 @@ html[dir=rtl] #contactUsWrapper {
     margin-left: 252px;
     margin-top: 27px;
     position: relative;
+    text-align: center;
+    line-height: 38px;
 }
 
 html[dir=rtl] #contact_submit {
@@ -127,20 +187,20 @@ html[dir=rtl] #contact_submit {
     margin-right: 252px;
 }
 
-#contact_submit.send:hover {
-    background: url(../img/send.png) no-repeat 0px -38px;
+#contact_submit.send {
+    background: url(img/send.png) no-repeat 0 0;
 }
 
-#contact_submit.send {
-    background: url(../img/send.png) no-repeat 0 0;
+#contact_submit.send:hover {
+    background: url(img/send.png) no-repeat 0px -38px;
 }
 
 #contact_submit.close {
-    background: url(../img/send.png) no-repeat 0 -114px;
+    background: url(img/send.png) no-repeat 0 0;
 }
 
 #contact_submit.loader {
-    background: url(../img/send.png) no-repeat 0 -76px;
+    background: url(img/send.png) no-repeat 0 -38px;
 }
 
 #mailUs {
@@ -152,27 +212,44 @@ html[dir=rtl] #contact_submit {
     vertical-align: top;
 }
 
+html[dir=rtl] #mailUs {
+    line-height: 42px;
+}
+
+#mailUs:hover {
+    color: #d3d3d3;
+}
+
 #mailUsClose {
     /*background: url(../img/about_close.png) no-repeat;*/
-    width: 17px;
-    height: 33px;
+    width: 18px;
+    height: 36px;
     position: absolute;
     top: 50%;
     margin-top: -16px;
     left: 12px;
-    font-size:40px;
+    font-size: 40px;
     cursor: pointer;
     color: white;
+    background: url('img/l_white.png') 0 0 no-repeat;
 }
-
 
 html[dir=rtl] #mailUsClose {
     left: auto;
     right: 12px;
+    background: url('img/r_white.png') 0 0 no-repeat;
+}
+
+#mailUsClose:hover {
+    background: url('img/l_white_hover.png') 0 0 no-repeat;
+}
+
+html[dir=rtl] #mailUsClose:hover {
+    background: url('img/r_white_hover.png') 0 0 no-repeat;
 }
 
 .loader_gif {
-    background: url(../img/loader.gif);
+    background: url(img/loader.gif);
     width: 34px;
     height: 10px;
     position: absolute;

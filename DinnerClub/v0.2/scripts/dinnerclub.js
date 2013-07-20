@@ -4,12 +4,11 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
 
     //TODO REMOVE CONSOLE.LOGS!! ------------------------------------------------->       REMOVE CONSOLE.LOGS!!       <----------------------------------------------------------------
 
-    //TODO cookie (results) - possibly not needed at all
     //TODO mobile Contact Us
     //TODO override black background indicator on mobile (on click)
     //TODO rename "Questions" container
-    //TODO selected language cookie
     //TODO Google Analytics
+    //TODO facebook <og:...> meta tags
 
     function log() {
         var args = [].slice.apply(arguments);

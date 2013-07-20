@@ -1,3 +1,28 @@
+/*** FONTS & WEIGHT ***/
+.fontBold {
+    font-family: 'HelveticaNeueW01-75Bold', "Helvetica", arial, sans-serif;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+html[dir=rtl] .fontBold {
+    font-family: arial, sans-serif;
+    font-weight: bold;
+}
+
+.fontRegular {
+    font-family: 'HelveticaNeueW01-55Roma', "Helvetica", arial, sans-serif;
+    letter-spacing: -1px;
+    font-weight: normal;
+}
+
+html[dir=rtl] .fontRegular {
+    font-family: arial, sans-serif;
+    font-weight: normal;
+}
+
+
+
 /*** VERTICAL ALIGNMENT (IE8+) ***/
 
 .vAlignOuterContainer {
@@ -25,9 +50,7 @@ html, body {
 
 body {
     overflow: hidden;
-    font-family: Helvetica W01 Bold, "Helvetica", arial, sans-serif;
     /*font-weight: bold;*/
-    letter-spacing: -1px;
 }
 
 /*** COMMONS ***/
@@ -62,7 +85,6 @@ body {
     position: absolute;
     right: 0;
     color: white;
-    font-weight: normal;
     font-size: 14px;
 
         -moz-transition:height 0.3s;
@@ -82,11 +104,12 @@ html[dir=rtl] #languageSelectionMenu {
 
 .languageSelectionOption {
     height: 16px;
-    width: 26px;
+    width: 29px;
     background: #BEBEBE;
     margin: 0 0 1px 0;
-    padding: 4px 12px;
+    padding: 3px 12px 5px;
     cursor: pointer;
+    letter-spacing: 0;
 }
 
 .languageSelectionOption:hover {
@@ -189,7 +212,7 @@ html[dir=rtl] #story .chapter:first-child {
 #restCountContent {
     position: absolute;
     right: 0;
-    top: 22px; /* this compensates for the big font's bottom alignment in its container */
+    top: 11px; /* this compensates for the big font's bottom alignment in its container */
     z-index: 10;
     width: 280px;
 }
@@ -197,22 +220,26 @@ html[dir=rtl] #story .chapter:first-child {
 html[dir=rtl] #restCountContent {
     right: auto;
     left: 0;
+    top: 17px;
 }
 
 #restCountLabel {
     float: right;
-    line-height: 66px;
+    line-height: 106px;
     font-size: 20px;
 }
 
 html[dir=rtl] #restCountLabel {
     float: left;
     letter-spacing: 0;
+    line-height: 102px
 }
 
 #restCount {
     float: right;
-    font-size: 140px;
+    font-size: 164px;
+    font-family: 'HelveticaNeueW01-75Bold', "Helvetica", arial, sans-serif !important;
+    font-weight: normal !important;
 }
 
 html[dir=rtl] #restCount {
@@ -244,8 +271,12 @@ html[dir=rtl] #restCount {
     width: 36px;
     height: 18px;
     display: inline-block;
-    background: url('../img/back.png') center 0 no-repeat;
+    background: url('../img/b.png') 0 0 no-repeat;
     cursor: pointer;
+}
+
+#btnBack:hover {
+    background: url('../img/b_hover.png') 0 0 no-repeat;
 }
 
 /*** QUESTIONS ***/
@@ -293,21 +324,34 @@ html[dir=rtl] .questionBox {
 }
 
 .question {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 46px;
+    line-height: 44px;
+}
+
+html[dir=rtl] .question {
+    font-size: 42px;
+    line-height: 43px;
 }
 
 .answers {
     font-size: 64px;
     line-height: 64px;
+    margin-top: -6px;
 }
 
 html[dir=rtl] .answers {
-    margin-top: -5px;
+    margin-top: -12px;
 }
 
 .answers li {
     cursor: pointer;
+    line-height: 72px;
+}
+
+html[dir=rtl] .answers li {
+    line-height: 78px;
+    font-size: 72px;
+    letter-spacing: -3px;
 }
 
 .answers li:hover {
@@ -335,6 +379,8 @@ html[dir=rtl] .answers {
     -moz-opacity: 0;
     -khtml-opacity: 0;
     opacity: 0;
+
+    margin-bottom: 29px;
 }
 
 #restLink, #restLink:active, #restLink:visited {
@@ -349,10 +395,12 @@ html[dir=rtl] .answers {
 #restNameWrapper {
     min-width: 250px;
     margin-bottom: 15px;
+    padding: 0 3px;
 }
 
 #restName {
     font-size: 64px;
+    letter-spacing: -4px;
 }
 
 #restAddress {
@@ -360,7 +408,7 @@ html[dir=rtl] .answers {
 }
 
 #restNavigationPane {
-    margin-bottom: 15px;
+    margin-bottom: 33px;
 }
 
 #btnPrevRest, #btnRestart, #btnNextRest {
@@ -369,25 +417,59 @@ html[dir=rtl] .answers {
     margin: 0 10px;
 }
 
-#btnPrevRest:hover, #btnNextRest:hover {
-    color: #757575;
+#btnPrevRest, #btnNextRest {
+    width: 18px;
+    height: 36px;
+}
+
+
+#btnPrevRest {
+    background: url("../img/l.png") 0 0 no-repeat;
+}
+
+#btnPrevRest:hover {
+    background: url("../img/l_hover.png") 0 0 no-repeat;
+}
+
+html[dir=rtl] #btnPrevRest {
+    background: url("../img/r.png") 0 0 no-repeat;
+}
+
+html[dir=rtl] #btnPrevRest:hover {
+    background: url("../img/r_hover.png") 0 0 no-repeat;
+}
+
+#btnNextRest {
+    background: url("../img/r.png") 0 0 no-repeat;
+}
+
+#btnNextRest:hover {
+    background: url("../img/r_hover.png") 0 0 no-repeat;
+}
+
+html[dir=rtl] #btnNextRest {
+    background: url("../img/l.png") 0 0 no-repeat;
+}
+
+html[dir=rtl] #btnNextRest:hover {
+    background: url("../img/l_hover.png") 0 0 no-repeat;
 }
 
 #btnRestart {
-    width: 25px;
-    height: 25px;
-    background: url("../img/btnRestart.png") 0 0 no-repeat;
+    width: 30px;
+    height: 36px;
+    background: url("../img/restart.png") 0 3px no-repeat;
     cursor: pointer;
 }
 
-#restTip {
-    text-align: left;
-    width: 280px;
-    margin: 0 auto;
+#btnRestart:hover {
+    background: url("../img/restart_hover.png") 0 3px no-repeat;
 }
 
-html[dir=rtl] #restTip {
-    text-align: right;
+#restTip {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
 }
 
 /*** NO RESTS LEFT ***/

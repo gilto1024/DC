@@ -1,12 +1,15 @@
 define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function ($, utils, css, jScrollPaneCss) {
 
+    //TODO widen containers to fit "..." before the click label
+
     var jScrollPane,
         isAboutOpen = false,
         $aboutUsBtn;
 
 
     var animationDir = ($("html").attr('dir') == 'rtl' ? 'right' : 'left'),
-        i18nArrow = (animationDir == 'right' ? '&#x25B6;' : "&#x25C0;");
+        closeLabel = (animationDir == 'right' ? 'סגור' : "Close"),
+        sendLabel = (animationDir == 'right' ? 'שלח' : "Send");
 
 
     function cacheElements() {
@@ -38,10 +41,10 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
             if ($(this).hasClass("close")) {
                 closeContact();
                 closeAbout();
-                $(this).removeClass("close").addClass("send");
+                $(this).removeClass("close").addClass("send").text(sendLabel);
             }
             else {
-                $("#contact_submit").removeClass("send").addClass("loader");
+                $("#contact_submit").removeClass("send").addClass("loader").text('');
                 $(".loader_gif").show();
                 var details = getContactFormDetails();
                 if (details.message) {
@@ -58,7 +61,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
             openContact();
         });
 
-        $("#mailUsClose").on("click", function () {
+        $("#mailUsClose, #aboutUsClose").on("click", function () {
             isAboutOpen = false;
             closeContact();
             closeAbout();
@@ -135,7 +138,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
     function openContact() {
         var animationObj = {};
-        animationObj[animationDir] = "440px";
+        animationObj[animationDir] = "441px";
         $("#contactUsWrapper").show().animate(animationObj, 500);
 
     }
@@ -168,7 +171,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
     function finishContactFormProc() {
         $(".loader_gif").hide();
-        $("#contact_submit").removeClass("loader").addClass("close");
+        $("#contact_submit").removeClass("loader").addClass("close").text(closeLabel);
         clearContactForm();
     }
 
@@ -200,8 +203,6 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
             cacheElements();
             bindEvents();
-
-            $("#mailUsClose").html(i18nArrow);
 
             console.log('*** About - fading in...');
             setTimeout(function() {
