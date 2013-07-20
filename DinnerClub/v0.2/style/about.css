@@ -249,18 +249,18 @@ html[dir=rtl] #mailUsClose:hover {
 }
 
 .loader_gif {
-    background: url(img/loader.gif);
-    width: 34px;
-    height: 10px;
+    background: url(img/ajax-loader.gif);
+    width: 43px;
+    height: 11px;
     position: absolute;
-    top: 15px;
-    left: 278px;
+    top: 14px;
+    left: 273px;
     display: none;
 }
 
 html[dir=rtl] .loader_gif {
     left: auto;
-    right: 278px;
+    right: 273px;
 }
 
 #ofLoder {
