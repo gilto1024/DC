@@ -6,7 +6,8 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
     var jScrollPane,
         isAboutOpen = false,
-        $aboutUsBtn;
+        $aboutUsBtn,
+        animationSpeed = 300;
 
 
     var animationDir = ($("html").attr('dir') == 'rtl' ? 'right' : 'left'),
@@ -102,7 +103,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
         var animationObj = {};
         animationObj[animationDir] = "0px";
-        $("#aboutUsWrapper").animate(animationObj, 500);
+        $("#aboutUsWrapper").animate(animationObj, animationSpeed);
     }
 
 
@@ -112,7 +113,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
         var animationObj = {};
         animationObj[animationDir] = "-500px";
-        $("#aboutUsWrapper").animate(animationObj, 500, function () {
+        $("#aboutUsWrapper").animate(animationObj, animationSpeed, function () {
             var animationObj = {};
             animationObj[animationDir] = "500px";
 
@@ -124,11 +125,11 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
     function closeContact() {
         $(".loader_gif").hide();
-        $("#contact_submit").html("").removeClass("loader");
+        $("#contact_submit").html(sendLabel).removeClass("loader");
 
         var animationObj = {};
         animationObj[animationDir] = "-550px";
-        $("#contactUsWrapper").animate(animationObj, 500, function () {
+        $("#contactUsWrapper").animate(animationObj, animationSpeed, function () {
             $("#name").val("");
             $("#customer_mail").val("");
             $("#Message").val("");
@@ -141,7 +142,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
     function openContact() {
         var animationObj = {};
         animationObj[animationDir] = "441px";
-        $("#contactUsWrapper").show().animate(animationObj, 500);
+        $("#contactUsWrapper").show().animate(animationObj, animationSpeed);
 
     }
 
