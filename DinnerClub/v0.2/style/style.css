@@ -25,8 +25,8 @@ html, body {
 
 body {
     overflow: hidden;
-    font-family: "Helvetica", arial, sans-serif;
-    font-weight: bold;
+    font-family: Helvetica W01 Bold, "Helvetica", arial, sans-serif;
+    /*font-weight: bold;*/
     letter-spacing: -1px;
 }
 
@@ -96,11 +96,12 @@ html[dir=rtl] #languageSelectionMenu {
 /*** HEADER ***/
 
 header {
-    background-color: #F0F0F0;
+    background-color: #eeeeee;
     padding: 20px 0;
-    -webkit-box-shadow: 0 0px 4px #000000;
+    /*-webkit-box-shadow: 0 0px 4px #000000;
     -moz-box-shadow: 0 0px 4px #000000;
-    box-shadow: 0 0px 4px #000000;
+    box-shadow: 0 0px 4px #000000;*/
+    display: none;
 }
 
 #headerContent {
@@ -220,19 +221,31 @@ html[dir=rtl] #restCount {
 
 #btnBackContainer {
     position: absolute;
-    top: 15px;
-    left: 50%;
+    padding:15px 0;
+    width: 100%;
     z-index: 10;
+    height: 18px;
+    text-align: center;
+    display: none;
+
+    background: white;
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 68%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(68%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 68%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
 }
 
 #btnBack {
     width: 36px;
     height: 18px;
-    position: absolute;
-    left: -18px;
+    display: inline-block;
     background: url('../img/back.png') center 0 no-repeat;
     cursor: pointer;
-    display: none;
 }
 
 /*** QUESTIONS ***/

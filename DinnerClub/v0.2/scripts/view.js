@@ -8,6 +8,8 @@ define(
         //TODO next\prev img + hover
         //TODO media queries - missing "480-960" query
         //TODO hide rest count in the second questions as well
+        //TODO do not header.slideDown() on mobile
+        //TODO something
 
         var dcController,
             currentSectionId,
@@ -15,10 +17,12 @@ define(
             resultsCurrentRest;
 
         // Elements
-        var $questions,
+        var $header,
+            $questions,
             $restCount,
             $restCountLabel,
             $story,
+            $btnBackContainer,
             $btnBack,
             $btnRestart,
             $restInfo,
@@ -67,12 +71,14 @@ define(
                         log('on questionShown', 'hiding');
                         $restCount.hide();
                         $restCountLabel.hide();
-                        $btnBack.fadeOut();
+                        $btnBackContainer.fadeOut();
+                        $header.slideUp('fast');
                     } else {
                         log('on questionShown', 'showing');
                         $restCount.show(); // make sure the rest count is visible
                         $restCountLabel.show();
-                        $btnBack.fadeIn();
+                        $btnBackContainer.fadeIn();
+                        $header.slideDown('fast');
                     }
                 });
 
@@ -85,10 +91,12 @@ define(
 
 
         function cacheElements() {
+            $header = $("header");
             $questions = $("#questions");
             $restCount = $("#restCount");
             $restCountLabel = $("#restCountLabel");
             $story = $("#story");
+            $btnBackContainer = $("#btnBackContainer");
             $btnBack = $("#btnBack");
             $btnRestart = $("#btnRestart");
             $restInfo = $("#restInfo");

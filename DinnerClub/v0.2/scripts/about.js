@@ -106,10 +106,10 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
         $("#aboutUsWrapper").removeClass("on").addClass("off");
 
         var animationObj = {};
-        animationObj[animationDir] = "-440px";
+        animationObj[animationDir] = "-500px";
         $("#aboutUsWrapper").animate(animationObj, 500, function () {
             var animationObj = {};
-            animationObj[animationDir] = "436px";
+            animationObj[animationDir] = "500px";
 
             $aboutUsBtn.css(animationObj);
             $aboutUsBtn.fadeIn();
