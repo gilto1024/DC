@@ -2,6 +2,7 @@
     "en":[
         {
             "id":"Q001",
+            "gaName":"date",
             "vertical":"party",
             "text":"Is it a date?",
             "answers":[
@@ -18,6 +19,7 @@
         },
         {
             "id":"Q002",
+            "gaName":"so",
             "vertical":"party",
             "text":"...So?",
             "answers":[
@@ -42,6 +44,7 @@
         },
         {
             "id":"Q003",
+            "gaName":"sitting",
             "vertical":"sitting",
             "text":"Where would you like to sit?",
             "answers":[
@@ -58,6 +61,7 @@
         },
         {
             "id":"Q004",
+            "gaName":"light",
             "vertical":"light",
             "text":"Let's set the mood:",
             "answers":[
@@ -74,6 +78,7 @@
         },
         {
             "id":"Q005",
+            "gaName":"vol",
             "vertical":"vol",
             "text":"How about the volume?",
             "answers":[
@@ -90,6 +95,7 @@
         },
         {
             "id":"Q006",
+            "gaName":"parking",
             "vertical":"parking",
             "text":"Looking for parking?",
             "answers":[
@@ -108,6 +114,7 @@
     "he":[
          {
              "id":"Q001",
+             "gaName":"date",
              "vertical":"party",
              "text":"יוצאים לדייט?",
              "answers":[
@@ -124,6 +131,7 @@
          },
          {
              "id":"Q002",
+             "gaName":"so",
              "vertical":"party",
              "text":"...אז?",
              "answers":[
@@ -148,6 +156,7 @@
          },
          {
              "id":"Q003",
+             "gaName":"sitting",
              "vertical":"sitting",
              "text":"איפה יושבים?",
              "answers":[
@@ -164,6 +173,7 @@
          },
          {
              "id":"Q004",
+             "gaName":"light",
              "vertical":"light",
              "text":"איזו אווירה?",
              "answers":[
@@ -180,6 +190,7 @@
          },
          {
              "id":"Q005",
+             "gaName":"vol",
              "vertical":"vol",
              "text":"מה לגבי הווליום?",
              "answers":[
@@ -196,6 +207,7 @@
          },
          {
              "id":"Q006",
+             "gaName":"parking",
              "vertical":"parking",
              "text":"מחפשים חניה?",
              "answers":[

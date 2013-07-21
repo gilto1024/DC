@@ -403,6 +403,10 @@ html[dir=rtl] .answers li {
     letter-spacing: -4px;
 }
 
+html[dir=rtl] #restName {
+    letter-spacing: -3px;
+}
+
 #restAddress {
     margin-bottom: 15px;
 }

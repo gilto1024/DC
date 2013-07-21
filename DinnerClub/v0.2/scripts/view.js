@@ -6,6 +6,7 @@ define(
         //TODO media queries - missing "480-960" query
         //TODO hide rest count in the second questions as well
         //TODO do not header.slideDown() on mobile
+        //TODO disable results navigation when there's only 1 result?
 
         var dcController,
             currentSectionId,
@@ -78,11 +79,17 @@ define(
                     }
                 });
 
-            $btnBack.on('click', dcController.onBack);
+            $btnBack.on('click', onBack);
             $btnPrevRest.on('click', onPrevResult);
-            $btnRestart.on('click', dcController.onReset);
+            $btnRestart.on('click', onRestart);
             $btnNextRest.on('click', onNextResult);
-            $noRestsLeftBack.on('click', onNoRestsLeftBack);
+            $noRestsLeftBack.on('click', onBack);
+
+            $restLink.on('click', function() {
+                utils.ga.trackEvent('results', 'click_rest_name', $(this).data('rest-name'));
+
+                return true; // allow normal behavior
+            });
         }
 
 
@@ -110,10 +117,15 @@ define(
 
         function onAnswerClicked() {
             var $elm = $(this),
+                $questionElm = $elm.parents("article"),
                 answer = $elm.data('value'),
-                vertical = $elm.parents("article").data('vertical');
+                vertical = $questionElm.data('vertical'),
+                questionGaName = $questionElm.data('ga-name');
 
             log('onAnswerClicked', 'vertical:', vertical, 'answer:', answer);
+
+            utils.ga.trackEvent(questionGaName, (answer == '' ? 'no' : answer));
+
             dcController.onUserSelection(vertical, answer);
         }
 
@@ -217,6 +229,8 @@ define(
         function displayRest() {
             var rest = resultsRestList[resultsCurrentRest].info;
 
+            utils.ga.trackEvent('results', 'show_rest', rest.gaName);
+
             $restInfo.stop().animate({'opacity':0}, {
                 duration:100,
                 complete:function () {
@@ -224,7 +238,7 @@ define(
                     $restName.html(rest.name);
                     $restPhone.html(rest.phone);
                     $restAddress.html(rest.address);
-                    $restLink.attr('href', rest.url);
+                    $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
 
                     $restInfo.stop().animate({'opacity':1}, 700);
                 }
@@ -240,6 +254,8 @@ define(
 
 
         function onPrevResult() {
+            utils.ga.trackEvent('results', 'click', 'prev');
+
             resultsCurrentRest--;
 
             if (resultsCurrentRest < 0) {
@@ -251,6 +267,8 @@ define(
 
 
         function onNextResult() {
+            utils.ga.trackEvent('results', 'click', 'next');
+
             resultsCurrentRest++;
 
             if (resultsCurrentRest == resultsRestList.length) {
@@ -261,12 +279,21 @@ define(
         }
 
 
+        function onRestart() {
+            utils.ga.trackEvent('btnRestart', 'click', $(currentSectionId).data('ga-name'));
+
+            dcController.reset();
+        }
+
+
         function noRestsLeft() {
             $noRestsLeft.fadeIn();
         }
 
 
-        function onNoRestsLeftBack() {
+        function onBack() {
+            utils.ga.trackEvent($(this).attr('id'), 'click', $(currentSectionId).data('ga-name'));
+
             $noRestsLeft.fadeOut();
             dcController.onBack();
         }

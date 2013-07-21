@@ -1,6 +1,8 @@
-define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'utils.cookies', 'mustache'], function ($, tmpl, URL_PARAMS, cookies, mustache) {
+define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'utils.cookies', 'mustache', 'utils.ga'], function ($, tmpl, URL_PARAMS, cookies, mustache, ga) {
 
     //TODO export languageSelection to module?
+    //TODO language select GA doesn't work
+
     var DEFAULT_LANG = 'he',
         currLang,
         data = {
@@ -106,6 +108,8 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
 
 
         function setLanguage(lang) {
+            ga.trackEventSync('language_select', lang);
+
             cookies.store(cookies.LANG, lang, 365);
 
             var langUrl = location.href.split('?')[0] + '?lang=' + lang;

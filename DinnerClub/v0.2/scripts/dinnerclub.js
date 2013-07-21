@@ -1,4 +1,4 @@
-define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($, rests, questions, story, view, history) {
+define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], function ($, rests, questions, story, view, history, utils) {
 
     //TODO - flight to SF
 
@@ -89,6 +89,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
      * Alert the user that no restaurants match their current selection
      */
     function noRestsLeft() {
+        utils.ga.trackEvent("noRestsLeft", 'view', JSON.stringify(userSelection));
         view.noRestsLeft();
     }
 
@@ -169,6 +170,8 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
         } else {
             console.log('*** No About');
         }
+
+        utils.ga.trackEvent('init', (utils.isMobile() ? 'mobile' : 'desktop'), utils.i18n.getLanguage());
     }
 
 
@@ -176,7 +179,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history'], function ($
         init:init,
         onUserSelection:onUserSelection,
         onBack:onBack,
-        onReset:reset
+        reset:reset
     };
 
 });

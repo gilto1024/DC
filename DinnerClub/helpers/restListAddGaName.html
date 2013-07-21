@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        html, body {
+
+        }
+
+        #container {
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                'url':'restList3.txt',
+                'dataType':'text',
+                success:convert,
+                error:function () {
+                    console.log(arguments);
+                }
+            });
+        });
+
+        function convert(json) {
+            var oldList = JSON.parse(json);
+			
+			console.log('\n== Original size:', oldList.en.length, '\n\n');
+			
+			function addGaName(engRest, i) {
+				var gaName = engRest.info.name;
+				engRest.info.gaName = gaName;
+				oldList.he[i].info.gaName = gaName;
+			}
+
+            oldList.en.forEach(addGaName);
+			
+			console.log(JSON.stringify(oldList));
+        }
+
+        
+    </script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html>

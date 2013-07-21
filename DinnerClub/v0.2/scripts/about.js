@@ -48,6 +48,8 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
                 $(this).removeClass("close").addClass("send").text(sendLabel);
             }
             else {
+                utils.ga.trackEvent('about', 'click', 'send_form');
+
                 $("#contact_submit").removeClass("send").addClass("loader").text('');
                 $(".loader_gif").show();
                 var details = getContactFormDetails();
@@ -66,6 +68,8 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
         });
 
         $("#mailUsClose, #aboutUsClose").on("click", function () {
+            utils.ga.trackEvent('about', 'click', 'close');
+
             isAboutOpen = false;
             closeContact();
             closeAbout();
@@ -85,6 +89,8 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
     function onAboutUsBtn() {
         if ($("#aboutUsWrapper").hasClass("off")) {
+            utils.ga.trackEvent('about', 'click', 'i_btn');
+
             openAbout();
         }
         else {
@@ -141,6 +147,8 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
 
     function openContact() {
+        utils.ga.trackEvent('about', 'click', 'contact');
+
         var animationObj = {};
         animationObj[animationDir] = "441px";
         $("#contactUsWrapper").show().animate(animationObj, animationSpeed);
