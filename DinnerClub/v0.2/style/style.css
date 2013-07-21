@@ -354,7 +354,7 @@ html[dir=rtl] .answers li {
     letter-spacing: -3px;
 }
 
-.answers li:hover {
+.answers li:hover, .answers li:active {
     color: #757575;
 }
 
@@ -383,7 +383,7 @@ html[dir=rtl] .answers li {
     margin-bottom: 29px;
 }
 
-#restLink, #restLink:active, #restLink:visited {
+#restLink, #restLink:visited, #restLink:active {
     color: black;
     text-decoration: none;
 }
@@ -474,6 +474,7 @@ html[dir=rtl] #btnNextRest:hover {
     text-align: center;
     width: 450px;
     margin: 0 auto;
+    display: none;
 }
 
 /*** NO RESTS LEFT ***/
@@ -529,15 +530,35 @@ html[dir=rtl] #btnNextRest:hover {
     }
 }*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 570px) {
     body {
         height: 150%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
+
+    /*** LANGUAGE SELECTION ***/
 
     #languageSelectionContent {
         width: 100%;
         margin: 0;
     }
+
+    #languageSelectionMenu {
+        width: 70px;
+        height: 43px;
+        font-size: 20px;
+    }
+
+    #languageSelectionMenu.open {
+        height: 85px;
+    }
+
+    .languageSelectionOption {
+        height: 34px;
+        width: 49px;
+    }
+    /*** LANGUAGE SELECTION END ***/
+
 
     header {
         display: none;
@@ -547,9 +568,20 @@ html[dir=rtl] #btnNextRest:hover {
         width: 100%;
     }
 
+
     #btnBackContainer {
-        top: 8px;
+        background: transparent;
+        top: 0;
+        padding: 11px 0;
     }
+
+    #btnBack, #btnBack:hover {
+        height: 36px;
+        width: 72px;
+        background-image: url('../img/bm.png');
+    }
+
+
 
     #restCountWrapper {
         position: absolute;
@@ -569,8 +601,9 @@ html[dir=rtl] #btnNextRest:hover {
         top: auto;
         bottom: 10px !important;
         right: 20px;
-        font-size: 90px;
-        /*font-size: 40px;*/
+        font-size: 122px;
+        height: 100px;
+        line-height: 82px;
     }
 
     html[dir=rtl] #restCount {
@@ -578,24 +611,34 @@ html[dir=rtl] #btnNextRest:hover {
         left: 20px;
     }
 
+    #restCountLabel {
+        line-height: 15px;
+    }
+
     article {
-        width: 80%;
-        padding: 30px 10% 0;
+        width: 92%;
+        padding: 55px 4% 0;
     }
 
     .question {
         width: 100%;
-        padding-bottom: 15px;
+        padding-bottom: 33px;
         clear: both;
         font-size: 27px;
         line-height: 28px;
+
     }
 
     .answers {
         width: 100%;
         clear: both;
-        font-size: 40px;
+        font-size: 48px;
         line-height: 46px;
+    }
+
+    .answers li {
+        line-height: 33px;
+        height: 55px;
     }
 
     .answers li:hover {
@@ -606,12 +649,72 @@ html[dir=rtl] #btnNextRest:hover {
         color: #757575;
     }
 
+
+    /** RESULTS ***/
+
+    #resultsHeading {
+        margin-bottom: 20px;
+    }
+
     #restNameWrapper {
         height: 110px;
-        line-height: 55px;
+        line-height: 49px;
+        margin-bottom: 27px;
+    }
+
+    #restInfo {
+        margin-bottom: 18px;
     }
 
     #restName {
         font-size: 50px;
+        letter-spacing: -2px;
+    }
+
+    #restPhone {
+        margin-bottom: 8px;
+    }
+
+    #restTip {
+        display: none;
+    }
+
+
+    /*** NAVIGATION ***/
+
+    #btnRestart, #btnRestart:hover {
+        width: 72px;
+        height: 72px;
+        background: url("../img/restartm.png") 0 0 no-repeat;
+        margin: 0 20px;
+    }
+
+    #btnPrevRest, #btnNextRest {
+        width: 36px;
+        height: 72px;
+        margin: 0 20px;
+    }
+
+    #btnPrevRest, #btnPrevRest:hover {
+        background: url("../img/lm.png") 0 0 no-repeat;
+    }
+
+    html[dir=rtl] #btnPrevRest, html[dir=rtl] #btnPrevRest:hover {
+        background: url("../img/rm.png") 0 0 no-repeat;
+    }
+
+    #btnNextRest, #btnNextRest:hover {
+        background: url("../img/rm.png") 0 0 no-repeat;
+    }
+
+    html[dir=rtl] #btnNextRest, html[dir=rtl] #btnNextRest:hover {
+        background: url("../img/lm.png") 0 0 no-repeat;
+    }
+}
+
+
+@media screen and (orientation:landscape) and (max-width:570px) {
+    #questions {
+        height: 150%;
     }
 }

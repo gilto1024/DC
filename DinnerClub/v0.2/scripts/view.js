@@ -7,6 +7,7 @@ define(
         //TODO hide rest count in the second questions as well
         //TODO do not header.slideDown() on mobile
         //TODO disable results navigation when there's only 1 result?
+	//TODO refactor the isMobile & isSmallScreen dependant code
 
         var dcController,
             currentSectionId,
@@ -16,6 +17,7 @@ define(
         // Elements
         var $header,
             $questions,
+            $restCountContent,
             $restCount,
             $restCountLabel,
             $story,
@@ -66,16 +68,20 @@ define(
 
                     if (qId == $questions.find(".questionArticle").first().attr('id').replace('question', '')) {
                         log('on questionShown', 'hiding');
-                        $restCount.hide();
-                        $restCountLabel.hide();
                         $btnBackContainer.fadeOut();
-                        $header.slideUp('fast');
+                        $restCountContent.hide();
+                        hideHeader();
+                        if (utils.isSmallScreen()) {
+                            $("#languageSelectionWrapper").fadeIn();
+                        }
                     } else {
                         log('on questionShown', 'showing');
-                        $restCount.show(); // make sure the rest count is visible
-                        $restCountLabel.show();
+                        $restCountContent.show();
                         $btnBackContainer.fadeIn();
-                        $header.slideDown('fast');
+                        showHeader();
+                        if (utils.isSmallScreen()) {
+                            $("#languageSelectionWrapper").fadeOut();
+                        }
                     }
                 });
 
@@ -85,7 +91,7 @@ define(
             $btnNextRest.on('click', onNextResult);
             $noRestsLeftBack.on('click', onBack);
 
-            $restLink.on('click', function() {
+            $restLink.on('click', function () {
                 utils.ga.trackEvent('results', 'click_rest_name', $(this).data('rest-name'));
 
                 return true; // allow normal behavior
@@ -93,9 +99,24 @@ define(
         }
 
 
+        function showHeader() {
+            if (!utils.isSmallScreen()) {
+                $header.slideDown('fast');
+
+            }
+        }
+
+
+        function hideHeader() {
+            if (!utils.isSmallScreen()) {
+                $header.slideUp('fast');
+            }
+        }
+
         function cacheElements() {
             $header = $("header");
             $questions = $("#questions");
+            $restCountContent = $("#restCountContent");
             $restCount = $("#restCount");
             $restCountLabel = $("#restCountLabel");
             $story = $("#story");
@@ -213,13 +234,15 @@ define(
             resultsCurrentRest = 0;
 
             if (resultsRestList.length == 1) {
-                $("#btnNextRest").hide();
+                $btnNextRest.hide();
+                $btnPrevRest.hide();
             } else {
-                $("#btnNextRest").show();
+                $btnNextRest.show();
+                $btnPrevRest.show();
             }
 
-            $restCount.stop().fadeOut();
-            $restCountLabel.stop().fadeOut();
+            $restCount.stop();
+            $restCountContent.stop().fadeOut();
             scrollToSection("#results");
 
             displayRest();
@@ -235,7 +258,7 @@ define(
                 duration:100,
                 complete:function () {
 
-                    $restName.html(rest.name);
+                    $restName.html(rest.name).blur();
                     $restPhone.html(rest.phone);
                     $restAddress.html(rest.address);
                     $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
@@ -244,12 +267,14 @@ define(
                 }
             });
 
-            $restTip.stop().animate({'opacity':0}, {
-                duration:100,
-                complete:function () {
-                    $(this).html(rest.tip).stop().animate({'opacity':1}, 700);
-                }
-            });
+            if (!utils.isSmallScreen()) {
+                $restTip.stop().animate({'opacity':0}, {
+                    duration:100,
+                    complete:function () {
+                        $(this).html(rest.tip).stop().animate({'opacity':1}, 700);
+                    }
+                });
+            }
         }
 
 

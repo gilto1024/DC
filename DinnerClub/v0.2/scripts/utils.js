@@ -1,4 +1,4 @@
-define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'], function(URL_PARAMS, cookies, i18n, mustache, ga) {
+define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'], function (URL_PARAMS, cookies, i18n, mustache, ga) {
 
     //TODO utils.log
     //TODO utils.CONFIG (logs:true\false, defaultLang, GA UA)
@@ -12,12 +12,29 @@ define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'
     }
 
 
+    var isSmallScreen = (function () {
+        var bIsSmallScreen = false;
+
+        if (matchMedia) {
+            var mq = window.matchMedia("screen and (max-width: 570px)");
+            if (mq.matches) {
+                bIsSmallScreen = true;
+            }
+        }
+
+        return function() {
+            return bIsSmallScreen;
+        }
+    })();
+
+
     return {
         i18n:i18n,
         mustache:mustache,
         cookies:cookies,
         URL_PARAMS:URL_PARAMS,
         ga:ga,
-        isMobile:isMobile
+        isMobile:isMobile,
+        isSmallScreen:isSmallScreen
     }
 });

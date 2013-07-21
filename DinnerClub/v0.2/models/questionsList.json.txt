@@ -158,7 +158,7 @@
              "id":"Q003",
              "gaName":"sitting",
              "vertical":"sitting",
-             "text":"איפה יושבים?",
+             "text":"איפה תרצו לשבת?",
              "answers":[
                  {
                      "value":"table",
@@ -209,7 +209,7 @@
              "id":"Q006",
              "gaName":"parking",
              "vertical":"parking",
-             "text":"מחפשים חניה?",
+             "text":"צריכים חניה?",
              "answers":[
                  {
                      "value":"yes",

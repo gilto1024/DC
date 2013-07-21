@@ -154,14 +154,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
 
         reset();
 
-        if (matchMedia) {
-            var mq = window.matchMedia("screen and (max-width: 480px)");
-            if (mq.matches) {
-                bIsSmallScreen = true;
-            }
-        }
-
-        if (!bIsSmallScreen) {
+        if (!utils.isSmallScreen()) {
             console.log('*** Fetching About...');
             require(['./about'], function (about) {
                 console.log('*** About Loaded, initing...');
@@ -172,6 +165,11 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         }
 
         utils.ga.trackEvent('init', (utils.isMobile() ? 'mobile' : 'desktop'), utils.i18n.getLanguage());
+
+        //TODO remove
+        /*currentQuestionIndex = 1;
+        updateView();
+        view.displayResults([restList[5]]);*/
     }
 
 
