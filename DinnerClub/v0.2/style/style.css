@@ -223,18 +223,6 @@ html[dir=rtl] #restCountContent {
     top: 17px;
 }
 
-#restCountLabel {
-    float: right;
-    line-height: 106px;
-    font-size: 20px;
-}
-
-html[dir=rtl] #restCountLabel {
-    float: left;
-    letter-spacing: 0;
-    line-height: 102px
-}
-
 #restCount {
     float: right;
     font-size: 164px;
@@ -245,6 +233,30 @@ html[dir=rtl] #restCountLabel {
 html[dir=rtl] #restCount {
     float: left;
 }
+
+#restCountLabelWrapper {
+    float: right;
+    position: relative;
+}
+
+html[dir=rtl] #restCountLabelWrapper {
+    float: left;
+}
+
+#restCountLabel {
+    font-size: 20px;
+    top: 41px;
+    right: 0;
+    position: absolute;
+}
+
+html[dir=rtl] #restCountLabel {
+    letter-spacing: 0;
+    right: auto;
+    left: 0;
+    top: 39px;
+}
+
 
 #btnBackContainer {
     position: absolute;
@@ -611,8 +623,13 @@ html[dir=rtl] #btnNextRest:hover {
         left: 20px;
     }
 
+    #restCountLabelWrapper {
+        height: 92px;
+    }
+
     #restCountLabel {
-        line-height: 15px;
+        top: auto;
+        bottom: 0;
     }
 
     article {

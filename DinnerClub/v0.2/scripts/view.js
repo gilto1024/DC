@@ -7,7 +7,8 @@ define(
         //TODO hide rest count in the second questions as well
 	    //TODO refactor the isMobile & isSmallScreen dependant code
         //TODO refactor language-menu code to utils.i18n
-        //TODO mobile - align "dinners" label to bottom of number
+        //TODO mobile - align "dinners" label to bottom of number (heb)
+	//TODO show language on results screen (mobile)
 
         var dcController,
             currentSectionId,

@@ -167,7 +167,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         //TODO remove
         /*currentQuestionIndex = 1;
         updateView();
-        view.displayResults([restList[5]]);*/
+        //view.displayResults([restList[5]]);// */
     }
 
 
