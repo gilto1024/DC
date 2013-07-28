@@ -1,7 +1,11 @@
-define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'], function (URL_PARAMS, cookies, i18n, mustache, ga) {
+define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga', 'utils.log', 'utils.config'], function (URL_PARAMS, cookies, i18n, mustache, ga, log, CONFIG) {
 
     //TODO utils.log
     //TODO utils.CONFIG (logs:true\false, defaultLang, GA UA)
+
+
+    console.log('[UTILS]', 'config:\n', CONFIG);
+
 
     function isMobile() {
         var check = false;
@@ -35,6 +39,7 @@ define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'
         URL_PARAMS:URL_PARAMS,
         ga:ga,
         isMobile:isMobile,
-        isSmallScreen:isSmallScreen
+        isSmallScreen:isSmallScreen,
+        log:log
     }
 });

@@ -8,17 +8,6 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
     //TODO rename "Questions" container
     //TODO facebook <og:...> meta tags
 
-    function log() {
-        var args = [].slice.apply(arguments);
-        args.unshift("[DinnerClub]");
-
-        try {
-            console.log.apply(console, args);
-        } catch (err) {
-        }
-    }
-
-
     var userSelection,
         restList,
         questionsList,
@@ -98,7 +87,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
      * @param {String=} story New story snippet to display.
      */
     function updateView(story) {
-        log("updateView", 'currentQuestionIndex:', currentQuestionIndex, "userSelection:", userSelection, "restList:", restList);
+        utils.log("[DinnerClub]", "updateView", 'currentQuestionIndex:', currentQuestionIndex, "userSelection:", userSelection, "restList:", restList);
 
         if (currentQuestionIndex == questionsList.length) {
             view.displayResults(restList);
@@ -153,13 +142,13 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         reset();
 
         if (!utils.isSmallScreen()) {
-            console.log('*** Fetching About...');
+            utils.log("[DinnerClub]", '*** Fetching About...');
             require(['./about'], function (about) {
-                console.log('*** About Loaded, initing...');
+                utils.log("[DinnerClub]", '*** About Loaded, initing...');
                 about.init();
             });
         } else {
-            console.log('*** No About');
+            utils.log("[DinnerClub]", '*** No About');
         }
 
         utils.ga.trackEvent('init', (utils.isMobile() ? 'mobile' : 'desktop'), utils.i18n.getLanguage());

@@ -165,14 +165,14 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
                 message:details.message
             },
             success:function (data) {
-                console.log(data);
+                utils.log(data);
                 finishContactFormProc();
 
 
             },
             error:function (data) {
                 finishContactFormProc();
-                console.log("error - " + data);
+                utils.log("error - " + data);
             }
 
         });
@@ -207,15 +207,15 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
         $('head').append('<style type="text/css">' + css + '</style>');
         $('head').append('<style type="text/css">' + jScrollPaneCss + '</style>');
 
-        console.log('*** About - requiring html...');
+        utils.log('*** About - requiring html...');
         require(['text!tmpl/about-tmpl-' + utils.i18n.getLanguage() + '.html'], function (html) {
-            console.log('*** About - html received');
+            utils.log('*** About - html received');
             $('body').append(html);
 
             cacheElements();
             bindEvents();
 
-            console.log('*** About - fading in...');
+            utils.log('*** About - fading in...');
             setTimeout(function() {
                 $aboutUsBtn.fadeIn();
             }, 100);

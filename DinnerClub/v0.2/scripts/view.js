@@ -8,7 +8,7 @@ define(
 	    //TODO refactor the isMobile & isSmallScreen dependant code
         //TODO refactor language-menu code to utils.i18n
         //TODO mobile - align "dinners" label to bottom of number (heb)
-	//TODO show language on results screen (mobile)
+	    //TODO show language on results screen (mobile)
 
         var dcController,
             currentSectionId,
@@ -37,17 +37,6 @@ define(
             $noRestsLeftBack;
 
 
-        function log() {
-            var args = [].slice.apply(arguments);
-            args.unshift("[VIEW]");
-
-            try {
-                console.log.apply(console, args);
-            } catch (err) {
-            }
-        }
-
-
         function bindEvents() {
 
 
@@ -64,11 +53,11 @@ define(
             $(document)
                 .on('click', '#questions li', onAnswerClicked)
                 .on('questionShown', function (e, qId) {
-                    log('on questionShown', arguments);
-                    log('on questionShown', "1st q id:", $questions.find(".questionArticle").first().attr('id').replace('question', ''))
+                    utils.log("[VIEW]", 'on questionShown', arguments);
+                    utils.log("[VIEW]", 'on questionShown', "1st q id:", $questions.find(".questionArticle").first().attr('id').replace('question', ''))
 
                     if (qId == $questions.find(".questionArticle").first().attr('id').replace('question', '')) {
-                        log('on questionShown', 'hiding');
+                        utils.log("[VIEW]", 'on questionShown', 'hiding');
                         $btnBackContainer.fadeOut();
                         $restCountContent.hide();
                         hideHeader();
@@ -76,7 +65,7 @@ define(
                             $("#languageSelectionWrapper").fadeIn();
                         }
                     } else {
-                        log('on questionShown', 'showing');
+                        utils.log("[VIEW]", 'on questionShown', 'showing');
                         $restCountContent.show();
                         $btnBackContainer.fadeIn();
                         showHeader();
@@ -144,7 +133,7 @@ define(
                 vertical = $questionElm.data('vertical'),
                 questionGaName = $questionElm.data('ga-name');
 
-            log('onAnswerClicked', 'vertical:', vertical, 'answer:', answer);
+            utils.log("[VIEW]", 'onAnswerClicked', 'vertical:', vertical, 'answer:', answer);
 
             utils.ga.trackEvent(questionGaName, (answer == '' ? 'no' : answer));
 
@@ -368,7 +357,7 @@ define(
          * @param {Array} questionsList
          */
         function init(controller, questionsList) {
-            log('init');
+            utils.log("[VIEW]", 'init');
             dcController = controller;
 
             // render questions HTML

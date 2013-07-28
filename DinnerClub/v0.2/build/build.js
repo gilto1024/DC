@@ -10,6 +10,10 @@
 
     "dir":"../PROD",
 
+    "pragmas":{
+        "suppressLogs":true
+    },
+
     "modules":[
         {
             "name":"utils",

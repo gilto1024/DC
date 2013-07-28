@@ -20,18 +20,15 @@ require.config({
 
 require(
     [
-        "dinnerclub"
+        "dinnerclub", "utils"
     ],
-    function (dinnerclub) {
+    function (dinnerclub, utils) {
 
-        // using window.onload to make sure custom fonts are loaded
-        // before we display any text
-        //$(window).on('load', function () {
         $(function(){
 
             dinnerclub.init();
 
-            console.log('DinnerClub ON');
+            utils.log('DinnerClub ON');
         });
     }
 );
