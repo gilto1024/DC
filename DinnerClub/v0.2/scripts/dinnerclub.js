@@ -5,9 +5,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
     //TODO REMOVE CONSOLE.LOGS!! ------------------------------------------------->       REMOVE CONSOLE.LOGS!!       <----------------------------------------------------------------
 
     //TODO mobile Contact Us
-    //TODO override black background indicator on mobile (on click)
     //TODO rename "Questions" container
-    //TODO Google Analytics
     //TODO facebook <og:...> meta tags
 
     function log() {

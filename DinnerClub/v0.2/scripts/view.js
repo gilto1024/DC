@@ -5,9 +5,9 @@ define(
         //TODO override TAB key
         //TODO media queries - missing "480-960" query
         //TODO hide rest count in the second questions as well
-        //TODO do not header.slideDown() on mobile
-        //TODO disable results navigation when there's only 1 result?
-	//TODO refactor the isMobile & isSmallScreen dependant code
+	    //TODO refactor the isMobile & isSmallScreen dependant code
+        //TODO refactor language-menu code to utils.i18n
+        //TODO mobile - align "dinners" label to bottom of number
 
         var dcController,
             currentSectionId,
