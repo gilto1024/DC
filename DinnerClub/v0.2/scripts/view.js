@@ -28,7 +28,9 @@ define(
             $restInfo,
             $restLink,
             $restName,
+            $restPhoneLink,
             $restPhone,
+            $restAddressLink,
             $restAddress,
             $restTip,
             $btnPrevRest,
@@ -38,7 +40,6 @@ define(
 
 
         function bindEvents() {
-
 
             window.onorientationchange = function () {
                 window.scrollTo(0, 1);
@@ -116,7 +117,9 @@ define(
             $restInfo = $("#restInfo");
             $restLink = $("#restLink");
             $restName = $("#restName");
+            $restPhoneLink = $("#restPhoneLink");
             $restPhone = $("#restPhone");
+            $restAddressLink = $("#restAddressLink");
             $restAddress = $("#restAddress");
             $btnPrevRest = $("#btnPrevRest");
             $btnNextRest = $("#btnNextRest");
@@ -239,6 +242,19 @@ define(
         }
 
 
+        function setRestInfo(rest) {
+            $restName.html(rest.name).blur();
+            $restPhone.html(rest.phone);
+            $restAddress.html(rest.address);
+            $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
+
+            if (utils.isMobile()) {
+                $restAddressLink.attr('href', "http://maps.apple.com/?q=israel, Tel aviv, " + rest.address);
+                $restPhoneLink.attr("href", "tel:" + rest.phone);
+            }
+        }
+
+
         function displayRest() {
             var rest = resultsRestList[resultsCurrentRest].info;
 
@@ -247,12 +263,7 @@ define(
             $restInfo.stop().animate({'opacity':0}, {
                 duration:100,
                 complete:function () {
-
-                    $restName.html(rest.name).blur();
-                    $restPhone.html(rest.phone);
-                    $restAddress.html(rest.address);
-                    $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
-
+                    setRestInfo(rest);
                     $restInfo.stop().animate({'opacity':1}, 700);
                 }
             });
