@@ -607,6 +607,14 @@ html[dir=rtl] #btnNextRest:hover {
     #restCountContent {
         top: auto;
         bottom:0;
+        right: 8px;
+    }
+
+    html[dir=rtl] #restCountContent {
+        right: auto;
+        left: 8px;
+        top:auto;
+        bottom:0;
     }
 
     #restCount {
@@ -621,6 +629,7 @@ html[dir=rtl] #btnNextRest:hover {
     html[dir=rtl] #restCount {
         right: auto;
         left: 20px;
+        top:auto;
     }
 
     #restCountLabelWrapper {
@@ -631,9 +640,21 @@ html[dir=rtl] #btnNextRest:hover {
         top: -3px;
     }
 
+    html[dir=rtl] #restCountLabel {
+        top: -7px;
+    }
+
     article {
         width: 92%;
-        padding: 55px 4% 0;
+        padding: 47px 4% 0;
+    }
+
+    #questionQ001 {
+        padding-top:13px;
+    }
+
+    html[dir=rtl] #questionQ001 {
+        padding-top: 5px;
     }
 
     .question {
@@ -642,7 +663,11 @@ html[dir=rtl] #btnNextRest:hover {
         clear: both;
         font-size: 27px;
         line-height: 28px;
+    }
 
+    html[dir=rtl] .question {
+        font-size: 28px;
+        padding-bottom:22px;
     }
 
     .answers {
@@ -657,6 +682,13 @@ html[dir=rtl] #btnNextRest:hover {
         height: 53px;
     }
 
+    html[dir=rtl] .answers li {
+        font-size: 50px;
+        line-height:39px;
+        height:51px;
+        letter-spacing: -2px;
+    }
+
     .answers li:hover {
         color: inherit;
     }
@@ -668,8 +700,17 @@ html[dir=rtl] #btnNextRest:hover {
 
     /** RESULTS ***/
 
+    #results {
+        padding-top: 52px;
+    }
+
     #resultsHeading {
-        margin-bottom: 20px;
+        margin-bottom: 17px;
+    }
+
+    html[dir=rtl] #resultsHeading {
+        letter-spacing: -1px;
+        margin-bottom: 17px;
     }
 
     #restNameWrapper {
@@ -687,6 +728,10 @@ html[dir=rtl] #btnNextRest:hover {
         letter-spacing: -2px;
     }
 
+    html[dir=rtl] #restName {
+        letter-spacing: -2px;
+    }
+
     #restPhone {
         margin-bottom: 8px;
     }
@@ -701,7 +746,8 @@ html[dir=rtl] #btnNextRest:hover {
     #btnRestart, #btnRestart:hover {
         width: 72px;
         height: 72px;
-        background: url("../img/restartm.png") 0 0 no-repeat;
+        background: url("../img/restartm_2x.png") 0 0 no-repeat;
+        background-size: 72px 72px;
         margin: 0 20px;
     }
 
