@@ -54,7 +54,7 @@ define(
                 .on('click', '#questions li', onAnswerClicked)
                 .on('questionShown', function (e, qId) {
                     utils.log("[VIEW]", 'on questionShown', arguments);
-                    utils.log("[VIEW]", 'on questionShown', "1st q id:", $questions.find(".questionArticle").first().attr('id').replace('question', ''))
+                    utils.log("[VIEW]", 'on questionShown', "1st q id:", $questions.find(".questionArticle").first().attr('id').replace('question', ''));
 
                     if (qId == $questions.find(".questionArticle").first().attr('id').replace('question', '')) {
                         utils.log("[VIEW]", 'on questionShown', 'hiding');
