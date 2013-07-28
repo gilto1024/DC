@@ -1,6 +1,6 @@
 define(
-    ['jquery', 'plugins', 'utils', 'text!tmpl/questions-tmpl.html'],
-    function ($, plugins, utils, tmplQuestions) {
+    ['jquery', 'plugins', 'utils', 'text!tmpl/questions-tmpl.html', 'vendor/add2home'],
+    function ($, plugins, utils, tmplQuestions, add2home) {
 
         //TODO override TAB key
         //TODO media queries - missing "570-960" query
@@ -9,6 +9,7 @@ define(
 	    //TODO refactor the isMobile & isSmallScreen dependant code
         //TODO refactor language-menu code to utils.i18n
 	    //TODO show language on results screen (mobile)
+        //TODO GA when clicking address, phone
 
         var dcController,
             currentSectionId,
