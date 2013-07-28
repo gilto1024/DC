@@ -6,8 +6,8 @@ define(['utils'], function (utils) {
     };
 
     var config = {
-        expire:0, //10080, // 1 week, in minutes
-        lifespan: 99999999999,
+        expire:10080, // 1 week, in minutes
+        lifespan: 15000,
         message:langDictionary[utils.i18n.getLanguage()] || 'he_il'
     };
 

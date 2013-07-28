@@ -398,10 +398,12 @@ html[dir=rtl] .answers li {
 #restInfo a, #restInfo a:visited, #restInfo a:active {
     color: black;
     text-decoration: none;
+    cursor: default;
 }
 
-#restInfo a:hover {
+#restName:hover {
     color: #757575;
+    cursor: pointer;
 }
 
 #restNameWrapper {
@@ -630,6 +632,9 @@ html[dir=rtl] #btnNextRest:hover {
         right: auto;
         left: 20px;
         top:auto;
+        font-size: 122px;
+        height: 100px;
+        line-height: 82px;
     }
 
     #restCountLabelWrapper {
@@ -721,6 +726,11 @@ html[dir=rtl] #btnNextRest:hover {
 
     #restInfo {
         margin-bottom: 18px;
+    }
+
+    #restInfo a:hover {
+        color: #757575;
+        cursor: pointer;
     }
 
     #restName {

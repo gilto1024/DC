@@ -10,6 +10,8 @@ define(
         //TODO refactor language-menu code to utils.i18n
 	    //TODO show language on results screen (mobile)
         //TODO GA when clicking address, phone
+        //TODO replace drop down arrow in language selection menu
+        //TODO bugfix - bold text when running as web-app
 
         var dcController,
             currentSectionId,
@@ -381,7 +383,7 @@ define(
 
             handleI18n();
 
-            if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
+            if ((navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i)) && !window.navigator.standalone) {
                 $("#restCountWrapper").addClass('iphone');
             }
 

@@ -209,7 +209,7 @@
              "id":"Q006",
              "gaName":"parking",
              "vertical":"parking",
-             "text":"צריכים חניה?",
+             "text":"חייבים חניה?",
              "answers":[
                  {
                      "value":"yes",
