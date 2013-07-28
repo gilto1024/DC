@@ -3,7 +3,8 @@ define(
     function ($, plugins, utils, tmplQuestions) {
 
         //TODO override TAB key
-        //TODO media queries - missing "480-960" query
+        //TODO media queries - missing "570-960" query
+        //TODO landscape orientation mefia query for bigger mobile phones (Idoz's)
         //TODO hide rest count in the second questions as well
 	    //TODO refactor the isMobile & isSmallScreen dependant code
         //TODO refactor language-menu code to utils.i18n
