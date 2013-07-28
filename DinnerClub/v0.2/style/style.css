@@ -628,8 +628,7 @@ html[dir=rtl] #btnNextRest:hover {
     }
 
     #restCountLabel {
-        top: auto;
-        bottom: 0;
+        top: -3px;
     }
 
     article {
@@ -649,13 +648,13 @@ html[dir=rtl] #btnNextRest:hover {
     .answers {
         width: 100%;
         clear: both;
-        font-size: 48px;
+        font-size: 46px;
         line-height: 46px;
     }
 
     .answers li {
-        line-height: 33px;
-        height: 55px;
+        line-height: 31px;
+        height: 53px;
     }
 
     .answers li:hover {
