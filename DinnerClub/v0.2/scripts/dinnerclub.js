@@ -2,8 +2,6 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
 
     //TODO - flight to SF
 
-    //TODO REMOVE CONSOLE.LOGS!! ------------------------------------------------->       REMOVE CONSOLE.LOGS!!       <----------------------------------------------------------------
-
     //TODO mobile Contact Us
     //TODO rename "Questions" container
     //TODO facebook <og:...> meta tags

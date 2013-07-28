@@ -3,6 +3,7 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
     //TODO detach background color (grey\pink) to separate divs (for opacity)
     //TODO form validation
     //TODO add full screen white overlay behind the panels
+    //TODO single HTML for structure, insert text using i18n module\templates
 
     var jScrollPane,
         isAboutOpen = false,
