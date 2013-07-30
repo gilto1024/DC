@@ -154,6 +154,9 @@ define(['jquery', 'utils', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'j
         animationObj[animationDir] = "441px";
         $("#contactUsWrapper").show().animate(animationObj, animationSpeed);
 
+        // Preload the loader image
+        var preload = new Image();
+        preload.src = "img/ajax-loader.gif";
     }
 
 
