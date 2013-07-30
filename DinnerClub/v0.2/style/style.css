@@ -108,10 +108,10 @@ html[dir=rtl] #languageSelectionMenu {
 
 .languageSelectionOption {
     height: 16px;
-    width: 29px;
+    width: 33px;
     background: #BEBEBE;
     margin: 0 0 1px 0;
-    padding: 3px 12px 5px;
+    padding: 3px 11px 5px;
     cursor: pointer;
     letter-spacing: 0;
 }
@@ -913,8 +913,7 @@ html[dir=rtl] #btnNextRest:hover {
         height: 72px;
         background-position: 0 0;
         background-repeat: no-repeat;
-        background-image:url('../img/restartm_2x.png'); /** sprite-ref: dcsprite; */
-        background-size: 72px 72px;
+        background-image:url('../img/restartm.png'); /** sprite-ref: dcsprite; */
         margin: 0 20px;
     }
 
