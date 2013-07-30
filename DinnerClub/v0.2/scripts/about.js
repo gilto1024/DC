@@ -1,9 +1,10 @@
-define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function ($, utils, css, jScrollPaneCss) {
+define(['jquery', 'utils', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'jscrollpane'], function ($, utils, jScrollPaneCss) {
 
     //TODO detach background color (grey\pink) to separate divs (for opacity)
     //TODO form validation
     //TODO add full screen white overlay behind the panels
     //TODO single HTML for structure, insert text using i18n module\templates
+    //TODO preload loader gif img
 
     var jScrollPane,
         isAboutOpen = false,
@@ -205,18 +206,15 @@ define(['jquery', 'utils', 'text!style/about.css', 'text!style/jquery.jscrollpan
 
 
     function init() {
-        $('head').append('<style type="text/css">' + css + '</style>');
+        $('head').append('<link type="test/css" rel="stylesheet" href="style/about.css" />');
         $('head').append('<style type="text/css">' + jScrollPaneCss + '</style>');
 
-        utils.log('*** About - requiring html...');
         require(['text!tmpl/about-tmpl-' + utils.i18n.getLanguage() + '.html'], function (html) {
-            utils.log('*** About - html received');
             $('body').append(html);
 
             cacheElements();
             bindEvents();
 
-            utils.log('*** About - fading in...');
             setTimeout(function() {
                 $aboutUsBtn.fadeIn();
             }, 100);

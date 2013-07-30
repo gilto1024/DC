@@ -1,3 +1,7 @@
+/*** Using SmartSprites CSS sprite generator - look for "sprite" annotations next to images ***/
+
+/** sprite: dcsprite; sprite-image: url('../img/img-sprite.png'); sprite-layout: vertical */
+
 /*** FONTS & WEIGHT ***/
 .fontBold {
     font-family: 'HelveticaNeueW01-75Bold', "Helvetica", arial, sans-serif;
@@ -280,12 +284,16 @@ html[dir=rtl] #restCountLabel {
     width: 36px;
     height: 18px;
     display: inline-block;
-    background: url('../img/b.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/b.png'); /** sprite-ref: dcsprite; */
     cursor: pointer;
 }
 
 #btnBack:hover {
-    background: url('../img/b_hover.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/b_hover.png'); /** sprite-ref: dcsprite; */
 }
 
 /*** QUESTIONS ***/
@@ -439,46 +447,66 @@ html[dir=rtl] #restName {
 
 
 #btnPrevRest {
-    background: url("../img/l.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l.png'); /** sprite-ref: dcsprite; */
 }
 
 #btnPrevRest:hover {
-    background: url("../img/l_hover.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_hover.png'); /** sprite-ref: dcsprite; */
 }
 
 html[dir=rtl] #btnPrevRest {
-    background: url("../img/r.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r.png'); /** sprite-ref: dcsprite; */
 }
 
 html[dir=rtl] #btnPrevRest:hover {
-    background: url("../img/r_hover.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_hover.png'); /** sprite-ref: dcsprite; */
 }
 
 #btnNextRest {
-    background: url("../img/r.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r.png'); /** sprite-ref: dcsprite; */
 }
 
 #btnNextRest:hover {
-    background: url("../img/r_hover.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_hover.png'); /** sprite-ref: dcsprite; */
 }
 
 html[dir=rtl] #btnNextRest {
-    background: url("../img/l.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l.png'); /** sprite-ref: dcsprite; */
 }
 
 html[dir=rtl] #btnNextRest:hover {
-    background: url("../img/l_hover.png") 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_hover.png'); /** sprite-ref: dcsprite; */
 }
 
 #btnRestart {
     width: 30px;
     height: 36px;
-    background: url("../img/restart.png") 0 3px no-repeat;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    background-image:url('../img/restart.png'); /** sprite-ref: dcsprite; sprite-margin-top: 3px */
     cursor: pointer;
 }
 
 #btnRestart:hover {
-    background: url("../img/restart_hover.png") 0 3px no-repeat;
+    background-position: 0 3px;
+    background-repeat: no-repeat;
+    background-image:url('../img/restart_hover.png'); /** sprite-ref: dcsprite; sprite-margin-top: 3px */
 }
 
 #restTip {
@@ -719,7 +747,7 @@ html[dir=rtl] #btnNextRest:hover {
     #btnBack, #btnBack:hover {
         height: 36px;
         width: 72px;
-        background-image: url('../img/bm.png');
+        background-image: url('../img/bm.png'); /** sprite-ref: dcsprite; */
     }
 
 
@@ -883,7 +911,9 @@ html[dir=rtl] #btnNextRest:hover {
     #btnRestart, #btnRestart:hover {
         width: 72px;
         height: 72px;
-        background: url("../img/restartm_2x.png") 0 0 no-repeat;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image:url('../img/restartm_2x.png'); /** sprite-ref: dcsprite; */
         background-size: 72px 72px;
         margin: 0 20px;
     }
@@ -895,19 +925,27 @@ html[dir=rtl] #btnNextRest:hover {
     }
 
     #btnPrevRest, #btnPrevRest:hover {
-        background: url("../img/lm.png") 0 0 no-repeat;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image:url('../img/lm.png'); /** sprite-ref: dcsprite; */
     }
 
     html[dir=rtl] #btnPrevRest, html[dir=rtl] #btnPrevRest:hover {
-        background: url("../img/rm.png") 0 0 no-repeat;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image:url('../img/rm.png'); /** sprite-ref: dcsprite; */
     }
 
     #btnNextRest, #btnNextRest:hover {
-        background: url("../img/rm.png") 0 0 no-repeat;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image:url('../img/rm.png'); /** sprite-ref: dcsprite; */
     }
 
     html[dir=rtl] #btnNextRest, html[dir=rtl] #btnNextRest:hover {
-        background: url("../img/lm.png") 0 0 no-repeat;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-image:url('../img/lm.png'); /** sprite-ref: dcsprite; */
     }
 }
 

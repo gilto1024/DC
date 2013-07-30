@@ -66,7 +66,7 @@ html[dir=rtl] .jspVerticalBar {
 .jspDrag
 {
 	/*background: #F30574;*/
-	background: url('img/about_scroll.png') 0 0 repeat-y;
+	background: url('img/jscrollpane/about_scroll.png') 0 0 repeat-y;
 	width: 6px;
 	position: relative;
 	top: 0;
@@ -102,12 +102,12 @@ html[dir=rtl] .jspVerticalBar {
 
 .jspArrowDown
 {
-	background: url('img/arrowDown.png') 0 0 no-repeat;
+	background: url('img/jscrollpane/arrowDown.png') 0 0 no-repeat;
 }
 
 .jspArrowUp
 {
-	background: url('img/arrowUp.png') 0 0 no-repeat;
+	background: url('img/jscrollpane/arrowUp.png') 0 0 no-repeat;
 }
 
 .jspHorizontalBar .jspArrow

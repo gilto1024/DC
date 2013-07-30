@@ -1,3 +1,8 @@
+/*** Using SmartSprites CSS sprite generator - look for "sprite" annotations next to images ***/
+
+/** sprite: about-sprite; sprite-image: url('../img/about-sprite.png'); sprite-layout: vertical */
+
+
 /*** "About us" ***/
 
 #aboutUsWrapper {
@@ -18,7 +23,6 @@ html[dir=rtl] #aboutUsWrapper {
 }
 
 #aboutUsClose {
-    /*background: url(../img/about_close.png) no-repeat;*/
     width: 18px;
     height: 36px;
     position: absolute;
@@ -28,22 +32,30 @@ html[dir=rtl] #aboutUsWrapper {
     font-size: 40px;
     cursor: pointer;
     color: white;
-    background: url('img/l_white.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white.png'); /** sprite-ref: about-sprite; */
     z-index: 1;
 }
 
 html[dir=rtl] #aboutUsClose {
     left: auto;
     right: 12px;
-    background: url('img/r_white.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white.png'); /** sprite-ref: about-sprite; */
 }
 
 #aboutUsClose:hover {
-    background: url('img/l_white_hover.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white_hover.png'); /** sprite-ref: about-sprite; */
 }
 
 html[dir=rtl] #aboutUsClose:hover {
-    background: url('img/r_white_hover.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white_hover.png'); /** sprite-ref: about-sprite; */
 }
 
 #aboutUsBtn {
@@ -187,20 +199,16 @@ html[dir=rtl] #contact_submit {
     margin-right: 252px;
 }
 
-#contact_submit.send {
-    background: url(img/send.png) no-repeat 0 0;
+#contact_submit.send, #contact_submit.close {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/send.png'); /** sprite-ref: about-sprite; */
 }
 
-#contact_submit.send:hover {
-    background: url(img/send.png) no-repeat 0px -38px;
-}
-
-#contact_submit.close {
-    background: url(img/send.png) no-repeat 0 0;
-}
-
-#contact_submit.loader {
-    background: url(img/send.png) no-repeat 0 -38px;
+#contact_submit.send:hover, #contact_submit.loader {
+    background-position: 0 -38px;
+    background-repeat: no-repeat;
+    background-image:url('../img/send.png'); /** sprite-ref: about-sprite; */
 }
 
 #mailUs {
@@ -220,7 +228,6 @@ html[dir=rtl] #mailUs {
 }
 
 #mailUsClose {
-    /*background: url(../img/about_close.png) no-repeat;*/
     width: 18px;
     height: 36px;
     position: absolute;
@@ -230,25 +237,33 @@ html[dir=rtl] #mailUs {
     font-size: 40px;
     cursor: pointer;
     color: white;
-    background: url('img/l_white.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white.png'); /** sprite-ref: about-sprite; */
 }
 
 html[dir=rtl] #mailUsClose {
     left: auto;
     right: 12px;
-    background: url('img/r_white.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white.png'); /** sprite-ref: about-sprite; */
 }
 
 #mailUsClose:hover {
-    background: url('img/l_white_hover.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white_hover.png'); /** sprite-ref: about-sprite; */
 }
 
 html[dir=rtl] #mailUsClose:hover {
-    background: url('img/r_white_hover.png') 0 0 no-repeat;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white_hover.png'); /** sprite-ref: about-sprite; */
 }
 
 .loader_gif {
-    background: url(img/ajax-loader.gif);
+    background: url(../img/ajax-loader.gif);
     width: 43px;
     height: 11px;
     position: absolute;

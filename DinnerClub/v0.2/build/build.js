@@ -4,7 +4,7 @@
     "mainConfigFile":"../scripts/main.js",
 
     "optimize":"uglify2",
-    "optimizeCss":"standard",
+    "optimizeCss":"standard.keepComments.keepLines",
     "preserveLicenseComments":false,
     "removeCombined":true,
 
