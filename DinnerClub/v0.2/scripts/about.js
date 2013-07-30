@@ -4,7 +4,6 @@ define(['jquery', 'utils', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'j
     //TODO form validation
     //TODO add full screen white overlay behind the panels
     //TODO single HTML for structure, insert text using i18n module\templates
-    //TODO preload loader gif img
 
     var jScrollPane,
         isAboutOpen = false,
