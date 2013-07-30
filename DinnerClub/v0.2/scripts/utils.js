@@ -17,7 +17,7 @@ define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'
         var bIsSmallScreen = false;
 
         if (matchMedia) {
-            var mq = window.matchMedia("screen and (max-width: 570px)");
+            var mq = window.matchMedia("screen and (max-width: 600px)");
             if (mq.matches) {
                 bIsSmallScreen = true;
             }
