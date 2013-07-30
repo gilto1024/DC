@@ -117,8 +117,9 @@ html[dir=rtl] #languageSelectionMenu {
 }
 
 .languageSelectionOption:hover {
-    background: #8F8F8F;
+    background-color: #8F8F8F;
 }
+
 
 /*** HEADER ***/
 
