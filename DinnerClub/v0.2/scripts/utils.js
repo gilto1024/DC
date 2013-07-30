@@ -16,12 +16,14 @@ define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'
     var isSmallScreen = (function () {
         var bIsSmallScreen = false;
 
-        if (matchMedia) {
-            var mq = window.matchMedia("screen and (max-width: 600px)");
-            if (mq.matches) {
-                bIsSmallScreen = true;
+        try {
+            if (matchMedia) {
+                var mq = window.matchMedia("screen and (max-width: 600px)");
+                if (mq.matches) {
+                    bIsSmallScreen = true;
+                }
             }
-        }
+        } catch(err) {}
 
         return function() {
             return bIsSmallScreen;
