@@ -206,16 +206,28 @@ define(['jquery', 'utils', 'text!style/jquery.jscrollpane.css', 'mousewheel', 'j
 
 
     function init() {
-        $('head').append('<link type="test/css" rel="stylesheet" href="style/about.css" />');
+
+        // Doing this using jQuery doesn't work on IE and FF for some reason
+        //$('head').append('<link type="test/css" rel="stylesheet" href="style/about.css" />');
+        var aboutcss=document.createElement("link");
+        aboutcss.setAttribute("rel", "stylesheet");
+        aboutcss.setAttribute("type", "text/css");
+        aboutcss.setAttribute("href", "style/about.css");
+
+        document.getElementsByTagName("head")[0].appendChild(aboutcss);
+
         $('head').append('<style type="text/css">' + jScrollPaneCss + '</style>');
 
+        utils.log('[ABOUT]', 'getting about HTML');
         require(['text!tmpl/about-tmpl-' + utils.i18n.getLanguage() + '.html'], function (html) {
+            utils.log('[ABOUT]', 'HTML received, appending');
             $('body').append(html);
 
             cacheElements();
             bindEvents();
 
             setTimeout(function() {
+                utils.log('[ABOUT]', 'fading in');
                 $aboutUsBtn.fadeIn();
             }, 100);
         });
