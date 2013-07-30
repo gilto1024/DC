@@ -4,7 +4,6 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
 
     //TODO mobile Contact Us
     //TODO rename "Questions" container
-    //TODO facebook <og:...> meta tags
 
     var userSelection,
         restList,
