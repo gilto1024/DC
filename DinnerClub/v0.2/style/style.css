@@ -121,14 +121,11 @@ html[dir=rtl] #languageSelectionMenu {
 header {
     background-color: #eeeeee;
     padding: 20px 0;
-    /*-webkit-box-shadow: 0 0px 4px #000000;
-    -moz-box-shadow: 0 0px 4px #000000;
-    box-shadow: 0 0px 4px #000000;*/
     display: none;
 }
 
 #headerContent {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     min-height: 50px;
 }
@@ -536,13 +533,143 @@ html[dir=rtl] #btnNextRest:hover {
     color: #757575;
 }
 
-/*** "MOBILE" ***/
 
-/*@media screen and (max-width: 700px) {
-    #counter {
-        font-size: 60px;
+/*** SMALLER SCREENS & DEVICES SUCH AS TABLETS ***/
+
+@media screen and (min-width:601px) and (max-width: 960px) {
+    #languageSelectionContent {
+        min-width: 600px;
     }
-}*/
+
+    
+    /*** HEADER ***/
+    
+    header {
+        padding: 15px 0;
+    }
+    
+
+    #headerContent {
+        max-width: 600px;
+        min-height: 60px;
+    }
+
+    #story {
+        font-size: 20px;
+        line-height: 21px;
+        width:540px;
+        float: none;
+    }
+
+    html[dir=rtl] #story {
+        font-size: 20px;
+        line-height: 21px;
+        width:540px;
+        float: none;
+    }
+
+    /*** SUB-HEADER ANCHOR ***/
+
+    #subHeaderAnchor, #restCountWrapper {
+        width: 600px;
+        height: 0;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #restCountContent {
+        top:25px;
+        width: 175px;
+    }
+
+    html[dir=rtl] #restCountContent {
+        top:25px;
+        width: 175px;
+    }
+
+    #restCount {
+        font-size: 102px;
+    }
+
+    html[dir=rtl] #restCount {
+        font-size: 102px;
+    }
+
+    #restCountLabel {
+        top:25px;
+        font-size: 16px;
+    }
+
+    html[dir=rtl] #restCountLabel {
+        top:25px;
+        font-size: 16px;
+    }
+
+
+    /*** QUESTIONS ***/
+
+    #questions {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    article {
+        width: 600px;
+    }
+
+    /*** QUESTION STYLING ***/
+
+    .questionBox ul, .questionBox li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .questionBox {
+        width: 175px;
+        margin-right: 37px;
+    }
+
+    html[dir=rtl] .questionBox {
+        margin-right: 0;
+        margin-left: 37px;
+    }
+
+    .question {
+        font-size: 29px;
+        line-height: 27px;
+    }
+
+    html[dir=rtl] .question {
+        font-size: 26px;
+        line-height: 27px;
+    }
+
+    .answers {
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: -5px;
+    }
+
+    html[dir=rtl] .answers {
+        margin-top: -9px;
+    }
+
+    .answers li {
+        line-height: 45px;
+    }
+
+    html[dir=rtl] .answers li {
+        line-height: 49px;
+        font-size: 45px;
+        letter-spacing: -2px;
+    }
+}
+
+
+/*** SMALL DEVICES (MOBILE) ***/
 
 @media screen and (max-width: 600px) {
     body {
