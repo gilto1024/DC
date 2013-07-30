@@ -18,10 +18,12 @@
 
     - **\PROD\scripts\about.js**:
       `'style/about.css'` -> `'style/about-sprite.css'`
+5. Reposition hover\loader images in about-sprite.css
 
 
 ### TODO
 
+- Use non-sprite instead of send.png (about.css)
 - Place **SmartSprites** in a common accessible location
 - Create a batch file for production:
     - Run all optimization\build scripts into **PROD** folder
