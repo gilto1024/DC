@@ -1,8 +1,6 @@
 # DinnerClub Deployment Steps
 -----------------------------
 
-### Hotfix Change
-
 ### Manual Steps
 
 1. Delete `\PROD` folder
