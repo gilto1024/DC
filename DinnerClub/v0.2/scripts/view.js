@@ -73,7 +73,7 @@ define(
                         if (utils.isSmallScreen()) {
                             $("#languageSelectionWrapper").fadeIn();
                         }
-                        $footer.removeClass('opacity0');
+                        $footer.fadeIn();
 
                     } else {    // Not the first question
                         utils.log("[VIEW]", 'on questionShown', 'showing');
@@ -82,7 +82,7 @@ define(
                         showHeader();
                         if (utils.isSmallScreen()) {
                             $("#languageSelectionWrapper").fadeOut();
-                            $footer.addClass('opacity0');
+                            $footer.fadeOut();
                         }
                     }
                 });

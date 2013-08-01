@@ -17,7 +17,7 @@
       `'style/style.css'` -> `'style/style-sprite.css'`
     - **\PROD\scripts\about.js**:
       `'style/about.css'` -> `'style/about-sprite.css'`
-5. Reposition hover\loader images in about-sprite.css (need to replace the send.png sprite with individual images)
+5. Reposition hover\loader images in about-sprite.css
 
 
 ### TODO
