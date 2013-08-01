@@ -126,6 +126,7 @@ html[dir=rtl] #languageSelectionMenu {
     padding: 3px 11px 5px;
     cursor: pointer;
     letter-spacing: 0;
+    line-height: 16px;
 }
 
 .languageSelectionOption:hover {
@@ -135,7 +136,7 @@ html[dir=rtl] #languageSelectionMenu {
 .languageSelected {
     background-repeat: no-repeat;
     background-position: 31px 9px;
-    background-image: url('../img/lang.png');
+    background-image: url('../img/lang.png'); /** sprite-ref: dcsprite; sprite-margin-top: 9px; sprite-margin-left: 31px; sprite-margin-bottom: 20px */
 }
 
 
@@ -785,6 +786,8 @@ html[dir=rtl] #copyright, html[dir=rtl] #fbLikeWrapper {
 
     .languageSelected {
         background-position: 37px 19px;
+        background-repeat: no-repeat;
+        background-image: url('../img/lang.png'); /** sprite-ref: dcsprite; sprite-margin-top: 19px; sprite-margin-left: 37px; sprite-margin-bottom: 20px */
     }
     /*** LANGUAGE SELECTION END ***/
 

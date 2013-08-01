@@ -14,6 +14,7 @@ define(
         //TODO bugfix - bold text when running as web-app
 
         //TODO - rest count fixed on "mobile" resolution
+        //TODO - main-sprite, mobile-sprite
 
         var dcController,
             currentSectionId,
