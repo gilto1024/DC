@@ -69,6 +69,16 @@
 
 </head>
 <body class="fontBold">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164847676916533";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <section id="languageSelectionWrapper">
     <div id="languageSelectionContent">
         <ul id="languageSelectionMenu" class="fontRegular" dir="ltr"></ul>
@@ -123,5 +133,12 @@
         <span id="noRestsLeftBack">Back</span>
     </div>
 </div>
+<footer>
+    <div id="footerContent">
+        <div id="copyright" class="fontRegular"></div>
+        <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+        <div class="clear"></div>
+    </div>
+</footer>
 </body>
 </html>

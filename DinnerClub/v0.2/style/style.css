@@ -63,6 +63,10 @@ body {
     visibility: hidden;
 }
 
+.clear {
+    clear: both;
+}
+
 
 /*** LANGUAGE SELECTOR ***/
 
@@ -118,6 +122,12 @@ html[dir=rtl] #languageSelectionMenu {
 
 .languageSelectionOption:hover {
     background-color: #8F8F8F;
+}
+
+.languageSelected {
+    background-repeat: no-repeat;
+    background-position: 31px 9px;
+    background-image: url('../img/lang.png');
 }
 
 
@@ -563,6 +573,39 @@ html[dir=rtl] #btnNextRest:hover {
 }
 
 
+/*** FOOTER ***/
+
+footer {
+    position: fixed;
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+
+}
+
+#footerContent {
+    display: inline-block;
+    margin: 0 auto;
+    height: 25px;
+}
+
+#copyright {
+    font-size: 12px;
+    color: #7f7f7f;
+    letter-spacing: 0 !important;
+    float: left;
+    line-height: 20px;
+    padding: 0 5px;
+}
+
+.fb-like {
+    float: left;
+}
+
+html[dir=rtl] #copyright, html[dir=rtl] .fb-like {
+    float: right;
+}
+
 /*** SMALLER SCREENS & DEVICES SUCH AS TABLETS ***/
 
 @media screen and (min-width:601px) and (max-width: 960px) {
@@ -570,7 +613,7 @@ html[dir=rtl] #btnNextRest:hover {
         min-width: 600px;
     }
 
-    
+
     /*** HEADER ***/
     
     header {
@@ -726,6 +769,11 @@ html[dir=rtl] #btnNextRest:hover {
     .languageSelectionOption {
         height: 34px;
         width: 49px;
+        line-height: 34px;
+    }
+
+    .languageSelected {
+        background-position: 37px 19px;
     }
     /*** LANGUAGE SELECTION END ***/
 
