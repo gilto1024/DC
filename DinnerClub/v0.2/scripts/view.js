@@ -13,6 +13,8 @@ define(
         //TODO replace drop down arrow in language selection menu
         //TODO bugfix - bold text when running as web-app
 
+        //TODO - rest count fixed on "mobile" resolution
+
         var dcController,
             currentSectionId,
             resultsRestList,
@@ -39,7 +41,8 @@ define(
             $btnPrevRest,
             $btnNextRest,
             $noRestsLeft,
-            $noRestsLeftBack;
+            $noRestsLeftBack,
+            $footer;
 
 
         function bindEvents() {
@@ -60,6 +63,7 @@ define(
                     utils.log("[VIEW]", 'on questionShown', arguments);
                     utils.log("[VIEW]", 'on questionShown', "1st q id:", $questions.find(".questionArticle").first().attr('id').replace('question', ''));
 
+                    // First Question
                     if (qId == $questions.find(".questionArticle").first().attr('id').replace('question', '')) {
                         utils.log("[VIEW]", 'on questionShown', 'hiding');
                         $btnBackContainer.fadeOut();
@@ -68,13 +72,16 @@ define(
                         if (utils.isSmallScreen()) {
                             $("#languageSelectionWrapper").fadeIn();
                         }
-                    } else {
+                        $footer.removeClass('opacity0');
+
+                    } else {    // Not the first question
                         utils.log("[VIEW]", 'on questionShown', 'showing');
                         $restCountContent.show();
                         $btnBackContainer.fadeIn();
                         showHeader();
                         if (utils.isSmallScreen()) {
                             $("#languageSelectionWrapper").fadeOut();
+                            $footer.addClass('opacity0');
                         }
                     }
                 });
@@ -129,6 +136,7 @@ define(
             $noRestsLeft = $("#noRestsLeft");
             $noRestsLeftBack = $("#noRestsLeftBack");
             $restTip = $("#restTip");
+            $footer = $("footer");
         }
 
 

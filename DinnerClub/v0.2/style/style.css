@@ -67,6 +67,14 @@ body {
     clear: both;
 }
 
+.opacity0 {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
 
 /*** LANGUAGE SELECTOR ***/
 
@@ -581,29 +589,32 @@ footer {
     text-align: center;
     width: 100%;
 
+        -moz-transition:opacity 0.3s;
+     -webkit-transition:opacity 0.3s;
+          -o-transition:opacity 0.3s;
+             transition:opacity 0.3s;
 }
 
 #footerContent {
     display: inline-block;
     margin: 0 auto;
-    height: 25px;
+    min-height: 25px;
+}
+
+#copyright, #fbLikeWrapper {
+    float: left;
+}
+
+html[dir=rtl] #copyright, html[dir=rtl] #fbLikeWrapper {
+    float: right;
 }
 
 #copyright {
     font-size: 12px;
     color: #7f7f7f;
     letter-spacing: 0 !important;
-    float: left;
     line-height: 20px;
     padding: 0 5px;
-}
-
-.fb-like {
-    float: left;
-}
-
-html[dir=rtl] #copyright, html[dir=rtl] .fb-like {
-    float: right;
 }
 
 /*** SMALLER SCREENS & DEVICES SUCH AS TABLETS ***/
@@ -994,6 +1005,14 @@ html[dir=rtl] #copyright, html[dir=rtl] .fb-like {
         background-position: 0 0;
         background-repeat: no-repeat;
         background-image:url('../img/lm.png'); /** sprite-ref: dcsprite; */
+    }
+
+    #footer {
+        bottom: 3px;
+    }
+
+    #copyright, #fbLikeWrapper, html[dir=rtl] #copyright, html[dir=rtl] #fbLikeWrapper {
+        float: none;
     }
 }
 
