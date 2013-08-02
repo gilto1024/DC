@@ -9,4 +9,5 @@ node_modules
 *.tar
 
 PROD
+_tmp
 web.config
