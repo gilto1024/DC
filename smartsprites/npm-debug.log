@@ -1,0 +1,1371 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'ispriter' ]
+2 info using npm@1.2.14
+3 info using node@v0.10.0
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Users\yotam\AppData\Roaming\npm\package.json
+6 verbose read json C:\Users\yotam\AppData\Roaming\npm\package.json
+7 verbose cache add [ 'ispriter', null ]
+8 verbose cache add name=undefined spec="ispriter" args=["ispriter",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'ispriter',
+9 verbose parsed url   path: 'ispriter',
+9 verbose parsed url   href: 'ispriter' }
+10 silly lockFile 4eccefa9-ispriter ispriter
+11 verbose lock ispriter C:\Users\yotam\AppData\Roaming\npm-cache\4eccefa9-ispriter.lock
+12 silly lockFile 4eccefa9-ispriter ispriter
+13 silly lockFile 4eccefa9-ispriter ispriter
+14 verbose addNamed [ 'ispriter', '' ]
+15 verbose addNamed [ null, '' ]
+16 silly lockFile 3534a99c-ispriter ispriter@
+17 verbose lock ispriter@ C:\Users\yotam\AppData\Roaming\npm-cache\3534a99c-ispriter.lock
+18 silly addNameRange { name: 'ispriter', range: '', hasData: false }
+19 verbose url raw ispriter
+20 verbose url resolving [ 'https://registry.npmjs.org/', './ispriter' ]
+21 verbose url resolved https://registry.npmjs.org/ispriter
+22 info trying registry request attempt 1 at 13:27:37
+23 http GET https://registry.npmjs.org/ispriter
+24 http 200 https://registry.npmjs.org/ispriter
+25 silly registry.get cb [ 200,
+25 silly registry.get   { vary: 'Accept',
+25 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+25 silly registry.get     etag: '"EF5LDS990JB699GXD4FY8LLTP"',
+25 silly registry.get     date: 'Tue, 30 Jul 2013 10:27:40 GMT',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'content-length': '36799' } ]
+26 silly addNameRange number 2 { name: 'ispriter', range: '', hasData: true }
+27 silly addNameRange versions [ 'ispriter',
+27 silly addNameRange   [ '0.0.5',
+27 silly addNameRange     '0.0.6',
+27 silly addNameRange     '0.0.7',
+27 silly addNameRange     '0.0.8',
+27 silly addNameRange     '0.0.9',
+27 silly addNameRange     '0.0.10',
+27 silly addNameRange     '0.0.11',
+27 silly addNameRange     '0.0.12',
+27 silly addNameRange     '0.1.0',
+27 silly addNameRange     '0.1.1',
+27 silly addNameRange     '0.1.2',
+27 silly addNameRange     '0.1.3' ] ]
+28 verbose addNamed [ 'ispriter', '0.1.3' ]
+29 verbose addNamed [ '0.1.3', '0.1.3' ]
+30 silly lockFile 08036abd-ispriter-0-1-3 ispriter@0.1.3
+31 verbose lock ispriter@0.1.3 C:\Users\yotam\AppData\Roaming\npm-cache\08036abd-ispriter-0-1-3.lock
+32 silly lockFile 50a1a87b--org-ispriter-ispriter-0-1-3-tgz https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz
+33 verbose lock https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz C:\Users\yotam\AppData\Roaming\npm-cache\50a1a87b--org-ispriter-ispriter-0-1-3-tgz.lock
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz',
+34 verbose addRemoteTarball   '1ac7655c4357c8e0bc02b8b77768ef997f6b208a' ]
+35 info retry fetch attempt 1 at 13:27:40
+36 verbose fetch to= C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\tmp.tgz
+37 http GET https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz
+38 http 200 https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz
+39 silly shasum updated bytes 65536
+40 silly shasum updated bytes 65536
+41 silly shasum updated bytes 25721
+42 info shasum 1ac7655c4357c8e0bc02b8b77768ef997f6b208a
+42 info shasum C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\tmp.tgz
+43 verbose tar unpack C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\tmp.tgz
+44 silly lockFile 1f46342c-60978-0-7719398774206638-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package
+45 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package C:\Users\yotam\AppData\Roaming\npm-cache\1f46342c-60978-0-7719398774206638-package.lock
+46 silly lockFile 383e55e5-60978-0-7719398774206638-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\tmp.tgz
+47 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\tmp.tgz C:\Users\yotam\AppData\Roaming\npm-cache\383e55e5-60978-0-7719398774206638-tmp-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 silly gunzTarPerm extractEntry package.json
+50 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+51 silly gunzTarPerm extractEntry .npmignore
+52 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+53 silly gunzTarPerm extractEntry README.md
+54 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+55 silly gunzTarPerm extractEntry src/BackgroundInterpreter.js
+56 silly gunzTarPerm modified mode [ 'src/BackgroundInterpreter.js', 438, 420 ]
+57 silly gunzTarPerm extractEntry src/GrowingPacker.js
+58 silly gunzTarPerm modified mode [ 'src/GrowingPacker.js', 438, 420 ]
+59 silly gunzTarPerm extractEntry src/ispriter.js
+60 silly gunzTarPerm modified mode [ 'src/ispriter.js', 438, 420 ]
+61 silly gunzTarPerm extractEntry src/ztool.js
+62 silly gunzTarPerm modified mode [ 'src/ztool.js', 438, 420 ]
+63 silly gunzTarPerm extractEntry src/config.example.json
+64 silly gunzTarPerm modified mode [ 'src/config.example.json', 438, 420 ]
+65 silly gunzTarPerm extractEntry test/dosprite.js
+66 silly gunzTarPerm modified mode [ 'test/dosprite.js', 438, 420 ]
+67 silly gunzTarPerm extractEntry test/css/style.css
+68 silly gunzTarPerm modified mode [ 'test/css/style.css', 438, 420 ]
+69 silly gunzTarPerm extractEntry test/css/style2.css
+70 silly gunzTarPerm modified mode [ 'test/css/style2.css', 438, 420 ]
+71 silly gunzTarPerm extractEntry test/css/style3.css
+72 silly gunzTarPerm modified mode [ 'test/css/style3.css', 438, 420 ]
+73 silly gunzTarPerm extractEntry test/images/level_2.png
+74 silly gunzTarPerm modified mode [ 'test/images/level_2.png', 438, 420 ]
+75 silly gunzTarPerm extractEntry test/images/add.png
+76 silly gunzTarPerm modified mode [ 'test/images/add.png', 438, 420 ]
+77 silly gunzTarPerm extractEntry test/images/badge.png
+78 silly gunzTarPerm modified mode [ 'test/images/badge.png', 438, 420 ]
+79 silly gunzTarPerm extractEntry test/images/bright-star.png
+80 silly gunzTarPerm modified mode [ 'test/images/bright-star.png', 438, 420 ]
+81 silly gunzTarPerm extractEntry test/images/close.png
+82 silly gunzTarPerm modified mode [ 'test/images/close.png', 438, 420 ]
+83 silly gunzTarPerm extractEntry test/images/close2.png
+84 silly gunzTarPerm modified mode [ 'test/images/close2.png', 438, 420 ]
+85 silly gunzTarPerm extractEntry test/images/delete-down.png
+86 silly gunzTarPerm modified mode [ 'test/images/delete-down.png', 438, 420 ]
+87 silly gunzTarPerm extractEntry test/images/friends.png
+88 silly gunzTarPerm modified mode [ 'test/images/friends.png', 438, 420 ]
+89 silly gunzTarPerm extractEntry test/images/gray-star.png
+90 silly gunzTarPerm modified mode [ 'test/images/gray-star.png', 438, 420 ]
+91 silly gunzTarPerm extractEntry test/images/info.png
+92 silly gunzTarPerm modified mode [ 'test/images/info.png', 438, 420 ]
+93 silly gunzTarPerm extractEntry test/images/level_0.png
+94 silly gunzTarPerm modified mode [ 'test/images/level_0.png', 438, 420 ]
+95 silly gunzTarPerm extractEntry test/images/level_1.png
+96 silly gunzTarPerm modified mode [ 'test/images/level_1.png', 438, 420 ]
+97 silly gunzTarPerm extractEntry test/images/app_icon.png
+98 silly gunzTarPerm modified mode [ 'test/images/app_icon.png', 438, 420 ]
+99 silly gunzTarPerm extractEntry test/images/level_3.png
+100 silly gunzTarPerm modified mode [ 'test/images/level_3.png', 438, 420 ]
+101 silly gunzTarPerm extractEntry test/images/level_4.png
+102 silly gunzTarPerm modified mode [ 'test/images/level_4.png', 438, 420 ]
+103 silly gunzTarPerm extractEntry test/images/level_5.png
+104 silly gunzTarPerm modified mode [ 'test/images/level_5.png', 438, 420 ]
+105 silly gunzTarPerm extractEntry test/images/loading.png
+106 silly gunzTarPerm modified mode [ 'test/images/loading.png', 438, 420 ]
+107 silly gunzTarPerm extractEntry test/images/open.png
+108 silly gunzTarPerm modified mode [ 'test/images/open.png', 438, 420 ]
+109 silly gunzTarPerm extractEntry test/images/sina.png
+110 silly gunzTarPerm modified mode [ 'test/images/sina.png', 438, 420 ]
+111 silly gunzTarPerm extractEntry test/images/sina_logo.png
+112 silly gunzTarPerm modified mode [ 'test/images/sina_logo.png', 438, 420 ]
+113 silly gunzTarPerm extractEntry test/images/speaker.png
+114 silly gunzTarPerm modified mode [ 'test/images/speaker.png', 438, 420 ]
+115 silly gunzTarPerm extractEntry test/images/tips_icons.png
+116 silly gunzTarPerm modified mode [ 'test/images/tips_icons.png', 438, 420 ]
+117 silly gunzTarPerm extractEntry test/images/tips_icons2.png
+118 silly gunzTarPerm modified mode [ 'test/images/tips_icons2.png', 438, 420 ]
+119 silly gunzTarPerm extractEntry test/images/txweibo_logo.png
+120 silly gunzTarPerm modified mode [ 'test/images/txweibo_logo.png', 438, 420 ]
+121 silly gunzTarPerm extractEntry test/index.html
+122 silly gunzTarPerm modified mode [ 'test/index.html', 438, 420 ]
+123 silly gunzTarPerm extractEntry test/result.html
+124 silly gunzTarPerm modified mode [ 'test/result.html', 438, 420 ]
+125 silly gunzTarPerm extractEntry test/result2.html
+126 silly gunzTarPerm modified mode [ 'test/result2.html', 438, 420 ]
+127 silly gunzTarPerm extractEntry test/sprite_output/css/style.css
+128 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style.css', 438, 420 ]
+129 silly gunzTarPerm extractEntry test/sprite_output/css/style2.css
+130 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style2.css', 438, 420 ]
+131 silly gunzTarPerm extractEntry test/sprite_output/css/style3.css
+132 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style3.css', 438, 420 ]
+133 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style.png
+134 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style.png', 438, 420 ]
+135 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style2.png
+136 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style2.png', 438, 420 ]
+137 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style3.png
+138 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style3.png', 438, 420 ]
+139 silly gunzTarPerm extractEntry TODO.txt
+140 silly gunzTarPerm modified mode [ 'TODO.txt', 438, 420 ]
+141 verbose read json C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package\package.json
+142 silly lockFile 1f46342c-60978-0-7719398774206638-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package
+143 silly lockFile 1f46342c-60978-0-7719398774206638-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package
+144 silly lockFile 383e55e5-60978-0-7719398774206638-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\tmp.tgz
+145 silly lockFile 383e55e5-60978-0-7719398774206638-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\tmp.tgz
+146 verbose from cache C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package\package.json
+147 verbose tar pack [ 'C:\\Users\\yotam\\AppData\\Roaming\\npm-cache\\ispriter\\0.1.3\\package.tgz',
+147 verbose tar pack   'C:\\Users\\yotam\\AppData\\Local\\Temp\\npm-11232\\1375180060978-0.7719398774206638\\package' ]
+148 verbose tarball C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+149 verbose folder C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package
+150 silly lockFile 1f46342c-60978-0-7719398774206638-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package
+151 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package C:\Users\yotam\AppData\Roaming\npm-cache\1f46342c-60978-0-7719398774206638-package.lock
+152 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+153 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\982f91a3-cache-ispriter-0-1-3-package-tgz.lock
+154 silly lockFile 1f46342c-60978-0-7719398774206638-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package
+155 silly lockFile 1f46342c-60978-0-7719398774206638-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180060978-0.7719398774206638\package
+156 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+157 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+158 silly lockFile a8ad9213-npm-cache-ispriter-0-1-3-package C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package
+159 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package C:\Users\yotam\AppData\Roaming\npm-cache\a8ad9213-npm-cache-ispriter-0-1-3-package.lock
+160 silly lockFile a8ad9213-npm-cache-ispriter-0-1-3-package C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package
+161 silly lockFile a8ad9213-npm-cache-ispriter-0-1-3-package C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package
+162 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+163 silly lockFile a8ad9213-npm-cache-ispriter-0-1-3-package C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package
+164 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package C:\Users\yotam\AppData\Roaming\npm-cache\a8ad9213-npm-cache-ispriter-0-1-3-package.lock
+165 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+166 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\982f91a3-cache-ispriter-0-1-3-package-tgz.lock
+167 silly gunzTarPerm modes [ '755', '644' ]
+168 silly gunzTarPerm extractEntry package.json
+169 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+170 silly gunzTarPerm extractEntry .npmignore
+171 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+172 silly gunzTarPerm extractEntry README.md
+173 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+174 silly gunzTarPerm extractEntry src/BackgroundInterpreter.js
+175 silly gunzTarPerm modified mode [ 'src/BackgroundInterpreter.js', 438, 420 ]
+176 silly gunzTarPerm extractEntry src/GrowingPacker.js
+177 silly gunzTarPerm modified mode [ 'src/GrowingPacker.js', 438, 420 ]
+178 silly gunzTarPerm extractEntry src/ispriter.js
+179 silly gunzTarPerm modified mode [ 'src/ispriter.js', 438, 420 ]
+180 silly gunzTarPerm extractEntry src/ztool.js
+181 silly gunzTarPerm modified mode [ 'src/ztool.js', 438, 420 ]
+182 silly gunzTarPerm extractEntry src/config.example.json
+183 silly gunzTarPerm modified mode [ 'src/config.example.json', 438, 420 ]
+184 silly gunzTarPerm extractEntry test/dosprite.js
+185 silly gunzTarPerm modified mode [ 'test/dosprite.js', 438, 420 ]
+186 silly gunzTarPerm extractEntry test/css/style.css
+187 silly gunzTarPerm modified mode [ 'test/css/style.css', 438, 420 ]
+188 silly gunzTarPerm extractEntry test/css/style2.css
+189 silly gunzTarPerm modified mode [ 'test/css/style2.css', 438, 420 ]
+190 silly gunzTarPerm extractEntry test/css/style3.css
+191 silly gunzTarPerm modified mode [ 'test/css/style3.css', 438, 420 ]
+192 silly gunzTarPerm extractEntry test/images/level_2.png
+193 silly gunzTarPerm modified mode [ 'test/images/level_2.png', 438, 420 ]
+194 silly gunzTarPerm extractEntry test/images/add.png
+195 silly gunzTarPerm modified mode [ 'test/images/add.png', 438, 420 ]
+196 silly gunzTarPerm extractEntry test/images/badge.png
+197 silly gunzTarPerm modified mode [ 'test/images/badge.png', 438, 420 ]
+198 silly gunzTarPerm extractEntry test/images/bright-star.png
+199 silly gunzTarPerm modified mode [ 'test/images/bright-star.png', 438, 420 ]
+200 silly gunzTarPerm extractEntry test/images/close.png
+201 silly gunzTarPerm modified mode [ 'test/images/close.png', 438, 420 ]
+202 silly gunzTarPerm extractEntry test/images/close2.png
+203 silly gunzTarPerm modified mode [ 'test/images/close2.png', 438, 420 ]
+204 silly gunzTarPerm extractEntry test/images/delete-down.png
+205 silly gunzTarPerm modified mode [ 'test/images/delete-down.png', 438, 420 ]
+206 silly gunzTarPerm extractEntry test/images/friends.png
+207 silly gunzTarPerm modified mode [ 'test/images/friends.png', 438, 420 ]
+208 silly gunzTarPerm extractEntry test/images/gray-star.png
+209 silly gunzTarPerm modified mode [ 'test/images/gray-star.png', 438, 420 ]
+210 silly gunzTarPerm extractEntry test/images/info.png
+211 silly gunzTarPerm modified mode [ 'test/images/info.png', 438, 420 ]
+212 silly gunzTarPerm extractEntry test/images/level_0.png
+213 silly gunzTarPerm modified mode [ 'test/images/level_0.png', 438, 420 ]
+214 silly gunzTarPerm extractEntry test/images/level_1.png
+215 silly gunzTarPerm modified mode [ 'test/images/level_1.png', 438, 420 ]
+216 silly gunzTarPerm extractEntry test/images/app_icon.png
+217 silly gunzTarPerm modified mode [ 'test/images/app_icon.png', 438, 420 ]
+218 silly gunzTarPerm extractEntry test/images/level_3.png
+219 silly gunzTarPerm modified mode [ 'test/images/level_3.png', 438, 420 ]
+220 silly gunzTarPerm extractEntry test/images/level_4.png
+221 silly gunzTarPerm modified mode [ 'test/images/level_4.png', 438, 420 ]
+222 silly gunzTarPerm extractEntry test/images/level_5.png
+223 silly gunzTarPerm modified mode [ 'test/images/level_5.png', 438, 420 ]
+224 silly gunzTarPerm extractEntry test/images/loading.png
+225 silly gunzTarPerm modified mode [ 'test/images/loading.png', 438, 420 ]
+226 silly gunzTarPerm extractEntry test/images/open.png
+227 silly gunzTarPerm modified mode [ 'test/images/open.png', 438, 420 ]
+228 silly gunzTarPerm extractEntry test/images/sina.png
+229 silly gunzTarPerm modified mode [ 'test/images/sina.png', 438, 420 ]
+230 silly gunzTarPerm extractEntry test/images/sina_logo.png
+231 silly gunzTarPerm modified mode [ 'test/images/sina_logo.png', 438, 420 ]
+232 silly gunzTarPerm extractEntry test/images/speaker.png
+233 silly gunzTarPerm modified mode [ 'test/images/speaker.png', 438, 420 ]
+234 silly gunzTarPerm extractEntry test/images/tips_icons.png
+235 silly gunzTarPerm modified mode [ 'test/images/tips_icons.png', 438, 420 ]
+236 silly gunzTarPerm extractEntry test/images/tips_icons2.png
+237 silly gunzTarPerm modified mode [ 'test/images/tips_icons2.png', 438, 420 ]
+238 silly gunzTarPerm extractEntry test/images/txweibo_logo.png
+239 silly gunzTarPerm modified mode [ 'test/images/txweibo_logo.png', 438, 420 ]
+240 silly gunzTarPerm extractEntry test/index.html
+241 silly gunzTarPerm modified mode [ 'test/index.html', 438, 420 ]
+242 silly gunzTarPerm extractEntry test/result.html
+243 silly gunzTarPerm modified mode [ 'test/result.html', 438, 420 ]
+244 silly gunzTarPerm extractEntry test/result2.html
+245 silly gunzTarPerm modified mode [ 'test/result2.html', 438, 420 ]
+246 silly gunzTarPerm extractEntry test/sprite_output/css/style.css
+247 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style.css', 438, 420 ]
+248 silly gunzTarPerm extractEntry test/sprite_output/css/style2.css
+249 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style2.css', 438, 420 ]
+250 silly gunzTarPerm extractEntry test/sprite_output/css/style3.css
+251 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style3.css', 438, 420 ]
+252 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style.png
+253 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style.png', 438, 420 ]
+254 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style2.png
+255 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style2.png', 438, 420 ]
+256 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style3.png
+257 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style3.png', 438, 420 ]
+258 silly gunzTarPerm extractEntry TODO.txt
+259 silly gunzTarPerm modified mode [ 'TODO.txt', 438, 420 ]
+260 verbose read json C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package\package.json
+261 silly lockFile a8ad9213-npm-cache-ispriter-0-1-3-package C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package
+262 silly lockFile a8ad9213-npm-cache-ispriter-0-1-3-package C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package
+263 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+264 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+265 silly shasum updated bytes 65536
+266 silly shasum updated bytes 65536
+267 silly shasum updated bytes 25722
+268 info shasum 02d7c75ae8971c9852d5d443403a276381a6023e
+268 info shasum C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+269 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package\package.json
+270 verbose chmod C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz 644
+271 silly chown skipping for windows C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+272 silly lockFile 50a1a87b--org-ispriter-ispriter-0-1-3-tgz https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz
+273 silly lockFile 50a1a87b--org-ispriter-ispriter-0-1-3-tgz https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz
+274 silly lockFile 08036abd-ispriter-0-1-3 ispriter@0.1.3
+275 silly lockFile 08036abd-ispriter-0-1-3 ispriter@0.1.3
+276 silly lockFile 3534a99c-ispriter ispriter@
+277 silly lockFile 3534a99c-ispriter ispriter@
+278 silly resolved [ { author:
+278 silly resolved      { name: 'azrael',
+278 silly resolved        email: 'azrael@imatlas.com',
+278 silly resolved        url: 'http://imatlas.com/about' },
+278 silly resolved     name: 'ispriter',
+278 silly resolved     description: 'an intelligent merge sprite tool',
+278 silly resolved     version: '0.1.3',
+278 silly resolved     homepage: 'http://imatlas.com/posts/intelligent-merge-css-sprite/',
+278 silly resolved     repository: { type: 'git', url: 'git://github.com/iazrael/ispriter.git' },
+278 silly resolved     main: './src/ispriter.js',
+278 silly resolved     engines: { node: '*' },
+278 silly resolved     dependencies: { cssom: '*', canvas: '*', 'node-file': '*' },
+278 silly resolved     devDependencies: {},
+278 silly resolved     optionalDependencies: {},
+278 silly resolved     readme: '#智能合并CSS精灵图(iSpriter)\r\n\r\n站在巨人的肩膀上\r\n================\r\n\r\n使用nodejs实现, 依赖[CSSOM](https://github.com/NV/CSSOM), [node-canvas](https://github.com/learnboost/node-canvas)\r\n\r\n使用 [bin-packing](https://github.com/jakesgordon/bin-packing) 算法排列图片, 后续支持选择其他算法\r\n\r\n在此, 感谢这些开源项目的作者, 以及给本项目贡献代码的同学\r\n\r\n什么是智能?\r\n=========\r\n\r\n编写css 文件时什么都不用管, 该用什么图片用什么图片, 该怎么定位就怎么定位, 不用改变原有的 css 编写方式\r\n\r\n发布前执行 ispriter, 所有合并图片和定位都自动帮你完成\r\n\r\n特性\r\n====\r\n\r\n+ 智能提取background的url和position等信息\r\n+ 智能判断使用了background-position（使用px为单位）定位的图片并重新定位\r\n+ 兼容已经合并了的图片, 并重新定位\r\n+ 多个css文件合并时，排除并重用已经合并的图片\r\n+ 智能设置被合并图片的宽高\r\n+ 支持设定合并后图片的最大大小\r\n+ 支持设置合并后的图片间距\r\n+ 跳过background-position是right/center/bottom的图片\r\n+ 跳过显式的设置平铺方式为repreat的图片\r\n+ 跳过设置了background-size的图片\r\n\r\n使用方法\r\n=======\r\n\r\n### config 文件的配置参数\r\n\r\n    {\r\n        "algorithm": "growingpacker",//optional 目前只有 growingpacker\r\n        "input": {\r\n            "cssRoot": "./../test/css/", //required\r\n            "imageRoot": "",//optional 默认 cssRoot\r\n            "format": "png"//optional\r\n        },\r\n        "output": {\r\n            "cssRoot": "./../test/sprite_output/css/",//required\r\n            "imageRoot": "../images/",//optional 相对于 cssRoot 的路径, 默认 "./image/", 最终会变成合并后的的图片路径写在css文件中\r\n            "maxSize": 60,//optional 图片容量的最大大小, 单位 KB, 默认 0\r\n            "margin": 5,//optional 合成之后, 图片间的空隙, 默认 0\r\n            "prefix": "sprite_",//optional \r\n            "format": "png"//optional 输出的图片格式\r\n        }\r\n    }\r\n\r\n### config 的最简配置\r\n\r\n    {\r\n        "input":  "./../test/css/", // input cssRoot\r\n        "output": "./../test/sprite_output/css/" // output cssRoot\r\n    }\r\n\r\n### 从代码中调用\r\n\r\n    var spriter = require(\'ispriter\');\r\n\r\n    var configFile = \'../src/config.example.json\';\r\n\r\n    spriter.merge(configFile);\r\n\r\n### 从命令行调用\r\n\r\n    node -e "require(\'ispriter\').merge(\'../src/config.example.json\')"\r\n\r\nExample\r\n=======\r\n\r\n具体实例请到项目根目录下的 test 目录, 执行 node dosprite.js 体验实际效果\r\n',
+278 silly resolved     readmeFilename: 'README.md',
+278 silly resolved     _id: 'ispriter@0.1.3',
+278 silly resolved     dist: { shasum: '02d7c75ae8971c9852d5d443403a276381a6023e' },
+278 silly resolved     _from: 'ispriter@',
+278 silly resolved     _resolved: 'https://registry.npmjs.org/ispriter/-/ispriter-0.1.3.tgz' } ]
+279 info install ispriter@0.1.3 into C:\Users\yotam\AppData\Roaming\npm
+280 info installOne ispriter@0.1.3
+281 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package\package.json
+282 info C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter unbuild
+283 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\package.json
+284 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+285 silly lockFile 41c3f46c-oaming-npm-node-modules-ispriter C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter
+286 verbose lock C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter C:\Users\yotam\AppData\Roaming\npm-cache\41c3f46c-oaming-npm-node-modules-ispriter.lock
+287 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+288 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\982f91a3-cache-ispriter-0-1-3-package-tgz.lock
+289 silly gunzTarPerm modes [ '755', '644' ]
+290 silly gunzTarPerm extractEntry package.json
+291 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+292 silly gunzTarPerm extractEntry .npmignore
+293 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+294 silly gunzTarPerm extractEntry README.md
+295 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+296 silly gunzTarPerm extractEntry src/BackgroundInterpreter.js
+297 silly gunzTarPerm modified mode [ 'src/BackgroundInterpreter.js', 438, 420 ]
+298 silly gunzTarPerm extractEntry src/GrowingPacker.js
+299 silly gunzTarPerm modified mode [ 'src/GrowingPacker.js', 438, 420 ]
+300 silly gunzTarPerm extractEntry src/ispriter.js
+301 silly gunzTarPerm modified mode [ 'src/ispriter.js', 438, 420 ]
+302 silly gunzTarPerm extractEntry src/ztool.js
+303 silly gunzTarPerm modified mode [ 'src/ztool.js', 438, 420 ]
+304 silly gunzTarPerm extractEntry src/config.example.json
+305 silly gunzTarPerm modified mode [ 'src/config.example.json', 438, 420 ]
+306 silly gunzTarPerm extractEntry test/dosprite.js
+307 silly gunzTarPerm modified mode [ 'test/dosprite.js', 438, 420 ]
+308 silly gunzTarPerm extractEntry test/css/style.css
+309 silly gunzTarPerm modified mode [ 'test/css/style.css', 438, 420 ]
+310 silly gunzTarPerm extractEntry test/css/style2.css
+311 silly gunzTarPerm modified mode [ 'test/css/style2.css', 438, 420 ]
+312 silly gunzTarPerm extractEntry test/css/style3.css
+313 silly gunzTarPerm modified mode [ 'test/css/style3.css', 438, 420 ]
+314 silly gunzTarPerm extractEntry test/images/level_2.png
+315 silly gunzTarPerm modified mode [ 'test/images/level_2.png', 438, 420 ]
+316 silly gunzTarPerm extractEntry test/images/add.png
+317 silly gunzTarPerm modified mode [ 'test/images/add.png', 438, 420 ]
+318 silly gunzTarPerm extractEntry test/images/badge.png
+319 silly gunzTarPerm modified mode [ 'test/images/badge.png', 438, 420 ]
+320 silly gunzTarPerm extractEntry test/images/bright-star.png
+321 silly gunzTarPerm modified mode [ 'test/images/bright-star.png', 438, 420 ]
+322 silly gunzTarPerm extractEntry test/images/close.png
+323 silly gunzTarPerm modified mode [ 'test/images/close.png', 438, 420 ]
+324 silly gunzTarPerm extractEntry test/images/close2.png
+325 silly gunzTarPerm modified mode [ 'test/images/close2.png', 438, 420 ]
+326 silly gunzTarPerm extractEntry test/images/delete-down.png
+327 silly gunzTarPerm modified mode [ 'test/images/delete-down.png', 438, 420 ]
+328 silly gunzTarPerm extractEntry test/images/friends.png
+329 silly gunzTarPerm modified mode [ 'test/images/friends.png', 438, 420 ]
+330 silly gunzTarPerm extractEntry test/images/gray-star.png
+331 silly gunzTarPerm modified mode [ 'test/images/gray-star.png', 438, 420 ]
+332 silly gunzTarPerm extractEntry test/images/info.png
+333 silly gunzTarPerm modified mode [ 'test/images/info.png', 438, 420 ]
+334 silly gunzTarPerm extractEntry test/images/level_0.png
+335 silly gunzTarPerm modified mode [ 'test/images/level_0.png', 438, 420 ]
+336 silly gunzTarPerm extractEntry test/images/level_1.png
+337 silly gunzTarPerm modified mode [ 'test/images/level_1.png', 438, 420 ]
+338 silly gunzTarPerm extractEntry test/images/app_icon.png
+339 silly gunzTarPerm modified mode [ 'test/images/app_icon.png', 438, 420 ]
+340 silly gunzTarPerm extractEntry test/images/level_3.png
+341 silly gunzTarPerm modified mode [ 'test/images/level_3.png', 438, 420 ]
+342 silly gunzTarPerm extractEntry test/images/level_4.png
+343 silly gunzTarPerm modified mode [ 'test/images/level_4.png', 438, 420 ]
+344 silly gunzTarPerm extractEntry test/images/level_5.png
+345 silly gunzTarPerm modified mode [ 'test/images/level_5.png', 438, 420 ]
+346 silly gunzTarPerm extractEntry test/images/loading.png
+347 silly gunzTarPerm modified mode [ 'test/images/loading.png', 438, 420 ]
+348 silly gunzTarPerm extractEntry test/images/open.png
+349 silly gunzTarPerm modified mode [ 'test/images/open.png', 438, 420 ]
+350 silly gunzTarPerm extractEntry test/images/sina.png
+351 silly gunzTarPerm modified mode [ 'test/images/sina.png', 438, 420 ]
+352 silly gunzTarPerm extractEntry test/images/sina_logo.png
+353 silly gunzTarPerm modified mode [ 'test/images/sina_logo.png', 438, 420 ]
+354 silly gunzTarPerm extractEntry test/images/speaker.png
+355 silly gunzTarPerm modified mode [ 'test/images/speaker.png', 438, 420 ]
+356 silly gunzTarPerm extractEntry test/images/tips_icons.png
+357 silly gunzTarPerm modified mode [ 'test/images/tips_icons.png', 438, 420 ]
+358 silly gunzTarPerm extractEntry test/images/tips_icons2.png
+359 silly gunzTarPerm modified mode [ 'test/images/tips_icons2.png', 438, 420 ]
+360 silly gunzTarPerm extractEntry test/images/txweibo_logo.png
+361 silly gunzTarPerm modified mode [ 'test/images/txweibo_logo.png', 438, 420 ]
+362 silly gunzTarPerm extractEntry test/index.html
+363 silly gunzTarPerm modified mode [ 'test/index.html', 438, 420 ]
+364 silly gunzTarPerm extractEntry test/result.html
+365 silly gunzTarPerm modified mode [ 'test/result.html', 438, 420 ]
+366 silly gunzTarPerm extractEntry test/result2.html
+367 silly gunzTarPerm modified mode [ 'test/result2.html', 438, 420 ]
+368 silly gunzTarPerm extractEntry test/sprite_output/css/style.css
+369 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style.css', 438, 420 ]
+370 silly gunzTarPerm extractEntry test/sprite_output/css/style2.css
+371 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style2.css', 438, 420 ]
+372 silly gunzTarPerm extractEntry test/sprite_output/css/style3.css
+373 silly gunzTarPerm modified mode [ 'test/sprite_output/css/style3.css', 438, 420 ]
+374 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style.png
+375 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style.png', 438, 420 ]
+376 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style2.png
+377 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style2.png', 438, 420 ]
+378 silly gunzTarPerm extractEntry test/sprite_output/images/sprite_style3.png
+379 silly gunzTarPerm modified mode [ 'test/sprite_output/images/sprite_style3.png', 438, 420 ]
+380 silly gunzTarPerm extractEntry TODO.txt
+381 silly gunzTarPerm modified mode [ 'TODO.txt', 438, 420 ]
+382 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\package.json
+383 silly lockFile 41c3f46c-oaming-npm-node-modules-ispriter C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter
+384 silly lockFile 41c3f46c-oaming-npm-node-modules-ispriter C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter
+385 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+386 silly lockFile 982f91a3-cache-ispriter-0-1-3-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\ispriter\0.1.3\package.tgz
+387 info preinstall ispriter@0.1.3
+388 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\package.json
+389 verbose readDependencies using package.json deps
+390 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\package.json
+391 verbose readDependencies using package.json deps
+392 verbose cache add [ 'cssom@*', null ]
+393 verbose cache add name=undefined spec="cssom@*" args=["cssom@*",null]
+394 verbose parsed url { protocol: null,
+394 verbose parsed url   slashes: null,
+394 verbose parsed url   auth: null,
+394 verbose parsed url   host: null,
+394 verbose parsed url   port: null,
+394 verbose parsed url   hostname: null,
+394 verbose parsed url   hash: null,
+394 verbose parsed url   search: null,
+394 verbose parsed url   query: null,
+394 verbose parsed url   pathname: 'cssom@*',
+394 verbose parsed url   path: 'cssom@*',
+394 verbose parsed url   href: 'cssom@*' }
+395 verbose cache add name="cssom" spec="*" args=["cssom","*"]
+396 verbose parsed url { protocol: null,
+396 verbose parsed url   slashes: null,
+396 verbose parsed url   auth: null,
+396 verbose parsed url   host: null,
+396 verbose parsed url   port: null,
+396 verbose parsed url   hostname: null,
+396 verbose parsed url   hash: null,
+396 verbose parsed url   search: null,
+396 verbose parsed url   query: null,
+396 verbose parsed url   pathname: '*',
+396 verbose parsed url   path: '*',
+396 verbose parsed url   href: '*' }
+397 verbose addNamed [ 'cssom', '*' ]
+398 verbose addNamed [ null, '' ]
+399 silly lockFile 8bc30603-cssom cssom@*
+400 verbose lock cssom@* C:\Users\yotam\AppData\Roaming\npm-cache\8bc30603-cssom.lock
+401 verbose cache add [ 'canvas@*', null ]
+402 verbose cache add name=undefined spec="canvas@*" args=["canvas@*",null]
+403 verbose parsed url { protocol: null,
+403 verbose parsed url   slashes: null,
+403 verbose parsed url   auth: null,
+403 verbose parsed url   host: null,
+403 verbose parsed url   port: null,
+403 verbose parsed url   hostname: null,
+403 verbose parsed url   hash: null,
+403 verbose parsed url   search: null,
+403 verbose parsed url   query: null,
+403 verbose parsed url   pathname: 'canvas@*',
+403 verbose parsed url   path: 'canvas@*',
+403 verbose parsed url   href: 'canvas@*' }
+404 verbose cache add name="canvas" spec="*" args=["canvas","*"]
+405 verbose parsed url { protocol: null,
+405 verbose parsed url   slashes: null,
+405 verbose parsed url   auth: null,
+405 verbose parsed url   host: null,
+405 verbose parsed url   port: null,
+405 verbose parsed url   hostname: null,
+405 verbose parsed url   hash: null,
+405 verbose parsed url   search: null,
+405 verbose parsed url   query: null,
+405 verbose parsed url   pathname: '*',
+405 verbose parsed url   path: '*',
+405 verbose parsed url   href: '*' }
+406 verbose addNamed [ 'canvas', '*' ]
+407 verbose addNamed [ null, '' ]
+408 silly lockFile 5098a37a-canvas canvas@*
+409 verbose lock canvas@* C:\Users\yotam\AppData\Roaming\npm-cache\5098a37a-canvas.lock
+410 verbose cache add [ 'node-file@*', null ]
+411 verbose cache add name=undefined spec="node-file@*" args=["node-file@*",null]
+412 verbose parsed url { protocol: null,
+412 verbose parsed url   slashes: null,
+412 verbose parsed url   auth: null,
+412 verbose parsed url   host: null,
+412 verbose parsed url   port: null,
+412 verbose parsed url   hostname: null,
+412 verbose parsed url   hash: null,
+412 verbose parsed url   search: null,
+412 verbose parsed url   query: null,
+412 verbose parsed url   pathname: 'node-file@*',
+412 verbose parsed url   path: 'node-file@*',
+412 verbose parsed url   href: 'node-file@*' }
+413 verbose cache add name="node-file" spec="*" args=["node-file","*"]
+414 verbose parsed url { protocol: null,
+414 verbose parsed url   slashes: null,
+414 verbose parsed url   auth: null,
+414 verbose parsed url   host: null,
+414 verbose parsed url   port: null,
+414 verbose parsed url   hostname: null,
+414 verbose parsed url   hash: null,
+414 verbose parsed url   search: null,
+414 verbose parsed url   query: null,
+414 verbose parsed url   pathname: '*',
+414 verbose parsed url   path: '*',
+414 verbose parsed url   href: '*' }
+415 verbose addNamed [ 'node-file', '*' ]
+416 verbose addNamed [ null, '' ]
+417 silly lockFile 1557e409-node-file node-file@*
+418 verbose lock node-file@* C:\Users\yotam\AppData\Roaming\npm-cache\1557e409-node-file.lock
+419 silly addNameRange { name: 'cssom', range: '', hasData: false }
+420 silly addNameRange { name: 'canvas', range: '', hasData: false }
+421 silly addNameRange { name: 'node-file', range: '', hasData: false }
+422 verbose url raw cssom
+423 verbose url resolving [ 'https://registry.npmjs.org/', './cssom' ]
+424 verbose url resolved https://registry.npmjs.org/cssom
+425 info trying registry request attempt 1 at 13:27:44
+426 http GET https://registry.npmjs.org/cssom
+427 verbose url raw canvas
+428 verbose url resolving [ 'https://registry.npmjs.org/', './canvas' ]
+429 verbose url resolved https://registry.npmjs.org/canvas
+430 info trying registry request attempt 1 at 13:27:44
+431 http GET https://registry.npmjs.org/canvas
+432 verbose url raw node-file
+433 verbose url resolving [ 'https://registry.npmjs.org/', './node-file' ]
+434 verbose url resolved https://registry.npmjs.org/node-file
+435 info trying registry request attempt 1 at 13:27:44
+436 http GET https://registry.npmjs.org/node-file
+437 http 200 https://registry.npmjs.org/node-file
+438 silly registry.get cb [ 200,
+438 silly registry.get   { vary: 'Accept',
+438 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+438 silly registry.get     etag: '"77S57A0B5ZOO6B1NXFAVZ7S0R"',
+438 silly registry.get     date: 'Tue, 30 Jul 2013 10:27:46 GMT',
+438 silly registry.get     'content-type': 'application/json',
+438 silly registry.get     'content-length': '1923' } ]
+439 http 200 https://registry.npmjs.org/cssom
+440 silly registry.get cb [ 200,
+440 silly registry.get   { vary: 'Accept',
+440 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+440 silly registry.get     etag: '"BMFSR13IJW1EYG610SU963J6J"',
+440 silly registry.get     date: 'Tue, 30 Jul 2013 10:27:46 GMT',
+440 silly registry.get     'content-type': 'application/json',
+440 silly registry.get     'content-length': '7117' } ]
+441 silly addNameRange number 2 { name: 'node-file', range: '', hasData: true }
+442 silly addNameRange versions [ 'node-file', [ '0.1.1' ] ]
+443 verbose addNamed [ 'node-file', '0.1.1' ]
+444 verbose addNamed [ '0.1.1', '0.1.1' ]
+445 silly lockFile 9abfb6d0-node-file-0-1-1 node-file@0.1.1
+446 verbose lock node-file@0.1.1 C:\Users\yotam\AppData\Roaming\npm-cache\9abfb6d0-node-file-0-1-1.lock
+447 silly lockFile c3028372-rg-node-file-node-file-0-1-1-tgz https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz
+448 verbose lock https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz C:\Users\yotam\AppData\Roaming\npm-cache\c3028372-rg-node-file-node-file-0-1-1-tgz.lock
+449 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz',
+449 verbose addRemoteTarball   '5082c78aef403cb2c20e0f73c302434276c3723c' ]
+450 silly addNameRange number 2 { name: 'cssom', range: '', hasData: true }
+451 silly addNameRange versions [ 'cssom',
+451 silly addNameRange   [ '0.2.0', '0.2.1', '0.2.2', '0.2.3', '0.2.4', '0.2.5' ] ]
+452 verbose addNamed [ 'cssom', '0.2.5' ]
+453 verbose addNamed [ '0.2.5', '0.2.5' ]
+454 silly lockFile 452affd3-cssom-0-2-5 cssom@0.2.5
+455 verbose lock cssom@0.2.5 C:\Users\yotam\AppData\Roaming\npm-cache\452affd3-cssom-0-2-5.lock
+456 info retry fetch attempt 1 at 13:27:46
+457 verbose fetch to= C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\tmp.tgz
+458 silly lockFile c6f46bfa--npmjs-org-cssom-cssom-0-2-5-tgz https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz
+459 verbose lock https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz C:\Users\yotam\AppData\Roaming\npm-cache\c6f46bfa--npmjs-org-cssom-cssom-0-2-5-tgz.lock
+460 http GET https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz
+461 verbose addRemoteTarball [ 'https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz',
+461 verbose addRemoteTarball   '2682709b5902e7212df529116ff788cd5b254894' ]
+462 info retry fetch attempt 1 at 13:27:46
+463 verbose fetch to= C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\tmp.tgz
+464 http GET https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz
+465 http 200 https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz
+466 http 200 https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz
+467 silly shasum updated bytes 2076
+468 info shasum 5082c78aef403cb2c20e0f73c302434276c3723c
+468 info shasum C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\tmp.tgz
+469 verbose tar unpack C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\tmp.tgz
+470 silly lockFile a8da12b4-335-0-011349464766681194-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package
+471 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package C:\Users\yotam\AppData\Roaming\npm-cache\a8da12b4-335-0-011349464766681194-package.lock
+472 silly lockFile 311b1005-335-0-011349464766681194-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\tmp.tgz
+473 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\tmp.tgz C:\Users\yotam\AppData\Roaming\npm-cache\311b1005-335-0-011349464766681194-tmp-tgz.lock
+474 silly gunzTarPerm modes [ '755', '644' ]
+475 silly gunzTarPerm extractEntry package.json
+476 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+477 silly gunzTarPerm extractEntry README.md
+478 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+479 silly gunzTarPerm extractEntry index.js
+480 silly gunzTarPerm modified mode [ 'index.js', 511, 493 ]
+481 verbose read json C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package\package.json
+482 silly lockFile a8da12b4-335-0-011349464766681194-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package
+483 silly lockFile a8da12b4-335-0-011349464766681194-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package
+484 silly lockFile 311b1005-335-0-011349464766681194-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\tmp.tgz
+485 silly lockFile 311b1005-335-0-011349464766681194-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\tmp.tgz
+486 verbose from cache C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package\package.json
+487 silly shasum updated bytes 7592
+488 info shasum 2682709b5902e7212df529116ff788cd5b254894
+488 info shasum C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\tmp.tgz
+489 verbose tar unpack C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\tmp.tgz
+490 silly lockFile 12b6bf86-6339-0-30866470094770193-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package
+491 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package C:\Users\yotam\AppData\Roaming\npm-cache\12b6bf86-6339-0-30866470094770193-package.lock
+492 silly lockFile 9a1c982b-6339-0-30866470094770193-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\tmp.tgz
+493 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\tmp.tgz C:\Users\yotam\AppData\Roaming\npm-cache\9a1c982b-6339-0-30866470094770193-tmp-tgz.lock
+494 silly gunzTarPerm modes [ '755', '644' ]
+495 verbose tar pack [ 'C:\\Users\\yotam\\AppData\\Roaming\\npm-cache\\node-file\\0.1.1\\package.tgz',
+495 verbose tar pack   'C:\\Users\\yotam\\AppData\\Local\\Temp\\npm-11232\\1375180066335-0.011349464766681194\\package' ]
+496 verbose tarball C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+497 verbose folder C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package
+498 silly lockFile a8da12b4-335-0-011349464766681194-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package
+499 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package C:\Users\yotam\AppData\Roaming\npm-cache\a8da12b4-335-0-011349464766681194-package.lock
+500 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+501 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\be98e0cc-ache-node-file-0-1-1-package-tgz.lock
+502 silly gunzTarPerm extractEntry package.json
+503 silly gunzTarPerm extractEntry .npmignore
+504 silly gunzTarPerm extractEntry .gitmodules
+505 silly gunzTarPerm extractEntry lib/clone.js
+506 silly gunzTarPerm extractEntry lib/CSSKeyframeRule.js
+507 silly lockFile a8da12b4-335-0-011349464766681194-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package
+508 silly lockFile a8da12b4-335-0-011349464766681194-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066335-0.011349464766681194\package
+509 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+510 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+511 silly gunzTarPerm extractEntry lib/CSSKeyframesRule.js
+512 silly gunzTarPerm extractEntry lib/CSSMediaRule.js
+513 silly lockFile 719c96e7-pm-cache-node-file-0-1-1-package C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package
+514 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package C:\Users\yotam\AppData\Roaming\npm-cache\719c96e7-pm-cache-node-file-0-1-1-package.lock
+515 silly lockFile 719c96e7-pm-cache-node-file-0-1-1-package C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package
+516 silly lockFile 719c96e7-pm-cache-node-file-0-1-1-package C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package
+517 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+518 silly lockFile 719c96e7-pm-cache-node-file-0-1-1-package C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package
+519 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package C:\Users\yotam\AppData\Roaming\npm-cache\719c96e7-pm-cache-node-file-0-1-1-package.lock
+520 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+521 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\be98e0cc-ache-node-file-0-1-1-package-tgz.lock
+522 silly gunzTarPerm extractEntry lib/CSSRule.js
+523 silly gunzTarPerm extractEntry lib/CSSImportRule.js
+524 silly gunzTarPerm modes [ '755', '644' ]
+525 silly gunzTarPerm extractEntry package.json
+526 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+527 silly gunzTarPerm extractEntry lib/CSSStyleRule.js
+528 silly gunzTarPerm extractEntry README.md
+529 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+530 silly gunzTarPerm extractEntry index.js
+531 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+532 silly gunzTarPerm extractEntry lib/CSSStyleSheet.js
+533 silly gunzTarPerm extractEntry lib/index.js
+534 silly gunzTarPerm extractEntry lib/MediaList.js
+535 silly gunzTarPerm extractEntry lib/parse.js
+536 verbose read json C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package\package.json
+537 silly gunzTarPerm extractEntry lib/CSSFontFaceRule.js
+538 silly gunzTarPerm extractEntry lib/StyleSheet.js
+539 silly lockFile 719c96e7-pm-cache-node-file-0-1-1-package C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package
+540 silly lockFile 719c96e7-pm-cache-node-file-0-1-1-package C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package
+541 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+542 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+543 silly shasum updated bytes 2049
+544 info shasum bfd3162f23edab6853df025cb6f04e44d00fa6b9
+544 info shasum C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+545 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package\package.json
+546 verbose chmod C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz 644
+547 silly chown skipping for windows C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+548 silly gunzTarPerm extractEntry lib/CSSStyleDeclaration.js
+549 silly gunzTarPerm extractEntry README.mdown
+550 silly lockFile c3028372-rg-node-file-node-file-0-1-1-tgz https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz
+551 silly lockFile c3028372-rg-node-file-node-file-0-1-1-tgz https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz
+552 silly lockFile 9abfb6d0-node-file-0-1-1 node-file@0.1.1
+553 silly lockFile 9abfb6d0-node-file-0-1-1 node-file@0.1.1
+554 silly lockFile 1557e409-node-file node-file@*
+555 silly lockFile 1557e409-node-file node-file@*
+556 verbose read json C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package\package.json
+557 silly lockFile 12b6bf86-6339-0-30866470094770193-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package
+558 silly lockFile 12b6bf86-6339-0-30866470094770193-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package
+559 silly lockFile 9a1c982b-6339-0-30866470094770193-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\tmp.tgz
+560 silly lockFile 9a1c982b-6339-0-30866470094770193-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\tmp.tgz
+561 verbose from cache C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package\package.json
+562 verbose tar pack [ 'C:\\Users\\yotam\\AppData\\Roaming\\npm-cache\\cssom\\0.2.5\\package.tgz',
+562 verbose tar pack   'C:\\Users\\yotam\\AppData\\Local\\Temp\\npm-11232\\1375180066339-0.30866470094770193\\package' ]
+563 verbose tarball C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+564 verbose folder C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package
+565 silly lockFile 12b6bf86-6339-0-30866470094770193-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package
+566 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package C:\Users\yotam\AppData\Roaming\npm-cache\12b6bf86-6339-0-30866470094770193-package.lock
+567 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+568 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\87944987-pm-cache-cssom-0-2-5-package-tgz.lock
+569 http 200 https://registry.npmjs.org/canvas
+570 silly registry.get cb [ 200,
+570 silly registry.get   { vary: 'Accept',
+570 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+570 silly registry.get     etag: '"4KL3D255U0DFUIEO1PDWFDEOR"',
+570 silly registry.get     date: 'Tue, 30 Jul 2013 10:27:46 GMT',
+570 silly registry.get     'content-type': 'application/json',
+570 silly registry.get     'content-length': '169528' } ]
+571 silly addNameRange number 2 { name: 'canvas', range: '', hasData: true }
+572 silly addNameRange versions [ 'canvas',
+572 silly addNameRange   [ '0.0.1',
+572 silly addNameRange     '0.0.2',
+572 silly addNameRange     '0.0.3',
+572 silly addNameRange     '0.0.4',
+572 silly addNameRange     '0.0.5',
+572 silly addNameRange     '0.0.6',
+572 silly addNameRange     '0.0.7',
+572 silly addNameRange     '0.0.8',
+572 silly addNameRange     '0.1.0',
+572 silly addNameRange     '0.2.0',
+572 silly addNameRange     '0.2.1',
+572 silly addNameRange     '0.3.0',
+572 silly addNameRange     '0.3.1',
+572 silly addNameRange     '0.3.2',
+572 silly addNameRange     '0.3.3',
+572 silly addNameRange     '0.4.0',
+572 silly addNameRange     '0.4.1',
+572 silly addNameRange     '0.4.2',
+572 silly addNameRange     '0.4.3',
+572 silly addNameRange     '0.5.0',
+572 silly addNameRange     '0.5.1',
+572 silly addNameRange     '0.5.2',
+572 silly addNameRange     '0.5.3',
+572 silly addNameRange     '0.5.4',
+572 silly addNameRange     '0.6.0',
+572 silly addNameRange     '0.7.0',
+572 silly addNameRange     '0.7.1',
+572 silly addNameRange     '0.7.2',
+572 silly addNameRange     '0.7.3',
+572 silly addNameRange     '0.8.0',
+572 silly addNameRange     '0.8.1',
+572 silly addNameRange     '0.8.2',
+572 silly addNameRange     '0.8.3',
+572 silly addNameRange     '0.9.0',
+572 silly addNameRange     '0.10.0',
+572 silly addNameRange     '0.10.1',
+572 silly addNameRange     '0.10.2',
+572 silly addNameRange     '0.10.3',
+572 silly addNameRange     '0.11.0',
+572 silly addNameRange     '0.11.1',
+572 silly addNameRange     '0.11.2',
+572 silly addNameRange     '0.11.3',
+572 silly addNameRange     '0.12.0',
+572 silly addNameRange     '0.12.1',
+572 silly addNameRange     '0.13.0',
+572 silly addNameRange     '0.13.1',
+572 silly addNameRange     '1.0.0',
+572 silly addNameRange     '1.0.1',
+572 silly addNameRange     '1.0.2',
+572 silly addNameRange     '1.0.3',
+572 silly addNameRange     '1.0.4' ] ]
+573 verbose addNamed [ 'canvas', '1.0.4' ]
+574 verbose addNamed [ '1.0.4', '1.0.4' ]
+575 silly lockFile 375b5385-canvas-1-0-4 canvas@1.0.4
+576 verbose lock canvas@1.0.4 C:\Users\yotam\AppData\Roaming\npm-cache\375b5385-canvas-1-0-4.lock
+577 silly lockFile b925d1c2-pmjs-org-canvas-canvas-1-0-4-tgz https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz
+578 verbose lock https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz C:\Users\yotam\AppData\Roaming\npm-cache\b925d1c2-pmjs-org-canvas-canvas-1-0-4-tgz.lock
+579 verbose addRemoteTarball [ 'https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz',
+579 verbose addRemoteTarball   'e17c9eef9e7ffc2df0d03e02761e5ef31d694c46' ]
+580 info retry fetch attempt 1 at 13:27:48
+581 verbose fetch to= C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\tmp.tgz
+582 silly lockFile 12b6bf86-6339-0-30866470094770193-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package
+583 silly lockFile 12b6bf86-6339-0-30866470094770193-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180066339-0.30866470094770193\package
+584 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+585 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+586 http GET https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz
+587 silly lockFile 37fe17dc-ng-npm-cache-cssom-0-2-5-package C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package
+588 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package C:\Users\yotam\AppData\Roaming\npm-cache\37fe17dc-ng-npm-cache-cssom-0-2-5-package.lock
+589 silly lockFile 37fe17dc-ng-npm-cache-cssom-0-2-5-package C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package
+590 silly lockFile 37fe17dc-ng-npm-cache-cssom-0-2-5-package C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package
+591 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+592 silly lockFile 37fe17dc-ng-npm-cache-cssom-0-2-5-package C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package
+593 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package C:\Users\yotam\AppData\Roaming\npm-cache\37fe17dc-ng-npm-cache-cssom-0-2-5-package.lock
+594 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+595 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\87944987-pm-cache-cssom-0-2-5-package-tgz.lock
+596 silly gunzTarPerm modes [ '755', '644' ]
+597 silly gunzTarPerm extractEntry package.json
+598 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+599 silly gunzTarPerm extractEntry .npmignore
+600 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+601 silly gunzTarPerm extractEntry .gitmodules
+602 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+603 silly gunzTarPerm extractEntry lib/clone.js
+604 silly gunzTarPerm modified mode [ 'lib/clone.js', 438, 420 ]
+605 silly gunzTarPerm extractEntry lib/CSSKeyframeRule.js
+606 silly gunzTarPerm modified mode [ 'lib/CSSKeyframeRule.js', 438, 420 ]
+607 silly gunzTarPerm extractEntry lib/CSSKeyframesRule.js
+608 silly gunzTarPerm modified mode [ 'lib/CSSKeyframesRule.js', 438, 420 ]
+609 silly gunzTarPerm extractEntry lib/CSSMediaRule.js
+610 silly gunzTarPerm modified mode [ 'lib/CSSMediaRule.js', 438, 420 ]
+611 silly gunzTarPerm extractEntry lib/CSSRule.js
+612 silly gunzTarPerm modified mode [ 'lib/CSSRule.js', 438, 420 ]
+613 silly gunzTarPerm extractEntry lib/CSSImportRule.js
+614 silly gunzTarPerm modified mode [ 'lib/CSSImportRule.js', 438, 420 ]
+615 silly gunzTarPerm extractEntry lib/CSSStyleRule.js
+616 silly gunzTarPerm modified mode [ 'lib/CSSStyleRule.js', 438, 420 ]
+617 silly gunzTarPerm extractEntry lib/CSSStyleSheet.js
+618 silly gunzTarPerm modified mode [ 'lib/CSSStyleSheet.js', 438, 420 ]
+619 silly gunzTarPerm extractEntry lib/index.js
+620 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+621 silly gunzTarPerm extractEntry lib/MediaList.js
+622 silly gunzTarPerm modified mode [ 'lib/MediaList.js', 438, 420 ]
+623 silly gunzTarPerm extractEntry lib/parse.js
+624 silly gunzTarPerm modified mode [ 'lib/parse.js', 438, 420 ]
+625 silly gunzTarPerm extractEntry lib/CSSFontFaceRule.js
+626 silly gunzTarPerm modified mode [ 'lib/CSSFontFaceRule.js', 438, 420 ]
+627 silly gunzTarPerm extractEntry lib/StyleSheet.js
+628 silly gunzTarPerm modified mode [ 'lib/StyleSheet.js', 438, 420 ]
+629 silly gunzTarPerm extractEntry lib/CSSStyleDeclaration.js
+630 silly gunzTarPerm modified mode [ 'lib/CSSStyleDeclaration.js', 438, 420 ]
+631 silly gunzTarPerm extractEntry README.mdown
+632 silly gunzTarPerm modified mode [ 'README.mdown', 438, 420 ]
+633 verbose read json C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package\package.json
+634 silly lockFile 37fe17dc-ng-npm-cache-cssom-0-2-5-package C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package
+635 silly lockFile 37fe17dc-ng-npm-cache-cssom-0-2-5-package C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package
+636 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+637 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+638 silly shasum updated bytes 7565
+639 info shasum 757dddfff4ed6d460173059079a4978df513bb90
+639 info shasum C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+640 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package\package.json
+641 verbose chmod C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz 644
+642 silly chown skipping for windows C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+643 silly lockFile c6f46bfa--npmjs-org-cssom-cssom-0-2-5-tgz https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz
+644 silly lockFile c6f46bfa--npmjs-org-cssom-cssom-0-2-5-tgz https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz
+645 silly lockFile 452affd3-cssom-0-2-5 cssom@0.2.5
+646 silly lockFile 452affd3-cssom-0-2-5 cssom@0.2.5
+647 silly lockFile 8bc30603-cssom cssom@*
+648 silly lockFile 8bc30603-cssom cssom@*
+649 http 200 https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz
+650 silly shasum updated bytes 45422
+651 info shasum e17c9eef9e7ffc2df0d03e02761e5ef31d694c46
+651 info shasum C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\tmp.tgz
+652 verbose tar unpack C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\tmp.tgz
+653 silly lockFile cf605115-068136-0-380268711829558-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package
+654 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package C:\Users\yotam\AppData\Roaming\npm-cache\cf605115-068136-0-380268711829558-package.lock
+655 silly lockFile c74bfd24-068136-0-380268711829558-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\tmp.tgz
+656 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\tmp.tgz C:\Users\yotam\AppData\Roaming\npm-cache\c74bfd24-068136-0-380268711829558-tmp-tgz.lock
+657 silly gunzTarPerm modes [ '755', '644' ]
+658 silly gunzTarPerm extractEntry package.json
+659 silly gunzTarPerm extractEntry .npmignore
+660 silly gunzTarPerm extractEntry index.js
+661 silly gunzTarPerm extractEntry install
+662 silly gunzTarPerm extractEntry History.md
+663 silly gunzTarPerm extractEntry .gitmodules
+664 silly gunzTarPerm extractEntry .travis.yml
+665 silly gunzTarPerm extractEntry lib/bindings.js
+666 silly gunzTarPerm extractEntry lib/canvas.js
+667 silly gunzTarPerm extractEntry lib/context2d.js
+668 silly gunzTarPerm extractEntry lib/image.js
+669 silly gunzTarPerm extractEntry lib/jpegstream.js
+670 silly gunzTarPerm extractEntry lib/pixelarray.js
+671 silly gunzTarPerm extractEntry lib/pngstream.js
+672 silly gunzTarPerm extractEntry Makefile
+673 silly gunzTarPerm extractEntry binding.gyp
+674 silly gunzTarPerm extractEntry Readme.md
+675 silly gunzTarPerm extractEntry src/FontFace.cc
+676 silly gunzTarPerm extractEntry src/Canvas.cc
+677 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+678 silly gunzTarPerm extractEntry src/CanvasGradient.h
+679 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+680 silly gunzTarPerm extractEntry src/CanvasPattern.h
+681 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+682 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+683 silly gunzTarPerm extractEntry src/closure.h
+684 silly gunzTarPerm extractEntry src/color.cc
+685 silly gunzTarPerm extractEntry src/color.h
+686 silly gunzTarPerm extractEntry src/Canvas.h
+687 silly gunzTarPerm extractEntry src/FontFace.h
+688 silly gunzTarPerm extractEntry src/Image.cc
+689 silly gunzTarPerm extractEntry src/Image.h
+690 silly gunzTarPerm extractEntry src/ImageData.cc
+691 silly gunzTarPerm extractEntry src/ImageData.h
+692 silly gunzTarPerm extractEntry src/init.cc
+693 silly gunzTarPerm extractEntry src/JPEGStream.h
+694 silly gunzTarPerm extractEntry src/nan.h
+695 silly gunzTarPerm extractEntry src/PixelArray.cc
+696 silly gunzTarPerm extractEntry src/PixelArray.h
+697 silly gunzTarPerm extractEntry src/Point.h
+698 silly gunzTarPerm extractEntry util/cairo_include.sh
+699 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+700 silly gunzTarPerm extractEntry util/has_lib.sh
+701 silly gunzTarPerm extractEntry util/lib_lookup.sh
+702 verbose read json C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package\package.json
+703 silly lockFile cf605115-068136-0-380268711829558-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package
+704 silly lockFile cf605115-068136-0-380268711829558-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package
+705 silly lockFile c74bfd24-068136-0-380268711829558-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\tmp.tgz
+706 silly lockFile c74bfd24-068136-0-380268711829558-tmp-tgz C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\tmp.tgz
+707 verbose from cache C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package\package.json
+708 verbose tar pack [ 'C:\\Users\\yotam\\AppData\\Roaming\\npm-cache\\canvas\\1.0.4\\package.tgz',
+708 verbose tar pack   'C:\\Users\\yotam\\AppData\\Local\\Temp\\npm-11232\\1375180068136-0.380268711829558\\package' ]
+709 verbose tarball C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+710 verbose folder C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package
+711 silly lockFile cf605115-068136-0-380268711829558-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package
+712 verbose lock C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package C:\Users\yotam\AppData\Roaming\npm-cache\cf605115-068136-0-380268711829558-package.lock
+713 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+714 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\b34c40e4-m-cache-canvas-1-0-4-package-tgz.lock
+715 silly lockFile cf605115-068136-0-380268711829558-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package
+716 silly lockFile cf605115-068136-0-380268711829558-package C:\Users\yotam\AppData\Local\Temp\npm-11232\1375180068136-0.380268711829558\package
+717 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+718 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+719 silly lockFile dd475528-g-npm-cache-canvas-1-0-4-package C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package
+720 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package C:\Users\yotam\AppData\Roaming\npm-cache\dd475528-g-npm-cache-canvas-1-0-4-package.lock
+721 silly lockFile dd475528-g-npm-cache-canvas-1-0-4-package C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package
+722 silly lockFile dd475528-g-npm-cache-canvas-1-0-4-package C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package
+723 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+724 silly lockFile dd475528-g-npm-cache-canvas-1-0-4-package C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package
+725 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package C:\Users\yotam\AppData\Roaming\npm-cache\dd475528-g-npm-cache-canvas-1-0-4-package.lock
+726 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+727 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\b34c40e4-m-cache-canvas-1-0-4-package-tgz.lock
+728 silly gunzTarPerm modes [ '755', '644' ]
+729 silly gunzTarPerm extractEntry package.json
+730 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+731 silly gunzTarPerm extractEntry .npmignore
+732 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+733 silly gunzTarPerm extractEntry index.js
+734 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+735 silly gunzTarPerm extractEntry install
+736 silly gunzTarPerm modified mode [ 'install', 438, 420 ]
+737 silly gunzTarPerm extractEntry History.md
+738 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+739 silly gunzTarPerm extractEntry .gitmodules
+740 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+741 silly gunzTarPerm extractEntry .travis.yml
+742 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+743 silly gunzTarPerm extractEntry lib/bindings.js
+744 silly gunzTarPerm modified mode [ 'lib/bindings.js', 438, 420 ]
+745 silly gunzTarPerm extractEntry lib/canvas.js
+746 silly gunzTarPerm modified mode [ 'lib/canvas.js', 438, 420 ]
+747 silly gunzTarPerm extractEntry lib/context2d.js
+748 silly gunzTarPerm modified mode [ 'lib/context2d.js', 438, 420 ]
+749 silly gunzTarPerm extractEntry lib/image.js
+750 silly gunzTarPerm modified mode [ 'lib/image.js', 438, 420 ]
+751 silly gunzTarPerm extractEntry lib/jpegstream.js
+752 silly gunzTarPerm modified mode [ 'lib/jpegstream.js', 438, 420 ]
+753 silly gunzTarPerm extractEntry lib/pixelarray.js
+754 silly gunzTarPerm modified mode [ 'lib/pixelarray.js', 438, 420 ]
+755 silly gunzTarPerm extractEntry lib/pngstream.js
+756 silly gunzTarPerm modified mode [ 'lib/pngstream.js', 438, 420 ]
+757 silly gunzTarPerm extractEntry Makefile
+758 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+759 silly gunzTarPerm extractEntry binding.gyp
+760 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+761 silly gunzTarPerm extractEntry Readme.md
+762 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+763 silly gunzTarPerm extractEntry src/FontFace.cc
+764 silly gunzTarPerm modified mode [ 'src/FontFace.cc', 438, 420 ]
+765 silly gunzTarPerm extractEntry src/Canvas.cc
+766 silly gunzTarPerm modified mode [ 'src/Canvas.cc', 438, 420 ]
+767 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+768 silly gunzTarPerm modified mode [ 'src/CanvasGradient.cc', 438, 420 ]
+769 silly gunzTarPerm extractEntry src/CanvasGradient.h
+770 silly gunzTarPerm modified mode [ 'src/CanvasGradient.h', 438, 420 ]
+771 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+772 silly gunzTarPerm modified mode [ 'src/CanvasPattern.cc', 438, 420 ]
+773 silly gunzTarPerm extractEntry src/CanvasPattern.h
+774 silly gunzTarPerm modified mode [ 'src/CanvasPattern.h', 438, 420 ]
+775 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+776 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.cc', 438, 420 ]
+777 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+778 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.h', 438, 420 ]
+779 silly gunzTarPerm extractEntry src/closure.h
+780 silly gunzTarPerm modified mode [ 'src/closure.h', 438, 420 ]
+781 silly gunzTarPerm extractEntry src/color.cc
+782 silly gunzTarPerm modified mode [ 'src/color.cc', 438, 420 ]
+783 silly gunzTarPerm extractEntry src/color.h
+784 silly gunzTarPerm modified mode [ 'src/color.h', 438, 420 ]
+785 silly gunzTarPerm extractEntry src/Canvas.h
+786 silly gunzTarPerm modified mode [ 'src/Canvas.h', 438, 420 ]
+787 silly gunzTarPerm extractEntry src/FontFace.h
+788 silly gunzTarPerm modified mode [ 'src/FontFace.h', 438, 420 ]
+789 silly gunzTarPerm extractEntry src/Image.cc
+790 silly gunzTarPerm modified mode [ 'src/Image.cc', 438, 420 ]
+791 silly gunzTarPerm extractEntry src/Image.h
+792 silly gunzTarPerm modified mode [ 'src/Image.h', 438, 420 ]
+793 silly gunzTarPerm extractEntry src/ImageData.cc
+794 silly gunzTarPerm modified mode [ 'src/ImageData.cc', 438, 420 ]
+795 silly gunzTarPerm extractEntry src/ImageData.h
+796 silly gunzTarPerm modified mode [ 'src/ImageData.h', 438, 420 ]
+797 silly gunzTarPerm extractEntry src/init.cc
+798 silly gunzTarPerm modified mode [ 'src/init.cc', 438, 420 ]
+799 silly gunzTarPerm extractEntry src/JPEGStream.h
+800 silly gunzTarPerm modified mode [ 'src/JPEGStream.h', 438, 420 ]
+801 silly gunzTarPerm extractEntry src/nan.h
+802 silly gunzTarPerm modified mode [ 'src/nan.h', 438, 420 ]
+803 silly gunzTarPerm extractEntry src/PixelArray.cc
+804 silly gunzTarPerm modified mode [ 'src/PixelArray.cc', 438, 420 ]
+805 silly gunzTarPerm extractEntry src/PixelArray.h
+806 silly gunzTarPerm modified mode [ 'src/PixelArray.h', 438, 420 ]
+807 silly gunzTarPerm extractEntry src/Point.h
+808 silly gunzTarPerm modified mode [ 'src/Point.h', 438, 420 ]
+809 silly gunzTarPerm extractEntry util/cairo_include.sh
+810 silly gunzTarPerm modified mode [ 'util/cairo_include.sh', 438, 420 ]
+811 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+812 silly gunzTarPerm modified mode [ 'util/has_cairo_freetype.sh', 438, 420 ]
+813 silly gunzTarPerm extractEntry util/has_lib.sh
+814 silly gunzTarPerm modified mode [ 'util/has_lib.sh', 438, 420 ]
+815 silly gunzTarPerm extractEntry util/lib_lookup.sh
+816 silly gunzTarPerm modified mode [ 'util/lib_lookup.sh', 438, 420 ]
+817 verbose read json C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package\package.json
+818 silly lockFile dd475528-g-npm-cache-canvas-1-0-4-package C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package
+819 silly lockFile dd475528-g-npm-cache-canvas-1-0-4-package C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package
+820 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+821 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+822 silly shasum updated bytes 45295
+823 info shasum 3094e467b6deb1829345b4b482a0529be7568e55
+823 info shasum C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+824 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package\package.json
+825 verbose chmod C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz 644
+826 silly chown skipping for windows C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+827 silly lockFile b925d1c2-pmjs-org-canvas-canvas-1-0-4-tgz https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz
+828 silly lockFile b925d1c2-pmjs-org-canvas-canvas-1-0-4-tgz https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz
+829 silly lockFile 375b5385-canvas-1-0-4 canvas@1.0.4
+830 silly lockFile 375b5385-canvas-1-0-4 canvas@1.0.4
+831 silly lockFile 5098a37a-canvas canvas@*
+832 silly lockFile 5098a37a-canvas canvas@*
+833 silly resolved [ { author:
+833 silly resolved      { name: 'azrael',
+833 silly resolved        email: 'azrael@imatlas.com',
+833 silly resolved        url: 'http://imatlas.com/about' },
+833 silly resolved     name: 'node-file',
+833 silly resolved     description: 'a tool to operate file conveniently',
+833 silly resolved     version: '0.1.1',
+833 silly resolved     homepage: 'http://imatlas.com/',
+833 silly resolved     repository: { type: 'git', url: 'git@github.com:iazrael/node-file.git' },
+833 silly resolved     main: './index.js',
+833 silly resolved     engines: { node: '*' },
+833 silly resolved     dependencies: {},
+833 silly resolved     devDependencies: {},
+833 silly resolved     optionalDependencies: {},
+833 silly resolved     readme: 'node-file\n=========\n\n对 NodeJs 的文件操作进行了封装\n\n如果你经常使用 NodeJs 来操作文件, 那么一定被 NodeJs 提供的简单文件接口搞得很不爽\n\n那些接口太基础了, 实现的功能有限\n\n使用 node-file ,你就可以摆脱这些烦恼啦!',
+833 silly resolved     readmeFilename: 'README.md',
+833 silly resolved     _id: 'node-file@0.1.1',
+833 silly resolved     dist: { shasum: 'bfd3162f23edab6853df025cb6f04e44d00fa6b9' },
+833 silly resolved     _from: 'node-file@*',
+833 silly resolved     _resolved: 'https://registry.npmjs.org/node-file/-/node-file-0.1.1.tgz' },
+833 silly resolved   { name: 'cssom',
+833 silly resolved     description: 'CSS Object Model implementation and CSS parser',
+833 silly resolved     keywords: [ 'CSS', 'CSSOM', 'parser', 'styleSheet' ],
+833 silly resolved     version: '0.2.5',
+833 silly resolved     homepage: 'https://github.com/NV/CSSOM',
+833 silly resolved     author: { name: 'Nikita Vasilyev', email: 'me@elv1s.ru' },
+833 silly resolved     repository: { type: 'git', url: 'git://github.com/NV/CSSOM.git' },
+833 silly resolved     bugs: { url: 'https://github.com/NV/CSSOM/issues' },
+833 silly resolved     directories: { lib: './lib' },
+833 silly resolved     main: './lib/index.js',
+833 silly resolved     engines: { node: '>=0.2.0' },
+833 silly resolved     devDependencies: { jake: '0.2.x' },
+833 silly resolved     licenses: [ [Object] ],
+833 silly resolved     scripts: { prepublish: 'jake lib/index.js' },
+833 silly resolved     readme: '# CSSOM\n\nCSSOM.js is a CSS parser written in pure JavaScript. It also a partial implementation of [CSS Object Model](http://dev.w3.org/csswg/cssom/). \n\n    CSSOM.parse("body {color: black}")\n    -> {\n      cssRules: [\n        {\n          selectorText: "body",\n          style: {\n            0: "color",\n            color: "black",\n            length: 1\n          }\n        }\n      ]\n    }\n\n\n## [Parser demo](http://nv.github.com/CSSOM/docs/parse.html)\n\nWorks well in Google Chrome 6+, Safari 5+, Firefox 3.6+, Opera 10.63+.\nDoesn\'t work in IE < 9 because of unsupported getters/setters.\n\nTo use CSSOM.js in the browser you might want to build a one-file version with [Jake](http://github.com/mde/node-jake):\n\n    ➤ jake\n    build/CSSOM.js is done\n\nTo use it with Node.js:\n\n    npm install cssom\n\n## [Specs](http://nv.github.com/CSSOM/spec/)\n',
+833 silly resolved     readmeFilename: 'README.mdown',
+833 silly resolved     _id: 'cssom@0.2.5',
+833 silly resolved     dist: { shasum: '757dddfff4ed6d460173059079a4978df513bb90' },
+833 silly resolved     _from: 'cssom@*',
+833 silly resolved     _resolved: 'https://registry.npmjs.org/cssom/-/cssom-0.2.5.tgz' },
+833 silly resolved   { name: 'canvas',
+833 silly resolved     description: 'Canvas graphics API backed by Cairo',
+833 silly resolved     version: '1.0.4',
+833 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+833 silly resolved     keywords:
+833 silly resolved      [ 'canvas',
+833 silly resolved        'graphic',
+833 silly resolved        'graphics',
+833 silly resolved        'pixman',
+833 silly resolved        'cairo',
+833 silly resolved        'image',
+833 silly resolved        'images',
+833 silly resolved        'pdf' ],
+833 silly resolved     homepage: 'https://github.com/learnboost/node-canvas',
+833 silly resolved     repository: { type: 'git', url: 'git://github.com/learnboost/node-canvas' },
+833 silly resolved     scripts: { test: 'make test', install: 'node-gyp rebuild' },
+833 silly resolved     devDependencies: { express: '3.0', jade: '0.28.1', mocha: '*', should: '*' },
+833 silly resolved     engines: { node: '>= 0.6.0' },
+833 silly resolved     main: './lib/canvas.js',
+833 silly resolved     gypfile: true,
+833 silly resolved     readme: '# node-canvas\n\n Node canvas is a [Cairo](http://cairographics.org/) backed Canvas implementation for [NodeJS](http://nodejs.org).\n\n## Authors\n\n  - TJ Holowaychuk ([visionmedia](http://github.com/visionmedia))\n\n## Installation\n\n    $ npm install canvas\n\nUnless previously installed you\'ll _need_ __Cairo__. For system-specific installation view the [Wiki](https://github.com/LearnBoost/node-canvas/wiki/_pages).\n\n## Screencasts\n\n  - [Introduction](http://screenr.com/CTk)\n\n## Example\n\n```javascript\nvar Canvas = require(\'canvas\')\n  , canvas = new Canvas(200,200)\n  , ctx = canvas.getContext(\'2d\');\n\nctx.font = \'30px Impact\';\nctx.rotate(.1);\nctx.fillText("Awesome!", 50, 100);\n\nvar te = ctx.measureText(\'Awesome!\');\nctx.strokeStyle = \'rgba(0,0,0,0.5)\';\nctx.beginPath();\nctx.lineTo(50, 102);\nctx.lineTo(50 + te.width, 102);\nctx.stroke();\n\nconsole.log(\'<img src="\' + canvas.toDataURL() + \'" />\');\n```\n\n## Non-Standard API\n\n node-canvas extends the canvas API to provide interfacing with node, for example streaming PNG data, converting to a `Buffer` instance, etc. Among the interfacing API, in some cases the drawing API has been extended for SSJS image manipulation / creation usage, however keep in mind these additions may fail to render properly within browsers.\n\n### Image#src=Buffer\n\n node-canvas adds `Image#src=Buffer` support, allowing you to read images from disc, redis, etc and apply them via `ctx.drawImage()`. Below we draw scaled down squid png by reading it from the disk with node\'s I/O.\n\n```javascript\nfs.readFile(__dirname + \'/images/squid.png\', function(err, squid){\n  if (err) throw err;\n  img = new Image;\n  img.src = squid;\n  ctx.drawImage(img, 0, 0, img.width / 4, img.height / 4);\n});\n```\n\n Below is an example of a canvas drawing it-self as the source several time:\n\n```javascript\nvar img = new Image;\nimg.src = canvas.toBuffer();\nctx.drawImage(img, 0, 0, 50, 50);\nctx.drawImage(img, 50, 0, 50, 50);\nctx.drawImage(img, 100, 0, 50, 50);\n```\n\n### Image#dataMode\n\nnode-canvas adds `Image#dataMode` support, which can be used to opt-in to mime data tracking of images (currently only JPEGs).\n\nWhen mime data is tracked, in PDF mode JPEGs can be embedded directly into the output, rather than being re-encoded into PNG. This can drastically reduce filesize, and speed up rendering.\n\n```javascript\nvar img = new Image;\nimg.dataMode = Image.MODE_IMAGE; // Only image data tracked\nimg.dataMode = Image.MODE_MIME; // Only mime data tracked\nimg.dataMode = Image.MODE_MIME | Image.MODE_IMAGE; // Both are tracked\n```\n\nIf image data is not tracked, and the Image is drawn to an image rather than a PDF canvas, the output will be junk. Enabling mime data tracking has no benefits (only a slow down) unless you are generating a PDF.\n\n### Canvas#pngStream()\n\n  To create a `PNGStream` simply call `canvas.pngStream()`, and the stream will start to emit _data_ events, finally emitting _end_ when finished. If an exception occurs the _error_ event is emitted.\n\n```javascript\nvar fs = require(\'fs\')\n  , out = fs.createWriteStream(__dirname + \'/text.png\')\n  , stream = canvas.pngStream();\n\nstream.on(\'data\', function(chunk){\n  out.write(chunk);\n});\n\nstream.on(\'end\', function(){\n  console.log(\'saved png\');\n});\n```\n\nCurrently _only_ sync streaming is supported, however we plan on supporting async streaming as well (of course :) ). Until then the `Canvas#toBuffer(callback)` alternative is async utilizing `eio_custom()`.\n\n### Canvas#jpegStream()\n\nYou can likewise create a `JPEGStream` by calling `canvas.jpegStream()` with some optional parameters; functionality is otherwise identical to `pngStream()`. See `examples/crop.js` for an example.\n\n### Canvas#toBuffer()\n\nA call to `Canvas#toBuffer()` will return a node `Buffer` instance containing all of the PNG data.\n\n```javascript\ncanvas.toBuffer();\n```\n\n### Canvas#toBuffer() async\n\nOptionally we may pass a callback function to `Canvas#toBuffer()`, and this process will be performed asynchronously, and will `callback(err, buf)`.\n\n```javascript\ncanvas.toBuffer(function(err, buf){\n\n});\n```\n\n### Canvas#toDataURL() async\n\nOptionally we may pass a callback function to `Canvas#toDataURL()`, and this process will be performed asynchronously, and will `callback(err, str)`.\n\n```javascript\ncanvas.toDataURL(function(err, str){\n\n});\n```\n\nor specify the mime type:\n\n```javascript\ncanvas.toDataURL(\'image/png\', function(err, str){\n\n});\n```\n\n### CanvasRenderingContext2d#patternQuality\n\nGiven one of the values below will alter pattern (gradients, images, etc) render quality, defaults to _good_.\n\n  - fast\n  - good\n  - best\n  - nearest\n  - bilinear\n\n### CanvasRenderingContext2d#textDrawingMode\n\nCan be either `path` or `glyph`. Using `glyph` is much faster than `path` for drawing, and when using a PDF context will embed the text natively, so will be selectable and lower filesize. The downside is that cairo does not have any subpixel precision for `glyph`, so this will be noticeably lower quality for text positioning in cases such as rotated text. Also, strokeText in `glyph` will act the same as fillText, except using the stroke style for the fill.\n\nDefaults to _path_.\n\nThis property is tracked as part of the canvas state in save/restore.\n\n### CanvasRenderingContext2d#filter\n\nLike `patternQuality`, but applies to transformations effecting more than just patterns. Defaults to _good_.\n\n  - fast\n  - good\n  - best\n  - nearest\n  - bilinear\n\n### Global Composite Operations\n\nIn addition to those specified and commonly implemented by browsers, the following have been added:\n\n  - multiply\n  - screen\n  - overlay\n  - hard-light\n  - soft-light\n  - hsl-hue\n  - hsl-saturation\n  - hsl-color\n  - hsl-luminosity\n\n## Anti-Aliasing\n\n Set anti-aliasing mode\n\n - default\n - none\n - gray\n - subpixel\n\n For example:\n\n```javascript\nctx.antialias = \'none\';\n```\n\n## PDF Support\n\n  Basic PDF support was added in 0.11.0. Make sure to install cairo with `--enable-pdf=yes` for the PDF backend. node-canvas must know that it is creating\n  a PDF on initialization, using the "pdf" string:\n\n```js\nvar canvas = new Canvas(200, 500, \'pdf\');\n```\n\n An additional method `.addPage()` is then available to create \n multiple page PDFs:\n\n```js\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World\', 50, 80);\nctx.addPage();\n\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World 2\', 50, 80);\nctx.addPage();\n\nctx.font = \'22px Helvetica\';\nctx.fillText(\'Hello World 3\', 50, 80);\nctx.addPage();\n```\n\n## Benchmarks\n\n Although node-canvas is extremely new, and we have not even begun optimization yet it is already quite fast. For benchmarks vs other node canvas implementations view this [gist](https://gist.github.com/664922), or update the submodules and run `$ make benchmark` yourself.\n\n## Contribute\n\n Want to contribute to node-canvas? patches for features, bug fixes, documentation, examples and others are certainly welcome. Take a look at the [issue queue](https://github.com/LearnBoost/node-canvas/issues) for existing issues.\n\n## Examples\n\n Examples are placed in _./examples_, be sure to check them out! most produce a png image of the same name, and others such as _live-clock.js_ launch an http server to be viewed in the browser.\n\n## Testing\n\nIf you have not previously, init git submodules:\n\n    $ git submodule update --init\n\nBuild node-canvas:\n\n    $ node-waf configure build\n\nUnit tests:\n\n    $ make test\n\nVisual tests:\n\n    $ make test-server\n\n## Versions\n\nTested with and designed for:\n\n  - node 0.4.2\n  - cairo 1.8.6\n\nFor node 0.2.x `node-canvas` <= 0.4.3 may be used,\n0.5.0 and above are designed for node 0.4.x only.\n\n## Contributors\n\n```\nproject  : node-canvas\n repo age : 1 year, 11 months\n active   : 120 days\n commits  : 963\n files    : 72\n authors  : \n   816\tTj Holowaychuk          84.7%\n    58\tTJ Holowaychuk          6.0%\n    23\tc-spencer               2.4%\n    16\tNathan Rajlich          1.7%\n    12\tatomizer                1.2%\n     6\tElijah Hamovitz         0.6%\n     5\tLuigi Pinca             0.5%\n     5\tRobert Sköld            0.5%\n     4\tobarthel                0.4%\n     3\tDon Park                0.3%\n     2\tAndreas Botsikas        0.2%\n     2\tGabriel Falcao          0.2%\n     1\tBrian McKinney          0.1%\n     1\tSeiya Konno             0.1%\n     1\tSyoyo Fujita            0.1%\n     1\tMarcello Bastea-Forte   0.1%\n     1\tTharit                  0.1%\n     1\tKonstantin Käfer        0.1%\n     1\tTom Carden              0.1%\n     1\tWalt Lin                0.1%\n     1\tDavid Björklund         0.1%\n     1\tBrian White             0.1%\n     1\tPhilippe Plantier       0.1%\n```\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2010 LearnBoost &lt;dev@learnboost.ca&gt;\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\'Software\'), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n',
+833 silly resolved     readmeFilename: 'Readme.md',
+833 silly resolved     _id: 'canvas@1.0.4',
+833 silly resolved     dist: { shasum: '3094e467b6deb1829345b4b482a0529be7568e55' },
+833 silly resolved     _from: 'canvas@*',
+833 silly resolved     _resolved: 'https://registry.npmjs.org/canvas/-/canvas-1.0.4.tgz' } ]
+834 info install node-file@0.1.1 into C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter
+835 info install cssom@0.2.5 into C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter
+836 info install canvas@1.0.4 into C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter
+837 info installOne node-file@0.1.1
+838 info installOne cssom@0.2.5
+839 info installOne canvas@1.0.4
+840 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package\package.json
+841 info C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file unbuild
+842 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file\package.json
+843 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package\package.json
+844 info C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom unbuild
+845 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom\package.json
+846 verbose from cache C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package\package.json
+847 info C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas unbuild
+848 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas\package.json
+849 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+850 silly lockFile 7695b56e--ispriter-node-modules-node-file C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file
+851 verbose lock C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file C:\Users\yotam\AppData\Roaming\npm-cache\7695b56e--ispriter-node-modules-node-file.lock
+852 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+853 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\be98e0cc-ache-node-file-0-1-1-package-tgz.lock
+854 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+855 silly lockFile a93976cf-ules-ispriter-node-modules-cssom C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom
+856 verbose lock C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom C:\Users\yotam\AppData\Roaming\npm-cache\a93976cf-ules-ispriter-node-modules-cssom.lock
+857 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+858 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\87944987-pm-cache-cssom-0-2-5-package-tgz.lock
+859 verbose tar unpack C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+860 silly lockFile 3fa8bcdb-les-ispriter-node-modules-canvas C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas
+861 verbose lock C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas C:\Users\yotam\AppData\Roaming\npm-cache\3fa8bcdb-les-ispriter-node-modules-canvas.lock
+862 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+863 verbose lock C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz C:\Users\yotam\AppData\Roaming\npm-cache\b34c40e4-m-cache-canvas-1-0-4-package-tgz.lock
+864 silly gunzTarPerm modes [ '755', '644' ]
+865 silly gunzTarPerm modes [ '755', '644' ]
+866 silly gunzTarPerm modes [ '755', '644' ]
+867 silly gunzTarPerm extractEntry package.json
+868 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+869 silly gunzTarPerm extractEntry package.json
+870 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+871 silly gunzTarPerm extractEntry package.json
+872 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+873 silly gunzTarPerm extractEntry README.md
+874 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+875 silly gunzTarPerm extractEntry index.js
+876 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+877 silly gunzTarPerm extractEntry .npmignore
+878 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+879 silly gunzTarPerm extractEntry index.js
+880 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+881 silly gunzTarPerm extractEntry .npmignore
+882 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+883 silly gunzTarPerm extractEntry .gitmodules
+884 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+885 silly gunzTarPerm extractEntry lib/clone.js
+886 silly gunzTarPerm modified mode [ 'lib/clone.js', 438, 420 ]
+887 silly gunzTarPerm extractEntry lib/CSSKeyframeRule.js
+888 silly gunzTarPerm modified mode [ 'lib/CSSKeyframeRule.js', 438, 420 ]
+889 silly gunzTarPerm extractEntry install
+890 silly gunzTarPerm modified mode [ 'install', 438, 420 ]
+891 silly gunzTarPerm extractEntry History.md
+892 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+893 silly gunzTarPerm extractEntry .gitmodules
+894 silly gunzTarPerm modified mode [ '.gitmodules', 438, 420 ]
+895 silly gunzTarPerm extractEntry .travis.yml
+896 silly gunzTarPerm modified mode [ '.travis.yml', 438, 420 ]
+897 silly gunzTarPerm extractEntry lib/bindings.js
+898 silly gunzTarPerm modified mode [ 'lib/bindings.js', 438, 420 ]
+899 silly gunzTarPerm extractEntry lib/canvas.js
+900 silly gunzTarPerm modified mode [ 'lib/canvas.js', 438, 420 ]
+901 silly gunzTarPerm extractEntry lib/context2d.js
+902 silly gunzTarPerm modified mode [ 'lib/context2d.js', 438, 420 ]
+903 silly gunzTarPerm extractEntry lib/image.js
+904 silly gunzTarPerm modified mode [ 'lib/image.js', 438, 420 ]
+905 silly gunzTarPerm extractEntry lib/jpegstream.js
+906 silly gunzTarPerm modified mode [ 'lib/jpegstream.js', 438, 420 ]
+907 silly gunzTarPerm extractEntry lib/pixelarray.js
+908 silly gunzTarPerm modified mode [ 'lib/pixelarray.js', 438, 420 ]
+909 silly gunzTarPerm extractEntry lib/pngstream.js
+910 silly gunzTarPerm modified mode [ 'lib/pngstream.js', 438, 420 ]
+911 silly gunzTarPerm extractEntry Makefile
+912 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+913 silly gunzTarPerm extractEntry binding.gyp
+914 silly gunzTarPerm modified mode [ 'binding.gyp', 438, 420 ]
+915 silly gunzTarPerm extractEntry Readme.md
+916 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+917 silly gunzTarPerm extractEntry src/FontFace.cc
+918 silly gunzTarPerm modified mode [ 'src/FontFace.cc', 438, 420 ]
+919 silly gunzTarPerm extractEntry src/Canvas.cc
+920 silly gunzTarPerm modified mode [ 'src/Canvas.cc', 438, 420 ]
+921 silly gunzTarPerm extractEntry src/CanvasGradient.cc
+922 silly gunzTarPerm modified mode [ 'src/CanvasGradient.cc', 438, 420 ]
+923 silly gunzTarPerm extractEntry src/CanvasGradient.h
+924 silly gunzTarPerm modified mode [ 'src/CanvasGradient.h', 438, 420 ]
+925 silly gunzTarPerm extractEntry src/CanvasPattern.cc
+926 silly gunzTarPerm modified mode [ 'src/CanvasPattern.cc', 438, 420 ]
+927 silly gunzTarPerm extractEntry src/CanvasPattern.h
+928 silly gunzTarPerm modified mode [ 'src/CanvasPattern.h', 438, 420 ]
+929 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.cc
+930 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.cc', 438, 420 ]
+931 silly gunzTarPerm extractEntry src/CanvasRenderingContext2d.h
+932 silly gunzTarPerm modified mode [ 'src/CanvasRenderingContext2d.h', 438, 420 ]
+933 silly gunzTarPerm extractEntry src/closure.h
+934 silly gunzTarPerm modified mode [ 'src/closure.h', 438, 420 ]
+935 silly gunzTarPerm extractEntry src/color.cc
+936 silly gunzTarPerm modified mode [ 'src/color.cc', 438, 420 ]
+937 silly gunzTarPerm extractEntry src/color.h
+938 silly gunzTarPerm modified mode [ 'src/color.h', 438, 420 ]
+939 silly gunzTarPerm extractEntry src/Canvas.h
+940 silly gunzTarPerm modified mode [ 'src/Canvas.h', 438, 420 ]
+941 silly gunzTarPerm extractEntry src/FontFace.h
+942 silly gunzTarPerm modified mode [ 'src/FontFace.h', 438, 420 ]
+943 silly gunzTarPerm extractEntry src/Image.cc
+944 silly gunzTarPerm modified mode [ 'src/Image.cc', 438, 420 ]
+945 silly gunzTarPerm extractEntry src/Image.h
+946 silly gunzTarPerm modified mode [ 'src/Image.h', 438, 420 ]
+947 silly gunzTarPerm extractEntry src/ImageData.cc
+948 silly gunzTarPerm modified mode [ 'src/ImageData.cc', 438, 420 ]
+949 silly gunzTarPerm extractEntry src/ImageData.h
+950 silly gunzTarPerm modified mode [ 'src/ImageData.h', 438, 420 ]
+951 silly gunzTarPerm extractEntry src/init.cc
+952 silly gunzTarPerm modified mode [ 'src/init.cc', 438, 420 ]
+953 silly gunzTarPerm extractEntry src/JPEGStream.h
+954 silly gunzTarPerm modified mode [ 'src/JPEGStream.h', 438, 420 ]
+955 silly gunzTarPerm extractEntry src/nan.h
+956 silly gunzTarPerm modified mode [ 'src/nan.h', 438, 420 ]
+957 silly gunzTarPerm extractEntry src/PixelArray.cc
+958 silly gunzTarPerm modified mode [ 'src/PixelArray.cc', 438, 420 ]
+959 silly gunzTarPerm extractEntry src/PixelArray.h
+960 silly gunzTarPerm modified mode [ 'src/PixelArray.h', 438, 420 ]
+961 silly gunzTarPerm extractEntry src/Point.h
+962 silly gunzTarPerm modified mode [ 'src/Point.h', 438, 420 ]
+963 silly gunzTarPerm extractEntry util/cairo_include.sh
+964 silly gunzTarPerm modified mode [ 'util/cairo_include.sh', 438, 420 ]
+965 silly gunzTarPerm extractEntry util/has_cairo_freetype.sh
+966 silly gunzTarPerm modified mode [ 'util/has_cairo_freetype.sh', 438, 420 ]
+967 silly gunzTarPerm extractEntry util/has_lib.sh
+968 silly gunzTarPerm modified mode [ 'util/has_lib.sh', 438, 420 ]
+969 silly gunzTarPerm extractEntry util/lib_lookup.sh
+970 silly gunzTarPerm modified mode [ 'util/lib_lookup.sh', 438, 420 ]
+971 silly gunzTarPerm extractEntry lib/CSSKeyframesRule.js
+972 silly gunzTarPerm modified mode [ 'lib/CSSKeyframesRule.js', 438, 420 ]
+973 silly gunzTarPerm extractEntry lib/CSSMediaRule.js
+974 silly gunzTarPerm modified mode [ 'lib/CSSMediaRule.js', 438, 420 ]
+975 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file\package.json
+976 silly gunzTarPerm extractEntry lib/CSSRule.js
+977 silly gunzTarPerm modified mode [ 'lib/CSSRule.js', 438, 420 ]
+978 silly gunzTarPerm extractEntry lib/CSSImportRule.js
+979 silly gunzTarPerm modified mode [ 'lib/CSSImportRule.js', 438, 420 ]
+980 silly lockFile 7695b56e--ispriter-node-modules-node-file C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file
+981 silly lockFile 7695b56e--ispriter-node-modules-node-file C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file
+982 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+983 silly lockFile be98e0cc-ache-node-file-0-1-1-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\node-file\0.1.1\package.tgz
+984 info preinstall node-file@0.1.1
+985 silly gunzTarPerm extractEntry lib/CSSStyleRule.js
+986 silly gunzTarPerm modified mode [ 'lib/CSSStyleRule.js', 438, 420 ]
+987 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file\package.json
+988 verbose readDependencies using package.json deps
+989 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file\package.json
+990 verbose readDependencies using package.json deps
+991 silly resolved []
+992 verbose about to build C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file
+993 info build C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file
+994 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\node-file\package.json
+995 verbose linkStuff [ true,
+995 verbose linkStuff   'C:\\Users\\yotam\\AppData\\Roaming\\npm\\node_modules',
+995 verbose linkStuff   false,
+995 verbose linkStuff   'C:\\Users\\yotam\\AppData\\Roaming\\npm\\node_modules\\ispriter\\node_modules' ]
+996 info linkStuff node-file@0.1.1
+997 verbose linkBins node-file@0.1.1
+998 verbose linkMans node-file@0.1.1
+999 verbose rebuildBundles node-file@0.1.1
+1000 info install node-file@0.1.1
+1001 info postinstall node-file@0.1.1
+1002 silly gunzTarPerm extractEntry lib/CSSStyleSheet.js
+1003 silly gunzTarPerm modified mode [ 'lib/CSSStyleSheet.js', 438, 420 ]
+1004 silly gunzTarPerm extractEntry lib/index.js
+1005 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+1006 silly gunzTarPerm extractEntry lib/MediaList.js
+1007 silly gunzTarPerm modified mode [ 'lib/MediaList.js', 438, 420 ]
+1008 silly gunzTarPerm extractEntry lib/parse.js
+1009 silly gunzTarPerm modified mode [ 'lib/parse.js', 438, 420 ]
+1010 silly gunzTarPerm extractEntry lib/CSSFontFaceRule.js
+1011 silly gunzTarPerm modified mode [ 'lib/CSSFontFaceRule.js', 438, 420 ]
+1012 silly gunzTarPerm extractEntry lib/StyleSheet.js
+1013 silly gunzTarPerm modified mode [ 'lib/StyleSheet.js', 438, 420 ]
+1014 silly gunzTarPerm extractEntry lib/CSSStyleDeclaration.js
+1015 silly gunzTarPerm modified mode [ 'lib/CSSStyleDeclaration.js', 438, 420 ]
+1016 silly gunzTarPerm extractEntry README.mdown
+1017 silly gunzTarPerm modified mode [ 'README.mdown', 438, 420 ]
+1018 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom\package.json
+1019 silly lockFile a93976cf-ules-ispriter-node-modules-cssom C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom
+1020 silly lockFile a93976cf-ules-ispriter-node-modules-cssom C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom
+1021 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+1022 silly lockFile 87944987-pm-cache-cssom-0-2-5-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\cssom\0.2.5\package.tgz
+1023 info preinstall cssom@0.2.5
+1024 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom\package.json
+1025 verbose readDependencies using package.json deps
+1026 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom\package.json
+1027 verbose readDependencies using package.json deps
+1028 silly resolved []
+1029 verbose about to build C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom
+1030 info build C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom
+1031 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\cssom\package.json
+1032 verbose linkStuff [ true,
+1032 verbose linkStuff   'C:\\Users\\yotam\\AppData\\Roaming\\npm\\node_modules',
+1032 verbose linkStuff   false,
+1032 verbose linkStuff   'C:\\Users\\yotam\\AppData\\Roaming\\npm\\node_modules\\ispriter\\node_modules' ]
+1033 info linkStuff cssom@0.2.5
+1034 verbose linkBins cssom@0.2.5
+1035 verbose linkMans cssom@0.2.5
+1036 verbose rebuildBundles cssom@0.2.5
+1037 info install cssom@0.2.5
+1038 info postinstall cssom@0.2.5
+1039 verbose read json C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas\package.json
+1040 silly lockFile 3fa8bcdb-les-ispriter-node-modules-canvas C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas
+1041 silly lockFile 3fa8bcdb-les-ispriter-node-modules-canvas C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas
+1042 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+1043 silly lockFile b34c40e4-m-cache-canvas-1-0-4-package-tgz C:\Users\yotam\AppData\Roaming\npm-cache\canvas\1.0.4\package.tgz
+1044 info preinstall canvas@1.0.4
+1045 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas\package.json
+1046 verbose readDependencies using package.json deps
+1047 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas\package.json
+1048 verbose readDependencies using package.json deps
+1049 silly resolved []
+1050 verbose about to build C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas
+1051 info build C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas
+1052 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas\package.json
+1053 verbose linkStuff [ true,
+1053 verbose linkStuff   'C:\\Users\\yotam\\AppData\\Roaming\\npm\\node_modules',
+1053 verbose linkStuff   false,
+1053 verbose linkStuff   'C:\\Users\\yotam\\AppData\\Roaming\\npm\\node_modules\\ispriter\\node_modules' ]
+1054 info linkStuff canvas@1.0.4
+1055 verbose linkBins canvas@1.0.4
+1056 verbose linkMans canvas@1.0.4
+1057 verbose rebuildBundles canvas@1.0.4
+1058 info install canvas@1.0.4
+1059 verbose unsafe-perm in lifecycle true
+1060 silly exec cmd "/c" "node-gyp rebuild"
+1061 silly cmd,/c,node-gyp rebuild,C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas spawning
+1062 info canvas@1.0.4 Failed to exec install script
+1063 info C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas unbuild
+1064 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules\canvas\package.json
+1065 info preuninstall canvas@1.0.4
+1066 info uninstall canvas@1.0.4
+1067 verbose false,C:\Users\yotam\AppData\Roaming\npm\node_modules,C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\node_modules unbuild canvas@1.0.4
+1068 info postuninstall canvas@1.0.4
+1069 verbose about to build C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter
+1070 info C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter unbuild
+1071 verbose from cache C:\Users\yotam\AppData\Roaming\npm\node_modules\ispriter\package.json
+1072 info preuninstall ispriter@0.1.3
+1073 info uninstall ispriter@0.1.3
+1074 verbose true,C:\Users\yotam\AppData\Roaming\npm\node_modules,C:\Users\yotam\AppData\Roaming\npm\node_modules unbuild ispriter@0.1.3
+1075 info postuninstall ispriter@0.1.3
+1076 error canvas@1.0.4 install: `node-gyp rebuild`
+1076 error `cmd "/c" "node-gyp rebuild"` failed with 1
+1077 error Failed at the canvas@1.0.4 install script.
+1077 error This is most likely a problem with the canvas package,
+1077 error not with npm itself.
+1077 error Tell the author that this fails on your system:
+1077 error     node-gyp rebuild
+1077 error You can get their info via:
+1077 error     npm owner ls canvas
+1077 error There is likely additional logging output above.
+1078 error System Windows_NT 6.1.7601
+1079 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "ispriter"
+1080 error cwd C:\Dev\smartsprites-0.2.10
+1081 error node -v v0.10.0
+1082 error npm -v 1.2.14
+1083 error code ELIFECYCLE
+1084 verbose exit [ 1, true ]

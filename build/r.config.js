@@ -1,14 +1,14 @@
 ({
-    "appDir":"../",
+    "appDir":"../_tmp/",
     "baseUrl":"scripts",
-    "mainConfigFile":"../scripts/main.js",
+    "mainConfigFile":"../_tmp/scripts/main.js",
 
     "optimize":"uglify2",
     "optimizeCss":"standard.keepComments.keepLines",
     "preserveLicenseComments":false,
     "removeCombined":true,
 
-    "dir":"../PROD",
+    "dir":"../_tmp/PROD",
 
     "pragmas":{
         "suppressLogs":true
