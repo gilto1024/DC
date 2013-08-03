@@ -37,7 +37,7 @@ var wrench = require('wrench')
 
 // Vars
 
-var mainDir = path.join(__dirname, '../DinnerClub/v0.2/')
+var mainDir = path.join(__dirname, '../DinnerClub/')
     , mainPROD = path.join(__dirname, '../PROD')
     , tmpDir = path.join('..', '_tmp')
     , tmpPROD = path.join(tmpDir, 'PROD')
