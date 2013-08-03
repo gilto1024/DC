@@ -206,9 +206,9 @@ html[dir=rtl] #contact_submit {
 }
 
 #contact_submit.send:hover, #contact_submit.loader {
-    background-position: 0 -38px;
+    background-position: 0 0px;
     background-repeat: no-repeat;
-    background-image:url('../img/send.png'); /** sprite-ref: about-sprite; */
+    background-image:url('../img/send_hover.png'); /** sprite-ref: about-sprite; */
 }
 
 #mailUs {
