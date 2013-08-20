@@ -1,0 +1,2558 @@
+[{
+		"id" : "REST001",
+		"info" : {
+			"phone" : "03-5612888",
+			"url" : "http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx",
+			"gaName" : "Café Italia",
+			"en" : {
+				"name" : "Café Italia",
+				"address" : "Kremintzki 6",
+				"tip" : "Ideal for friends."
+			},
+			"he" : {
+				"name" : "קפה איטליה",
+				"address" : "קרמניצקי 6",
+				"tip" : "מושלם לערב עם חברים."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST002",
+		"info" : {
+			"phone" : "03-6967111",
+			"url" : "http://www.brasserie.co.il/",
+			"gaName" : "Brasserie",
+			"en" : {
+				"name" : "Brasserie",
+				"address" : "Ibn Gabirol 70",
+				"tip" : "The Frenchiest French fries in town."
+			},
+			"he" : {
+				"name" : "בראסרי",
+				"address" : "אבן גבירול 70",
+				"tip" : "הצ'יפס הכי צרפתי בעיר."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "business"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST003",
+		"info" : {
+			"phone" : "03-5665505",
+			"url" : "http://www.mizlala.co.il",
+			"gaName" : "Mizlala",
+			"en" : {
+				"name" : "Mizlala",
+				"address" : "Nahalat Binyamin 57",
+				"tip" : "Intriguing bar for a date."
+			},
+			"he" : {
+				"name" : "מיזללה",
+				"address" : "נחלת בנימין 57",
+				"tip" : "בר מרתק לדייט."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST004",
+		"info" : {
+			"phone" : "03-6205051",
+			"url" : "http://www.mouse.co.il/CM.food_item_place,382,213,4178,.aspx",
+			"gaName" : "Cantina",
+			"en" : {
+				"name" : "Cantina",
+				"address" : "Rothschild 71",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "קנטינה",
+				"address" : "רוטשילד 71",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "business"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST005",
+		"info" : {
+			"phone" : "03-5107001",
+			"url" : "http://www.catit.co.il/",
+			"gaName" : "Catit",
+			"en" : {
+				"name" : "Catit",
+				"address" : "Nehalat Binyamin 57",
+				"tip" : "No intro needed."
+			},
+			"he" : {
+				"name" : "כתית",
+				"address" : "נחלת בנימין 57",
+				"tip" : "כל מילה מיותרת."
+			}
+		},
+		"verticals" : {
+			"party" : ["", "date"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST006",
+		"info" : {
+			"phone" : "03-6249249",
+			"url" : "http://www.yaffotelaviv.com/",
+			"gaName" : "Yafo Tel-Aviv",
+			"en" : {
+				"name" : "Yafo Tel&#8209;Aviv",
+				"address" : "Yigal Alon 98",
+				"tip" : "A good place for a special occasion."
+			},
+			"he" : {
+				"name" : "יפו תל אביב",
+				"address" : "יגאל אלון 98",
+				"tip" : "מקום טוב לאירוע מיוחד."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST007",
+		"info" : {
+			"phone" : "03-6856859",
+			"url" : "http://www.messa.co.il",
+			"gaName" : "Messa",
+			"en" : {
+				"name" : "Messa",
+				"address" : "HaArba'a 19",
+				"tip" : "Heavy business, fine dining."
+			},
+			"he" : {
+				"name" : "מסה",
+				"address" : "הארבעה 19",
+				"tip" : "ארוחת ערב עסקית לכבדים."
+			}
+		},
+		"verticals" : {
+			"party" : ["business", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 5,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST008",
+		"info" : {
+			"phone" : "03-6425854",
+			"url" : "http://www.joya.co.il/he/home/default.aspx",
+			"gaName" : "Joya",
+			"en" : {
+				"name" : "Joya",
+				"address" : "HaArba'a 5",
+				"tip" : "Don't miss Sophia Loren."
+			},
+			"he" : {
+				"name" : "ג'ויה",
+				"address" : "הארבעה 5",
+				"tip" : "אל תפספסו את סופיה לורן."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "business"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST009",
+		"info" : {
+			"phone" : "03-5166516",
+			"url" : "http://herbertsamuel.co.il/default.asp?PageID=5",
+			"gaName" : "Herbert Samuel",
+			"en" : {
+				"name" : "Herbert Samuel",
+				"address" : "Kaufmann 6",
+				"tip" : "Aim for the sunset."
+			},
+			"he" : {
+				"name" : "הרברט סמואל",
+				"address" : "קאופמן 6",
+				"tip" : "הזמינו מקום לשקיעה."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "tourists", "business", "date"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST010",
+		"info" : {
+			"phone" : "03-5226464",
+			"url" : "http://raphaeltlv.co.il/",
+			"gaName" : "Raphael",
+			"en" : {
+				"name" : "Raphael",
+				"address" : "Yarkon 87",
+				"tip" : "Go for the lamb chops!"
+			},
+			"he" : {
+				"name" : "רפאל",
+				"address" : "ירקון 87",
+				"tip" : "לכו על צלעות טלה!"
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "business", "tourists"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST011",
+		"info" : {
+			"phone" : "03-5621172",
+			"url" : "http://www.onami.co.il/he/home/default.aspx",
+			"gaName" : "Onami",
+			"en" : {
+				"name" : "Onami",
+				"address" : "HaArba'a 18",
+				"tip" : "Get a Choya on the bar."
+			},
+			"he" : {
+				"name" : "אונמי",
+				"address" : "הארבעה 18",
+				"tip" : "שתו צ'ויה על הבר."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST012",
+		"info" : {
+			"phone" : "03-6240484",
+			"url" : "http://www.tapeo.co.il/he/TLV/home.aspx",
+			"gaName" : "Tapeo",
+			"en" : {
+				"name" : "Tapeo",
+				"address" : "HaArba'a 16",
+				"tip" : "Good for a happy hour with friends."
+			},
+			"he" : {
+				"name" : "טפאו",
+				"address" : "הארבעה 16",
+				"tip" : "ערב שמח עם החבר'ה."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST013",
+		"info" : {
+			"phone" : "03-6996306",
+			"url" : "http://www.turkiz-rest.co.il/",
+			"gaName" : "Turkiz",
+			"en" : {
+				"name" : "Turkiz",
+				"address" : "Rosenblum 6",
+				"tip" : "Reserve the round table if you can."
+			},
+			"he" : {
+				"name" : "טורקיז",
+				"address" : "רוזנבלום 6",
+				"tip" : "השולחן העגול שווה את ההמתנה."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "tourists", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST014",
+		"info" : {
+			"phone" : "03-5446166",
+			"url" : "http://www.boya.co.il/",
+			"gaName" : "Boya",
+			"en" : {
+				"name" : "Boya",
+				"address" : "HaTa'arucha 3",
+				"tip" : "Tel Aviv port for Tourists."
+			},
+			"he" : {
+				"name" : "בויה",
+				"address" : "התערוכה 3",
+				"tip" : "קחו את החברים התיירים לטייל בנמל."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "tourists"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST015",
+		"info" : {
+			"phone" : "03-5109292",
+			"url" : "http://www.dallal.info/restIndex3.asp?pageId=31",
+			"gaName" : "Dallal",
+			"en" : {
+				"name" : "Dallal",
+				"address" : "Shabazi 10",
+				"tip" : "Take a cab, you won't find parking."
+			},
+			"he" : {
+				"name" : "דלאל",
+				"address" : "שבזי 10",
+				"tip" : "חנו במתחם התחנה, עדיף."
+			}
+		},
+		"verticals" : {
+			"party" : ["friennds", "family"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 0,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST016",
+		"info" : {
+			"phone" : "03-5177580",
+			"url" : "http://www.mouse.co.il/CM.food_item_place,383,213,5644,.aspx",
+			"gaName" : "Suzanna",
+			"en" : {
+				"name" : "Suzanna",
+				"address" : "Shabazi 9",
+				"tip" : "Go for drinks on the roof when the weather is right."
+			},
+			"he" : {
+				"name" : "סוזאנה",
+				"address" : "שבזי 9",
+				"tip" : "הבר על הגג מפתיע."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "tourists"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST017",
+		"info" : {
+			"phone" : "03-5601114",
+			"url" : "http://socialclub.rest.co.il/he/home/default.aspx",
+			"gaName" : "Social Club",
+			"en" : {
+				"name" : "Social Club",
+				"address" : "Rothschild 45",
+				"tip" : "Fancy cocktail menu."
+			},
+			"he" : {
+				"name" : "סושיאל קלאב",
+				"address" : "רוטשילד 45",
+				"tip" : "תפריט קוקטיילים נועז."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST018",
+		"info" : {
+			"phone" : "03-5104020",
+			"url" : "http://www.mouse.co.il/CM.Food_Item_Place,382,213,7938,.aspx",
+			"gaName" : "Makom Shel Basar",
+			"en" : {
+				"name" : "Makom Shel Basar",
+				"address" : "Shabazi 64",
+				"tip" : "Not for vegans."
+			},
+			"he" : {
+				"name" : "מקום של בשר",
+				"address" : "שבזי 64",
+				"tip" : "לא לצמחונים."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST019",
+		"info" : {
+			"phone" : "03-7367272",
+			"url" : "http://www.vicky-cristina.co.il/",
+			"gaName" : "Vicki Cristina",
+			"en" : {
+				"name" : "Vicki Cristina",
+				"address" : "Kaufmann 2",
+				"tip" : "The round bar is great for a crowd."
+			},
+			"he" : {
+				"name" : "ויקי קריסטינה",
+				"address" : "קאופמן 2",
+				"tip" : "שולחן הפסיפס העגול מעולה."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "tourists", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST020",
+		"info" : {
+			"phone" : "03-5166660",
+			"url" : "http://www.abraxas.co.il/",
+			"gaName" : "Abraxas North",
+			"en" : {
+				"name" : "Abraxas North",
+				"address" : "Lilienblum 40",
+				"tip" : "Intense service experience, be open for surprises."
+			},
+			"he" : {
+				"name" : "צפון אברקסס",
+				"address" : "לילנבלום 40",
+				"tip" : "אוירה מפתיעה."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST021",
+		"info" : {
+			"phone" : "03-6240044",
+			"url" : "http://zepra.co.il/",
+			"gaName" : "Zepra",
+			"en" : {
+				"name" : "Zepra",
+				"address" : "Yigal Alon 96",
+				"tip" : "Fun tasters menu."
+			},
+			"he" : {
+				"name" : "צפרה",
+				"address" : "יגאל אלון 96",
+				"tip" : "ארוחת טעימות חוויתית."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST022",
+		"info" : {
+			"phone" : "03-5162254",
+			"url" : "https://www.facebook.com/nanuchkatlv",
+			"gaName" : "Nanuchka",
+			"en" : {
+				"name" : "Nanuchka",
+				"address" : "Lilienblum 30",
+				"tip" : "Authentic Georgian food, great bar."
+			},
+			"he" : {
+				"name" : "ננוצ'קה",
+				"address" : "לילנבלום 30",
+				"tip" : "אוכל גרוזיני אמיתי, בר מפתיע."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST023",
+		"info" : {
+			"phone" : "03-6207436",
+			"url" : "https://www.facebook.com/pages/Port-Said/193302427463816",
+			"gaName" : "Port Said",
+			"en" : {
+				"name" : "Port Said",
+				"address" : "Har Sinai 2",
+				"tip" : "Chef quality street food."
+			},
+			"he" : {
+				"name" : "פורט סעיד",
+				"address" : "הר סיני 2",
+				"tip" : "מוקפד ומהודר זה לא, תבואו פשוטים."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST024",
+		"info" : {
+			"phone" : "03-6819998",
+			"url" : "http://www.kalamata.co.il/",
+			"gaName" : "Kalamata",
+			"en" : {
+				"name" : "Kalamata",
+				"address" : "Kikar Kdumim 10, Yafo",
+				"tip" : "Greek Jaffa, ask for a table with a view."
+			},
+			"he" : {
+				"name" : "קלמטה",
+				"address" : "כיכר קדומים 10 יפו",
+				"tip" : "יפו היוונית, בקשו שולחן ליד חלון."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "tourists", "date"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST025",
+		"info" : {
+			"phone" : "03-5646100",
+			"url" : "http://www.hotelmontefiore.co.il/restaurant",
+			"gaName" : "Hotel Montefiore",
+			"en" : {
+				"name" : "Hotel Montefiore",
+				"address" : "Montefiore 36",
+				"tip" : "Do not miss out on the tart tatin!"
+			},
+			"he" : {
+				"name" : "הוטל מונטפיורי",
+				"address" : "מונטפיורי 36",
+				"tip" : "אווירה יוצאת דופן, לא לוותר על הטארט טאטין."
+			}
+		},
+		"verticals" : {
+			"party" : ["business", "date"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 5,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST026",
+		"info" : {
+			"phone" : "03-5467905",
+			"url" : "https://www.facebook.com/ELBA.RESTAURANT",
+			"gaName" : "Elba",
+			"en" : {
+				"name" : "Elba",
+				"address" : "Ibn Gabirol 36",
+				"tip" : "The bourekas is a total surprise!"
+			},
+			"he" : {
+				"name" : "אלבה",
+				"address" : "אבן גבירול 36",
+				"tip" : "קיר זכוכית רומנטי לאבן גבירול, קחו בורקס ותופתעו לחלוטין."
+			}
+		},
+		"verticals" : {
+			"party" : ["", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST027",
+		"info" : {
+			"phone" : "03-5259987",
+			"url" : "http://www.mouse.co.il/CM.food_item_place,382,213,11158,.aspx",
+			"gaName" : "Café Europa",
+			"en" : {
+				"name" : "Café Europa",
+				"address" : "Rothschild 9",
+				"tip" : "A very intimate bar."
+			},
+			"he" : {
+				"name" : "קפה אירופה",
+				"address" : "רוטשילד 9",
+				"tip" : "חוץ מהשולחנות, בר צפוף ואינטימי."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST028",
+		"info" : {
+			"phone" : "03-6822111",
+			"url" : "http://www.goldmanc.co.il/home.php",
+			"gaName" : "Hatzer Goldman",
+			"en" : {
+				"name" : "Hatzer Goldman",
+				"address" : "Goldman 6",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "חצר גולדמן",
+				"address" : "גולדמן 6",
+				"tip" : "לשעבר פיני בחצר."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "tourists"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST029",
+		"info" : {
+			"phone" : "03-5221224",
+			"url" : "http://www.shila-rest.co.il/",
+			"gaName" : "Shila",
+			"en" : {
+				"name" : "Shila",
+				"address" : "Ben Yehuda 182",
+				"tip" : "Go straight to the valet, don't bother looking."
+			},
+			"he" : {
+				"name" : "שילה",
+				"address" : "בן יהודה 182",
+				"tip" : "לא תמצאו חניה, גשו ישר לחניית הואלט."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST030",
+		"info" : {
+			"phone" : "03-5666966",
+			"url" : "http://herbertsamuel.co.il/default.asp?PageID=6",
+			"gaName" : "Tapas 1 ha'am",
+			"en" : {
+				"name" : "Tapas 1 ha'am",
+				"address" : "Ehad Ha'am 27",
+				"tip" : "Share tapas with friends, use the valet parking."
+			},
+			"he" : {
+				"name" : "טאפאס אחד העם",
+				"address" : "אחד העם 27",
+				"tip" : "אחלה עם חברים, גם פה עדיף ישר לחניית הואלט."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST031",
+		"info" : {
+			"phone" : "03-5499626",
+			"url" : "https://www.facebook.com/pages/Sola-Food-Wine-Bar/247225912061993",
+			"gaName" : "Sola",
+			"en" : {
+				"name" : "Sola",
+				"address" : "Beit Eshel 31",
+				"tip" : "The perfect date."
+			},
+			"he" : {
+				"name" : "סולה",
+				"address" : "בית אשל 31",
+				"tip" : "דייט מושלם."
+			}
+		},
+		"verticals" : {
+			"party" : ["", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST032",
+		"info" : {
+			"phone" : "03-5225005",
+			"url" : "https://www.facebook.com/TaizuRestaurant",
+			"gaName" : "Taizu",
+			"en" : {
+				"name" : "Taizu",
+				"address" : "Begin 23",
+				"tip" : "Everything down to the bread is adventurous."
+			},
+			"he" : {
+				"name" : "טאיזו",
+				"address" : "בגין 23",
+				"tip" : "הכל שם הרפתקה, כולל הלחם."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST033",
+		"info" : {
+			"phone" : "03-5606385",
+			"url" : "http://www.mouse.co.il/CM.Food_Item_Place,384,213,3988,.aspx",
+			"gaName" : "Juz & Luz",
+			"en" : {
+				"name" : "Juz & Luz",
+				"address" : "Yehuda Halevi 51",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "ג'וז ולוז",
+				"address" : "יהודה הלוי 51",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST034",
+		"info" : {
+			"phone" : "03-6935151",
+			"url" : "http://www.toto-rest.co.il/",
+			"gaName" : "Toto",
+			"en" : {
+				"name" : "Toto",
+				"address" : "Berkovich 4",
+				"tip" : "The gniocchi and the ravioli are unique."
+			},
+			"he" : {
+				"name" : "טוטו",
+				"address" : "ברקוביץ' 4",
+				"tip" : "ניוקי ורביולי מנצח."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST035",
+		"info" : {
+			"phone" : "03-5293232",
+			"url" : "http://www.mel-michelle.co.il/",
+			"gaName" : "Mel & Michelle",
+			"en" : {
+				"name" : "Mel & Michelle",
+				"address" : "Ben Yehuda 155",
+				"tip" : "Romantic date. Try the Parisian Gniocchi."
+			},
+			"he" : {
+				"name" : "מל ומישל",
+				"address" : "בן יהודה 155",
+				"tip" : "דייט רומנטי במיוחד, ניוקי פריזאי אותנטי."
+			}
+		},
+		"verticals" : {
+			"party" : ["date"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST036",
+		"info" : {
+			"phone" : "03-5660481",
+			"url" : "http://www.nightkitchen.co.il/",
+			"gaName" : "Mitbach Laila",
+			"en" : {
+				"name" : "Mitbach Laila",
+				"address" : "Lilienblum 43",
+				"tip" : "Remember, only high tables"
+			},
+			"he" : {
+				"name" : "מטבח לילה",
+				"address" : "לילנבלום 43",
+				"tip" : "אוירת בר תל  אביבי."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "date"],
+			"sitting" : ["bar"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 0,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST037",
+		"info" : {
+			"phone" : "03-6031719",
+			"url" : "http://www.yassoutelaviv.co.il/",
+			"gaName" : "Yassou",
+			"en" : {
+				"name" : "Yassou",
+				"address" : "Yarkon 105",
+				"tip" : "Drink at the balcony, but eat inside."
+			},
+			"he" : {
+				"name" : "יאסו",
+				"address" : "ירקון 105",
+				"tip" : "עדיף לאכול בפנים, את הבירה תשאירו למרפסת."
+			}
+		},
+		"verticals" : {
+			"party" : ["tourists"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST038",
+		"info" : {
+			"phone" : "03-6202262",
+			"url" : "https://www.facebook.com/pages/Fleamarket-Restaurant-%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%A4%D7%9C%D7%99%D7%9E%D7%A8%D7%A7%D7%98/105537962947115",
+			"gaName" : "Flee Market",
+			"en" : {
+				"name" : "Flee Market",
+				"address" : "Rabbi Yohanan 8",
+				"tip" : "Local Jaffa Kebab, served on a sword."
+			},
+			"he" : {
+				"name" : "פלי מרקט",
+				"address" : "רבי יוחנן 8",
+				"tip" : "קבב יפואי על חרבות!"
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "tourists", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST039",
+		"info" : {
+			"phone" : "03-5446669",
+			"url" : "http://www.kitchen-market.co.il/",
+			"gaName" : "Kitchen Market",
+			"en" : {
+				"name" : "Kitchen Market",
+				"address" : "Hangar 12, Tel Aviv port",
+				"tip" : "Get a table with a view to the port."
+			},
+			"he" : {
+				"name" : "קיצ'ן מרקט",
+				"address" : "הנגר 12, נמל תל אביב",
+				"tip" : "הזמינו שולחן מערבי."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST040",
+		"info" : {
+			"phone" : "03-6308777",
+			"url" : "http://www.almahotel.co.il/alma-lounge-dining",
+			"gaName" : "Alma",
+			"en" : {
+				"name" : "Alma",
+				"address" : "Yavne 23",
+				"tip" : "Perfect lounge with friends, great bar outside."
+			},
+			"he" : {
+				"name" : "עלמה",
+				"address" : "יבנה 23",
+				"tip" : "הלאונג' הכי קלאסי ברוטשילד, בקיץ מדליק בחוץ."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST041",
+		"info" : {
+			"phone" : "03-5257171",
+			"url" : "http://www.mouse.co.il/CM.food_item_place,382,213,10774,.aspx",
+			"gaName" : "HaShulchan",
+			"en" : {
+				"name" : "HaShulchan",
+				"address" : "Rothschild 73",
+				"tip" : "Sit in the balcony."
+			},
+			"he" : {
+				"name" : "השולחן",
+				"address" : "רוטשילד 73",
+				"tip" : "שבו במרפסת אם נעים בערב."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST042",
+		"info" : {
+			"phone" : "03-5757477",
+			"url" : "https://www.facebook.com/PopinaTelAviv",
+			"gaName" : "Popina",
+			"en" : {
+				"name" : "Popina",
+				"address" : "Ehad Ha'am 3",
+				"tip" : "Order the goose spring roll."
+			},
+			"he" : {
+				"name" : "פופינה",
+				"address" : "אחד העם 3",
+				"tip" : "הזמינו ספרינג רול אווז."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST043",
+		"info" : {
+			"phone" : "03-6390407",
+			"url" : "http://www.mouse.co.il/CM.Food_Item_Place,382,213,4033,.aspx",
+			"gaName" : "Cocina Tamar",
+			"en" : {
+				"name" : "Cocina Tamar",
+				"address" : "HaTsfira 10",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "קוצ'ינה תמר",
+				"address" : "הצפירה 10",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST044",
+		"info" : {
+			"phone" : "03-6889696",
+			"url" : "http://www.coffeebar.co.il/",
+			"gaName" : "Coffee Bar",
+			"en" : {
+				"name" : "Coffee Bar",
+				"address" : "Yad Haruzim 13",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "קופי בר",
+				"address" : "יד חרוצים 13",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "Friends", "Business", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST045",
+		"info" : {
+			"phone" : "03-5600334",
+			"url" : "https://www.facebook.com/pages/%D7%A8%D7%93%D7%99%D7%95-%D7%A8%D7%95%D7%A1%…%D7%A8%D7%99%D7%94-%D7%90%D7%99%D7%98%D7%9C%D7%A7%D7%99%D7%AA/159061699052",
+			"gaName" : "Radio Rosco",
+			"en" : {
+				"name" : "Radio Rosco",
+				"address" : "Allenby 97",
+				"tip" : "Thin pizza, casual dinner."
+			},
+			"he" : {
+				"name" : "רדיו רוסקו",
+				"address" : "אלנבי 97",
+				"tip" : "פיצה דקה, ארוחת ערב נעימה."
+			}
+		},
+		"verticals" : {
+			"party" : ["Family", "Friends", "Business", "date"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST046",
+		"info" : {
+			"phone" : "03-6966188",
+			"url" : "https://www.facebook.com/dininghall",
+			"gaName" : "Cheder Ochel",
+			"en" : {
+				"name" : "Cheder Ochel",
+				"address" : "Shaul Hamelech 23",
+				"tip" : "Kibutz food with a twist. Dining hall seating. Best with friends."
+			},
+			"he" : {
+				"name" : "חדר אוכל",
+				"address" : "שאול המלך 23",
+				"tip" : "אוכל קיבוץ עם טוויסט, אוירת חדר אוכל, הכי כיף עם חברים."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends"],
+			"sitting" : ["table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST047",
+		"info" : {
+			"phone" : "03-6337171",
+			"url" : "http://www.vong.co.il",
+			"gaName" : "Vong",
+			"en" : {
+				"name" : "Vong",
+				"address" : "Rothschild 15",
+				"tip" : "Intimate asian place. The best pho soup in town."
+			},
+			"he" : {
+				"name" : "וונג",
+				"address" : "רוטשילד 15",
+				"tip" : "אסייתית שונה, אווירה אינטימית. מרק פו מהטובים בעיר."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST048",
+		"info" : {
+			"phone" : "03-5660915",
+			"url" : "http://www.pronto.co.il/",
+			"gaName" : "Pronto",
+			"en" : {
+				"name" : "Pronto",
+				"address" : "Herzel 4",
+				"tip" : "Excellent lamb pappardelle."
+			},
+			"he" : {
+				"name" : "פרונטו",
+				"address" : "הרצל 4",
+				"tip" : "איטליה במיטבה פפרדלה טלה מעולה!"
+			}
+		},
+		"verticals" : {
+			"party" : ["friends, family, business", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST049",
+		"info" : {
+			"phone" : "03-5175171",
+			"url" : "http://www.yakimono.co.il",
+			"gaName" : "Yakimono",
+			"en" : {
+				"name" : "Yakimono",
+				"address" : "Rothschild 19",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "יקימונו",
+				"address" : "רוטשילד 19",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST050",
+		"info" : {
+			"phone" : "03-5469920",
+			"url" : "http://www.mulyam.com/",
+			"gaName" : "Mul-Yam",
+			"en" : {
+				"name" : "Mul-Yam",
+				"address" : "Hangar 24, Namal Tel Aviv",
+				"tip" : "A genuine place for sea food, especially the langoustine."
+			},
+			"he" : {
+				"name" : "מול ים",
+				"address" : "הנגר 24 נמל תל אביב",
+				"tip" : "מקום ייחודי לפירות ים, הזמינו את הלנגוסטינים."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "business", "tourists", "date"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST051",
+		"info" : {
+			"phone" : "03-6832211",
+			"url" : "https://www.facebook.com/SardiniaItalianTrattoria",
+			"gaName" : "Sardinia",
+			"en" : {
+				"name" : "Sardinia",
+				"address" : "Kikar Kdumim, Yafo",
+				"tip" : "Better come with a taxi."
+			},
+			"he" : {
+				"name" : "סרדיניה",
+				"address" : "כיכר קדומים, יפו",
+				"tip" : "עדיף מונית."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends", "tourists", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST052",
+		"info" : {
+			"phone" : "03-6050896",
+			"url" : "http://www.mouse.co.il/CM.Food_Item_Place,382,213,3926,.aspx",
+			"gaName" : "Adora",
+			"en" : {
+				"name" : "Adora",
+				"address" : "Ben Yehuda 226",
+				"tip" : "Don't miss out on the white fillet."
+			},
+			"he" : {
+				"name" : "אדורה",
+				"address" : "בן יהודה 226",
+				"tip" : "אל תפספסו את מנת הפילה דוקה המצרית."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST053",
+		"info" : {
+			"phone" : "03-6040036",
+			"url" : "http://davidveyossef.co.il/",
+			"gaName" : "David veYosef",
+			"en" : {
+				"name" : "David veYosef",
+				"address" : "Montefiore 21",
+				"tip" : "Don't miss the bar with the view to the kitchen."
+			},
+			"he" : {
+				"name" : "דוד ויוסף",
+				"address" : "מונטיפיורי 21",
+				"tip" : "אל תפספסו את הבר עם הנוף למטבח."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST054",
+		"info" : {
+			"phone" : "072-2512950",
+			"url" : "http://www.bertie.co.il/",
+			"gaName" : "Bertie",
+			"en" : {
+				"name" : "Bertie",
+				"address" : "King George 88",
+				"tip" : "Renowned veal cheek dish."
+			},
+			"he" : {
+				"name" : "ברטי",
+				"address" : "קינג ג'ורג' 88",
+				"tip" : "שמה של מנת הלחי יצא למרחקים."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST055",
+		"info" : {
+			"phone" : "03-5337962",
+			"url" : "https://www.facebook.com/Hanoirest",
+			"gaName" : "Hanoi",
+			"en" : {
+				"name" : "Hanoi",
+				"address" : "Lilenblum 18",
+				"tip" : "Asian food with an Asian setting. Truly good ramen soup."
+			},
+			"he" : {
+				"name" : "האנוי",
+				"address" : "לילנבלום 18",
+				"tip" : "אוכל אסייתי עם עיצוב רחוב, מרק ראמן מדהים!"
+			}
+		},
+		"verticals" : {
+			"party" : ["friends"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST056",
+		"info" : {
+			"phone" : "03-5178486",
+			"url" : "http://www.bellini.co.il/",
+			"gaName" : "Belini",
+			"en" : {
+				"name" : "Belini",
+				"address" : "Yehiel 6",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "בליני",
+				"address" : "יחיאל 6",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["Friends", "family"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 0,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST057",
+		"info" : {
+			"phone" : " 03-5296054",
+			"url" : "http://ariatlv.co.il/",
+			"gaName" : "Aria",
+			"en" : {
+				"name" : "Aria",
+				"address" : "Nehalat Binyamin 66",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "ארייה",
+				"address" : "נחלת בנימין 66",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends", "date"],
+			"sitting" : ["table", "bar"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST058",
+		"info" : {
+			"phone" : "03-5455900",
+			"url" : "http://edenboutiquehotel.co.il/bistro/",
+			"gaName" : "Bistro Eden",
+			"en" : {
+				"name" : "Bistro Eden",
+				"address" : "Yeshuchon 11",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "ביסטרו עדן",
+				"address" : "ישוכון 11",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["", "date"],
+			"sitting" : ["table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 0,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 0,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST059",
+		"info" : {
+			"phone" : "03-5665655",
+			"url" : "http://www.allora.co.il/",
+			"gaName" : "Alora",
+			"en" : {
+				"name" : "Alora",
+				"address" : "Rothschild 60",
+				"tip" : "Sit on the open balcony to Rothschild blvd."
+			},
+			"he" : {
+				"name" : "אלורה",
+				"address" : "רוטשילד 60",
+				"tip" : "שבו על המרפסת הפונה לשדרות רוטשילד."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends", "date"],
+			"sitting" : ["table", "bar"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST060",
+		"info" : {
+			"phone" : "03-5167888",
+			"url" : "http://www.ngrestaurant.co.il/",
+			"gaName" : "NG",
+			"en" : {
+				"name" : "NG",
+				"address" : "Ehad Ha'am 6",
+				"tip" : "The porterhouse steak is one of the best in Tel Aviv."
+			},
+			"he" : {
+				"name" : "אנג'י",
+				"address" : "אחד העם 6",
+				"tip" : "הפורטרהאוס הכי שווה בתל אביב."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST061",
+		"info" : {
+			"phone" : "03-5201830",
+			"url" : "https://www.facebook.com/BlueSkyByMeirAdoni",
+			"gaName" : "Blue Sky",
+			"en" : {
+				"name" : "Blue Sky",
+				"address" : "Carlton Hotel, Eliezer Peri 10",
+				"tip" : "Cocktails outside, food inside"
+			},
+			"he" : {
+				"name" : "בלו סקיי",
+				"address" : "אליעזר פרי 10, מלון קרלטון",
+				"tip" : "קוקטייל בחוץ, אוכל בפנים."
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends", "business", "tourists", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST062",
+		"info" : {
+			"phone" : "03-6447441",
+			"url" : "https://www.facebook.com/pastel.rest",
+			"gaName" : "Pastel",
+			"en" : {
+				"name" : "Pastel",
+				"address" : "Shaul Hamelech 27, Tel-Aviv Museum",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "פאסטל",
+				"address" : "שאול המלך 27, מוזיאון תל-אביב",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["family", "friends", "date"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST063",
+		"info" : {
+			"phone" : "03-9578888",
+			"url" : "http://www.rothschild-hotel.co.il/",
+			"gaName" : "Rothschild",
+			"en" : {
+				"name" : "Rothschild",
+				"address" : "Rothschild 96",
+				"tip" : "Order the triggerfish if possible"
+			},
+			"he" : {
+				"name" : "רוטשילד",
+				"address" : "רוטשילד 86",
+				"tip" : "הזמינו את מנת איילת הים אם אפשרי באותו יום."
+			}
+		},
+		"verticals" : {
+			"party" : ["date", "family", "friends", "business"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST064",
+		"info" : {
+			"phone" : "03-6836321",
+			"url" : "http://www.container.org.il/",
+			"gaName" : "Container",
+			"en" : {
+				"name" : "Container",
+				"address" : "Warehouse 2, Jaffa port",
+				"tip" : "Fun  bar outside for a summer date"
+			},
+			"he" : {
+				"name" : "קונטיינר",
+				"address" : "מחסן 2, נמל יפו",
+				"tip" : "בר קיצי, נינוח ושמח בחוץ"
+			}
+		},
+		"verticals" : {
+			"party" : ["date", "friends"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST065",
+		"info" : {
+			"phone" : "052-703-5888",
+			"url" : "http://www.mouse.co.il/CM.food_item_place,382,213,8374,.aspx",
+			"gaName" : "The Salon",
+			"en" : {
+				"name" : "The Salon",
+				"address" : "Ma'avar Yabok 8",
+				"tip" : "Order well in advance, it's tricky"
+			},
+			"he" : {
+				"name" : "הסלון",
+				"address" : "מעבר יבוק 8",
+				"tip" : "תזמינו הרבה מראש, זה קטע פה"
+			}
+		},
+		"verticals" : {
+			"party" : ["date", "friends"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 0,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST066",
+		"info" : {
+			"phone" : "03-5222886",
+			"url" : "http://www.goocha.co.il/",
+			"gaName" : "Goocha",
+			"en" : {
+				"name" : "Goocha",
+				"address" : "Dizengoff 171",
+				"tip" : "Mussles, french fries and a happy mess."
+			},
+			"he" : {
+				"name" : "גוצ'ה",
+				"address" : "דיזינגוף 171",
+				"tip" : "מולים, צ'יפס ובלאגן שמח."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family"],
+			"sitting" : ["table", "bar"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
+		}
+	}, {
+		"id" : "REST067",
+		"info" : {
+			"phone" : "03-6204753",
+			"url" : "http://www.ornaandella.com",
+			"gaName" : "Orna & Ella",
+			"en" : {
+				"name" : "Orna & Ella",
+				"address" : "Shenkin 33",
+				"tip" : "Vegan and Gluten friendly"
+			},
+			"he" : {
+				"name" : "אורנה ואלה",
+				"address" : "שינקין 33",
+				"tip" : "ידידותי לטבעונים וצמחונים."
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST068",
+		"info" : {
+			"phone" : "03-6996633",
+			"url" : "http://www.seatara.co.il/",
+			"gaName" : "Seatara",
+			"en" : {
+				"name" : "Seatara",
+				"address" : "Rosenblum Herzel 8, Sea & Sun",
+				"tip" : "Sit outside on a summer evening."
+			},
+			"he" : {
+				"name" : "סיטארה",
+				"address" : "רוזנבלום הרצל 8, סי אנד סאן",
+				"tip" : "הזמינו מקום בחוץ בערב קיצי."
+			}
+		},
+		"verticals" : {
+			"party" : ["date", "family", "friends", "tourists"],
+			"sitting" : ["bar", "table"],
+			"light" : "dim",
+			"vol" : "quiet",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 0,
+			"vol" : 0,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST069",
+		"info" : {
+			"phone" : "03-5174773",
+			"url" : "http://www.mantaray.co.il/",
+			"gaName" : "MantaRay",
+			"en" : {
+				"name" : "MantaRay",
+				"address" : "Kaufmann 7, Alma Beach",
+				"tip" : "Sunset. Don't miss out."
+			},
+			"he" : {
+				"name" : "מנטה ריי",
+				"address" : "קויפמן 7, חוף עלמה",
+				"tip" : "בשקיעה."
+			}
+		},
+		"verticals" : {
+			"party" : ["date", "friends", "family", "tourists"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST070",
+		"info" : {
+			"phone" : "03-7448844",
+			"url" : "https://www.facebook.com/rokach73",
+			"gaName" : "Rokach 73",
+			"en" : {
+				"name" : "Rokach 73",
+				"address" : "Rokach Blvd 73",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "רוקח 73",
+				"address" : "שד רוקח 73",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["friends", "family"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}, {
+		"id" : "REST071",
+		"info" : {
+			"phone" : "03-5222664",
+			"url" : "http://www.italiantlv.co.il/",
+			"gaName" : "Italkia Ba’Tachana",
+			"en" : {
+				"name" : "Italkia Ba’Tachana",
+				"address" : "Old station, Neve Zedek",
+				"tip" : ""
+			},
+			"he" : {
+				"name" : "איטלקיה בתחנה",
+				"address" : "מתחם התחנה, נווה צדק",
+				"tip" : ""
+			}
+		},
+		"verticals" : {
+			"party" : ["date", "friends", "family", "tourists"],
+			"sitting" : ["bar", "table"],
+			"light" : "bright",
+			"vol" : "loud",
+			"parking" : ["yes", "no"]
+		},
+		"ratings" : {
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : true
+		}
+	}
+]

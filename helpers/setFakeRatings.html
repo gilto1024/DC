@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        html, body {
+
+        }
+
+        #container {
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                'url':'restList4.txt',
+                'dataType':'text',
+                success:convert,
+                error:function () {
+                    console.log(arguments);
+                }
+            });
+        });
+
+        function convert(json) {
+            var oldList = JSON.parse(json);
+
+            console.log('\n== Original size:', oldList.length, '\n\n');
+
+            for (var i = 0; i < oldList.length; i++) {
+                addRatings(oldList[i]);
+            }
+
+
+            console.log(JSON.stringify(oldList));
+        }
+
+        function addRatings(restObj) {
+            var date = 0,
+                    friends = 0,
+                    family = 0,
+                    business = 0,
+                    tourists = 0,
+                    table = 0,
+                    bar = 0,
+                    light = 0,
+                    vol = 0,
+                    parking = false;
+
+            if (restObj.verticals.party.indexOf("date") !== -1) {
+                date = 5;
+            }
+
+            if (restObj.verticals.party.indexOf("friends") !== -1) {
+                friends = 5;
+            }
+
+            if (restObj.verticals.party.indexOf("family") !== -1) {
+                family = 5;
+            }
+
+            if (restObj.verticals.party.indexOf("business") !== -1) {
+                business = 5;
+            }
+
+            if (restObj.verticals.party.indexOf("tourists") !== -1) {
+                tourists = 5;
+            }
+
+            if (restObj.verticals.sitting.indexOf("table") !== -1) {
+                table = 5;
+            }
+
+            if (restObj.verticals.sitting.indexOf("bar") !== -1) {
+                bar = 5;
+            }
+
+            if (restObj.verticals.light == 'bright') {
+                light = 5;
+            }
+
+            if (restObj.verticals.vol == 'loud') {
+                vol = 5;
+            }
+
+            if (restObj.verticals.parking.indexOf('yes') !== -1 ){
+                parking = true;
+            }
+
+
+            restObj.ratings = {
+                "date":date,
+                "friends":friends,
+                "family":family,
+                "business":business,
+                "tourists":tourists,
+                "table":table,
+                "bar":bar,
+                "light":light,
+                "vol":vol,
+                "parking":parking
+            };
+
+            //return newObj;
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html>
