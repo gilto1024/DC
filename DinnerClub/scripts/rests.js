@@ -2,6 +2,11 @@ define(['jquery', 'text!models/restList.json.txt', 'utils'], function ($, restLi
 
     restList = JSON.parse(restList);
 
+    // Support old rests JSON format, just in case
+    if (restList[utils.i18n.getLanguage()]) {
+        restList = restList[utils.i18n.getLanguage()];
+    }
+
 
     function fetch() {
         return restList;
