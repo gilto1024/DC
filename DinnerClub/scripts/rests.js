@@ -1,6 +1,6 @@
 define(['jquery', 'text!models/restList.json.txt', 'utils'], function ($, restList, utils) {
 
-    restList = JSON.parse(restList)[utils.i18n.getLanguage()];
+    restList = JSON.parse(restList);
 
 
     function fetch() {

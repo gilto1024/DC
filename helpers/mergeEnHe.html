@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        html, body {
+
+        }
+
+        #container {
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                'url':'restList.json.txt',
+                'dataType':'text',
+                success:convert,
+                error:function () {
+                    console.log(arguments);
+                }
+            });
+        });
+
+        function convert(json) {
+            var oldList = JSON.parse(json);
+            var newList = [];
+
+            console.log('\n== Original size:', oldList.en.length, '\n\n');
+
+            for (var i = 0; i < oldList.en.length; i++) {
+            //var i = 0;
+                newList.push(createMergedObject(oldList.en[i], oldList.he[i]));
+            }
+            console.log('\n== New size:', newList.length, '\n\n');
+
+
+            console.log(JSON.stringify(newList));
+        }
+
+        function createMergedObject(enObj, heObj) {
+            //console.log('createMergedObject:', arguments);
+            var newObj = {
+                "id":enObj.id,
+                "info":{
+                    "phone":enObj.info.phone,
+                    "url":enObj.info.url,
+                    "gaName":enObj.info.gaName,
+                    "en":{
+                        "name":enObj.info.name,
+                        "address":enObj.info.address,
+                        "tip":enObj.info.tip
+                    },
+                    "he":{
+                        "name":heObj.info.name,
+                        "address":heObj.info.address,
+                        "tip":heObj.info.tip
+                    }
+                },
+                "verticals":enObj.verticals
+            };
+
+            return newObj;
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html>

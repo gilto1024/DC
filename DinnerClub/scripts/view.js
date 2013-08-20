@@ -268,7 +268,7 @@ define(
 
 
         function displayRest() {
-            var rest = resultsRestList[resultsCurrentRest].info;
+            var rest = $.extend({}, resultsRestList[resultsCurrentRest].info, resultsRestList[resultsCurrentRest].info[utils.i18n.getLanguage()]);
 
             utils.ga.trackEvent('results', 'show_rest', rest.gaName);
 
