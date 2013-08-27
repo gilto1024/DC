@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Contacts Crawler</title>
+    <link type="text/css" href="style/style.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/plugins/mustache.min.js"></script>
+    <script type="text/javascript" src="js/plugins/egg.js"></script>
+    <script type="text/javascript" src="js/contacts.js"></script>
+
+
+</head>
+<body onload="contacts.init()">
+
+<div id="container">
+    <div id="save">SAVE</div>
+    <div id="download">DOWNLOAD</div>
+    <div id="restList"></div>
+    <div id="control">
+        <input type="file" id="files" name="files[]" multiple/>
+    </div>
+</div>
+<div id="restDetailsContainer">
+
+</div>
+
+
+
+<script id="restTemplate" type="text/x-jquery-tmpl">
+    {{%IMPLICIT-ITERATOR}}
+    {{#data}}
+    <div class="rest_item" mediaId="{{id}}">{{info.en.name}}</div>
+    {{/data}}
+</script>
+
+<script id="restDetailsTemplate" type="text/x-jquery-tmpl">
+    {{%IMPLICIT-ITERATOR}}
+    {{#data}}
+    <div id="restDetailsItem">
+        <div id="info" mediaId="{{id}}">
+            <div id="phone">Phone:<input value="{{info.phone}}"></div>
+            <div id="url">URL: <input value="{{info.url}}"></div>
+            <div id="en">EN
+                <div id="en_name" class="enContainer">Name: <input value="{{info.en.name}}"></div>
+                <div id="en_address" class="enContainer">Address: <input value="{{info.en.address}}"></div>
+                <div id="en_tip" class="enContainer">Tip: <input value="{{info.en.tip}}"></div>
+            </div>
+            <div id="he">HE
+                <div id="he_name" class="heContainer">שם: <input value="{{info.he.name}}"></div>
+                <div id="he_address" class="heContainer">כתובת: <input value="{{info.he.address}}"></div>
+                <div id="he_tip" class="heContainer">טיפ: <input value="{{info.he.tip}}"></div>
+            </div>
+        </div>
+        <!--<div id="verticals">
+            <div id="party">Party:{{#verticals}}<input value="{{party}}">{{/verticals}} </div>
+            <div id="sitting"></div>
+            <div id="light">Light:<input value="{{verticals.light}}"></div>
+            <div id="vol">Volume: <input value="{{verticals.vol}}"></div>
+            <div id="parking"></div>
+
+        </div>-->
+        <div id="rating">
+            <div id="date">Date: <input value="{{ratings.date}}"></div>
+            <div id="friends">Friends: <input value="{{ratings.friends}}"></div>
+            <div id="family">Family: <input value="{{ratings.family}}"></div>
+            <div id="business">Business: <input value="{{ratings.business}}"></div>
+            <div id="tourists">Tourists: <input value="{{ratings.tourists}}"></div>
+            <div id="table">Table: <input value="{{ratings.table}}"></div>
+            <div id="bar">Bar: <input value="{{ratings.bar}}"></div>
+            <div id="light">Light: <input value="{{ratings.light}}"></div>
+            <div id="vol">Volume: <input value="{{ratings.vol}}"></div>
+            <div id="parking">Parking: <input value="{{ratings.parking}}"></div>
+        </div>
+    </div>
+    {{/data}}
+</script>
+</body>
+</html>
