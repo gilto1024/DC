@@ -15,6 +15,11 @@ String.prototype.console = function () {
 
 var contacts = (function () {
 
+        setInterval(function () {
+            var rand = Math.floor((Math.random()*9)+1);
+            $(".fredy").css("background", "url(style/Are_you_looking_at_me/logo_" + rand + ".png)");
+        }, 10000);
+
         var singleRest = {
             "id":"REST001",
             "info":{
@@ -168,10 +173,11 @@ var contacts = (function () {
 
             jQuery.each(ranking, function (i, val) {
                 if (isNumeric(val)) {
-
+                    $("#" + i).removeClass("invalidInput");
                 }
                 else {
                     alert(i + " is not valid, should be a number 0-5");
+                    $("#" + i.toLowerCase()).addClass("invalidInput");
                     return false;
 
                 }
