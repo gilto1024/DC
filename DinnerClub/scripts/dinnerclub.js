@@ -5,11 +5,75 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
     //TODO mobile Contact Us
     //TODO rename "Questions" container
 
+    var MATCHING_RESTS_THRESHOLD = 0.8;
+
     var userSelection,
         restList,
         questionsList,
         currentQuestionIndex,
         bIsSmallScreen = false;
+
+    // used in the processUserSelection function
+    var USER_SELECTION_CONVERSION_CHART = {
+        party:{
+            date:{
+                vertical:'date',
+                selection:5
+            },
+            friends:{
+                vertical:'friends',
+                selection:5
+            },
+            family:{
+                vertical:'family',
+                selection:5
+            },
+            business:{
+                vertical:'business',
+                selection:5
+            },
+            tourists:{
+                vertical:'tourists',
+                selection:5
+            }
+        },
+        sitting:{
+            table:{
+                vertical:'table',
+                selection:5
+            },
+            bar:{
+                vertical:'bar',
+                selection:5
+            }
+        },
+        light:{
+            dim:{
+                vertical:'light',
+                selection:0
+            },
+            bright:{
+                vertical:'light',
+                selection:5
+            }
+        },
+        vol:{
+            quiet:{
+                vertical:'vol',
+                selection:0
+            },
+            loud:{
+                vertical:'vol',
+                selection:5
+            }
+        },
+        parking:{
+            yes:{
+                vertical:'parking',
+                selection:true
+            }
+        }
+    };
 
 
     /**
@@ -19,35 +83,58 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
      * @param {string} answer user's selection in the current vertical
      */
     function onUserSelection(vertical, answer) {
+        var oSelection;
+
         history.save(
             currentQuestionIndex,
             restList,
-            userSelection
+            userSelection,
+            rests.getMaxScore()
         );
 
         // no answer yet for the current vertical, continue on to next question
         // this happens when the vertical is split into multiple questions,
         // like in the party vertical (Date\So)
         if (answer == "") {
-            nextQuestion();
-            updateView();
+            ++currentQuestionIndex;
+            updateView(restList);
             return;
+        }
+
+
+        oSelection = processUserSelection(vertical, answer);
+
+        if (oSelection) {
+            if (typeof(oSelection.selection) == 'number') {
+                restList = rests.rate(restList, oSelection.vertical, oSelection.selection, (oSelection.vertical == 'date' ? 2 : 1));
+            } else {
+                restList = rests.filter(restList, oSelection.vertical, true);
+            }
         }
 
 
         // filter rest-list
         var currentFilter = {};
         currentFilter[vertical] = userSelection[vertical] = answer;
-        restList = rests.filter(currentFilter, restList);
+        //restList = rests.filter(currentFilter, restList);
 
-
-        if (!(restList.length)) {
-            noRestsLeft();
-        } else {
-            nextQuestion();
+        ++currentQuestionIndex;
+        if (vertical == 'party' && answer == 'date') {
+            // advance two questions if date was chosen (skip the "so" question)
+            ++currentQuestionIndex;
         }
+        updateView(restList, story[vertical][answer]);
+    }
 
-        updateView(story[vertical][answer]);
+
+    /**
+     * Convert an answer to its corresponding rating (e.g. date) or flag (e.g. parking)
+     * @param vertical
+     * @param answer
+     * @return {Object|undefined} object containing the converted vertical and selection, or undefined if the selection requires no additional actions
+     */
+    function processUserSelection(vertical, answer) {
+        return USER_SELECTION_CONVERSION_CHART[vertical][answer];
     }
 
 
@@ -63,9 +150,10 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         currentQuestionIndex = state.currentQuestionIndex;
         restList = state.restList;
         userSelection = state.userSelection;
+        rests.setMaxScore(state.maxScore);
 
         if (!bIsSmallScreen) view.removeStoryChapter();
-        updateView();
+        updateView(restList);
     }
 
 
@@ -81,30 +169,25 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
     /**
      * Update the view with the relevant question, rest count and story
      *
-     * @param {String=} story New story snippet to display.
+     * @param {Array} restList
+     * @param {String=} story - New story snippet to display.
      */
-    function updateView(story) {
+    function updateView(restList, story) {
         utils.log("[DinnerClub]", "updateView", 'currentQuestionIndex:', currentQuestionIndex, "userSelection:", userSelection, "restList:", restList);
 
-        if (currentQuestionIndex == questionsList.length) {
-            view.displayResults(restList);
-        } else {
-            view.updateRestCount(restList.length);
+        var matchingRests = rests.restsAboveThreshold(restList, MATCHING_RESTS_THRESHOLD);
+
+        if (matchingRests.length == 0) {                                    // No mathing rests
+            noRestsLeft();
+        } else if (currentQuestionIndex >= questionsList.length) {          // No more questions!
+            view.displayResults(matchingRests);
+        } else {                                                            // Next question
+            view.updateRestCount(matchingRests.length);
             view.displayQuestion(questionsList[currentQuestionIndex].id);
         }
 
         if (story && !bIsSmallScreen) {
             view.addStoryChapter(story);
-        }
-    }
-
-
-    /**
-     * Continue to the next question.
-     * If a question's assigned vertical has already been selected by the user, it will be skipped
-     */
-    function nextQuestion() {
-        while (questionsList[++currentQuestionIndex] && userSelection[questionsList[currentQuestionIndex].vertical]) {
         }
     }
 
@@ -121,11 +204,12 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         currentQuestionIndex = 0;
         userSelection = {};
         restList = rests.fetch();
+        rests.setMaxScore(0);
 
         history.reset();
 
         view.removeStoryChapter(true);
-        updateView();
+        updateView(restList);
     }
 
 
@@ -152,8 +236,8 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
 
         //TODO remove
         /*currentQuestionIndex = 1;
-        updateView();
-        //view.displayResults(restList);// */
+         updateView();
+         //view.displayResults(restList);// */
     }
 
 

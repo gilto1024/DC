@@ -115,6 +115,7 @@ define(
             }
         }
 
+
         function cacheElements() {
             $header = $("header");
             $questions = $("#questions");

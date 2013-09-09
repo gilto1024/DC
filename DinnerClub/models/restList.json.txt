@@ -1,5 +1,4 @@
-[
-	{
+[{
 		"id" : "REST001",
 		"info" : {
 			"phone" : "03-5612888",
@@ -24,15 +23,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -61,14 +60,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -96,16 +95,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST004",
@@ -133,11 +132,11 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
@@ -168,14 +167,14 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
+			"light" : 5,
 			"vol" : 0,
 			"parking" : true
 		}
@@ -204,13 +203,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
-			"family" : 0,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -240,13 +239,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
-			"business" : 0,
+			"business" : 5,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -277,13 +276,13 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
 			"vol" : 0,
 			"parking" : true
 		}
@@ -312,12 +311,12 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
@@ -349,12 +348,12 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -384,14 +383,14 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
 			"vol" : 0,
 			"parking" : true
 		}
@@ -420,15 +419,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -456,15 +455,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -493,13 +492,13 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
+			"tourists" : 5,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
+			"light" : 5,
 			"vol" : 0,
 			"parking" : true
 		}
@@ -530,11 +529,11 @@
 		"ratings" : {
 			"date" : 0,
 			"friends" : 0,
-			"family" : 0,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -565,14 +564,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
+			"tourists" : 5,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -600,16 +599,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST018",
@@ -637,15 +636,15 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST019",
@@ -672,15 +671,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -708,16 +707,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST021",
@@ -744,13 +743,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -780,16 +779,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST023",
@@ -817,14 +816,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -852,16 +851,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
+			"tourists" : 5,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST025",
@@ -888,16 +887,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
-			"business" : 0,
+			"business" : 5,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST026",
@@ -924,13 +923,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -960,15 +959,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -997,15 +996,15 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
+			"tourists" : 5,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST029",
@@ -1032,15 +1031,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1068,15 +1067,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1104,16 +1103,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST032",
@@ -1140,16 +1139,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST033",
@@ -1176,16 +1175,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST034",
@@ -1212,15 +1211,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1248,12 +1247,12 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
@@ -1284,16 +1283,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
+			"date" : 5,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
 			"table" : 0,
-			"bar" : 0,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST037",
@@ -1324,12 +1323,12 @@
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST038",
@@ -1356,16 +1355,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST039",
@@ -1393,14 +1392,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1428,16 +1427,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
+			"date" : 5,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST041",
@@ -1465,15 +1464,15 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST042",
@@ -1500,13 +1499,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -1536,14 +1535,14 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
+			"light" : 5,
 			"vol" : 0,
 			"parking" : true
 		}
@@ -1572,16 +1571,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
-			"family" : 0,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST045",
@@ -1608,16 +1607,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST046",
@@ -1645,14 +1644,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1681,14 +1680,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1716,15 +1715,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1752,13 +1751,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -1788,12 +1787,12 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
@@ -1824,16 +1823,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST052",
@@ -1860,16 +1859,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST053",
@@ -1896,15 +1895,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
+			"date" : 5,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -1932,16 +1931,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
+			"date" : 5,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST055",
@@ -1969,15 +1968,15 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST056",
@@ -2006,13 +2005,13 @@
 		"ratings" : {
 			"date" : 0,
 			"friends" : 0,
-			"family" : 0,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -2040,16 +2039,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST058",
@@ -2076,16 +2075,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
+			"date" : 5,
 			"friends" : 0,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
+			"table" : 5,
 			"bar" : 0,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST059",
@@ -2112,14 +2111,14 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
 			"vol" : 0,
 			"parking" : true
 		}
@@ -2149,13 +2148,13 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
 			"vol" : 0,
 			"parking" : true
 		}
@@ -2184,13 +2183,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -2220,13 +2219,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -2256,16 +2255,16 @@
 			"parking" : ["no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
-			"business" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
+			"business" : 5,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
-			"parking" : true
+			"parking" : false
 		}
 	}, {
 		"id" : "REST064",
@@ -2292,15 +2291,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
+			"date" : 5,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -2328,15 +2327,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
+			"date" : 5,
+			"friends" : 5,
 			"family" : 0,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
-			"vol" : 0,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -2365,15 +2364,15 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
-			"parking" : true
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
+			"parking" : false
 		}
 	}, {
 		"id" : "REST067",
@@ -2401,14 +2400,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -2436,13 +2435,13 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
 			"light" : 0,
 			"vol" : 0,
 			"parking" : true
@@ -2472,15 +2471,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -2509,14 +2508,14 @@
 		},
 		"ratings" : {
 			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
 			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}, {
@@ -2544,15 +2543,15 @@
 			"parking" : ["yes", "no"]
 		},
 		"ratings" : {
-			"date" : 0,
-			"friends" : 0,
-			"family" : 0,
+			"date" : 5,
+			"friends" : 5,
+			"family" : 5,
 			"business" : 0,
-			"tourists" : 0,
-			"table" : 0,
-			"bar" : 0,
-			"light" : 0,
-			"vol" : 0,
+			"tourists" : 5,
+			"table" : 5,
+			"bar" : 5,
+			"light" : 5,
+			"vol" : 5,
 			"parking" : true
 		}
 	}
