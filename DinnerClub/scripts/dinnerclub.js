@@ -180,6 +180,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         if (matchingRests.length == 0) {                                    // No mathing rests
             noRestsLeft();
         } else if (currentQuestionIndex >= questionsList.length) {          // No more questions!
+            // TODO - do we just display rests above 80% overall match? Or do we want to display the top 5\10, top 20% or whatever?
             view.displayResults(matchingRests);
         } else {                                                            // Next question
             view.updateRestCount(matchingRests.length);
