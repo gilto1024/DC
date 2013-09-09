@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Contacts Crawler</title>
+    <link type="text/css" href="style/style.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://jquery.bassistance.de/validate/jquery.validate.js"></script>
+    <script src="http://jquery.bassistance.de/validate/additional-methods.js"></script>
+    <script type="text/javascript" src="js/plugins/mustache.min.js"></script>
+    <script type="text/javascript" src="js/plugins/egg.js"></script>
+    <script type="text/javascript" src="js/contacts.js"></script>
+
+
+</head>
+<body onload="setTimeout(contacts.init,1000)">
+
+<div id="container">
+    <div id="header">
+        <div class="fredy"></div>
+    </div>
+    <div id="buttonBar">
+        <div id="save">SAVE</div>
+        <div id="download">DOWNLOAD</div>
+        <div id="msgWindow"></div>
+        <!--<div id="reload">RELOAD</div>-->
+    </div>
+
+    <div id="restList"></div>
+    <div id="control">
+        <input type="file" id="files" name="files[]" multiple/>
+    </div>
+</div>
+<div id="restDetailsContainer">
+
+</div>
+
+
+<script id="restTemplate" type="text/x-jquery-tmpl">
+    {{%IMPLICIT-ITERATOR}}
+    {{#data}}
+    <div class="rest_item" mediaId="{{id}}">{{info.en.name}}</div>
+    {{/data}}
+</script>
+
+<script id="restDetailsTemplate" type="text/x-jquery-tmpl">
+    {{%IMPLICIT-ITERATOR}}
+    {{#data}}
+    <div id="restDetailsItem">
+        <div id="info" mediaId="{{id}}"><span class="smallTitle">INFO</span>
+            <div id="phone" class="fieldTitle">Phone:<input value="{{info.phone}}"></div>
+            <div id="url" class="fieldTitle">URL: <input value="{{info.url}}"></div>
+            <div id="en"><span class="smallTitle">EN</span>
+                <div id="en_name" class="enContainer fieldTitle">Name: <input value="{{info.en.name}}"></div>
+                <div id="en_address" class="enContainer fieldTitle">Address: <input value="{{info.en.address}}"></div>
+                <div id="en_tip" class="enContainer fieldTitle">Tip: <input value="{{info.en.tip}}"></div>
+            </div>
+            <div id="he"><span class="smallTitle">HE</span>
+                <div id="he_name" class="heContainer fieldTitle">שם: <input value="{{info.he.name}}"></div>
+                <div id="he_address" class="heContainer fieldTitle">כתובת: <input value="{{info.he.address}}"></div>
+                <div id="he_tip" class="heContainer fieldTitle">טיפ: <input value="{{info.he.tip}}"></div>
+            </div>
+        </div>
+        <!--<div id="verticals">
+            <div id="party">Party:{{#verticals}}<input value="{{party}}">{{/verticals}} </div>
+            <div id="sitting"></div>
+            <div id="light">Light:<input value="{{verticals.light}}"></div>
+            <div id="vol">Volume: <input value="{{verticals.vol}}"></div>
+            <div id="parking"></div>
+
+        </div>-->
+        <div id="rating"><span class="smallTitle">Rating</span>
+            <div id="date" class="fieldTitle">Date: <input value="{{ratings.date}}"></div>
+            <div id="friends" class="fieldTitle">Friends: <input value="{{ratings.friends}}"></div>
+            <div id="family" class="fieldTitle">Family: <input value="{{ratings.family}}"></div>
+            <div id="business" class="fieldTitle">Business: <input value="{{ratings.business}}"></div>
+            <div id="tourists" class="fieldTitle">Tourists: <input value="{{ratings.tourists}}"></div>
+            <div id="table" class="fieldTitle">Table: <input value="{{ratings.table}}"></div>
+            <div id="bar" class="fieldTitle">Bar: <input value="{{ratings.bar}}"></div>
+            <div id="light" class="fieldTitle">Light: <input value="{{ratings.light}}"></div>
+            <div id="vol" class="fieldTitle">Volume: <input value="{{ratings.vol}}"></div>
+            <div id="parking" class="fieldTitle">Parking: <input value="{{ratings.parking}}"></div>
+        </div>
+    </div>
+    {{/data}}
+</script>
+</body>
+</html>
