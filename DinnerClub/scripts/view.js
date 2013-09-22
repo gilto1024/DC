@@ -73,16 +73,19 @@ define(
                         if (utils.isSmallScreen()) {
                             $("#languageSelectionWrapper").fadeIn();
                         }
+
                         $footer.fadeIn();
 
                     } else {    // Not the first question
                         utils.log("[VIEW]", 'on questionShown', 'showing');
-                        $restCountContent.show();
                         $btnBackContainer.fadeIn();
                         showHeader();
                         if (utils.isSmallScreen()) {
                             $("#languageSelectionWrapper").fadeOut();
                             $footer.fadeOut();
+                        }
+                        else{
+                            $restCountContent.show();
                         }
                     }
                 });
@@ -114,6 +117,7 @@ define(
                 $header.slideUp('fast');
             }
         }
+
 
 
         function cacheElements() {
