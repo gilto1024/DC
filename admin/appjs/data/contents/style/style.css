@@ -22,7 +22,8 @@ html {
     cursor: pointer;
     margin-bottom: 20px;
 }
-.rest_item:hover{
+
+.rest_item:hover {
     background-color: gray;
 }
 
@@ -30,7 +31,8 @@ html {
     float: left;
     border: 1px solid black;
 }
-.smallTitle{
+
+.smallTitle {
     font-weight: bold;
 }
 
@@ -41,10 +43,12 @@ html {
 .heContainer {
 
 }
-#en{
+
+#en {
     margin-top: 10px;
 }
-#he{
+
+#he {
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -122,6 +126,43 @@ html {
     margin-top: 15px;
 }
 
+#addRest {
+    background-color: #8b0000;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 28px;
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+#addRest:hover {
+    background-color: gray;
+}
+
+#cancelAddRest {
+    background-color: #8b0000;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    line-height: 28px;
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+    display: none;
+}
+
+#cancelAddRest:hover {
+    background-color: gray;
+}
+
 #reload {
     background-color: #9acd32;
 }
@@ -136,7 +177,8 @@ html {
     margin-left: 30px;
     line-height: 30px;
 }
-.highlighted{
+
+.highlighted {
     background-color: gray;;
 }
 

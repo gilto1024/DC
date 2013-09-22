@@ -67,6 +67,7 @@ var contacts = (function () {
     var childProcess;
     var currentPath;
     var currentRestPresented;
+    var isNewRest = false;
 
     function init() {
 
@@ -105,7 +106,19 @@ var contacts = (function () {
             populateInfoBox(id);
         })
         $("#container").on("click", "#save", function () {
+
             var data = collectData();
+        });
+        $("#container").on("click", "#addRest", function () {
+            isNewRest = true;
+            addRest();
+            $("#cancelAddRest").show();
+        });
+        $("#container").on("click", "#cancelAddRest", function () {
+            isNewRest = false;
+            populateInfoBox(0);
+            $($("#restList").find(".rest_item")[0]).addClass("highlighted");
+            $("#cancelAddRest").hide();
         });
         $("#container").on("click", "#download", function () {
             downloadJSON2CSV();
@@ -131,6 +144,61 @@ var contacts = (function () {
 
 
     }
+
+    function addRest() {
+        isNewRest = true;
+        var id = restJson.length + 1;
+        if (id < 100) {
+            id = "REST0" + id;
+        }
+        else {
+            id = "REST" + id;
+        }
+
+        var singleRest = {
+            "id":id,
+            "info":{
+                "phone":'',
+                "url":'',
+                "en":{
+                    "name":'',
+                    "address":'',
+                    "tip":''
+                },
+                "he":{
+                    "name":'',
+                    "address":'',
+                    "tip":''
+                }
+            },
+            /* "verticals":{
+             "party":["friends", "family", "date"],
+             "sitting":["bar", "table"],
+             "light":"bright",
+             "vol":"loud",
+             "parking":["yes", "no"]
+             },*/
+            "ratings":{
+                "date":'',
+                "friends":'',
+                "family":'',
+                "business":'',
+                "tourists":'',
+                "table":'',
+                "bar":'',
+                "light":'',
+                "vol":'',
+                "parking":''
+            }
+        };
+
+        var restToDisplay = singleRest;
+
+        var tmplComment = $("#restDetailsTemplate").html();
+        $("#restDetailsContainer").html(Mustache.to_html(tmplComment, {data:restToDisplay}));
+
+    }
+
 
     function collectData() {
         var id = $("#info").attr("mediaId");
@@ -203,10 +271,26 @@ var contacts = (function () {
                 }
             };
             console.log(singleRest);
-            replaceInOriginal(singleRest);
+            if (isNewRest) {
+                isNewRest = false;
+                pushRestToList(singleRest);
+            }
+            else {
+                replaceInOriginal(singleRest);
+            }
+
         }
 
 
+    }
+
+    function pushRestToList(singleRest) {
+        restJson.push(singleRest);
+        var tmplComment = $("#restTemplate").html();
+        $("#restList").empty();
+        $("#restList").html(Mustache.to_html(tmplComment, {data:restJson}));
+
+        writeToFile(restJson);
     }
 
     function validateURL(textval) {
