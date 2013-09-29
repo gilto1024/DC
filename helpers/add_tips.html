@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title></title>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <style type="text/css">
+        html, body {
+
+        }
+
+        #container {
+        }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                'url':'restList_tips.json.txt',
+                'dataType':'text',
+                success:convert,
+                error:function () {
+                    console.log(arguments);
+                }
+            });
+        });
+
+        function convert(json) {
+            var list= JSON.parse(json);
+            for (var i = 0; i < list.length; i++) {
+            //var i = 0;
+                addTips(list[i]);
+            }
+            //console.log('\n== New size:', list.length, '\n\n');
+
+
+            console.log(JSON.stringify(list));
+        }
+
+        function addTips(obj) {
+            var latlng = {
+                "lat":123,
+                "lng":456
+            };
+
+            obj.info.location = latlng;
+            obj.info.parking = latlng;
+
+            obj.info.en["tip_dish"] = "Eat the head.";
+            obj.info.en["tip_seating"] = "Sit on head.";
+            obj.info.en["tip_parking"] = "Park in head.";
+
+            obj.info.he["tip_dish"] = "Eat the head.";
+            obj.info.he["tip_seating"] = "Sit on head.";
+            obj.info.he["tip_parking"] = "Park in head.";
+        }
+
+
+    </script>
+</head>
+<body>
+<div id="container">
+</div>
+</body>
+</html>

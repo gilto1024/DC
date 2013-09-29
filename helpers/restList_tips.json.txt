@@ -1,33 +1,32 @@
-[
-    {
+[{
 		"id" : "REST001",
 		"info" : {
 			"phone" : "03-5612888",
 			"url" : "http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx",
 			"gaName" : "Café Italia",
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
+			"location":{
+			    "lat":123,
+			    "lng":456
 			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
-			},
+			"parking":{
+                "lat":123,
+                "lng":456
+            },
 			"en" : {
 				"name" : "Café Italia",
 				"address" : "Kremintzki 6",
 				"tip" : "Ideal for friends.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip_dish":"eat the head",
+				"tip_seating":"sit on head",
+				"tip_parking":"park in head"
 			},
 			"he" : {
 				"name" : "קפה איטליה",
 				"address" : "קרמניצקי 6",
 				"tip" : "מושלם לערב עם חברים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip_dish":"תאכלו את הראש",
+                "tip_seating":"תשבו על הראש",
+                "tip_parking":"תחנו בראש"
 			}
 		},
 		"verticals" : {
@@ -58,26 +57,12 @@
 			"en" : {
 				"name" : "Brasserie",
 				"address" : "Ibn Gabirol 70",
-				"tip" : "The Frenchiest French fries in town.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "The Frenchiest French fries in town."
 			},
 			"he" : {
 				"name" : "בראסרי",
 				"address" : "אבן גבירול 70",
-				"tip" : "הצ'יפס הכי צרפתי בעיר.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הצ'יפס הכי צרפתי בעיר."
 			}
 		},
 		"verticals" : {
@@ -108,26 +93,12 @@
 			"en" : {
 				"name" : "Mizlala",
 				"address" : "Nahalat Binyamin 57",
-				"tip" : "Intriguing bar for a date.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Intriguing bar for a date."
 			},
 			"he" : {
 				"name" : "מיזללה",
 				"address" : "נחלת בנימין 57",
-				"tip" : "בר מרתק לדייט.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "בר מרתק לדייט."
 			}
 		},
 		"verticals" : {
@@ -158,26 +129,12 @@
 			"en" : {
 				"name" : "Cantina",
 				"address" : "Rothschild 71",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "קנטינה",
 				"address" : "רוטשילד 71",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -208,26 +165,12 @@
 			"en" : {
 				"name" : "Catit",
 				"address" : "Nehalat Binyamin 57",
-				"tip" : "No intro needed.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "No intro needed."
 			},
 			"he" : {
 				"name" : "כתית",
 				"address" : "נחלת בנימין 57",
-				"tip" : "כל מילה מיותרת.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "כל מילה מיותרת."
 			}
 		},
 		"verticals" : {
@@ -258,26 +201,12 @@
 			"en" : {
 				"name" : "Yafo Tel&#8209;Aviv",
 				"address" : "Yigal Alon 98",
-				"tip" : "A good place for a special occasion.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "A good place for a special occasion."
 			},
 			"he" : {
 				"name" : "יפו תל אביב",
 				"address" : "יגאל אלון 98",
-				"tip" : "מקום טוב לאירוע מיוחד.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "מקום טוב לאירוע מיוחד."
 			}
 		},
 		"verticals" : {
@@ -308,26 +237,12 @@
 			"en" : {
 				"name" : "Messa",
 				"address" : "HaArba'a 19",
-				"tip" : "Heavy business, fine dining.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Heavy business, fine dining."
 			},
 			"he" : {
 				"name" : "מסה",
 				"address" : "הארבעה 19",
-				"tip" : "ארוחת ערב עסקית לכבדים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "ארוחת ערב עסקית לכבדים."
 			}
 		},
 		"verticals" : {
@@ -358,26 +273,12 @@
 			"en" : {
 				"name" : "Joya",
 				"address" : "HaArba'a 5",
-				"tip" : "Don't miss Sophia Loren.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Don't miss Sophia Loren."
 			},
 			"he" : {
 				"name" : "ג'ויה",
 				"address" : "הארבעה 5",
-				"tip" : "אל תפספסו את סופיה לורן.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אל תפספסו את סופיה לורן."
 			}
 		},
 		"verticals" : {
@@ -408,26 +309,12 @@
 			"en" : {
 				"name" : "Herbert Samuel",
 				"address" : "Kaufmann 6",
-				"tip" : "Aim for the sunset.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Aim for the sunset."
 			},
 			"he" : {
 				"name" : "הרברט סמואל",
 				"address" : "קאופמן 6",
-				"tip" : "הזמינו מקום לשקיעה.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הזמינו מקום לשקיעה."
 			}
 		},
 		"verticals" : {
@@ -458,26 +345,12 @@
 			"en" : {
 				"name" : "Raphael",
 				"address" : "Yarkon 87",
-				"tip" : "Go for the lamb chops!",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Go for the lamb chops!"
 			},
 			"he" : {
 				"name" : "רפאל",
 				"address" : "ירקון 87",
-				"tip" : "לכו על צלעות טלה!",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "לכו על צלעות טלה!"
 			}
 		},
 		"verticals" : {
@@ -508,26 +381,12 @@
 			"en" : {
 				"name" : "Onami",
 				"address" : "HaArba'a 18",
-				"tip" : "Get a Choya on the bar.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Get a Choya on the bar."
 			},
 			"he" : {
 				"name" : "אונמי",
 				"address" : "הארבעה 18",
-				"tip" : "שתו צ'ויה על הבר.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "שתו צ'ויה על הבר."
 			}
 		},
 		"verticals" : {
@@ -558,26 +417,12 @@
 			"en" : {
 				"name" : "Tapeo",
 				"address" : "HaArba'a 16",
-				"tip" : "Good for a happy hour with friends.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Good for a happy hour with friends."
 			},
 			"he" : {
 				"name" : "טפאו",
 				"address" : "הארבעה 16",
-				"tip" : "ערב שמח עם החבר'ה.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "ערב שמח עם החבר'ה."
 			}
 		},
 		"verticals" : {
@@ -608,26 +453,12 @@
 			"en" : {
 				"name" : "Turkiz",
 				"address" : "Rosenblum 6",
-				"tip" : "Reserve the round table if you can.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Reserve the round table if you can."
 			},
 			"he" : {
 				"name" : "טורקיז",
 				"address" : "רוזנבלום 6",
-				"tip" : "השולחן העגול שווה את ההמתנה.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "השולחן העגול שווה את ההמתנה."
 			}
 		},
 		"verticals" : {
@@ -658,26 +489,12 @@
 			"en" : {
 				"name" : "Boya",
 				"address" : "HaTa'arucha 3",
-				"tip" : "Tel Aviv port for Tourists.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Tel Aviv port for Tourists."
 			},
 			"he" : {
 				"name" : "בויה",
 				"address" : "התערוכה 3",
-				"tip" : "קחו את החברים התיירים לטייל בנמל.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "קחו את החברים התיירים לטייל בנמל."
 			}
 		},
 		"verticals" : {
@@ -708,26 +525,12 @@
 			"en" : {
 				"name" : "Dallal",
 				"address" : "Shabazi 10",
-				"tip" : "Take a cab, you won't find parking.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Take a cab, you won't find parking."
 			},
 			"he" : {
 				"name" : "דלאל",
 				"address" : "שבזי 10",
-				"tip" : "חנו במתחם התחנה, עדיף.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "חנו במתחם התחנה, עדיף."
 			}
 		},
 		"verticals" : {
@@ -758,26 +561,12 @@
 			"en" : {
 				"name" : "Suzanna",
 				"address" : "Shabazi 9",
-				"tip" : "Go for drinks on the roof when the weather is right.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Go for drinks on the roof when the weather is right."
 			},
 			"he" : {
 				"name" : "סוזאנה",
 				"address" : "שבזי 9",
-				"tip" : "הבר על הגג מפתיע.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הבר על הגג מפתיע."
 			}
 		},
 		"verticals" : {
@@ -808,26 +597,12 @@
 			"en" : {
 				"name" : "Social Club",
 				"address" : "Rothschild 45",
-				"tip" : "Fancy cocktail menu.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Fancy cocktail menu."
 			},
 			"he" : {
 				"name" : "סושיאל קלאב",
 				"address" : "רוטשילד 45",
-				"tip" : "תפריט קוקטיילים נועז.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "תפריט קוקטיילים נועז."
 			}
 		},
 		"verticals" : {
@@ -858,26 +633,12 @@
 			"en" : {
 				"name" : "Makom Shel Basar",
 				"address" : "Shabazi 64",
-				"tip" : "Not for vegans.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Not for vegans."
 			},
 			"he" : {
 				"name" : "מקום של בשר",
 				"address" : "שבזי 64",
-				"tip" : "לא לצמחונים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "לא לצמחונים."
 			}
 		},
 		"verticals" : {
@@ -908,26 +669,12 @@
 			"en" : {
 				"name" : "Vicki Cristina",
 				"address" : "Kaufmann 2",
-				"tip" : "The round bar is great for a crowd.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "The round bar is great for a crowd."
 			},
 			"he" : {
 				"name" : "ויקי קריסטינה",
 				"address" : "קאופמן 2",
-				"tip" : "שולחן הפסיפס העגול מעולה.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "שולחן הפסיפס העגול מעולה."
 			}
 		},
 		"verticals" : {
@@ -958,26 +705,12 @@
 			"en" : {
 				"name" : "Abraxas North",
 				"address" : "Lilienblum 40",
-				"tip" : "Intense service experience, be open for surprises.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Intense service experience, be open for surprises."
 			},
 			"he" : {
 				"name" : "צפון אברקסס",
 				"address" : "לילנבלום 40",
-				"tip" : "אוירה מפתיעה.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אוירה מפתיעה."
 			}
 		},
 		"verticals" : {
@@ -1008,26 +741,12 @@
 			"en" : {
 				"name" : "Zepra",
 				"address" : "Yigal Alon 96",
-				"tip" : "Fun tasters menu.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Fun tasters menu."
 			},
 			"he" : {
 				"name" : "צפרה",
 				"address" : "יגאל אלון 96",
-				"tip" : "ארוחת טעימות חוויתית.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "ארוחת טעימות חוויתית."
 			}
 		},
 		"verticals" : {
@@ -1058,26 +777,12 @@
 			"en" : {
 				"name" : "Nanuchka",
 				"address" : "Lilienblum 30",
-				"tip" : "Authentic Georgian food, great bar.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Authentic Georgian food, great bar."
 			},
 			"he" : {
 				"name" : "ננוצ'קה",
 				"address" : "לילנבלום 30",
-				"tip" : "אוכל גרוזיני אמיתי, בר מפתיע.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אוכל גרוזיני אמיתי, בר מפתיע."
 			}
 		},
 		"verticals" : {
@@ -1108,26 +813,12 @@
 			"en" : {
 				"name" : "Port Said",
 				"address" : "Har Sinai 2",
-				"tip" : "Chef quality street food.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Chef quality street food."
 			},
 			"he" : {
 				"name" : "פורט סעיד",
 				"address" : "הר סיני 2",
-				"tip" : "מוקפד ומהודר זה לא, תבואו פשוטים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "מוקפד ומהודר זה לא, תבואו פשוטים."
 			}
 		},
 		"verticals" : {
@@ -1158,26 +849,12 @@
 			"en" : {
 				"name" : "Kalamata",
 				"address" : "Kikar Kdumim 10, Yafo",
-				"tip" : "Greek Jaffa, ask for a table with a view.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Greek Jaffa, ask for a table with a view."
 			},
 			"he" : {
 				"name" : "קלמטה",
 				"address" : "כיכר קדומים 10 יפו",
-				"tip" : "יפו היוונית, בקשו שולחן ליד חלון.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "יפו היוונית, בקשו שולחן ליד חלון."
 			}
 		},
 		"verticals" : {
@@ -1208,26 +885,12 @@
 			"en" : {
 				"name" : "Hotel Montefiore",
 				"address" : "Montefiore 36",
-				"tip" : "Do not miss out on the tart tatin!",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Do not miss out on the tart tatin!"
 			},
 			"he" : {
 				"name" : "הוטל מונטפיורי",
 				"address" : "מונטפיורי 36",
-				"tip" : "אווירה יוצאת דופן, לא לוותר על הטארט טאטין.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אווירה יוצאת דופן, לא לוותר על הטארט טאטין."
 			}
 		},
 		"verticals" : {
@@ -1258,26 +921,12 @@
 			"en" : {
 				"name" : "Elba",
 				"address" : "Ibn Gabirol 36",
-				"tip" : "The bourekas is a total surprise!",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "The bourekas is a total surprise!"
 			},
 			"he" : {
 				"name" : "אלבה",
 				"address" : "אבן גבירול 36",
-				"tip" : "קיר זכוכית רומנטי לאבן גבירול, קחו בורקס ותופתעו לחלוטין.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "קיר זכוכית רומנטי לאבן גבירול, קחו בורקס ותופתעו לחלוטין."
 			}
 		},
 		"verticals" : {
@@ -1308,26 +957,12 @@
 			"en" : {
 				"name" : "Café Europa",
 				"address" : "Rothschild 9",
-				"tip" : "A very intimate bar.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "A very intimate bar."
 			},
 			"he" : {
 				"name" : "קפה אירופה",
 				"address" : "רוטשילד 9",
-				"tip" : "חוץ מהשולחנות, בר צפוף ואינטימי.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "חוץ מהשולחנות, בר צפוף ואינטימי."
 			}
 		},
 		"verticals" : {
@@ -1358,26 +993,12 @@
 			"en" : {
 				"name" : "Hatzer Goldman",
 				"address" : "Goldman 6",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "חצר גולדמן",
 				"address" : "גולדמן 6",
-				"tip" : "לשעבר פיני בחצר.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "לשעבר פיני בחצר."
 			}
 		},
 		"verticals" : {
@@ -1408,26 +1029,12 @@
 			"en" : {
 				"name" : "Shila",
 				"address" : "Ben Yehuda 182",
-				"tip" : "Go straight to the valet, don't bother looking.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Go straight to the valet, don't bother looking."
 			},
 			"he" : {
 				"name" : "שילה",
 				"address" : "בן יהודה 182",
-				"tip" : "לא תמצאו חניה, גשו ישר לחניית הואלט.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "לא תמצאו חניה, גשו ישר לחניית הואלט."
 			}
 		},
 		"verticals" : {
@@ -1458,26 +1065,12 @@
 			"en" : {
 				"name" : "Tapas 1 ha'am",
 				"address" : "Ehad Ha'am 27",
-				"tip" : "Share tapas with friends, use the valet parking.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Share tapas with friends, use the valet parking."
 			},
 			"he" : {
 				"name" : "טאפאס אחד העם",
 				"address" : "אחד העם 27",
-				"tip" : "אחלה עם חברים, גם פה עדיף ישר לחניית הואלט.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אחלה עם חברים, גם פה עדיף ישר לחניית הואלט."
 			}
 		},
 		"verticals" : {
@@ -1508,26 +1101,12 @@
 			"en" : {
 				"name" : "Sola",
 				"address" : "Beit Eshel 31",
-				"tip" : "The perfect date.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "The perfect date."
 			},
 			"he" : {
 				"name" : "סולה",
 				"address" : "בית אשל 31",
-				"tip" : "דייט מושלם.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "דייט מושלם."
 			}
 		},
 		"verticals" : {
@@ -1558,26 +1137,12 @@
 			"en" : {
 				"name" : "Taizu",
 				"address" : "Begin 23",
-				"tip" : "Everything down to the bread is adventurous.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Everything down to the bread is adventurous."
 			},
 			"he" : {
 				"name" : "טאיזו",
 				"address" : "בגין 23",
-				"tip" : "הכל שם הרפתקה, כולל הלחם.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הכל שם הרפתקה, כולל הלחם."
 			}
 		},
 		"verticals" : {
@@ -1608,26 +1173,12 @@
 			"en" : {
 				"name" : "Juz & Luz",
 				"address" : "Yehuda Halevi 51",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "ג'וז ולוז",
 				"address" : "יהודה הלוי 51",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -1658,26 +1209,12 @@
 			"en" : {
 				"name" : "Toto",
 				"address" : "Berkovich 4",
-				"tip" : "The gniocchi and the ravioli are unique.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "The gniocchi and the ravioli are unique."
 			},
 			"he" : {
 				"name" : "טוטו",
 				"address" : "ברקוביץ' 4",
-				"tip" : "ניוקי ורביולי מנצח.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "ניוקי ורביולי מנצח."
 			}
 		},
 		"verticals" : {
@@ -1708,26 +1245,12 @@
 			"en" : {
 				"name" : "Mel & Michelle",
 				"address" : "Ben Yehuda 155",
-				"tip" : "Romantic date. Try the Parisian Gniocchi.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Romantic date. Try the Parisian Gniocchi."
 			},
 			"he" : {
 				"name" : "מל ומישל",
 				"address" : "בן יהודה 155",
-				"tip" : "דייט רומנטי במיוחד, ניוקי פריזאי אותנטי.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "דייט רומנטי במיוחד, ניוקי פריזאי אותנטי."
 			}
 		},
 		"verticals" : {
@@ -1758,26 +1281,12 @@
 			"en" : {
 				"name" : "Mitbach Laila",
 				"address" : "Lilienblum 43",
-				"tip" : "Remember, only high tables",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Remember, only high tables"
 			},
 			"he" : {
 				"name" : "מטבח לילה",
 				"address" : "לילנבלום 43",
-				"tip" : "אוירת בר תל  אביבי.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אוירת בר תל  אביבי."
 			}
 		},
 		"verticals" : {
@@ -1808,26 +1317,12 @@
 			"en" : {
 				"name" : "Yassou",
 				"address" : "Yarkon 105",
-				"tip" : "Drink at the balcony, but eat inside.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Drink at the balcony, but eat inside."
 			},
 			"he" : {
 				"name" : "יאסו",
 				"address" : "ירקון 105",
-				"tip" : "עדיף לאכול בפנים, את הבירה תשאירו למרפסת.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "עדיף לאכול בפנים, את הבירה תשאירו למרפסת."
 			}
 		},
 		"verticals" : {
@@ -1858,26 +1353,12 @@
 			"en" : {
 				"name" : "Flee Market",
 				"address" : "Rabbi Yohanan 8",
-				"tip" : "Local Jaffa Kebab, served on a sword.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Local Jaffa Kebab, served on a sword."
 			},
 			"he" : {
 				"name" : "פלי מרקט",
 				"address" : "רבי יוחנן 8",
-				"tip" : "קבב יפואי על חרבות!",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "קבב יפואי על חרבות!"
 			}
 		},
 		"verticals" : {
@@ -1908,26 +1389,12 @@
 			"en" : {
 				"name" : "Kitchen Market",
 				"address" : "Hangar 12, Tel Aviv port",
-				"tip" : "Get a table with a view to the port.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Get a table with a view to the port."
 			},
 			"he" : {
 				"name" : "קיצ'ן מרקט",
 				"address" : "הנגר 12, נמל תל אביב",
-				"tip" : "הזמינו שולחן מערבי.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הזמינו שולחן מערבי."
 			}
 		},
 		"verticals" : {
@@ -1958,26 +1425,12 @@
 			"en" : {
 				"name" : "Alma",
 				"address" : "Yavne 23",
-				"tip" : "Perfect lounge with friends, great bar outside.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Perfect lounge with friends, great bar outside."
 			},
 			"he" : {
 				"name" : "עלמה",
 				"address" : "יבנה 23",
-				"tip" : "הלאונג' הכי קלאסי ברוטשילד, בקיץ מדליק בחוץ.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הלאונג' הכי קלאסי ברוטשילד, בקיץ מדליק בחוץ."
 			}
 		},
 		"verticals" : {
@@ -2008,26 +1461,12 @@
 			"en" : {
 				"name" : "HaShulchan",
 				"address" : "Rothschild 73",
-				"tip" : "Sit in the balcony.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Sit in the balcony."
 			},
 			"he" : {
 				"name" : "השולחן",
 				"address" : "רוטשילד 73",
-				"tip" : "שבו במרפסת אם נעים בערב.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "שבו במרפסת אם נעים בערב."
 			}
 		},
 		"verticals" : {
@@ -2058,26 +1497,12 @@
 			"en" : {
 				"name" : "Popina",
 				"address" : "Ehad Ha'am 3",
-				"tip" : "Order the goose spring roll.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Order the goose spring roll."
 			},
 			"he" : {
 				"name" : "פופינה",
 				"address" : "אחד העם 3",
-				"tip" : "הזמינו ספרינג רול אווז.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הזמינו ספרינג רול אווז."
 			}
 		},
 		"verticals" : {
@@ -2108,26 +1533,12 @@
 			"en" : {
 				"name" : "Cocina Tamar",
 				"address" : "HaTsfira 10",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "קוצ'ינה תמר",
 				"address" : "הצפירה 10",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -2158,26 +1569,12 @@
 			"en" : {
 				"name" : "Coffee Bar",
 				"address" : "Yad Haruzim 13",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "קופי בר",
 				"address" : "יד חרוצים 13",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -2208,26 +1605,12 @@
 			"en" : {
 				"name" : "Radio Rosco",
 				"address" : "Allenby 97",
-				"tip" : "Thin pizza, casual dinner.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Thin pizza, casual dinner."
 			},
 			"he" : {
 				"name" : "רדיו רוסקו",
 				"address" : "אלנבי 97",
-				"tip" : "פיצה דקה, ארוחת ערב נעימה.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "פיצה דקה, ארוחת ערב נעימה."
 			}
 		},
 		"verticals" : {
@@ -2258,26 +1641,12 @@
 			"en" : {
 				"name" : "Cheder Ochel",
 				"address" : "Shaul Hamelech 23",
-				"tip" : "Kibutz food with a twist. Dining hall seating. Best with friends.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Kibutz food with a twist. Dining hall seating. Best with friends."
 			},
 			"he" : {
 				"name" : "חדר אוכל",
 				"address" : "שאול המלך 23",
-				"tip" : "אוכל קיבוץ עם טוויסט, אוירת חדר אוכל, הכי כיף עם חברים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אוכל קיבוץ עם טוויסט, אוירת חדר אוכל, הכי כיף עם חברים."
 			}
 		},
 		"verticals" : {
@@ -2308,26 +1677,12 @@
 			"en" : {
 				"name" : "Vong",
 				"address" : "Rothschild 15",
-				"tip" : "Intimate asian place. The best pho soup in town.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Intimate asian place. The best pho soup in town."
 			},
 			"he" : {
 				"name" : "וונג",
 				"address" : "רוטשילד 15",
-				"tip" : "אסייתית שונה, אווירה אינטימית. מרק פו מהטובים בעיר.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אסייתית שונה, אווירה אינטימית. מרק פו מהטובים בעיר."
 			}
 		},
 		"verticals" : {
@@ -2358,26 +1713,12 @@
 			"en" : {
 				"name" : "Pronto",
 				"address" : "Herzel 4",
-				"tip" : "Excellent lamb pappardelle.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Excellent lamb pappardelle."
 			},
 			"he" : {
 				"name" : "פרונטו",
 				"address" : "הרצל 4",
-				"tip" : "איטליה במיטבה פפרדלה טלה מעולה!",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "איטליה במיטבה פפרדלה טלה מעולה!"
 			}
 		},
 		"verticals" : {
@@ -2408,26 +1749,12 @@
 			"en" : {
 				"name" : "Yakimono",
 				"address" : "Rothschild 19",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "יקימונו",
 				"address" : "רוטשילד 19",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -2458,26 +1785,12 @@
 			"en" : {
 				"name" : "Mul-Yam",
 				"address" : "Hangar 24, Namal Tel Aviv",
-				"tip" : "A genuine place for sea food, especially the langoustine.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "A genuine place for sea food, especially the langoustine."
 			},
 			"he" : {
 				"name" : "מול ים",
 				"address" : "הנגר 24 נמל תל אביב",
-				"tip" : "מקום ייחודי לפירות ים, הזמינו את הלנגוסטינים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "מקום ייחודי לפירות ים, הזמינו את הלנגוסטינים."
 			}
 		},
 		"verticals" : {
@@ -2508,26 +1821,12 @@
 			"en" : {
 				"name" : "Sardinia",
 				"address" : "Kikar Kdumim, Yafo",
-				"tip" : "Better come with a taxi.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Better come with a taxi."
 			},
 			"he" : {
 				"name" : "סרדיניה",
 				"address" : "כיכר קדומים, יפו",
-				"tip" : "עדיף מונית.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "עדיף מונית."
 			}
 		},
 		"verticals" : {
@@ -2558,26 +1857,12 @@
 			"en" : {
 				"name" : "Adora",
 				"address" : "Ben Yehuda 226",
-				"tip" : "Don't miss out on the white fillet.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Don't miss out on the white fillet."
 			},
 			"he" : {
 				"name" : "אדורה",
 				"address" : "בן יהודה 226",
-				"tip" : "אל תפספסו את מנת הפילה דוקה המצרית.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אל תפספסו את מנת הפילה דוקה המצרית."
 			}
 		},
 		"verticals" : {
@@ -2608,26 +1893,12 @@
 			"en" : {
 				"name" : "David veYosef",
 				"address" : "Montefiore 21",
-				"tip" : "Don't miss the bar with the view to the kitchen.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Don't miss the bar with the view to the kitchen."
 			},
 			"he" : {
 				"name" : "דוד ויוסף",
 				"address" : "מונטיפיורי 21",
-				"tip" : "אל תפספסו את הבר עם הנוף למטבח.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אל תפספסו את הבר עם הנוף למטבח."
 			}
 		},
 		"verticals" : {
@@ -2658,26 +1929,12 @@
 			"en" : {
 				"name" : "Bertie",
 				"address" : "King George 88",
-				"tip" : "Renowned veal cheek dish.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Renowned veal cheek dish."
 			},
 			"he" : {
 				"name" : "ברטי",
 				"address" : "קינג ג'ורג' 88",
-				"tip" : "שמה של מנת הלחי יצא למרחקים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "שמה של מנת הלחי יצא למרחקים."
 			}
 		},
 		"verticals" : {
@@ -2708,26 +1965,12 @@
 			"en" : {
 				"name" : "Hanoi",
 				"address" : "Lilenblum 18",
-				"tip" : "Asian food with an Asian setting. Truly good ramen soup.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Asian food with an Asian setting. Truly good ramen soup."
 			},
 			"he" : {
 				"name" : "האנוי",
 				"address" : "לילנבלום 18",
-				"tip" : "אוכל אסייתי עם עיצוב רחוב, מרק ראמן מדהים!",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "אוכל אסייתי עם עיצוב רחוב, מרק ראמן מדהים!"
 			}
 		},
 		"verticals" : {
@@ -2758,26 +2001,12 @@
 			"en" : {
 				"name" : "Belini",
 				"address" : "Yehiel 6",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "בליני",
 				"address" : "יחיאל 6",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -2808,26 +2037,12 @@
 			"en" : {
 				"name" : "Aria",
 				"address" : "Nehalat Binyamin 66",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "ארייה",
 				"address" : "נחלת בנימין 66",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -2858,26 +2073,12 @@
 			"en" : {
 				"name" : "Bistro Eden",
 				"address" : "Yeshuchon 11",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "ביסטרו עדן",
 				"address" : "ישוכון 11",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -2908,26 +2109,12 @@
 			"en" : {
 				"name" : "Alora",
 				"address" : "Rothschild 60",
-				"tip" : "Sit on the open balcony to Rothschild blvd.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Sit on the open balcony to Rothschild blvd."
 			},
 			"he" : {
 				"name" : "אלורה",
 				"address" : "רוטשילד 60",
-				"tip" : "שבו על המרפסת הפונה לשדרות רוטשילד.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "שבו על המרפסת הפונה לשדרות רוטשילד."
 			}
 		},
 		"verticals" : {
@@ -2958,26 +2145,12 @@
 			"en" : {
 				"name" : "NG",
 				"address" : "Ehad Ha'am 6",
-				"tip" : "The porterhouse steak is one of the best in Tel Aviv.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "The porterhouse steak is one of the best in Tel Aviv."
 			},
 			"he" : {
 				"name" : "אנג'י",
 				"address" : "אחד העם 6",
-				"tip" : "הפורטרהאוס הכי שווה בתל אביב.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הפורטרהאוס הכי שווה בתל אביב."
 			}
 		},
 		"verticals" : {
@@ -3008,26 +2181,12 @@
 			"en" : {
 				"name" : "Blue Sky",
 				"address" : "Carlton Hotel, Eliezer Peri 10",
-				"tip" : "Cocktails outside, food inside",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Cocktails outside, food inside"
 			},
 			"he" : {
 				"name" : "בלו סקיי",
 				"address" : "אליעזר פרי 10, מלון קרלטון",
-				"tip" : "קוקטייל בחוץ, אוכל בפנים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "קוקטייל בחוץ, אוכל בפנים."
 			}
 		},
 		"verticals" : {
@@ -3058,26 +2217,12 @@
 			"en" : {
 				"name" : "Pastel",
 				"address" : "Shaul Hamelech 27, Tel-Aviv Museum",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "פאסטל",
 				"address" : "שאול המלך 27, מוזיאון תל-אביב",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -3108,26 +2253,12 @@
 			"en" : {
 				"name" : "Rothschild",
 				"address" : "Rothschild 96",
-				"tip" : "Order the triggerfish if possible",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Order the triggerfish if possible"
 			},
 			"he" : {
 				"name" : "רוטשילד",
 				"address" : "רוטשילד 86",
-				"tip" : "הזמינו את מנת איילת הים אם אפשרי באותו יום.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הזמינו את מנת איילת הים אם אפשרי באותו יום."
 			}
 		},
 		"verticals" : {
@@ -3158,26 +2289,12 @@
 			"en" : {
 				"name" : "Container",
 				"address" : "Warehouse 2, Jaffa port",
-				"tip" : "Fun  bar outside for a summer date",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Fun  bar outside for a summer date"
 			},
 			"he" : {
 				"name" : "קונטיינר",
 				"address" : "מחסן 2, נמל יפו",
-				"tip" : "בר קיצי, נינוח ושמח בחוץ",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "בר קיצי, נינוח ושמח בחוץ"
 			}
 		},
 		"verticals" : {
@@ -3208,26 +2325,12 @@
 			"en" : {
 				"name" : "The Salon",
 				"address" : "Ma'avar Yabok 8",
-				"tip" : "Order well in advance, it's tricky",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Order well in advance, it's tricky"
 			},
 			"he" : {
 				"name" : "הסלון",
 				"address" : "מעבר יבוק 8",
-				"tip" : "תזמינו הרבה מראש, זה קטע פה",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "תזמינו הרבה מראש, זה קטע פה"
 			}
 		},
 		"verticals" : {
@@ -3258,26 +2361,12 @@
 			"en" : {
 				"name" : "Goocha",
 				"address" : "Dizengoff 171",
-				"tip" : "Mussles, french fries and a happy mess.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Mussles, french fries and a happy mess."
 			},
 			"he" : {
 				"name" : "גוצ'ה",
 				"address" : "דיזינגוף 171",
-				"tip" : "מולים, צ'יפס ובלאגן שמח.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "מולים, צ'יפס ובלאגן שמח."
 			}
 		},
 		"verticals" : {
@@ -3308,26 +2397,12 @@
 			"en" : {
 				"name" : "Orna & Ella",
 				"address" : "Shenkin 33",
-				"tip" : "Vegan and Gluten friendly",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Vegan and Gluten friendly"
 			},
 			"he" : {
 				"name" : "אורנה ואלה",
 				"address" : "שינקין 33",
-				"tip" : "ידידותי לטבעונים וצמחונים.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "ידידותי לטבעונים וצמחונים."
 			}
 		},
 		"verticals" : {
@@ -3358,26 +2433,12 @@
 			"en" : {
 				"name" : "Seatara",
 				"address" : "Rosenblum Herzel 8, Sea & Sun",
-				"tip" : "Sit outside on a summer evening.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Sit outside on a summer evening."
 			},
 			"he" : {
 				"name" : "סיטארה",
 				"address" : "רוזנבלום הרצל 8, סי אנד סאן",
-				"tip" : "הזמינו מקום בחוץ בערב קיצי.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "הזמינו מקום בחוץ בערב קיצי."
 			}
 		},
 		"verticals" : {
@@ -3408,26 +2469,12 @@
 			"en" : {
 				"name" : "MantaRay",
 				"address" : "Kaufmann 7, Alma Beach",
-				"tip" : "Sunset. Don't miss out.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : "Sunset. Don't miss out."
 			},
 			"he" : {
 				"name" : "מנטה ריי",
 				"address" : "קויפמן 7, חוף עלמה",
-				"tip" : "בשקיעה.",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : "בשקיעה."
 			}
 		},
 		"verticals" : {
@@ -3458,26 +2505,12 @@
 			"en" : {
 				"name" : "Rokach 73",
 				"address" : "Rokach Blvd 73",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "רוקח 73",
 				"address" : "שד רוקח 73",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
@@ -3508,26 +2541,12 @@
 			"en" : {
 				"name" : "Italkia Ba’Tachana",
 				"address" : "Old station, Neve Zedek",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
+				"tip" : ""
 			},
 			"he" : {
 				"name" : "איטלקיה בתחנה",
 				"address" : "מתחם התחנה, נווה צדק",
-				"tip" : "",
-				"tip_dish" : "Eat the head.",
-				"tip_seating" : "Sit on head.",
-				"tip_parking" : "Park in head."
-			},
-			"location" : {
-				"lat" : 123,
-				"lng" : 456
-			},
-			"parking" : {
-				"lat" : 123,
-				"lng" : 456
+				"tip" : ""
 			}
 		},
 		"verticals" : {
