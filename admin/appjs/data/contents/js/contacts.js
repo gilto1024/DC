@@ -30,15 +30,29 @@ var contacts = (function () {
             "phone":"03-5612888",
             "url":"http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx",
             "gaName":"Café Italia",
+            "location":{
+                "lat":123,
+                "lng":456
+            },
+            "parking":{
+                "lat":123,
+                "lng":456
+            },
             "en":{
                 "name":"Café Italia",
                 "address":"Kremintzki 6",
-                "tip":"Ideal for friends."
+                "tip":"Ideal for friends.",
+                "tip_dish":"Eat the head.",
+                "tip_seating":"Sit on head.",
+                "tip_parking":"Park in head."
             },
             "he":{
                 "name":"קפה איטליה",
                 "address":"קרמניצקי 6",
-                "tip":"מושלם לערב עם חברים."
+                "tip":"מושלם לערב עם חברים.",
+                "tip_dish":"Eat the head.",
+                "tip_seating":"Sit on head.",
+                "tip_parking":"Park in head."
             }
         },
         "verticals":{

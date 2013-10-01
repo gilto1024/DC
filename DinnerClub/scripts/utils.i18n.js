@@ -16,7 +16,7 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "resultsHeading":"You should go to",
                     "btnPrevRestTitle":"Previous",
                     "btnNextRestTitle":"Next",
-                    "restCountLabel":"Dinners",
+                    "restCountLabel":"Restaurants",
                     "copyright":"Copyright &copy; 2013 Hamburg Committee. All Rights Reserved."
                 }
             },
@@ -30,7 +30,7 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "resultsHeading":"כדאי לכם ללכת ל...",
                     "btnPrevRestTitle":"הקודם",
                     "btnNextRestTitle":"הבא",
-                    "restCountLabel":"ארוחות",
+                    "restCountLabel":"מסעדות",
                     "copyright":"כל הזכויות שמורות &copy; 2013 ועידת המבורג."
                 }
             }

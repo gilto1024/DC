@@ -18,6 +18,12 @@ html {
     border: 1px solid black;
 }
 
+#restDetailsItem {
+    width: 603px;
+    height: 600px;
+    overflow-y: scroll;
+}
+
 .rest_item {
     cursor: pointer;
     margin-bottom: 20px;

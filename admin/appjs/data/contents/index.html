@@ -52,17 +52,28 @@
     {{#data}}
     <div id="restDetailsItem">
         <div id="info" mediaId="{{id}}"><span class="smallTitle">INFO</span>
+
             <div id="phone" class="fieldTitle">Phone:<input value="{{info.phone}}"></div>
             <div id="url" class="fieldTitle">URL: <input value="{{info.url}}"></div>
             <div id="en"><span class="smallTitle">EN</span>
+
                 <div id="en_name" class="enContainer fieldTitle">Name: <input value="{{info.en.name}}"></div>
                 <div id="en_address" class="enContainer fieldTitle">Address: <input value="{{info.en.address}}"></div>
                 <div id="en_tip" class="enContainer fieldTitle">Tip: <input value="{{info.en.tip}}"></div>
+
+                <div id="en_tip_dish" class="enContainer fieldTitle">dish: <input value="{{info.en.tip_dish}}"></div>
+                <div id="en_tip_seating" class="enContainer fieldTitle">seating: <input value="{{info.en.tip_seating}}"></div>
+                <div id="en_tip_parking" class="enContainer fieldTitle">parking: <input value="{{info.en.tip_parking}}"></div>
             </div>
             <div id="he"><span class="smallTitle">HE</span>
+
                 <div id="he_name" class="heContainer fieldTitle">שם: <input value="{{info.he.name}}"></div>
                 <div id="he_address" class="heContainer fieldTitle">כתובת: <input value="{{info.he.address}}"></div>
                 <div id="he_tip" class="heContainer fieldTitle">טיפ: <input value="{{info.he.tip}}"></div>
+
+                <div id="he_tip_dish" class="enContainer fieldTitle">מנה: <input value="{{info.en.tip_dish}}"></div>
+                <div id="he_tip_seating" class="enContainer fieldTitle">ישיבה: <input value="{{info.en.tip_seating}}"></div>
+                <div id="he_tip_parking" class="enContainer fieldTitle">חנייה: <input value="{{info.en.tip_parking}}"></div>
             </div>
         </div>
         <!--<div id="verticals">
@@ -74,6 +85,7 @@
 
         </div>-->
         <div id="rating"><span class="smallTitle">Rating</span>
+
             <div id="date" class="fieldTitle">Date: <input value="{{ratings.date}}"></div>
             <div id="friends" class="fieldTitle">Friends: <input value="{{ratings.friends}}"></div>
             <div id="family" class="fieldTitle">Family: <input value="{{ratings.family}}"></div>

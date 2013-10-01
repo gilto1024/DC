@@ -14,7 +14,7 @@
         _gaq.push(['_setDomainName', 'none']);
         _gaq.push(['_trackPageview']);
 
-		
+
         (function () {
             var ga = document.createElement('script');
             ga.type = 'text/javascript';
@@ -33,23 +33,23 @@
 
 
     <!-- mobile & iphone related -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png"/>
 
 
     <!-- for FACEBOOK OPEN GRAPH -->
-    <meta property="og:title" content="DinnerClub" />
-    <meta property="og:image" content="http://dinnerclub.co.il/img/fb_logo.png" />
-    <meta property="og:url" content="http://www.DinnerClub.co.il/" />
-    <meta property="og:description" content="Where tonight? --- לאן יוצאים הערב?" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DinnerClub"/>
+    <meta property="og:image" content="http://dinnerclub.co.il/img/fb_logo.png"/>
+    <meta property="og:url" content="http://www.DinnerClub.co.il/"/>
+    <meta property="og:description" content="Where tonight? --- לאן יוצאים הערב?"/>
+    <meta property="og:type" content="website"/>
 
 
     <!-- for GOOGLE -->
-    <meta name="description" content="Where tonight? --- לאן יוצאים הערב?" />
-    <meta name="keywords" content="dinnerclub, dinner, club, דינרקלאב, דינר, קלאב" />
+    <meta name="description" content="Where tonight? --- לאן יוצאים הערב?"/>
+    <meta name="keywords" content="dinnerclub, dinner, club, דינרקלאב, דינר, קלאב"/>
 
 
     <!--[if lt IE 8]>
@@ -72,12 +72,13 @@
 <body class="fontBold">
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164847676916533";
-  fjs.parentNode.insertBefore(js, fjs);
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164847676916533";
+    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <section id="languageSelectionWrapper">
@@ -87,7 +88,7 @@
 </section>
 <header>
     <div id="headerContent">
-        <div id="story" class="fontRegular" >
+        <div id="story" class="fontRegular">
             <span id="storyCursor">|</span>
         </div>
     </div>
@@ -108,22 +109,38 @@
 <section id="questions" class="hidden">
     <article class="placeholder"></article>
     <article id="results" data-ga-name="results">
-        <span id="resultsHeading">You should go to</span><br/>
-        <span id="restInfo">
-            <a id="restLink" href="javascript:void(0)" target="_blank">
-                <div id="restNameWrapper" class="vAlignOuterContainer">
-                    <div id="restName" class="vAlignInnerContainer"></div>
-                </div>
-            </a>
-            <a id="restPhoneLink" href="javascript:void(0)"><div id="restPhone"></div></a>
-            <a id="restAddressLink" href="javascript:void(0)"><div id="restAddress"></div></a>
-        </span><br/>
-        <div id="restNavigationPane">
-            <div id="btnPrevRest"></div>
-            <div id="btnRestart"></div>
-            <div id="btnNextRest"></div>
+        <div class="questionBox">
+            <span id="resultsHeading">You should go to</span><br/>
         </div>
-        <span id="restTip"></span>
+        <div class="questionBox">
+            <div id="restInfo">
+                <a id="restLink" href="javascript:void(0)" target="_blank">
+                    <span id="restName" ></span>
+                </a>
+                <br/>
+                <a id="restPhoneLink" href="javascript:void(0)">
+                    <span id="restPhone"></span>
+                </a>
+                <br/>
+                <a id="restAddressLink" href="javascript:void(0)">
+                    <span id="restAddress"></span>
+                </a>
+
+                <br/>
+            </div>
+            <br/>
+
+            <div id="restNavigationPane">
+                <div id="btnPrevRest"></div>
+                <div id="btnRestart"></div>
+                <div id="btnNextRest"></div>
+            </div>
+        </div>
+        <div class="questionBox questionBoxLast">
+            <span id="restTip"></span>
+        </div>
+
+
     </article>
     <article class="placeholder"></article>
 </section>
@@ -138,7 +155,8 @@
     <div id="footerContent">
         <div id="copyright" class="fontRegular"></div>
         <div id="fbLikeWrapper" dir="ltr">
-            <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+            <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="100"
+                 data-layout="button_count" data-show-faces="false" data-send="false"></div>
         </div>
         <div class="clear"></div>
     </div>

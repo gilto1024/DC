@@ -353,13 +353,19 @@ article {
     width: 280px;
     margin-right: 60px;
 }
+.questionBoxLast{
+    margin-right: 0px;
+
+}
 
 html[dir=rtl] .questionBox {
     float: right;
     margin-right: 0;
     margin-left: 60px;
 }
-
+html[dir=rtl] .questionBoxLast {
+    margin-left: 0px;
+}
 .question {
     font-size: 46px;
     line-height: 44px;
@@ -399,7 +405,7 @@ html[dir=rtl] .answers li {
 
 #results {
     font-size: 24px;
-    text-align: center;
+
 }
 
 #results span {
@@ -431,15 +437,20 @@ html[dir=rtl] .answers li {
     cursor: pointer;
 }
 
-#restNameWrapper {
-    min-width: 600px;
+/*#restNameWrapper {
+   *//* min-width: 600px;*//*
     margin-bottom: 15px;
     padding: 0 3px;
-}
+    height: 160px;
+
+}*/
 
 #restName {
     font-size: 64px;
     letter-spacing: -4px;
+    margin-bottom: 15px;
+      padding: 0 3px;
+      height: 160px;
 }
 
 html[dir=rtl] #restName {
@@ -530,9 +541,6 @@ html[dir=rtl] #btnNextRest:hover {
 }
 
 #restTip {
-    text-align: center;
-    width: 450px;
-    margin: 0 auto;
     display: none;
 }
 
