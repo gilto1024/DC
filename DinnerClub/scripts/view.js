@@ -6,9 +6,9 @@ define(
         //TODO media queries - missing "570-960" query
         //TODO landscape orientation mefia query for bigger mobile phones (Idoz's)
         //TODO hide rest count in the second questions as well
-	    //TODO refactor the isMobile & isSmallScreen dependant code
+        //TODO refactor the isMobile & isSmallScreen dependant code
         //TODO refactor language-menu code to utils.i18n
-	    //TODO show language on results screen (mobile)
+        //TODO show language on results screen (mobile)
         //TODO GA when clicking address, phone
         //TODO replace drop down arrow in language selection menu
         //TODO bugfix - bold text when running as web-app
@@ -84,7 +84,7 @@ define(
                             $("#languageSelectionWrapper").fadeOut();
                             $footer.fadeOut();
                         }
-                        else{
+                        else {
                             $restCountContent.show();
                         }
                     }
@@ -101,6 +101,10 @@ define(
 
                 return true; // allow normal behavior
             });
+
+            //TODO - change to jquery constants
+            $("#infoIcon").on("click", onInfoClick);
+            $("#mapIcon").on("click", onMapClick);
         }
 
 
@@ -117,7 +121,6 @@ define(
                 $header.slideUp('fast');
             }
         }
-
 
 
         function cacheElements() {
@@ -348,6 +351,43 @@ define(
             $questions.stop().scrollTo(currentSectionId, {
                 duration:1000,
                 easing:"easeOutBack"
+            });
+        }
+
+        function onInfoClick() {
+
+            //TODO - change to jquery constants
+            if ($("#infoIcon").hasClass("sel") == false) {
+                removeSelectedClass();
+                hideAndShowOtherTabs("info");
+                $("#infoIcon").addClass("sel");
+            }
+
+
+        }
+
+        function onMapClick() {
+
+            //TODO - change to jquery constants
+            if ($("#mapIcon").hasClass("sel") == false) {
+                removeSelectedClass();
+                hideAndShowOtherTabs("map");
+                $("#mapIcon").addClass("sel");
+            }
+
+
+        }
+
+        function hideAndShowOtherTabs(id) {
+            $(".tabs").each(function (index) {
+                $(this).css("display","none");
+            });
+            $("#" + id).show("fast");
+        }
+
+        function removeSelectedClass() {
+            $(".icons").each(function (index) {
+                $(this).removeClass("sel");
             });
         }
 
