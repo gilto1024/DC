@@ -236,7 +236,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         utils.ga.trackEvent('init', (utils.isMobile() ? 'mobile' : 'desktop'), utils.i18n.getLanguage());
 
         //TODO remove
-        /*currentQuestionIndex = 1;
+       /* currentQuestionIndex = 1;
         updateView(restList);
 
         view.displayResults(restList);*/

@@ -607,6 +607,11 @@ html[dir=rtl] #btnNextRest:hover {
     background: url(../img/map_sel.png);
 }
 
+#map-canvas, #map_canvas {
+    height: 280px;
+    width: 480px;
+}
+
 #info {
 
 }
