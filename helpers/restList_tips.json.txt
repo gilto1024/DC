@@ -5,7 +5,7 @@
 			"url" : "http://www.mouse.co.il/CM.food_item_place,382,213,8464,.aspx",
 			"gaName" : "Café Italia",
 			"location":{
-			    "lat":123,
+			    "lat":32.071714,
 			    "lng":456
 			},
 			"parking":{

@@ -19,6 +19,7 @@ define(
         var dcController,
             currentSectionId,
             resultsRestList,
+            clickTableUrl,
             resultsCurrentRest;
 
         // Elements
@@ -105,6 +106,12 @@ define(
             //TODO - change to jquery constants
             $("#infoIcon").on("click", onInfoClick);
             $("#mapIcon").on("click", onMapClick);
+            $("#open_maps").on("click", function () {
+                var latLng = $(this).attr("lat") + "," + $(this).attr("lng");
+                window.open("http://maps.google.com/?q=" + latLng, '_blank');
+            });
+
+            $("#clickTableIcon").on("click", onClickTable);
         }
 
 
@@ -267,7 +274,12 @@ define(
             $restPhone.html(rest.phone);
             $restAddress.html(rest.address);
             $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
+            $("#tip_dish").html(rest.tip_dish);
+            $("#tip_seating").html(rest.tip_seating);
+            $("#tip_parking").html(rest.tip_parking);
+            setClickTable(rest);
 
+            setGoogleMap(rest);
             if (utils.isMobile()) {
                 $restAddressLink.attr('href', "http://maps.apple.com/?q=israel, Tel aviv, " + rest.address);
                 $restPhoneLink.attr("href", "tel:" + rest.phone);
@@ -320,7 +332,7 @@ define(
             if (resultsCurrentRest == resultsRestList.length) {
                 resultsCurrentRest = 0;
             }
-
+            $("#infoIcon").click();
             displayRest();
         }
 
@@ -354,6 +366,17 @@ define(
             });
         }
 
+        function onClickTable() {
+            var n = Math.random();
+            debugger;
+            $.ajax({
+                url:"xml2json2.php?url=" + clickTableUrl,
+                success:openClickTableUrl
+            })
+
+        }
+
+
         function onInfoClick() {
 
             //TODO - change to jquery constants
@@ -370,7 +393,7 @@ define(
 
             //TODO - change to jquery constants
             if ($("#mapIcon").hasClass("sel") == false) {
-                setGoogleMap();
+                //setGoogleMap();
                 removeSelectedClass();
                 hideAndShowOtherTabs("map");
                 $("#mapIcon").addClass("sel");
@@ -379,59 +402,132 @@ define(
 
         }
 
-        function setGoogleMap() {
-            var initialize = function () {
-                var myLatlng = new google.maps.LatLng(-25.363882, 131.044922);
-                var mapOptions = {
-                    zoom:14,
-                    center:myLatlng,
-                    mapTypeId:google.maps.MapTypeId.ROADMAP
-                }
-                var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-                var contentString = '<div id="content" style="width: 100px;height: 100px;">' +
-                    '<div id="siteNotice">' +
-                    '</div>' +
-                    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-                    '<div id="bodyContent">' +
-                    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-                    'sandstone rock formation in the southern part of the ' +
-                    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-                    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-                    'Heritage Site.</p>' +
-                    '<p>Attribution: Uluru, <a href="http://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-                    'http://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
-                    '(last visited June 22, 2009).</p>' +
-                    '</div>' +
-                    '</div>';
+        function setGoogleMap(rest) {
+            //set open in google maps attr
+            var restLat = $("#open_maps").attr("lat", rest.location.lat);
+            var restlng = $("#open_maps").attr("lng", rest.location.lng);
 
-                var infowindow = new google.maps.InfoWindow({
-                    content:contentString
-                });
+            console.log(rest);
 
-                var marker = new google.maps.Marker({
-                    position:myLatlng,
-                    map:map,
-                    title:'Uluru (Ayers Rock)'
+            /*  var initialize = function () {
+             var myLatlng = new google.maps.LatLng(rest.location.lat, rest.location.lng);
+             var parkingLatLng = new google.maps.LatLng(rest.parking.lat, rest.parking.lng);
+             var mapOptions = {
+             zoom:17,
+             center:myLatlng,
+             mapTypeId:google.maps.MapTypeId.ROADMAP
+             }
+             var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+             // TODO - duplicate another of this code for parking
+             var locationtString = '<div id="content" style="*/
+            /*width: 100px;height: 100px;*/
+            /*">' +
+             '<div id="siteNotice">' +'location'+
+             '</div>';
+
+             var locationWindow = new google.maps.InfoWindow({
+             content:locationtString
+             });
+
+             var locationMarker = new google.maps.Marker({
+             position:myLatlng,
+             map:map,
+             title:'location'
+             });
+             google.maps.event.addListener(locationMarker, 'click', function () {
+             locationWindow.open(map, locationMarker);
+             });
+
+
+             //PARKING
+             var parkingString = '<div id="content1" style="*/
+            /*width: 100px;height: 100px;*/
+            /*">' +
+             '<div id="siteNotice1">' +'parking'+
+             '</div>';
+
+             var parkingWindow = new google.maps.InfoWindow({
+             content:parkingString
+             });
+
+             var parkingMarker = new google.maps.Marker({
+             position:parkingLatLng,
+             map:map,
+             title:'parking'
+             });
+             google.maps.event.addListener(parkingMarker, 'click', function () {
+             parkingWindow.open(map, parkingMarker);
+             });
+             //until here
+
+             google.maps.event.trigger(map, 'resize');
+             setTimeout(function () {
+             map.setZoom(16);
+             }, 200);
+             }
+
+             initialize();*/
+            var locations = [
+                ['Location', rest.location.lat, rest.location.lng, 2, "map"],
+                ['Parking', rest.parking.lat, rest.parking.lng, 1, "car"]
+            ];
+            var myLatlng = new google.maps.LatLng(rest.location.lat, rest.location.lng);
+
+            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                zoom:16,
+                center:myLatlng,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            });
+
+            var infowindow = new google.maps.InfoWindow();
+
+            var marker, i;
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position:new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map:map
                 });
-                google.maps.event.addListener(marker, 'click', function () {
-                    infowindow.open(map, marker);
-                });
+                marker.setIcon('img/' + locations[i][4] + '.png');
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
             }
-            //google.maps.event.addDomListener(document.getElementById("mapIcon"), 'click', initialize);
-            initialize();
 
         }
 
-        function initGoogleMaps() {
+        function setClickTable(rest) {
+            var name = (rest.he.name);
+            var addr = (rest.he.address);
+            var city = ("תל אביב");
+            var phone = (rest.phone);
+            phone = phone.replace("-", "");
+            var site = ("test");
+            //var id= rest.
+            console.log(('name=' + name + '&city=' + city + '&addr=' + addr + '&siteName=' + site + '&phone=' + phone + '&id=2'));
+            clickTableUrl = encodeURIComponent('name=' + name + '&city=' + city + '&addr=' + addr + '&siteName=' + site + '&phone=' + phone + '&id=1');
 
+        }
+
+        function openClickTableUrl(res) {
+            console.log(res);
+            window.open(res[0], '_blank');
         }
 
         function hideAndShowOtherTabs(id) {
+            //TODO - distinguish from map and other tabs as map need to be shown and hide by opacity or show everything in opacity
             $(".tabs").each(function (index) {
-                $(this).css("display", "none");
+                $(this).animate({"opacity":"0"}, function () {
+                    /*$(this).hide();*/
+                });
             });
-            $("#" + id).show("fast");
+            $("#" + id).animate({"opacity":"1"});
         }
 
         function removeSelectedClass() {

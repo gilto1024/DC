@@ -384,6 +384,7 @@ article {
 
 .questionBoxLast {
     margin-right: 0px;
+    position: relative;
 
 }
 
@@ -577,12 +578,16 @@ html[dir=rtl] #btnNextRest:hover {
 /*** Tabs Bar ***/
 
 #iconBar {
-    width: 60px;
+    width: 100px;
     height: 35px;
 }
 
-.icons {
+html[dir=rtl] .icons {
     float: right;
+}
+
+.icons {
+    float: left;
 }
 
 #infoIcon {
@@ -607,9 +612,19 @@ html[dir=rtl] #btnNextRest:hover {
     background: url(../img/map_sel.png);
 }
 
+#clickTableIcon {
+    background: url(../img/table.png) no-repeat;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+#clickTableIcon.sel{
+    background: url(../img/table.png);
+}
+
 #map-canvas, #map_canvas {
     height: 280px;
-    width: 480px;
+    width: 280px;
 }
 
 #info {
@@ -617,11 +632,16 @@ html[dir=rtl] #btnNextRest:hover {
 }
 
 .infoDis {
+    position: absolute;
 
 }
 
-.mapDis {
-    display: none;
+#map {
+    opacity: 0;
+}
+
+#tip_price {
+    margin-top: 30px;
 }
 
 /*** NO RESTS LEFT ***/

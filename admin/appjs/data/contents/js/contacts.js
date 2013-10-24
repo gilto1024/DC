@@ -174,24 +174,31 @@ var contacts = (function () {
             "info":{
                 "phone":'',
                 "url":'',
+                "location":{
+                    "lat":"123",
+                    "lng":"456"
+                },
+                "parking":{
+                    "lat":"123",
+                    "lng":"456"
+                },
                 "en":{
                     "name":'',
                     "address":'',
-                    "tip":''
+                    "tip":'',
+                    "tip_dish":"Eat the head.",
+                    "tip_seating":"Sit on head.",
+                    "tip_parking":"Park in head."
                 },
                 "he":{
                     "name":'',
                     "address":'',
-                    "tip":''
+                    "tip":'',
+                    "tip_dish":"Eat the head.",
+                    "tip_seating":"Sit on head.",
+                    "tip_parking":"Park in head."
                 }
             },
-            /* "verticals":{
-             "party":["friends", "family", "date"],
-             "sitting":["bar", "table"],
-             "light":"bright",
-             "vol":"loud",
-             "parking":["yes", "no"]
-             },*/
             "ratings":{
                 "date":'',
                 "friends":'',
@@ -221,9 +228,15 @@ var contacts = (function () {
         var en_name = $($("#en_name").find("input")[0]).val();
         var en_address = $($("#en_address").find("input")[0]).val();
         var en_tip = $($("#en_tip").find("input")[0]).val();
+        var en_tip_dish = $($("#en_tip_dish").find("input")[0]).val();
+        var en_tip_seating = $($("#en_tip_seating").find("input")[0]).val();
+        var en_tip_parking = $($("#en_tip_parking").find("input")[0]).val();
         var he_name = $($("#he_name").find("input")[0]).val();
         var he_address = $($("#he_address").find("input")[0]).val();
         var he_tip = $($("#he_tip").find("input")[0]).val();
+        var he_tip_dish = $($("#he_tip_dish").find("input")[0]).val();
+        var he_tip_seating = $($("#he_tip_seating").find("input")[0]).val();
+        var he_tip_parking = $($("#he_tip_parking").find("input")[0]).val();
         var bar = $($("#bar").find("input")[0]).val();
         var business = $($("#business").find("input")[0]).val();
         var date = $($("#date").find("input")[0]).val();
@@ -234,6 +247,13 @@ var contacts = (function () {
         var table = $($("#table").find("input")[0]).val();
         var tourists = $($("#tourists").find("input")[0]).val();
         var vol = $($("#vol").find("input")[0]).val();
+
+
+        var location_lat = $($("#location_lat").find("input")[0]).val();
+        var location_lng = $($("#location_lng").find("input")[0]).val();
+        var parking_location_lat = $($("#parking_location_lat").find("input")[0]).val();
+        var parking_location_lng = $($("#parking_location_lng").find("input")[0]).val();
+
 
         var isRankingValid = validateRanking({
             "date":date,
@@ -253,24 +273,34 @@ var contacts = (function () {
                 "info":{
                     "phone":phone,
                     "url":url,
+                    "location":{
+                        "lat":location_lat,
+                        "lng":location_lng
+                    },
+                    "parking":{
+                        "lat":parking_location_lat,
+                        "lng":parking_location_lng
+                    },
                     "en":{
                         "name":en_name,
                         "address":en_address,
-                        "tip":en_tip
+                        "tip":en_tip,
+                        "tip_dish":en_tip_dish,
+                        "tip_seating":en_tip_seating,
+                        "tip_parking":en_tip_parking
+
+
+
                     },
                     "he":{
                         "name":he_name,
                         "address":he_address,
-                        "tip":he_tip
+                        "tip":he_tip,
+                        "tip_dish":he_tip_dish,
+                        "tip_seating":he_tip_seating,
+                        "tip_parking":he_tip_parking
                     }
                 },
-                /* "verticals":{
-                 "party":["friends", "family", "date"],
-                 "sitting":["bar", "table"],
-                 "light":"bright",
-                 "vol":"loud",
-                 "parking":["yes", "no"]
-                 },*/
                 "ratings":{
                     "date":date,
                     "friends":friends,
@@ -284,7 +314,8 @@ var contacts = (function () {
                     "parking":parking
                 }
             };
-            console.log(singleRest);
+            console.log(isNewRest);
+
             if (isNewRest) {
                 isNewRest = false;
                 pushRestToList(singleRest);
@@ -354,6 +385,7 @@ var contacts = (function () {
 
     function populateInfoBox(id) {
         var restToDisplay = restJson[id];
+        console.log(restJson[id]);
 
         var tmplComment = $("#restDetailsTemplate").html();
         $("#restDetailsContainer").html(Mustache.to_html(tmplComment, {data:restToDisplay}));

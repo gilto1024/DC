@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="rtl">
+<html dir="rtl" xmlns="http://www.w3.org/1999/html">
 <head>
     <script type="text/javascript">
         if (location.href.indexOf('dir=rtl') != -1) {
@@ -142,12 +142,18 @@
             <div id="iconBar">
                 <div id="infoIcon" class="icons sel"></div>
                 <div id="mapIcon" class="icons"></div>
+                <div id="clickTableIcon" class="icons"></div>
             </div>
             <div id="info" class=" infoDis tabs">
-                <span id="restTip"></span>
+                <span id="restTip"></span></br>
+                <span id="tip_dish"></span></br>
+                <span id="tip_seating"></span></br>
+                <span id="tip_parking"></span></br>
+                <span id="tip_price">$$$</span>
             </div>
-            <div id="map" class=" mapDis tabs">
-                <div id="map-canvas"></div>
+            <div id="map" class=" mapDis tabs" data="">
+                <div id="map-canvas" style="width:280px;height:280px;"></div>
+                <div id="open_maps" lat="" lng="">open in google maps</div>
             </div>
 
         </div>
