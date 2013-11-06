@@ -483,6 +483,7 @@ html[dir=rtl] .answers li {
     margin-bottom: 15px;
     padding: 0 3px;
     height: 160px;
+    margin-top: -16px;
 }
 
 html[dir=rtl] #restName {
@@ -491,6 +492,7 @@ html[dir=rtl] #restName {
 
 #restAddress {
     margin-bottom: 15px;
+    height: 60px;
 }
 
 #restNavigationPane {
@@ -611,6 +613,9 @@ html[dir=rtl] .icons {
 #mapIcon.sel {
     background: url(../img/map_sel.png);
 }
+#open_maps{
+    cursor: pointer;
+}
 
 #clickTableIcon {
     background: url(../img/table.png) no-repeat;
@@ -621,6 +626,18 @@ html[dir=rtl] .icons {
 #clickTableIcon.sel{
     background: url(../img/table.png);
 }
+
+#getTable{
+    width: 115px;
+    height: 60px;
+   /* border: 2px solid black;
+    border-radius: 5px;*/
+    line-height: 53px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 11px;
+}
+#getTable:hover{color: #EE2164}
 
 #map-canvas, #map_canvas {
     height: 280px;
@@ -638,6 +655,7 @@ html[dir=rtl] .icons {
 
 #map {
     opacity: 0;
+    margin-top: 8px;
 }
 
 #tip_price {

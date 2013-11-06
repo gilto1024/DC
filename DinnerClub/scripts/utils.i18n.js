@@ -17,6 +17,8 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "btnPrevRestTitle":"Previous",
                     "btnNextRestTitle":"Next",
                     "restCountLabel":"Restaurants",
+                    "getTable":"Get a table",
+                    "open_maps":"View in Google",
                     "copyright":"Copyright &copy; 2013 Hamburg Committee. All Rights Reserved."
                 }
             },
@@ -31,6 +33,8 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "btnPrevRestTitle":"הקודם",
                     "btnNextRestTitle":"הבא",
                     "restCountLabel":"מסעדות",
+                    "getTable":"הזמן שולחן",
+                    "open_maps":"צפה בגוגל",
                     "copyright":"כל הזכויות שמורות &copy; 2013 ועידת המבורג."
                 }
             }

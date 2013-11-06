@@ -20,6 +20,7 @@ define(
             currentSectionId,
             resultsRestList,
             clickTableUrl,
+            map,
             resultsCurrentRest;
 
         // Elements
@@ -104,14 +105,15 @@ define(
             });
 
             //TODO - change to jquery constants
-            $("#infoIcon").on("click", onInfoClick);
-            $("#mapIcon").on("click", onMapClick);
-            $("#open_maps").on("click", function () {
+            $infoIcon.on("click", onInfoClick);
+            $mapIcon.on("click", onMapClick);
+            $open_maps.on("click", function () {
+                utils.ga.trackEvent('maps', 'click_open_maps', "open_maps");
                 var latLng = $(this).attr("lat") + "," + $(this).attr("lng");
                 window.open("http://maps.google.com/?q=" + latLng, '_blank');
             });
 
-            $("#clickTableIcon").on("click", onClickTable);
+            $getTable.on("click", onClickTable);
         }
 
 
@@ -153,6 +155,13 @@ define(
             $noRestsLeftBack = $("#noRestsLeftBack");
             $restTip = $("#restTip");
             $footer = $("footer");
+            $infoIcon = $("#infoIcon");
+            $mapIcon=$("#mapIcon");
+            $tip_dish=$("#tip_dish");
+            $tip_seating=$("#tip_seating");
+            $tip_parking= $("#tip_parking");
+            $open_maps=$("#open_maps");
+            $getTable=$("#getTable");
         }
 
 
@@ -274,9 +283,9 @@ define(
             $restPhone.html(rest.phone);
             $restAddress.html(rest.address);
             $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
-            $("#tip_dish").html(rest.tip_dish);
-            $("#tip_seating").html(rest.tip_seating);
-            $("#tip_parking").html(rest.tip_parking);
+            $tip_dish.html(rest.tip_dish);
+            $tip_seating.html(rest.tip_seating);
+            $tip_parking.html(rest.tip_parking);
             setClickTable(rest);
 
             setGoogleMap(rest);
@@ -332,7 +341,7 @@ define(
             if (resultsCurrentRest == resultsRestList.length) {
                 resultsCurrentRest = 0;
             }
-            $("#infoIcon").click();
+            $infoIcon.click();
             displayRest();
         }
 
@@ -367,36 +376,36 @@ define(
         }
 
         function onClickTable() {
-            var n = Math.random();
-            debugger;
-            $.ajax({
-                url:"xml2json2.php?url=" + clickTableUrl,
-                success:openClickTableUrl
-            })
+            utils.ga.trackEvent("results", 'click_table', "REST_NAME_HOLDER");
 
         }
 
 
         function onInfoClick() {
+            utils.ga.trackEvent('results', 'info_click', "info");
+            //sets to false so the user cant move the map while its in opacity 0
+            map.setOptions({draggable:false});
 
             //TODO - change to jquery constants
-            if ($("#infoIcon").hasClass("sel") == false) {
+            if ($infoIcon.hasClass("sel") == false) {
                 removeSelectedClass();
                 hideAndShowOtherTabs("info");
-                $("#infoIcon").addClass("sel");
+                $infoIcon.addClass("sel");
             }
 
 
         }
 
         function onMapClick() {
-
+            utils.ga.trackEvent('results', 'maps', "map_click");
+            //sets to false so the user cant move the map while its in opacity 1
+            map.setOptions({draggable:true});
             //TODO - change to jquery constants
-            if ($("#mapIcon").hasClass("sel") == false) {
+            if ($mapIcon.hasClass("sel") == false) {
                 //setGoogleMap();
                 removeSelectedClass();
                 hideAndShowOtherTabs("map");
-                $("#mapIcon").addClass("sel");
+                $mapIcon.addClass("sel");
             }
 
 
@@ -405,79 +414,21 @@ define(
 
         function setGoogleMap(rest) {
             //set open in google maps attr
-            var restLat = $("#open_maps").attr("lat", rest.location.lat);
-            var restlng = $("#open_maps").attr("lng", rest.location.lng);
+            var restLat = $open_maps.attr("lat", rest.location.lat);
+            var restlng = $open_maps.attr("lng", rest.location.lng);
 
             console.log(rest);
 
-            /*  var initialize = function () {
-             var myLatlng = new google.maps.LatLng(rest.location.lat, rest.location.lng);
-             var parkingLatLng = new google.maps.LatLng(rest.parking.lat, rest.parking.lng);
-             var mapOptions = {
-             zoom:17,
-             center:myLatlng,
-             mapTypeId:google.maps.MapTypeId.ROADMAP
-             }
-             var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-             // TODO - duplicate another of this code for parking
-             var locationtString = '<div id="content" style="*/
-            /*width: 100px;height: 100px;*/
-            /*">' +
-             '<div id="siteNotice">' +'location'+
-             '</div>';
-
-             var locationWindow = new google.maps.InfoWindow({
-             content:locationtString
-             });
-
-             var locationMarker = new google.maps.Marker({
-             position:myLatlng,
-             map:map,
-             title:'location'
-             });
-             google.maps.event.addListener(locationMarker, 'click', function () {
-             locationWindow.open(map, locationMarker);
-             });
-
-
-             //PARKING
-             var parkingString = '<div id="content1" style="*/
-            /*width: 100px;height: 100px;*/
-            /*">' +
-             '<div id="siteNotice1">' +'parking'+
-             '</div>';
-
-             var parkingWindow = new google.maps.InfoWindow({
-             content:parkingString
-             });
-
-             var parkingMarker = new google.maps.Marker({
-             position:parkingLatLng,
-             map:map,
-             title:'parking'
-             });
-             google.maps.event.addListener(parkingMarker, 'click', function () {
-             parkingWindow.open(map, parkingMarker);
-             });
-             //until here
-
-             google.maps.event.trigger(map, 'resize');
-             setTimeout(function () {
-             map.setZoom(16);
-             }, 200);
-             }
-
-             initialize();*/
             var locations = [
                 ['Location', rest.location.lat, rest.location.lng, 2, "map"],
                 ['Parking', rest.parking.lat, rest.parking.lng, 1, "car"]
             ];
             var myLatlng = new google.maps.LatLng(rest.location.lat, rest.location.lng);
 
-            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+            map = new google.maps.Map(document.getElementById('map-canvas'), {
                 zoom:16,
                 center:myLatlng,
+                draggable: false,
                 mapTypeId:google.maps.MapTypeId.ROADMAP
             });
 
