@@ -15,7 +15,7 @@ $mailer->IsSMTP(); // telling the class to use SMTP
 
  			$mailer->SMTPSecure = "tls";
  			$mailer->Host = "smtp.gmail.com";
- 			$mailer->Port = 465;
+ 			$mailer->Port = 587;
  			$mailer->Username = "dinnerclub13@gmail.com";
  			$mailer->Password = "dinnerclub";
  			$mailer->SetFrom($customerMail,'Customer Email');

@@ -1,0 +1,226 @@
+{
+    "en":[
+        {
+            "id":"Q001",
+            "gaName":"date",
+            "vertical":"party",
+            "text":"Is it a date?",
+            "answers":[
+                {
+                    "value":"date",
+                    "text":"Yes"
+                },
+                {
+                    "value":"",
+                    "text":"No"
+                }
+            ]
+
+        },
+        {
+            "id":"Q002",
+            "gaName":"so",
+            "vertical":"party",
+            "text":"...So?",
+            "answers":[
+                {
+                    "value":"friends",
+                    "text":"Friends"
+                },
+                {
+                    "value":"family",
+                    "text":"Family"
+                },
+                {
+                    "value":"business",
+                    "text":"Business"
+                },
+                {
+                    "value":"tourists",
+                    "text":"Tourists"
+                }
+            ]
+
+        },
+        {
+            "id":"Q003",
+            "gaName":"sitting",
+            "vertical":"sitting",
+            "text":"Where would you like to sit?",
+            "answers":[
+                {
+                    "value":"table",
+                    "text":"Table"
+                },
+                {
+                    "value":"bar",
+                    "text":"Bar"
+                }
+            ]
+
+        },
+        {
+            "id":"Q004",
+            "gaName":"light",
+            "vertical":"light",
+            "text":"Let's set the mood:",
+            "answers":[
+                {
+                    "value":"dim",
+                    "text":"Dim"
+                },
+                {
+                    "value":"bright",
+                    "text":"Bright"
+                }
+            ]
+
+        },
+        {
+            "id":"Q005",
+            "gaName":"vol",
+            "vertical":"vol",
+            "text":"How about the volume?",
+            "answers":[
+                {
+                    "value":"quiet",
+                    "text":"Quiet"
+                },
+                {
+                    "value":"loud",
+                    "text":"Loud"
+                }
+            ]
+
+        },
+        {
+            "id":"Q006",
+            "gaName":"parking",
+            "vertical":"parking",
+            "text":"Looking for parking?",
+            "answers":[
+                {
+                    "value":"yes",
+                    "text":"Yes"
+                },
+                {
+                    "value":"no",
+                    "text":"No"
+                }
+            ]
+
+        }
+    ],
+    "he":[
+         {
+             "id":"Q001",
+             "gaName":"date",
+             "vertical":"party",
+             "text":"יוצאים לדייט?",
+             "answers":[
+                 {
+                     "value":"date",
+                     "text":"כן"
+                 },
+                 {
+                     "value":"",
+                     "text":"לא"
+                 }
+             ]
+
+         },
+         {
+             "id":"Q002",
+             "gaName":"so",
+             "vertical":"party",
+             "text":"...אז?",
+             "answers":[
+                 {
+                     "value":"friends",
+                     "text":"חברים"
+                 },
+                 {
+                     "value":"family",
+                     "text":"משפחה"
+                 },
+                 {
+                     "value":"business",
+                     "text":"עסקים"
+                 },
+                 {
+                     "value":"tourists",
+                     "text":"תיירים"
+                 }
+             ]
+
+         },
+         {
+             "id":"Q003",
+             "gaName":"sitting",
+             "vertical":"sitting",
+             "text":"איפה תרצו לשבת?",
+             "answers":[
+                 {
+                     "value":"table",
+                     "text":"שולחן"
+                 },
+                 {
+                     "value":"bar",
+                     "text":"על הבר"
+                 }
+             ]
+
+         },
+         {
+             "id":"Q004",
+             "gaName":"light",
+             "vertical":"light",
+             "text":"איזו אווירה?",
+             "answers":[
+                 {
+                     "value":"dim",
+                     "text":"חשוכה"
+                 },
+                 {
+                     "value":"bright",
+                     "text":"מוארת"
+                 }
+             ]
+
+         },
+         {
+             "id":"Q005",
+             "gaName":"vol",
+             "vertical":"vol",
+             "text":"מה לגבי הווליום?",
+             "answers":[
+                 {
+                     "value":"quiet",
+                     "text":"רגוע"
+                 },
+                 {
+                     "value":"loud",
+                     "text":"רועש"
+                 }
+             ]
+
+         },
+         {
+             "id":"Q006",
+             "gaName":"parking",
+             "vertical":"parking",
+             "text":"חייבים חניה?",
+             "answers":[
+                 {
+                     "value":"yes",
+                     "text":"כן"
+                 },
+                 {
+                     "value":"no",
+                     "text":"לא"
+                 }
+             ]
+
+         }
+     ]
+ }

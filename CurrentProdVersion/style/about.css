@@ -1,0 +1,246 @@
+/*** Using SmartSprites CSS sprite generator - look for "sprite" annotations next to images ***/
+/** sprite: about-sprite; sprite-image: url('../img/about-sprite.png'); sprite-layout: vertical */
+/*** "About us" ***/
+#aboutUsWrapper {
+    height: 100%;
+    width: 440px;
+    position: fixed;
+    opacity: 0.97;
+    top: 0px;
+    z-index: 20;
+    background-color: #EE2164;
+    left: -500px;
+    letter-spacing: 0;
+}
+html[dir=rtl] #aboutUsWrapper {
+    left: auto;
+    right: -500px;
+}
+#aboutUsClose {
+    width: 18px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 12px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white.png'); /** sprite-ref: about-sprite; */
+    z-index: 1;
+}
+html[dir=rtl] #aboutUsClose {
+    left: auto;
+    right: 12px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white.png'); /** sprite-ref: about-sprite; */
+}
+#aboutUsClose:hover {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white_hover.png'); /** sprite-ref: about-sprite; */
+}
+html[dir=rtl] #aboutUsClose:hover {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white_hover.png'); /** sprite-ref: about-sprite; */
+}
+#aboutUsBtn {
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    background: #cccccc;
+    cursor: pointer;
+    COLOR: white;
+    font-size: 48px;
+    line-height: 51px;
+    padding-left: 8px;
+    /*-moz-border-radius-topright: 5px;
+   -webkit-border-top-right-radius: 5px;
+   border-top-right-radius: 5px;
+   -moz-border-radius-bottomright: 5px;
+   -webkit-border-bottom-right-radius: 5px;
+   border-bottom-right-radius: 5px;*/
+    margin-top: -33px;
+    display: none;
+}
+html[dir=rtl] #aboutUsBtn {
+    left: auto;
+    right: 500px;
+    padding-left: 0;
+    padding-right: 8px;
+    /*-moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;*/
+}
+#aboutUsContentWrapper {
+    width: 436px;
+    height: 100%;
+    overflow: auto;
+}
+#aboutUsContent {
+    margin: 20px 50px;
+    width: 336px;
+}
+.para {
+    font-size: 18px;
+    color: white;
+    line-height: 26px;
+    font-weight: normal;
+    padding: 0;
+    margin: 30px 0;
+}
+.para:first-child {
+    margin-top:0;
+}
+.para:last-child {
+    margin-bottom:0;
+}
+#contactUsWrapper {
+    display: none;
+    height: 100%;
+    width: 436px;
+    opacity: 0.97;
+    position: fixed;
+    top: 0px;
+    left: -550px;
+    background-color: #778899;
+    z-index: 19;
+    letter-spacing: 0;
+}
+html[dir=rtl] #contactUsWrapper {
+    left: auto;
+    right: -550px;
+}
+#contactUsBody {
+    height: 316px;
+    color: white;
+    position: absolute;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 20px 50px;
+    width: 336px;
+}
+#contactUsBody input[type=text] {
+    height: 38px;
+    line-height: 38px;
+    margin: 0 0 8px;
+}
+#contactUsBody textarea {
+    padding-top: 4px !important;
+    resize: none;
+}
+#contactUsBody input[type=text], #contactUsBody textarea {
+    border: 1px solid #a8a8a8;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    padding: 0 5px;
+    width: 325px;
+}
+#contact_submit {
+    width: 84px;
+    height: 38px;
+    cursor: pointer;
+    margin-left: 252px;
+    margin-top: 27px;
+    position: relative;
+    text-align: center;
+    line-height: 38px;
+}
+html[dir=rtl] #contact_submit {
+    margin-left: 0;
+    margin-right: 252px;
+}
+#contact_submit.send, #contact_submit.close {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/send.png'); /** sprite-ref: about-sprite; */
+}
+#contact_submit.send:hover, #contact_submit.loader {
+    background-position: 0 0px;
+    background-repeat: no-repeat;
+    background-image:url('../img/send_hover.png'); /** sprite-ref: about-sprite; */
+}
+#mailUs {
+    cursor: pointer;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -3px;
+    vertical-align: top;
+}
+html[dir=rtl] #mailUs {
+    line-height: 42px;
+}
+#mailUs:hover {
+    color: #d3d3d3;
+}
+#mailUsClose {
+    width: 18px;
+    height: 36px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    left: 12px;
+    font-size: 40px;
+    cursor: pointer;
+    color: white;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white.png'); /** sprite-ref: about-sprite; */
+}
+html[dir=rtl] #mailUsClose {
+    left: auto;
+    right: 12px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white.png'); /** sprite-ref: about-sprite; */
+}
+#mailUsClose:hover {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/l_white_hover.png'); /** sprite-ref: about-sprite; */
+}
+html[dir=rtl] #mailUsClose:hover {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image:url('../img/r_white_hover.png'); /** sprite-ref: about-sprite; */
+}
+.loader_gif {
+    background: url(../img/ajax-loader.gif);
+    width: 43px;
+    height: 11px;
+    position: absolute;
+    top: 14px;
+    left: 272px;
+    display: none;
+}
+html[dir=rtl] .loader_gif {
+    left: auto;
+    right: 272px;
+}
+#ofLoder {
+    position: relative;
+}
+/** MOBILE - hide ***/
+@media screen and (max-width: 480px) {
+    #aboutUsWrapper {
+        display: none;
+    }
+}

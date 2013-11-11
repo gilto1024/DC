@@ -218,6 +218,11 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
      * Do the init, yes?
      */
     function init() {
+        if(utils.isMobile() == "mobile"){
+            window.location.href = "http://www.dinnerclub.co.il/mobile";
+        }
+
+
         questionsList = questions.fetch();
         view.init(this, questionsList);
 
