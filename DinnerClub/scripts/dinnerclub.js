@@ -5,7 +5,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
     //TODO mobile Contact Us
     //TODO rename "Questions" container
 
-    var MATCHING_RESTS_THRESHOLD = 0.8;
+    var MATCHING_RESTS_THRESHOLD = 0.75; //original was 0.8 when going down number is going up and down but we can consider that to be ok cause after every choice the order can change
 
     var userSelection,
         restList,
@@ -106,9 +106,9 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
 
         if (oSelection) {
             if (typeof(oSelection.selection) == 'number') {
-                restList = rests.rate(restList, oSelection.vertical, oSelection.selection, (oSelection.vertical == 'date' ? 2 : 1));
+                restList = rests.rate(restList, oSelection.vertical, oSelection.selection, (oSelection.vertical == 'date' ? 2 : 1));  //(vertical == 'party' ? 2 : 1));
             } else {
-                restList = rests.filter(restList, oSelection.vertical, true);
+                restList = rests.filter(restList, oSelection.vertical, "true");
             }
         }
 
@@ -210,6 +210,10 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         history.reset();
 
         view.removeStoryChapter(true);
+        //maybe to fix restart problem we need to reset rest score
+        for (var i = 0; i < restList.length; i++) {
+            restList[i].score = 0;
+        }
         updateView(restList);
     }
 
@@ -218,7 +222,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
      * Do the init, yes?
      */
     function init() {
-        if(utils.isMobile() == "mobile"){
+        if (utils.isMobile() == "mobile") {
             window.location.href = "http://www.dinnerclub.co.il/mobile";
         }
 
@@ -241,10 +245,10 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
         utils.ga.trackEvent('init', (utils.isMobile() ? 'mobile' : 'desktop'), utils.i18n.getLanguage());
 
         //TODO remove
-       /* currentQuestionIndex = 1;
-        updateView(restList);
+        /* currentQuestionIndex = 1;
+         updateView(restList);
 
-        view.displayResults(restList);*/
+         view.displayResults(restList);*/
     }
 
 

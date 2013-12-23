@@ -13,7 +13,7 @@ define(['utils.urlparams', 'utils.cookies', 'utils.i18n', 'mustache', 'utils.ga'
         })(navigator.userAgent || navigator.vendor || window.opera);
 
         return function() {
-            return check;
+            return true;
         }
     })();
 

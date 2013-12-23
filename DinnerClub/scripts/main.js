@@ -2,6 +2,8 @@ require.config({
     baseUrl:'scripts/',
     paths:{
         'jquery':'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min',
+        'tooltipster':'libs/jquery.tooltipster',
+        'avgrund':'libs/jquery.avgrund',
 
         "models":"../models",
         "tmpl":"../tmpl",

@@ -36,6 +36,7 @@ define(function () {
         store:store,
         retrieve:retrieve,
         remove:remove,
-        LANG:cookieName('lang')
+        LANG:cookieName('lang'),
+        vNum:cookieName('vNum')
     }
 });

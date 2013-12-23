@@ -318,13 +318,13 @@ html[dir=rtl] #restCountLabel {
     display: none;
 
     background: white;
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(68%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#00ffffff', GradientType = 0); /* IE6-9 */
+   /* background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* FF3.6+ *//*
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(68%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0))); *//* Chrome,Safari4+ *//*
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* Chrome10+,Safari5.1+ *//*
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* Opera 11.10+ *//*
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* IE10+ *//*
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* W3C *//*
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#00ffffff', GradientType = 0); *//* IE6-9 */
 
 }
 
@@ -358,6 +358,7 @@ article {
     width: 960px;
     padding: 50px 0 0;
     margin: 0 auto;
+    position: relative;
 
 }
 
@@ -396,6 +397,7 @@ html[dir=rtl] .questionBox {
 
 html[dir=rtl] .questionBoxLast {
     margin-left: 0px;
+    height: 460px;
 }
 
 .question {
@@ -455,7 +457,8 @@ html[dir=rtl] .answers li {
     -khtml-opacity: 0;
     opacity: 0;
 
-    margin-bottom: 29px;
+   /* margin-bottom: 29px;*/
+    height: 391px;
 }
 
 #restInfo a, #restInfo a:visited, #restInfo a:active {
@@ -478,25 +481,30 @@ html[dir=rtl] .answers li {
 }*/
 
 #restName {
+    line-height: 63px;
     font-size: 64px;
     letter-spacing: -4px;
     margin-bottom: 15px;
     padding: 0 3px;
-    height: 160px;
-    margin-top: -16px;
+    /*height: 160px;*/
+    margin-top: -9px;
 }
 
 html[dir=rtl] #restName {
     letter-spacing: -3px;
 }
+#restPhone{
+    margin-top: 31px;
+}
 
 #restAddress {
-    margin-bottom: 15px;
+  /*  margin-bottom: 15px;*/
     height: 60px;
 }
 
 #restNavigationPane {
     margin-bottom: 33px;
+    text-align: center;
 }
 
 #btnPrevRest, #btnRestart, #btnNextRest {
@@ -576,20 +584,30 @@ html[dir=rtl] #btnNextRest:hover {
 #restTip {
     display: none;
 }
+.storyStyle{
+    display: inline !important;
+}
 
 /*** Tabs Bar ***/
 
 #iconBar {
     width: 100px;
     height: 35px;
+    margin-bottom: 18px;
 }
 
 html[dir=rtl] .icons {
     float: right;
+    margin-left: 16px;
+}
+html[dir=ltr] .icons {
+    float: left;
+    margin-right: 16px;
 }
 
 .icons {
     float: left;
+
 }
 
 #infoIcon {
@@ -628,14 +646,17 @@ html[dir=rtl] .icons {
 }
 
 #getTable{
-    width: 115px;
+    font-size: 44px;
+    letter-spacing: -2px;
+    width: 209px;
     height: 60px;
    /* border: 2px solid black;
     border-radius: 5px;*/
     line-height: 53px;
-    text-align: center;
+  /*  text-align: center;*/
     cursor: pointer;
-    margin-right: 11px;
+  /*  margin-right: 11px;*/
+    display: none;
 }
 #getTable:hover{color: #EE2164}
 
@@ -649,17 +670,23 @@ html[dir=rtl] .icons {
 }
 
 .infoDis {
-    position: absolute;
+   /* position: absolute;*/
 
 }
 
 #map {
     opacity: 0;
-    margin-top: 8px;
+    position: absolute;
+    top: 45px;
 }
 
 #tip_price {
     margin-top: 30px;
+  /*  bottom: 0px;*/
+    position: absolute;
+}
+#dollar{
+
 }
 
 /*** NO RESTS LEFT ***/
@@ -1315,4 +1342,24 @@ ADD TO HOME CSS
     #addToHomeScreen .addToHomeShare {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAeCAQAAADu6HTYAAADPElEQVR4Xq3TX2gcRRzA8e/M7mVv2+TSNpc/TZtrY6jUGqgaSAmEChKLrYK0YH0RFC2CSCkEfCghiKU04J8qNigq6os+iQV98MHWFwVBrQQRWs21lBw5cw3NNb1/udu72RGG5Y77IzXW77D7sAwf5scyYoL6BGXSDKFZwaGpLvIUaeoCkvX1MmsM0Ny6oRSQYOLuIS+YZOpfQdqslpUxcZrzTVAz4qPwW2O3CeIwC/RSzeY6Ow1QhUrkr+YOWfEKDkEP8Rij7CHKJmrFSDHBdwGEE5wiGChPN+PnT8VdRtEIl1d4gRj/1EVe5ZSBKGh8iqQpo/Fo5+3C/gz0MYg4zgwbqday1/Q4B8BGQ45d/Hi54lakCrU5obOcidJpu1+Lg9whjabyaOYLnrIBFFaRD+xe2ybMDWY66GmP/WA9cGfGp0CWhy0wkMN8inepFiH2rV1j0NQSNQbFLRQnS8/8YSDBBpadfv4CYDub2fmeHDNAsL1MBWUel0iA+Xik6eHcyvD3vAMSU1TGuA/YRS+dD7ovCQN43GKRFCU20Kd3V/avDVVyAZ5niTEuLA5/zBGWg9EEEhfJKN200Tat8CmRAQb9+wv7soPlHt2tQorsz1uPbr0HTY4sJwrH47zJZwABBAKLMBoQXepwgTwdHCo+fXMkQ4lrxEmQ5AaXipPqDY9V2vn09tgvTPI71EEGYxM+/uMJLJ4svpgaWGKOi/xKgmqLSUGSUd5f2vIVJ/CgBaTIUsZ7ZBsn0+NzfMOXLFCXQyTcybN6ep5ZZgUOHn7jpfUpsZshdugPGf+E5zjbyHTSRyQ8xfRPPM/s63RHeuknSoT22mjmmnAOIMkUZ6D1xSfPPAfd1WFKM3sO2CMaHx8M1NjnXKHaAGGkOW0C02WeYHUz4qMtx+w5gUDS8NckYe5lHsMYwCZEPyEEmjLDZFmAS7CDviMdxyTkMNVBKEmYLvbiQQBIBBbCQG04bGQvFWz6CfsCQLWCigILFwcfkGYBiOpbYuOizTAyYyDdCtrGaRG1LCkIgMYEFhI0WqQZoSlbGRyHKe4qOx7iv2bVQW9dp4dlM/x6kmwnWQcd/Q3FCqwTEiT5s+6D5v/pb0SSHyg7uhMWAAAAAElFTkSuQmCC);
     }
+}
+
+
+
+#facebookPopShare{
+    width:160px;
+    height: 39px;
+    background: url(../img/fbShare.png) no-repeat;
+    position: absolute;
+    left: 46px;
+}
+.hny{
+    display: none;
+    background: url(../img/hny.png);
+    width: 150px;
+    height: 592px;
+    position: absolute;
+    top: -39px;
+    left: 13px;
+    z-index: 99999999;
 }

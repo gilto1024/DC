@@ -44,7 +44,8 @@ var contacts = (function () {
                 "tip":"Ideal for friends.",
                 "tip_dish":"Eat the head.",
                 "tip_seating":"Sit on head.",
-                "tip_parking":"Park in head."
+                "tip_parking":"Park in head.",
+                "menuUrl":"en menu link"
             },
             "he":{
                 "name":"קפה איטליה",
@@ -52,8 +53,11 @@ var contacts = (function () {
                 "tip":"מושלם לערב עם חברים.",
                 "tip_dish":"Eat the head.",
                 "tip_seating":"Sit on head.",
-                "tip_parking":"Park in head."
-            }
+                "tip_parking":"Park in head.",
+                "menuUrl":"en menu link"
+            },
+            "price":"0",
+            "clickTableUrl":"click table link"
         },
         "verticals":{
             "party":["friends", "family", "date"],
@@ -155,6 +159,9 @@ var contacts = (function () {
         $("#container").on("click", "#reload", function () {
             var data = collectData();
         });
+        $("#container").on("click", "#delRest", function () {
+            deleteRest();
+        });
 
 
     }
@@ -183,21 +190,25 @@ var contacts = (function () {
                     "lng":"456"
                 },
                 "en":{
-                    "name":'',
-                    "address":'',
-                    "tip":'',
+                    "name":"Café Italia",
+                    "address":"Kremintzki 6",
+                    "tip":"Ideal for friends.",
                     "tip_dish":"Eat the head.",
                     "tip_seating":"Sit on head.",
-                    "tip_parking":"Park in head."
+                    "tip_parking":"Park in head.",
+                    "menuUrl":"en menu link"
                 },
                 "he":{
-                    "name":'',
-                    "address":'',
-                    "tip":'',
+                    "name":"קפה איטליה",
+                    "address":"קרמניצקי 6",
+                    "tip":"מושלם לערב עם חברים.",
                     "tip_dish":"Eat the head.",
                     "tip_seating":"Sit on head.",
-                    "tip_parking":"Park in head."
-                }
+                    "tip_parking":"Park in head.",
+                    "menuUrl":"en menu link"
+                },
+                "price":"0",
+                "clickTableUrl":"click table link"
             },
             "ratings":{
                 "date":'',
@@ -253,7 +264,10 @@ var contacts = (function () {
         var location_lng = $($("#location_lng").find("input")[0]).val();
         var parking_location_lat = $($("#parking_location_lat").find("input")[0]).val();
         var parking_location_lng = $($("#parking_location_lng").find("input")[0]).val();
-
+        var he_menuUrl = $($("#he_menuUrl").find("input")[0]).val();
+        var en_menuUrl = $($("#en_menuUrl").find("input")[0]).val();
+        var price = $($("#price").find("input")[0]).val();
+        var clickTableUrl = $($("#clickTableUrl").find("input")[0]).val();
 
         var isRankingValid = validateRanking({
             "date":date,
@@ -287,7 +301,8 @@ var contacts = (function () {
                         "tip":en_tip,
                         "tip_dish":en_tip_dish,
                         "tip_seating":en_tip_seating,
-                        "tip_parking":en_tip_parking
+                        "tip_parking":en_tip_parking,
+                        "menuUrl":en_menuUrl
 
 
 
@@ -298,8 +313,11 @@ var contacts = (function () {
                         "tip":he_tip,
                         "tip_dish":he_tip_dish,
                         "tip_seating":he_tip_seating,
-                        "tip_parking":he_tip_parking
-                    }
+                        "tip_parking":he_tip_parking,
+                        "menuUrl":he_menuUrl
+                    },
+                    "price":price,
+                    "clickTableUrl":clickTableUrl
                 },
                 "ratings":{
                     "date":date,
@@ -327,6 +345,38 @@ var contacts = (function () {
         }
 
 
+    }
+
+    function deleteRest() {
+        var id = $("#info").attr("mediaId");
+        console.log("in del rest with id:   " + id);
+        console.log("list len before del:   " + restJson.length);
+        var restToDelete = getId(id);
+        console.log("restToDelete:   " + restToDelete);
+        restJson.splice(restToDelete, 1);
+        console.log(restJson);
+        arrangeListNumbers();
+        writeToFile(restJson);
+        console.log("list len after del:   " + restJson.length);
+        var tmplComment = $("#restTemplate").html();
+        $("#restList").empty();
+        $("#restList").html(Mustache.to_html(tmplComment, {data:restJson}));
+
+
+    }
+
+    function arrangeListNumbers() {
+        var fullNumber;
+        for (var i = 0; i < restJson.length; i++) {
+            if (i < 9) {
+                fullNumber = "REST00" + (i + 1);
+            }
+            else if (i<99){
+                fullNumber = "REST0" + (i + 1);
+            }
+            restJson[i].id = fullNumber;
+
+        }
     }
 
     function pushRestToList(singleRest) {
@@ -385,6 +435,7 @@ var contacts = (function () {
 
     function populateInfoBox(id) {
         var restToDisplay = restJson[id];
+
         console.log(restJson[id]);
 
         var tmplComment = $("#restDetailsTemplate").html();

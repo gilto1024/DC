@@ -13,13 +13,15 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "btnRestartTitle":"Restart",
                     "noRestsText":"Oops... no options left! Please go",
                     "noRestsLeftBack":"Back",
-                    "resultsHeading":"You should go to",
+                    "resultsHeading":"You should go to...",
                     "btnPrevRestTitle":"Previous",
                     "btnNextRestTitle":"Next",
                     "restCountLabel":"Restaurants",
                     "getTable":"Get a table",
                     "open_maps":"View in Google",
-                    "copyright":"Copyright &copy; 2013 Hamburg Committee. All Rights Reserved."
+                    "copyright":"Copyright &copy; 2013 Hamburg Committee. All Rights Reserved.",
+                    "infoIcon":"General",
+                    "mapIcon":"Map"
                 }
             },
             "he":{
@@ -35,7 +37,9 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "restCountLabel":"מסעדות",
                     "getTable":"הזמן שולחן",
                     "open_maps":"צפה בגוגל",
-                    "copyright":"כל הזכויות שמורות &copy; 2013 ועידת המבורג."
+                    "copyright":"כל הזכויות שמורות &copy; 2013 ועידת המבורג.",
+                    "infoIcon":"כללי",
+                    "mapIcon":"מפה"
                 }
             }
         };

@@ -58,6 +58,16 @@ html[dir=rtl] #aboutUsClose:hover {
     background-image:url('../img/r_white_hover.png'); /** sprite-ref: about-sprite; */
 }
 
+html[dir=rtl] #aboutUsBtn {
+
+    background:url('../img/abt_he.jpg') no-repeat;
+}
+
+html[dir=ltr] #aboutUsBtn {
+
+    background:url('../img/abt.jpg') no-repeat;
+}
+
 #aboutUsBtn {
     width: 22px;
     height: 50px;
@@ -71,6 +81,7 @@ html[dir=rtl] #aboutUsClose:hover {
     font-size: 48px;
     line-height: 51px;
     padding-left: 8px;
+    background: url(../img/abt.jpg) no-repeat;
 
     /*-moz-border-radius-topright: 5px;
    -webkit-border-top-right-radius: 5px;
