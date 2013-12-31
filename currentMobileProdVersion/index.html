@@ -14,7 +14,7 @@
         _gaq.push(['_setDomainName', 'none']);
         _gaq.push(['_trackPageview']);
 
-		
+
         (function () {
             var ga = document.createElement('script');
             ga.type = 'text/javascript';
@@ -33,23 +33,30 @@
 
 
     <!-- mobile & iphone related -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png"/>
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="AMC Walking Dead Story Sync">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- <meta name="viewport" content="minimal-ui">-->
 
 
     <!-- for FACEBOOK OPEN GRAPH -->
-    <meta property="og:title" content="DinnerClub" />
-    <meta property="og:image" content="http://dinnerclub.co.il/img/fb_logo.png" />
-    <meta property="og:url" content="http://www.DinnerClub.co.il/" />
-    <meta property="og:description" content="Where tonight? --- לאן יוצאים הערב?" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="DinnerClub"/>
+    <meta property="og:image" content="http://dinnerclub.co.il/img/fb_logo.png"/>
+    <meta property="og:url" content="http://www.DinnerClub.co.il/"/>
+    <meta property="og:description" content="Where tonight? --- לאן יוצאים הערב?"/>
+    <meta property="og:type" content="website"/>
 
 
     <!-- for GOOGLE -->
-    <meta name="description" content="Where to tonight? --- לאן יוצאים הערב?" />
-    <meta name="keywords" content="dinnerclub, dinner, club, דינרקלאב, דינר, קלאב" />
+    <meta name="description" content="Where to tonight? --- לאן יוצאים הערב?"/>
+    <meta name="keywords" content="dinnerclub, dinner, club, דינרקלאב, דינר, קלאב"/>
 
 
     <!--[if lt IE 8]>
@@ -72,12 +79,13 @@
 <body class="fontBold">
 
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164847676916533";
-  fjs.parentNode.insertBefore(js, fjs);
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164847676916533";
+    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <section id="languageSelectionWrapper">
@@ -87,7 +95,7 @@
 </section>
 <header>
     <div id="headerContent">
-        <div id="story" class="fontRegular" >
+        <div id="story" class="fontRegular">
             <span id="storyCursor">|</span>
         </div>
     </div>
@@ -115,15 +123,21 @@
                     <div id="restName" class="vAlignInnerContainer"></div>
                 </div>
             </a>
-            <a id="restPhoneLink" href="javascript:void(0)"><div id="restPhone"></div></a>
-            <a id="restAddressLink" href="javascript:void(0)"><div id="restAddress"></div></a>
+            <a id="restPhoneLink" href="javascript:void(0)">
+                <div id="restPhone"></div>
+            </a>
+            <a id="restAddressLink" href="javascript:void(0)">
+                <div id="restAddress"></div>
+            </a>
         </span><br/>
+
         <div id="restNavigationPane">
             <div id="btnPrevRest"></div>
+            <div id="btnInfo"></div>
             <div id="btnRestart"></div>
             <div id="btnNextRest"></div>
         </div>
-        <span id="restTip"></span>
+        <!-- <span id="restTip"></span>-->
     </article>
     <article class="placeholder"></article>
 </section>
@@ -134,12 +148,44 @@
         <span id="noRestsLeftBack">Back</span>
     </div>
 </div>
+<div id="info_layout">
+    <div id="content">
+        <div id="iconBar">
+            <div id="infoIcon" class="icons sel"></div>
+            <div id="mapIcon" class="icons"></div>
+            <div id="infoBack" class="icons"></div>
+            <!-- <div id="clickTableIcon" class="icons"></div>-->
+        </div>
+        <div id="info" class=" infoDis tabs">
+            <span id="restTip" class="storyStyle"></span>
+            <span id="tip_dish" class="storyStyle"></span>
+            <span id="tip_seating" class="storyStyle"></span>
+            <span id="tip_parking" class="storyStyle"></span></br>
+            <span id="tip_price" class="storyStyle"><img id="dollar" src=""></span>
+        </div>
+        <div id="map" class=" mapDis tabs" data="">
+            <a id="restAddressLinkMaps" href="javascript:void(0)">
+                <div id="openNativeMaps">Maps</div>
+            </a>
+            <a id="restAddressLinkWaze" href="javascript:void(0)">
+                <div id="openWazeMaps">Waze</div>
+            </a>
+            <a id="restAddressLinkGoogle" href="javascript:void(0)">
+                <div id="openWazeMaps">Google</div>
+            </a>
+
+        </div>
+    </div>
+
+
+</div>
 <footer>
     <div id="footerContent">
-        <div id="copyright" class="fontRegular"></div>
         <div id="fbLikeWrapper" dir="ltr">
-            <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="100" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+            <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="100"
+                 data-layout="button_count" data-show-faces="false" data-send="false"></div>
         </div>
+        <div id="copyright" class="fontRegular"></div>
         <div class="clear"></div>
     </div>
 </footer>

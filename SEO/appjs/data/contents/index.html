@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Contacts Crawler</title>
+    <link type="text/css" href="style/style.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://jquery.bassistance.de/validate/jquery.validate.js"></script>
+    <script src="http://jquery.bassistance.de/validate/additional-methods.js"></script>
+    <script type="text/javascript" src="js/plugins/mustache.min.js"></script>
+    <script type="text/javascript" src="js/plugins/egg.js"></script>
+    <script type="text/javascript" src="js/contacts.js"></script>
+
+
+</head>
+<body onload="setTimeout(contacts.init,1000)">
+
+<div id="container">
+
+    <div id="control">
+        <input type="file" id="files" name="files[]" multiple/>
+    </div>
+</div>
+
+</body>
+</html>

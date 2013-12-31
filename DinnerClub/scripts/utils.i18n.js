@@ -20,8 +20,12 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "getTable":"Get a table",
                     "open_maps":"View in Google",
                     "copyright":"Copyright &copy; 2013 Hamburg Committee. All Rights Reserved.",
-                    "infoIcon":"General",
-                    "mapIcon":"Map"
+                    "infoIconTitle":"General",
+                    "mapIconTitle":"Map",
+                    "restNameTitle":"Menu",
+                    "price_3Title":"Price is alright...",
+                    "price_4Title":"Price is higher than average.",
+                    "price_5Title":"Expensive but worth it."
                 }
             },
             "he":{
@@ -38,8 +42,12 @@ define(['jquery', "text!tmpl/languageSelection-tmpl.html", 'utils.urlparams', 'u
                     "getTable":"הזמן שולחן",
                     "open_maps":"צפה בגוגל",
                     "copyright":"כל הזכויות שמורות &copy; 2013 ועידת המבורג.",
-                    "infoIcon":"כללי",
-                    "mapIcon":"מפה"
+                    "infoIconTitle":"כללי",
+                    "mapIconTitle":"מפה",
+                    "restNameTitle":"תפריט",
+                    "price_3Title":"המחיר בסדר גמור...",
+                    "price_4Title":"המחיר מעל הממוצע",
+                    "price_5Title":"יקר אבל שווה"
                 }
             }
         };

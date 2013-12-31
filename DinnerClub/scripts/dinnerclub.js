@@ -123,6 +123,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
             // advance two questions if date was chosen (skip the "so" question)
             ++currentQuestionIndex;
         }
+
         updateView(restList, story[vertical][answer]);
     }
 
@@ -177,6 +178,7 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
 
         var matchingRests = rests.restsAboveThreshold(restList, MATCHING_RESTS_THRESHOLD);
 
+
         if (matchingRests.length == 0) {                                    // No mathing rests
             noRestsLeft();
         } else if (currentQuestionIndex >= questionsList.length) {          // No more questions!
@@ -222,10 +224,6 @@ define(['jquery', 'rests', 'questions', 'story', 'view', 'history', 'utils'], fu
      * Do the init, yes?
      */
     function init() {
-        if (utils.isMobile() == "mobile") {
-            window.location.href = "http://www.dinnerclub.co.il/mobile";
-        }
-
 
         questionsList = questions.fetch();
         view.init(this, questionsList);

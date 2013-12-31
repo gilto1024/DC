@@ -1,0 +1,52 @@
+{
+    "en":{
+         "party":{
+             "date":"Hello Liran,",
+             "friends":"so you need a product manager",
+             "business":"so you need a product manager",
+             "tourists":"so you need a product manager",
+             "family":"so you need a product manager"
+         },
+         "sitting":{
+             "bar":"for improving your site,",
+             "table":"for improving your site,"
+         },
+         "light":{
+             "dim":"so what do you think:",
+             "bright":"so what do you think:"
+         },
+         "vol":{
+             "quiet":"quiet place.",
+             "loud":"loud place."
+         },
+         "parking":{
+             "no":"You don't need parking.",
+             "yes":"You're desperate for parking."
+         }
+    },
+    "he":{
+        "party":{
+            "date":"יוצאים לדייט,",
+            "friends":"יוצאים עם חברים,",
+            "business":"יוצאים לפגישת עסקים,",
+            "tourists":"יוצאים עם חברים מחו\"ל,",
+            "family":"יוצאים לאכול עם המשפחה,"
+        },
+        "sitting":{
+            "bar":"יושבים על הבר",
+            "table":"מזמינים שולחן"
+        },
+        "light":{
+            "dim":"במקום חשוך",
+            "bright":"במקום מואר"
+        },
+        "vol":{
+            "quiet":"ושקט.",
+            "loud":"ורועש."
+        },
+        "parking":{
+            "no":"לא חייבים חניה.",
+            "yes":"חייבים חניה."
+        }
+    }
+}

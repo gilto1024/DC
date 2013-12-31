@@ -1,6 +1,6 @@
 define(
-    ['jquery', 'tooltipster', 'avgrund', 'plugins', 'utils', 'text!tmpl/questions-tmpl.html', 'vendor/add2home'],
-    function ($, tooltipster, avgrund, plugins, utils, tmplQuestions, add2home) {
+    ['jquery', 'plugins', 'utils', 'text!tmpl/questions-tmpl.html', 'vendor/add2home'],
+    function ($, plugins, utils, tmplQuestions, add2home) {
 
         //TODO override TAB key
         //TODO media queries - missing "570-960" query
@@ -46,25 +46,26 @@ define(
             $btnNextRest,
             $noRestsLeft,
             $noRestsLeftBack,
+            $textMadeInTLV,
             $footer;
 
 
         function bindEvents() {
 
 
-            $('#show').avgrund({
-                height:200,
-                holderClass:'custom',
-                showClose:true,
-                showCloseText:'close',
-                onBlurContainer:'.container',
-                template:'<p>היי, בא לכאן הרבה?</p>' +
-                    '<p>שתף לחברים למה לא?</p>' +
-                    '<div>' +
-                    '<div id="facebookPopShare"></div>' +
-                    ' <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="160" data-layout="button_count" data-show-faces="false" data-send="false"></div>' +
-                    '</div>'
-            });
+            /*$('#show').avgrund({
+             height:200,
+             holderClass:'custom',
+             showClose:true,
+             showCloseText:'close',
+             onBlurContainer:'.container',
+             template:'<p>היי, בא לכאן הרבה?</p>' +
+             '<p>שתף לחברים למה לא?</p>' +
+             '<div>' +
+             '<div id="facebookPopShare"></div>' +
+             ' <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="160" data-layout="button_count" data-show-faces="false" data-send="false"></div>' +
+             '</div>'
+             });*/
 
             window.onorientationchange = function () {
                 window.scrollTo(0, 1);
@@ -78,13 +79,13 @@ define(
 
 
             //SHARE COOKIE FEATURE
-            visitsNumber = utils.cookies.retrieve(utils.cookies.vNum) || "0";
-            if (visitsNumber % 10 == 0 && visitsNumber != 0) {
-                $('#show').click();
-            }
-            var newNumOfVisits = parseInt(visitsNumber);
-            newNumOfVisits++;
-            utils.cookies.store(utils.cookies.vNum, newNumOfVisits.toString(), 365);
+            /* visitsNumber = utils.cookies.retrieve(utils.cookies.vNum) || "0";
+             if (visitsNumber % 10 == 0 && visitsNumber != 0) {
+             $('#show').click();
+             }
+             var newNumOfVisits = parseInt(visitsNumber);
+             newNumOfVisits++;
+             utils.cookies.store(utils.cookies.vNum, newNumOfVisits.toString(), 365);*/
 
             //SHARE COOKIE FEATURE
 
@@ -126,9 +127,9 @@ define(
             $btnRestart.on('click', onRestart);
             $btnNextRest.on('click', onNextResult);
             $noRestsLeftBack.on('click', onBack);
-            $("#facebookPopShare").on('click', function () {
-                window.open('http://www.facebook.com/sharer/sharer.php?u=www.dinnerclub.co.il&t=Hello&summary=YOUR_SUMMARY', 'facebook_share', 'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
-            });
+            /* $("#facebookPopShare").on('click', function () {
+             window.open('http://www.facebook.com/sharer/sharer.php?u=www.dinnerclub.co.il&t=Hello&summary=YOUR_SUMMARY', 'facebook_share', 'height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no');
+             });*/
 
             $restLink.on('click', function () {
                 utils.ga.trackEvent('results', 'click_rest_name', $(this).data('rest-name'));
@@ -146,6 +147,11 @@ define(
             });
 
             $getTable.on("click", onClickTable);
+            $textMadeInTLV.on("click", function () {
+                utils.ga.trackEvent('site', 'click_madeintlv', "madeintlv");
+                window.open("http://madeintlv.org", '_blank');
+            })
+
         }
 
 
@@ -195,6 +201,7 @@ define(
             $open_maps = $("#open_maps");
             $getTable = $("#getTable");
             $dollar = $("#dollar");
+            $textMadeInTLV = $("#textMadeInTLV");
         }
 
 
@@ -211,14 +218,14 @@ define(
 
             dcController.onUserSelection(vertical, answer);
 
-            // HAPPY NEW YEAR
-            if (answer == "table" || answer == "bar") {
-                setTimeout(function(){$(".hny").fadeIn()},400);
-            }
-            else{
-                $(".hny").hide("fast");
-            }
-            //HAPPEY NEW YEAR
+            /* // HAPPY NEW YEAR
+             if (answer == "table" || answer == "bar") {
+             setTimeout(function(){$(".hny").fadeIn()},400);
+             }
+             else{
+             $(".hny").hide("fast");
+             }
+             //HAPPEY NEW YEAR*/
         }
 
 
@@ -321,19 +328,42 @@ define(
 
 
         function setRestInfo(rest) {
-            console.log(rest);
             $restName.html(rest.name).blur();
             $restPhone.html(rest.phone);
             $restAddress.html(rest.address);
-            $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
+            if ((rest.menuUrl).toLowerCase() != "false") {
+                $restLink.attr('href', rest.menuUrl).data('rest-name', rest.gaName);
+            }
+            else {
+                $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
+            }
+
             $tip_dish.html(rest.tip_dish);
             $tip_seating.html(rest.tip_seating);
             $tip_parking.html(rest.tip_parking);
-            $dollar.attr("src", "img/" + (parseInt(rest.price)) + ".png");
+            var dir = utils.i18n.getDirection();
+            $dollar.attr("src", "img/" + (parseInt(rest.price) + "_" + dir) + ".png");
+            var texts = utils.i18n.getStaticTexts();
+            var price = parseInt(rest.price);
+            var priceTitle;
+            switch (price) {
+                case 3:
+                    priceTitle = texts.price_3Title;
+                    break;
+                case 4:
+                    priceTitle = texts.price_4Title;
+                    break;
+                case 5:
+                    priceTitle = texts.price_5Title;
+                    break;
+
+            }
+            $dollar.attr('title', priceTitle);
 
             setClickTable(rest);
 
             setGoogleMap(rest);
+
             if (utils.isMobile()) {
                 $restAddressLink.attr('href', "http://maps.apple.com/?q=israel, Tel aviv, " + rest.address);
                 $restPhoneLink.attr("href", "tel:" + rest.phone);
@@ -342,6 +372,8 @@ define(
 
 
         function displayRest() {
+
+            $("#map").animate({top:"-369px"}, "fast"); //hide map so it wont work when hidden
             var rest = $.extend({}, resultsRestList[resultsCurrentRest].info, resultsRestList[resultsCurrentRest].info[utils.i18n.getLanguage()]);
 
             utils.ga.trackEvent('results', 'show_rest', rest.gaName);
@@ -397,7 +429,11 @@ define(
 
 
         function onNextResult() {
-            $('#show').click();
+            //SHARE CONCEPT AFTER A FEW CLICKS HERE
+            //$('#show').click();
+            //SHARE CONCEPT AFTER A FEW CLICKS HERE
+
+
             utils.ga.trackEvent('results', 'click', 'next');
 
             resultsCurrentRest++;
@@ -411,6 +447,7 @@ define(
 
 
         function onRestart() {
+            $infoIcon.click();
             utils.ga.trackEvent('btnRestart', 'click', $(currentSectionId).data('ga-name'));
 
             dcController.reset();
@@ -423,9 +460,11 @@ define(
 
 
         function onBack() {
-            //HAPPY NEW YEAR
-            $(".hny").hide("fast");
-            //HAPPY NEW YEAR
+            $infoIcon.click();
+            /* //HAPPY NEW YEAR
+             $(".hny").hide("fast");
+             //HAPPY NEW YEAR*/
+            /* $infoIcon.click();*/
             utils.ga.trackEvent($(this).attr('id'), 'click', $(currentSectionId).data('ga-name'));
 
             $noRestsLeft.fadeOut();
@@ -443,8 +482,9 @@ define(
         }
 
         function onClickTable() {
-            utils.ga.trackEvent("results", 'click_table', "REST_NAME_HOLDER");
             var url = $getTable.attr("data");
+            utils.ga.trackEvent("results", 'click_table', "url");
+
             window.open(url, '_blank');
         }
 
@@ -478,11 +518,12 @@ define(
 
 
         function setGoogleMap(rest) {
+
             //set open in google maps attr
             $open_maps.attr("lat", rest.location.lat);
             $open_maps.attr("lng", rest.location.lng);
 
-            console.log(rest);
+
             if (rest.parking.lat && rest.location.lat == rest.parking.lat) {
                 //means that there is no parking
                 var locations = [
@@ -494,8 +535,14 @@ define(
                 $.ajax({
                     url:"http://maps.googleapis.com/maps/api/geocode/json?latlng=" + rest.parking.lat + "," + rest.parking.lng + "&sensor=true",
                     success:function (res) {
-                        //var address = res.results[0].address_components[0].long_name + "," + res.results[1].address_components[0].long_name;
-                        var address = res.results[0].formatted_address;
+                        var address;
+                        if (res.results[0]) {
+                            address = res.results[0].formatted_address;
+                        }
+                        else {
+                            address = "Parking";
+                        }
+
                         var locations = [
                             ['Location', rest.location.lat, rest.location.lng, 2, "Location"],
                             [address, rest.parking.lat, rest.parking.lng, 1, "Parking"]
@@ -515,7 +562,7 @@ define(
             var myLatlng = new google.maps.LatLng(rest.location.lat, rest.location.lng);
 
             map = new google.maps.Map(document.getElementById('map-canvas'), {
-                zoom:16,
+                zoom:15,
                 center:myLatlng,
                 draggable:false,
                 mapTypeId:google.maps.MapTypeId.ROADMAP
@@ -539,6 +586,16 @@ define(
                     }
                 })(marker, i));
             }
+            /* //hide the map so it won't work in bg
+
+             $("#map").animate({"opacity":"0"}, function () {
+             $("#map").css("display", "none");
+             */
+            /*$(this).hide();*/
+            /*
+             map.setZoom(15);
+             });*/
+
 
         }
 
@@ -559,13 +616,17 @@ define(
         function hideAndShowOtherTabs(id) {
             $(".tabs").each(function (index) {
                 $(this).animate({"opacity":"0"}, function () {
-                    $(this).css("display", "none");
-                    /*$(this).hide();*/
+
+                    $(this).css("width", "0px");
+                    $(this).css("height", "0px");
+                    $("#map").animate({top:"-369px"}, "fast");
                 });
             });
-            $("#" + id).animate({"opacity":"1"}, function () {
-                $(this).css("display", "block");
-                /*$(this).hide();*/
+            $("#" + id).animate({"width":"280px", "height":"309px"}, 10, function () {
+                $("#" + id).animate({opacity:1}, 10);
+                if (id == "map") {
+                    $("#" + id).animate({top:"47px"}, 10);
+                }
             });
         }
 
@@ -593,19 +654,14 @@ define(
                 }
             }
 
-            // specific handling for titles
-            $btnBack.attr('title', texts.btnBackTitle).addClass("tooltip").tooltipster();
-            $btnPrevRest.attr('title', texts.btnPrevRestTitle).addClass("tooltip").tooltipster();
-            $btnRestart.attr('title', texts.btnRestartTitle).addClass("tooltip").tooltipster();
-            $btnNextRest.attr('title', texts.btnNextRestTitle).addClass("tooltip").tooltipster();
-            $mapIcon.attr('title', texts.mapIcon).addClass("tooltip").tooltipster().html("");
-            $infoIcon.attr('title', texts.infoIcon).addClass("tooltip").tooltipster().html("");
 
-            /* $btnBack.attr('data-tip', texts.btnBackTitle);
-             $btnBack.tipr();
-             $btnPrevRest.attr('data-tip', texts.btnPrevRestTitle);
-             $btnRestart.attr('data-tip', texts.btnRestartTitle);
-             $btnNextRest.attr('data-tip', texts.btnNextRestTitle);*/
+            $btnBack.attr('title', texts.btnBackTitle);
+            $btnPrevRest.attr('title', texts.btnPrevRestTitle);
+            $btnRestart.attr('title', texts.btnRestartTitle);
+            $btnNextRest.attr('title', texts.btnNextRestTitle);
+            $mapIcon.attr('title', texts.mapIconTitle);
+            $infoIcon.attr('title', texts.infoIconTitle);
+            $("#restName").attr('title', texts.restNameTitle);
 
             utils.i18n.languageSelector.init();
         }

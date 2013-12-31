@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="rtl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script type="text/javascript">
+        if (location.href.indexOf('dir=rtl') != -1) {
+            document.getElementsByTagName("html")[0].dir = "rtl";
+        } else if (location.href.indexOf('dir=ltr') != -1) {
+            document.getElementsByTagName("html")[0].dir = "ltr";
+        }
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39583513-1']);
+        _gaq.push(['_setDomainName', 'none']);
+        _gaq.push(['_trackPageview']);
+
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <title>DinnerClub</title>
+
+    <link type="text/css" rel="stylesheet" href="style/style.css"/>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
+
+
+    <!-- mobile & iphone related -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png"/>
+
+
+    <!-- for FACEBOOK OPEN GRAPH -->
+    <meta property="og:title" content="DinnerClub"/>
+    <meta property="og:image" content="http://dinnerclub.co.il/img/fb_logo.png"/>
+    <meta property="og:url" content="http://www.DinnerClub.co.il/"/>
+    <meta property="og:description" content="Where tonight? --- לאן יוצאים הערב?"/>
+    <meta property="og:type" content="website"/>
+
+
+    <!-- for GOOGLE -->
+    <meta name="description" content="Where tonight? --- לאן יוצאים הערב?"/>
+    <meta name="keywords" content="dinnerclub, dinner, club, דינרקלאב, דינר, קלאב"/>
+
+
+    <!--[if lt IE 8]>
+    <script type="text/javascript" src="scripts/vendor/json2.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/respond.min.js"></script>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script type="text/javascript">window.html5 || document.write('<script type="text/javascript" src="scripts/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+
+    <!-- FONTS -->
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/d881eb45-9306-4170-9f68-3a39abe8fcfd.js"></script>
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <!-- Main -->
+    <script src="scripts/libs/require.js" type="text/javascript" data-main="scripts/main"></script>
+
+</head>
+<body class="fontBold">
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=164847676916533";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!--<section id="languageSelectionWrapper">
+    <div id="languageSelectionContent">
+        <ul id="languageSelectionMenu" class="fontRegular" dir="ltr"></ul>
+    </div>
+</section>-->
+<header>
+    <div id="headerContent">
+        <div id="story" class="fontRegular">
+            <span id="storyCursor">|</span>
+        </div>
+    </div>
+</header>
+<div id="subHeaderAnchor" class="hidden">
+    <div id="btnBackContainer">
+        <div id="btnBack" style="display: none"></div>
+    </div>
+</div>
+<div id="restCountWrapper" class="hidden">
+    <div id="restCountContent">
+        <div id="restCount"></div>
+        <div id="restCountLabelWrapper">
+            <div id="restCountLabel">Products:</div>
+        </div>
+    </div>
+</div>
+<section id="questions" class="hidden">
+    <article class="placeholder"></article>
+    <article id="results" data-ga-name="results">
+        <div class="questionBox"  style="display: none">
+            <span id="resultsHeading">You should go to</span><br/>
+        </div>
+        <div class="questionBox" style="display: none">
+            <div id="restInfo">
+                <a id="restLink" href="javascript:void(0)" target="_blank">
+                    <span id="restName"></span>
+                </a>
+                <br/>
+                <a id="restPhoneLink" href="javascript:void(0)">
+                    <span id="restPhone"></span>
+                </a>
+                <br/>
+                <a id="restAddressLink" href="javascript:void(0)">
+                    <span id="restAddress"></span>
+                </a>
+
+                <br/>
+            </div>
+            <br/>
+
+            <div id="restNavigationPane">
+                <div id="btnPrevRest"></div>
+                <div id="btnRestart"></div>
+                <div id="btnNextRest"></div>
+            </div>
+            <div id="getTable" data="">Get a table</div>
+        </div>
+        <div class="questionBox questionBoxLast"  style="display: none">
+            <div id="iconBar">
+                <div id="infoIcon" class="icons sel"></div>
+                <div id="mapIcon" class="icons"></div>
+               <!-- <div id="clickTableIcon" class="icons"></div>-->
+            </div>
+            <div id="info" class=" infoDis tabs">
+                <span id="restTip"></span>
+                <span id="tip_dish"></span>
+                <span id="tip_seating"></span>
+                <span id="tip_parking"></span></br>
+                <span id="tip_price"><img id="dollar" src=""></span>
+            </div>
+            <div id="map" class=" mapDis tabs" data="">
+                <div id="map-canvas" style="width:280px;height:280px;"></div>
+                <div id="open_maps" lat="" lng="">View in Google</div>
+            </div>
+
+        </div>
+
+
+    </article>
+    <article class="placeholder"></article>
+</section>
+<div id="noRestsLeft">
+    <div id="noRestsOverlay"></div>
+    <div id="noRestsLeftContent">
+        <span id="noRestsText">Oops no options left... please go</span><br/>
+        <span id="noRestsLeftBack">Back</span>
+    </div>
+</div>
+<footer>
+    <div id="footerContent">
+        <div id="copyright" class="fontRegular"></div>
+        <div id="fbLikeWrapper" dir="ltr">
+            <div class="fb-like" data-href="https://www.facebook.com/Dinnerclubcoil" data-width="100"
+                 data-layout="button_count" data-show-faces="false" data-send="false"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</footer>
+</body>
+</html>

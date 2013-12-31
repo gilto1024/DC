@@ -6,9 +6,9 @@ define(
         //TODO media queries - missing "570-960" query
         //TODO landscape orientation mefia query for bigger mobile phones (Idoz's)
         //TODO hide rest count in the second questions as well
-	    //TODO refactor the isMobile & isSmallScreen dependant code
+        //TODO refactor the isMobile & isSmallScreen dependant code
         //TODO refactor language-menu code to utils.i18n
-	    //TODO show language on results screen (mobile)
+        //TODO show language on results screen (mobile)
         //TODO GA when clicking address, phone
         //TODO replace drop down arrow in language selection menu
         //TODO bugfix - bold text when running as web-app
@@ -43,6 +43,8 @@ define(
             $btnNextRest,
             $noRestsLeft,
             $noRestsLeftBack,
+            $infoIcon,
+            $mapIcon,
             $footer;
 
 
@@ -84,7 +86,7 @@ define(
                             $("#languageSelectionWrapper").fadeOut();
                             $footer.fadeOut();
                         }
-                        else{
+                        else {
                             $restCountContent.show();
                         }
                     }
@@ -100,6 +102,64 @@ define(
                 utils.ga.trackEvent('results', 'click_rest_name', $(this).data('rest-name'));
 
                 return true; // allow normal behavior
+            });
+
+
+            //TODO - click on info open info layout
+            $btnInfo.on("click",openInfo);
+            $infoIcon.on("click", onInfoClick);
+            $mapIcon.on("click", onMapClick);
+            $("#infoBack").on("click",onInfoDown);
+        }
+
+        function onInfoDown(){
+            $("#info_layout").animate({top:"1000px"},1000);
+        }
+
+        function openInfo() {
+            $("#info_layout").animate({top:"68px"},1000);
+        }
+
+        function onInfoClick() {
+            utils.ga.trackEvent('results', 'info_click', "info");
+
+            //TODO - change to jquery constants
+            if ($infoIcon.hasClass("sel") == false) {
+                removeSelectedClass();
+                hideAndShowOtherTabs("info");
+                $infoIcon.addClass("sel");
+            }
+
+
+        }
+
+        function onMapClick() {
+            utils.ga.trackEvent('results', 'maps', "map_click");
+
+            if ($mapIcon.hasClass("sel") == false) {
+                //setGoogleMap();
+                removeSelectedClass();
+                hideAndShowOtherTabs("map");
+                $mapIcon.addClass("sel");
+            }
+        }
+
+        function hideAndShowOtherTabs(id) {
+            $(".tabs").each(function (index) {
+                $(this).animate({"opacity":"0"}, function () {
+                    $(this).css("display", "none");
+                    /*$(this).hide();*/
+                });
+            });
+            $("#" + id).animate({"opacity":"1"}, function () {
+                $(this).css("display", "block");
+                /*$(this).hide();*/
+            });
+        }
+
+        function removeSelectedClass() {
+            $(".icons").each(function (index) {
+                $(this).removeClass("sel");
             });
         }
 
@@ -142,6 +202,15 @@ define(
             $noRestsLeftBack = $("#noRestsLeftBack");
             $restTip = $("#restTip");
             $footer = $("footer");
+            $infoIcon = $("#infoIcon");
+            $mapIcon = $("#mapIcon");
+            $tip_dish = $("#tip_dish");
+            $tip_seating = $("#tip_seating");
+            $tip_parking = $("#tip_parking");
+            $open_maps = $("#open_maps");
+            /* $getTable = $("#getTable");*/
+            $dollar = $("#dollar");
+            $btnInfo = $("#btnInfo");
         }
 
 
@@ -259,20 +328,35 @@ define(
 
 
         function setRestInfo(rest) {
+            console.log(rest);
             $restName.html(rest.name).blur();
             $restPhone.html(rest.phone);
+
             $restAddress.html(rest.address);
             $restLink.attr('href', rest.url).data('rest-name', rest.gaName);
+            $tip_dish.html(rest.tip_dish);
+            $tip_seating.html(rest.tip_seating);
+            $tip_parking.html(rest.tip_parking);
+            $restTip.html(rest.tip);
+            var dir = utils.i18n.getDirection();
+            $dollar.attr("src", "img/" + (parseInt(rest.price) + "_" + dir) + ".png");
+            /*  $restName.html(rest.name).blur();
+             $restPhone.html(rest.phone);
+             $restAddress.html(rest.address);
+             $restLink.attr('href', rest.url).data('rest-name', rest.gaName);*/
 
             if (utils.isMobile()) {
                 $restAddressLink.attr('href', "http://maps.apple.com/?q=israel, Tel aviv, " + rest.address);
+                $("#restAddressLinkMaps").attr('href', "http://maps.apple.com/?q=israel, Tel aviv, " + rest.address);
+                $("#restAddressLinkWaze").attr('href', "waze://?q=israel, Tel aviv," + rest.address);
+                $("#restAddressLinkGoogle").attr('href', "comgooglemaps://?q=israel, Tel aviv," + rest.address);
                 $restPhoneLink.attr("href", "tel:" + rest.phone);
             }
         }
 
 
         function displayRest() {
-            var rest = resultsRestList[resultsCurrentRest].info;
+            var rest = $.extend({}, resultsRestList[resultsCurrentRest].info, resultsRestList[resultsCurrentRest].info[utils.i18n.getLanguage()]);
 
             utils.ga.trackEvent('results', 'show_rest', rest.gaName);
 
@@ -303,7 +387,7 @@ define(
             if (resultsCurrentRest < 0) {
                 resultsCurrentRest = resultsRestList.length - 1;
             }
-
+            $infoIcon.click();
             displayRest();
         }
 
@@ -316,7 +400,7 @@ define(
             if (resultsCurrentRest == resultsRestList.length) {
                 resultsCurrentRest = 0;
             }
-
+            $infoIcon.click();
             displayRest();
         }
 
@@ -377,6 +461,25 @@ define(
             utils.i18n.languageSelector.init();
         }
 
+        function alertSize() {
+            var myWidth = 0, myHeight = 0;
+            if (typeof( window.innerWidth ) == 'number') {
+                //Non-IE
+                myWidth = window.innerWidth;
+                myHeight = window.innerHeight;
+            } else if (document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight )) {
+                //IE 6+ in 'standards compliant mode'
+                myWidth = document.documentElement.clientWidth;
+                myHeight = document.documentElement.clientHeight;
+            } else if (document.body && ( document.body.clientWidth || document.body.clientHeight )) {
+                //IE 4 compatible
+                myWidth = document.body.clientWidth;
+                myHeight = document.body.clientHeight;
+            }
+           /* window.alert('Width = ' + myWidth);
+            window.alert('Height = ' + myHeight);*/
+        }
+
         /**
          * render questions HTML, bind event listeners
          *
@@ -384,6 +487,8 @@ define(
          * @param {Array} questionsList
          */
         function init(controller, questionsList) {
+
+            alertSize();
             utils.log("[VIEW]", 'init');
             dcController = controller;
 
@@ -400,7 +505,15 @@ define(
                 $("#restCountWrapper").addClass('iphone');
             }
 
-            window.scrollTo(0, 1);
+            //window.scrollTo(0, 1);
+            window.addEventListener("load", function () {
+                // Set a timeout...
+                setTimeout(function () {
+                    // Hide the address bar!
+                    window.scrollTo(0, 1);
+                }, 0);
+            });
+
             $(".hidden").removeClass('hidden');
         }
 

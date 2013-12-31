@@ -318,13 +318,13 @@ html[dir=rtl] #restCountLabel {
     display: none;
 
     background: white;
-   /* background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* FF3.6+ *//*
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(68%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0))); *//* Chrome,Safari4+ *//*
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* Chrome10+,Safari5.1+ *//*
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* Opera 11.10+ *//*
-    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* IE10+ *//*
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* W3C *//*
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#00ffffff', GradientType = 0); *//* IE6-9 */
+    /* background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* FF3.6+ *//*
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(68%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0))); *//* Chrome,Safari4+ *//*
+     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* Chrome10+,Safari5.1+ *//*
+     background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* Opera 11.10+ *//*
+     background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* IE10+ *//*
+     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 68%, rgba(255, 255, 255, 0) 100%); *//* W3C *//*
+     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#00ffffff', GradientType = 0); *//* IE6-9 */
 
 }
 
@@ -457,8 +457,9 @@ html[dir=rtl] .answers li {
     -khtml-opacity: 0;
     opacity: 0;
 
-   /* margin-bottom: 29px;*/
-    height: 391px;
+    /* margin-bottom: 29px;*/
+   /* height: 391px;*/
+    height: 360px;
 }
 
 #restInfo a, #restInfo a:visited, #restInfo a:active {
@@ -493,12 +494,13 @@ html[dir=rtl] .answers li {
 html[dir=rtl] #restName {
     letter-spacing: -3px;
 }
-#restPhone{
+
+#restPhone {
     margin-top: 31px;
 }
 
 #restAddress {
-  /*  margin-bottom: 15px;*/
+    /*  margin-bottom: 15px;*/
     height: 60px;
 }
 
@@ -584,15 +586,16 @@ html[dir=rtl] #btnNextRest:hover {
 #restTip {
     display: none;
 }
-.storyStyle{
+
+.storyStyle {
     display: inline !important;
 }
 
 /*** Tabs Bar ***/
 
 #iconBar {
-    width: 100px;
-    height: 35px;
+    width: 104px;
+    height: 33px;
     margin-bottom: 18px;
 }
 
@@ -600,6 +603,7 @@ html[dir=rtl] .icons {
     float: right;
     margin-left: 16px;
 }
+
 html[dir=ltr] .icons {
     float: left;
     margin-right: 16px;
@@ -611,28 +615,30 @@ html[dir=ltr] .icons {
 }
 
 #infoIcon {
-    background: url(../img/info.png);
-    width: 33px;
+    background: url(../img/info_sel.png);
+    width: 48px;
     height: 33px;
     cursor: pointer;
 }
 
 #infoIcon.sel {
-    background: url(../img/info_sel.png);
+    background: url(../img/info.png);
 }
 
 #mapIcon {
-    background: url(../img/map.png);
+    background: url(../img/map_sel.png);
     width: 22px;
     height: 33px;
     cursor: pointer;
 }
 
 #mapIcon.sel {
-    background: url(../img/map_sel.png);
+    background: url(../img/map.png);
 }
-#open_maps{
+
+#open_maps {
     cursor: pointer;
+    font-size: 18px;
 }
 
 #clickTableIcon {
@@ -641,24 +647,28 @@ html[dir=ltr] .icons {
     height: 33px;
     cursor: pointer;
 }
-#clickTableIcon.sel{
+
+#clickTableIcon.sel {
     background: url(../img/table.png);
 }
 
-#getTable{
+#getTable {
     font-size: 44px;
     letter-spacing: -2px;
     width: 209px;
     height: 60px;
-   /* border: 2px solid black;
-    border-radius: 5px;*/
+    /* border: 2px solid black;
+     border-radius: 5px;*/
     line-height: 53px;
-  /*  text-align: center;*/
+    /*  text-align: center;*/
     cursor: pointer;
-  /*  margin-right: 11px;*/
+    /*  margin-right: 11px;*/
     display: none;
 }
-#getTable:hover{color: #EE2164}
+
+#getTable:hover {
+    color: #EE2164
+}
 
 #map-canvas, #map_canvas {
     height: 280px;
@@ -670,7 +680,7 @@ html[dir=ltr] .icons {
 }
 
 .infoDis {
-   /* position: absolute;*/
+    /* position: absolute;*/
 
 }
 
@@ -682,10 +692,13 @@ html[dir=ltr] .icons {
 
 #tip_price {
     margin-top: 30px;
-  /*  bottom: 0px;*/
+    /*  bottom: 0px;*/
     position: absolute;
+    z-index: 9999999;
+
 }
-#dollar{
+
+#dollar {
 
 }
 
@@ -1344,16 +1357,15 @@ ADD TO HOME CSS
     }
 }
 
-
-
-#facebookPopShare{
-    width:160px;
+#facebookPopShare {
+    width: 160px;
     height: 39px;
     background: url(../img/fbShare.png) no-repeat;
     position: absolute;
     left: 46px;
 }
-.hny{
+
+.hny {
     display: none;
     background: url(../img/hny.png);
     width: 150px;
@@ -1362,4 +1374,39 @@ ADD TO HOME CSS
     top: -39px;
     left: 13px;
     z-index: 99999999;
+}
+
+#aMadeInTLV {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    bottom: 36px;
+    text-align: left;
+}
+
+#madeInTLV {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+#textMadeInTLV {
+    padding: 0;
+    width: 76px;
+    overflow: hidden;
+    position: absolute;
+    color: gray;
+    font-size: 12px;
+    right: auto;
+    left: 0;
+    text-align: left;
+    line-height: 11px;
+    cursor: pointer;
+}
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
 }

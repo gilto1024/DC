@@ -16,7 +16,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $.ajax({
-                'url':'restList4.txt',
+                'url':'10_26_2013restList.txt',
                 'dataType':'text',
                 success:convert,
                 error:function () {
@@ -36,6 +36,9 @@
 
 
             console.log(JSON.stringify(oldList));
+            var tmp = JSON.stringify(oldList);
+
+            window.open("data:text/csv;charset=utf-8," + escape(tmp));
         }
 
         function addRatings(restObj) {
