@@ -11,3 +11,11 @@ node_modules
 PROD
 _tmp
 web.config
+
+# DinnerClub v2 client generated files
+DinnerClubv2/node_modules
+DinnerClubv2/bower_components
+DinnerClubv2/dist
+DinnerClubv2/src/styles/style.css
+DinnerClubv2/.tmp
+DinnerClubv2/.sass-cache
