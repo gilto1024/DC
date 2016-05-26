@@ -1,0 +1,25 @@
+{
+  "name": "react-test",
+  "description": "Testing React",
+  "main": "app.js",
+  "authors": [
+    "Elizabeth Marr"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "demo"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.1.0"
+  }
+}
