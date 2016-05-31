@@ -1,5 +1,8 @@
 // Bootstrap 3 - grid only - originaly regular css that was renamed to scss - generated online via getbootstrap
 @import "bootstrap-grid/bootstrap";
 
+// Colors and some sizes
+@import "variables";
+
 // Overall layout and basic styling
 @import "base";
