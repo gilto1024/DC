@@ -1,0 +1,128 @@
+.dc-app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: {
+    bottom: $footer-height;
+  }
+
+  letter-spacing: -1px;
+
+  @extend .container-fluid;
+}
+
+.dc-app-filters-display {
+  @extend .row;
+
+  height: $filters-display-height;
+  background: {
+    color: $background-color-filters;
+  }
+
+  padding: {
+    top: 15px;
+    bottom: 15px;
+
+    left: 5%;
+    right: 5%;
+  }
+
+  .filters-text {
+    letter-spacing: -1px;
+    font-size: 24px;
+    line-height: 25px;
+  }
+
+  .cursor {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+
+    -webkit-animation: storyCursorBlink 1s infinite; /* Safari 4+ */
+    -moz-animation: storyCursorBlink 1s infinite; /* Fx 5+ */
+    -o-animation: storyCursorBlink 1s infinite; /* Opera 12+ */
+    animation: storyCursorBlink 1s infinite; /* IE 10+ */
+  }
+}
+
+.dc-app-filters-nav {
+  @extend .row;
+
+  $arrow-height: 20px;
+  $arrow-width: 40px;
+
+  width: 100%;
+  height: $filters-nav-height;
+  text-align: center;
+
+  .arrow-up-icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: $arrow-width/2 solid transparent;
+    border-right: $arrow-width/2 solid transparent;
+    border-bottom: $arrow-height solid $arrow-up-color;
+    // For vertical centering of the arrow inside nav
+    margin: {
+      top: ($filters-nav-height - $arrow-height)/2;
+    }
+
+    &:hover,
+    &:active {
+      border-bottom: $arrow-height solid $arrow-up-color-hover;
+    }
+  }
+
+}
+
+.dc-app-filters {
+  @extend .row;
+
+  .dc-app-filters-questions {
+    @extend .col-sm-12;
+    @extend .col-md-8;
+  }
+
+  .dc-app-filters-restaurants {
+    @extend .col-sm-12;
+    @extend .col-md-4;
+  }
+
+  .filters-question {
+    @extend  .col-md-6;
+
+    font-size: 46px;
+    line-height: 44px;
+  }
+
+  .filters-answers {
+    @extend  .col-md-6;
+
+    li {
+      cursor: pointer;
+      font-size: 64px;
+      line-height: 72px;
+    }
+  }
+
+  .restaurants-label {
+    font-size: 20px;
+  }
+
+  .restaurants-num {
+    font-size: 164px;
+  }
+}
+
+.dc-app-footer {
+  position: fixed;
+  width: 100%;
+  height: $footer-height;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}

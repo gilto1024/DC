@@ -1,4 +1,11 @@
 $footer-height: 30px;
+$filters-display-height: 90px;
+$filters-nav-height: 50px;
 
 $background-color: #fcfcfc;
 $main-font-color: #0a0a0a;
+
+$background-color-filters: #eeeeee;
+
+$arrow-up-color: $main-font-color;
+$arrow-up-color-hover: lighten($main-font-color, 30%);
