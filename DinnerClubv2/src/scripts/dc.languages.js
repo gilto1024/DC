@@ -17,7 +17,7 @@
                 "restCountLabel":"Restaurants",
                 "getTable":"Get a table",
                 "open_maps":"View in Google",
-                "copyright":"Copyright &copy; 2013 Hamburg Committee. All Rights Reserved.",
+                "copyright":"Copyright © 2013 Hamburg Committee. All Rights Reserved.",
                 "infoIconTitle":"General",
                 "mapIconTitle":"Map",
                 "restNameTitle":"Menu",
@@ -39,7 +39,7 @@
                 "restCountLabel":"מסעדות",
                 "getTable":"הזמן שולחן",
                 "open_maps":"צפה בגוגל",
-                "copyright":"כל הזכויות שמורות &copy; 2013 ועידת המבורג.",
+                "copyright":"כל הזכויות שמורות © 2013 ועידת המבורג.",
                 "infoIconTitle":"כללי",
                 "mapIconTitle":"מפה",
                 "restNameTitle":"תפריט",
@@ -102,6 +102,19 @@
             }
 
             return _langs;
+        },
+        getStaticText: function(key) {
+            var _text = '',
+                _static = _data[this.getLanguage()].static[key];
+
+            if (_static) {
+                _text = _static;
+            }
+
+            return _text;
+        },
+        getDirection: function() {
+            return _data[this.getLanguage()].dir;
         }
     };
 })(window.DC);

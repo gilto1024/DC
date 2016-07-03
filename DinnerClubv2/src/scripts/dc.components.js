@@ -41,6 +41,15 @@
         }
     }
 
+    class Footer extends React.Component {
+        render() {
+            return (
+              <div className="footer-copyright">{this.props.text}</div>
+            );
+        }
+    }
+
     DC.LanguagesMenu = LanguagesMenu;
+    DC.Footer = Footer;
 
 })(window.DC, window.React);
