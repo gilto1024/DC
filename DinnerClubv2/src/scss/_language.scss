@@ -1,0 +1,53 @@
+.dc-language {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  letter-spacing: -1px;
+
+  .language-menu {
+    position: absolute;
+    width: 50px;
+    height: 24px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    color: white;
+    font-size: 14px;
+
+    -moz-transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+
+    &.open {
+      height: 50px;
+    }
+
+    li {
+      height: 24px;
+      width: 55px;
+      background: #BEBEBE;
+      margin: 0 0 1px 0;
+      padding: 3px 11px 5px;
+      cursor: pointer;
+      letter-spacing: 0;
+      line-height: 16px;
+
+      &.selected {
+        background-repeat: no-repeat;
+        background-position: 31px 9px;
+        background-image: url('../images/img-sprite.png');
+        background-position: left -0px;
+      }
+
+      &:hover,
+      &:active {
+        background-color: #8F8F8F;
+      }
+    }
+  }
+}

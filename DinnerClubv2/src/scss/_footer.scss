@@ -1,0 +1,9 @@
+// Footer includes copy text and facebook likes - outside dc-app
+.dc-app-footer {
+  position: fixed;
+  width: 100%;
+  height: $footer-height;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+}

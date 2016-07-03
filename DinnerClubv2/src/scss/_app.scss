@@ -1,3 +1,4 @@
+// Container for the entire app - and React starting point
 .dc-app {
   position: fixed;
   width: 100%;
@@ -9,13 +10,10 @@
   }
 
   letter-spacing: -1px;
-
-  @extend .container-fluid;
 }
 
+// Gray area displaying the filters text
 .dc-app-filters-display {
-  @extend .row;
-
   height: $filters-display-height;
   background: {
     color: $background-color-filters;
@@ -27,6 +25,10 @@
 
     left: 5%;
     right: 5%;
+  }
+
+  .display-text {
+    @extend .container;
   }
 
   .filters-text {
@@ -49,8 +51,9 @@
   }
 }
 
+// The arrow up showing up after the question and navigates the filters back
 .dc-app-filters-nav {
-  @extend .row;
+  @extend .container;
 
   $arrow-height: 20px;
   $arrow-width: 40px;
@@ -76,24 +79,41 @@
       border-bottom: $arrow-height solid $arrow-up-color-hover;
     }
   }
-
 }
 
+// Questions + Answers and restaurants count display
 .dc-app-filters {
-  @extend .row;
+  @extend .container;
+
+  .padding-0 {
+    padding: {
+      left: 0px;
+      right: 0px;
+    }
+  }
 
   .dc-app-filters-questions {
-    @extend .col-sm-12;
+    @extend .col-xs-12;
+    @extend .col-sm-6;
     @extend .col-md-8;
+
+    text-align: left;
+    margin: {
+      bottom: 30px;
+    };
   }
 
   .dc-app-filters-restaurants {
-    @extend .col-sm-12;
+    @extend .col-xs-12;
+    @extend .col-sm-6;
     @extend .col-md-4;
+
+    text-align: right;
   }
 
   .filters-question {
     @extend  .col-md-6;
+    @extend .padding-0;
 
     font-size: 46px;
     line-height: 44px;
@@ -101,6 +121,7 @@
 
   .filters-answers {
     @extend  .col-md-6;
+    @extend .padding-0;
 
     li {
       cursor: pointer;
@@ -110,19 +131,45 @@
   }
 
   .restaurants-label {
+    display: inline-block;
     font-size: 20px;
+
+    vertical-align: top;
   }
 
   .restaurants-num {
+    display: inline-block;
     font-size: 164px;
+    line-height: 124px;
+  }
+
+  @media (min-width: 768px) {
+    // xs
+  }
+
+  @media (min-width: 992px) {
+    // md
+  }
+
+  @media (min-width: 1200px) {
+    // lg
   }
 }
 
-.dc-app-footer {
-  position: fixed;
-  width: 100%;
-  height: $footer-height;
-  left: 0;
-  bottom: 0;
-  text-align: center;
+// Restaurants display after the questions
+.dc-app-restaurants {
+  @extend .container;
+
+  .dc-app-restaurants-display {
+    @extend .row;
+
+
+  }
+
+  .dc-app-restaurants-nav {
+    @extend .row;
+
+    height: $filters-nav-height;
+    text-align: center;
+  }
 }
