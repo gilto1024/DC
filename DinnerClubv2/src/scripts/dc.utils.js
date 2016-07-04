@@ -28,7 +28,7 @@
     })();
 
     _cookies = (function () {
-        var cookiePrefix = "dc2_";
+        var cookiePrefix = "dc_";
 
         function cookieName(name) {
             return cookiePrefix + name;
