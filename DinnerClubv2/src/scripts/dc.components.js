@@ -44,7 +44,7 @@
     class Footer extends React.Component {
         render() {
             return (
-              <div className="footer-copyright">{this.props.text}</div>
+                <span className="footer-copyright">{this.props.text}</span>
             );
         }
     }
