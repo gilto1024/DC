@@ -86,15 +86,21 @@
         componentDidMount() {
             // Cache jquery ref
             this.$counter = $(this.refs.restaurantsCount);
+            this.$component = $(this.refs.panel);
         }
         componentWillUnmount() {
             // Clean up
         }
         shouldComponentUpdate(nextProps, nextState) {
-            if (nextProps.count != this.props.count) {
-                this.update(nextProps.count);
+            if (nextProps.data.show != this.props.data.show) {
+                nextProps.data.show?
+                    this.refs.panel.className = "dc-app-filters-restaurants" :
+                    this.refs.panel.className = "dc-app-filters-restaurants hidden";
             }
-            // We'll do the updatin' via jQuery counter animation
+            if (nextProps.data.count != this.props.data.count) {
+                this.update(nextProps.data.count);
+            }
+            // We'll do the updatin' via jQuery
             return false;
         }
         update(_count) {
@@ -110,20 +116,21 @@
                             this.innerHTML = Math.round(num);
                         },
                         complete:function () {
-                            this.innerHTML = Math.round(count);
+                            this.innerHTML = Math.round(_count);
                         }
                     });
             }
         }
         render() {
+            var _className = this.props.data.show? "dc-app-filters-restaurants" : "dc-app-filters-restaurants hidden";
             return (
-                <div className="dc-app-filters-restaurants">
+                <div className={_className} ref="panel">
                     <span className="restaurants-label">
-                        Restaurants
+                        {this.props.data.label}
                     </span>
                     <span ref="restaurantsCount"
                           className="restaurants-num" >
-                        {this.props.count}
+                        {this.props.data.count}
                     </span>
                 </div>
             );
@@ -132,16 +139,38 @@
 
     // The gray panel where story progresses as user anwers questions
     class Story extends  React.Component {
+        constructor(props) {
+            super(props);
+        }
+        componentDidMount() {
+            // Cache jquery ref
+            this.$component = $(this.refs.story);
+        }
+        componentWillUnmount() {
+            // Clean up
+        }
+        shouldComponentUpdate(nextProps, nextState) {
 
-        shouldDisplayCursor() {
-            return true;
+            // Empty story
+            this.$component.empty();
+
+            // Append current text
+            $("<span class='chapter'>"+ nextProps.data.current +"</span>")
+                .appendTo(this.$component)
+
+            // Add new chapter if any
+            $("<span class='chapter'></span>").appendTo(this.$component)
+                .yotyper({ text:nextProps.data.new }, this.$component);
+
+            // We'll do the updatin' via jQuery
+            return false;
         }
         render() {
             return (
                 <div className="dc-app-filters-display">
                     <div className="display-text">
-                        <span id="story" className="filters-text">You're going on a date.</span>
-                        {this.shouldDisplayCursor()? <span className="filters-text cursor">|</span> : null}
+                        <span ref="story" className="filters-text">{this.props.data.current + this.props.data.new}</span>
+                        <span className="filters-text cursor">|</span>
                     </div>
                 </div>
             )
@@ -150,10 +179,17 @@
 
     // The arrow up - to go undo verticals
     class StoryNav extends React.Component {
+        constructor(props) {
+            super(props);
+            this.backClickHandler = this.backClickHandler.bind(this);
+        }
+        backClickHandler() {
+            this.props.callback();
+        }
         render() {
             return (
                 <div className="dc-app-filters-nav">
-                    <span className="arrow-up-icon"></span>
+                    <span className="arrow-up-icon" onClick={this.backClickHandler}></span>
                 </div>
             )
         }
@@ -169,14 +205,11 @@
             this.props.callback(value);
         }
         render() {
-            var obj = {
-                question: 'What is?',
-                answers: [ {text: 'YESSS', value: 'yes'}, {text: 'NOOOOO', value: 'no'}]
-            };
             return (
                 <div className="dc-app-filters">
-                    <Question data={this.props.data} callback={this.answerClickHandler}/>
-                    <RestaurantsCounter count="0"/>
+                    <Question data={this.props.data.q}
+                              callback={this.answerClickHandler}/>
+                    <RestaurantsCounter data={this.props.data.rests}/>
                 </div>
             )
         }
@@ -187,17 +220,22 @@
         constructor(props) {
             super(props);
             this.answerCallbackHandler = this.answerCallbackHandler.bind(this);
+            this.goBackCallbackHandler = this.goBackCallbackHandler.bind(this);
         }
         answerCallbackHandler(value) {
             this.props.callbacks.answer(value);
         }
+        goBackCallbackHandler() {
+            this.props.callbacks.goback();
+        }
         render() {
+            var _data = this.props.data;
             return (
                 <span>
-                    <Story />
-                    <StoryNav />
-                    {this.props.data.isQuestionsPhase?
-                        <StoryQuestions callback={this.answerCallbackHandler} data={this.props.data.data}/> : null}
+                    <Story data={_data.story}/>
+                    <StoryNav callback={this.goBackCallbackHandler}/>
+                    {_data.isQuestionsPhase?
+                        <StoryQuestions callback={this.answerCallbackHandler} data={_data.questionData}/> : null}
                 </span>
             )
         }

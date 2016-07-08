@@ -74,6 +74,8 @@
       top: ($filters-nav-height - $arrow-height)/2;
     }
 
+    cursor: pointer;
+
     &:hover,
     &:active {
       border-bottom: $arrow-height solid $arrow-up-color-hover;
@@ -109,6 +111,10 @@
     @extend .col-md-4;
 
     text-align: right;
+
+    &.hidden {
+      visibility: hidden;
+    }
   }
 
   .filters-question {

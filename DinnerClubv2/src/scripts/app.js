@@ -30,23 +30,20 @@
 
     function setLanguageForData() {
         DC.data.story.setLanguage(DC.languages.getLanguage());
+        DC.data.questions.setLanguage(DC.languages.getLanguage());
     }
 
     function initApp() {
-        _state = new DC.State({
-            langCode: DC.languages.getLanguage(),
-            story: DC.data.story,
-            questions: DC.data.questions,
-            restaurants: DC.data.restaurants
-        });
+        _state = new DC.State(DC.languages.getLanguage());
 
         renderApp();
     }
 
     function renderApp() {
-        console.log(DC.data.questions.getData());
+        console.log(DC.data.story.getData());
         var _callbacks = {
-            answer: reactAnswerCallback
+            answer: reactAnswerCallback,
+            goback: reactGoBackCallback
         };
         ReactDOM.render(
             <DC.DCApp callbacks={_callbacks} data={_state.getReactState()}/>,
@@ -58,33 +55,16 @@
     function reactAnswerCallback(value) {
         console.log('whaaat ' + value);
 
-        var _dummy = {
-            isQuestionsPhase: true,
-            data: {
-                question: 'Soooo?',
-                answers: [
-                    {
-                        text: 'Family',
-                        value: 'fam'
-                    },
-                    {
-                        text: 'Business',
-                        value: 'business'
-                    }
-                ]
-            }
-        };
-
-        var _callbacks = {
-            answer: reactAnswerCallback
-        };
-        ReactDOM.render(
-            <DC.DCApp callbacks={_callbacks} data={_dummy}/>,
-            document.getElementById('dcApp')
-        );
+        _state.ingestAnswer(value);
+        renderApp();
     }
     // Callbacks from React App - Back arrow click
+    function reactGoBackCallback() {
+        console.log('go back ');
 
+        _state.prevQuestion();
+        renderApp();
+    }
 
     init();
     // Wait for data for main app

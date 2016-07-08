@@ -3,7 +3,7 @@
 
     var _storyUrl = 'data/story.json',
         _questionsUrl = 'data/questions.json',
-        _restaurantsUrl = '',
+        _restaurantsUrl = 'data/restaurants.json',
         _isReady = false,
         _readynessInterval,
         _intervalIterationsMax = 50,
@@ -37,7 +37,7 @@
                 _lang = _langCode;
             },
             getData: function() {
-                return _data;
+                return _data[_lang];
             }
         }
     })();
@@ -70,21 +70,37 @@
                 _lang = _langCode;
             },
             getData: function() {
-                return _data;
+                return _data[_lang];
             }
         }
     })();
 
     var _Restaurants = (function() {
-        var _data = {};
+        var _data;
 
         // API
         var _isReady = function() {
             return (_data !== null);
         };
 
+        // Load data
+        $.ajax({
+            url: _restaurantsUrl,
+            dataType: 'json',
+            cache: false,
+            success: function(data) {
+                _data = data;
+            }.bind(this),
+            error: function(xhr, status, err) {
+                console.error(_questionsUrl, status, err.toString());
+            }.bind(this)
+        });
+
         return {
-            isReady: _isReady
+            isReady: _isReady,
+            getData: function() {
+                return _data;
+            }
         }
     })();
 
