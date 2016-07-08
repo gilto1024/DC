@@ -287,19 +287,19 @@
         var _ingestAnswer = function(answerValue) {
             var _question = _questions[_currentQuestionIndex];
 
-            // Set current story (not getting typed)
-            _storyTextCurrent = _getVerticalsStory();
-
             // Add answer to verticals
             if (answerValue !== '' && answerValue !== null) {
+                // Set current story (not getting typed)
+                _storyTextCurrent = _getVerticalsStory();
+
                 _verticals[_question.vertical] = answerValue;
+
+                // Calculate rests
+                _processVerticals();
+
+                // Set newly added text to story
+                _storyTextNew = _story[_question.vertical][answerValue];
             }
-
-            // Calculate rests
-            _processVerticals();
-
-            // Set newly added text to story
-            _storyTextNew = _story[_question.vertical][answerValue];
 
             // Bump question
             _nextQuestion();
