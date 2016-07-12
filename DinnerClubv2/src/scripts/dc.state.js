@@ -270,11 +270,22 @@
             _currentQuestionIndex--;
             _currentQuestionIndex = Math.max(0, _currentQuestionIndex);
 
+            // Adjustment for going back from rests to last question
+            if (_haveFullStory()) {
+                _currentQuestionIndex = _questions.length - 1;
+            }
+
+            // Adjustment for party vertical
+            if (_currentQuestionIndex === 1) {
+                _currentQuestionIndex = 0;
+            }
+
             var _question = _questions[_currentQuestionIndex];
 
             // Undo current questions vertical
             _verticals[_question.vertical] = null;
             delete _verticals[_question.vertical];
+
 
             // Set current story (not getting typed)
             _storyTextCurrent = _getVerticalsStory();
