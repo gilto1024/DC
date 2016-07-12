@@ -230,7 +230,7 @@
             var _storyText = '';
             for (var _vertical in _verticals) {
                 var _verticalVal = _verticals[_vertical];
-                _storyText += _story[_vertical][_verticalVal];
+                _storyText += (_story[_vertical][_verticalVal] + ' ');
             }
 
             return _storyText;

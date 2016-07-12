@@ -51,6 +51,15 @@
   }
 }
 
+// Adjustments for RTL
+.rtl {
+  .dc-app-filters-display {
+    .display-text {
+      direction: rtl;
+    }
+  }
+}
+
 // The arrow up showing up after the question and navigates the filters back
 .dc-app-filters-nav {
   @extend .container;
@@ -159,6 +168,23 @@
 
   @media (min-width: 1200px) {
     // lg
+  }
+}
+
+// Adjustments for RTL
+.rtl {
+  .dc-app-filters {
+    direction: rtl;
+    font-weight: bold;
+
+    .dc-app-filters-questions {
+      float: right;
+      text-align: right;
+    }
+
+    .filters-question {
+      float: right;
+    }
   }
 }
 
