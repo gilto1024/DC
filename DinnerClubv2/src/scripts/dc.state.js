@@ -328,41 +328,52 @@
                 _oRestaurants,
                 _isQuestionsPhase = !_haveFullStory();
 
-            console.log('>>> _haveFullStory? ' + _haveFullStory())
-
             // Calculate Story object
             _oStory = {
                 current: _storyTextCurrent,
                 new: _storyTextNew,
                 showCursor: _isQuestionsPhase
             };
+            _oState.story = _oStory;
+            _oState.isQuestionsPhase = _isQuestionsPhase;
+            _oState.isFirstQuestion = (_currentQuestionIndex === 0);
 
-            // Calculate Question object
-            _oQuestion = {
-                rests: {
-                    count: _matchingRests.length,
-                    label: _getStaticRestaurantsText(),
-                    show: (_currentQuestionIndex > 0)
-                },
-                q: {
-                    question: _question.text,
-                    answers: _question.answers
-                }
-            };
+            if (_isQuestionsPhase) {
+                // Calculate Question object
+                _oQuestion = {
+                    rests: {
+                        count: _matchingRests.length,
+                        label: _getStaticRestaurantsText(),
+                        show: (_currentQuestionIndex > 0)
+                    },
+                    q: {
+                        question: _question.text,
+                        answers: _question.answers
+                    }
+                };
 
-            var _dummy = {
-                story: _oStory,
-                isQuestionsPhase: _isQuestionsPhase,
-                questionData: _oQuestion
-            };
+                _oState.questionData = _oQuestion;
+            } else {
+                // Calculate Restaurants object
+                _oRestaurants = _restsBrain.restsAboveThreshold(_restList);
 
-            return _dummy;
+                _oState.restaurantsData = _oRestaurants;
+            }
+
+            return _oState;
+        };
+
+        var _reset = function() {
+            _currentQuestionIndex = 0;
+            _verticals = {};
+            _restsBrain.reset(_restList);
         };
 
         return {
             getReactState: _getReactState,
             prevQuestion: _prevQuestion,
-            ingestAnswer: _ingestAnswer
+            ingestAnswer: _ingestAnswer,
+            reset: _reset
         }
     };
 

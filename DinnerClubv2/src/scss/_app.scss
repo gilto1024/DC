@@ -90,6 +90,11 @@
       border-bottom: $arrow-height solid $arrow-up-color-hover;
     }
   }
+
+  &.hidden {
+    display: block !important;
+    visibility: hidden;
+  }
 }
 
 // Questions + Answers and restaurants count display

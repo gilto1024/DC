@@ -43,7 +43,8 @@
         console.log(DC.data.story.getData());
         var _callbacks = {
             answer: reactAnswerCallback,
-            goback: reactGoBackCallback
+            goback: reactGoBackCallback,
+            reset: reactResetCallback
         };
         ReactDOM.render(
             <DC.DCApp callbacks={_callbacks} data={_state.getReactState()}/>,
@@ -63,6 +64,14 @@
         console.log('go back ');
 
         _state.prevQuestion();
+        renderApp();
+    }
+
+    // Callbacks from React App - Reset button click (restaurants phase)
+    function reactResetCallback() {
+        console.log('reset');
+
+        _state.reset();
         renderApp();
     }
 

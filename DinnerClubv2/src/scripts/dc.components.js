@@ -187,8 +187,9 @@
             this.props.callback();
         }
         render() {
+            var _className = this.props.show? "dc-app-filters-nav" : "dc-app-filters-nav hidden";
             return (
-                <div className="dc-app-filters-nav">
+                <div className={_className}>
                     <span className="arrow-up-icon" onClick={this.backClickHandler}></span>
                 </div>
             )
@@ -215,12 +216,47 @@
         }
     }
 
+    // The restaurants display panel
+    class RestaurantsCarousel extends React.Component {
+        render() {
+            return (
+                <div class="dc-app-restaurants">
+                    <div class="dc-app-restaurants-display">
+                        <div class="restaurants-go-to">
+                            You should go to...
+                        </div>
+                        <div class="restaurants-info">
+                            <h1>Tapas 1 Ha'am</h1>
+                            <p>
+                                <span id="restaurantPhoneNum">03-5666966</span>
+                                <span id="restaurantAddress">Ehad Ha'am 27</span>
+                            </p>
+                            <h3>Get a table</h3>
+                        </div>
+                        <div class="restaurants-description">
+                            <ul class="restaurants-description-tabs">
+                                <li></li>
+                            </ul>
+                            <div class="restaurants-description-content">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dc-app-restaurants-nav">
+
+                    </div>
+                </div>
+            )
+        }
+    }
+
     // The app itself (without static content)
     class DCApp extends React.Component {
         constructor(props) {
             super(props);
             this.answerCallbackHandler = this.answerCallbackHandler.bind(this);
             this.goBackCallbackHandler = this.goBackCallbackHandler.bind(this);
+            this.resetCallbackHandler = this.resetCallbackHandler.bind(this);
         }
         answerCallbackHandler(value) {
             this.props.callbacks.answer(value);
@@ -228,14 +264,20 @@
         goBackCallbackHandler() {
             this.props.callbacks.goback();
         }
+        resetCallbackHandler() {
+            this.props.callbacks.reset();
+        }
         render() {
             var _data = this.props.data;
             return (
                 <span>
-                    <Story data={_data.story}/>
-                    <StoryNav callback={this.goBackCallbackHandler}/>
+                    {
+                        _data.isFirstQuestion? null : <Story data={_data.story}/>
+                    }
+                    <StoryNav callback={this.goBackCallbackHandler} show={!_data.isFirstQuestion}/>
                     {_data.isQuestionsPhase?
-                        <StoryQuestions callback={this.answerCallbackHandler} data={_data.questionData}/> : null}
+                        <StoryQuestions callback={this.answerCallbackHandler} data={_data.questionData}/>
+                        : <RestaurantsCarousel callback={this.resetCallbackHandler} data={_data.restaurantsData}/> }
                 </span>
             )
         }
@@ -243,10 +285,6 @@
 
     DC.LanguagesMenu = LanguagesMenu;
     DC.Footer = Footer;
-    DC.Question = Question;
-    DC.RestaurantsCounter = RestaurantsCounter;
-    DC.StoryQuestions = StoryQuestions;
-
     DC.DCApp = DCApp;
 
 })(window.DC, window.React, window.jQuery);
