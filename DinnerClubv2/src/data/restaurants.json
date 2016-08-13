@@ -1,0 +1,3997 @@
+[
+  {
+    "id": "REST001",
+    "info": {
+      "phone": "03-6856859",
+      "url": "http://www.messa.co.il",
+      "location": {
+        "lat": "32.070395",
+        "lng": "34.7867"
+      },
+      "parking": {
+        "lat": "32.07106",
+        "lng": "34.785689"
+      },
+      "en": {
+        "name": "Messa",
+        "address": "HaArba'a 19",
+        "tip": "A place with a heavier business feel.",
+        "tip_dish": "All dishes are done to perfection, especially the sea bass. ",
+        "tip_seating": "No preffered seating we recommend. ",
+        "tip_parking": "There is paid parking nearby.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=5681&txtNavID=3&txtItemID=60071"
+      },
+      "he": {
+        "name": "×ž×¡×”",
+        "address": "×”××¨×‘×¢×” 19",
+        "tip": "×ž×§×•× ×œ××¨×•×—×ª ×¢×¨×‘ ×¢×¡×§×™×ª ×‘××•×™×¨×” ×™×•×§×¨×ª×™×ª.",
+        "tip_dish": "×”×›×œ ×¤×” ×¢×©×•×™ ×”×™×˜×‘, ×”×œ×‘×¨×§ ×‘×ž×™×•×—×“. ",
+        "tip_seating": "×”×™×ž× ×¢×• ×ž×™×©×™×‘×” ×‘×‘×¨ ×”×ž×¨×›×–×™ ×”××¨×•×š.",
+        "tip_parking": "×™×© ×—× ×™×•× ×™× ×¤×¨×˜×™×™× ×‘×¨×—×•×‘ ×”××¨×‘×¢×”.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=5681&txtNavID=3&txtItemID=60026"
+      },
+      "price": "5",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "3",
+      "family": "4",
+      "business": "5",
+      "tourists": "4",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST002",
+    "info": {
+      "phone": "03-6425854",
+      "url": "http://www.joya.co.il/he/home/default.aspx",
+      "location": {
+        "lat": "32.070403",
+        "lng": "34.783085"
+      },
+      "parking": {
+        "lat": "32.069884",
+        "lng": "34.785952"
+      },
+      "en": {
+        "name": "Joya",
+        "address": "HaArba'a 5",
+        "tip": "A Casual italian place, quiet and simple.",
+        "tip_dish": "Oder the Sophia Loren, beautiful and yummy. ",
+        "tip_seating": "As for a corner table inside.",
+        "tip_parking": "There's a free parking lot in the evenings, at the school nearby or a paid lot. ",
+        "menuUrl": "http://www.rest.co.il/_uploads/joya/311212/TelAviv_menu_winter2013_web.pdf"
+      },
+      "he": {
+        "name": "×’'×•×™×”",
+        "address": "×”××¨×‘×¢×” 5",
+        "tip": "×ž×§×•× ×©×§×˜ ×•× ×¢×™× ×œ×ž×©×¤×—×” ××• ×—×‘×¨×™× ×‘×ž×™×•×—×“. ",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×”×¤×™×¦×” ×¡×•×¤×™×” ×œ×•×¨×Ÿ.  ",
+        "tip_seating": "×¢×“×™×£ ×©×•×œ×—×Ÿ ×¤×™× ×ª×™.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×—×™× ×ž×™ ×‘×‘×™×ª ×”×¡×¤×¨ ×”×¡×ž×•×š ××• ×—× ×™×•×Ÿ ×‘×ª×©×œ×•×.",
+        "menuUrl": "http://www.rest.co.il/_uploads/joya/311212/TelAviv_menu_winter2013_web.pdf"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "4",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST003",
+    "info": {
+      "phone": "03-5166516",
+      "url": "http://www.herbertsamuel.co.il/default.asp?PageID=5",
+      "location": {
+        "lat": "32.064104",
+        "lng": "34.762216"
+      },
+      "parking": {
+        "lat": "32.064104",
+        "lng": "34.762216"
+      },
+      "en": {
+        "name": "Herbert Samuel",
+        "address": "Kaufmann 6",
+        "tip": "This is a place to come at sunset.",
+        "tip_dish": "Try the Balkan shrimp salad.",
+        "tip_seating": "Ask to sit at the top level, near the windows. ",
+        "tip_parking": "There's valet parking if you call them up. ",
+        "menuUrl": "http://www.herbertsamuel.co.il/?categoryId=95068"
+      },
+      "he": {
+        "name": "×”×¨×‘×¨×˜ ×¡×ž×•××œ",
+        "address": "×§×•×™×¤×ž×Ÿ 6",
+        "tip": "×ž×§×•× × ×¤×œ× ×œ×‘×•× ×‘×©×§×™×¢×”.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×¡×œ×˜ ×”×©×¨×™×ž×¤×¡ ×”×‘×œ×§× ×™. ",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×‘×§×•×ž×” ×”×¢×œ×™×•× ×” ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×™×© ×©×™×¨×•×ª ×—× ×™×™×ª ×•××œ×˜ ×× ×ž×ª×§×©×¨×™×.",
+        "menuUrl": "http://www.herbertsamuel.co.il/?categoryId=95068"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×”×¨×‘×¨×˜-×¡×ž×•××œ.aspx"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "3",
+      "family": "5",
+      "business": "5",
+      "tourists": "5",
+      "table": "5",
+      "bar": "5",
+      "light": "3",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST004",
+    "info": {
+      "phone": "03-5226464",
+      "url": "http://www.raphaeltlv.co.il/",
+      "location": {
+        "lat": "32.077803",
+        "lng": "34.767434"
+      },
+      "parking": {
+        "lat": "32.078037",
+        "lng": "34.767002"
+      },
+      "en": {
+        "name": "Raphael",
+        "address": "Yarkon 87",
+        "tip": "A place for fine dining with a great view.",
+        "tip_dish": "Order the lamb chops. ",
+        "tip_seating": "If you're coming with friends, order the round table.",
+        "tip_parking": "There is enough parking at the London Square paid lot nearby.",
+        "menuUrl": "http://raphaeltlv.co.il/?pid=3001"
+      },
+      "he": {
+        "name": "×¨×¤××œ",
+        "address": "×™×¨×§×•×Ÿ 87",
+        "tip": "×ž×¡×¢×“×” ×•×ª×™×§×” ×•×™×§×¨×” ×ž×•×œ ×”×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×¦×œ×¢×•×ª ×”×˜×œ×”.",
+        "tip_seating": "×× ××ª× ×‘××™× ×™×•×ª×¨ ×ž×—×ž×™×©×”, ×‘×§×©×• ××ª ×”×©×•×œ×—×Ÿ ×”×¢×’×•×œ.",
+        "tip_parking": "×—× ×™×” ×‘×—× ×™×•×Ÿ ×›×™×›×¨ ×œ×•× ×“×•×Ÿ.",
+        "menuUrl": "http://raphaeltlv.co.il/?pid=14"
+      },
+      "price": "5",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "3",
+      "family": "5",
+      "business": "5",
+      "tourists": "5",
+      "table": "5",
+      "bar": "3",
+      "light": "2",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST005",
+    "info": {
+      "phone": "03-5621172",
+      "url": "http://www.onami.co.il/he/home/default.aspx",
+      "location": {
+        "lat": "32.070375",
+        "lng": "34.784492"
+      },
+      "parking": {
+        "lat": "32.069884",
+        "lng": "34.785952"
+      },
+      "en": {
+        "name": "Onami",
+        "address": "HaArba'a 18",
+        "tip": "A high end Japanese restaurant.",
+        "tip_dish": "Go for the sashimi specials.",
+        "tip_seating": "At the tables near the windows, not the inner space. ",
+        "tip_parking": "There is nearby paid parking.",
+        "menuUrl": "http://www.onami.co.il/he/menu/EnglishMenu.aspx?ChannelID=2&DirectoryID=2"
+      },
+      "he": {
+        "name": "××•× ×ž×™",
+        "address": "×”××¨×‘×¢×” 18",
+        "tip": ".×”×™×¤× ×™×ª ×”×•×ª×™×§×”, ×œ× ×œ×¤×¡×¤×¡ ×¦'×•×™×” × ×—×ž×“×”",
+        "tip_dish": "×œ×›×• ×¢×œ ×ž× ×•×ª ×”×¡×©×™×ž×™ ×”×ž×™×•×—×“×•×ª, ×× ×›×‘×¨, ××– ×›×‘×¨. ",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×‘×©×•×œ×—× ×•×ª ×œ×™×“ ×”×—×œ×•× ×•×ª, ×œ× ×‘××–×•×¨ ×”×¤× ×™×ž×™.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×‘×ª×©×œ×•× ×§×¨×•×‘.",
+        "menuUrl": "http://www.onami.co.il/he/menu/default.aspx?ChannelID=2&DirectoryID=2"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-××•× ×ž×™.aspx"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "4",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "3",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST006",
+    "info": {
+      "phone": "03-6240484",
+      "url": "http://www.tapeo.co.il/he/TLV/home.aspx",
+      "location": {
+        "lat": "32.070374",
+        "lng": "34.784405"
+      },
+      "parking": {
+        "lat": "32.07106",
+        "lng": "34.785689"
+      },
+      "en": {
+        "name": "Tapeo",
+        "address": "HaArba'a 16",
+        "tip": "A well established tapas place, for happy hour with good friends.",
+        "tip_dish": "Order a sangria, then another...",
+        "tip_seating": "Seating on the bar is fun here.",
+        "tip_parking": "There's paid parking nearby. ",
+        "menuUrl": "http://www.tapeo.co.il/he/TLV/menu.aspx?ChannelID=2&DirectoryID=5"
+      },
+      "he": {
+        "name": "×˜×¤××•",
+        "address": "×”××¨×‘×¢×” 16",
+        "tip": ".×”×•×ª×™×§×” ×©×‘×˜×¤××¡ ×©×œ ×ª×œ ××‘×™×‘, ×ž×§×•× ×œ×¢×¨×‘ ×©×ž×— ×¢× ×”×—×‘×¨'×”",
+        "tip_dish": "×”×–×ž×™× ×• ×œ×©×•×œ×—×Ÿ ×¡× ×’×¨×™×”, ×•××– ×¢×•×“ ××—×ª.",
+        "tip_seating": "×”×‘×¨ ×ž×ª××™× ×ž××•×“ ×× ×ž×—×¤×©×™× ×ž×©×”×• ×›×™×£.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×¤×¨×˜×™ ×‘××–×•×¨. ",
+        "menuUrl": "http://www.tapeo.co.il/he/TLV/menu.aspx?ChannelID=2&DirectoryID=5"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×˜×¤××•-×ª×œ-××‘×™×‘.aspx"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "3",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST007",
+    "info": {
+      "phone": "03-6996306",
+      "url": "http://www.turkiz-rest.co.il/",
+      "location": {
+        "lat": "32.137895",
+        "lng": "34.79128"
+      },
+      "parking": {
+        "lat": "32.138094",
+        "lng": "34.79159"
+      },
+      "en": {
+        "name": "Turkiz",
+        "address": "Rosenblum 6",
+        "tip": "An ocean view restaurant with a great fish and sea food menu. Ask for the cigar box at the end.",
+        "tip_dish": "Oder the Tortellin or Grouper Kebab.",
+        "tip_seating": "Ask for the round table.",
+        "tip_parking": "There is parking along the street or paid parking earby.",
+        "menuUrl": "http://www.turkiz-rest.co.il/main-E.php"
+      },
+      "he": {
+        "name": "×˜×•×¨×§×™×–",
+        "address": "×¨×•×–× ×‘×œ×•× 6",
+        "tip": "×ž×¡×¢×“×” ×¢× × ×•×£ ×œ×™× ×•××—×œ×” ×ª×¤×¨×™×˜. ×‘×§×©×• ××ª ×§×•×¤×¡×ª ×”×¡×™×’×¨×™× ×‘×¡×•×£.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×˜×•×¨×˜×œ×™× ×™ ××• ×§×‘×‘ ×”×œ×•×§×•×¡.",
+        "tip_seating": "×‘×§×©×• ××ª ×”×©×•×œ×—×Ÿ ×”×¢×’×•×œ ×× ××ª× ×‘××™× ×¢× ×ž×©×¤×—×”.",
+        "tip_parking": "×™×© ×—× ×™×” ×œ××•×¨×š ×”×¨×—×•×‘ ××• ×—× ×™×•×Ÿ ×¤×¨×˜×™.",
+        "menuUrl": "http://www.turkiz-rest.co.il/main.php"
+      },
+      "price": "5",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "3",
+      "family": "5",
+      "business": "3",
+      "tourists": "5",
+      "table": "5",
+      "bar": "5",
+      "light": "3",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST008",
+    "info": {
+      "phone": "03-5446166",
+      "url": "http://www.boya.co.il/",
+      "location": {
+        "lat": "32.101896",
+        "lng": "34.77543"
+      },
+      "parking": {
+        "lat": "32.101043",
+        "lng": "34.776583"
+      },
+      "en": {
+        "name": "Boya",
+        "address": "HaTa'arucha 3",
+        "tip": "A very decent place at the Tel Aviv port, great for tourists.",
+        "tip_dish": "You won't go wrong with the fish here.",
+        "tip_seating": "The tables near the windows are obviousely more fun. ",
+        "tip_parking": "Park at the port's paid lots.",
+        "menuUrl": "http://www.boya.co.il/he/englishMenu/Default.aspx?ChannelID=8&ContentID=43"
+      },
+      "he": {
+        "name": "×‘×•×™×”",
+        "address": "×”×ª×¢×¨×•×›×” 3",
+        "tip": ".×ž×§×•× × ×¤×œ× ×œ×§×—×ª ××ª ×”×—×‘×¨×™× ×”×ª×™×™×¨×™× ×œ×˜×™×™×œ ×‘× ×ž×œ",
+        "tip_dish": "×œ× ×™×”×™×• ×¤×” × ×¤×™×œ×•×ª ×‘×¢× ×™×™×Ÿ ×”×“×’×™×. ",
+        "tip_seating": "×©×‘×• ×‘×©×•×œ×—× ×•×ª ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×—× ×™×•×Ÿ ×¦×¤×•×Ÿ ×”× ×ž×œ ×”×›×™ ×§×¨×•×‘ ×œ×ž×¡×¢×“×”.",
+        "menuUrl": "http://www.boya.co.il/he/menu/Default.aspx?ChannelID=2&ContentID=6"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "3",
+      "family": "4",
+      "business": "3",
+      "tourists": "5",
+      "table": "5",
+      "bar": "2",
+      "light": "3",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST009",
+    "info": {
+      "phone": "03-5109292",
+      "url": "http://www.dallal.info/restIndex3.asp?pageId=31",
+      "location": {
+        "lat": "32.061171",
+        "lng": "34.763355"
+      },
+      "parking": {
+        "lat": "32.061663",
+        "lng": "34.762035"
+      },
+      "en": {
+        "name": "Dallal",
+        "address": "Shabazi 10",
+        "tip": "It used to be an old house built in the Arabic tradition, today you'll find there a home for those of you who appreciate fine dining.",
+        "tip_dish": "Get the salmon scalop, a rare find in Tel Aviv.",
+        "tip_seating": "To sit, ask for a booth. ",
+        "tip_parking": "There are nearby paid parking lots on HaMered street.",
+        "menuUrl": "http://www.dallal.info/PDF/erev_%20Summer%202013%20web%20eng.pdf"
+      },
+      "he": {
+        "name": "×“×œ××œ",
+        "address": "×©×‘×–×™ 10",
+        "tip": "×¤×¢× ×”×™×” ×©× ×‘×™×ª ×©× ×‘× ×” ×›×ž×™×˜×‘ ×”×ž×¡×•×¨×ª ×”×¢×¨×‘×™×ª, ×”×™×•× ×ª×ž×¦××• ×©× ×‘×™×ª ×œ×ž×¢×¨×™×›×™× ××•×›×œ ×ž×©×•×‘×—, ××•×•×™×¨×” × ×™× ×•×—×” ×•×¢×™×¦×•×‘ ×ž×•×§×¤×“. ",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×”×¡×§×œ×•×¤ ×¡×œ×ž×•×Ÿ, ×ž× ×” ×¤×—×•×ª ×ž×•×›×¨×ª ×‘×ª×œ ××‘×™×‘.",
+        "tip_seating": "×‘×§×©×• ×©×•×œ×—×Ÿ ×‘×¡×¤×•×ª.",
+        "tip_parking": "×—× ×• ×‘××™×–×•×¨ ×¨×—×•×‘ ×”×ž×¨×“ - ×™×© ×”×¨×‘×” ×—× ×™×•× ×™×.",
+        "menuUrl": "http://www.dallal.info/restIndex3.asp?pageId=28"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×“×œ××œ.aspx "
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "4",
+      "family": "5",
+      "business": "3",
+      "tourists": "3",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST010",
+    "info": {
+      "phone": "03-5177580",
+      "url": "http://www.mouse.co.il/CM.food_item_place,383,213,5644,.aspx",
+      "location": {
+        "lat": "32.061324",
+        "lng": "34.763598"
+      },
+      "parking": {
+        "lat": "32.061663",
+        "lng": "34.762035"
+      },
+      "en": {
+        "name": "Suzanna",
+        "address": "Shabazi 9",
+        "tip": "A place for local food with a busy vibe.",
+        "tip_dish": "This is a place to try local stuffed veggies. ",
+        "tip_seating": "No specific table is any better than others.",
+        "tip_parking": "There's nearby paid parking lots on HaMered street.",
+        "menuUrl": "http://www.rest.co.il/_uploads/suzana/0108201313/page.html"
+      },
+      "he": {
+        "name": "×¡×•×–×× ×”",
+        "address": "×©×‘×–×™ 9",
+        "tip": "×ž×§×•× ×œ××•×›×œ ×ž×§×•×ž×™ ×‘××•×™×¨×” ×ž×œ××ª ×—×™×™×.",
+        "tip_dish": "× ×¡×• ××ª ×”×™×¨×§×•×ª ×”×ž×ž×•×œ××™×.",
+        "tip_seating": "××™×Ÿ ×ž×§×•× ×™×©×™×‘×” ×ž×•×ž×œ×¥ ×‘×ž×™×•×—×“.",
+        "tip_parking": "×—× ×• ×‘××–×•×¨ ×¨×—×•×‘ ×”×ž×¨×“.",
+        "menuUrl": "http://www.rest.co.il/_uploads/suzana/01082013/page.html"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "4",
+      "table": "5",
+      "bar": "1",
+      "light": "4",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST011",
+    "info": {
+      "phone": "03-5601114",
+      "url": "http://www.socialclub.rest.co.il/he/home/default.aspx",
+      "location": {
+        "lat": "32.064186",
+        "lng": "34.7748"
+      },
+      "parking": {
+        "lat": "32.064063",
+        "lng": "34.774384"
+      },
+      "en": {
+        "name": "Social Club",
+        "address": "Rothschild 45",
+        "tip": "A place with a sexy and busy vibe.",
+        "tip_dish": "There's an exciting cocktail menu. ",
+        "tip_seating": "If you're looking for a nice bar restaurant, this is it.",
+        "tip_parking": "PArk at the Beit Zion paid parking nearby.",
+        "menuUrl": "http://socialclub.rest.co.il/he/menu/englishMenu.aspx"
+      },
+      "he": {
+        "name": "×¡×•×©×™××œ ×§×œ××‘",
+        "address": "×¨×•×˜×©×™×œ×“ 45",
+        "tip": "×ž×§×•× ×‘××•×™×¨×ª ×¨×•×˜×©×™×œ×“. ",
+        "tip_dish": "×™×© ×¤×” ×ª×¤×¨×™×˜ ×§×•×§×˜×™×™×œ×™× × ××”.",
+        "tip_seating": "×”×‘×¨ ×“×™ × ×—×ž×“ ×œ×¢×¨×‘.",
+        "tip_parking": "×—× ×• ×‘×‘×™×ª ×¦×™×•×Ÿ ×× ×¦×¨×™×š.",
+        "menuUrl": "http://socialclub.rest.co.il/he/menu/Default.aspx?DirectoryID=3"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-Social-Club.aspx"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST012",
+    "info": {
+      "phone": "03-5104020",
+      "url": "http://www.mouse.co.il/CM.Food_Item_Place,382,213,7938,.aspx",
+      "location": {
+        "lat": "32.063452",
+        "lng": "34.768147"
+      },
+      "parking": {
+        "lat": "32.062927",
+        "lng": "34.768193"
+      },
+      "en": {
+        "name": "Makom Shel Basar",
+        "address": "Shabazi 64",
+        "tip": "A great place for good meat.",
+        "tip_dish": "We dont really need to tell you what to order...",
+        "tip_seating": "Ask for a seat near the windows.",
+        "tip_parking": "There's a small paid parking lot nearby. A taxi is a better idea.",
+        "menuUrl": "http://www.rest.co.il/_uploads/makomshelbasar/menu/page.html"
+      },
+      "he": {
+        "name": "×ž×§×•× ×©×œ ×‘×©×¨",
+        "address": "×©×‘×–×™ 64",
+        "tip": "×”××•×™×¨×” ××¤×™×œ×• ×¢×•×œ×” ×¢×œ ×”×‘×©×¨",
+        "tip_dish": "×œ× ×‘××ž×ª ×¦×¨×™×š ×œ×”×ž×œ×™×¥ ×œ×›× ×ž×” ×œ××›×•×œ ×©×...",
+        "tip_seating": "×‘×§×©×• ×ž×§×•× ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×¦×¤×•×£ ×‘×ª×©×œ×•× ×‘×§×¨×‘×ª ×ž×§×•×. ×¢×“×™×£ ×ž×•× ×™×ª.",
+        "menuUrl": "http://www.rest.co.il/_uploads/makomshelbasar/menuhebrew/page.html"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-× ×•×•×”-×¦×“×§-×ž×§×•×-×©×œ-×‘×©×¨.aspx"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "1",
+      "light": "2",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST013",
+    "info": {
+      "phone": "03-7367272",
+      "url": "http://www.vicky-cristina.co.il/",
+      "location": {
+        "lat": "32.063289",
+        "lng": "34.761883"
+      },
+      "parking": {
+        "lat": "32.060144",
+        "lng": "34.761187"
+      },
+      "en": {
+        "name": "Vicki Cristina",
+        "address": "Kaufmann 2",
+        "tip": "A fun tapas bar in a good area.",
+        "tip_dish": "Try the mini hamburguesas or crispy calamares, but honestly it's all just fun. ",
+        "tip_seating": "If you come with a large party, the large round bar table is good.",
+        "tip_parking": "There is paid parking at the old station complex.",
+        "menuUrl": "http://www.vicky-cristina.co.il/index.php/%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%90%D7%95%D7%9B%D7%9C.html"
+      },
+      "he": {
+        "name": "×•×™×§×™ ×§×¨×™×¡×˜×™× ×”",
+        "address": "×§××•×¤×ž×Ÿ 2",
+        "tip": "×ž×™×§×•× ×ª×™×™×¨×•×ª×™, ××‘×œ ×›×™×£ ×‘×›×œ ×–××ª.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×ž×™× ×™ ×”×ž×‘×•×¨×’×¡×” ××• ×§×œ×ž×¨×™ ×§×¨×™×¡×¤×™.",
+        "tip_seating": "×× ××ª× ×¢×•×©×™× ××™×¨×•×¢, ×”×‘×¨ ×”×¢×’×•×œ ×ž××•×“ × ×—×ž×“.",
+        "tip_parking": "×—× ×™×•×Ÿ ×ž×ª×—× ×”×ª×—× ×”",
+        "menuUrl": "http://www.vicky-cristina.co.il/index.php/%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%90%D7%95%D7%9B%D7%9C.html"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×•×™×§×™-×›×¨×™×¡×˜×™× ×”.aspx "
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "5",
+      "family": "2",
+      "business": "1",
+      "tourists": "4",
+      "table": "4",
+      "bar": "4",
+      "light": "1",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST014",
+    "info": {
+      "phone": "03-5166660",
+      "url": "http://www.abraxas.co.il/",
+      "location": {
+        "lat": "32.062347",
+        "lng": "34.771938"
+      },
+      "parking": {
+        "lat": "32.063196",
+        "lng": "34.774075"
+      },
+      "en": {
+        "name": "Abraxas North",
+        "address": "Lilienblum 40",
+        "tip": "One of the best restaurants in Tel Aviv, yet surprisingly loud.",
+        "tip_dish": "Order the rumpsteak burger or any of the chef takes on local dishes like the aubergene.",
+        "tip_seating": "If you're with friends, ask to sit on the sofas on the second level. ",
+        "tip_parking": "Better take a taxi, hardly any parking around. ",
+        "menuUrl": "false"
+      },
+      "he": {
+        "name": "×¦×¤×•×Ÿ ××‘×¨×§×¡×¡",
+        "address": "×œ×™×œ× ×‘×œ×•× 40",
+        "tip": "××—×ª ×”×ž×¡×¢×“×•×ª ×”×ž×’× ×™×‘×•×ª ×‘×ª×œ ××‘×™×‘. ",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×ž×‘×•×¨×’×¨ ×”×©×™×™×˜×œ ××• ×›×œ ×’×¨×¡×” ×©×œ ××™×™×œ ×©× ×™ ×œ×ž×©×”×• ×ž×§×•×ž×™, × ×’×™×“, ×”×¡×‘×™×—.",
+        "tip_seating": "×× ××ª× ×—×‘×•×¨×”, ×‘×§×©×• ×œ×©×‘×ª ×¢×œ ×”×¡×¤×•×ª ×‘×§×•×ž×” ×¢×œ×™×•× ×”.",
+        "tip_parking": "×ª×‘×•××• ×‘×ž×•× ×™×ª - ×”×—× ×™×•×Ÿ ×‘×™×‘× ×” 31 ×”×›×™ ×§×¨×•×‘.",
+        "menuUrl": "false"
+      },
+      "price": "5",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "5",
+      "family": "2",
+      "business": "1",
+      "tourists": "3",
+      "table": "5",
+      "bar": "5",
+      "light": "1",
+      "vol": "5",
+      "parking": "false"
+    }
+  },
+  {
+    "id": "REST015",
+    "info": {
+      "phone": "03-6240044",
+      "url": "http://www.zepra.co.il/",
+      "location": {
+        "lat": "32.069621",
+        "lng": "34.793664"
+      },
+      "parking": {
+        "lat": "32.070391",
+        "lng": "34.794071"
+      },
+      "en": {
+        "name": "Zepra",
+        "address": "Yigal Alon 96",
+        "tip": "Daring Asian cuisine.",
+        "tip_dish": "Don't miss out on the shrimp popcorn.",
+        "tip_seating": "Even the bar is great.",
+        "tip_parking": "Street parking should be fine. ",
+        "menuUrl": "http://www.zepra.co.il/default.asp?catid={DE6E5737-F40F-4CDF-8F43-D1D7D2F618C6}"
+      },
+      "he": {
+        "name": "×¦×¤×¨×”",
+        "address": "×™×’××œ ××œ×•×Ÿ 96",
+        "tip": "×”×¨×¤×ª×§××” ××¡×™×™×ª×™×ª.",
+        "tip_dish": "××œ ×ª×¤×¡×¤×¡×• ××ª ×¤×•×¤×§×•×¨×Ÿ ×”×©×¨×™×ž×¤×¡.",
+        "tip_seating": "×›×™×£ ×’× ×¢×œ ×”×‘×¨.",
+        "tip_parking": "×—× ×™×” ×œ××•×¨×š ×¨×—×•×‘ ×ª×•×‘×œ.",
+        "menuUrl": "http://www.zepra.co.il/default.asp?catid={DE6E5737-F40F-4CDF-8F43-D1D7D2F618C6}"
+      },
+      "price": "5",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST016",
+    "info": {
+      "phone": "03-5162254",
+      "url": "https://www.facebook.com/nanuchkatlv",
+      "location": {
+        "lat": "32.06221",
+        "lng": "34.770749"
+      },
+      "parking": {
+        "lat": "32.062399",
+        "lng": "34.768774"
+      },
+      "en": {
+        "name": "Nanuchka",
+        "address": "Lilienblum 30",
+        "tip": "Authentic georgian food.",
+        "tip_dish": "Order the hinikali and lamb kebabs. ",
+        "tip_seating": "The bar comes alive at night.",
+        "tip_parking": "There's scarce parking nearby.",
+        "menuUrl": "https://www.facebook.com/nanuchkatlv/app_156970457689987"
+      },
+      "he": {
+        "name": "× × ×•×¦'×§×”",
+        "address": "×œ×™×œ× ×‘×œ×•× 30",
+        "tip": "××•×›×œ ×’×¨×•×–×™× ×™ ××•×ª× ×˜×™.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×—×™× ×™×§×œ×™ ×•××ª ×§×‘×‘×•× ×™ ×”×˜×œ×”.",
+        "tip_seating": "××–×•×¨ ×”×¤×™×§××¤ ×‘×¨ ×©×•× ×” ×ž××•×“ ×ž××•×™×¨×ª ×”×ž×¡×¢×“×”.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×‘×ª×©×œ×•× ×‘×¨×—×•×‘ ×™×”×•×©×¢ ×”×œ×ª×ž×™. ×¢×“×™×£ ×ž×•× ×™×ª.",
+        "menuUrl": "https://www.facebook.com/nanuchkatlv/app_156970457689987"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "3",
+      "table": "5",
+      "bar": "5",
+      "light": "1",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST017",
+    "info": {
+      "phone": "03-6207436",
+      "url": "https://www.facebook.com/pages/Port-Said/193302427463816",
+      "location": {
+        "lat": "32.064438",
+        "lng": "34.77189"
+      },
+      "parking": {
+        "lat": "32.064014",
+        "lng": "34.771999"
+      },
+      "en": {
+        "name": "Port Said",
+        "address": "Har Sinai 2",
+        "tip": "A place for friends and street food with a twist, very unique Tel Aviv vibe, no reservations.",
+        "tip_dish": "Try the chicken sandwich.",
+        "tip_seating": "If you find a table, sell it for a profit. ",
+        "tip_parking": "There's paid parking with an entrance from Ehad Haam st. ",
+        "menuUrl": "false"
+      },
+      "he": {
+        "name": "×¤×•×¨×˜ ×¡×¢×™×“",
+        "address": "×”×¨ ×¡×™× ×™ 2",
+        "tip": "×ž×§×•× ×œ×‘×™×œ×•×™ ×¢× ×—×‘×¨×™× ×˜×•×‘×™× ×‘×¨×—×•×‘ ×”×ª×œ ××‘×™×‘×™, ×ž×•×§×¤×“ ×•×ž×”×•×“×¨ ×–×” ×œ×, ×ª×‘×•××• ×¤×©×•×˜×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×¡× ×“×•×•×™×¥' ×”×ª×¨× ×’×•×œ×ª.",
+        "tip_seating": "×× ×ž×¦××ª× ×©×•×œ×—×Ÿ ×ª×ž×›×¨×• ×‘×™×•×§×¨.",
+        "tip_parking": ".×™×© ×—× ×™×•×Ÿ ×‘×ª×©×œ×•×, ×›× ×™×¡×” ×ž×¨×—×•×‘ ××—×“ ×”×¢×",
+        "menuUrl": "false"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "1",
+      "friends": "5",
+      "family": "1",
+      "business": "1",
+      "tourists": "1",
+      "table": "3",
+      "bar": "3",
+      "light": "3",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST018",
+    "info": {
+      "phone": "03-6819998",
+      "url": "http://www.kalamata.co.il/",
+      "location": {
+        "lat": "32.054231",
+        "lng": "34.751459"
+      },
+      "parking": {
+        "lat": "32.05377",
+        "lng": "34.751263"
+      },
+      "en": {
+        "name": "Kalamata",
+        "address": "Kikar Kdumim 10, Yafo",
+        "tip": "A great place to come if you're at the old Jaffa city.",
+        "tip_dish": "The starters are more interesting than what the main courses have to offer.",
+        "tip_seating": "As for a table near the windows - a must. ",
+        "tip_parking": "Use the parking at the old Jaffa mount. ",
+        "menuUrl": "http://files.webydo.com/106024/UploadedFiles/english.pdf"
+      },
+      "he": {
+        "name": "×§×œ×ž×˜×”",
+        "address": "×›×™×›×¨ ×§×“×•×ž×™× 10 ×™×¤×•",
+        "tip": "×ž×§×•× ×¨×•×ž× ×˜×™ ×‘×™×¤×• ×”×¢×ª×™×§×”.",
+        "tip_dish": "×ª×–×ž×™× ×• ×¨××©×•× ×•×ª, ×™×•×ª×¨ ×ž×¢× ×™×™× ×•×ª ×ž×”×¢×§×¨×™×•×ª.",
+        "tip_seating": "×ž×§×•× ×œ×™×“ ×”×—×œ×•×Ÿ - ×—×•×‘×”!",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×›×™×›×¨ ×§×“×•×ž×™×.",
+        "menuUrl": "http://www.kalamata.co.il/copy%20of%20about_rtl.html?v=7474811925"
+      },
+      "price": "0",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "5",
+      "table": "5",
+      "bar": "1",
+      "light": "4",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST019",
+    "info": {
+      "phone": "03-5646100",
+      "url": "http://www.hotelmontefiore.co.il/sites/default/files/menus/HM_Dinner_Web.pdf",
+      "location": {
+        "lat": "32.065602",
+        "lng": "34.773397"
+      },
+      "parking": {
+        "lat": "32.065405",
+        "lng": "34.771959"
+      },
+      "en": {
+        "name": "Hotel Montefiore",
+        "address": "Montefiore 36",
+        "tip": "A classic fine dining establishment.",
+        "tip_dish": "Have the Vietnamese crispy chicken.",
+        "tip_seating": "No preffered seating recommendation.",
+        "tip_parking": "You'll find paid parking nearby. But there's valet as well.",
+        "menuUrl": "http://www.hotelmontefiore.co.il/sites/default/files/menus/HM_Dinner_Web.pdf"
+      },
+      "he": {
+        "name": "×”×•×˜×œ ×ž×•× ×˜×¤×™×•×¨×™",
+        "address": "×ž×•× ×˜×¤×™×•×¨×™ 36",
+        "tip": "××—×“ ×”×ž×§×•×ž×•×ª ×”×§×œ××¡×™×™× ×©×œ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×§×¨×™×¡×¤×™ ×¦'×™×§×Ÿ ×•×™×™×˜× ××, ×ž× ×ª ×¢×•×£ ×›×–×• ×¢×•×“ ×œ× ×˜×¢×ž×ª×.",
+        "tip_seating": "×¨×•×‘ ×”×©×•×œ×—× ×•×ª × ×¢×™×ž×™× ×ž××•×“.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×‘×ª×©×œ×•× ×‘××™×–×•×¨ ××• ×©×™×¨×•×ª ×—× ×™×™×ª ×•××œ×˜.",
+        "menuUrl": "http://www.hotelmontefiore.co.il/sites/default/files/menus/HM_Dinner_Web.pdf"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×”×•×˜×œ-×ž×•× ×˜×™×¤×™×•×¨×™.aspx"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "4",
+      "family": "5",
+      "business": "4",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "3",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST020",
+    "info": {
+      "phone": "03-5467905",
+      "url": "https://www.facebook.com/ELBA.RESTAURANT",
+      "location": {
+        "lat": "32.076209",
+        "lng": "34.781622"
+      },
+      "parking": {
+        "lat": "32.07574",
+        "lng": "34.783238"
+      },
+      "en": {
+        "name": "Elba",
+        "address": "Ibn Gabirol 36",
+        "tip": "Romantic, open glass wall, facing busy Tel Aviv.",
+        "tip_dish": "Order the mangold and meiri cheese burekkas.",
+        "tip_seating": "Sit by the windows.",
+        "tip_parking": "There's a nearby paid parking lot.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=13196&txtNavID=3&txtItemID=705894"
+      },
+      "he": {
+        "name": "××œ×‘×”",
+        "address": "××‘×Ÿ ×’×‘×™×¨×•×œ 36",
+        "tip": "×§×™×¨ ×–×›×•×›×™×ª ×¨×•×ž× ×˜×™ ×œ××‘×Ÿ ×’×‘×™×¨×•×œ.",
+        "tip_dish": "×§×—×• ×‘×•×¨×§×¡ ×•×ª×•×¤×ª×¢×• ×œ×—×œ×•×˜×™×Ÿ.",
+        "tip_seating": "×©×‘×• ×‘×ž×§×•×ž×•×ª ×”×›×™ ×§×¨×•×‘×™× ×œ×¨×—×•×‘ ××‘×Ÿ ×’×‘×™×¨×•×œ.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×¤×¨×˜×™ ×‘××™×–×•×¨.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=13196&txtNavID=3&txtItemID=705894"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "1",
+      "family": "2",
+      "business": "4",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "1",
+      "vol": "0",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST021",
+    "info": {
+      "phone": "03-5259987",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,11158,.aspx",
+      "location": {
+        "lat": "32.063079",
+        "lng": "34.770086"
+      },
+      "parking": {
+        "lat": "32.064686",
+        "lng": "34.769571"
+      },
+      "en": {
+        "name": "CafÃ© Europa",
+        "address": "Rothschild 9",
+        "tip": "A patio restraurant in Rothschild, with great food.",
+        "tip_dish": "Have the tortellini.",
+        "tip_seating": "Take a seat inside, not near the entrance. ",
+        "tip_parking": "There's paid parking on Montefiore st. nearby.",
+        "menuUrl": "false"
+      },
+      "he": {
+        "name": "×§×¤×” ××™×¨×•×¤×”",
+        "address": "×¨×•×˜×©×™×œ×“ 9",
+        "tip": "×ž×¡×¢×“×ª ×¤×˜×™×• × ×¤×œ××” ×‘×¨×•×˜×©×™×œ×“.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×˜×•×¨×˜×œ×™× ×™.",
+        "tip_seating": "×‘×§×©×• ×©×•×œ×—×Ÿ ×”×¨×—×§ ×ž×”×›× ×™×¡×”.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ××—×•×–×ª ×—×•×£ ×‘×¨×—×•×‘ ×ž×•× ×˜×™×¤×™×•×¨×™.",
+        "menuUrl": "false"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "4",
+      "light": "2",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST022",
+    "info": {
+      "phone": "03-6822111",
+      "url": "http://www.goldmanc.co.il/home.php",
+      "location": {
+        "lat": "32.056765",
+        "lng": "34.757303"
+      },
+      "parking": {
+        "lat": "32.056765",
+        "lng": "34.757303"
+      },
+      "en": {
+        "name": "Hatzer Goldman",
+        "address": "Goldman 6",
+        "tip": "A great seaside location. ",
+        "tip_dish": "Have the Syrian kebab.",
+        "tip_seating": "Choose a place near the windows.",
+        "tip_parking": "There is paid parking nearby.",
+        "menuUrl": "http://www.goldmanc.co.il/en/menu/dinner.php"
+      },
+      "he": {
+        "name": "×—×¦×¨ ×’×•×œ×“×ž×Ÿ",
+        "address": "×’×•×œ×“×ž×Ÿ 6",
+        "tip": "×œ×©×¢×‘×¨ ×¤×™× ×™ ×‘×—×¦×¨.",
+        "tip_dish": "×”×–×ž×™× ×• ×§×‘×‘ ×¡×•×¨×™.",
+        "tip_seating": "×‘×—×¨×• ×ž×§×•× ×œ×™×“ ×”×—×œ×•×Ÿ. ×™×•×ª×¨ ×›×™×£.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ××—×•×–×ª ×”×—×•×£ ×‘×™×ª ×”××¦×œ.",
+        "menuUrl": "http://www.goldmanc.co.il/menu/dinner.php"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "1",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "4",
+      "table": "5",
+      "bar": "2",
+      "light": "5",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST023",
+    "info": {
+      "phone": "03-5221224",
+      "url": "http://www.shila-rest.co.il/",
+      "location": {
+        "lat": "32.088157",
+        "lng": "34.773444"
+      },
+      "parking": {
+        "lat": "32.088157",
+        "lng": "34.773444"
+      },
+      "en": {
+        "name": "Shila",
+        "address": "Ben Yehuda 182",
+        "tip": "Dim & loud at it's very best in Tel Aviv.",
+        "tip_dish": "Order the bacon wrapped tenderloin. ",
+        "tip_seating": "Ask for a place in the space to the right of the entrance. ",
+        "tip_parking": "There is a valet service at the entrance.",
+        "menuUrl": "http://www.shila-rest.co.il/Article_E.php?ID_Sec=15"
+      },
+      "he": {
+        "name": "×©×™×œ×”",
+        "address": "×‘×Ÿ ×™×”×•×“×” 182",
+        "tip": "××•×›×œ ×˜×•×‘, ×¨×¢×© ×ª×œ ××‘×™×‘×™ ×‘×ž×™×˜×‘×• ×¢×œ ×‘×Ÿ ×™×”×•×“×”.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž×“×œ×™×•× ×™ ×”×¤×™×œ×” ×¢× ×‘×™×™×§×•×Ÿ. ",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×‘×—×œ×œ ×”×¤× ×™×ž×™ ×ž×™×ž×™×Ÿ ×œ×›× ×™×¡×”.",
+        "tip_parking": "×™×© ×©×™×¨×•×ª ×•××œ×˜.",
+        "menuUrl": "http://www.shila-rest.co.il/Article.php?ID_Sec=6"
+      },
+      "price": "3",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×©×™×œ×”.aspx"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "5",
+      "business": "2",
+      "tourists": "3",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST024",
+    "info": {
+      "phone": "03-5666966",
+      "url": "http://www.herbertsamuel.co.il/default.asp?PageID=6",
+      "location": {
+        "lat": "32.064442",
+        "lng": "34.774664"
+      },
+      "parking": {
+        "lat": "32.064442",
+        "lng": "34.774664"
+      },
+      "en": {
+        "name": "Tapas 1 ha'am",
+        "address": "Ehad Ha'am 27",
+        "tip": "Great Spanish vibe.",
+        "tip_dish": "The specials come out with a ring of the bell. Don't miss out. ",
+        "tip_seating": "If you come with friends, ask for the high tables at the left. ",
+        "tip_parking": "There is valet parking at the door.",
+        "menuUrl": "http://herbertsamuel.co.il/default.asp?PageID=6"
+      },
+      "he": {
+        "name": "×˜××¤××¡ ××—×“ ×”×¢×",
+        "address": "××—×“ ×”×¢× 27",
+        "tip": "××•×™×¨×” ×¡×¤×¨×“×™×ª ×›×™×¤×™×ª.",
+        "tip_dish": "×”×¡×¤×™×™×©×œ×™× ×™×•×¦××™× ×¢× ×¦×œ×¦×•×œ ×¤×¢×ž×•×Ÿ, ××œ ×ª×¤×¡×¤×¡×•.",
+        "tip_seating": "×× ××ª× ×ž×’×™×¢×™× ×¢× ×—×‘×¨×™×, ×‘×§×©×• ×©×•×œ×—×Ÿ ×’×‘×•×” ×‘×¦×“ ×©×ž××œ.",
+        "tip_parking": "×™×© ×©×™×¨×•×ª ×•××œ×˜.",
+        "menuUrl": "http://herbertsamuel.co.il/default.asp?PageID=6"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-××—×“-×”×¢×-×˜××¤×¡.aspx "
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "3",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST025",
+    "info": {
+      "phone": "03-5499626",
+      "url": "https://www.facebook.com/pages/Sola-Food-Wine-Bar/247225912061993",
+      "location": {
+        "lat": "32.052312",
+        "lng": "34.757742"
+      },
+      "parking": {
+        "lat": "32.052312",
+        "lng": "34.757742"
+      },
+      "en": {
+        "name": "Sola",
+        "address": "Beit Eshel 31",
+        "tip": "A quiant and romatic place in Jaffa.",
+        "tip_dish": "The lazagne won't let you down.",
+        "tip_seating": "Ask for the corner table next to the book shelves at the end. ",
+        "tip_parking": "Street parking should be fine. ",
+        "menuUrl": "http://www.flickr.com/photos/75019066@N00/8525675378/"
+      },
+      "he": {
+        "name": "×¡×•×œ×”",
+        "address": "×‘×™×ª ××©×œ 31",
+        "tip": "×¨×•×ž× ×˜×™×§×” ×™×¤×•××™×ª ×‘×ž×™×˜×‘×”.",
+        "tip_dish": "×”×œ×–× ×™×” × ×¤×œ××”.",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×‘×©×•×œ×—× ×•×ª ×”×¦×ž×•×“×™× ×œ×ž×“×¤×™ ×”×¡×¤×¨×™×”.",
+        "tip_parking": "×™×© ×—× ×™×” ×‘×¨×—×•×‘ ×•×‘××–×•×¨.",
+        "menuUrl": "http://www.flickr.com/photos/75019066@N00/8525675378/"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "2",
+      "family": "2",
+      "business": "1",
+      "tourists": "3",
+      "table": "5",
+      "bar": "0",
+      "light": "1",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST026",
+    "info": {
+      "phone": "03-5225005",
+      "url": "https://www.facebook.com/TaizuRestaurant",
+      "location": {
+        "lat": "32.063634",
+        "lng": "34.780036"
+      },
+      "parking": {
+        "lat": "32.063634",
+        "lng": "34.780036"
+      },
+      "en": {
+        "name": "Taizu",
+        "address": "Begin 23",
+        "tip": "A ×•niquely asian restaurant, in true Tel Aviv style.",
+        "tip_dish": "Don't forget to order the house bread.",
+        "tip_seating": "Seating inside is more impressive than the balcony. ",
+        "tip_parking": "Park at the Levinstein parking lot, special rates for the restaurant. ",
+        "menuUrl": "http://www.taizu.co.il/en/Menu.aspx?id=10"
+      },
+      "he": {
+        "name": "×˜××™×–×•",
+        "address": "×‘×’×™×Ÿ 23",
+        "tip": "×ž×¡×¢×“×” ××¡×™×™×ª×™×ª ×ž×™×•×—×“×ª ×•× ×•×¢×–×ª.",
+        "tip_dish": "×œ× ×œ×©×›×•×— ×œ×”×–×ž×™×Ÿ ××ª ×œ×—× ×”×‘×™×ª.",
+        "tip_seating": "×œ×©×‘×ª ×‘×¤× ×™×, ×™×•×ª×¨ ×ž×¨×©×™× ×ž×”×ž×¨×¤×¡×ª.",
+        "tip_parking": "×™×© ×—× ×™×” ×‘×ž×’×“×œ ×œ×•×™× ×©×˜×™×™×Ÿ ×‘×”×¡×“×¨ ×ž×•×–×œ ×¢× ×”×ž×¡×¢×“×”.",
+        "menuUrl": "http://www.taizu.co.il/Menu.aspx?id=10"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "4",
+      "family": "4",
+      "business": "4",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST027",
+    "info": {
+      "phone": "03-5606385",
+      "url": "http://www.mouse.co.il/CM.Food_Item_Place,384,213,3988,.aspx",
+      "location": {
+        "lat": "32.062293",
+        "lng": "34.774086"
+      },
+      "parking": {
+        "lat": "32.06245",
+        "lng": "34.773338"
+      },
+      "en": {
+        "name": "Juz & Luz",
+        "address": "Yehuda Halevi 51",
+        "tip": "A quality asain place.",
+        "tip_dish": "The ramen will do you good.",
+        "tip_seating": "Ask for a table not near the entrance.",
+        "tip_parking": "There is paid parking on Allenby st.",
+        "menuUrl": "false"
+      },
+      "he": {
+        "name": "×’'×•×– ×•×œ×•×–",
+        "address": "×™×”×•×“×” ×”×œ×•×™ 51",
+        "tip": "××¡×™×™×ª×™×ª ××™×›×•×ª×™×ª ×‘\"×¡×œ×•×Ÿ ×¤×•×œ× ×™ ×”×™×¤×¡×˜×¨×™, ×‘×¢×œ ×œ×¡×‘×•-×©×™×§ ×ž×•×‘×”×§\" - ×—×™×œ×™×§ ×’×•×¨×¤×™× ×§×œ.",
+        "tip_dish": "×ž×¨×§ ×”×¨××ž×Ÿ ×™×¢×©×” ×œ×›× ×›×‘×•×“. ",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×œ× ×§×¨×•×‘ ×œ×›× ×™×¡×”. ",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×¤×¨×˜×™ ×¨×—×•×‘ ××œ× ×‘×™.",
+        "menuUrl": "false"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "4",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "2",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST028",
+    "info": {
+      "phone": "03-6935151",
+      "url": "http://www.toto-rest.co.il/",
+      "location": {
+        "lat": "32.078317",
+        "lng": "34.787251"
+      },
+      "parking": {
+        "lat": "32.087587",
+        "lng": "34.884392"
+      },
+      "en": {
+        "name": "Toto",
+        "address": "Berkovich 4",
+        "tip": "Quality fine dining near the TLV Museum.",
+        "tip_dish": "Order the ox tail tortellini.",
+        "tip_seating": "As to be seated away from the entrance. ",
+        "tip_parking": "There is nearby paid parking at the museum.",
+        "menuUrl": "http://www.toto-rest.co.il/Gallery/User_Files/files/foodmenu_112012.pdf"
+      },
+      "he": {
+        "name": "×˜×•×˜×•",
+        "address": "×‘×¨×§×•×‘×™×¥' 4",
+        "tip": "×ž×§×•× ×œ××•×¨×—×ª ×¢×¨×‘ ×ž×¢×•×œ×” ×œ×™×“ ×ž×•×–×™××•×Ÿ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×”×–×ž×™× ×• ×˜×•×¨×˜×™×œ× ×™ ×–× ×‘ ×©×•×¨.",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×¨×—×•×§ ×ž×”×›× ×™×¡×”.",
+        "tip_parking": "×™×© ××ª ×—× ×™×•×Ÿ ×”×ž×•×–×™××•×Ÿ ×‘×¡×ž×•×š ×œ×ž×§×•×.",
+        "menuUrl": "http://www.toto-rest.co.il/Gallery/User_Files/files/foodmenu_112012.pdf"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-TOTO.aspx"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "4",
+      "family": "4",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST029",
+    "info": {
+      "phone": "03-5293232",
+      "url": "http://www.mel-michelle.co.il/",
+      "location": {
+        "lat": "32.088185",
+        "lng": "34.773414"
+      },
+      "parking": {
+        "lat": "32.08707",
+        "lng": "34.77413"
+      },
+      "en": {
+        "name": "Mel & Michelle",
+        "address": "Ben Yehuda 155",
+        "tip": "A genuinely romantic place for a good dinner.",
+        "tip_dish": "It's rare to find Parisian Gniocco in Tel Aviv, try it. ",
+        "tip_seating": "Ask for the first table at right of the door. ",
+        "tip_parking": "Better take a cab.",
+        "menuUrl": "http://www.mel-michelle.co.il/english/menu/"
+      },
+      "he": {
+        "name": "×ž×œ ×•×ž×™×©×œ",
+        "address": "×‘×Ÿ ×™×”×•×“×” 155",
+        "tip": "×ž×§×•× ×œ×“×™×™×˜ ×¨×•×ž× ×˜×™ ×‘×ž×™×•×—×“.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”× ×™×•×§×™ ×”×¤×¨×™×–××™.",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×‘×©×•×œ×—×Ÿ ×”×¨××©×•×Ÿ ×ž×™×ž×™×Ÿ ×œ×“×œ×ª.",
+        "tip_parking": "×¢×“×™×£ ×œ×”×’×™×¢ ×‘×ž×•× ×™×ª.",
+        "menuUrl": "http://www.mel-michelle.co.il/menu/"
+      },
+      "price": "5",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "2",
+      "family": "3",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "2",
+      "light": "1",
+      "vol": "1",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST030",
+    "info": {
+      "phone": "03-5660481",
+      "url": "http://www.nightkitchen.co.il/",
+      "location": {
+        "lat": "32.06258",
+        "lng": "34.773117"
+      },
+      "parking": {
+        "lat": "32.063196",
+        "lng": "34.774075"
+      },
+      "en": {
+        "name": "Mitbach Laila",
+        "address": "Lilienblum 43",
+        "tip": "Bar feel, great food.",
+        "tip_dish": "Order the ox tail gniocci.",
+        "tip_seating": "Notice that the tables here are bar tables.",
+        "tip_parking": "Better take a taxi.",
+        "menuUrl": "http://www.nightkitchen.co.il/#!menu/crl2"
+      },
+      "he": {
+        "name": "×ž×˜×‘×— ×œ×™×œ×”",
+        "address": "×œ×™×œ× ×‘×œ×•× 43",
+        "tip": "××•×›×œ ×ž×•×©×§×¢ ×‘××•×™×¨×ª ×‘×¨ ×ª×œ  ××‘×™×‘×™.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”× ×™×•×§×™ ×–× ×‘ ×©×•×¨.",
+        "tip_seating": "××œ ×ª×©×›×—×•: ×”×©×•×œ×—× ×•×ª ×›××Ÿ ×’×‘×•×”×™×.",
+        "tip_parking": "×ª×‘×•××• ×‘×ž×•× ×™×ª - ×”×—× ×™×•×Ÿ ×‘×™×‘× ×” 31 ×”×›×™ ×§×¨×•×‘.",
+        "menuUrl": "http://www.nightkitchen.co.il/#!untitled/cllc"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "2",
+      "business": "1",
+      "tourists": "1",
+      "table": "4",
+      "bar": "5",
+      "light": "1",
+      "vol": "4",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST031",
+    "info": {
+      "phone": "03-6031719",
+      "url": "http://www.yassoutelaviv.co.il/",
+      "location": {
+        "lat": "32.071714",
+        "lng": "34.774664"
+      },
+      "parking": {
+        "lat": "32.071714",
+        "lng": "34.774664"
+      },
+      "en": {
+        "name": "Yassou",
+        "address": "Yarkon 105",
+        "tip": "A fun greek restaurant bar with a great view of the Tel Aviv promenade.",
+        "tip_dish": "We recommend the calamari or the shrimp.",
+        "tip_seating": "Have the drinks outside, and the food inside.",
+        "tip_parking": "Park at the paid lot next to the entrance.",
+        "menuUrl": "http://www.yassoutelaviv.co.il/images/menu.jpg"
+      },
+      "he": {
+        "name": "×™××¡×•",
+        "address": "×™×¨×§×•×Ÿ 105",
+        "tip": "×ž×§×•× ×™×•×•× ×™ × ×—×ž×“ ×¢× × ×•×£ ×§×™×¦×™ ×œ×˜×™×™×œ×ª ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×ž×ž×œ×™×¦×™× ×¢×œ ×”×§×œ×ž×¨×™ ××• ×”×©×¨×™×ž×¤×¡.",
+        "tip_seating": "×©×ª×• ×ž×©×”×• ×‘×ž×¨×¤×¡×ª ×•×›× ×¡×• ×œ××›×•×œ ×‘×¤× ×™×.",
+        "tip_parking": "×™×© ×—× ×™×” ×‘×ª×©×œ×•× ×¦×ž×•×“×” ×œ×ž×¡×¢×“×”.",
+        "menuUrl": "http://www.yassoutelaviv.co.il/images/menu.jpg"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "1",
+      "business": "1",
+      "tourists": "5",
+      "table": "4",
+      "bar": "5",
+      "light": "2",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST032",
+    "info": {
+      "phone": "03-6202262",
+      "url": "https://www.facebook.com/pages/Fleamarket-Restaurant-%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%A4%D7%9C%D7%99%D7%9E%D7%A8%D7%A7%D7%98/105537962947115",
+      "location": {
+        "lat": "32.052728",
+        "lng": "34.756213"
+      },
+      "parking": {
+        "lat": "32.052728",
+        "lng": "34.756213"
+      },
+      "en": {
+        "name": "Flee Market",
+        "address": "Rabbi Yohanan 8",
+        "tip": "A fun place at the edge of the flee market in Jaffa.",
+        "tip_dish": "Order the Jaffa kebabs.",
+        "tip_seating": "The bar is cool as well.",
+        "tip_parking": "Nearby street parking should be fine.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=13084&txtNavID=3&txtItemID=735884"
+      },
+      "he": {
+        "name": "×¤×œ×™ ×ž×¨×§×˜",
+        "address": "×¨×‘×™ ×™×•×—× ×Ÿ 8",
+        "tip": "×ž×¡×¢×“×” ×‘×¦×“ ×”×”×™×¤×¡×˜×¨×™ ×©×œ ×©×•×§ ×”×¤×©×¤×©×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ×§×‘×‘ ×™×¤×•××™ - ×ž×•×’×© ×¢×œ ×—×¨×‘×•×ª!",
+        "tip_seating": "×”×‘×¨ × ×—×ž×“ ×‘×ž×™×•×—×“.",
+        "tip_parking": "×™×© ×—× ×™×” ×œ××•×¨×š ×”×¨×—×•×‘×•×ª ×”×¡×ž×•×›×™×.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=13084&txtNavID=3&txtItemID=735853"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×¤×œ×™×ž××¨×§×˜-FLEAMARKET.aspx "
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "4",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST033",
+    "info": {
+      "phone": "03-5446669",
+      "url": "http://www.kitchen-market.co.il/",
+      "location": {
+        "lat": "32.098552",
+        "lng": "34.77418"
+      },
+      "parking": {
+        "lat": "32.097844",
+        "lng": "34.774137"
+      },
+      "en": {
+        "name": "Kitchen Market",
+        "address": "Hangar 12, Tel Aviv port",
+        "tip": "Seafood restaurant overlooking the new port of Tel Aviv.",
+        "tip_dish": "The Gazpacho is delightful. ",
+        "tip_seating": "Ask for the corner table overlooking the harbour. ",
+        "tip_parking": "Use the port toursit parking. ",
+        "menuUrl": "http://www.kitchen-market.co.il/en/pages/default.aspx?ContentID=47"
+      },
+      "he": {
+        "name": "×§×™×¦'×Ÿ ×ž×¨×§×˜",
+        "address": "×”× ×’×¨ 12, × ×ž×œ ×ª×œ ××‘×™×‘",
+        "tip": "×ž×¡×¢×“×ª ×ž××•×›×œ×™ ×™× ×‘× ×•×£ × ×¤×œ× ×‘××•×™×¨×” ×”×—×ž×” ×©×œ ×©×•×§ × ×ž×œ ×ª×œ ××‘×™×‘ ×”×ž×—×•×“×©.",
+        "tip_dish": "×”×’×¡×¤×¦'×• ×›××Ÿ × ×“×™×¨. ",
+        "tip_seating": "×‘×§×©×• ×©×•×œ×—×Ÿ ×¤×™× ×ª×™ ×”×ž×©×§×™×£ ×œ×™×.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×™×ª ×”× ×ž×œ.",
+        "menuUrl": "http://www.kitchen-market.co.il/he/menu/default.aspx?ChannelID=3"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×§×™×˜×¦×Ÿ-×ž×¨×§×˜.aspx "
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "5",
+      "table": "5",
+      "bar": "2",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST034",
+    "info": {
+      "phone": "03-6308777",
+      "url": "http://www.almahotel.co.il/alma-lounge-dining",
+      "location": {
+        "lat": "32.064347",
+        "lng": "34.773583"
+      },
+      "parking": {
+        "lat": "32.064347",
+        "lng": "34.773583"
+      },
+      "en": {
+        "name": "Alma",
+        "address": "Yavne 23",
+        "tip": "Lounge restaurant located in a boutique hotel on Rothschild.",
+        "tip_dish": "Order the ravioli with chicken mousse.",
+        "tip_seating": "There are no tables here, it's more of a lounge. ",
+        "tip_parking": "Use the valet parking arranged at the nearby Tapas retaurant.",
+        "menuUrl": "false"
+      },
+      "he": {
+        "name": "×¢×œ×ž×”",
+        "address": "×™×‘× ×” 23",
+        "tip": "×”×œ××•× ×’' ×”×›×™ ×§×œ××¡×™ ×‘×¨×•×˜×©×™×œ×“",
+        "tip_dish": "×”×–×ž×™× ×• ×¨×‘×™×•×œ×™ ×ž×•×¡ ×¢×•×£.",
+        "tip_seating": "××™×Ÿ ×¤×” ×¡×™×“×•×¨×™ ×™×©×™×‘×”, ×–×”  ×¡×œ×•×Ÿ ×¨×—×‘.",
+        "tip_parking": "×”×©×ª×ž×©×• ×‘×©×™×¨×•×ª×™ ×”×—× ×™×” ×©×œ ×˜××¤××¡ ××—×“ ×”×¢× ×ž×ž×•×œ.",
+        "menuUrl": "false"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×¢×œ×ž×”-×œ××•× ×’.aspx "
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "1",
+      "business": "1",
+      "tourists": "1",
+      "table": "2",
+      "bar": "5",
+      "light": "2",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST035",
+    "info": {
+      "phone": "03-5257171",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,10774,.aspx",
+      "location": {
+        "lat": "32.065911",
+        "lng": "34.777112"
+      },
+      "parking": {
+        "lat": "32.066114",
+        "lng": "34.776797"
+      },
+      "en": {
+        "name": "HaShulchan",
+        "address": "Rothschild 73",
+        "tip": "Chef restaurant on the Rothschild avenue.",
+        "tip_dish": "The menu changes quite a bit, but order the most creative meat dish you see.",
+        "tip_seating": "Ask for a table near the windows to the avenue.",
+        "tip_parking": "Use the Maze st. pad parking lot. ",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=12610&txtNavID=3&txtItemID=725759"
+      },
+      "he": {
+        "name": "×”×©×•×œ×—×Ÿ",
+        "address": "×¨×•×˜×©×™×œ×“ 73",
+        "tip": "×ž×¡×¢×“×ª ×“×’×œ ×©×œ ×¢×•×ž×¨ ×ž×™×œ×¨ ×”×©×“×¨×•×ª ×¨×•×˜×©×œ×™×“.",
+        "tip_dish": "×”×ª×¤×¨×™×˜ ×ž×©×ª× ×” ×œ× ×ž×¢×˜, ××‘×œ ×ª×–×ž×™× ×• ××ª ×ž× ×ª ×”×‘×©×¨ ×”×›×™ ×™×¦×™×¨×ª×™×ª ×©×™×©.",
+        "tip_seating": "×‘×§×©×• ×©×•×œ×—×Ÿ ×œ×™×“ ×”×—×œ×•×Ÿ ×œ×©×“×¨×”.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×¡×ž×•×š ×‘×ª×©×œ×•×.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=12610&txtNavID=3&txtItemID=725726"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "3",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "4",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST036",
+    "info": {
+      "phone": "03-5757477",
+      "url": "https://www.facebook.com/PopinaTelAviv",
+      "location": {
+        "lat": "32.063354",
+        "lng": "34.76842"
+      },
+      "parking": {
+        "lat": "32.063529",
+        "lng": "34.769229"
+      },
+      "en": {
+        "name": "Popina",
+        "address": "Ehad Ha'am 3",
+        "tip": "A fine dining combination of different cooking styles.",
+        "tip_dish": "The dishes are small here, but you'll just want more. ",
+        "tip_seating": "The bar is nice and intimate. ",
+        "tip_parking": "Use the Africa-Israel building parking lot. ",
+        "menuUrl": "http://popina.rolsites.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%A4%D7%95%D7%A4%D7%99%D7%A0%D7%94-%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%90%D7%95%D7%9B%D7%9C"
+      },
+      "he": {
+        "name": "×¤×•×¤×™× ×”",
+        "address": "××—×“ ×”×¢× 3",
+        "tip": "×ž×¡×¢×“×ª ×§×•× ×¡×¤×˜ ×”×ž×©×œ×‘×ª ×ž×¡×¤×¨ ×¡×•×’×™ ×‘×™×©×•×œ.",
+        "tip_dish": "×”×ž× ×•×ª ×§×˜× ×•×ª, ××‘×œ ×¨×§ ×ª×¨×¦×• ×¢×•×“. ",
+        "tip_seating": "×”×‘×¨ ×›××Ÿ ×ž××•×“ ××™× ×˜×™×ž×™ ×•× ×¢×™×.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×‘×™×ª ××¤×¨×™×§×” ×™×©×¨××œ.",
+        "menuUrl": "http://popina.rolsites.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%A4%D7%95%D7%A4%D7%99%D7%A0%D7%94-%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%90%D7%95%D7%9B%D7%9C"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-Popina.aspx "
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "2",
+      "family": "2",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST037",
+    "info": {
+      "phone": "03-6390407",
+      "url": "http://www.mouse.co.il/CM.Food_Item_Place,382,213,4033,.aspx",
+      "location": {
+        "lat": "32.060614",
+        "lng": "34.782701"
+      },
+      "parking": {
+        "lat": "32.062103",
+        "lng": "34.780893"
+      },
+      "en": {
+        "name": "Cocina Tamar",
+        "address": "HaTsfira 10",
+        "tip": "A place for good food, with a simple honest mood.",
+        "tip_dish": "Go for the meat dishes. ",
+        "tip_seating": "Ask for a place inside, not near the entrance.",
+        "tip_parking": "You'll find parking along the street or paid parking nearby.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=5783&txtNavID=3&txtItemID=734737"
+      },
+      "he": {
+        "name": "×§×•×¦'×™× ×” ×ª×ž×¨",
+        "address": "×”×¦×¤×™×¨×” 10",
+        "tip": "××•×™×¨×” ×¤×©×•×˜×”, ×©×•×œ×—× ×•×ª ×¢×¥ ×›×”×” ×•××•×›×œ ××™×˜×œ×§×™ ×œ× ×ž×ª× ×©×.",
+        "tip_dish": "×œ×›×• ×¢×œ ×ž× ×•×ª ×”×‘×©×¨.",
+        "tip_seating": "×‘×§×©×• ×ž×§×•× ×œ× ×§×¨×•×‘ ×œ×›× ×™×¡×”.",
+        "tip_parking": "×—× ×™×” ×œ××•×¨×š ×¨×—×•×‘ ×”×¦×¤×™×¨×” ××• ×—× ×™×•×Ÿ ××—×•×–×ª ×—×•×£.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=5783&txtNavID=3&txtItemID=465455"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "3",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "1",
+      "light": "3",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST038",
+    "info": {
+      "phone": "03-6889696",
+      "url": "http://www.coffeebar.co.il/",
+      "location": {
+        "lat": "32.061852",
+        "lng": "34.783294"
+      },
+      "parking": {
+        "lat": "32.061852",
+        "lng": "34.783294"
+      },
+      "en": {
+        "name": "Coffee Bar",
+        "address": "Yad Haruzim 13",
+        "tip": "Well established restaurant, causal and classy.",
+        "tip_dish": "Order the prawns with artichoke hearts. ",
+        "tip_seating": "No special seating recommendations.",
+        "tip_parking": "There's paid parking nearby.",
+        "menuUrl": "http://www.coffeebar.co.il/assets/menus/CB_Main_11.06.13.pdf"
+      },
+      "he": {
+        "name": "×§×•×¤×™ ×‘×¨",
+        "address": "×™×“ ×—×¨×•×¦×™× 13",
+        "tip": "×ž×•×¡×“ ×•×ª×™×§ ×•××™×›×•×ª×™.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×©×¨×™×ž×¤×¡ ×¢× ×œ×‘×‘×•×ª ×”××¨×˜×™×©×•×§.",
+        "tip_seating": "×©×‘×• ×‘×—×œ×œ ×”×¤× ×™×ž×™.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×¤×¨×˜×™ ×¦×ž×•×“ ××‘×œ ×¢×“×™×£ ×ž×•× ×™×ª.",
+        "menuUrl": "http://www.coffeebar.co.il/assets/menus/CB_Main_11.06.13.pdf"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×§×•×¤×™-×‘×¨.aspx "
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "4",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "2",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST039",
+    "info": {
+      "phone": "03-6966188",
+      "url": "https://www.facebook.com/dininghall",
+      "location": {
+        "lat": "32.076164",
+        "lng": "34.78628"
+      },
+      "parking": {
+        "lat": "32.078064",
+        "lng": "34.786744"
+      },
+      "en": {
+        "name": "Cheder Ochel",
+        "address": "Shaul Hamelech 23",
+        "tip": "Here you'll find Kibutz food with a quality twist. Fun with friends or family.",
+        "tip_dish": "Order the fish sinyeh.",
+        "tip_seating": "The inner space is nicer than the balcony. ",
+        "tip_parking": "Use the museum parking lot.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=9721&txtNavID=3&txtItemID=282102"
+      },
+      "he": {
+        "name": "×—×“×¨ ××•×›×œ",
+        "address": "×©××•×œ ×”×ž×œ×š 23",
+        "tip": "××•×›×œ ×§×™×‘×•×¥ ×¢× ×˜×•×•×™×¡×˜, ××•×™×¨×ª ×—×“×¨ ××•×›×œ, ×”×›×™ ×›×™×£ ×¢× ×—×‘×¨×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ×¡× ×™×™×” ×ž×•×¡×¨.",
+        "tip_seating": "×¢×“×™×£ ×œ×©×‘×ª ×‘×—×œ×œ ×”×¤× ×™×ž×™, ×œ× ×‘×ž×¨×¤×¡×ª.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×ž×•×–×™××•×Ÿ ×ª×œ ××‘×™×‘.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=9721&txtNavID=3&txtItemID=282102"
+      },
+      "price": "4",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×—×“×¨-××•×›×œ.aspx"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST040",
+    "info": {
+      "phone": "03-6337171",
+      "url": "http://www.vong.co.il",
+      "location": {
+        "lat": "32.063179",
+        "lng": "34.770962"
+      },
+      "parking": {
+        "lat": "32.064014",
+        "lng": "34.771999"
+      },
+      "en": {
+        "name": "Vong",
+        "address": "Rothschild 15",
+        "tip": "An intimate asian place.",
+        "tip_dish": "It has the best Pho in town.",
+        "tip_seating": "Seat in the patio if it's not too cold..",
+        "tip_parking": "You'll find some paid parking at Ehad Haam st.",
+        "menuUrl": "http://www.vong.co.il/menu-eng.htm"
+      },
+      "he": {
+        "name": "×•×•× ×’",
+        "address": "×¨×•×˜×©×™×œ×“ 15",
+        "tip": "××¡×™×™×ª×™×ª ×©×•× ×”, ××•×•×™×¨×” ××™× ×˜×™×ž×™×ª.",
+        "tip_dish": "×ž×¨×§ ×¤×• ×•×™×™×˜× ××ž×™ ×”×˜×•×‘ ×‘×¢×™×¨",
+        "tip_seating": "×©×‘×• ×‘×¤×˜×™×•.",
+        "tip_parking": "×—× ×™×•×Ÿ ×¤×¨×™×˜ ×ž×¨×—×•×‘ ××—×“ ×”×¢×",
+        "menuUrl": "http://www.vong.co.il/menu-he.htm"
+      },
+      "price": "3",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×•×•× ×’.aspx "
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "4",
+      "light": "3",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST041",
+    "info": {
+      "phone": "03-5660915",
+      "url": "http://www.pronto.co.il/",
+      "location": {
+        "lat": "32.063336",
+        "lng": "34.769862"
+      },
+      "parking": {
+        "lat": "32.063527",
+        "lng": "34.769846"
+      },
+      "en": {
+        "name": "Pronto",
+        "address": "Herzel 4",
+        "tip": "One of the best Italian places in town.",
+        "tip_dish": "Order the lamb papardelle.",
+        "tip_seating": "Ask for a table near the windows.",
+        "tip_parking": "There is a nearby paid parking lot. ",
+        "menuUrl": "http://www.pronto.co.il/#!classic/c16aq"
+      },
+      "he": {
+        "name": "×¤×¨×•× ×˜×•",
+        "address": "×”×¨×¦×œ 4",
+        "tip": "××™×˜×œ×§×™×” ×ž×¦×•×™× ×ª.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×”×¤×¤×¨×“×œ×” ×›×‘×©.",
+        "tip_seating": "×©×‘×• ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×›×œ×‘×• ×©×œ×•× ×”×¡×ž×•×š.",
+        "menuUrl": "http://www.pronto.co.il/#!classic/c16aq"
+      },
+      "price": "3",
+      "clickTableUrl": "http://www.rest.co.il/ordertable/order.aspx?restID=12069"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "4",
+      "light": "2",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST042",
+    "info": {
+      "phone": "03-5175171",
+      "url": "http://www.yakimono.co.il",
+      "location": {
+        "lat": "32.063246",
+        "lng": "34.771546"
+      },
+      "parking": {
+        "lat": "32.063246",
+        "lng": "34.771546"
+      },
+      "en": {
+        "name": "Yakimono",
+        "address": "Rothschild 19",
+        "tip": "A classy Japanese retaurant at the heart of Rothschild.",
+        "tip_dish": "Have the Suimono soup, a rare delight.",
+        "tip_seating": "Sit at the bar, or order a table next to the windows.",
+        "tip_parking": "There's paid parking behind the restaurant.",
+        "menuUrl": "http://www.rol.co.il/images/sites/yakimono-ta/menu1.html"
+      },
+      "he": {
+        "name": "×™×§×™×ž×•× ×•",
+        "address": "×¨×•×˜×©×™×œ×“ 19",
+        "tip": "×™×¤× ×™×ª ×§×œ××¡×™×ª ×•×ª×œ ××‘×™×‘×™×ª.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž×¨×§ ×”×¡×•×”×™×ž×•× ×•, × ×“×™×¨.",
+        "tip_seating": "×™×© ×‘×¨ × ×—×ž×“ ××• ×©×•×œ×—× ×•×ª ×˜×•×‘×™× ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×‘×¡×ž×˜×” ×”×¦×ž×•×“×” ×œ×‘× ×™×™×Ÿ ×”×ž×¡×¢×“×”.",
+        "menuUrl": "http://www.rol.co.il/images/sites/yakimono-ta/menu1.html"
+      },
+      "price": "5",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "4",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST043",
+    "info": {
+      "phone": "03-5469920",
+      "url": "http://www.mulyam.com/",
+      "location": {
+        "lat": "32.099289",
+        "lng": "34.774515"
+      },
+      "parking": {
+        "lat": "32.099289",
+        "lng": "34.774515"
+      },
+      "en": {
+        "name": "Mul-Yam",
+        "address": "Hangar 24, Namal Tel Aviv",
+        "tip": "The eldest of the sea food restaurants, open view to the wooden deck of the Tel Aviv harbour.",
+        "tip_dish": "If there's a lobster today, go for it.",
+        "tip_seating": "The seats nearer to the deck are nicer. ",
+        "tip_parking": "Restaurant has its own parking inside the port. Call in advance.",
+        "menuUrl": "http://www.mulyam.com/images/EN/main-menu.html"
+      },
+      "he": {
+        "name": "×ž×•×œ ×™×",
+        "address": "×”× ×’×¨ 24 × ×ž×œ ×ª×œ ××‘×™×‘",
+        "tip": "×”×‘×›×™×¨×” ×©×‘×ž×¡×¢×“×•×ª ×”×™×, ×—×œ×•×Ÿ ×¤×ª×•×— ×œ×“×§ ×”×¢×¥ ×©×œ × ×ž×œ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×× ×™×© ×œ×•×‘×¡×˜×¨ ×”×™×•×, ×œ×›×• ×¢×œ ×–×”. ",
+        "tip_seating": "×›×œ ×”×—×œ×œ ×™×¤×” ××‘×œ ×¢×“×™×£ ×§×¨×•×‘ ×œ×›×™×•×•×Ÿ ×”×™×.",
+        "tip_parking": "×—× ×™×” ×¤×¨×˜×™×ª ×œ×™×“ ×”×ž×¡×¢×“×”, ×ª×ª×§×©×¨×• ×ž×¨××©.",
+        "menuUrl": "http://www.mulyam.com/images/main-menu.html"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×ž×•×œ-×™×.aspx "
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "3",
+      "family": "4",
+      "business": "4",
+      "tourists": "5",
+      "table": "5",
+      "bar": "1",
+      "light": "4",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST044",
+    "info": {
+      "phone": "03-6832211",
+      "url": "https://www.facebook.com/SardiniaItalianTrattoria",
+      "location": {
+        "lat": "32.054212",
+        "lng": "34.751413"
+      },
+      "parking": {
+        "lat": "32.05377",
+        "lng": "34.751263"
+      },
+      "en": {
+        "name": "Sardinia",
+        "address": "Kikar Kdumim, Yafo",
+        "tip": "An intimate Italian restaurant, at the top of old Jaffa, not only for tourists.",
+        "tip_dish": "Order the linguine Bottarga, a Sicilian special. ",
+        "tip_seating": "Sit outside if possible.",
+        "tip_parking": "Use the old Jaffa parking lot.",
+        "menuUrl": "http://www.rol.co.il/sites/sardinia/menu.html"
+      },
+      "he": {
+        "name": "×¡×¨×“×™× ×™×”",
+        "address": "×›×™×›×¨ ×§×“×•×ž×™×, ×™×¤×•",
+        "tip": "××™×˜×œ×§×™×” ×‘×’×‘×¢×ª ×™×¤×• ×”×¢×ª×™×§×”, ×œ× ×¨×§ ×œ×ª×™×™×¨×™×.",
+        "tip_dish": "× ×¡×• ××ª ×”×œ×™× ×’×•×•×™× ×™ ×‘×•×˜×¨×’×”, ×”×›×™ ×¡×™×¦×™×œ×™×”.",
+        "tip_seating": "×©×‘×• ×‘×—×•×¥ ×× × ×¢×™×.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×›×™×›×¨ ×§×“×•×ž×™×.",
+        "menuUrl": "http://www.rol.co.il/sites/sardinia/menu.html"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "4",
+      "business": "1",
+      "tourists": "4",
+      "table": "5",
+      "bar": "4",
+      "light": "4",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST045",
+    "info": {
+      "phone": "03-6050896",
+      "url": "http://www.mouse.co.il/CM.Food_Item_Place,382,213,3926,.aspx",
+      "location": {
+        "lat": "32.091997",
+        "lng": "34.774575"
+      },
+      "parking": {
+        "lat": "32.091997",
+        "lng": "34.774575"
+      },
+      "en": {
+        "name": "Adora",
+        "address": "Ben Yehuda 226",
+        "tip": "An Israeli chef kitchen with little pretence.",
+        "tip_dish": "Order the Flamenquin pork.",
+        "tip_seating": "No preffered seating recommendations.",
+        "tip_parking": "Take a taxi.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=5985&txtNavID=3&txtItemID=649705"
+      },
+      "he": {
+        "name": "××“×•×¨×”",
+        "address": "×‘×Ÿ ×™×”×•×“×” 226",
+        "tip": "×ž×˜×‘×— ×©×£ ×™×©×¨××œ×™ ××ž×™×ª×™ × ×˜×•×œ ×™×•×ž×¨× ×•×ª ×ž×™×•×ª×¨×ª.",
+        "tip_dish": "×”×–×ž×™× ×• ×¤×™×œ×” ×œ×‘×Ÿ ×¤×œ×ž× ×§×™×Ÿ.",
+        "tip_seating": "××™×Ÿ ×œ× ×• ×”×ž×œ×¦×•×ª ×™×©×™×‘×” ×¤×”.",
+        "tip_parking": "×§×—×• ×ž×•× ×™×ª. ×× ×—× ×• ×œ× ×ž×ª×¢×¡×§×™× ×¢× ×‘×Ÿ ×™×”×•×“×”.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=5985&txtNavID=3&txtItemID=131575"
+      },
+      "price": "3",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "4",
+      "light": "2",
+      "vol": "4",
+      "parking": "false"
+    }
+  },
+  {
+    "id": "REST046",
+    "info": {
+      "phone": "03-6040036",
+      "url": "http://www.davidveyossef.co.il/",
+      "location": {
+        "lat": "32.065238",
+        "lng": "34.771823"
+      },
+      "parking": {
+        "lat": "32.065348",
+        "lng": "34.772211"
+      },
+      "en": {
+        "name": "David veYosef",
+        "address": "Montefiore 21",
+        "tip": "Chef restaurant with a lounge and a dominant bar.",
+        "tip_dish": "Order the duck spring roll.",
+        "tip_seating": "Sit at the bar inside. ",
+        "tip_parking": "Use the valet or paid parking nearby.",
+        "menuUrl": "http://davidveyossef.co.il/en/our-menu/"
+      },
+      "he": {
+        "name": "×“×•×“ ×•×™×•×¡×£",
+        "address": "×ž×•× ×˜×™×¤×™×•×¨×™ 21",
+        "tip": "×ž×¡×¢×“×ª ×©×£ ×”×›×•×œ×œ×ª ×’× ×œ××•× ×’' ×¤× ×™×ž×™. ",
+        "tip_dish": "×”×–×ž×™× ×• ×¡×¤×¨×™× ×’ ×¨×•×œ ×‘×¨×•×•×–.",
+        "tip_seating": "×”×‘×¨ ×‘×¤× ×™× ×¢×“×™×£.",
+        "tip_parking": "×—× ×™×•×Ÿ ××œ× ×‘×™ ×¤×™× ×ª ×ž×•× ×˜×™×¤×™×•×¨×™, ×™×© ×’× ×©×™×¨×•×ª ×•××œ×˜ (×œ×¢×™×ª×™×).",
+        "menuUrl": "http://davidveyossef.co.il/%D7%94%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%A9%D7%9C%D7%A0%D7%95/"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×“×•×“-×•×™×•×¡×£.aspx "
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "3",
+      "family": "1",
+      "business": "1",
+      "tourists": "2",
+      "table": "2",
+      "bar": "5",
+      "light": "1",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST047",
+    "info": {
+      "phone": "072-2512950",
+      "url": "http://www.bertie.co.il/",
+      "location": {
+        "lat": "32.077629",
+        "lng": "34.777983"
+      },
+      "parking": {
+        "lat": "32.074991",
+        "lng": "34.775704"
+      },
+      "en": {
+        "name": "Bertie",
+        "address": "King George 88",
+        "tip": "An Eastern Mediterranean restaurant with a local vibe.  ",
+        "tip_dish": "Order the renowned veal cheek.",
+        "tip_seating": "Ask to sit by the windows.",
+        "tip_parking": "This is a hard to find parking. Nearest is Dizingoff centre paid lot.",
+        "menuUrl": "http://www.bertie.co.il/menu_english.html"
+      },
+      "he": {
+        "name": "×‘×¨×˜×™",
+        "address": "×§×™× ×’ ×’'×•×¨×’' 88",
+        "tip": "×ž×¡×¢×“×” ×ž×”×ž×˜×‘×— ×”×œ×‘× ×˜×™× ×™ - ×ž×–×¨×— ×™× ×ª×™×›×•× ×™ ×‘××™× ×˜×¨×¤×¨×˜×¦×™×” ×ž×•×“×¨× ×™×ª ×•×¢×“×›× ×™×ª.",
+        "tip_dish": "×©×ž×” ×©×œ ×ž× ×ª ×”×œ×—×™ ×™×¦× ×œ×ž×¨×—×§×™×.",
+        "tip_seating": "×©×‘×• ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×§×©×” ×œ×ž×¦×•×. ×”×—× ×™×•×Ÿ ×”×›×™ ×§×¨×•×‘ ×”×•× ×“×™×–×™× ×’×•×£ ×¡× ×˜×¨...",
+        "menuUrl": "http://www.bertie.co.il/menu.html"
+      },
+      "price": "3",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×‘×¨×˜×™.aspx "
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST048",
+    "info": {
+      "phone": "03-5337962",
+      "url": "https://www.facebook.com/Hanoirest",
+      "location": {
+        "lat": "32.062036",
+        "lng": "34.769252"
+      },
+      "parking": {
+        "lat": "32.062399",
+        "lng": "34.768774"
+      },
+      "en": {
+        "name": "Hanoi",
+        "address": "Lilenblum 18",
+        "tip": "Asian food with an Asian setting.",
+        "tip_dish": "Finally, truly good ramen soup.",
+        "tip_seating": "Sit at the bar facing the street.",
+        "tip_parking": "There is paid parking nearby.",
+        "menuUrl": "https://www.facebook.com/photo.php?fbid=231888213633760&set=pb.117044775118105.-2207520000.1384354196.&type=3&theater"
+      },
+      "he": {
+        "name": "×”×× ×•×™",
+        "address": "×œ×™×œ× ×‘×œ×•× 18",
+        "tip": "××•×›×œ ××¡×™×™×ª×™ ×¢× ×¢×™×¦×•×‘ ×¨×—×•×‘.",
+        "tip_dish": "×ž×¨×§ ×¨××ž×Ÿ ×˜×•×‘ ×•××ž×™×ª×™. ",
+        "tip_seating": "×©×‘×• ×¢×œ ×‘×¨ ×”×™×©×™×‘×” ×‘×—×•×¥ ×ž×•×œ ×”×¨×—×•×‘.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ××—×•×–×ª ×”×—×•×£ ×”×ª×œ×ž×™",
+        "menuUrl": "https://www.facebook.com/photo.php?fbid=231888213633760&set=pb.117044775118105.-2207520000.1384354196.&type=3&theater"
+      },
+      "price": "3",
+      "clickTableUrl": "click table link"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "3",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST049",
+    "info": {
+      "phone": "03-5178486",
+      "url": "http://www.bellini.co.il/",
+      "location": {
+        "lat": "32.060409",
+        "lng": "34.764279"
+      },
+      "parking": {
+        "lat": "32.061663",
+        "lng": "34.762035"
+      },
+      "en": {
+        "name": "Belini",
+        "address": "Yehiel 6",
+        "tip": "Solid italian, with a cultured setting.",
+        "tip_dish": "",
+        "tip_seating": "We have no seating recommendations. ",
+        "tip_parking": "There is nearby paid parking on HaMered street.",
+        "menuUrl": "http://www.bellini.co.il/he/menu/default.aspx?ChannelID=2&DirectoryID=2"
+      },
+      "he": {
+        "name": "×‘×œ×™× ×™",
+        "address": "×™×—×™××œ 6",
+        "tip": "××™×˜×œ×§×™×” × ×—×ž×“×” ×‘××•×™×¨×” ×©×œ ×ž×¨×›×– ×¡×•×–×Ÿ ×“×œ×œ.",
+        "tip_dish": "",
+        "tip_seating": "",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•× ×™× ×‘××–×•×¨ ×¨×—×•×‘ ×”×ž×¨×“",
+        "menuUrl": "http://www.bellini.co.il/he/menu/default.aspx?ChannelID=2&DirectoryID=2"
+      },
+      "price": "4",
+      "clickTableUrl": "false"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "4",
+      "family": "5",
+      "business": "4",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "3",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST050",
+    "info": {
+      "phone": "03-5296054",
+      "url": "http://www.ariatlv.co.il/",
+      "location": {
+        "lat": "32.06163",
+        "lng": "34.772347"
+      },
+      "parking": {
+        "lat": "32.061341",
+        "lng": "34.77246"
+      },
+      "en": {
+        "name": "Aria",
+        "address": "Nehalat Binyamin 66",
+        "tip": "A fine dining setting in a renovated boutique building. First floor serves as a classy bar.",
+        "tip_dish": "Order the Coquies st Jaques.",
+        "tip_seating": "Ask for the table by the stairs, next to the window.",
+        "tip_parking": "There is paid parking nearby.",
+        "menuUrl": "http://www.ariatlv.co.il/#%d7%90%d7%95%d7%9b%d7%9c-%d7%9e%d7%a1%d7%a2%d7%93%d7%94"
+      },
+      "he": {
+        "name": "××¨×™×”",
+        "address": "× ×—×œ×ª ×‘× ×™×ž×™×Ÿ 66",
+        "tip": "×ž×¡×¢×“×ª ×©×£ ×‘×‘× ×™×™×Ÿ ×©×™×ž×•×¨ ×ž×“×œ×™×§, ×”×›×•×œ×œ×ª ×‘×¨ ×‘×§×•×ž×” ×”×ª×—×ª×•× ×” ×•×ž×¡×¢×“×” ×‘×§×•×ž×” ×”×¢×œ×™×•× ×”.",
+        "tip_dish": "×”×–×ž×™× ×• ×§×•×§×™ ×¡××Ÿ ×–××§.",
+        "tip_seating": "×©×‘×• ×‘×©×•×œ×—×Ÿ ×œ×™×“ ×’×¨× ×”×ž×“×¨×’×•×ª ×§×¨×•×‘ ×œ×—×œ×•×Ÿ.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ××—×•×–×ª ×”×—×•×£ ×”×¡×ž×•×š ×œ×ž×§×•×.",
+        "menuUrl": "http://www.ariatlv.co.il/#%d7%90%d7%95%d7%9b%d7%9c-%d7%9e%d7%a1%d7%a2%d7%93%d7%94"
+      },
+      "price": "5",
+      "clickTableUrl": "http://clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%90%D7%A8%D7%99%D7%94-%D7%9E%D7%A1%D7%A2%D7%93%D7%94.aspx"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "2",
+      "family": "3",
+      "business": "4",
+      "tourists": "2",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST051",
+    "info": {
+      "phone": "03-5455900",
+      "url": "http://www.edenboutiquehotel.co.il/bistro/",
+      "location": {
+        "lat": "32.06946",
+        "lng": "34.766782"
+      },
+      "parking": {
+        "lat": "32.070718",
+        "lng": "34.768"
+      },
+      "en": {
+        "name": "Bistro Eden",
+        "address": "Yeshuchon 11",
+        "tip": "The feel of a boutique hotel.",
+        "tip_dish": "",
+        "tip_seating": "We recommend sitting by the windows.",
+        "tip_parking": "Take a taxi, there's little parking around.",
+        "menuUrl": "FALSE"
+      },
+      "he": {
+        "name": "×‘×™×¡×˜×¨×• ×¢×“×Ÿ",
+        "address": "×™×©×•×›×•×Ÿ 11",
+        "tip": "×‘××•×™×¨×ª ×ž×œ×•×Ÿ ×‘×•×˜×™×§ ×ž×™×•×—×“.",
+        "tip_dish": "",
+        "tip_seating": "×”×–×ž×™× ×• ×ž×§×•× ×œ×™×“ ×”×—×œ×•×Ÿ. ",
+        "tip_parking": "×§×©×” ×œ×—× ×•×ª ×‘×›×¨× ×”×ª×™×ž× ×™×. ×”×›×™ ×§×¨×•×‘ - ××—×•×–×ª ×”×—×•×£ ×”×¨×‘ ×§×•×§.",
+        "menuUrl": "FALSE"
+      },
+      "price": "5",
+      "clickTableUrl": "http://www.boutiquehoteleden.com/bistro/"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "3",
+      "family": "5",
+      "business": "0",
+      "tourists": "3",
+      "table": "5",
+      "bar": "2",
+      "light": "4",
+      "vol": "1",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST052",
+    "info": {
+      "phone": "03-5665655",
+      "url": "http://www.allora.co.il/",
+      "location": {
+        "lat": "32.088945",
+        "lng": "34.880909"
+      },
+      "parking": {
+        "lat": "32.088945",
+        "lng": "34.880909"
+      },
+      "en": {
+        "name": "Alora",
+        "address": "Rothschild 60",
+        "tip": "An open balcony italian restaurant on Rothschild blvd.",
+        "tip_dish": "",
+        "tip_seating": "On nice days, it's a great place to eat on the balcony.",
+        "tip_parking": "There is paid parking next to the restaurant.",
+        "menuUrl": "http://www.allora.co.il/pdf/allora_menu_english.pdf"
+      },
+      "he": {
+        "name": "××œ×•×¨×”",
+        "address": "×¨×•×˜×©×™×œ×“ 60",
+        "tip": "×ž×¡×¢×“×” ××™×˜×œ×§×™×ª ×›×™×¤×™×ª ×¢×œ ×©×“×¨×•×ª ×¨×•×˜×©×™×œ×“.",
+        "tip_dish": "",
+        "tip_seating": "×©×‘×• ×¢×œ ×”×ž×¨×¤×¡×ª ×”×¤×•× ×” ×œ×©×“×¨×”.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×‘×ª×©×œ×•× ×¦×ž×•×“ ×œ×ž×§×•×.",
+        "menuUrl": "http://www.allora.co.il/pdf/allora_menu.pdf"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "4",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST053",
+    "info": {
+      "phone": "03-5167888",
+      "url": "http://www.ngrestaurant.co.il/",
+      "location": {
+        "lat": "32.435288",
+        "lng": "34.917051"
+      },
+      "parking": {
+        "lat": "32.062927",
+        "lng": "34.768193"
+      },
+      "en": {
+        "name": "NG",
+        "address": "Ehad Ha'am 6",
+        "tip": "A great place for meat and friends.",
+        "tip_dish": "Go for the porterhouse steak.",
+        "tip_seating": "The inside hall, by the windows.",
+        "tip_parking": "Small paid parking lot nearby.",
+        "menuUrl": "http://www.ngrestaurant.co.il/english/index.html"
+      },
+      "he": {
+        "name": "×× ×’'×™",
+        "address": "××—×“ ×”×¢× 6",
+        "tip": "×ž×§×•× ×˜×•×‘ ×œ×‘×©×¨ ×•×—×‘×¨×™×.",
+        "tip_dish": "×œ×›×• ×¢×œ ×”×¤×•×¨×˜×¨×”××•×¡.",
+        "tip_seating": "×”×–×ž×™× ×• ×ž×§×•× ×‘×¤× ×™× ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×—× ×™×•×Ÿ ×¤×¨×˜×™ ×¦×¤×•×£ ×‘×¡×ž×•×š.",
+        "menuUrl": "http://www.ngrestaurant.co.il/website/index.aspx"
+      },
+      "price": "4",
+      "clickTableUrl": "http://www.rest.co.il/ordertable/order.aspx?restID=4834"
+    },
+    "ratings": {
+      "date": "1",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "3",
+      "light": "4",
+      "vol": "4",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST054",
+    "info": {
+      "phone": "03-5201830",
+      "url": "http://www.blueskybyma.co.il/",
+      "location": {
+        "lat": "32.087283",
+        "lng": "34.770559"
+      },
+      "parking": {
+        "lat": "32.087283",
+        "lng": "34.770559"
+      },
+      "en": {
+        "name": "Blue Sky",
+        "address": "Carlton Hotel, Eliezer Peri 10",
+        "tip": "A hotel-top fine dining restaurant.",
+        "tip_dish": "Order the Emotions of the Sea.",
+        "tip_seating": "Have a few ocktails outside before eating.",
+        "tip_parking": "Use the hotel parking.",
+        "menuUrl": "http://blueskybyma.co.il/dinnerwine/"
+      },
+      "he": {
+        "name": "×‘×œ×• ×¡×§×™×™",
+        "address": "××œ×™×¢×–×¨ ×¤×¨×™ 10, ×ž×œ×•×Ÿ ×§×¨×œ×˜×•×Ÿ",
+        "tip": ".×ž×¡×¢×“×” ×™×•×§×¨×ª×™×ª ×‘×’×’ ×ž×œ×•×Ÿ ×§×¨×œ×˜×•×Ÿ",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×”×ž×•×¦×™×•×ª ×”×™×.",
+        "tip_seating": "×©×ª×• ×ž×©×”×• ×¢×œ ×”×ž×¤×¨×¡×ª ×œ×¤× ×™ ×©××ª× × ×›× ×¡×™× ×œ××›×•×œ.",
+        "tip_parking": "×—× ×™×” ×‘×ž×œ×•×Ÿ ××• ×‘×›×™×›×¨ ××ª×¨×™× ×”×¡×ž×•×›×”.",
+        "menuUrl": "http://blueskybyma.co.il/%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%A2%D7%A8%D7%91/"
+      },
+      "price": "5",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "3",
+      "family": "4",
+      "business": "5",
+      "tourists": "4",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST055",
+    "info": {
+      "phone": "03-6447441",
+      "url": "https://www.facebook.com/pastel.rest",
+      "location": {
+        "lat": "32.076548",
+        "lng": "34.78742"
+      },
+      "parking": {
+        "lat": "32.078064",
+        "lng": "34.786744"
+      },
+      "en": {
+        "name": "Pastel",
+        "address": "Shaul Hamelech 27, Tel-Aviv Museum",
+        "tip": "One of several TLV Museum restaurant.",
+        "tip_dish": "Order the Bavette steak. ",
+        "tip_seating": "The inner hall is beautiful. ",
+        "tip_parking": "Use the museum parking lot.",
+        "menuUrl": "FALSE"
+      },
+      "he": {
+        "name": "×¤××¡×˜×œ",
+        "address": "×©××•×œ ×”×ž×œ×š 27, ×ž×•×–×™××•×Ÿ ×ª×œ-××‘×™×‘",
+        "tip": "××—×ª ×ž×›×ž×” ×ž×¡×¢×“×•×ª ×”×ž×•×–×™××•×Ÿ.",
+        "tip_dish": "×”×–×ž×™× ×• ×¡×˜×™×™×§ ×‘××•×•×˜.",
+        "tip_seating": "×©×‘×• ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×”×©×ª×ž×©×• ×‘×—× ×™×•×Ÿ ×ž×•×–×™××•×Ÿ ×ª×œ ××‘×™×‘.",
+        "menuUrl": "https://www.facebook.com/pastel.rest/app_208195102528120"
+      },
+      "price": "5",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "4",
+      "family": "5",
+      "business": "5",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST056",
+    "info": {
+      "phone": "03-9578888",
+      "url": "http://www.rothschild-hotel.co.il/",
+      "location": {
+        "lat": "32.067354",
+        "lng": "34.777973"
+      },
+      "parking": {
+        "lat": "32.066145",
+        "lng": "34.776787"
+      },
+      "en": {
+        "name": "Rothschild",
+        "address": "Rothschild 96",
+        "tip": "A quiet boutique hotal restaurant.",
+        "tip_dish": "Order the Triggerfish, if it's on that day.",
+        "tip_seating": "Ask not to sit on the right side lobby area. ",
+        "tip_parking": "Park at the Maze st. parking lot.",
+        "menuUrl": "http://www.rothschild-hotel.co.il/site/upload/uploaded/%D7%AA%D7%A4%D7%A8%D7%99%D7%98%20%D7%9C%D7%9E%D7%A8%D7%92%D7%A8%D7%99%D7%98%D7%94.pdf"
+      },
+      "he": {
+        "name": "×¨×•×˜×©×™×œ×“",
+        "address": "×¨×•×˜×©×™×œ×“ 86",
+        "tip": "×ž×¡×¢×“×ª ×©×£ ×‘×ž×œ×•×Ÿ ×”×‘×•×˜×™×§ ×¨×•×˜×©×œ×™×“.",
+        "tip_dish": "×”×–×ž×™× ×• ××™×™×œ×ª ×”×™×, ×× ×™×©.",
+        "tip_seating": "×‘×§×©×• ×œ×©×‘×ª ×œ× ×‘××–×•×¨ ×”×œ×•×‘×™ ×”×™×ž× ×™.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×ž×–×\"×”.",
+        "menuUrl": "http://www.rothschild-hotel.co.il/site/upload/uploaded/%D7%AA%D7%A4%D7%A8%D7%99%D7%98%20%D7%9C%D7%9E%D7%A8%D7%92%D7%A8%D7%99%D7%98%D7%94.pdf"
+      },
+      "price": "4",
+      "clickTableUrl": "click table link"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "5",
+      "tourists": "1",
+      "table": "5",
+      "bar": "3",
+      "light": "2",
+      "vol": "4",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST057",
+    "info": {
+      "phone": "03-6836321",
+      "url": "http://www.container.org.il/",
+      "location": {
+        "lat": "32.051596",
+        "lng": "34.750079"
+      },
+      "parking": {
+        "lat": "32.050015",
+        "lng": "34.748678"
+      },
+      "en": {
+        "name": "Container",
+        "address": "Warehouse 2, Jaffa port",
+        "tip": "A restaurant on the old port of Jaffa with a hipster twist.",
+        "tip_dish": "Order some of the fresh fish and sea food.",
+        "tip_seating": "Sit inside if there is no show that night. The place features a fun bar outside in the summer.",
+        "tip_parking": "Use the south parking lot at the Jaffa port.",
+        "menuUrl": "http://www.container.org.il/container/%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%93%D7%92%D7%99%D7%9D-%D7%95%D7%A4%D7%99%D7%A8%D7%95%D7%AA-%D7%99%D7%9D/"
+      },
+      "he": {
+        "name": "×§×•× ×˜×™×™× ×¨",
+        "address": "×ž×—×¡×Ÿ 2, × ×ž×œ ×™×¤×•",
+        "tip": "×ž×¡×¢×“×ª ×“×’×™× ×‘× ×ž×œ ×™×¤×• ×”×ž×¦×™×¢×” ×’× ×”×•×¤×¢×•×ª ×•×ª×¢×¨×•×›×ª ××•×ž× ×•×ª.",
+        "tip_dish": "×”×–×ž×™× ×• ×ž×ž×‘×—×¨ ×¤×™×¨×•×ª ×™× ×•×“×’×™× ×˜×¨×™×™×.",
+        "tip_seating": "×©×‘×• ×‘×¤× ×™× ×× ××™×Ÿ ×”×•×¤×¢×” ××• ×¢×œ ×”×‘×¨ ×‘×—×•×¥ ×× ×–×” ×§×™×¥.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ × ×ž×œ ×™×¤×• ×”×“×¨×•×ž×™.",
+        "menuUrl": "http://www.container.org.il/container/%D7%AA%D7%A4%D7%A8%D7%99%D7%98-%D7%93%D7%92%D7%99%D7%9D-%D7%95%D7%A4%D7%99%D7%A8%D7%95%D7%AA-%D7%99%D7%9D/"
+      },
+      "price": "4",
+      "clickTableUrl": "http://www.container.org.il/container/reservations/"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "3",
+      "business": "1",
+      "tourists": "4",
+      "table": "5",
+      "bar": "5",
+      "light": "1",
+      "vol": "5",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST058",
+    "info": {
+      "phone": "052-703-5888",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,8374,.aspx",
+      "location": {
+        "lat": "32.073292",
+        "lng": "34.800266"
+      },
+      "parking": {
+        "lat": "",
+        "lng": ""
+      },
+      "en": {
+        "name": "The Salon",
+        "address": "Ma'avar Yabok 8",
+        "tip": "Order well in advance, it's tricky. Open Wednesdays and Thursdays. ",
+        "tip_dish": "There's no set menu really.",
+        "tip_seating": "You'll find it hard to choose a table of your choice. ",
+        "tip_parking": "And there's little parking available. But trust us, it's worth it. ",
+        "menuUrl": "FALSE"
+      },
+      "he": {
+        "name": "×”×¡×œ×•×Ÿ",
+        "address": "×ž×¢×‘×¨ ×™×‘×•×§ 8",
+        "tip": "×ª×–×ž×™× ×• ×”×¨×‘×” ×ž×¨××©. ×¤×ª×•×— ×‘×—×ž×™×©×™ ×•×¨×‘×™×¢×™ ×‘×œ×‘×“. ",
+        "tip_dish": "×”×ª×¤×¨×™×˜ ×œ× ×§×‘×•×¢ ××‘×œ ××™×™×œ ×©× ×™ ×™×•×“×¢ ×œ×”×©×§×™×¢.",
+        "tip_seating": "×™×© ×ž×§×•×? ×”×¨×•×—×ª×.",
+        "tip_parking": "×—× ×• ×‘×¨×—×•×‘×•×ª ×¡×ž×•×›×™×, ××‘×œ ×‘××ž×ª ×©×¢×“×™×£ ×ž×•× ×™×ª.",
+        "menuUrl": "FALSE"
+      },
+      "price": "5",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "3",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "1",
+      "vol": "4",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST059",
+    "info": {
+      "phone": "03-5222886",
+      "url": "http://www.goocha.co.il/",
+      "location": {
+        "lat": "32.084574",
+        "lng": "34.774323"
+      },
+      "parking": {
+        "lat": "",
+        "lng": ""
+      },
+      "en": {
+        "name": "Goocha",
+        "address": "Dizengoff 171",
+        "tip": "A fun seafood restaurant at the heart of Tel Aviv.",
+        "tip_dish": "Order mussles and fries.",
+        "tip_seating": "On a nice day you can sit outside on Dizingoff st.",
+        "tip_parking": "Take a taxi.",
+        "menuUrl": "http://www.goocha.co.il/pages/menu.php"
+      },
+      "he": {
+        "name": "×’×•×¦'×”",
+        "address": "×“×™×–×™× ×’×•×£ 171",
+        "tip": "×ž×§×•× ×›×™×¤×™ ×œ×ž××›×œ×™ ×™× ×‘×œ×‘ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×”×–×ž×™× ×• ×ž×•×œ×™× ×•×¦'×™×¤×¡.",
+        "tip_seating": "×‘×™×•× × ×¢×™× ×©×‘×• ×‘×—×•×¥ ×¢×œ ×¨×—×•×‘ ×“×™×–×™× ×“×•×£.",
+        "tip_parking": "×¢×“×™×£ ×œ×‘×•× ×‘×ž×•× ×™×ª.",
+        "menuUrl": "http://www.goocha.co.il/pages/menu.php"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "4",
+      "vol": "5",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST060",
+    "info": {
+      "phone": "03-6204753",
+      "url": "http://www.ornaandella.com",
+      "location": {
+        "lat": "32.068953",
+        "lng": "34.774704"
+      },
+      "parking": {
+        "lat": "",
+        "lng": ""
+      },
+      "en": {
+        "name": "Orna & Ella",
+        "address": "Shenkin 33",
+        "tip": "A classy place that is also vegan and gluten friendly.",
+        "tip_dish": "Order the wweet potato latkes.",
+        "tip_seating": "We don't have any special seating recommendation.",
+        "tip_parking": "take a taxi.",
+        "menuUrl": "http://ornaandella.com/en/menus/fb"
+      },
+      "he": {
+        "name": "××•×¨× ×” ×•××œ×”",
+        "address": "×©×™× ×§×™×Ÿ 33",
+        "tip": "×ž×§×•× ×™×“×™×“×•×ª×™ ×œ×˜×‘×¢×•× ×™× ×•×¦×ž×—×•× ×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ×œ×‘×™×‘×•×ª ×‘×˜×˜×”.",
+        "tip_seating": "××™×Ÿ ×œ× ×• ×”×ž×œ×¦×•×ª ×ž×™×•×—×“×•×ª ×œ×ž×§×•× ×™×©×™×‘×”. ",
+        "tip_parking": "×¢×“×™×£ ×œ×”×’×™×¢ ×‘×ž×•× ×™×ª.",
+        "menuUrl": "http://ornaandella.com/en/menus/fb"
+      },
+      "price": "3",
+      "clickTableUrl": ""
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "5",
+      "business": "4",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "2",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST061",
+    "info": {
+      "phone": "03-6996633",
+      "url": "http://www.seatara.co.il/",
+      "location": {
+        "lat": "32.138119",
+        "lng": "34.79137"
+      },
+      "parking": {
+        "lat": "32.138094",
+        "lng": "34.79159"
+      },
+      "en": {
+        "name": "Seatara",
+        "address": "Rosenblum Herzel 8, Sea & Sun",
+        "tip": "Located at the northern tip of Tel Aviv, at a seaside complex, it's a great way to end your day.",
+        "tip_dish": "Order at least one of the focaccias.",
+        "tip_seating": "Sit at the window side, or ask for a place outside if the weather is nice.",
+        "tip_parking": "Street parking should be fine, but there's a lot nearby.",
+        "menuUrl": "http://www.seatara.co.il/home/doc.aspx?mCatID=1092&icid=62&mode=s"
+      },
+      "he": {
+        "name": "×¡×™×˜××¨×”",
+        "address": "×¨×•×–× ×‘×œ×•× ×”×¨×¦×œ 8, ×¡×™ ×× ×“ ×¡××Ÿ",
+        "tip": "×ž×ž×•×§× ×‘×ž×ª×—× ×‘×™ ×× ×“ ×¡××Ÿ ×‘×§×¦×” ×”×¦×¤×•× ×™ ×©×œ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×”×–×ž×™× ×• ×œ×¤×—×•×ª ××ª ××—×ª ×”×¤×•×§×¦'×•×ª.",
+        "tip_seating": "×©×‘×• ×œ×™×“ ×”×—×œ×•× ×•×ª ×œ×™×.",
+        "tip_parking": "×™×© ×—× ×™×” ×œ××•×¨×š ×”×¨×—×•×‘ ××• ×—× ×™×•×Ÿ ×¤×¨×˜×™.",
+        "menuUrl": "http://www.seatara.co.il/home/doc.aspx?mCatID=73&icid=62&mode=s"
+      },
+      "price": "3",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×¡×™×˜×¨×”.aspx "
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "4",
+      "family": "5",
+      "business": "4",
+      "tourists": "5",
+      "table": "5",
+      "bar": "3",
+      "light": "2",
+      "vol": "2",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST062",
+    "info": {
+      "phone": "03-5174773",
+      "url": "http://www.mantaray.co.il/",
+      "location": {
+        "lat": "32.061208",
+        "lng": "34.760168"
+      },
+      "parking": {
+        "lat": "32.061545",
+        "lng": "34.760608"
+      },
+      "en": {
+        "name": "MantaRay",
+        "address": "Kaufmann 7, Alma Beach",
+        "tip": "A great place for dinner at sunset. Don't miss out.",
+        "tip_dish": "Order the starters out of a mix and match tray.",
+        "tip_seating": "Sit on the outside balcony if it's summer.",
+        "tip_parking": "Use the Alma beach parking lot.",
+        "menuUrl": "http://www.mantaray.co.il/menus/LunchDinnerEn.pdf"
+      },
+      "he": {
+        "name": "×ž× ×˜×” ×¨×™×™",
+        "address": "×§×•×™×¤×ž×Ÿ 7, ×—×•×£ ×¢×œ×ž×”",
+        "tip": "×ž×§×•× ×›×™×¤×™ ×œ×©×§×™×¢×” ×¢× ×ª×™×™×¨×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×¨××©× ×•×•×ª ×ž×ª×•×š ×”×ž×’×© ×”×’×“×•×œ.",
+        "tip_seating": "×”×–×ž×™× ×• ×ž×§×•× ×‘×ž×¨×¤×¡×ª ×œ×™× ×× × ×¢×™×.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×—×•×£ ×¢×œ×ž×” ×”×¦×ž×•×“.",
+        "menuUrl": "http://www.mantaray.co.il/menus/LunchDinnerHe.pdf"
+      },
+      "price": "5",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "1",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "5",
+      "table": "5",
+      "bar": "1",
+      "light": "2",
+      "vol": "3",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST063",
+    "info": {
+      "phone": "03-7448844",
+      "url": "https://www.facebook.com/rokach73",
+      "location": {
+        "lat": "32.100148",
+        "lng": "34.794382"
+      },
+      "parking": {
+        "lat": "32.099789",
+        "lng": "34.795026"
+      },
+      "en": {
+        "name": "Rokach 73",
+        "address": "Rokach Blvd 73",
+        "tip": "Located at the north of the City, near the tennis club.",
+        "tip_dish": "",
+        "tip_seating": "No special seating recommendations.",
+        "tip_parking": "There's parking at the location.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=9142&txtNavID=3&txtItemID=741223"
+      },
+      "he": {
+        "name": "×¨×•×§×— 73",
+        "address": "×©×“ ×¨×•×§×— 73",
+        "tip": "×ž×§×•× ×•×ª×™×§ ×•×˜×•×‘ ×‘×¦×¤×•×Ÿ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "",
+        "tip_seating": "××™×Ÿ ×œ× ×• ×”×ž×œ×¦×ª ×™×©×™×‘×” ×ž×™×•×—×“×ª.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×‘×ž×§×•×, ×œ×™×“ ×ž×•×¢×“×•×Ÿ ×”×˜× ×™×¡,",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=9142&txtNavID=3&txtItemID=219289"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×¨×•×§×—-73.aspx "
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "3",
+      "light": "4",
+      "vol": "4",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST064",
+    "info": {
+      "phone": "03-5222664",
+      "url": "http://www.italiantlv.co.il/",
+      "location": {
+        "lat": "32.059326",
+        "lng": "34.761381"
+      },
+      "parking": {
+        "lat": "32.060144",
+        "lng": "34.761187"
+      },
+      "en": {
+        "name": "Italkia Baâ€™Tachana",
+        "address": "Old station, Neve Zedek",
+        "tip": "A Perfect venue for tourist in the evening.",
+        "tip_dish": "Order the \"Bloody\" steak.",
+        "tip_seating": "Any table is good.",
+        "tip_parking": "There is plenty of paid parking at the old station complex.",
+        "menuUrl": "http://www.italiantlv.co.il/en/menus/mainmenu/"
+      },
+      "he": {
+        "name": "××™×˜×œ×§×™×” ×‘×ª×—× ×”",
+        "address": "×ž×ª×—× ×”×ª×—× ×”, × ×•×•×” ×¦×“×§",
+        "tip": "×ž×¡×¢×“×” ×”×ž×ž×•×§×ž×ª ×‘×ž×ª×—× ×”×ª×—× ×” ×”×ž×—×•×“×©, × ×—×ž×“ ×œ×‘×•× ×¢× ×ª×™×™×¨×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×¡×˜×™×™×§ ×ž×“×ž×.",
+        "tip_seating": "××™×Ÿ ×œ× ×• ×”×ž×œ×¦×” ×ž×™×•×—×“×ª ×œ×©×•×œ×—×Ÿ.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×ž×ª×—× ×”×ª×—× ×”.",
+        "menuUrl": "http://www.italiantlv.co.il/menus/mainmenu/"
+      },
+      "price": "5",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "4",
+      "family": "5",
+      "business": "5",
+      "tourists": "4",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST065",
+    "info": {
+      "phone": "03-5231016",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,11482,.aspx",
+      "location": {
+        "lat": "32.060352",
+        "lng": "34.773452"
+      },
+      "parking": {
+        "lat": "32.060352",
+        "lng": "34.773452"
+      },
+      "en": {
+        "name": "Hahaluzim 3",
+        "address": "Hahaluzim st. no.3",
+        "tip": "Great restaurant with a bar feel.",
+        "tip_dish": "Order the open bread cornbeef sandwich.",
+        "tip_seating": "Sit on the bar or the corner table near the entrance.",
+        "tip_parking": "Haluzim st. has plenty of parking.",
+        "menuUrl": "FALSE"
+      },
+      "he": {
+        "name": "×”×—×œ×•×¦×™× 3",
+        "address": "×¨×—' ×”×—×œ×•×¦×™× 3",
+        "tip": "×ž×¡×¢×“×” × ×¤×œ××” ×¢× ××•×™×¨×ª ×‘×¨.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×”×§×•×¨× ×“×‘×™×£ ×—× ×‘×¡× ×“×‘×™×¥â€™ ×¤×ª×•×—.",
+        "tip_seating": "×©×‘×• ×‘×©×•×œ×—×Ÿ ×”×¤×™× ×ª×™ ×ž×©×ž××œ ×œ×›× ×™×¡×” ××• ×¢×œ ×”×‘×¨.",
+        "tip_parking": "×¨×—×•×‘ ×”×—×œ×•×¦×™× ×“×™ ×¤× ×•×™ ×‘×¢×¨×‘ ×œ×—× ×™×”.",
+        "menuUrl": "FALSE"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "5",
+      "family": "2",
+      "business": "0",
+      "tourists": "1",
+      "table": "5",
+      "bar": "4",
+      "light": "2",
+      "vol": "1",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST066",
+    "info": {
+      "phone": "03-5178568",
+      "url": "http://www.thai-house.co.il/",
+      "location": {
+        "lat": "32.07767",
+        "lng": "34.768308"
+      },
+      "parking": {
+        "lat": "32.077349",
+        "lng": "34.768948"
+      },
+      "en": {
+        "name": "Thai House",
+        "address": "Bograshov 8",
+        "tip": "One of few good thai restaurants in TLV.",
+        "tip_dish": "Order the Pahak Bong, spicy and fun.",
+        "tip_seating": "Don't expect a good table.",
+        "tip_parking": "There is paid parking nearby.",
+        "menuUrl": "http://www.thai-house.co.il/Default.aspx?language=en"
+      },
+      "he": {
+        "name": "×”×‘×™×ª ×”×ª××™×œ× ×“×™",
+        "address": "×‘×•×’×¨×©×•×‘ 8",
+        "tip": "××—×“ ×ž×ž×¢×˜ ×”×ž×¡×¢×“×•×ª ×”×ª××™×œ× ×“×™×•×ª ×”×˜×•×‘×•×ª ×‘×¢×™×¨.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×¤××§ ×¤×•× ×’ ×‘×œ×”×‘×•×ª.",
+        "tip_seating": "××™×Ÿ ×©×•×œ×—×Ÿ ×™×•×¦× ×“×•×¤×Ÿ. ",
+        "tip_parking": "×—× ×• ×‘××—×•×–×ª ×”×—×•×£ ×‘×•×’×¨×©×•×‘.",
+        "menuUrl": "http://www.thai-house.co.il/Default.aspx?language=he"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "1",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "0",
+      "light": "5",
+      "vol": "2",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST067",
+    "info": {
+      "phone": "03-6911603",
+      "url": "http://www.thediner.co.il/",
+      "location": {
+        "lat": "32.072714",
+        "lng": "34.781895"
+      },
+      "parking": {
+        "lat": "32.071505",
+        "lng": "32.071505"
+      },
+      "en": {
+        "name": "The Diner",
+        "address": "Ibn Gabirol 14",
+        "tip": "A Goofy and fun diner at the heart of the city.",
+        "tip_dish": "Have the burger. ",
+        "tip_seating": "No special seating recommended here, it's all fun.",
+        "tip_parking": "There is some paid parking nearby on Ibn Gevirol.",
+        "menuUrl": "http://www.thediner.co.il/pages/menu.php"
+      },
+      "he": {
+        "name": "×“×” ×“×™×™× ×¨",
+        "address": "××‘×Ÿ ×’×‘×™×¨×•×œ 14",
+        "tip": "×ž×§×•× ×ž×©×¢×©×¢ ×•×›×™×¤×™ ×œ××›×•×œ ××•×›×œ ××ž×¨×™×§××™.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×”×ž×‘×•×¨×’×¨.",
+        "tip_seating": "",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×¤×¨×˜×™ ×‘×§×¦×” ××‘×œ ×’×‘×™×¨×•×œ.",
+        "menuUrl": "http://www.thediner.co.il/pages/menu.php"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "1",
+      "friends": "3",
+      "family": "4",
+      "business": "2",
+      "tourists": "2",
+      "table": "5",
+      "bar": "5",
+      "light": "5",
+      "vol": "4",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST068",
+    "info": {
+      "phone": "03-6968581",
+      "url": "http://www.thesixtlv.co.il/",
+      "location": {
+        "lat": "32.087231",
+        "lng": "32.087231"
+      },
+      "parking": {
+        "lat": "",
+        "lng": ""
+      },
+      "en": {
+        "name": "The Six TLV",
+        "address": "Jabotinsky 110",
+        "tip": "A cafe-restaurant to make you feel like you're in Paris.",
+        "tip_dish": "Honestly the the burger is awsome. ",
+        "tip_seating": "Sit outside on the street.",
+        "tip_parking": "There should be enough street parking on Zabotinsky st.",
+        "menuUrl": "http://www.thesixtlv.co.il/dinner/"
+      },
+      "he": {
+        "name": "×”×¨×•×‘×¢ ×”×©×™×©×™",
+        "address": "×–'×‘×•×˜×™× ×¡×§×™ 110",
+        "tip": "×ž×§×•× ×¤×¨×™×–××™ × ×¢×™× ×‘×¦×¤×•×Ÿ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×”×ž×‘×•×¨×’×¨. ×”××ž×ª ×©×”×•× × ×¤×œ× ×¤×”.",
+        "tip_seating": "×©×‘×• ×‘×—×•×¥ ×¢×œ ×–'×‘×•×˜×™× ×¡×§×™.",
+        "tip_parking": "×™×© ×ž×¡×¤×™×§ ×—× ×™×” ×‘×¨×—×•×‘. ",
+        "menuUrl": "http://www.thesixtlv.co.il/en/dinner/"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "5",
+      "business": "2",
+      "tourists": "2",
+      "table": "5",
+      "bar": "4",
+      "light": "5",
+      "vol": "3",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST069",
+    "info": {
+      "phone": "072-2410551",
+      "url": "https://www.facebook.com/6inmay",
+      "location": {
+        "lat": "32.07821",
+        "lng": "34.773677"
+      },
+      "parking": {
+        "lat": "32.077572",
+        "lng": "34.771787"
+      },
+      "en": {
+        "name": "May 6",
+        "address": "Ben Ami 13",
+        "tip": "An ideal for sitting outside with friends. Great food and conveniently close to Dizzingoff fountain. ",
+        "tip_dish": "Order all the starters, don't think twice.",
+        "tip_seating": "Sit outside.",
+        "tip_parking": "Taking a taxi to Dizingoff square is probably the best idea.",
+        "menuUrl": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/942331_331029953697068_550334727_n.jpg"
+      },
+      "he": {
+        "name": "6 ×‘×ž××™",
+        "address": "×‘×Ÿ ×¢×ž×™ 13",
+        "tip": "×ž×§×•× ×ž×•×©×œ× ×œ×¢×¨×‘ ×¢× ×—×‘×¨×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×›×œ ×”×¨××©×•× ×•×ª, ×‘×œ×™ ×œ×”×ª×œ×‘×˜ ××¤×™×œ×•. ",
+        "tip_seating": "×©×‘×• ×‘×—×•×¥ ×‘×›×™×›×¨.",
+        "tip_parking": "×¢×“×™×£ ×œ×ª×¤×•×¡ ×ž×•× ×™×ª ×œ×›×™×›×¨ ×“×™×–×™× ×’×•×£.",
+        "menuUrl": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash3/942331_331029953697068_550334727_n.jpg"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "5",
+      "family": "1",
+      "business": "1",
+      "tourists": "3",
+      "table": "4",
+      "bar": "2",
+      "light": "3",
+      "vol": "5",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST070",
+    "info": {
+      "phone": "03-6314214",
+      "url": "https://www.facebook.com/MilgoMilbar",
+      "location": {
+        "lat": "32.071757",
+        "lng": "34.77933"
+      },
+      "parking": {
+        "lat": "32.071646",
+        "lng": "34.77977"
+      },
+      "en": {
+        "name": "Milgo & Milbar",
+        "address": "Rothschild 142",
+        "tip": "A place for a fun evening on Rothschild.",
+        "tip_dish": "Order the fish tartar and beetroot cream.",
+        "tip_seating": "The bar here is a pretty cool place to sit.",
+        "tip_parking": "Use the paid parking at Habima nearby.",
+        "menuUrl": "https://d1izrnnwevyn8s.cloudfront.net/crop/131,105,1522x2559/fit/810x5000/tabpro2-eu.s3.amazonaws.com/users/1836201/image_component/cd58e32b-1bd9-4917-8d15-25aa7af5a80c/M_M_menu.jpg?0.80406725605095"
+      },
+      "he": {
+        "name": "×ž×œ×’×• ×•×ž×™×œ×‘×¨",
+        "address": "×¨×•×˜×©×™×œ×“ 142",
+        "tip": "×ž×§×•× ×›×™×£ ×œ×¢×¨×‘ ×‘×©×“×¨×•×ª ×¨×•×˜×©×™×œ×“.",
+        "tip_dish": "×”×–×ž×™× ×• ×˜×¨×˜×¨ ×“×’ ×™× ×•×§×¨× ×¡×œ×§.",
+        "tip_seating": "×™×© ×›××Ÿ ×‘×¨ ×ž×“×œ×™×§ ×ž××•×“ ×œ×©×¢×•×ª ×”×¢×¨×‘.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×”×‘×™×ž×”.",
+        "menuUrl": "https://d1izrnnwevyn8s.cloudfront.net/crop/131,105,1522x2559/fit/810x5000/tabpro2-eu.s3.amazonaws.com/users/1836201/image_component/cd58e32b-1bd9-4917-8d15-25aa7af5a80c/M_M_menu.jpg?0.80406725605095"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "1",
+      "business": "1",
+      "tourists": "3",
+      "table": "4",
+      "bar": "5",
+      "light": "2",
+      "vol": "5",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST071",
+    "info": {
+      "phone": "03-5612888",
+      "url": "http://www.rest.co.il/sites/default.asp?txtRestID=9389&txtNavID=3&txtItemID=279197",
+      "location": {
+        "lat": "32.066845",
+        "lng": "34.794208"
+      },
+      "parking": {
+        "lat": "32.066845",
+        "lng": "34.794208"
+      },
+      "en": {
+        "name": "CafÃ© Italia",
+        "address": "Kremintzki 6",
+        "tip": "Good old Italian food, happy hour feel.",
+        "tip_dish": "Try the chocolare mousse, it's simply perfect.",
+        "tip_seating": "Sit at the round table on the left side of the restaurant.",
+        "tip_parking": "There is nearby street parking.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=9389&txtNavID=3&txtItemID=533108"
+      },
+      "he": {
+        "name": "×§×¤×” ××™×˜×œ×™×”",
+        "address": "×§×¨×ž× ×™×¦×§×™ 6",
+        "tip": "×•×ª×™×§ ×•×˜×•×‘, ××•×•×™×¨×” ×©×œ ××™×˜×œ×™×” ×‘×¦×”×¨×™×™×.",
+        "tip_dish": "×ž×•×¡ ×”×©×•×§×•×œ×“ ×ž×•×©×œ×.",
+        "tip_seating": "×ª×‘×§×©×• ××ª ×”×©×•×œ×—×Ÿ ×”×¢×’×•×œ ×‘×—×œ×œ ×”×©×ž××œ×™. ",
+        "tip_parking": "×™×© ×—× ×™×” ×œ××•×¨×š ×¨×—×•×‘ ×§×¨×ž× ×™×¦×§×™ ××• ×—× ×™×•×Ÿ ×¡×ž×•×š.",
+        "menuUrl": "http://www.rest.co.il/sites/default.asp?txtRestID=9389&txtNavID=3&txtItemID=279197"
+      },
+      "price": "3",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×§×¤×”-××™×˜×œ×™×”.aspx"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "5",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "5",
+      "vol": "4",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST072",
+    "info": {
+      "phone": "077-5155905",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,9460,.aspx",
+      "location": {
+        "lat": "32.114435",
+        "lng": "34.7913086"
+      },
+      "parking": {
+        "lat": "32.114435",
+        "lng": "34.7913086"
+      },
+      "en": {
+        "name": "Zuk",
+        "address": "Perlok 5",
+        "tip": "A deli restaurant at the very north of Tel Aviv.",
+        "tip_dish": "Choose your own meat. ",
+        "tip_seating": "Ask for the bar, near the open kitchen.",
+        "tip_parking": "You should be able to find street parking",
+        "menuUrl": "https://www.facebook.com/photo.php?fbid=645425112151489"
+      },
+      "he": {
+        "name": "×—×•×•×ª ×¦×•×§",
+        "address": "×¤×¨×œ×•×§ 5",
+        "tip": "×ž×¡×¢×“×ª ×ž×¢×“× ×™×™×” ×‘×¦×¤×•×Ÿ ",
+        "tip_dish": "×‘×—×¨×• ××ª × ×ª×— ×”×‘×©×¨ ×©×œ×›× ×ž×”×ž×§×¨×¨.",
+        "tip_seating": "×ž×•×ž×œ×¥ ×œ×©×‘×ª ×¢×œ ×”×‘×¨ ×”×§×¨×•×‘ ×œ×ž×˜×‘×— ×”×¤×ª×•×—.",
+        "tip_parking": "×™×© ×—× ×™×™×ª ×¨×—×•×‘ ×‘×©×¤×¢ (××¤×•×¨).",
+        "menuUrl": "https://www.facebook.com/photo.php?fbid=645425112151489"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "1",
+      "friends": "5",
+      "family": "3",
+      "business": "0",
+      "tourists": "2",
+      "table": "4",
+      "bar": "5",
+      "light": "5",
+      "vol": "3",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST073",
+    "info": {
+      "phone": "03-5222300",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,12172,.aspx",
+      "location": {
+        "lat": "32.0943218",
+        "lng": "34.7767236"
+      },
+      "parking": {
+        "lat": "32.0956345",
+        "lng": "34.7779898"
+      },
+      "en": {
+        "name": "Lobi",
+        "address": "Dizengoff 300",
+        "tip": "A fun a packed place at the heart of northern Tel Aviv.",
+        "tip_dish": "Order the shpondra tortellini.",
+        "tip_seating": "FYI, it's crowded here. ",
+        "tip_parking": "There's an often full paid lot a bit far off. You're better off with a taxi.",
+        "menuUrl": "FALSE"
+      },
+      "he": {
+        "name": "×œ×•×‘×™",
+        "address": "×“×™×–× ×’×•×£ 300",
+        "tip": "×ž×§×•× ×”×•×ž×” ×•×©×ž×— ×•×œ×‘ ×¦×¤×•×Ÿ ×ª×œ ××‘×™×‘.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×”×˜×•×¨×˜×œ×™× ×™ ×©×¤×•× ×“×¨×”.",
+        "tip_seating": "×¦×¤×•×£ ×›××Ÿ, ×¨××• ×”×•×–×”×¨×ª×.",
+        "tip_parking": "×—× ×™×•×Ÿ ××•×¡×™×©×§×™×Ÿ ×§×¦×ª ×¨×—×•×§ ×•×’× ×ª×ž×™×“ ×ž×œ× ×‘×¢×¨×‘. ×¢×“×™×£ ×ž×•× ×™×ª.",
+        "menuUrl": "FALSE"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "4",
+      "family": "2",
+      "business": "1",
+      "tourists": "2",
+      "table": "3",
+      "bar": "5",
+      "light": "3",
+      "vol": "4",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST074",
+    "info": {
+      "phone": "03-6910691",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,12176,.aspx",
+      "location": {
+        "lat": "32.0674807",
+        "lng": "34.7948388"
+      },
+      "parking": {
+        "lat": "32.0674807",
+        "lng": "34.7948388"
+      },
+      "en": {
+        "name": "Topolopompo",
+        "address": "Walter Moses 8",
+        "tip": "A stylish Asia meat restaurant, as pricey as they come.",
+        "tip_dish": "Order the Ssam Talia",
+        "tip_seating": "Any table is great.",
+        "tip_parking": "There's plenty of street parking around.",
+        "menuUrl": "https://www.facebook.com/photo.php?fbid=420477881412266&set=pb.332598950200160.-2207520000.1387667566.&type=3&theater"
+      },
+      "he": {
+        "name": "×˜×•×¤×•×œ×•×¤×•×ž×¤×•",
+        "address": "×•×•×œ×˜×¨ ×ž×•×–×¡ 8",
+        "tip": "×ž×¡×¢×“×ª ×‘×©×¨ ××¡×™×™×ª×™×ª, ×ž×”×™×§×¨×•×ª ×‘×¢×™×¨. ",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×¡×× ×˜×œ×™×”.",
+        "tip_seating": "×›×œ ×©×•×œ×—×Ÿ ×¤×” ×ž×¦×•×™×Ÿ. ×¢×™×¦×•×‘ ×ž×¨×”×™×‘.",
+        "tip_parking": "×™×© ×—× ×™×” ×‘×©×¤×¢ ×‘×¨×—×•×‘ ×•×‘××–×•×¨.",
+        "menuUrl": "https://www.facebook.com/photo.php?fbid=420477881412266&set=pb.332598950200160.-2207520000.1387667566.&type=3&theater"
+      },
+      "price": "5",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "2",
+      "family": "4",
+      "business": "5",
+      "tourists": "3",
+      "table": "5",
+      "bar": "4",
+      "light": "3",
+      "vol": "2",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST075",
+    "info": {
+      "phone": "03-5464015",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,12050,.aspx",
+      "location": {
+        "lat": "32.0690314",
+        "lng": "34.7830153"
+      },
+      "parking": {
+        "lat": "32.0674558",
+        "lng": "34.7828415"
+      },
+      "en": {
+        "name": "Ten",
+        "address": "Carlebach 10",
+        "tip": "A meat and sea food restaurant with two master chefs for each cuisine. ",
+        "tip_dish": "Order the Asado or polenta.",
+        "tip_seating": "No table preferences.",
+        "tip_parking": "A number of parking option a block or two away.",
+        "menuUrl": "https://www.facebook.com/esertlv/app_337670556303383"
+      },
+      "he": {
+        "name": "×¢×©×¨",
+        "address": "×§×¨×œ×™×‘×š 10",
+        "tip": "×ž×¡×¢×“×” ×”×ž×ª×ž×—×” ×‘×‘×©×¨ ×•×¤×™×¨×•×ª ×™×, ×‘× ×™×¦×•×—× ×©×œ ×©×ª×™ ×©×¤×™× ×ž× ×•×¡×™× ×ž××•×“.",
+        "tip_dish": "×”×–×ž×™× ×• ××¡××“×• ××• ×¤×•×œ× ×˜×”.",
+        "tip_seating": "××™×Ÿ ×œ× ×• ×”×ž×œ×¦×ª ×©×•×œ×—×Ÿ ×ž×™×•×—×“×ª.",
+        "tip_parking": "×—× ×™×•×Ÿ ××—×•×–×ª ×—×•×£ ×‘×¨×—×•×‘ ×¦×™×§×œ×’.",
+        "menuUrl": "https://www.facebook.com/esertlv/app_337670556303383"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "4",
+      "family": "4",
+      "business": "1",
+      "tourists": "1",
+      "table": "5",
+      "bar": "3",
+      "light": "3",
+      "vol": "3",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST076",
+    "info": {
+      "phone": "054-388-0000",
+      "url": "http://www.mouse.co.il/CM.food_item_place,762,213,12226,.aspx",
+      "location": {
+        "lat": "32.0884097",
+        "lng": "34.7735188"
+      },
+      "parking": {
+        "lat": "32.0884097",
+        "lng": "34.7735188"
+      },
+      "en": {
+        "name": "Zou Bisou",
+        "address": "Ben Yehuda 186",
+        "tip": "A bar with a great food selection, set to the mood of \"mad men\".",
+        "tip_dish": "Have the ramen noodle bun hamburger.",
+        "tip_seating": "More fun on the bar.",
+        "tip_parking": "No paking around these parts. Take a taxi.",
+        "menuUrl": "FALSE"
+      },
+      "he": {
+        "name": "×–×• ×‘×™×–×•",
+        "address": "×‘×Ÿ ×™×”×•×“×” 186",
+        "tip": "×‘×¨ ××•×›×œ ×”×ž×¢×•×¦×‘ ×‘×¡×’× ×•×Ÿ \"×ž×“ ×ž×Ÿ\".",
+        "tip_dish": "×”×–×ž×™× ×• ×”×ž×‘×•×¨×’×¨ ×‘×§×¨ ×”×ž×•×’×© ×‘×œ×—×ž× ×™×™×ª ××˜×¨×™×•×ª ×¨××ž×Ÿ.",
+        "tip_seating": "×™×•×ª×¨ ×›×™×£ ×¢×œ ×”×‘×¨.",
+        "tip_parking": "××™×Ÿ ×‘××™×–×•×¨ ×—× ×™×” ×‘×œ×™ ×ž×–×œ. ×§×—×• ×ž×•× ×™×ª.",
+        "menuUrl": "FALSE"
+      },
+      "price": "4",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "4",
+      "family": "1",
+      "business": "1",
+      "tourists": "4",
+      "table": "2",
+      "bar": "5",
+      "light": "2",
+      "vol": "5",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST077",
+    "info": {
+      "phone": "03-6249249",
+      "url": "http://www.yaffotelaviv.com/",
+      "location": {
+        "lat": "32.070123",
+        "lng": "34.793811"
+      },
+      "parking": {
+        "lat": "32.070391",
+        "lng": "34.794071"
+      },
+      "en": {
+        "name": "Yafo Tel-Aviv",
+        "address": "Yigal Alon 98",
+        "tip": "A more formal occasion would suit this place best. ",
+        "tip_dish": "The beef tenderloin or Ossobuco are our recommendations",
+        "tip_seating": "The nicer seats are by the windows.",
+        "tip_parking": "There is ample street parking nearby.",
+        "menuUrl": "http://www.google.com/translate?hl=en&ie=UTF8&sl=auto&tl=en&u=http%3A%2F%2Fwww.yaffotelaviv.com%2F471%2F"
+      },
+      "he": {
+        "name": "×™×¤×• ×ª×œ ××‘×™×‘",
+        "address": "×™×’××œ ××œ×•×Ÿ 98",
+        "tip": "×ž×•×©×§×¢ ×•×¨×¦×™× ×™, ×ª×—×©×‘×• \"××™×¨×•×¢\"",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×¤×™×œ×” ×”×‘×§×¨ ××• ××•×¡×•×‘×•×§×• ×”×˜×œ×”.",
+        "tip_seating": "×©×‘×• ×œ×™×“ ×”×—×œ×•× ×•×ª.",
+        "tip_parking": "×™×© ×ž×¡×¤×™×§ ×—× ×™×” ×œ××•×¨×š ×¨×—×•×‘ ×ª×•×‘×œ.",
+        "menuUrl": "http://www.yaffotelaviv.com/471/"
+      },
+      "price": "5",
+      "clickTableUrl": "http//www.clickatable.co.il/×ž×¡×¢×“×ª-×™×¤×•-×ª×œ-××‘×™×‘.aspx"
+    },
+    "ratings": {
+      "date": "5",
+      "friends": "3",
+      "family": "5",
+      "business": "3",
+      "tourists": "1",
+      "table": "5",
+      "bar": "5",
+      "light": "2",
+      "vol": "1",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST078",
+    "info": {
+      "phone": "03-6470247",
+      "url": "http://www.larepubblica.co.il/he/home/default.aspx",
+      "location": {
+        "lat": "32.0671111",
+        "lng": "34.7718748"
+      },
+      "parking": {
+        "lat": "32.06711",
+        "lng": "34.77184"
+      },
+      "en": {
+        "name": "La Repubblica di Ronimotti",
+        "address": "Maze 3",
+        "tip": "A fresh urban Italian restaurant located at an upscale complex close to Rothschild.",
+        "tip_dish": "The pasta dishes are home-made in the kitchen. ",
+        "tip_seating": "Avoid sitting too close to the antipasti counters.",
+        "tip_parking": "Use the paid parking at the complex.",
+        "menuUrl": "http://larepubblica.co.il/he/dinner/EnglishMenu.aspx?ChannelID=4&ContentID=13"
+      },
+      "he": {
+        "name": "×œ×” ×¨×¤×•×‘×œ×™×§×” ×“×™ ×¨×•× ×™×ž×•×˜×™",
+        "address": "×ž×–×\"×” 3",
+        "tip": "×ž×¡×¢×“×” ××™×˜×œ×§×™×ª × ×¢×™×ž×” ×•×¨×¢× × ×” ×‘×¨×•×‘×¢ ×œ×‘ ×”×¢×™×¨.",
+        "tip_dish": "×”×¤×¡×˜×•×ª ×¢×©×•×™×•×ª ×‘×ž×§×•×, ×ž×•×ž×œ×¥.",
+        "tip_seating": "×”×ž× ×¢×• ×ž×œ×‘×ª ×§×¨×•×‘ ×œ×¢×ž×“×•×ª ×”×× ×˜×™×¤×¡×˜×™.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•×Ÿ ×”×ž×ª×—× ×”×¦×ž×•×“.",
+        "menuUrl": "http://larepubblica.co.il/he/dinner/default.aspx?ChannelID=4"
+      },
+      "price": "3",
+      "clickTableUrl": "http://www.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-RONIMOTTI.aspx"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "5",
+      "family": "5",
+      "business": "3",
+      "tourists": "2",
+      "table": "5",
+      "bar": "3",
+      "light": "4",
+      "vol": "2",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST079",
+    "info": {
+      "phone": " 03-6444733",
+      "url": "http://www.hudson-tlv.com/he/home/",
+      "location": {
+        "lat": "32.109767",
+        "lng": "34.839712"
+      },
+      "parking": {
+        "lat": "32.109395",
+        "lng": "34.838714"
+      },
+      "en": {
+        "name": "Hudson",
+        "address": "Habarzel 27",
+        "tip": "An excellent meat restaurant in the hi-tech complex at the north of Tel Aviv.",
+        "tip_dish": "Have the hamburger or any of the excellent meat choices.",
+        "tip_seating": "Make sure to sit far from the service area in the hall on the left.",
+        "tip_parking": "Use the paid parking lots on Habarzel or Hanechoshet street.",
+        "menuUrl": "http://hudson-tlv.com/en/menus/menu.aspx?DirectoryID=3&ContentID=65"
+      },
+      "he": {
+        "name": "×”×“×¡×•×Ÿ",
+        "address": "×”×‘×¨×–×œ 27",
+        "tip": "×ž×¡×¢×“×ª ×‘×©×¨×™× ×ž×¦×•×™× ×ª ×‘×¨×ž×ª ×”×—×™×™×œ.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×”×”×ž×‘×•×¨×’×¨ ×”×ž×¦×•×™×Ÿ ××• ×›×œ ×ž× ×ª ×‘×©×¨×™× ××—×¨×ª.",
+        "tip_seating": "×”×ª×¨×—×§×• ×ž×”×©×œ×•×—× ×•×ª ×”×¡×ž×•×›×™× ×œ××–×•×¨ ×”×¡×¨×•×™×¡ ×‘×—×œ×œ ×”×©×ž××œ×™.",
+        "tip_parking": "×—× ×• ×‘×—× ×™×•× ×™ ××—×•×–×ª ×”×—×•×£ ×”×¡×ž×•×›×™× ×‘×¨×—×•×‘ ×”×‘×¨×–×œ ××• ×”× ×—×•×©×ª.",
+        "menuUrl": "http://hudson-tlv.com/he/menus/menu.aspx?DirectoryID=3&ContentID=15"
+      },
+      "price": "4",
+      "clickTableUrl": "http://www.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%94%D7%93%D7%A1%D7%95%D7%9F-%D7%91%D7%A8%D7%90%D7%A1%D7%A8%D7%99.aspx"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "5",
+      "tourists": "2",
+      "table": "5",
+      "bar": "3",
+      "light": "2",
+      "vol": "3",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST080",
+    "info": {
+      "phone": "03-5101001",
+      "url": "http://www.mouse.co.il/CM.food_item_place,382,213,10011,.aspx",
+      "location": {
+        "lat": "32.063882",
+        "lng": "34.77133"
+      },
+      "parking": {
+        "lat": "32.064114",
+        "lng": "34.771983"
+      },
+      "en": {
+        "name": "Cafe 48",
+        "address": "Nehalat Binyamin 48",
+        "tip": "A great kitchen serving medium size portions.",
+        "tip_dish": "Have the crack pie for desert.",
+        "tip_seating": "There's an excellent bar, and the rest of the place is also great.",
+        "tip_parking": "There is nearby paid parking.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=11485&txtNavID=3&txtItemID=755599"
+      },
+      "he": {
+        "name": "×§×¤×” 48",
+        "address": "× ×—×œ×ª ×‘× ×™×ž×™×Ÿ 48",
+        "tip": "×ž×§×•× ×¢× ××•×›×œ × ×¤×œ× ×‘×’×“×œ×™× ×‘× ×•× ×™×™×.",
+        "tip_dish": "×”×–×ž×™× ×• ×§×¨××§ ×¤××™ ×œ×§×™× ×•×—.",
+        "tip_seating": "×™×© ××—×œ×” ×‘×¨ ×•×’× ×”×©××¨ ×ž×¦×•×™×Ÿ.",
+        "tip_parking": "×™×© ×—× ×™×•×Ÿ ×‘×”×ž×©×š ×”×¨×—×•×‘ ×œ×™×“ ×‘×™×ª ×”×›× ×¡×ª ×”×’×“×•×œ.",
+        "menuUrl": "http://www.rest.co.il/sites/Default.asp?txtRestID=11485&txtNavID=3&txtItemID=515747"
+      },
+      "price": "3",
+      "clickTableUrl": "http://www.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%A7%D7%A4%D7%94-48.aspx"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "3",
+      "business": "1",
+      "tourists": "2",
+      "table": "4",
+      "bar": "5",
+      "light": "3",
+      "vol": "3",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST081",
+    "info": {
+      "phone": "03-6005280",
+      "url": "https://www.facebook.com/taqueriatlv/app_333026933411295",
+      "location": {
+        "lat": "32.066158",
+        "lng": "34.777819"
+      },
+      "parking": {
+        "lat": "32.066158",
+        "lng": "34.777819"
+      },
+      "en": {
+        "name": "Taqueria",
+        "address": "Levontin 28",
+        "tip": "A mexican place for fun and friends.",
+        "tip_dish": "The nachos are said to be fantastic.",
+        "tip_seating": "No sitting preferences. ",
+        "tip_parking": "There's street parking around.",
+        "menuUrl": "https://www.facebook.com/taqueriatlv/app_333026933411295"
+      },
+      "he": {
+        "name": "×˜××§×¨×™×”",
+        "address": "×œ×‘×•× ×˜×™×Ÿ 28",
+        "tip": "×ž×§×¡×™×§× ×™×ª ××™×›×•×ª×™×ª ×œ×¢×¨×‘ ×¢× ×—×‘×¨×™×. ",
+        "tip_dish": "×ž× ×ª ×”× ××¦'×•×¡ ×™×“×¢×” ×›×ž×•×©×—×ª×ª ×•× ×¤×œ××”.",
+        "tip_seating": "×œ× ×©× ×” ××™×¤×” ×‘×•×—×¨×™× ×œ×©×‘×ª. ×›×™×£.",
+        "tip_parking": "×™×© ×—× ×™×” ×‘×¨×—×•×‘×•×ª ×”×¡×ž×•×›×™×.",
+        "menuUrl": "https://www.facebook.com/taqueriatlv/app_333026933411295"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "0",
+      "friends": "5",
+      "family": "3",
+      "business": "0",
+      "tourists": "3",
+      "table": "5",
+      "bar": "3",
+      "light": "2",
+      "vol": "5",
+      "parking": "true"
+    }
+  },
+  {
+    "id": "REST082",
+    "info": {
+      "phone": "03-5169234",
+      "url": "http://www.mouse.co.il/CM.Food_Item_Place,382,213,8221,.aspx",
+      "location": {
+        "lat": "32.068586",
+        "lng": "34.769363"
+      },
+      "parking": {
+        "lat": "32.068586",
+        "lng": "34.769363"
+      },
+      "en": {
+        "name": "Basta",
+        "address": "Hashomer 4",
+        "tip": "A local gem at the south of Tel Aviv.",
+        "tip_dish": "It's all jsut so good. But try the \"meurav yerushalmi\".",
+        "tip_seating": "The bar is very inviting.",
+        "tip_parking": "Come by taxi.",
+        "menuUrl": "http://www.mouse.co.il/CM.Food_Item_Place,382,213,8221,.aspx"
+      },
+      "he": {
+        "name": "×”×‘×¡×˜×”",
+        "address": "×”×©×•×ž×¨ 4",
+        "tip": "×”×©× ×œ× ×¢×•×©×” ×—×¡×“, ×ž×“×•×‘×¨ ×‘×ª×¤×¨×™×˜ ××™×›×•×ª×™ ×©×œ× ×ž××›×–×‘.",
+        "tip_dish": "× ×¡×• ××ª ×”×ž×¢×•×¨×‘ ×”×™×¨×•×©×œ×ž×™ ××• ×‘×•×¨×§×¡ ×”×—×–×™×¨.",
+        "tip_seating": "×”×‘×¨ ×ž××•×“ × ×—×ž×“.",
+        "tip_parking": "×‘×•××• ×‘×ž×•× ×™×ª.",
+        "menuUrl": "http://www.mouse.co.il/CM.Food_Item_Place,382,213,8221,.aspx"
+      },
+      "price": "4",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "5",
+      "family": "2",
+      "business": "2",
+      "tourists": "4",
+      "table": "3",
+      "bar": "5",
+      "light": "3",
+      "vol": "4",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST083",
+    "info": {
+      "phone": "03-5184668",
+      "url": "http://www.cordelia.co.il/?r=1&ID_Ctg=12&width=1366&Height=768",
+      "location": {
+        "lat": "32.0533872",
+        "lng": "34.7541315"
+      },
+      "parking": {
+        "lat": "32.0533872",
+        "lng": "34.7541315"
+      },
+      "en": {
+        "name": "Cordelia",
+        "address": "Yefet 30, Jaffa",
+        "tip": "A unique setting in Jaffa.",
+        "tip_dish": "Order the tasting menu.",
+        "tip_seating": "There's also an intimate lounge inside.",
+        "tip_parking": "Take a taxi.",
+        "menuUrl": "http://www.cordelia.co.il/38/%FA%F4%F8%E9%E8%20%F2%F8%E1"
+      },
+      "he": {
+        "name": "×§×•×¨×“×œ×™×”",
+        "address": "×™×¤×ª 30 ×™×¤×•",
+        "tip": "×ž×¡×¢×“×ª ×©×£ ×”×ž×ž×•×§×ž×ª ×‘×¡×ž×˜×” ×§×¡×•×ž×” ×‘×™×¤×•.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ××¨×•×—×ª ×”×˜×¢×™×ž×•×ª.",
+        "tip_seating": "×™×© ×’× ×—×œ×œ ××™×¨×•×— ×ž×™×•×—×“ ×”×ž×ª××™× ×œ××™×¨×•×¢×™×.",
+        "tip_parking": "×‘×•××• ×‘×ž×•× ×™×ª.",
+        "menuUrl": "http://www.cordelia.co.il/38/%FA%F4%F8%E9%E8%20%F2%F8%E1"
+      },
+      "price": "5",
+      "clickTableUrl": "http://www.rest.co.il/ordertable/order.aspx?restID=323"
+    },
+    "ratings": {
+      "date": "4",
+      "friends": "2",
+      "family": "5",
+      "business": "4",
+      "tourists": "4",
+      "table": "5",
+      "bar": "4",
+      "light": "2",
+      "vol": "2",
+      "parking": "FALSE"
+    }
+  },
+  {
+    "id": "REST084",
+    "info": {
+      "phone": "03-5364755",
+      "url": "http://www.shineandsharp.co.il/",
+      "location": {
+        "lat": "32.065947",
+        "lng": "34.792560"
+      },
+      "parking": {
+        "lat": "32.065437",
+        "lng": "34.792309"
+      },
+      "en": {
+        "name": "Shine & Sharp",
+        "address": "Yigal Alon 65",
+        "tip": "A celebrity meat restaurants at the east of Tel Aviv.",
+        "tip_dish": "Have the bonless chicken wings.",
+        "tip_seating": "We have no seating recomendation.",
+        "tip_parking": "There's ample street parking nearby or a close parking lot.",
+        "menuUrl": "http://www.shineandsharp.co.il/pages/english/dinner.php"
+      },
+      "he": {
+        "name": "×©×™×™×Ÿ & ×©××¨×¤",
+        "address": "×™×’××œ ××œ×•×Ÿ 65",
+        "tip": "×ž×¡×¢×“×ª ×‘×©×¨×™× ×§×¨×•×‘ ×œ×”×™×›×œ × ×•×§×™×”.",
+        "tip_dish": "×”×–×ž×™× ×• ××ª ×ž× ×ª ×›× ×¤×™ ×”×¢×•×£ ×œ×œ× ×¢×¦×ž×•×ª.",
+        "tip_seating": "××™×Ÿ ×”×ž×œ×¦×•×ª ×ž×™×•×—×“×•×ª ×œ×™×©×™×‘×”.",
+        "tip_parking": "×™×© ×—× ×™×™×ª ×¨×—×•×‘ ×‘××™×–×•×¨ ××• ×—× ×™×•×Ÿ ×§×¨×•×‘.",
+        "menuUrl": "http://www.shineandsharp.co.il/pages/dinner.php"
+      },
+      "price": "5",
+      "clickTableUrl": "http://www.clickatable.co.il/%D7%9E%D7%A1%D7%A2%D7%93%D7%AA-%D7%A9%D7%99%D7%99%D7%9F-%D7%90%D7%A0%D7%93-%D7%A9%D7%90%D7%A8%D7%A4.aspx"
+    },
+    "ratings": {
+      "date": "2",
+      "friends": "5",
+      "family": "5",
+      "business": "5",
+      "tourists": "2",
+      "table": "5",
+      "bar": "4",
+      "light": "3",
+      "vol": "3",
+      "parking": "TRUE"
+    }
+  },
+  {
+    "id": "REST085",
+    "info": {
+      "phone": "03-5222300",
+      "url": "https://www.facebook.com/pages/Lobi-%D7%9C%D7%95%D7%91%D7%99/190762444443245?sk=photos",
+      "location": {
+        "lat": "32.094322",
+        "lng": "34.776724"
+      },
+      "parking": {
+        "lat": "32.095422",
+        "lng": "34.778528"
+      },
+      "en": {
+        "name": "Lobi",
+        "address": "Dizengoff 300",
+        "tip": "A food bar at the north of Tel Aviv. Young and vibrant.",
+        "tip_dish": "Try the goose liver.",
+        "tip_seating": "It's a pretty tightly packed place to sit, come prepared.",
+        "tip_parking": "There's really litle parking around, one lot which is usually full. Take a taxi.",
+        "menuUrl": "FALSE"
+      },
+      "he": {
+        "name": "×œ×•×‘×™",
+        "address": "×“×™×–×™× ×’×•×¥ 300",
+        "tip": "×‘×¨ ××•×›×œ ×ž×•×§×¤×“ ×‘×¦×¤×•×Ÿ ×“×™×–×™× ×’×•×£.",
+        "tip_dish": "× ×¡×• ××ª ×›×‘×¨ ×”××•×•×–.",
+        "tip_seating": "×ž×§×•× ×“×™ ×¦×¤×•×£ ××‘×œ ×©×ž×—.",
+        "tip_parking": "× ×“×™×¨ ×œ×ž×¦×•× ×›××Ÿ ×—× ×™×”, ×›×•×œ×œ ×‘×—× ×™×•×Ÿ ×œ×™×“ ×”×¤××¨×§. ×§×—×• ×ž×•× ×™×ª.",
+        "menuUrl": "FALSE"
+      },
+      "price": "3",
+      "clickTableUrl": "FALSE"
+    },
+    "ratings": {
+      "date": "3",
+      "friends": "5",
+      "family": "2",
+      "business": "2",
+      "tourists": "3",
+      "table": "3",
+      "bar": "5",
+      "light": "3",
+      "vol": "4",
+      "parking": "FALSE"
+    }
+  }
+]

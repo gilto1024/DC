@@ -328,6 +328,9 @@
                 _oRestaurants,
                 _isQuestionsPhase = !_haveFullStory();
 
+            // DEBUG - for rest building
+            _isQuestionsPhase = false;
+
             // Calculate Story object
             _oStory = {
                 current: _storyTextCurrent,

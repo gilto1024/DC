@@ -216,16 +216,33 @@
         }
     }
 
+    // Restaurants Nav
+    class RestNav extends React.Component {
+        constructor(props) {
+            super(props);
+
+        }
+        render() {
+            return (
+                <div className="dc-app-restaurants-nav">
+                    <button className="rest-nav-forward" />
+                    <button className="rest-nav-reset" />
+                    <button className="rest-nav-backward" />
+                </div>
+            )
+        }
+    }
+
     // The restaurants display panel
     class RestaurantsCarousel extends React.Component {
         render() {
             return (
-                <div class="dc-app-restaurants">
-                    <div class="dc-app-restaurants-display">
-                        <div class="restaurants-go-to">
+                <div className="dc-app-restaurants">
+                    <div className="dc-app-restaurants-display">
+                        <div className="restaurants-go-to">
                             You should go to...
                         </div>
-                        <div class="restaurants-info">
+                        <div className="restaurants-info">
                             <h1>Tapas 1 Ha'am</h1>
                             <p>
                                 <span id="restaurantPhoneNum">03-5666966</span>
@@ -233,18 +250,16 @@
                             </p>
                             <h3>Get a table</h3>
                         </div>
-                        <div class="restaurants-description">
-                            <ul class="restaurants-description-tabs">
+                        <div className="restaurants-description">
+                            <ul className="restaurants-description-tabs">
                                 <li></li>
                             </ul>
-                            <div class="restaurants-description-content">
+                            <div className="restaurants-description-content">
 
                             </div>
                         </div>
                     </div>
-                    <div class="dc-app-restaurants-nav">
-
-                    </div>
+                    <RestNav />
                 </div>
             )
         }
